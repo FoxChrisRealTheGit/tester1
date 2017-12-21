@@ -5,8 +5,8 @@ import '../../Styles/styles.css';
 export default class Container1 extends Component {
     render(){
         return (
-            <section>
-                <div>
+            <section className='container1'>
+                <div className='container1-block'>
                     {this.props.children || <div></div>}
                 </div>
             </section>

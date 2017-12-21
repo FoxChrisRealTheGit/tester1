@@ -6,8 +6,8 @@ export default class Block1 extends Component {
     render() {
         return (
             <section>
-                <div className="black-box">
-               
+                <div>
+                    {this.props.children || <div></div>}
                 </div>
             </section>
         )
