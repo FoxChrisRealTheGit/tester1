@@ -1,28 +1,16 @@
 import React, { Component } from 'react';
-import './App.css';
+import { Link } from 'react-router-dom';
 
-import Container1 from '../src/Components/Containers/Containers';
-import Holder1 from './Components/Holders/Holders';
-import Block1 from './Components/Blocks/Blocks';
-
+import router from './Router'
 
 class App extends Component {
-  render() {
-    return (
-      <section>
-        <Container1>
-          <Holder1>
-            <Block1>
-              "I'm Block 1"
-              </Block1>
-            <Block1>
-              "I'm Block 2"
-              </Block1>
-          </Holder1>
-        </Container1>
-      </section>
-    );
-  }
+    render() {
+        return (
+            <section>
+                {router}
+            </section>
+        );
+    }
 }
 
 export default App;

@@ -1,0 +1,490 @@
+/*Containers */
+
+
+
+
+/* Start of Container 1 Styles */
+.container1{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container1-block1{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* End of Container 1 Styles */
+/* Start of Container 2 Styles */
+.container2{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container2-block1{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+}
+
+.container2-block2{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+}
+
+/* End of Container 2 Styles */
+/*Container 3 Styles */
+.container3{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container3-block1{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+}
+
+.container3-block2{
+    width: inherit;
+   display: flex;
+    margin: 10px auto;
+}
+
+/* End of Container 3 Styles */
+/* Start of Container 4 Styles */
+.container4{
+    width: 100%;
+}
+
+.container4-top{
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+}
+.container4-block1{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+}
+
+.container4-block3{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+}
+
+.container4-bottom{
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container4-block2{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+}
+
+.container4-block4{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+}
+
+/* End of Container 4 Styles */
+/* Start of Container 5 Styles */
+.container5{
+    width:100%;
+}
+
+.container5-top{
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container5-block1{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+}
+
+.container5-block2{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+}
+
+.container5-block3{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+}
+
+.container5-bottom{
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container5-block4{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+}
+
+.container5-block5{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+}
+
+.container5-block6{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+}
+
+/* End of Container 5 Styles */
+/* Start of Container 6 Styles */
+.container6{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.container6-left{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.container6-block1{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+}
+
+.container6-block2{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+}
+
+.container6-block3{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+}
+
+.container6-right{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.container6-block4{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+}
+
+.container6-block5{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+}
+
+.container6-block6{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+}
+
+/* End of Container 6 Styles */
+/* Start of Container 7 Styles */
+.container7{
+    width:100%;
+    display: flex;
+}
+
+.container7-left{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.container7-block1{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+}
+
+.container7-block2{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+}
+
+.container7-right{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.container7-block3{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+}
+
+/* End of Container 7 Styles */
+/* Start of Container 8 Styles */
+.container8{
+    width:100%;
+    display: flex;
+}
+
+.container8-left{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.container8-block1{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+}
+
+.container8-right{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.container8-block2{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+}
+
+.container8-block3{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+}
+
+/* End of Container 8 Styles */
+/* Start of Container 9 Styles */
+.container9{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container9-top{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.container9-block1{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+}
+
+.container9-bottom{
+    width: inherit;
+    display: flex;
+}
+
+.container9-block2{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+}
+
+.container9-block3{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+}
+
+/* End of Container 9 Styles */
+/* Start of Container 10 Styles */
+.container10{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.container10-top{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.container10-block1{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+}
+
+.container10-middle{
+    width: inherit;
+    display: flex;
+    margin: 0 auto;
+}
+
+.container10-block2{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+}
+
+.container10-bottom{
+    width: inherit;
+    display: flex;
+}
+
+.container10-block3{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+}
+
+.container10-block4{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+}
+/* End of Container 10 Styles */
+/* Start of Container 11 Styles */
+.container11{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container11-top{
+    width: inherit;
+    display: flex;
+}
+
+.container11-block1{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+}
+
+.container11-block2{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+}
+
+.container11-middle{
+    width: inherit;
+    display: flex;
+    margin: 0 auto;
+}
+
+.container11-block3{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+}
+
+.container11-bottom{
+    width: inherit;
+    display: flex;
+}
+
+.container11-block4{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+}
+
+.container11-block5{
+    width: inherit;
+    display: flex;
+    margin: 10px auto;
+}
+/* End of Container 11 Styles */
+/* Start of Container 12 Styles */
+.container12{
+    width:100vw;
+}
+
+/* End of Container 12 Styles */
+/* Start of Container 13 Styles */
+.container13{
+    width:100vw;
+}
+
+/* End of Container 13 Styles */
+/* Start Container 14 Styles */
+.container14{
+    width:100vw;
+}
+
+/* End of Container 14 Styles */
+/* Start of Container 15 Styles */
+.container15{
+    width:100vw;
+}
+
+/* End of Container 15 Styles */
+/* Start of Container 16 Styles */
+.container16{
+    width:100vw;
+}
+
+/* End of Container 16 Styles */
+/* Start of Container 17 Styles */
+.container17{
+    width:100vw;
+}
+
+/* End of Container 17 Styles */
+/* Start of Container 18 Styles */
+.container18{
+    width:100vw;
+}
+
+/* End of Container 18 Styles */
+/* Start of Container 19 Styles */
+.container19{
+    width:100vw;
+}
+
+/* End of Container 19 Styles */
+/* Start of Container 20 Styles */
+.container20{
+    width:100vw;
+}
+
+/* End of Container 20 Styles */

@@ -1,0 +1,1399 @@
+/* Holders */
+/*
+Holders Styles Overview
+*/
+
+/* Start of Holder 1 Styles */
+.holder1{
+    width: inherit;
+    display: flex;
+}
+
+.holder1-block1{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder1-block2{
+    display: flex;
+    margin: 10px auto;
+}
+
+/* End of Holder 1 Styles */
+/* Holder 2 Styles */
+.holder2{
+    width: inherit;
+    display: flex;
+}
+
+.holder2-block1{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder2-block2{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder2-block3{
+    display: flex;
+    margin: 10px auto;
+}
+
+/* End of Holder 2 Styles */
+/* Start of Holder 3 Styles */
+.holder3{
+    width: inherit;
+    display: flex;
+}
+
+.holder3-block1{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder3-block2{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder3-block3{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder3-block4{
+    display: flex;
+    margin: 10px auto;
+}
+
+/* End of Holder 3 Styles */
+/* Start of Holder 4 Styles */
+.holder4{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.holder4-block1{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder4-block2{
+    display: flex;
+    margin: 10px auto;
+}
+
+/* End of Holder 4 Styles */
+/* Start of Holder 5 Styles */
+.holder5{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.holder5-block1{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder5-block2{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder5-block3{
+    display: flex;
+    margin: 10px auto;
+}
+
+/* End of Holder 5 Styles */
+/* Start of Holder 6 Styles */
+.holder6{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.holder6-block1{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder6-block2{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder6-block3{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder6-block4{
+    display: flex;
+    margin: 10px auto;
+}
+
+/* End of Holder 6 styles */
+/* Start of Holder 7 Styles */
+.holder7{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.holder7-top{
+    width: inherit;
+    display: flex;
+}
+
+.holder7-block1{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder7-block3{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder7-bottom{
+    width: inherit;
+    display: flex;
+}
+
+.holder7-block2{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder7-block4{
+    display: flex;
+    margin: 10px auto;
+}
+
+/* End of Holder 7 Styles */
+/* Start of Holder 8 Styles */
+.holder8{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.holder8-top{
+    width: inherit;
+    display: flex;
+}
+
+.holder8-block1{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder8-block3{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder8-block5{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder8-bottom{
+    width: inherit;
+    display: flex;
+}
+
+.holder8-block2{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder8-block4{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder8-block6{
+    display: flex;
+    margin: 10px auto;
+}
+
+/* End of Holder 8 Styles */
+/* Start of Holder 9 Styles */
+.holder9{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.holder9-top{
+    width: inherit;
+    display: flex;
+}
+
+.holder9-block1{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder9-block3{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder9-block5{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder9-block7{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder9-bottom{
+    width: inherit;
+    display: flex;
+}
+
+.holder9-block2{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder9-block4{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder9-block6{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder9-block8{
+    display: flex;
+    margin: 10px auto;
+}
+
+/* End of Holder 9 Styles */
+/* Start of Holder 10 Styles */
+.holder10{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.holder10-top{
+    width: inherit;
+    display: flex;
+}
+
+.holder10-block1{
+    display: flex;
+    margin: 10px 70%;
+}
+
+.holder10-bottom{
+    width: inherit;
+    display: flex;
+}
+
+.holder10-block2{
+    display: flex;
+    margin: 10px 20%;
+}
+
+/* End of Holder 10 Styles */
+/* Start of Holder 11 Styles */
+.holder11{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.holder11-top{
+    width: inherit;
+    display: flex;
+}
+
+.holder11-block1{
+    display: flex;
+    margin: 10px 20%;
+}
+
+.holder11-bottom{
+    width: inherit;
+    display: flex;
+}
+
+.holder11-block2{
+    display: flex;
+    margin: 10px 70%;
+}
+
+/* End of Holder 11 Styles */
+/* Start of Holder 12 Styles */
+.holder12{
+    width: inherit;
+    display: flex;
+}
+
+.holder12-left{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.holder12-block1{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder12-block2{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder12-right{
+    width: inherit;
+    display: flex;
+}
+
+.holder12-block3{
+    display: flex;
+    margin: 10px auto;
+}
+
+/* End of Holder 12 Styles */
+/* Start of Holder 13 Styles */
+.holder13{
+    width: inherit;
+    display: flex;
+}
+
+.holder13-left{
+    width: inherit;
+    display: flex;
+}
+
+.holder13-block1{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder13-right{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.holder13-block2{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder13-block3{
+    display: flex;
+    margin: 10px auto;
+}
+
+/* End of Holder 13 Styles */
+/* Start of Holder 14 Styles */
+.holder14{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.holder14-top{
+    width: inherit;
+    display: flex;
+}
+
+.holder14-block1{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder14-bottom{
+    width: inherit;
+    display: flex;
+}
+
+.holder14-block2{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder14-block3{
+    display: flex;
+    margin: 10px auto;
+}
+
+/* End of Holder 14 Styles */
+/* Start of Holder 15 Styles */
+.holder15{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.holder15-top{
+    width: inherit;
+    display: flex;
+}
+
+.holder15-block1{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder15-block2{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder15-bottom{
+    width: inherit;
+    display: flex;
+}
+
+.holder15-block3{
+    display: flex;
+    margin: 10px auto;
+}
+
+/* End of Holder 15 Styles */
+/* Start of Holder 16 Styles */
+.holder16{
+    width: inherit;
+    display: flex;
+}
+
+.holder16-left{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.holder16-block1{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder16-block2{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder16-block3{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder16-right{
+    width: inherit;
+    display: flex;
+}
+
+.holder16-block4{
+    display: flex;
+    margin: 10px auto;
+}
+
+/* End of Holder 16 Styles */
+/* Start of Holder 17 Styles */
+.holder17{
+    width: inherit;
+    display: flex;
+}
+
+.holder17-left{
+    width: inherit;
+    display: flex;
+}
+
+.holder17-block1{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder17-right{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.holder17-block2{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder17-block3{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder17-block4{
+    display: flex;
+    margin: 10px auto;
+}
+
+/* End of Holder 17 Styles */
+/* Start of Holder 18 Styles */
+.holder18{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.holder18-top{
+    width: inherit;
+    display: flex;
+}
+
+.holder18-block1{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder18-block2{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder18-block3{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder18-bottom{
+    width: inherit;
+    display: flex;
+}
+
+.holder18-block4{
+    display: flex;
+    margin: 10px auto;
+}
+
+/* End of Holder 18 Styles */
+/* Start of Holder 19 Styles */
+.holder19{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.holder19-top{
+    width: inherit;
+    display: flex;
+}
+
+.holder19-block1{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder19-bottom{
+    width: inherit;
+    display: flex;
+}
+
+.holder19-block2{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder19-block3{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder19-block4{
+    display: flex;
+    margin: 10px auto;
+}
+
+/* End of Holder 19 Styles */
+/* Start of Holder 20 Styles */
+.holder20{
+    width: inherit;
+    display: flex;
+}
+
+.holder20-left{
+    width: inherit;
+    display: flex;
+}
+
+.holder20-block1{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder20-middle{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.holder20-block2{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder20-block3{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder20-right{
+    width: inherit;
+    display: flex;
+}
+
+.holder20-block4{
+    display: flex;
+    margin: 10px auto;
+}
+
+/* End of Holder 20 Styles */
+/* Start of Holder 21 Styles */
+.holder21{
+    width: inherit;
+    display: flex;
+}
+
+.holder21-left{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.holder21-block1{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder21-block2{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder21-middle{
+    width: inherit;
+    display: flex;
+}
+
+.holder21-block3{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder21-right{
+    width: inherit;
+    display: flex;
+}
+
+.holder21-block4{
+    display: flex;
+    margin: 10px auto;
+}
+
+/* End of Holder 21 Styles */
+/* Start of Holder 22 Styles */
+.holder22{
+    width: inherit;
+    display: flex;
+}
+
+.holder22-left{
+    width: inherit;
+    display: flex;
+}
+
+.holder22-block1{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder22-middle{
+    width: inherit;
+    display: flex;
+}
+
+.holder22-block2{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder22-right{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.holder22-block3{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder22-block4{
+    display: flex;
+    margin: 10px auto;
+}
+
+/* End of Holder 22 Styles */
+/* Start of Holder 23 Styles */
+.holder23{
+    width: inherit;
+    display: flex;
+}
+
+.holder23-left{
+    width: inherit;
+    display: flex;
+}
+
+.holder23-block1{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder23-right{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.holder23-right-top{
+    width: inherit;
+    display: flex;
+}
+
+.holder23-block2{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder23-right-bottom{
+    width: inherit;
+    display: flex;
+}
+
+.holder23-block3{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder23-block4{
+    display: flex;
+    margin: 10px auto;
+}
+
+/* End of Holder 23 Styles */
+/* Start of Holder 24 Styles */
+.holder24{
+    width: inherit;
+    display: flex;
+}
+
+.holder24-left{
+    width: inherit;
+    display: flex;
+}
+
+.holder24-block1{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder24-right{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.holder24-right-top{
+    width: inherit;
+    display: flex;
+}
+
+.holder24-block2{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder24-block3{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder24-right-bottom{
+    width: inherit;
+    display: flex;
+}
+
+.holder24-block4{
+    display: flex;
+    margin: 10px auto;
+}
+
+/* End of Holder 24 Styles */
+/* Start of Holder 25 Styles */
+.holder25{
+    width: inherit;
+    display: flex;
+}
+
+.holder25-left{
+    width: inherit;
+    display: flex;
+}
+
+.holder25-block1{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder25-right{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.holder25-right-top{
+    width: inherit;
+    display: flex;
+}
+
+.holder25-block2{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder25-block3{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder25-block4{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder25-right-bottom{
+    width: inherit;
+    display: flex;
+}
+
+.holder25-block5{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder25-block6{
+    display: flex;
+    margin: 10px auto;
+}
+
+/* End of Holder 25 Styles */
+/* Start of Holder 26 Styles */
+.holder26{
+    width: inherit;
+    display: flex;
+}
+
+.holder26-left{
+    width: inherit;
+    display: flex;
+}
+
+.holder26-block1{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder26-right{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.holder26-right-top{
+    width: inherit;
+    display: flex;
+}
+
+.holder26-block2{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder26-block3{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder26-block4{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder26-right-bottom{
+    width: inherit;
+    display: flex;
+}
+
+.holder26-block5{
+    display: flex;
+    margin: 10px auto;
+}
+
+/* End of Holder 26 Styles */
+/* Start of Holder 27 Styles */
+.holder27{
+    width: inherit;
+    display: flex;
+}
+
+.holder27-left{
+    width: inherit;
+    display: flex;
+}
+
+.holder27-block1{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder27-right{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.holder27-right-top{
+    width: inherit;
+    display: flex;
+}
+
+.holder27-block2{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder27-right-bottom{
+    width: inherit;
+    display: flex;
+}
+
+.holder27-block3{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder27-block4{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder27-block5{
+    display: flex;
+    margin: 10px auto;
+}
+
+/* End of Holder 27 Styles */
+/* Start of Holder 28 Styles */
+.holder28{
+    width: inherit;
+    display: flex;
+}
+
+.holder28-left{
+    width: inherit;
+    display: flex;
+}
+
+.holder28-block1{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder28-right{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.holder28-right-top{
+    width: inherit;
+    display: flex;
+}
+
+.holder28-block2{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder28-block3{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder28-right-bottom{
+    width: inherit;
+    display: flex;
+}
+
+.holder28-block4{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder28-block5{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder28-block6{
+    display: flex;
+    margin: 10px auto;
+}
+
+/* End of Holder 28 Styles */
+/* Start of Holder 29 Styles */
+.holder29{
+    width: inherit;
+    display: flex;
+}
+
+.holder29-left{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.holder29-left-top{
+    display: flex;
+}
+
+.holder29-block1{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder29-block2{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder29-block3{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder29-left-bottom{
+    display: flex;
+}
+
+.holder29-block4{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder29-block5{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder29-right{
+    width: inherit;
+    display: flex;
+}
+
+.holder29-block6{
+    display: flex;
+    margin: 10px auto;
+}
+
+/* End of Holder 29 Styles */
+/* Start of Holder 30 Styles */
+.holder30{
+    width: inherit;
+    display: flex;
+}
+
+.holder30-left{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.holder30-left-top{
+    width: inherit;
+    display: flex;
+}
+
+.holder30-block1{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder30-block2{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder30-block3{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder30-left-bottom{
+    width: inherit;
+    display: flex;
+}
+
+.holder30-block4{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder30-right{
+    width: inherit;
+    display: flex;
+}
+
+.holder30-block5{
+    display: flex;
+    margin: 10px auto;
+}
+
+/* End of Holder 30 Styles */
+/* Start of Holder 31 Styles */
+.holder31{
+    width: inherit;
+    display: flex;
+}
+
+.holder31-left{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.holder31-left-top{
+    width: inherit;
+    display: flex;
+}
+
+.holder31-block1{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder31-left-bottom{
+    width: inherit;
+    display: flex;
+}
+
+.holder31-block2{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder31-block3{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder31-block4{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder31-right{
+    width: inherit;
+    display: flex;
+}
+
+.holder31-block5{
+    display: flex;
+    margin: 10px auto;
+}
+
+/* End of Holder 31 Styles */
+/* Start of Holder 32 Styles */
+.holder32{
+    width: inherit;
+    display: flex;
+}
+
+.holder32-left{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.holder32-left-top{
+    width: inherit;
+    display: flex;
+}
+
+.holder32-block1{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder32-block2{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder32-left-bottom{
+    width: inherit;
+    display: flex;
+}
+
+.holder32-block3{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder32-block4{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder32-block5{
+    display: flex;
+    margin: 10px auto;
+}
+
+.holder32-right{
+    width: inherit;
+    display: flex;
+}
+
+.holder32-block6{
+    display: flex;
+    margin: 10px auto;
+}
+
+/* End of Holder 34 Styles */
+/* Start of Holder 33 Styles */
+.holder33{
+    width: inherit;
+}
+
+/* End of Holder 33 Styles */
+/* Start of Holder 34 Styles */
+.holder34{
+    width: inherit;
+}
+
+/* End of Holder 34 Styles */
+/* Start of Holder 35 Styles */
+.holder35{
+    width: inherit;
+}
+
+/* End of Holder 35 Styles */
+/* Start of Holder 36 Styles */
+.holder36{
+    width: inherit;
+}
+
+/* End of Holder 36 Styles */
+/* Start of Holder 37 Styles */
+.holder37{
+    width: inherit;
+}
+
+/* End of Holder 37 Styles */
+/* Start of Holder 38 Styles */
+.holder38{
+    width: inherit;
+}
+
+/* End of Holder 38 Styles */
+/* Start of Holder 39 Styles */
+.holder39{
+    width: inherit;
+}
+
+/* End of Holder 39 Styles */
+/* Start of Holder 40 Styles */
+.holder40{
+    width: inherit;
+}
+
+/* End of Holder 40 Styles */
+/* Start of Holder 41 Styles */
+.holder41{
+    width: inherit;
+}
+
+/* End of Holder 41 Styles */
+/* Start of Holder 42 Styles */
+.holder42{
+    width: inherit;
+}
+
+/* End of Holder 42 Styles */
+/* Start of Holder 43 Styles */
+.holder43{
+    width: inherit;
+}
+
+/* End of Holder 43 Styles */
+/* Start of Holder 44 Styles */
+.holder44{
+    width: inherit;
+}
+
+/* End of Holder 44 Styles */
+/* Start of Holder 45 Styles */
+.holder45{
+    width: inherit;
+}
+
+/* End of Holder 45 Styles */
+/* Start of Holder 46 Styles */
+.holder46{
+    width: inherit;
+}
+
+/* End of Holder 46 Styles */
+/* Start of Holder 47 Styles */
+.holder47{
+    width: inherit;
+}
+
+/* End of Holder 47 Styles */
+/* Start of Holder 48 Styles */
+.holder48{
+    width: inherit;
+}
+
+/* End of Holder 48 Styles */
+/* Start of Holder 49 Styles */
+.holder49{
+    width: inherit;
+}
+
+/* End of Holder 49 Styles */
+/* Start of Holder 50 Styles */
+.holder50{
+    width: inherit;
+}
+
+/* End of Holder 50 Styles */
