@@ -57,8 +57,48 @@ import ParagraphBlocksView from './Displays/Blocks/ParagraphBlocksView';
 //page sample views
 import SamplePagesMain from './Displays/Sample Pages/SamplePagesMain';
 
+import SampleAboutPage1 from './Displays/Sample Pages/AboutPage/SampleAboutPage1';
+import SampleAboutPage2 from './Displays/Sample Pages/AboutPage/SampleAboutPage2';
+
+import SampleBlogPost1 from './Displays/Sample Pages/Blog Post/SampleBlogPost1';
+import SampleBlogPost2 from './Displays/Sample Pages/Blog Post/SampleBlogPost2';
+
+import SampleContactPage1 from './Displays/Sample Pages/ContactPage/SampleContactPage1';
+import SampleContactPage2 from './Displays/Sample Pages/ContactPage/SampleContactPage2';
+
+import SampleHomePage1 from './Displays/Sample Pages/HomePage/SampleHomePage1';
+import SampleHomePage2 from './Displays/Sample Pages/HomePage/SampleHomePage2';
+
+import SampleProductPage1 from './Displays/Sample Pages/ProductPage/SampleProductPage1';
+import SampleProductPage2 from './Displays/Sample Pages/ProductPage/SampleProductsPage2';
+
 //template samples
 import TemplateSamplesMain from './Displays/Template Samples/TemplateSamplesMain';
+
+import AppShowcase1Main from './Displays/Template Samples/App Showcase/AppShowcase1/AppShowcase1Main';
+import AppShowcase2Main from './Displays/Template Samples/App Showcase/AppShowcase2/AppShowcase2Main';
+import AppShowcase3Main from './Displays/Template Samples/App Showcase/AppShowcase3/AppShowcase3Main';
+import AppShowcase4Main from './Displays/Template Samples/App Showcase/AppShowcase4/AppShowcase4Main';
+import AppShowcase5Main from './Displays/Template Samples/App Showcase/AppShowcase5/AppShowcase5Main';
+
+import Blog1Main from './Displays/Template Samples/Blogs/Blog1/Blog1Main';
+import Blog2Main from './Displays/Template Samples/Blogs/Blog2/Blog2Main';
+import Blog3Main from './Displays/Template Samples/Blogs/Blog3/Blog3Main';
+import Blog4Main from './Displays/Template Samples/Blogs/Blog4/Blog4Main';
+import Blog5Main from './Displays/Template Samples/Blogs/Blog5/Blog5Main';
+
+import ECommerce1Main from './Displays/Template Samples/ECommerce/ECommerce1/ECommerce1Main';
+import ECommerce2Main from './Displays/Template Samples/ECommerce/ECommerce2/ECommerce2Main';
+import ECommerce3Main from './Displays/Template Samples/ECommerce/ECommerce3/ECommerce3Main';
+import ECommerce4Main from './Displays/Template Samples/ECommerce/ECommerce4/ECommerce4Main';
+import ECommerce5Main from './Displays/Template Samples/ECommerce/ECommerce5/ECommerce5Main';
+
+import Portfolio1Main from './Displays/Template Samples/Portfolio/Portfolio1/Portfolio1Main';
+import Portfolio2Main from './Displays/Template Samples/Portfolio/Portfolio2/Portfolio2Main';
+import Portfolio3Main from './Displays/Template Samples/Portfolio/Portfolio3/Portfolio3Main';
+import Portfolio4Main from './Displays/Template Samples/Portfolio/Portfolio4/Portfolio4Main';
+import Portfolio5Main from './Displays/Template Samples/Portfolio/Portfolio5/Portfolio5Main';
+
 
 //End Router Imports
 //Begin Router
@@ -111,8 +151,42 @@ export default (
         <Route path="/blocks/paragraphviews" component={ParagraphBlocksView}></Route>
 
         <Route exact path="/samplepages" component={SamplePagesMain}></Route>
+        <Route path="/samplepages/about1" component={SampleAboutPage1}></Route>
+        <Route path="/samplepages/about2" component={SampleAboutPage2}></Route>
+        <Route path="/samplepages/blog1" component={SampleBlogPost1}></Route>
+        <Route path="/samplepages/blog2" component={SampleBlogPost2}></Route>
+        <Route path="/samplepages/contact1" component={SampleContactPage1}></Route>
+        <Route path="/samplepages/contact2" component={SampleContactPage2}></Route>
+        <Route path="/samplepages/home1" component={SampleHomePage1}></Route>
+        <Route path="/samplepages/home2" component={SampleHomePage2}></Route>
+        <Route path="samplepages/product1" component={SampleProductPage1}></Route>
+        <Route path="/samplepages/product2" component={SampleProductPage2}></Route>
         
         <Route exact path="/templatesamples" component={TemplateSamplesMain}></Route>
+
+        <Route path="/templatesamples/appshowcase1" component={AppShowcase1Main}></Route>
+        <Route path="/templatesamples/appshowcase2" component={AppShowcase2Main}></Route>
+        <Route path="/templatesamples/appshowcase3" component={AppShowcase3Main}></Route>
+        <Route path="/templatesamples/appshowcase4" component={AppShowcase4Main}></Route>
+        <Route path="/templatesamples/appshowcase5" component={AppShowcase5Main}></Route>
+
+        <Route path="/templatesamples/blog1" component={Blog1Main}></Route>
+        <Route path="/templatesamples/blog2" component={Blog2Main}></Route>
+        <Route path="/templatesamples/blog3" component={Blog3Main}></Route>
+        <Route path="/templatesamples/blog4" component={Blog4Main}></Route>
+        <Route path="/templatesamples/blog5" component={Blog5Main}></Route>
+
+        <Route path="/templatesamples/ecommerce1" component={ECommerce1Main}></Route>
+        <Route path="/templatesamples/ecommerce2" component={ECommerce2Main}></Route>
+        <Route path="/templatesamples/ecommerce3" component={ECommerce3Main}></Route>
+        <Route path="/templatesamples/ecommerce4" component={ECommerce4Main}></Route>
+        <Route path="/templatesamples/ecommerce5" component={ECommerce5Main}></Route>
+
+        <Route path="/templatesamples/portfolio1" component={Portfolio1Main}></Route>
+        <Route path="/templatesamples/portfolio2" component={Portfolio2Main}></Route>
+        <Route path="/templatesamples/portfolio3" component={Portfolio3Main}></Route>
+        <Route path="/templatesamples/portfolio4" component={Portfolio4Main}></Route>
+        <Route path="/templatesamples/portfolio5" component={Portfolio5Main}></Route>
 
     </Switch>
 )

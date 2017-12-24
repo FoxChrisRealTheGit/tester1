@@ -9,6 +9,7 @@ import {
     Block2,
     HeadingTest1,
     HorizontalTestBlock1,
+    HeadingTest2
 } from '../../Component/Blocks';
 
 export default class SamplesPagesMain extends Component{
@@ -25,12 +26,12 @@ export default class SamplesPagesMain extends Component{
             <HorizontalTestBlock1 />
             <Container1>
                 <Holder1>
-                    <HeadingTest1>
-                        home1
-                    </HeadingTest1>
-                    <HeadingTest1>
-                        home2
-                    </HeadingTest1>
+                    <HeadingTest2>
+                        <Link to="/samplepages/home1">home1</Link>
+                    </HeadingTest2>
+                    <HeadingTest2>
+                        <Link to="/samplepages/home2">Home2</Link>
+                    </HeadingTest2>
                 </Holder1>
             </Container1>
             <HorizontalTestBlock1 />
@@ -43,12 +44,12 @@ export default class SamplesPagesMain extends Component{
             <HorizontalTestBlock1 />
             <Container1>
                 <Holder1>
-                    <HeadingTest1>
-                        about1
-                    </HeadingTest1>
-                    <HeadingTest1>
-                        about2
-                    </HeadingTest1>
+                    <HeadingTest2>
+                        <Link to="/samplepages/about1">about1</Link>
+                    </HeadingTest2>
+                    <HeadingTest2>
+                        <Link to="/samplepages/about2">about2</Link>
+                    </HeadingTest2>
                 </Holder1>
             </Container1>
             <HorizontalTestBlock1 />
@@ -61,12 +62,12 @@ export default class SamplesPagesMain extends Component{
             <HorizontalTestBlock1 />
             <Container1>
                 <Holder1>
-                    <HeadingTest1>
-                        blog1
-                    </HeadingTest1>
-                    <HeadingTest1>
-                        blog2
-                    </HeadingTest1>
+                    <HeadingTest2>
+                        <Link to="/samplepages/blog1">blog1</Link>
+                    </HeadingTest2>
+                    <HeadingTest2>
+                        <Link to="/samplepages/blog2">blog2</Link>
+                    </HeadingTest2>
                 </Holder1>
             </Container1>
             <HorizontalTestBlock1 />
@@ -79,12 +80,12 @@ export default class SamplesPagesMain extends Component{
             <HorizontalTestBlock1 />
             <Container1>
                 <Holder1>
-                    <HeadingTest1>
-                        contact1
-                    </HeadingTest1>
-                    <HeadingTest1>
-                        contact2
-                    </HeadingTest1>
+                    <HeadingTest2>
+                        <Link to="/samplepages/contact1">contact1</Link>
+                    </HeadingTest2>
+                    <HeadingTest2>
+                        <Link to="/samplepages/contact2">contact2</Link>
+                    </HeadingTest2>
                 </Holder1>
             </Container1>
             <HorizontalTestBlock1 />
@@ -97,12 +98,12 @@ export default class SamplesPagesMain extends Component{
             <HorizontalTestBlock1 />
             <Container1>
                 <Holder1>
-                    <HeadingTest1>
-                        product1
-                    </HeadingTest1>
-                    <HeadingTest1>
-                        product2
-                    </HeadingTest1>
+                    <HeadingTest2>
+                        <Link to="samplepages/product1">product1</Link>
+                    </HeadingTest2>
+                    <HeadingTest2>
+                        <Link to="samplepages/product2">product2</Link>
+                    </HeadingTest2>
                 </Holder1>
             </Container1>
             <HorizontalTestBlock1 />

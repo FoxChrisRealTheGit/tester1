@@ -109,3 +109,29 @@ export class NavbarTest1 extends Component {
 }
 
 /* End of navbar test */
+/*End of Test Section */
+/* Start of Real Section */
+/*
+Blocks Description and use
+*/
+/* Start of Heading Blocks */
+
+
+/* End of Heading Blocks */
+/* Start of NavBar Blocks */
+
+
+/* End of NavBar Blocks */
+/* Start of Paragraph Blocks */
+
+
+/* End of Paragraph Blocks */
+/* Start of Image Blocks */
+
+
+/* End of Image Blocks */
+/* Start of Button Blocks */
+
+
+
+/* End of Button Blocks */
