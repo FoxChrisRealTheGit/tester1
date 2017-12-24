@@ -1,6 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router';
 
+//Begin Router Imports
 //import all main components
 import ContainerView from './Displays/ContainerView';
 import HolderView from './Displays/HolderViews';
@@ -44,6 +45,23 @@ import Holder30View from './Displays/Holders/21-30/Holder30View';
 import Holder31View from './Displays/Holders/31-40/Holder31View';
 import Holder32View from './Displays/Holders/31-40/Holder32View';
 
+//41-50
+
+//Block Views
+import ButtonBlocksView from './Displays/Blocks/ButtonBlocksView';
+import HeadingBlocksView from './Displays/Blocks/HeadingBlocksView';
+import ImageBlocksView from './Displays/Blocks/ImageBlocksView';
+import NavBarBlocksView from './Displays/Blocks/NavBarBlocksView';
+import ParagraphBlocksView from './Displays/Blocks/ParagraphBlocksView';
+
+//page sample views
+import SamplePagesMain from './Displays/Sample Pages/SamplePagesMain';
+
+//template samples
+import TemplateSamplesMain from './Displays/Template Samples/TemplateSamplesMain';
+
+//End Router Imports
+//Begin Router
 export default (
     <Switch>
         <Route exact path="/" component={ContainerView}></Route>
@@ -85,6 +103,16 @@ export default (
         <Route path="/holders/holder31" component={Holder31View}></Route>
         <Route path="/holders/holder32" component={Holder32View}></Route>
 
-        <Route path="/blocks" component={BlockView}></Route>
+        <Route exact path="/blocks" component={BlockView}></Route>
+        <Route path="/blocks/buttonviews" component={ButtonBlocksView}></Route>
+        <Route path="/blocks/headingviews" component={HeadingBlocksView}></Route>
+        <Route path="/blocks/imageviews" component={ImageBlocksView}></Route>
+        <Route path="/blocks/navbarviews" component={NavBarBlocksView}></Route>
+        <Route path="/blocks/paragraphviews" component={ParagraphBlocksView}></Route>
+
+        <Route exact path="/samplepages" component={SamplePagesMain}></Route>
+        
+        <Route exact path="/templatesamples" component={TemplateSamplesMain}></Route>
+
     </Switch>
 )
