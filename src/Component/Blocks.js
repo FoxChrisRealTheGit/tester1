@@ -94,8 +94,8 @@ export class HorizontalTestBlock2 extends Component {
 /* Start of navbar test */
 export class NavbarTest1 extends Component {
     render() {
-        const children = React.Children.toArray(this.props.children)
-        const navBar = children.map((x, i)=> {
+        const childs = React.Children.toArray(this.props.children)
+        const navBar = childs.map((x, i)=> {
             return <li key={i}>{x}</li>
         })
         return (
@@ -115,8 +115,174 @@ export class NavbarTest1 extends Component {
 Blocks Description and use
 */
 /* Start of Heading Blocks */
-
-
+/* Start of h1 Main Heading */
+ export class MainHeading1 extends Component {
+     render(){
+        const childs = React.Children.toArray(this.props.children)
+         return(
+             <h1 className="mainHeading1">{childs[0]}</h1>
+         )
+     }
+ }
+ export class MainHeading2 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <h1 className="mainHeading2">{childs[0]}</h1>
+        )
+    }
+}
+export class MainHeading3 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <h1 className="mainHeading3">{childs[0]}</h1>
+        )
+    }
+}
+export class MainHeading4 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <h1 className="mainHeading4">{childs[0]}</h1>
+        )
+    }
+}
+export class MainHeading5 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <h1 className="mainHeading5">{childs[0]}</h1>
+        )
+    }
+}
+/* End of Main Heading */
+/* Start of h2 Heading */ 
+export class Heading1 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <h2 className="heading1">{childs[0]}</h2>
+        )
+    }
+}
+export class Heading2 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <h2 className="heading2">{childs[0]}</h2>
+        )
+    }
+}
+export class Heading3 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <h2 className="heading3">{childs[0]}</h2>
+        )
+    }
+}
+export class Heading4 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <h2 className="heading4">{childs[0]}</h2>
+        )
+    }
+}
+export class Heading5 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <h2 className="heading5">{childs[0]}</h2>
+        )
+    }
+}
+/* End of h2 Headings */
+/* Start of SubHeading */
+export class SubHeading1 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <h3 className="subHeading1">{childs[0]}</h3>
+        )
+    }
+}
+export class SubHeading2 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <h3 className="subHeading2">{childs[0]}</h3>
+        )
+    }
+}
+export class SubHeading3 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <h3 className="subHeading3">{childs[0]}</h3>
+        )
+    }
+}
+export class SubHeading4 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <h3 className="subHeading4">{childs[0]}</h3>
+        )
+    }
+}
+export class SubHeading5 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <h3 className="subHeading5">{childs[0]}</h3>
+        )
+    }
+}
+/* End of SubHeading */
+/* Start of Secondary SubHeading */
+export class SecondarySubHeading1 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <h4 className="secondarySubHeading1">{childs[0]}</h4>
+        )
+    }
+}
+export class SecondarySubHeading2 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <h4 className="secondarySubHeading2">{childs[0]}</h4>
+        )
+    }
+}
+export class SecondarySubHeading3 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <h4 className="secondarySubHeading3">{childs[0]}</h4>
+        )
+    }
+}
+export class SecondarySubHeading4 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <h4 className="secondarySubHeading4">{childs[0]}</h4>
+        )
+    }
+}
+export class SecondarySubHeading5 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <h4 className="secondarySubHeading5">{childs[0]}</h4>
+        )
+    }
+}
+/* End of Secondary SubHeading */
 /* End of Heading Blocks */
 /* Start of NavBar Blocks */
 
