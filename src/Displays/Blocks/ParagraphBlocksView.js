@@ -11,11 +11,11 @@ import {
     Paragraph3,
     Paragraph4,
     Paragraph5,
-    pullQuote1,
-    pullQuote2,
-    pullQuote3,
-    pullQuote4,
-    pullQuote5
+    PullQuote1,
+    PullQuote2,
+    PullQuote3,
+    PullQuote4,
+    PullQuote5
 } from '../../Component/Blocks';
 
 export default class ParagraphBlocksView extends Component {
