@@ -4,7 +4,12 @@
 
 /* Blank Blocks */
 /* Block1 */
-
+.block1{
+    width: 10vw;
+    height: 10vh;
+    margin: 0 auto;
+    background: black;
+}
 /* Block 2 */
 .block2{
     width: 100px;
@@ -58,26 +63,56 @@
 /* Start of Main Heading 1 Styles */
 .mainHeading1{
     width: inherit;
+    font-family: sans-serif;
+    font-size: 6.854em;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /* End of Main Heading 1 Styles */
 /* Start of Main Heading 2 Styles */
 .mainHeading2{
     width: inherit;
+    font-family: serif;
+    font-size: 6.854em;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /* End of Main Heading 2 Styles */
 /* Start of Main Heading 3 Styles */
 .mainHeading3{
     width: inherit;
+    font-family: fantasy;
+    font-size: 6.854em;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /* End of Main Heading 3 Styles */
 /* Start of Main Heading 4 Styles */
 .mainHeading4{
     width: inherit;
+    font-size: 6.854em;
+    font-family: cursive;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /* End of Main Heading 4 Styles */
 /* Start of Main Heading 5 Styles */
 .mainHeading5{
     width: inherit;
+    font-size: 6.854em;
+    font-family: monospace;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /* End of Main Heading 5 Styles */
 /* End of Main Headings */
@@ -85,26 +120,57 @@
 /* Start of Heading 1 Styles */
 .heading1{
     width: inherit;
+    font-family: sans-serif;
+    font-size: 4.236em;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /* End of Heading 1 Styles */
 /* Start of Heading 2 Styles */
 .heading2{
     width: inherit;
+    font-family: serif;
+    font-size: 4.236em;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /* End of Heading 2 Styles */
 /* Start of Heading 3 Styles */
 .heading3{
     width: inherit;
+    font-family: fantasy;
+    font-size: 4.236em;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /* End of Heading 3 Styles */
 /* Start of Heading 4 Styles */
 .heading4{
     width: inherit;
+    font-family: cursive;
+    font-size: 4.236em;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /* End of Heading 4 Styles */
 /* Start of Heading 5 Styles */
 .heading5{
     width: inherit;
+    font-family: monospace;
+    font-size: 4.236em;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 /* End of Heading 5 Styles */
 /* End of Headings */
@@ -112,26 +178,57 @@
 /* Start of SubHeading 1 Styles */
 .subHeading1{
     width:inherit;
+    font-family: sans-serif;
+    color: lightgray;
+    font-size: 2.618em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /* End of SubHeading 1 Styles */
 /* Start of SubHeading 2 Styles */
 .subHeading2{
     width:inherit;
+    font-family: serif;
+    color: lightgray;
+    font-size: 2.618em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /* End of SubHeading 2 Styles */
 /* Start of SubHeading 3 Styles */
 .subHeading3{
     width:inherit;
+    font-family: fantasy;
+    color: lightgray;
+    font-size: 2.618em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /* End of SubHeading 3 Styles */
 /* Start of SubHeading 4 Styles */
 .subHeading4{
     width:inherit;
+
+    color: lightgray;
+    font-family: cursive;
+    font-size: 2.618em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /* End of SubHeading 4 Styles */
 /* Start of SubHeading 5 Styles */
 .subHeading5{
     width:inherit;
+    color: lightgray;
+    font-family: monospace;
+    font-size: 2.618em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /* End of SubHeading 5 Styles */
 /* End of SubHeadings Styles */
@@ -139,26 +236,53 @@
 /* Start of Secondary SubHeading 1 */
 .secondarySubHeading1{
     width: inherit;
+    font-family: sans-serif;
+    font-size: 1.618em;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /* End of Secondary SubHeading 1 */
 /* Start of Secondary SubHeading 2 */
 .secondarySubHeading2{
     width: inherit;
+    font-family: serif;
+    font-size: 1.618em;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /* End of Secondary SubHeading 2 */
 /* Start of Secondary SubHeading 3 */
 .secondarySubHeading3{
     width: inherit;
+    font-family: fantasy;
+    font-size: 1.618em;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /* End of Secondary SubHeading 3 */
 /* Start of Secondary SubHeading 4 */
 .secondarySubHeading4{
     width: inherit;
+    font-family: cursive;
+    font-size: 1.618em;
+    font-weight: 300;
 }
 /* End of Secondary SubHeading 4 */
 /* Start of Secondary SubHeading 5 */
 .secondarySubHeading5{
     width: inherit;
+    font-family: monospace;
+    font-size: 1.618em;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /* End of Secondary SubHeading 5 */
 /* End of Secondary Styles */
@@ -252,26 +376,49 @@
 /* Start of paragraph 1 */
 .paragraph1{
     width: inherit;
+    padding: 10px 10%;
+    line-height: 1.5em;
+    font-family: sans-serif;
+    font-size: 1em;
 }
 /* End of paragraph 1 */
 /* Start of paragraph 2 */
 .paragraph2{
     width: inherit;
+    padding: 10px 10%;
+    line-height: 1.5em;
+    font-family: serif;
+    font-size: 1em;
 }
 /* End of paragraph 2 */
 /* Start of paragraph 3 */
 .paragraph3{
     width: inherit;
+    padding: 10px 10%;
+    line-height: 1.68em;
+    font-family: inherit;
+    font-variant: small-caps;
+    font-size: 1.333em;
+    color: lightgray;
 }
 /* End of paragraph 3 */
 /* Start of paragraph 4 */
 .paragraph4{
     width: inherit;
+    padding: 10px 10%;
+    line-height: 1.333em;
+    font-family: cursive;
+    font-variant: small-caps;
+    font-size: 1.5em;
 }
 /* End of paragraph 4 */
 /* Start of paragraph 5 */
 .paragraph5{
     width: inherit;
+    padding: 10px 10%;
+    line-height: 1.333em;
+    font-family: monospace;
+    font-size: 1.44em;
 }
 /* End of paragraph 5 */
 /* End of Basic Paragraph Styles */
@@ -279,26 +426,36 @@
 /* Start of Pull Quotes 1 */
 .pullQuote1{
     width: inherit;
+    font-family: sans-serif;
+    font-size: 1.333em;
 }
 /* End of Pull Quotes 1 */
 /* Start of Pull Quotes 2 */
 .pullQuote2{
     width: inherit;
+    font-family: serif;
+    font-size: 1.333em;
 }
 /* End of Pull Quotes 2 */
 /* Start of Pull Quotes 3 */
 .pullQuote3{
     width: inherit;
+    font-family: fantasy;
+    font-size: 1.333em;
 }
 /* End of Pull Quotes 3 */
 /* Start of Pull Quotes 4 */
 .pullQuote4{
     width: inherit;
+    font-family: cursive;
+    font-size: 1.333em;
 }
 /* End of Pull Quotes 4 */
 /* Start of Pull Quotes 5 */
 .pullQuote5{
     width: inherit;
+    font-family: monospace;
+    font-size: 1.333em;
 }
 /* End of Pull Quotes 5 */
 /* End of Pull Quotes */
@@ -306,26 +463,38 @@
 /* Start of Image Styles */
 /* Start of Circle Images Styles */
 .circleImage1{
-    width: inherit;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    display: flex;
+    margin: 0 auto;
 }
 .circleImage2{
-    width: inherit;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
 }
 /* End of Circle Images Styles */
 /* Start of Rounded Images Styles */
 .roundedImage1{
-    width: inherit;
+    width: 200px;
+    height: 200px;
+    border-radius: 30%;
 }
 .roundedImage2{
-    width: inherit;
+    width: 400px;
+    height: 400px;
+    border-radius: 30%
 }
 /* End of Rounded Images Styles */
 /* Start of Square Images Styles */
 .squareImage1{
-    width: inherit;
+    width: 100px;
+    height: 100px;
 }
 .squareImage2{
-    width: inherit;
+    width: 350px;
+    height: 350px;
 }
 /* End of Square Images Styles */
 /* End of Image Styles */

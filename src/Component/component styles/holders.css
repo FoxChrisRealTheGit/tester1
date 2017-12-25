@@ -7,14 +7,17 @@ Holders Styles Overview
 .holder1{
     width: inherit;
     display: flex;
+    justify-content: space-between;
 }
 
 .holder1-block1{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
 
 .holder1-block2{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
@@ -27,16 +30,19 @@ Holders Styles Overview
 }
 
 .holder2-block1{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
 
 .holder2-block2{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
 
 .holder2-block3{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
@@ -49,21 +55,25 @@ Holders Styles Overview
 }
 
 .holder3-block1{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
 
 .holder3-block2{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
 
 .holder3-block3{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
 
 .holder3-block4{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
@@ -77,11 +87,13 @@ Holders Styles Overview
 }
 
 .holder4-block1{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
 
 .holder4-block2{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
@@ -95,16 +107,19 @@ Holders Styles Overview
 }
 
 .holder5-block1{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
 
 .holder5-block2{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
 
 .holder5-block3{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
@@ -118,21 +133,25 @@ Holders Styles Overview
 }
 
 .holder6-block1{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
 
 .holder6-block2{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
 
 .holder6-block3{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
 
 .holder6-block4{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
@@ -151,11 +170,13 @@ Holders Styles Overview
 }
 
 .holder7-block1{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
 
 .holder7-block3{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
@@ -166,11 +187,13 @@ Holders Styles Overview
 }
 
 .holder7-block2{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
 
 .holder7-block4{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
@@ -189,16 +212,19 @@ Holders Styles Overview
 }
 
 .holder8-block1{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
 
 .holder8-block3{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
 
 .holder8-block5{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
@@ -209,16 +235,19 @@ Holders Styles Overview
 }
 
 .holder8-block2{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
 
 .holder8-block4{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
 
 .holder8-block6{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
@@ -237,21 +266,25 @@ Holders Styles Overview
 }
 
 .holder9-block1{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
 
 .holder9-block3{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
 
 .holder9-block5{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
 
 .holder9-block7{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
@@ -262,21 +295,25 @@ Holders Styles Overview
 }
 
 .holder9-block2{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
 
 .holder9-block4{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
 
 .holder9-block6{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
 
 .holder9-block8{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
@@ -295,6 +332,7 @@ Holders Styles Overview
 }
 
 .holder10-block1{
+    width: inherit;
     display: flex;
     margin: 10px 70%;
 }
@@ -305,6 +343,7 @@ Holders Styles Overview
 }
 
 .holder10-block2{
+    width: inherit;
     display: flex;
     margin: 10px 20%;
 }
@@ -323,6 +362,7 @@ Holders Styles Overview
 }
 
 .holder11-block1{
+    width: inherit;
     display: flex;
     margin: 10px 20%;
 }
@@ -333,6 +373,7 @@ Holders Styles Overview
 }
 
 .holder11-block2{
+    width: inherit;
     display: flex;
     margin: 10px 70%;
 }
@@ -351,11 +392,13 @@ Holders Styles Overview
 }
 
 .holder12-block1{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
 
 .holder12-block2{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
@@ -366,6 +409,7 @@ Holders Styles Overview
 }
 
 .holder12-block3{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
@@ -383,6 +427,7 @@ Holders Styles Overview
 }
 
 .holder13-block1{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
@@ -394,11 +439,13 @@ Holders Styles Overview
 }
 
 .holder13-block2{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
 
 .holder13-block3{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
@@ -417,6 +464,7 @@ Holders Styles Overview
 }
 
 .holder14-block1{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
@@ -427,11 +475,13 @@ Holders Styles Overview
 }
 
 .holder14-block2{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
 
 .holder14-block3{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
@@ -450,11 +500,13 @@ Holders Styles Overview
 }
 
 .holder15-block1{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
 
 .holder15-block2{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
@@ -465,6 +517,7 @@ Holders Styles Overview
 }
 
 .holder15-block3{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
@@ -483,16 +536,19 @@ Holders Styles Overview
 }
 
 .holder16-block1{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
 
 .holder16-block2{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
 
 .holder16-block3{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
@@ -503,6 +559,7 @@ Holders Styles Overview
 }
 
 .holder16-block4{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
@@ -520,6 +577,7 @@ Holders Styles Overview
 }
 
 .holder17-block1{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
@@ -531,16 +589,19 @@ Holders Styles Overview
 }
 
 .holder17-block2{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
 
 .holder17-block3{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
 
 .holder17-block4{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
@@ -559,16 +620,19 @@ Holders Styles Overview
 }
 
 .holder18-block1{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
 
 .holder18-block2{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
 
 .holder18-block3{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
@@ -579,6 +643,7 @@ Holders Styles Overview
 }
 
 .holder18-block4{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
@@ -597,6 +662,7 @@ Holders Styles Overview
 }
 
 .holder19-block1{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
@@ -607,16 +673,19 @@ Holders Styles Overview
 }
 
 .holder19-block2{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
 
 .holder19-block3{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }
 
 .holder19-block4{
+    width: inherit;
     display: flex;
     margin: 10px auto;
 }

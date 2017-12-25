@@ -17,7 +17,8 @@ Empty blocks overview
 export default class Block1 extends Component {
     render() {
         return (
-            <section>
+            <section className="block1">
+                <div />
             </section>
         )
     }
