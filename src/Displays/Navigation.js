@@ -1,17 +1,35 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Navigation from './Navigation';
 
-import { NavbarTest1 } from '../Component/Blocks';
+import { NavbarTest1, SquareImage2 } from '../Component/Blocks';
 
-export default function navigation() {
+import Container1 from '../Component/Containers';
+import { Holder5 } from '../Component/Holders';
+
+import { SubHeading3, Navbar1 } from '../Component/Blocks';
+
+import Logo from '../images/Logo/QuickFirstDraft.svg';
+
+export default function Navigation() {
     return (
-        <NavbarTest1>
-            <Link to="/">Containers</Link>
-            <Link to="/holders">Holders</Link>
-            <Link to="/blocks">Blocks</Link>
-            <Link to="/samplepages">Sample Pages</Link>
-            <Link to="/templatesamples">Template Samples</Link>
-        </NavbarTest1>
+        <header>
+            <Container1>
+                <Holder5>
+                    <SquareImage2>
+                        {Logo}
+                    </SquareImage2>
+                    <SubHeading3>
+                        Stylux
+                    </SubHeading3>
+                    <Navbar1>
+                        <Link to="/">containers</Link>
+                        <Link to="/holders">holders</Link>
+                        <Link to="/blocks">blocks</Link>
+                        <Link to="/samplepages">sample pages</Link>
+                        <Link to="/templatesamples">template samples</Link>
+                    </Navbar1>
+                </Holder5>
+            </Container1>
+        </header>
     )
 }

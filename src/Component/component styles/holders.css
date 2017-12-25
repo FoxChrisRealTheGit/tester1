@@ -110,18 +110,24 @@ Holders Styles Overview
     width: inherit;
     display: flex;
     margin: 10px auto;
+    flex-direction: column;
+    align-items: center;
 }
 
 .holder5-block2{
     width: inherit;
     display: flex;
     margin: 10px auto;
+    flex-direction: column;
+    align-items: center;
 }
 
 .holder5-block3{
     width: inherit;
     display: flex;
     margin: 10px auto;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* End of Holder 5 Styles */

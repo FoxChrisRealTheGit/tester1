@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router';
 
 //Begin Router Imports
 //import all main components
-import ContainerView from './Displays/ContainerView';
+import ContainerView from './Displays/ContainerViews/ContainerView';
 import HolderView from './Displays/HolderViews';
 import BlockView from './Displays/BlocksView';
 

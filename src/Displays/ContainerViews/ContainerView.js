@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Navigation from './Navigation';
+import Navigation from '../Navigation';
 
 import Container1,
 {
@@ -13,15 +13,12 @@ import Container1,
     Container9,
     Container10,
     Container11
-} from '../Component/Containers';
+} from '../../Component/Containers';
 import {
     Block2,
     HeadingTest1,
     HorizontalTestBlock1,
-} from '../Component/Blocks';
-
-
-import '../Styles/ownStyles.css';
+} from '../../Component/Blocks';
 
 export default class ContainerView extends Component {
     render() {

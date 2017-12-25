@@ -289,16 +289,16 @@ export class SecondarySubHeading5 extends Component {
 /* Start of NavBar Blocks */
 export class Navbar1 extends Component {
     render() {
-        const childs = React.Children.toArray(this.props.children.split(','))
+        const childs = React.Children.toArray(this.props.children)
         const navBar = childs.map((x, i)=> {
             return <li key={i}>{x}</li>
         })
         return (
-            <header className="navbar1">
+            <div className="navbar1">
                 <ul className="navbar1-navbar">
                     {navBar}
                 </ul>
-            </header>
+            </div>
         )
     }
 }

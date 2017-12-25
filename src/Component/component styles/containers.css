@@ -52,12 +52,16 @@
     width: inherit;
     display: flex;
     margin: 10px auto;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container3-block2{
     width: inherit;
    display: flex;
-    margin: 10px auto;
+   margin: 10px auto;
+   flex-direction: column;
+   align-items: center;
 }
 
 /* End of Container 3 Styles */
