@@ -6,7 +6,7 @@ import chrischillin from '../../images/Chris-hangingout.jpg';
 import Container1, { Container3 } from '../../Component/Containers';
 import {
     Heading1,
-    SubHeading2,
+    SubHeading4,
     HorizontalTestBlock1,
     CircleImage1,
     CircleImage2,
@@ -49,9 +49,9 @@ export default class ImageBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                         Circle Image 1
-                    </SubHeading2>
+                    </SubHeading4>
                     <CircleImage1>
                         {chrischillin}
                         Chris Hanging out
@@ -59,9 +59,9 @@ export default class ImageBlocksView extends Component {
                 </Container3>
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                         Circle Image 2
-                    </SubHeading2>
+                    </SubHeading4>
                     <CircleImage2>
                         {chrischillin}
                         Chris Hanging out
@@ -69,9 +69,9 @@ export default class ImageBlocksView extends Component {
                 </Container3>
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                         Circle Image 3
-                    </SubHeading2>
+                    </SubHeading4>
                     <CircleImage3>
                         {chrischillin}
                         Chris Hanging out
@@ -79,9 +79,9 @@ export default class ImageBlocksView extends Component {
                 </Container3>
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                         Circle Image 4
-                    </SubHeading2>
+                    </SubHeading4>
                     <CircleImage4>
                         {chrischillin}
                         Chris Hanging out
@@ -89,9 +89,9 @@ export default class ImageBlocksView extends Component {
                 </Container3>
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                         Circle Image 5
-                    </SubHeading2>
+                    </SubHeading4>
                     <CircleImage5>
                         {chrischillin}
                         Chris Hanging out
@@ -100,9 +100,9 @@ export default class ImageBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                         Rounded Image 1
-                    </SubHeading2>
+                    </SubHeading4>
                     <RoundedImage1>
                         {chrischillin}
                         Chris Hanging out
@@ -110,9 +110,9 @@ export default class ImageBlocksView extends Component {
                 </Container3>
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                         Rounded Image 2
-                    </SubHeading2>
+                    </SubHeading4>
                     <RoundedImage2>
                         {chrischillin}
                         Chris Hanging out
@@ -120,9 +120,9 @@ export default class ImageBlocksView extends Component {
                 </Container3>
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                         Rounded Image 3
-                    </SubHeading2>
+                    </SubHeading4>
                     <RoundedImage3>
                         {chrischillin}
                         Chris Hanging out
@@ -130,9 +130,9 @@ export default class ImageBlocksView extends Component {
                 </Container3>
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                         Rounded Image 4
-                    </SubHeading2>
+                    </SubHeading4>
                     <RoundedImage4>
                         {chrischillin}
                         Chris Hanging out
@@ -140,9 +140,9 @@ export default class ImageBlocksView extends Component {
                 </Container3>
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                         Rounded Image 5
-                    </SubHeading2>
+                    </SubHeading4>
                     <RoundedImage5>
                         {chrischillin}
                         Chris Hanging out
@@ -151,9 +151,9 @@ export default class ImageBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                         Square Image 1
-                    </SubHeading2>
+                    </SubHeading4>
                     <SquareImage1>
                         {chrischillin}
                         Chris Hanging out
@@ -161,18 +161,18 @@ export default class ImageBlocksView extends Component {
                 </Container3>
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                         Square Image 2
-                    </SubHeading2>
+                    </SubHeading4>
                     <SquareImage2>
                         {chrischillin}
                         Chris Hanging out
                     </SquareImage2>
                 </Container3>
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                         Square Image 3
-                    </SubHeading2>
+                    </SubHeading4>
                     <SquareImage3>
                         {chrischillin}
                         Chris Hanging out
@@ -180,9 +180,9 @@ export default class ImageBlocksView extends Component {
                 </Container3>
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                         Square Image 4
-                    </SubHeading2>
+                    </SubHeading4>
                     <SquareImage4>
                         {chrischillin}
                         Chris Hanging out
@@ -190,9 +190,9 @@ export default class ImageBlocksView extends Component {
                 </Container3>
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                         Square Image 5
-                    </SubHeading2>
+                    </SubHeading4>
                     <SquareImage5>
                         {chrischillin}
                         Chris Hanging out
@@ -201,9 +201,9 @@ export default class ImageBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                        Rounded Rectangle Image 1
-                    </SubHeading2>
+                    </SubHeading4>
                     <RoundedRectangleImage1>
                         {chrischillin}
                         Chris Hanging out
@@ -211,9 +211,9 @@ export default class ImageBlocksView extends Component {
                 </Container3>
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                        Rounded Rectangle Image 2
-                    </SubHeading2>
+                    </SubHeading4>
                     <RoundedRectangleImage2>
                         {chrischillin}
                         Chris Hanging out
@@ -221,9 +221,9 @@ export default class ImageBlocksView extends Component {
                 </Container3>
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                        Rounded Rectangle Image 3
-                    </SubHeading2>
+                    </SubHeading4>
                     <RoundedRectangleImage3>
                         {chrischillin}
                         Chris Hanging out
@@ -231,9 +231,9 @@ export default class ImageBlocksView extends Component {
                 </Container3>
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                        Rounded Rectangle Image 4
-                    </SubHeading2>
+                    </SubHeading4>
                     <RoundedRectangleImage4>
                         {chrischillin}
                         Chris Hanging out
@@ -241,9 +241,9 @@ export default class ImageBlocksView extends Component {
                 </Container3>
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                        Rounded Rectangle Image 5
-                    </SubHeading2>
+                    </SubHeading4>
                     <RoundedRectangleImage5>
                         {chrischillin}
                         Chris Hanging out
@@ -252,9 +252,9 @@ export default class ImageBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                        Rectangle Image 1
-                    </SubHeading2>
+                    </SubHeading4>
                     <RectangleImage1>
                         {chrischillin}
                         Chris Hanging out
@@ -262,9 +262,9 @@ export default class ImageBlocksView extends Component {
                 </Container3>
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                        Rectangle Image 2
-                    </SubHeading2>
+                    </SubHeading4>
                     <RectangleImage2>
                         {chrischillin}
                         Chris Hanging out
@@ -272,9 +272,9 @@ export default class ImageBlocksView extends Component {
                 </Container3>
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                        Rectangle Image 3
-                    </SubHeading2>
+                    </SubHeading4>
                     <RectangleImage3>
                         {chrischillin}
                         Chris Hanging out
@@ -282,9 +282,9 @@ export default class ImageBlocksView extends Component {
                 </Container3>
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                        Rectangle Image 4
-                    </SubHeading2>
+                    </SubHeading4>
                     <RectangleImage4>
                         {chrischillin}
                         Chris Hanging out
@@ -292,9 +292,9 @@ export default class ImageBlocksView extends Component {
                 </Container3>
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                        Rectangle Image 5
-                    </SubHeading2>
+                    </SubHeading4>
                     <RectangleImage5>
                         {chrischillin}
                         Chris Hanging out

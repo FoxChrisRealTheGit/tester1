@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Navigation from '../../Navigation';
 
-import { Block2, Heading1, SubHeading2, HorizontalTestBlock1 } from '../../../Component/Blocks';
+import { Block2, Heading1, SubHeading4, HorizontalTestBlock1 } from '../../../Component/Blocks';
 
 import { Holder11 } from '../../../Component/Holders';
 
@@ -32,9 +32,9 @@ export default class Holder11View extends Component {
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <SubHeading2>
+                    <SubHeading4>
                         container 1
-                    </SubHeading2>
+                    </SubHeading4>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
@@ -45,9 +45,9 @@ export default class Holder11View extends Component {
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <SubHeading2>
+                    <SubHeading4>
                         container 2
-                    </SubHeading2>
+                    </SubHeading4>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container2>
@@ -62,9 +62,9 @@ export default class Holder11View extends Component {
                 </Container2>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <SubHeading2>
+                    <SubHeading4>
                         container 3
-                     </SubHeading2>
+                     </SubHeading4>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container3>
@@ -79,9 +79,9 @@ export default class Holder11View extends Component {
                 </Container3>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <SubHeading2>
+                    <SubHeading4>
                         container 4
-                    </SubHeading2>
+                    </SubHeading4>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container4>
@@ -108,9 +108,9 @@ export default class Holder11View extends Component {
                 </Container4>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <SubHeading2>
+                    <SubHeading4>
                         container 5
-                    </SubHeading2>
+                    </SubHeading4>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container5>
@@ -141,9 +141,9 @@ export default class Holder11View extends Component {
                 </Container5>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <SubHeading2>
+                    <SubHeading4>
                         container 6
-                    </SubHeading2>
+                    </SubHeading4>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container6>
@@ -174,9 +174,9 @@ export default class Holder11View extends Component {
                 </Container6>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <SubHeading2>
+                    <SubHeading4>
                         container 7
-                    </SubHeading2>
+                    </SubHeading4>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container7>
@@ -195,9 +195,9 @@ export default class Holder11View extends Component {
                 </Container7>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <SubHeading2>
+                    <SubHeading4>
                         container 8
-                    </SubHeading2>
+                    </SubHeading4>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container8>
@@ -216,9 +216,9 @@ export default class Holder11View extends Component {
                 </Container8>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <SubHeading2>
+                    <SubHeading4>
                         container 9
-                    </SubHeading2>
+                    </SubHeading4>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container9>
@@ -237,9 +237,9 @@ export default class Holder11View extends Component {
                 </Container9>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <SubHeading2>
+                    <SubHeading4>
                         container 10
-                    </SubHeading2>
+                    </SubHeading4>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container10>
@@ -262,9 +262,9 @@ export default class Holder11View extends Component {
                 </Container10>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <SubHeading2>
+                    <SubHeading4>
                         container 11
-                    </SubHeading2>
+                    </SubHeading4>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container11>

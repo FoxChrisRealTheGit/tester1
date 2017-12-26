@@ -6,7 +6,7 @@ import { NavbarTest1, SquareImage2 } from '../Component/Blocks';
 import Container1 from '../Component/Containers';
 import { Holder5 } from '../Component/Holders';
 
-import { SubHeading3, Navbar1 } from '../Component/Blocks';
+import { SubHeading4, Navbar1 } from '../Component/Blocks';
 
 import Logo from '../images/Logo/QuickFirstDraft.svg';
 
@@ -20,9 +20,9 @@ export default function Navigation() {
                         {Logo}
                     </SquareImage2>
                     </Link>
-                    <SubHeading3>
+                    <SubHeading4>
                         Stylux
-                    </SubHeading3>
+                    </SubHeading4>
                     <Navbar1>
                         <Link to="/containers">containers</Link>
                         <Link to="/holders">holders</Link>

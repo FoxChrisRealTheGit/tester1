@@ -64,7 +64,7 @@
 .mainHeading1{
     width: inherit;
     font-family: sans-serif;
-    font-size: 6.854em;
+    font-size: 9.136em;
     font-weight: 900;
     display: flex;
     flex-direction: column;
@@ -74,8 +74,8 @@
 /* Start of Main Heading 2 Styles */
 .mainHeading2{
     width: inherit;
-    font-family: serif;
-    font-size: 6.854em;
+    font-family: sans-serif;
+    font-size: 7.613em;
     font-weight: 900;
     display: flex;
     flex-direction: column;
@@ -85,8 +85,8 @@
 /* Start of Main Heading 3 Styles */
 .mainHeading3{
     width: inherit;
-    font-family: fantasy;
-    font-size: 6.854em;
+    font-family: sans-serif;
+    font-size: 10.963em;
     font-weight: 900;
     display: flex;
     flex-direction: column;
@@ -96,8 +96,9 @@
 /* Start of Main Heading 4 Styles */
 .mainHeading4{
     width: inherit;
-    font-size: 6.854em;
-    font-family: cursive;
+    color: lightgray;
+    font-family: sans-serif;
+    font-size: 9.136em;
     font-weight: 900;
     display: flex;
     flex-direction: column;
@@ -107,21 +108,189 @@
 /* Start of Main Heading 5 Styles */
 .mainHeading5{
     width: inherit;
-    font-size: 6.854em;
-    font-family: monospace;
+    font-family: sans-serif;
+    font-size: 9.136em;
     font-weight: 900;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 /* End of Main Heading 5 Styles */
+/* Start of Main Heading 6 Styles */
+.mainHeading6{
+    width: inherit;
+    font-family: serif;
+    font-size: 9.136em;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Main Heading 6 Styles */
+/* Start of Main Heading 7 Styles */
+.mainHeading7{
+    width: inherit;
+    font-family: serif;
+    font-size: 7.613em;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Main Heading 7 Styles */
+/* Start of Main Heading 8 Styles */
+.mainHeading8{
+    width: inherit;
+    font-family: serif;
+    font-size: 10.963em;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Main Heading 8 Styles */
+/* Start of Main Heading 9 Styles */
+.mainHeading9{
+    width: inherit;
+    color: lightgray;
+    font-family: serif;
+    font-size: 9.136em;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Main Heading 9 Styles */
+/* Start of Main Heading 10 Styles */
+.mainHeading10{
+    width: inherit;
+    font-family: serif;
+    font-size: 9.136em;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Main Heading 10 Styles */
+/* Start of Main Heading 11 Styles */
+.mainHeading11{
+    width: inherit;
+    font-family: cursive;
+    font-size: 9.136em;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Main Heading 11 Styles */
+/* Start of Main Heading 12 Styles */
+.mainHeading12{
+    width: inherit;
+    font-family: cursive;
+    font-size: 7.613em;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Main Heading 12 Styles */
+/* Start of Main Heading 13 Styles */
+.mainHeading13{
+    width: inherit;
+    font-family: cursive;
+    font-size: 10.963em;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Main Heading 13 Styles */
+/* Start of Main Heading 14 Styles */
+.mainHeading14{
+    width: inherit;
+    color: lightgray;
+    font-family: cursive;
+    font-size: 9.136em;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Main Heading 14 Styles */
+/* Start of Main Heading 15 Styles */
+.mainHeading15{
+    width: inherit;
+    font-family: cursive;
+    font-size: 9.136em;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Main Heading 15 Styles */
+/* Start of Main Heading 16 Styles */
+.mainHeading16{
+    width: inherit;
+    font-family: monospace;
+    font-size: 9.136em;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Main Heading 16 Styles */
+/* Start of Main Heading 17 Styles */
+.mainHeading17{
+    width: inherit;
+    font-family: monospace;
+    font-size: 7.613em;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Main Heading 17 Styles */
+/* Start of Main Heading 18 Styles */
+.mainHeading18{
+    width: inherit;
+    font-family: monospace;
+    font-size: 10.963em;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Main Heading 18 Styles */
+/* Start of Main Heading 19 Styles */
+.mainHeading19{
+    width: inherit;
+    color: lightgray;
+    font-family: monospace;
+    font-size: 9.136em;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Main Heading 19 Styles */
+/* Start of Main Heading 20 Styles */
+.mainHeading20{
+    width: inherit;
+    font-family: monospace;
+    font-size: 9.136em;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Main Heading 20 Styles */
 /* End of Main Headings */
 /* Start of Headings */
 /* Start of Heading 1 Styles */
 .heading1{
     width: inherit;
     font-family: sans-serif;
-    font-size: 4.236em;
+    font-size: 5.646em;
     font-weight: 600;
     display: flex;
     flex-direction: column;
@@ -131,8 +300,8 @@
 /* Start of Heading 2 Styles */
 .heading2{
     width: inherit;
-    font-family: serif;
-    font-size: 4.236em;
+    font-family: sans-serif;
+    font-size: 4.705em;
     font-weight: 600;
     display: flex;
     flex-direction: column;
@@ -142,8 +311,8 @@
 /* Start of Heading 3 Styles */
 .heading3{
     width: inherit;
-    font-family: fantasy;
-    font-size: 4.236em;
+    font-family: sans-serif;
+    font-size: 6.775em;
     font-weight: 600;
     display: flex;
     flex-direction: column;
@@ -153,8 +322,9 @@
 /* Start of Heading 4 Styles */
 .heading4{
     width: inherit;
-    font-family: cursive;
-    font-size: 4.236em;
+    color: lightgray;
+    font-family: sans-serif;
+    font-size: 5.646em;
     font-weight: 600;
     display: flex;
     flex-direction: column;
@@ -164,8 +334,8 @@
 /* Start of Heading 5 Styles */
 .heading5{
     width: inherit;
-    font-family: monospace;
-    font-size: 4.236em;
+    font-family: sans-serif;
+    font-size: 5.646em;
     font-weight: 600;
     display: flex;
     flex-direction: column;
@@ -173,14 +343,181 @@
     
 }
 /* End of Heading 5 Styles */
+/* Start of Heading 6 Styles */
+.heading6{
+    width: inherit;
+    font-family: serif;
+    font-size: 5.646em;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Heading 6 Styles */
+/* Start of Heading 7 Styles */
+.heading7{
+    width: inherit;
+    font-family: serif;
+    font-size: 4.705em;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Heading 7 Styles */
+/* Start of Heading 8 Styles */
+.heading8{
+    width: inherit;
+    font-family: serif;
+    font-size: 6.775em;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Heading 8 Styles */
+/* Start of Heading 9 Styles */
+.heading9{
+    width: inherit;
+    color: lightgray;
+    font-family: serif;
+    font-size: 5.646em;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Heading 9 Styles */
+/* Start of Heading 10 Styles */
+.heading10{
+    width: inherit;
+    font-family: sans-serif;
+    font-size: 5.646em;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Heading 10 Styles */
+/* Start of Heading 11 Styles */
+.heading11{
+    width: inherit;
+    font-family: cursive;
+    font-size: 5.646em;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Heading 11 Styles */
+/* Start of Heading 12 Styles */
+.heading12{
+    width: inherit;
+    font-family: cursive;
+    font-size: 4.705em;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Heading 12 Styles */
+/* Start of Heading 13 Styles */
+.heading13{
+    width: inherit;
+    font-family: cursive;
+    font-size: 6.775em;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Heading 13 Styles */
+/* Start of Heading 14 Styles */
+.heading14{
+    width: inherit;
+    color: lightgray;
+    font-family: cursive;
+    font-size: 5.646em;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Heading 14 Styles */
+/* Start of Heading 15 Styles */
+.heading15{
+    width: inherit;
+    font-family: monospace;
+    font-size: 5.646em;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Heading 15 Styles */
+/* Start of Heading 16 Styles */
+.heading16{
+    width: inherit;
+    font-family: monospace;
+    font-size: 4.705em;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Heading 16 Styles */
+/* Start of Heading 17 Styles */
+.heading17{
+    width: inherit;
+    font-family: monospace;
+    font-size: 4.236em;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Heading 17 Styles */
+/* Start of Heading 18 Styles */
+.heading18{
+    width: inherit;
+    font-family: monospace;
+    font-size: 6.775em;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Heading 18 Styles */
+/* Start of Heading 19 Styles */
+.heading19{
+    width: inherit;
+    color: lightgray;
+    font-family: monospace;
+    font-size: 5.646em;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Heading 19 Styles */
+/* Start of Heading 20 Styles */
+.heading20{
+    width: inherit;
+    font-family: monospace;
+    font-size: 5.646em;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Heading 20 Styles */
 /* End of Headings */
 /* Start of SubHeadings Styles */
 /* Start of SubHeading 1 Styles */
 .subHeading1{
     width:inherit;
     font-family: sans-serif;
-    color: lightgray;
-    font-size: 2.618em;
+    font-size: 3.489em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -189,9 +526,8 @@
 /* Start of SubHeading 2 Styles */
 .subHeading2{
     width:inherit;
-    font-family: serif;
-    color: lightgray;
-    font-size: 2.618em;
+    font-family: sans-serif;
+    font-size: 2.9075em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -207,9 +543,8 @@
 /* Start of SubHeading 3 Styles */
 .subHeading3{
     width:inherit;
-    font-family: fantasy;
-    color: lightgray;
-    font-size: 2.618em;
+    font-family: sans-serif;
+    font-size: 4.187em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -218,10 +553,9 @@
 /* Start of SubHeading 4 Styles */
 .subHeading4{
     width:inherit;
-
     color: lightgray;
-    font-family: cursive;
-    font-size: 2.618em;
+    font-family: sans-serif;
+    font-size: 3.489em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -230,21 +564,279 @@
 /* Start of SubHeading 5 Styles */
 .subHeading5{
     width:inherit;
-    color: lightgray;
-    font-family: monospace;
-    font-size: 2.618em;
+    font-family: sans-serif;
+    font-size: 3.489em;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 /* End of SubHeading 5 Styles */
+/* Start of SubHeading 6 Styles */
+.subHeading6{
+    width:inherit;
+    font-family: serif;
+    font-size: 3.489em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subHeading6 a{
+    text-decoration: none;
+    color: lightgray;
+}
+.subHeading6 a:hover{
+    text-shadow: 1px 1px 3px black;
+}
+/* End of SubHeading 6 Styles */
+/* Start of SubHeading 7 Styles */
+.subHeading7{
+    width:inherit;
+    font-family: serif;
+    font-size: 2.9075em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subHeading7 a{
+    text-decoration: none;
+    color: lightgray;
+}
+.subHeading7 a:hover{
+    text-shadow: 1px 1px 3px black;
+}
+/* End of SubHeading 7 Styles */
+/* Start of SubHeading 8 Styles */
+.subHeading8{
+    width:inherit;
+    font-family: serif;
+    font-size: 4.187em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subHeading8 a{
+    text-decoration: none;
+    color: lightgray;
+}
+.subHeading8 a:hover{
+    text-shadow: 1px 1px 3px black;
+}
+/* End of SubHeading 8 Styles */
+/* Start of SubHeading 9 Styles */
+.subHeading9{
+    width:inherit;
+    color: lightgray;
+    font-family: serif;
+    font-size: 3.489em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subHeading9 a{
+    text-decoration: none;
+    color: lightgray;
+}
+.subHeading9 a:hover{
+    text-shadow: 1px 1px 3px black;
+}
+/* End of SubHeading 9 Styles */
+/* Start of SubHeading 10 Styles */
+.subHeading10{
+    width:inherit;
+    font-family: serif;
+    font-size: 3.489em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subHeading10 a{
+    text-decoration: none;
+    color: lightgray;
+}
+.subHeading10 a:hover{
+    text-shadow: 1px 1px 3px black;
+}
+/* End of SubHeading 10 Styles */
+/* Start of SubHeading 11 Styles */
+.subHeading11{
+    width:inherit;
+    font-family: cursive;
+    font-size: 3.489em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subHeading11 a{
+    text-decoration: none;
+    color: lightgray;
+}
+.subHeading11 a:hover{
+    text-shadow: 1px 1px 3px black;
+}
+/* End of SubHeading 11 Styles */
+/* Start of SubHeading 12 Styles */
+.subHeading12{
+    width:inherit;
+    font-family: cursive;
+    font-size: 2.9075em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subHeading12 a{
+    text-decoration: none;
+    color: lightgray;
+}
+.subHeading12 a:hover{
+    text-shadow: 1px 1px 3px black;
+}
+/* End of SubHeading 12 Styles */
+/* Start of SubHeading 13 Styles */
+.subHeading13{
+    width:inherit;
+    font-family: cursive;
+    font-size: 4.187em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subHeading13 a{
+    text-decoration: none;
+    color: lightgray;
+}
+.subHeading13 a:hover{
+    text-shadow: 1px 1px 3px black;
+}
+/* End of SubHeading 13 Styles */
+/* Start of SubHeading 14 Styles */
+.subHeading14{
+    width:inherit;
+    color: lightgray;
+    font-family: cursive;
+    font-size: 3.489em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subHeading14 a{
+    text-decoration: none;
+    color: lightgray;
+}
+.subHeading14 a:hover{
+    text-shadow: 1px 1px 3px black;
+}
+/* End of SubHeading 14 Styles */
+/* Start of SubHeading 15 Styles */
+.subHeading15{
+    width:inherit;
+    font-family: cursive;
+    font-size: 3.489em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subHeading15 a{
+    text-decoration: none;
+    color: lightgray;
+}
+.subHeading15 a:hover{
+    text-shadow: 1px 1px 3px black;
+}
+/* End of SubHeading 15 Styles */
+/* Start of SubHeading 16 Styles */
+.subHeading16{
+    width:inherit;
+    font-family: monospace;
+    font-size: 3.489em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subHeading16 a{
+    text-decoration: none;
+    color: lightgray;
+}
+.subHeading16 a:hover{
+    text-shadow: 1px 1px 3px black;
+}
+/* End of SubHeading 16 Styles */
+/* Start of SubHeading 17 Styles */
+.subHeading17{
+    width:inherit;
+    font-family: monospace;
+    font-size: 4.187em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subHeading17 a{
+    text-decoration: none;
+    color: lightgray;
+}
+.subHeading17 a:hover{
+    text-shadow: 1px 1px 3px black;
+}
+/* End of SubHeading 17 Styles */
+/* Start of SubHeading 18 Styles */
+.subHeading18{
+    width:inherit;
+    font-family: serif;
+    color: lightgray;
+    font-size: 2.618em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subHeading18 a{
+    text-decoration: none;
+    color: lightgray;
+}
+.subHeading18 a:hover{
+    text-shadow: 1px 1px 3px black;
+}
+/* End of SubHeading 18 Styles */
+/* Start of SubHeading 19 Styles */
+.subHeading19{
+    width:inherit;
+    color: lightgray;
+    font-family: monospace;
+    font-size: 3.489em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subHeading19 a{
+    text-decoration: none;
+    color: lightgray;
+}
+.subHeading19 a:hover{
+    text-shadow: 1px 1px 3px black;
+}
+/* End of SubHeading 19 Styles */
+/* Start of SubHeading 20 Styles */
+.subHeading20{
+    width:inherit;
+    font-family: monospace;
+    font-size: 3.489em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subHeading20 a{
+    text-decoration: none;
+    color: lightgray;
+}
+.subHeading20 a:hover{
+    text-shadow: 1px 1px 3px black;
+}
+/* End of SubHeading 20 Styles */
 /* End of SubHeadings Styles */
 /* Start of Secondary SubHeading Styles */
 /* Start of Secondary SubHeading 1 */
 .secondarySubHeading1{
     width: inherit;
     font-family: sans-serif;
-    font-size: 1.618em;
+    font-size: 2.157em;
     font-weight: 300;
     display: flex;
     flex-direction: column;
@@ -254,8 +846,8 @@
 /* Start of Secondary SubHeading 2 */
 .secondarySubHeading2{
     width: inherit;
-    font-family: serif;
-    font-size: 1.618em;
+    font-family: sans-serif;
+    font-size: 1.7975em;
     font-weight: 300;
     display: flex;
     flex-direction: column;
@@ -265,8 +857,8 @@
 /* Start of Secondary SubHeading 3 */
 .secondarySubHeading3{
     width: inherit;
-    font-family: fantasy;
-    font-size: 1.618em;
+    font-family: sans-serif;
+    font-size: 2.588em;
     font-weight: 300;
     display: flex;
     flex-direction: column;
@@ -276,8 +868,9 @@
 /* Start of Secondary SubHeading 4 */
 .secondarySubHeading4{
     width: inherit;
-    font-family: cursive;
-    font-size: 1.618em;
+    color: lightgray;
+    font-family: sans-serif;
+    font-size: 2.157em;
     font-weight: 300;
     display: flex;
     flex-direction: column;
@@ -287,14 +880,182 @@
 /* Start of Secondary SubHeading 5 */
 .secondarySubHeading5{
     width: inherit;
-    font-family: monospace;
-    font-size: 1.618em;
+    font-family: sans-serif;
+    font-size: 2.157em;
     font-weight: 300;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 /* End of Secondary SubHeading 5 */
+/* Start of Secondary SubHeading 6 */
+.secondarySubHeading6{
+    width: inherit;
+    font-family: serif;
+    font-size: 2.157em;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Secondary SubHeading 6 */
+/* Start of Secondary SubHeading 7 */
+.secondarySubHeading7{
+    width: inherit;
+    font-family: serif;
+    font-size: 1.7975em;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Secondary SubHeading 7 */
+/* Start of Secondary SubHeading 8 */
+.secondarySubHeading8{
+    width: inherit;
+    font-family: serif;
+    font-size: 2.588em;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Secondary SubHeading 8 */
+/* Start of Secondary SubHeading 9 */
+.secondarySubHeading9{
+    width: inherit;
+    color: lightgray;
+    font-family: serif;
+    font-size: 2.157em;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Secondary SubHeading 9 */
+/* Start of Secondary SubHeading 10 */
+.secondarySubHeading10{
+    width: inherit;
+    font-family: serif;
+    font-size: 2.157em;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Secondary SubHeading 10 */
+/* Start of Secondary SubHeading 11 */
+.secondarySubHeading11{
+    width: inherit;
+    font-family: cursive;
+    font-size: 2.157em;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Secondary SubHeading 11 */
+/* Start of Secondary SubHeading 12 */
+.secondarySubHeading12{
+    width: inherit;
+    font-family: cursive;
+    font-size: 1.7975em;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Secondary SubHeading 12 */
+/* Start of Secondary SubHeading 13 */
+.secondarySubHeading13{
+    width: inherit;
+    font-family: cursive;
+    font-size: 2.588em;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Secondary SubHeading 13 */
+/* Start of Secondary SubHeading 14 */
+.secondarySubHeading14{
+    width: inherit;
+    color: lightgray;
+    font-family: cursive;
+    font-size: 2.157em;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Secondary SubHeading 14 */
+/* Start of Secondary SubHeading 15 */
+.secondarySubHeading15{
+    width: inherit;
+    font-family: cursive;
+    font-size: 2.157em;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Secondary SubHeading 15 */
+/* Start of Secondary SubHeading 16 */
+.secondarySubHeading16{
+    width: inherit;
+    font-family: monospace;
+    font-size: 2.157em;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Secondary SubHeading 16 */
+/* Start of Secondary SubHeading 17 */
+.secondarySubHeading17{
+    width: inherit;
+    font-family: monospace;
+    font-size: 1.7975em;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Secondary SubHeading 17 */
+/* Start of Secondary SubHeading 18 */
+.secondarySubHeading18{
+    width: inherit;
+    font-family: monospace;
+    font-size: 2.588em;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Secondary SubHeading 18 */
+/* Start of Secondary SubHeading 19 */
+.secondarySubHeading19{
+    width: inherit;
+    color: lightgray;
+    font-family: monospace;
+    font-size: 2.157em;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Secondary SubHeading 19 */
+/* Start of Secondary SubHeading 20 */
+.secondarySubHeading20{
+    width: inherit;
+    font-family: monospace;
+    font-size: 2.157em;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* End of Secondary SubHeading 20 */
 /* End of Secondary Styles */
 /* Start of NavBar Styles */
 /* Start of NavBar Styles */

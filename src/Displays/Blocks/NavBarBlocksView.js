@@ -6,7 +6,7 @@ import Container1, { Container3 } from '../../Component/Containers';
 import {
     Heading1,
     HorizontalTestBlock1,
-    SubHeading2,
+    SubHeading4,
     Navbar1,
     Navbar2,
     Navbar3,
@@ -33,9 +33,9 @@ export default class NavBarBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                         Navbar1
-                    </SubHeading2>
+                    </SubHeading4>
                     <Navbar1>
                         <Link to="/blocks/navbarviews">item1</Link>
                         <Link to="/blocks/navbarviews">item2</Link>
@@ -46,9 +46,9 @@ export default class NavBarBlocksView extends Component {
                 </Container3>
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                         Navbar2
-                    </SubHeading2>
+                    </SubHeading4>
                     <Navbar2>
                         <Link to="/blocks/navbarviews">item1</Link>
                         <Link to="/blocks/navbarviews">item2</Link>
@@ -59,9 +59,9 @@ export default class NavBarBlocksView extends Component {
                 </Container3>
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                         Navbar3
-                    </SubHeading2>
+                    </SubHeading4>
                     <Navbar3>
                         <Link to="/blocks/navbarviews">item1</Link>
                         <Link to="/blocks/navbarviews">item2</Link>
@@ -72,9 +72,9 @@ export default class NavBarBlocksView extends Component {
                 </Container3>
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                         Navbar4
-                    </SubHeading2>
+                    </SubHeading4>
                     <Navbar4>
                         <Link to="/blocks/navbarviews">item1</Link>
                         <Link to="/blocks/navbarviews">item2</Link>
@@ -85,9 +85,9 @@ export default class NavBarBlocksView extends Component {
                 </Container3>
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                         Navbar5
-                    </SubHeading2>
+                    </SubHeading4>
                     <Navbar5>
                         <Link to="/blocks/navbarviews">item1</Link>
                         <Link to="/blocks/navbarviews">item2</Link>
@@ -106,9 +106,9 @@ export default class NavBarBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                         Sub Navbar1
-                    </SubHeading2>
+                    </SubHeading4>
                     <SubNavbar1>
                         <Link to="/blocks/navbarviews">item1</Link>
                         <Link to="/blocks/navbarviews">item2</Link>
@@ -119,9 +119,9 @@ export default class NavBarBlocksView extends Component {
                 </Container3>
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                         Sub Navbar2
-                    </SubHeading2>
+                    </SubHeading4>
                     <SubNavbar2>
                         <Link to="/blocks/navbarviews">item1</Link>
                         <Link to="/blocks/navbarviews">item2</Link>
@@ -132,9 +132,9 @@ export default class NavBarBlocksView extends Component {
                 </Container3>
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                         Sub Navbar3
-                    </SubHeading2>
+                    </SubHeading4>
                     <SubNavbar3>
                         <Link to="/blocks/navbarviews">item1</Link>
                         <Link to="/blocks/navbarviews">item2</Link>
@@ -145,9 +145,9 @@ export default class NavBarBlocksView extends Component {
                 </Container3>
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                         Sub Navbar4
-                    </SubHeading2>
+                    </SubHeading4>
                     <SubNavbar4>
                         <Link to="/blocks/navbarviews">item1</Link>
                         <Link to="/blocks/navbarviews">item2</Link>
@@ -158,9 +158,9 @@ export default class NavBarBlocksView extends Component {
                 </Container3>
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                         Sub Navbar5
-                    </SubHeading2>
+                    </SubHeading4>
                     <SubNavbar5>
                         <Link to="/blocks/navbarviews">item1</Link>
                         <Link to="/blocks/navbarviews">item2</Link>
@@ -178,37 +178,37 @@ export default class NavBarBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                         Brand1
-                    </SubHeading2>
+                    </SubHeading4>
 
                 </Container3>
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                         Brand2
-                    </SubHeading2>
+                    </SubHeading4>
 
                 </Container3>
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                         Brand3
-                    </SubHeading2>
+                    </SubHeading4>
 
                 </Container3>
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                         Brand4
-                    </SubHeading2>
+                    </SubHeading4>
 
                 </Container3>
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <SubHeading2>
+                    <SubHeading4>
                         Brand5
-                    </SubHeading2>
+                    </SubHeading4>
 
                 </Container3>
             </section>
