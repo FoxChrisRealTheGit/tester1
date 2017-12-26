@@ -5,7 +5,6 @@ import { Holder5 } from '../../Component/Holders';
 import Container1, { Container3 } from '../../Component/Containers';
 
 import {
-    HeadingTest1,
     HorizontalTestBlock1,
     MainHeading1,
     MainHeading2,
@@ -36,9 +35,9 @@ export default class HeadingBlocksView extends Component {
                 <Navigation />
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <HeadingTest1>
+                    <SubHeading2>
                         main headings
-                </HeadingTest1>
+                    </SubHeading2>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container3>
@@ -65,9 +64,9 @@ export default class HeadingBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <HeadingTest1>
+                    <SubHeading2>
                         heading
-                </HeadingTest1>
+                    </SubHeading2>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container3>
@@ -94,9 +93,9 @@ export default class HeadingBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <HeadingTest1>
+                    <SubHeading2>
                         subheadings
-                </HeadingTest1>
+                    </SubHeading2>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container3>
@@ -123,9 +122,9 @@ export default class HeadingBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <HeadingTest1>
+                    <SubHeading2>
                         secondary subheadings
-                </HeadingTest1>
+                    </SubHeading2>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container3>

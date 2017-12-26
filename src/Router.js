@@ -3,7 +3,11 @@ import { Switch, Route } from 'react-router';
 
 //Begin Router Imports
 //import all main components
-import ContainerView from './Displays/ContainerViews/ContainerView';
+import LandingPage from './Displays/LandingPage';
+import ContainerViewMain from './Displays/ContainerViewMain';
+import UnstyledContainerView from './Displays/ContainerViews/ContainerView';
+import StyledContainerView from './Displays/ContainerViews/PreBuiltContainers';
+
 import HolderView from './Displays/HolderViews';
 import BlockView from './Displays/BlocksView';
 
@@ -104,7 +108,12 @@ import Portfolio5Main from './Displays/Template Samples/Portfolio/Portfolio5/Por
 //Begin Router
 export default (
     <Switch>
-        <Route exact path="/" component={ContainerView}></Route>
+        <Route exact path="/" component={LandingPage}></Route>
+
+        <Route exact path="/containers" component={ContainerViewMain}></Route>
+        <Route path="/containers/styled" component={StyledContainerView}></Route>
+        <Route path="/containers/unstyled" component={UnstyledContainerView}></Route>
+
         <Route exact path="/holders" component={HolderView}></Route>
 
         <Route path="/holders/holder1" component={Holder1View}></Route>

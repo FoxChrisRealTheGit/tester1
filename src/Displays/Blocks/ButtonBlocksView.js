@@ -3,8 +3,7 @@ import Navigation from '../Navigation';
 
 import Container1 from '../../Component/Containers';
 import {
-    HeadingTest1,
-    HeadingTest2,
+    Heading1,
     HorizontalTestBlock1,
     FlatButton1,
     FlatButton2,
@@ -21,9 +20,9 @@ export default class ButtonBlocksView extends Component {
                 <Navigation />
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <HeadingTest1>
+                    <Heading1>
                         Buttons
-                    </HeadingTest1>
+                    </Heading1>
                 </Container1>
                 <HorizontalTestBlock1 />        
                 <HorizontalTestBlock1 />

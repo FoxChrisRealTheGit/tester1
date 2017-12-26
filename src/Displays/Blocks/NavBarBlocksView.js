@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import Navigation from '../Navigation';
+import { Link } from 'react-router-dom';
 
-import Container1 from '../../Component/Containers';
+import Container1, { Container3 } from '../../Component/Containers';
 import {
-    HeadingTest1,
+    Heading1,
     HorizontalTestBlock1,
+    SubHeading2,
     Navbar1,
     Navbar2,
     Navbar3,
@@ -24,120 +26,191 @@ export default class NavBarBlocksView extends Component {
                 <Navigation />
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <HeadingTest1>
+                    <Heading1>
                         Navbars
-                    </HeadingTest1>
+                    </Heading1>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
-                <Container1>
+                <Container3>
+                    <SubHeading2>
+                        Navbar1
+                    </SubHeading2>
                     <Navbar1>
-                        item1,
-                        item2,
-                        item3,
-                        item4,
-                        item5
+                        <Link to="/blocks/navbarviews">item1</Link>
+                        <Link to="/blocks/navbarviews">item2</Link>
+                        <Link to="/blocks/navbarviews">item3</Link>
+                        <Link to="/blocks/navbarviews">item4</Link>
+                        <Link to="/blocks/navbarviews">item5</Link>
                     </Navbar1>
-                </Container1>
+                </Container3>
                 <HorizontalTestBlock1 />
-                <Container1>
+                <Container3>
+                    <SubHeading2>
+                        Navbar2
+                    </SubHeading2>
                     <Navbar2>
-                        item1,
-                        item2,
-                        item3,
-                        item4,
-                        item5
+                        <Link to="/blocks/navbarviews">item1</Link>
+                        <Link to="/blocks/navbarviews">item2</Link>
+                        <Link to="/blocks/navbarviews">item3</Link>
+                        <Link to="/blocks/navbarviews">item4</Link>
+                        <Link to="/blocks/navbarviews">item5</Link>
                     </Navbar2>
-                </Container1>
+                </Container3>
                 <HorizontalTestBlock1 />
-                <Container1>
+                <Container3>
+                    <SubHeading2>
+                        Navbar3
+                    </SubHeading2>
                     <Navbar3>
-                        item1,
-                        item2,
-                        item3,
-                        item4,
-                        item5
+                        <Link to="/blocks/navbarviews">item1</Link>
+                        <Link to="/blocks/navbarviews">item2</Link>
+                        <Link to="/blocks/navbarviews">item3</Link>
+                        <Link to="/blocks/navbarviews">item4</Link>
+                        <Link to="/blocks/navbarviews">item5</Link>
                     </Navbar3>
-                </Container1>
+                </Container3>
                 <HorizontalTestBlock1 />
-                <Container1>
+                <Container3>
+                    <SubHeading2>
+                        Navbar4
+                    </SubHeading2>
                     <Navbar4>
-                        item1,
-                        item2,
-                        item3,
-                        item4,
-                        item5
+                        <Link to="/blocks/navbarviews">item1</Link>
+                        <Link to="/blocks/navbarviews">item2</Link>
+                        <Link to="/blocks/navbarviews">item3</Link>
+                        <Link to="/blocks/navbarviews">item4</Link>
+                        <Link to="/blocks/navbarviews">item5</Link>
                     </Navbar4>
-                </Container1>
+                </Container3>
                 <HorizontalTestBlock1 />
-                <Container1>
+                <Container3>
+                    <SubHeading2>
+                        Navbar5
+                    </SubHeading2>
                     <Navbar5>
-                        item1,
-                        item2,
-                        item3,
-                        item4,
-                        item5
+                        <Link to="/blocks/navbarviews">item1</Link>
+                        <Link to="/blocks/navbarviews">item2</Link>
+                        <Link to="/blocks/navbarviews">item3</Link>
+                        <Link to="/blocks/navbarviews">item4</Link>
+                        <Link to="/blocks/navbarviews">item5</Link>
                     </Navbar5>
-                </Container1>
+                </Container3>
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <HeadingTest1>
+                    <Heading1>
                         Sub Navbars
-                    </HeadingTest1>
+                    </Heading1>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
-                <Container1>
+                <Container3>
+                    <SubHeading2>
+                        Sub Navbar1
+                    </SubHeading2>
                     <SubNavbar1>
-                        item1,
-                        item2,
-                        item3,
-                        item4,
-                        item5
+                        <Link to="/blocks/navbarviews">item1</Link>
+                        <Link to="/blocks/navbarviews">item2</Link>
+                        <Link to="/blocks/navbarviews">item3</Link>
+                        <Link to="/blocks/navbarviews">item4</Link>
+                        <Link to="/blocks/navbarviews">item5</Link>
                     </SubNavbar1>
-                </Container1>
+                </Container3>
                 <HorizontalTestBlock1 />
-                <Container1>
+                <Container3>
+                    <SubHeading2>
+                        Sub Navbar2
+                    </SubHeading2>
                     <SubNavbar2>
-                        item1,
-                        item2,
-                        item3,
-                        item4,
-                        item5
+                        <Link to="/blocks/navbarviews">item1</Link>
+                        <Link to="/blocks/navbarviews">item2</Link>
+                        <Link to="/blocks/navbarviews">item3</Link>
+                        <Link to="/blocks/navbarviews">item4</Link>
+                        <Link to="/blocks/navbarviews">item5</Link>
                     </SubNavbar2>
-                </Container1>
+                </Container3>
                 <HorizontalTestBlock1 />
-                <Container1>
+                <Container3>
+                    <SubHeading2>
+                        Sub Navbar3
+                    </SubHeading2>
                     <SubNavbar3>
-                        item1,
-                        item2,
-                        item3,
-                        item4,
-                        item5
+                        <Link to="/blocks/navbarviews">item1</Link>
+                        <Link to="/blocks/navbarviews">item2</Link>
+                        <Link to="/blocks/navbarviews">item3</Link>
+                        <Link to="/blocks/navbarviews">item4</Link>
+                        <Link to="/blocks/navbarviews">item5</Link>
                     </SubNavbar3>
-                </Container1>
+                </Container3>
                 <HorizontalTestBlock1 />
-                <Container1>
+                <Container3>
+                    <SubHeading2>
+                        Sub Navbar4
+                    </SubHeading2>
                     <SubNavbar4>
-                        item1,
-                        item2,
-                        item3,
-                        item4,
-                        item5
+                        <Link to="/blocks/navbarviews">item1</Link>
+                        <Link to="/blocks/navbarviews">item2</Link>
+                        <Link to="/blocks/navbarviews">item3</Link>
+                        <Link to="/blocks/navbarviews">item4</Link>
+                        <Link to="/blocks/navbarviews">item5</Link>
                     </SubNavbar4>
-                </Container1>
+                </Container3>
+                <HorizontalTestBlock1 />
+                <Container3>
+                    <SubHeading2>
+                        Sub Navbar5
+                    </SubHeading2>
+                    <SubNavbar5>
+                        <Link to="/blocks/navbarviews">item1</Link>
+                        <Link to="/blocks/navbarviews">item2</Link>
+                        <Link to="/blocks/navbarviews">item3</Link>
+                        <Link to="/blocks/navbarviews">item4</Link>
+                        <Link to="/blocks/navbarviews">item5</Link>
+                    </SubNavbar5>
+                </Container3>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <SubNavbar5>
-                        item1,
-                        item2,
-                        item3,
-                        item4,
-                        item5
-                    </SubNavbar5>
+                    <Heading1>
+                        Brand Stuff
+                    </Heading1>
                 </Container1>
                 <HorizontalTestBlock1 />
+                <HorizontalTestBlock1 />
+                <Container3>
+                    <SubHeading2>
+                        Brand1
+                    </SubHeading2>
+
+                </Container3>
+                <HorizontalTestBlock1 />
+                <Container3>
+                    <SubHeading2>
+                        Brand2
+                    </SubHeading2>
+
+                </Container3>
+                <HorizontalTestBlock1 />
+                <Container3>
+                    <SubHeading2>
+                        Brand3
+                    </SubHeading2>
+
+                </Container3>
+                <HorizontalTestBlock1 />
+                <Container3>
+                    <SubHeading2>
+                        Brand4
+                    </SubHeading2>
+
+                </Container3>
+                <HorizontalTestBlock1 />
+                <Container3>
+                    <SubHeading2>
+                        Brand5
+                    </SubHeading2>
+
+                </Container3>
             </section>
         )
     }

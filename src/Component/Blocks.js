@@ -304,7 +304,7 @@ export class Navbar1 extends Component {
 }
 export class Navbar2 extends Component {
     render() {
-        const childs = React.Children.toArray(this.props.children.split(','))
+        const childs = React.Children.toArray(this.props.children)
         const navBar = childs.map((x, i)=> {
             return <li key={i}>{x}</li>
         })
@@ -319,7 +319,7 @@ export class Navbar2 extends Component {
 }
 export class Navbar3 extends Component {
     render() {
-        const childs = React.Children.toArray(this.props.children.split(','))
+        const childs = React.Children.toArray(this.props.children)
         const navBar = childs.map((x, i)=> {
             return <li key={i}>{x}</li>
         })
@@ -334,7 +334,7 @@ export class Navbar3 extends Component {
 }
 export class Navbar4 extends Component {
     render() {
-        const childs = React.Children.toArray(this.props.children.split(','))
+        const childs = React.Children.toArray(this.props.children)
         const navBar = childs.map((x, i)=> {
             return <li key={i}>{x}</li>
         })
@@ -349,7 +349,7 @@ export class Navbar4 extends Component {
 }
 export class Navbar5 extends Component {
     render() {
-        const childs = React.Children.toArray(this.props.children.split(','))
+        const childs = React.Children.toArray(this.props.children)
         const navBar = childs.map((x, i)=> {
             return <li key={i}>{x}</li>
         })
@@ -366,7 +366,7 @@ export class Navbar5 extends Component {
 /* Start of Sub NavBar Blocks */
 export class SubNavbar1 extends Component {
     render() {
-        const childs = React.Children.toArray(this.props.children.split(','))
+        const childs = React.Children.toArray(this.props.children)
         const navBar = childs.map((x, i)=> {
             return <li key={i}>{x}</li>
         })
@@ -381,7 +381,7 @@ export class SubNavbar1 extends Component {
 }
 export class SubNavbar2 extends Component {
     render() {
-        const childs = React.Children.toArray(this.props.children.split(','))
+        const childs = React.Children.toArray(this.props.children)
         const navBar = childs.map((x, i)=> {
             return <li key={i}>{x}</li>
         })
@@ -396,7 +396,7 @@ export class SubNavbar2 extends Component {
 }
 export class SubNavbar3 extends Component {
     render() {
-        const childs = React.Children.toArray(this.props.children.split(','))
+        const childs = React.Children.toArray(this.props.children)
         const navBar = childs.map((x, i)=> {
             return <li key={i}>{x}</li>
         })
@@ -411,7 +411,7 @@ export class SubNavbar3 extends Component {
 }
 export class SubNavbar4 extends Component {
     render() {
-        const childs = React.Children.toArray(this.props.children.split(','))
+        const childs = React.Children.toArray(this.props.children)
         const navBar = childs.map((x, i)=> {
             return <li key={i}>{x}</li>
         })
@@ -426,7 +426,7 @@ export class SubNavbar4 extends Component {
 }
 export class SubNavbar5 extends Component {
     render() {
-        const childs = React.Children.toArray(this.props.children.split(','))
+        const childs = React.Children.toArray(this.props.children)
         const navBar = childs.map((x, i)=> {
             return <li key={i}>{x}</li>
         })

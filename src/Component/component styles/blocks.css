@@ -196,6 +196,13 @@
     flex-direction: column;
     align-items: center;
 }
+.subHeading2 a{
+    text-decoration: none;
+    color: lightgray;
+}
+.subHeading2 a:hover{
+    text-shadow: 1px 1px 3px black;
+}
 /* End of SubHeading 2 Styles */
 /* Start of SubHeading 3 Styles */
 .subHeading3{
@@ -318,18 +325,51 @@
 /* End of NavBar 1 */
 /* Start of NavBar 2 */
 .navbar2{
-    width: inherit;
+    width:inherit;
+    height: 100px;
+    display: flex;
 }
 .navbar2-navbar{
     width: inherit;
+    height: 100px;
+    display: flex;
+    margin: 0 10px;
+}
+.navbar2-navbar a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-variant: small-caps;
+    font-size: 1.333em;
+}
+.navbar2-navbar a:hover{
+    color: yellow;
+    text-shadow: 1px 1px 3px black;
 }
 /* End of NavBar 2 */
 /* Start of NavBar 3 */
 .navbar3{
-    width: inherit;
+    width:inherit;
+    height: 100px;
+    display: flex;
 }
 .navbar3-navbar{
     width: inherit;
+    height: 100px;
+    display: flex;
+    margin: 0 10px;
+    justify-content: flex-end; 
+}
+.navbar3-navbar a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-variant: small-caps;
+    font-size: 1.333em;
+}
+.navbar3-navbar a:hover{
+    color: yellow;
+    text-shadow: 1px 1px 3px black;
 }
 /* End of NavBar 3 */
 /* Start of NavBar 4 */

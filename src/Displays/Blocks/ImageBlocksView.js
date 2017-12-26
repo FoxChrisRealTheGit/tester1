@@ -3,9 +3,10 @@ import Navigation from '../Navigation';
 
 import chrischillin from '../../images/Chris-hangingout.jpg';
 
-import Container1 from '../../Component/Containers';
+import Container1, { Container3 } from '../../Component/Containers';
 import {
-    HeadingTest1,
+    Heading1,
+    SubHeading2,
     HorizontalTestBlock1,
     CircleImage1,
     CircleImage2,
@@ -22,52 +23,70 @@ export default class ImageBlocksView extends Component {
                 <Navigation />
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <HeadingTest1>
+                    <Heading1>
                         Images
-                    </HeadingTest1>
+                    </Heading1>
                 </Container1>
                 <HorizontalTestBlock1 />
-                <Container1>
+                <Container3>
+                    <SubHeading2>
+                        Circle Image 1
+                    </SubHeading2>
                     <CircleImage1>
                         {chrischillin}
                         Chris Hanging out
                     </CircleImage1>
-                </Container1>
+                </Container3>
                 <HorizontalTestBlock1 />
-                <Container1>
+                <Container3>
+                    <SubHeading2>
+                        Circle Image 2
+                    </SubHeading2>
                     <CircleImage2>
                         {chrischillin}
                         Chris Hanging out
                     </CircleImage2>
-                </Container1>
+                </Container3>
                 <HorizontalTestBlock1 />
-                <Container1>
+                <Container3>
+                    <SubHeading2>
+                        Rounded Image 1
+                    </SubHeading2>
                     <RoundedImage1>
                         {chrischillin}
                         Chris Hanging out
                     </RoundedImage1>
-                </Container1>
+                </Container3>
                 <HorizontalTestBlock1 />
-                <Container1>
+                <Container3>
+                    <SubHeading2>
+                        Rounded Image 2
+                    </SubHeading2>
                     <RoundedImage2>
                         {chrischillin}
                         Chris Hanging out
                     </RoundedImage2>
-                </Container1>
+                </Container3>
                 <HorizontalTestBlock1 />
-                <Container1>
+                <Container3>
+                    <SubHeading2>
+                        Square Image 1
+                    </SubHeading2>
                     <SquareImage1>
                         {chrischillin}
                         Chris Hanging out
                     </SquareImage1>
-                </Container1>
+                </Container3>
                 <HorizontalTestBlock1 />
-                <Container1>
+                <Container3>
+                    <SubHeading2>
+                        Square Image 2
+                    </SubHeading2>
                     <SquareImage2>
                         {chrischillin}
                         Chris Hanging out
                     </SquareImage2>
-                </Container1>
+                </Container3>
             </section>
         )
     }

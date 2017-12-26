@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 
 import Container1, { Container5 } from '../../Component/Containers';
 import {
-    Block2,
     HeadingTest1,
     HorizontalTestBlock1,
     HeadingTest2

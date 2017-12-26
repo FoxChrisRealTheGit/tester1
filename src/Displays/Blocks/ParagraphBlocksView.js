@@ -3,9 +3,9 @@ import Navigation from '../Navigation';
 
 import Container1 from '../../Component/Containers';
 import {
-    HeadingTest1,
-    HeadingTest2,
+    Heading1,
     HorizontalTestBlock1,
+    SubHeading2,
     Paragraph1,
     Paragraph2,
     Paragraph3,
@@ -25,15 +25,15 @@ export default class ParagraphBlocksView extends Component {
                 <Navigation />
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <HeadingTest1>
+                    <Heading1>
                         Paragraphs
-                    </HeadingTest1>
+                    </Heading1>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <HeadingTest2>
+                    <SubHeading2>
                         Paragraph1
-                    </HeadingTest2>
+                    </SubHeading2>
                 </Container1>
                 <Container1>
                     <Paragraph1>
@@ -42,9 +42,9 @@ export default class ParagraphBlocksView extends Component {
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <HeadingTest2>
+                    <SubHeading2>
                         Paragraph2
-                    </HeadingTest2>
+                    </SubHeading2>
                 </Container1>
                 <Container1>
                     <Paragraph2>
@@ -53,9 +53,9 @@ export default class ParagraphBlocksView extends Component {
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <HeadingTest2>
+                    <SubHeading2>
                         Paragraph3
-                    </HeadingTest2>
+                    </SubHeading2>
                 </Container1>
                 <Container1>
                     <Paragraph3>
@@ -64,9 +64,9 @@ export default class ParagraphBlocksView extends Component {
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <HeadingTest2>
+                    <SubHeading2>
                         Paragraph4
-                    </HeadingTest2>
+                    </SubHeading2>
                 </Container1>
                 <Container1>
                     <Paragraph4>
@@ -75,9 +75,9 @@ export default class ParagraphBlocksView extends Component {
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <HeadingTest2>
+                    <SubHeading2>
                         Paragraph5
-                    </HeadingTest2>
+                    </SubHeading2>
                 </Container1>
                 <Container1>
                     <Paragraph5>
@@ -87,16 +87,16 @@ export default class ParagraphBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <HeadingTest1>
+                    <Heading1>
                         Pull Quotes
-                    </HeadingTest1>
+                    </Heading1>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <HeadingTest2>
+                    <SubHeading2>
                         Pull Quote 1
-                    </HeadingTest2>
+                    </SubHeading2>
                 </Container1>
                 <Container1>
                     <PullQuote1>
@@ -105,9 +105,9 @@ export default class ParagraphBlocksView extends Component {
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <HeadingTest2>
+                    <SubHeading2>
                         Pull Quote 2
-                    </HeadingTest2>
+                    </SubHeading2>
                 </Container1>
                 <Container1>
                     <PullQuote2>
@@ -116,9 +116,9 @@ export default class ParagraphBlocksView extends Component {
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <HeadingTest2>
+                    <SubHeading2>
                         Pull Quote 3
-                    </HeadingTest2>
+                    </SubHeading2>
                 </Container1>
                 <Container1>
                     <PullQuote3>
@@ -127,9 +127,9 @@ export default class ParagraphBlocksView extends Component {
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <HeadingTest2>
+                    <SubHeading2>
                         Pull Quote 4
-                    </HeadingTest2>
+                    </SubHeading2>
                 </Container1>
                 <Container1>
                     <PullQuote4>
@@ -138,9 +138,9 @@ export default class ParagraphBlocksView extends Component {
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <HeadingTest2>
+                    <SubHeading2>
                         Pull Quote 5
-                    </HeadingTest2>
+                    </SubHeading2>
                 </Container1>
                 <Container1>
                     <PullQuote5>

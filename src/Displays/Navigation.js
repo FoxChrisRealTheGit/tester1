@@ -15,14 +15,16 @@ export default function Navigation() {
         <header>
             <Container1>
                 <Holder5>
+                <Link to="/">
                     <SquareImage2>
                         {Logo}
                     </SquareImage2>
+                    </Link>
                     <SubHeading3>
                         Stylux
                     </SubHeading3>
                     <Navbar1>
-                        <Link to="/">containers</Link>
+                        <Link to="/containers">containers</Link>
                         <Link to="/holders">holders</Link>
                         <Link to="/blocks">blocks</Link>
                         <Link to="/samplepages">sample pages</Link>
