@@ -447,6 +447,7 @@ export class SubNavbar5 extends Component {
 /* End of NavBar Blocks */
 /* Start of Paragraph Blocks */
 /* Start of Basic Paragraph Blocks */
+/* Start of Type 1 Paragraph Blocks */
 export class Paragraph1 extends Component {
     render(){
        const childs = React.Children.toArray(this.props.children)
@@ -487,8 +488,136 @@ export class Paragraph5 extends Component {
         )
     }
 }
+/* End of Type 1 Paragraph Blocks */
+/* Start of Type 2 Paragraph Blocks */
+export class Paragraph6 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <p className="paragraph6">{childs[0]}</p>
+        )
+    }
+}
+export class Paragraph7 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <p className="paragraph7">{childs[0]}</p>
+        )
+    }
+}
+export class Paragraph8 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <p className="paragraph8">{childs[0]}</p>
+        )
+    }
+}
+export class Paragraph9 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <p className="paragraph9">{childs[0]}</p>
+        )
+    }
+}
+export class Paragraph10 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <p className="paragraph10">{childs[0]}</p>
+        )
+    }
+}
+/* End of Type 2 Paragraph Blocks */
+/* Start of Type 3 Paragraph Blocks */
+export class Paragraph11 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <p className="paragraph11">{childs[0]}</p>
+        )
+    }
+}
+export class Paragraph12 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <p className="paragraph12">{childs[0]}</p>
+        )
+    }
+}
+export class Paragraph13 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <p className="paragraph13">{childs[0]}</p>
+        )
+    }
+}
+export class Paragraph14 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <p className="paragraph14">{childs[0]}</p>
+        )
+    }
+}
+export class Paragraph15 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <p className="paragraph15">{childs[0]}</p>
+        )
+    }
+}
+/* End of Type 3 Paragraph Blocks */
+/* Start of Type 4 Paragraph Blocks */
+export class Paragraph16 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <p className="paragraph16">{childs[0]}</p>
+        )
+    }
+}
+export class Paragraph17 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <p className="paragraph17">{childs[0]}</p>
+        )
+    }
+}
+export class Paragraph18 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <p className="paragraph18">{childs[0]}</p>
+        )
+    }
+}
+export class Paragraph19 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <p className="paragraph19">{childs[0]}</p>
+        )
+    }
+}
+export class Paragraph20 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <p className="paragraph20">{childs[0]}</p>
+        )
+    }
+}
+/* End of Type 4 Paragraph Blocks */
 /* End of Basic Paragraphs */
 /* Start of Pull Quotes */
+/* Start of Type 1 Pull Quotes */
 export class PullQuote1 extends Component {
     render(){
        const childs = React.Children.toArray(this.props.children)
@@ -505,6 +634,8 @@ export class PullQuote2 extends Component {
         )
     }
 }
+/* End of Type 1 Pull Quotes */
+/* Start of Type 2 Pull Quotes */
 export class PullQuote3 extends Component {
     render(){
        const childs = React.Children.toArray(this.props.children)
@@ -521,6 +652,8 @@ export class PullQuote4 extends Component {
         )
     }
 }
+/* End of Type 2 Pull Quotes */
+/* Start of Type 3 Pull Quotes */
 export class PullQuote5 extends Component {
     render(){
        const childs = React.Children.toArray(this.props.children)
@@ -529,6 +662,33 @@ export class PullQuote5 extends Component {
         )
     }
 }
+export class PullQuote6 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <p className="pullQuote6">{childs[0]}</p>
+        )
+    }
+}
+/* End of Type 3 Pull quptes */
+/* Start of Type 4 Pull Quptes */
+export class PullQuote7 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <p className="pullQuote7">{childs[0]}</p>
+        )
+    }
+}
+export class PullQuote8 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <p className="pullQuote8">{childs[0]}</p>
+        )
+    }
+}
+/* End of Type 4 Pull Quotes
 /* End of Pull Quotes */
 /* End of Paragraph Blocks */
 /* Start of Image Blocks */
@@ -537,7 +697,7 @@ export class CircleImage1 extends Component {
     render(){
        const childs = React.Children.toArray(this.props.children)
         return(
-            <img className="circleImage1" src={childs[0]} alt={childs[1]} />
+            <img className="circleImage img-exsm" src={childs[0]} alt={childs[1]} />
         )
     }
 }
@@ -545,7 +705,31 @@ export class CircleImage2 extends Component {
     render(){
        const childs = React.Children.toArray(this.props.children)
         return(
-            <img className="circleImage2" src={childs[0]} alt={childs[1]} />
+            <img className="circleImage img-sm" src={childs[0]} alt={childs[1]} />
+        )
+    }
+}
+export class CircleImage3 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <img className="circleImage img-md" src={childs[0]} alt={childs[1]} />
+        )
+    }
+}
+export class CircleImage4 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <img className="circleImage img-lg" src={childs[0]} alt={childs[1]} />
+        )
+    }
+}
+export class CircleImage5 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <img className="circleImage img-exlg" src={childs[0]} alt={childs[1]} />
         )
     }
 }
@@ -555,7 +739,7 @@ export class RoundedImage1 extends Component {
     render(){
        const childs = React.Children.toArray(this.props.children)
         return(
-            <img className="roundedImage1" src={childs[0]} alt={childs[1]} />
+            <img className="roundedImage img-exsm" src={childs[0]} alt={childs[1]} />
         )
     }
 }
@@ -563,7 +747,31 @@ export class RoundedImage2 extends Component {
     render(){
        const childs = React.Children.toArray(this.props.children)
         return(
-            <img className="roundedImage2" src={childs[0]} alt={childs[1]} />
+            <img className="roundedImage img-sm" src={childs[0]} alt={childs[1]} />
+        )
+    }
+}
+export class RoundedImage3 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <img className="roundedImage img-md" src={childs[0]} alt={childs[1]} />
+        )
+    }
+}
+export class RoundedImage4 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <img className="roundedImage img-lg" src={childs[0]} alt={childs[1]} />
+        )
+    }
+}
+export class RoundedImage5 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <img className="roundedImage img-exlg" src={childs[0]} alt={childs[1]} />
         )
     }
 }
@@ -573,7 +781,7 @@ export class SquareImage1 extends Component {
     render(){
        const childs = React.Children.toArray(this.props.children)
         return(
-            <img className="squareImage1" src={childs[0]} alt={childs[1]} />
+            <img className="squareImage img-exsm" src={childs[0]} alt={childs[1]} />
         )
     }
 }
@@ -581,11 +789,119 @@ export class SquareImage2 extends Component {
     render(){
        const childs = React.Children.toArray(this.props.children)
         return(
-            <img className="squareImage2" src={childs[0]} alt={childs[1]} />
+            <img className="squareImage img-sm" src={childs[0]} alt={childs[1]} />
+        )
+    }
+}
+export class SquareImage3 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <img className="squareImage img-md" src={childs[0]} alt={childs[1]} />
+        )
+    }
+}
+export class SquareImage4 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <img className="squareImage img-lg" src={childs[0]} alt={childs[1]} />
+        )
+    }
+}
+export class SquareImage5 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <img className="squareImage img-exlg" src={childs[0]} alt={childs[1]} />
         )
     }
 }
 /* End of Square Images */
+/* Start of Rounded Rectangle Image */
+export class RoundedRectangleImage1 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <img className="roundedRectangleImage recimg-exsm" src={childs[0]} alt={childs[1]} />
+        )
+    }
+}
+export class RoundedRectangleImage2 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <img className="roundedRectangleImage recimg-sm" src={childs[0]} alt={childs[1]} />
+        )
+    }
+}
+export class RoundedRectangleImage3 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <img className="roundedRectangleImage recimg-md" src={childs[0]} alt={childs[1]} />
+        )
+    }
+}
+export class RoundedRectangleImage4 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <img className="roundedRectangleImage recimg-lg" src={childs[0]} alt={childs[1]} />
+        )
+    }
+}
+export class RoundedRectangleImage5 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <img className="roundedRectangleImage recimg-exlg" src={childs[0]} alt={childs[1]} />
+        )
+    }
+}
+/* End of Rounded Rectangle Image */
+/* Start of Regular Rectangle Image */
+export class RectangleImage1 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <img className="rectangleImage recimg-exsm" src={childs[0]} alt={childs[1]} />
+        )
+    }
+}
+export class RectangleImage2 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <img className="rectangleImage recimg-sm" src={childs[0]} alt={childs[1]} />
+        )
+    }
+}
+export class RectangleImage3 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <img className="rectangleImage recimg-md" src={childs[0]} alt={childs[1]} />
+        )
+    }
+}
+export class RectangleImage4 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <img className="rectangleImage recimg-lg" src={childs[0]} alt={childs[1]} />
+        )
+    }
+}
+export class RectangleImage5 extends Component {
+    render(){
+       const childs = React.Children.toArray(this.props.children)
+        return(
+            <img className="rectangleImage recimg-exlg" src={childs[0]} alt={childs[1]} />
+        )
+    }
+}
+/* End of Regular Rectangle Image */
 /* End of Image Blocks */
 /* Start of Button Blocks */
 /* Start of Flat Buttons */

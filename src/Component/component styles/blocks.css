@@ -436,54 +436,198 @@
 /* End of SubNavBar Styles */
 /* Start of Paragraph Styles */
 /* Start of Basic Paragraph Styles */
+/* Start of Type 1 Paragraph Styles */
 /* Start of paragraph 1 */
 .paragraph1{
     width: inherit;
     padding: 10px 10%;
     line-height: 1.5em;
     font-family: sans-serif;
-    font-size: 1em;
+    font-size: 1.333em;
 }
 /* End of paragraph 1 */
 /* Start of paragraph 2 */
 .paragraph2{
     width: inherit;
     padding: 10px 10%;
-    line-height: 1.5em;
-    font-family: serif;
-    font-size: 1em;
+    line-height: 1.22em;
+    font-family: sans-serif;
+    font-size: 0.9 em;
 }
 /* End of paragraph 2 */
 /* Start of paragraph 3 */
 .paragraph3{
     width: inherit;
     padding: 10px 10%;
-    line-height: 1.68em;
-    font-family: inherit;
-    font-variant: small-caps;
-    font-size: 1.333em;
-    color: lightgray;
+    line-height: 1.8em;
+    font-family: sans-serif;
+    font-size: 1.6em;
 }
 /* End of paragraph 3 */
 /* Start of paragraph 4 */
 .paragraph4{
     width: inherit;
     padding: 10px 10%;
-    line-height: 1.333em;
-    font-family: cursive;
-    font-variant: small-caps;
-    font-size: 1.5em;
+    line-height: 1.8em;
+    font-family: sans-serif;
+    color: lightgray;
+    font-size: 1.6em;
 }
 /* End of paragraph 4 */
 /* Start of paragraph 5 */
 .paragraph5{
     width: inherit;
     padding: 10px 10%;
-    line-height: 1.333em;
-    font-family: monospace;
-    font-size: 1.44em;
+    line-height: 1.5em;
+    font-family: sans-serif;
+    font-size: 1.333em;
 }
 /* End of paragraph 5 */
+/* End of Type 1 Paragraph Styles */
+/* Start of Type 2 Paragraph Styles */
+/* Start of paragraph 6 */
+.paragraph6{
+    width: inherit;
+    padding: 10px 10%;
+    line-height: 1.5em;
+    font-family: serif;
+    font-size: 1.333em;
+}
+/* End of paragraph 6 */
+/* Start of paragraph 7 */
+.paragraph7{
+    width: inherit;
+    padding: 10px 10%;
+    line-height: 1.22em;
+    font-family: serif;
+    font-size: 0.9em;
+}
+/* End of paragraph 7 */
+/* Start of paragraph 8 */
+.paragraph8{
+    width: inherit;
+    padding: 10px 10%;
+    line-height: 1.8em;
+    font-family: serif;
+    font-size: 1.6em;
+}
+/* End of paragraph 8 */
+/* Start of paragraph 9 */
+.paragraph9{
+    width: inherit;
+    padding: 10px 10%;
+    line-height: 1.8em;
+    font-family: serif;
+    color: lightgray;
+    font-size: 1.6em;
+}
+/* End of paragraph 9 */
+/* Start of paragraph 10 */
+.paragraph10{
+    width: inherit;
+    padding: 10px 10%;
+    line-height: 1.5em;
+    font-family: serif;
+    font-size: 1.333em;
+}
+/* End of paragraph 10 */
+/* End of Type 2 Paragraph Styles */
+/* Start of Type 3 Paragraph Styles */
+/* Start of paragraph 11 */
+.paragraph11{
+    width: inherit;
+    padding: 10px 10%;
+    line-height: 1.5em;
+    font-family: cursive;
+    font-size: 1.333em;
+}
+/* End of paragraph 11 */
+/* Start of paragraph 12 */
+.paragraph12{
+    width: inherit;
+    padding: 10px 10%;
+    line-height: 1.22em;
+    font-family: cursive;
+    font-size: 0.9em;
+}
+/* End of paragraph 12 */
+/* Start of paragraph 13 */
+.paragraph13{
+    width: inherit;
+    padding: 10px 10%;
+    line-height: 1.8em;
+    font-family: cursive;
+    font-size: 1.6em;
+}
+/* End of paragraph 13 */
+/* Start of paragraph 14 */
+.paragraph14{
+    width: inherit;
+    padding: 10px 10%;
+    line-height: 1.8em;
+    font-family: cursive;
+    color: lightgray;
+    font-size: 1.6em;
+}
+/* End of paragraph 14 */
+/* Start of paragraph 15 */
+.paragraph15{
+    width: inherit;
+    padding: 10px 10%;
+    line-height: 1.5em;
+    font-family: cursive;
+    font-size: 1.333em;
+}
+/* End of paragraph 15 */
+/* End of Type 3 Paragraph Styles */
+/* Start of Type 4 Paragraph Styles */
+/* Start of paragraph 16 */
+.paragraph16{
+    width: inherit;
+    padding: 10px 10%;
+    line-height: 1.5em;
+    font-family: monospace;
+    font-size: 1.333em;
+}
+/* End of paragraph 16 */
+/* Start of paragraph 17 */
+.paragraph17{
+    width: inherit;
+    padding: 10px 10%;
+    line-height: 1.22em;
+    font-family: monospace;
+    font-size: 0.9em;
+}
+/* End of paragraph 17 */
+/* Start of paragraph 18 */
+.paragraph18{
+    width: inherit;
+    padding: 10px 10%;
+    line-height: 1.8em;
+    font-family: monospace;
+    font-size: 1.6em;
+}
+/* End of paragraph 18 */
+/* Start of paragraph 19 */
+.paragraph19{
+    width: inherit;
+    padding: 10px 10%;
+    line-height: 1.8em;
+    font-family: monospace;
+    color: lightgray;
+    font-size: 1.6em;
+}
+/* End of paragraph 19 */
+/* Start of paragraph 20 */
+.paragraph20{
+    width: inherit;
+    padding: 10px 10%;
+    line-height: 1.5em;
+    font-family: monospace;
+    font-size: 1.333em;
+}
+/* End of paragraph 20 */
+/* End of Type 4 Paragraph Styles */
 /* End of Basic Paragraph Styles */
 /* Start of Pull Quotes */
 /* Start of Pull Quotes 1 */
@@ -496,70 +640,139 @@
 /* Start of Pull Quotes 2 */
 .pullQuote2{
     width: inherit;
-    font-family: serif;
+    font-family: sans-serif;
     font-size: 1.333em;
 }
 /* End of Pull Quotes 2 */
 /* Start of Pull Quotes 3 */
 .pullQuote3{
     width: inherit;
-    font-family: fantasy;
+    font-family: serif;
     font-size: 1.333em;
 }
 /* End of Pull Quotes 3 */
 /* Start of Pull Quotes 4 */
 .pullQuote4{
     width: inherit;
-    font-family: cursive;
+    font-family: serif;
     font-size: 1.333em;
 }
 /* End of Pull Quotes 4 */
 /* Start of Pull Quotes 5 */
 .pullQuote5{
     width: inherit;
-    font-family: monospace;
+    font-family: cursive;
     font-size: 1.333em;
 }
 /* End of Pull Quotes 5 */
+/* Start of Pull Quotes 6 */
+.pullQuote6{
+    width: inherit;
+    font-family: cursive;
+    font-size: 1.333em;
+}
+/* End of Pull Quotes 6 */
+/* Start of Pull Quotes 7 */
+.pullQuote7{
+    width: inherit;
+    font-family: monospace;
+    font-size: 1.333em;
+}
+/* End of Pull Quotes 7 */
+/* Start of Pull Quotes 8 */
+.pullQuote8{
+    width: inherit;
+    font-family: monospace;
+    font-size: 1.333em;
+}
+/* End of Pull Quotes 8 */
 /* End of Pull Quotes */
 /* End of Paragraph Styles */
 /* Start of Image Styles */
+/* Start of nonrectangle Image Sizes */
+.img-exsm{
+    width: 50px;
+    height: 50px;
+}
+.img-sm{
+    width: 150px;
+    height: 150px;
+}
+.img-md{
+    width: 300px;
+    height: 300px;
+}
+.img-lg{
+    width: 500px;
+    height: 500px;
+}
+.img-exlg{
+    width: 700px;
+    height: 700px;
+}
+
+/* End of Image Sizes */
 /* Start of Circle Images Styles */
-.circleImage1{
-    width: 100px;
-    height: 100px;
+.circleImage{
     border-radius: 100%;
     display: flex;
     margin: 0 auto;
 }
-.circleImage2{
-    width: 300px;
-    height: 300px;
-    border-radius: 100%;
-}
+
 /* End of Circle Images Styles */
 /* Start of Rounded Images Styles */
-.roundedImage1{
-    width: 200px;
-    height: 200px;
+.roundedImage{
     border-radius: 30%;
+    display: flex;
+    margin: 0 auto;
 }
-.roundedImage2{
-    width: 400px;
-    height: 400px;
-    border-radius: 30%
-}
+
 /* End of Rounded Images Styles */
 /* Start of Square Images Styles */
-.squareImage1{
-    width: 100px;
-    height: 100px;
+.squareImage{
+    display: flex;
+    margin: 0 auto;
 }
-.squareImage2{
-    width: 350px;
-    height: 350px;
-}
+
 /* End of Square Images Styles */
+/* Start of Rectangle Image Sizes */
+/* Width * 1.618 ish */
+.recimg-exsm{
+    width: 81px;
+    height: 50px;
+}
+.recimg-sm{
+    width: 243px;
+    height: 150px;
+}
+.recimg-md{
+    width: 485px;
+    height: 300px;
+}
+.recimg-lg{
+    width: 809px;
+    height: 500px;
+}
+.recimg-exlg{
+    width: 1137px;
+    height: 700px;
+}
+/* End of Rectangle Image Sizes
+/* Start of Rectangle Image Styles */
+/* Start of Rounded Rectnagle Image Styles */
+.roundedRectangleImage{
+    border-radius: 30%;
+    display: flex;
+    margin: 0 auto;
+}
+/* End of Rounded Rectangle Image Styles */
+/* Start of RegularRectangle Image Styles */
+.rectangleImage{
+    display: flex;
+    margin: 0 auto;
+}
+/* End of RegularRectangle Image Styles */
+/* End of Rectangle Image Sizes */
 /* End of Image Styles */
 /* Start of ButtonStyles */
 /* Start of Flat Button Styles */
