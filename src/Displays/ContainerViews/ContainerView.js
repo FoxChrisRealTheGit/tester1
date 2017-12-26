@@ -16,6 +16,7 @@ import Container1,
 } from '../../Component/Containers';
 import {
     Block2,
+    MainHeading1,
     SubHeading2,
     HorizontalTestBlock1,
 } from '../../Component/Blocks';
@@ -25,6 +26,13 @@ export default class ContainerView extends Component {
         return (
             <section>
                 <Navigation />
+                <HorizontalTestBlock1 />
+                <HorizontalTestBlock1 />
+                <Container1>
+                    <MainHeading1>
+                        UnStyled Containers
+                    </MainHeading1>
+                </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
                     <SubHeading2>

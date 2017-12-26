@@ -441,6 +441,9 @@ export class SubNavbar5 extends Component {
 }
 
 /* End of Sub NavBar Blocks */
+/* Start of Brand Blocks */
+
+/* End of Brand Blocks */
 /* End of NavBar Blocks */
 /* Start of Paragraph Blocks */
 /* Start of Basic Paragraph Blocks */
