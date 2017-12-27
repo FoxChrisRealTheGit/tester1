@@ -70,6 +70,9 @@
     flex-direction: column;
     align-items: center;
 }
+.mainHeading1 a{
+    text-decoration: none;
+}
 /* End of Main Heading 1 Styles */
 /* Start of Main Heading 2 Styles */
 .mainHeading2{
@@ -81,6 +84,9 @@
     flex-direction: column;
     align-items: center;
 }
+.mainHeading2 a{
+    text-decoration: none;
+}
 /* End of Main Heading 2 Styles */
 /* Start of Main Heading 3 Styles */
 .mainHeading3{
@@ -91,6 +97,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.mainHeading3 a{
+    text-decoration: none;
 }
 /* End of Main Heading 3 Styles */
 /* Start of Main Heading 4 Styles */
@@ -104,6 +113,9 @@
     flex-direction: column;
     align-items: center;
 }
+.mainHeading4 a{
+    text-decoration: none;
+}
 /* End of Main Heading 4 Styles */
 /* Start of Main Heading 5 Styles */
 .mainHeading5{
@@ -114,6 +126,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}.mainHeading5 a{
+    text-decoration: none;
 }
 /* End of Main Heading 5 Styles */
 /* Start of Main Heading 6 Styles */
@@ -126,6 +140,9 @@
     flex-direction: column;
     align-items: center;
 }
+.mainHeading6 a{
+    text-decoration: none;
+}
 /* End of Main Heading 6 Styles */
 /* Start of Main Heading 7 Styles */
 .mainHeading7{
@@ -137,6 +154,9 @@
     flex-direction: column;
     align-items: center;
 }
+.mainHeading7 a{
+    text-decoration: none;
+}
 /* End of Main Heading 7 Styles */
 /* Start of Main Heading 8 Styles */
 .mainHeading8{
@@ -147,6 +167,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.mainHeading8 a{
+    text-decoration: none;
 }
 /* End of Main Heading 8 Styles */
 /* Start of Main Heading 9 Styles */
@@ -160,6 +183,9 @@
     flex-direction: column;
     align-items: center;
 }
+.mainHeading9 a{
+    text-decoration: none;
+}
 /* End of Main Heading 9 Styles */
 /* Start of Main Heading 10 Styles */
 .mainHeading10{
@@ -170,6 +196,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.mainHeading10 a{
+    text-decoration: none;
 }
 /* End of Main Heading 10 Styles */
 /* Start of Main Heading 11 Styles */
@@ -182,6 +211,9 @@
     flex-direction: column;
     align-items: center;
 }
+.mainHeading11 a{
+    text-decoration: none;
+}
 /* End of Main Heading 11 Styles */
 /* Start of Main Heading 12 Styles */
 .mainHeading12{
@@ -193,6 +225,9 @@
     flex-direction: column;
     align-items: center;
 }
+.mainHeading12 a{
+    text-decoration: none;
+}
 /* End of Main Heading 12 Styles */
 /* Start of Main Heading 13 Styles */
 .mainHeading13{
@@ -203,6 +238,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.mainHeading13 a{
+    text-decoration: none;
 }
 /* End of Main Heading 13 Styles */
 /* Start of Main Heading 14 Styles */
@@ -216,6 +254,9 @@
     flex-direction: column;
     align-items: center;
 }
+.mainHeading14 a{
+    text-decoration: none;
+}
 /* End of Main Heading 14 Styles */
 /* Start of Main Heading 15 Styles */
 .mainHeading15{
@@ -226,6 +267,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.mainHeading15 a{
+    text-decoration: none;
 }
 /* End of Main Heading 15 Styles */
 /* Start of Main Heading 16 Styles */
@@ -238,6 +282,9 @@
     flex-direction: column;
     align-items: center;
 }
+.mainHeading16 a{
+    text-decoration: none;
+}
 /* End of Main Heading 16 Styles */
 /* Start of Main Heading 17 Styles */
 .mainHeading17{
@@ -249,6 +296,9 @@
     flex-direction: column;
     align-items: center;
 }
+.mainHeading17 a{
+    text-decoration: none;
+}
 /* End of Main Heading 17 Styles */
 /* Start of Main Heading 18 Styles */
 .mainHeading18{
@@ -259,6 +309,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.mainHeading18 a{
+    text-decoration: none;
 }
 /* End of Main Heading 18 Styles */
 /* Start of Main Heading 19 Styles */
@@ -272,6 +325,9 @@
     flex-direction: column;
     align-items: center;
 }
+.mainHeading19 a{
+    text-decoration: none;
+}
 /* End of Main Heading 19 Styles */
 /* Start of Main Heading 20 Styles */
 .mainHeading20{
@@ -282,6 +338,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.mainHeading20 a{
+    text-decoration: none;
 }
 /* End of Main Heading 20 Styles */
 /* End of Main Headings */
@@ -296,6 +355,9 @@
     flex-direction: column;
     align-items: center;
 }
+.heading1 a{
+    text-decoration: none;
+}
 /* End of Heading 1 Styles */
 /* Start of Heading 2 Styles */
 .heading2{
@@ -307,6 +369,9 @@
     flex-direction: column;
     align-items: center;
 }
+.heading2 a{
+    text-decoration: none;
+}
 /* End of Heading 2 Styles */
 /* Start of Heading 3 Styles */
 .heading3{
@@ -317,6 +382,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.heading3 a{
+    text-decoration: none;
 }
 /* End of Heading 3 Styles */
 /* Start of Heading 4 Styles */
@@ -330,6 +398,9 @@
     flex-direction: column;
     align-items: center;
 }
+.heading4 a{
+    text-decoration: none;
+}
 /* End of Heading 4 Styles */
 /* Start of Heading 5 Styles */
 .heading5{
@@ -339,8 +410,10 @@
     font-weight: 600;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center;  
+}
+.heading5 a{
+    text-decoration: none;
 }
 /* End of Heading 5 Styles */
 /* Start of Heading 6 Styles */
@@ -353,6 +426,9 @@
     flex-direction: column;
     align-items: center;
 }
+.heading6 a{
+    text-decoration: none;
+}
 /* End of Heading 6 Styles */
 /* Start of Heading 7 Styles */
 .heading7{
@@ -364,6 +440,9 @@
     flex-direction: column;
     align-items: center;
 }
+.heading7 a{
+    text-decoration: none;
+}
 /* End of Heading 7 Styles */
 /* Start of Heading 8 Styles */
 .heading8{
@@ -374,6 +453,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.heading8 a{
+    text-decoration: none;
 }
 /* End of Heading 8 Styles */
 /* Start of Heading 9 Styles */
@@ -387,6 +469,9 @@
     flex-direction: column;
     align-items: center;
 }
+.heading9 a{
+    text-decoration: none;
+}
 /* End of Heading 9 Styles */
 /* Start of Heading 10 Styles */
 .heading10{
@@ -397,6 +482,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.heading10 a{
+    text-decoration: none;
 }
 /* End of Heading 10 Styles */
 /* Start of Heading 11 Styles */
@@ -409,6 +497,9 @@
     flex-direction: column;
     align-items: center;
 }
+.heading11 a{
+    text-decoration: none;
+}
 /* End of Heading 11 Styles */
 /* Start of Heading 12 Styles */
 .heading12{
@@ -420,6 +511,9 @@
     flex-direction: column;
     align-items: center;
 }
+.heading12 a{
+    text-decoration: none;
+}
 /* End of Heading 12 Styles */
 /* Start of Heading 13 Styles */
 .heading13{
@@ -430,6 +524,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.heading13 a{
+    text-decoration: none;
 }
 /* End of Heading 13 Styles */
 /* Start of Heading 14 Styles */
@@ -443,6 +540,9 @@
     flex-direction: column;
     align-items: center;
 }
+.heading14 a{
+    text-decoration: none;
+}
 /* End of Heading 14 Styles */
 /* Start of Heading 15 Styles */
 .heading15{
@@ -453,6 +553,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.heading15 a{
+    text-decoration: none;
 }
 /* End of Heading 15 Styles */
 /* Start of Heading 16 Styles */
@@ -465,6 +568,9 @@
     flex-direction: column;
     align-items: center;
 }
+.heading16 a{
+    text-decoration: none;
+}
 /* End of Heading 16 Styles */
 /* Start of Heading 17 Styles */
 .heading17{
@@ -476,6 +582,9 @@
     flex-direction: column;
     align-items: center;
 }
+.heading17 a{
+    text-decoration: none;
+}
 /* End of Heading 17 Styles */
 /* Start of Heading 18 Styles */
 .heading18{
@@ -486,6 +595,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.heading18 a{
+    text-decoration: none;
 }
 /* End of Heading 18 Styles */
 /* Start of Heading 19 Styles */
@@ -499,6 +611,9 @@
     flex-direction: column;
     align-items: center;
 }
+.heading19 a{
+    text-decoration: none;
+}
 /* End of Heading 19 Styles */
 /* Start of Heading 20 Styles */
 .heading20{
@@ -509,6 +624,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.heading20 a{
+    text-decoration: none;
 }
 /* End of Heading 20 Styles */
 /* End of Headings */
@@ -521,6 +639,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.subHeading1 a{
+    text-decoration: none;
 }
 /* End of SubHeading 1 Styles */
 /* Start of SubHeading 2 Styles */
@@ -549,6 +670,9 @@
     flex-direction: column;
     align-items: center;
 }
+.subHeading3 a{
+    text-decoration: none;
+}
 /* End of SubHeading 3 Styles */
 /* Start of SubHeading 4 Styles */
 .subHeading4{
@@ -560,6 +684,13 @@
     flex-direction: column;
     align-items: center;
 }
+.subHeading4 a{
+    color: lightgray;
+    text-decoration: none;
+}
+.subHeading4 a:hover{
+    text-shadow: 1px 1px 3px black;
+}
 /* End of SubHeading 4 Styles */
 /* Start of SubHeading 5 Styles */
 .subHeading5{
@@ -569,6 +700,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.subHeading5 a{
+    text-decoration: none;
+}
+.subHeading5 a:hover{
+    text-shadow: 1px 1px 3px black;
 }
 /* End of SubHeading 5 Styles */
 /* Start of SubHeading 6 Styles */
@@ -583,6 +720,9 @@
 .subHeading6 a{
     text-decoration: none;
     color: lightgray;
+}
+.subHeading6 a:hover{
+    text-shadow: 1px 1px 3px black;
 }
 .subHeading6 a:hover{
     text-shadow: 1px 1px 3px black;
@@ -1156,10 +1296,33 @@
 /* Start of SubNavBar Styles */
 /* Start of SubNavBar 1 */
 .subnavbar1{
-    width: inherit;
+    width:inherit;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    background: black;
+    position: sticky;
+    top: 0;
 }
 .subnavbar1-navbar{
-    width: inherit;
+    width: 80%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+
+}
+.subnavbar1-navbar a{
+    text-decoration: none;
+    margin: 0 10px;
+    color: whitesmoke;
+    font-variant: small-caps;
+    font-size: 1.333em;
+}
+.subnavbar1-navbar a:hover{
+    color: yellow;
+    text-shadow: 1px 1px 3px whitesmoke;
 }
 /* End of SubNavBar 1 */
 /* Start of SubNavBar 2 */
@@ -1394,59 +1557,72 @@
 /* Start of Pull Quotes 1 */
 .pullQuote1{
     width: inherit;
-    font-family: sans-serif;
+    padding: 0px 12%;
+    margin: 20px 0;
+    position: relative;
+}
+.pullQuote1-text{
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+.pullQuote1-text::before{
+    content:'\201c';
+    font-size: 6em;
+    position: absolute;
+    top: 10%;
+    left: 6%;
+    color: rgba(220, 220, 220, 0.4);
+}
+
+.pullQuote1 cite::before{
+    content: '\2014';
+}
+.pullQuote1 cite{
     font-size: 1.333em;
+    padding-left: 50px;
+    color: lightslategray;
+    display: block;
+    position: absolute;
+    bottom: -30px;
 }
 /* End of Pull Quotes 1 */
 /* Start of Pull Quotes 2 */
 .pullQuote2{
-    width: inherit;
-    font-family: sans-serif;
+    width: 250px;
+    padding: 5px;
     font-size: 1.333em;
+    border-top: 2px solid lightgray;
+    border-bottom: 2px solid lightgray; 
+}
+.pullQuote2-text{
+    font-size: 1.333em;
+    margin: 5px;
+}
+.pullQuote2 cite::before{
+    content: '\2014';
+}
+.pullQuote2 cite{
+    margin: 5px;
+    color: lightslategray;
 }
 /* End of Pull Quotes 2 */
 /* Start of Pull Quotes 3 */
 .pullQuote3{
     width: inherit;
-    font-family: serif;
     font-size: 1.333em;
 }
 /* End of Pull Quotes 3 */
 /* Start of Pull Quotes 4 */
 .pullQuote4{
     width: inherit;
-    font-family: serif;
     font-size: 1.333em;
 }
 /* End of Pull Quotes 4 */
 /* Start of Pull Quotes 5 */
 .pullQuote5{
     width: inherit;
-    font-family: cursive;
     font-size: 1.333em;
 }
-/* End of Pull Quotes 5 */
-/* Start of Pull Quotes 6 */
-.pullQuote6{
-    width: inherit;
-    font-family: cursive;
-    font-size: 1.333em;
-}
-/* End of Pull Quotes 6 */
-/* Start of Pull Quotes 7 */
-.pullQuote7{
-    width: inherit;
-    font-family: monospace;
-    font-size: 1.333em;
-}
-/* End of Pull Quotes 7 */
-/* Start of Pull Quotes 8 */
-.pullQuote8{
-    width: inherit;
-    font-family: monospace;
-    font-size: 1.333em;
-}
-/* End of Pull Quotes 8 */
 /* End of Pull Quotes */
 /* End of Paragraph Styles */
 /* Start of Image Styles */

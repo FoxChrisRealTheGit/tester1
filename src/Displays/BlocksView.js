@@ -5,11 +5,10 @@ import { Link } from 'react-router-dom';
 
 import { Container11 } from '../Component/Containers';
 import {
-    Block2,
     SubHeading4,
     HorizontalTestBlock1,
 } from '../Component/Blocks';
-import { Holder10 } from '../Component/Holders';
+
 
 export default class BlockViews extends Component {
     render() {

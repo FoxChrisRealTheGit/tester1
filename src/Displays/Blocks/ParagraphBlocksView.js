@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import Navigation from '../Navigation';
 
 import Container1 from '../../Component/Containers';
@@ -6,6 +7,7 @@ import {
     MainHeading1,
     Heading1,
     HorizontalTestBlock1,
+    SubNavbar1,
     SubHeading4,
     Paragraph1,
     Paragraph2,
@@ -29,12 +31,6 @@ import {
     Paragraph20,
     PullQuote1,
     PullQuote2,
-    PullQuote3,
-    PullQuote4,
-    PullQuote5,
-    PullQuote6,
-    PullQuote7,
-    PullQuote8
 } from '../../Component/Blocks';
 
 export default class ParagraphBlocksView extends Component {
@@ -42,7 +38,13 @@ export default class ParagraphBlocksView extends Component {
         return (
             <section>
                 <Navigation />
-                <HorizontalTestBlock1 />
+                <SubNavbar1>
+                    <Link to="/blocks/buttonviews">Button</Link>
+                    <Link to="/blocks/headingviews">Headings</Link>
+                    <Link to="/blocks/imageviews">Images</Link>
+                    <Link to="/blocks/navbarviews">NavBars</Link>
+                    <Link to="/blocks/paragraphviews">Paragraphs</Link>
+                </SubNavbar1>
                 <Container1>
                     <MainHeading1>
                         Paragraphs
@@ -306,90 +308,98 @@ export default class ParagraphBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <Container1>
                     <SubHeading4>
-                        Pull Quote 1
+                        Type 1: Pull Quote 1
                     </SubHeading4>
                 </Container1>
                 <Container1>
                     <PullQuote1>
-                        Banjo photo booth deep v bespoke typewriter twee iPhone lyft vegan meditation mumblecore copper mug blog whatever.
+                        Banjo photo booth deep v bespoke typewriter twee iPhone lyft vegan meditation mumblecore copper mug blog whatever.\
+                        Neat Name
                     </PullQuote1>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
                     <SubHeading4>
-                        Pull Quote 2
+                        Type 1: Pull Quote 2
                     </SubHeading4>
                 </Container1>
                 <Container1>
                     <PullQuote2>
-                        Echo park XOXO seitan, fixie before they sold out bushwick edison bulb listicle 3 wolf moon irony hot chicken typewriter dreamcatcher.
+                        Echo park XOXO seitan, fixie before they sold out bushwick edison bulb listicle 3 wolf moon irony hot chicken typewriter dreamcatcher.\
+                        Neat Name
                     </PullQuote2>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
                     <SubHeading4>
-                        Pull Quote 3
+                        Type 2: Pull Quote 1
                     </SubHeading4>
                 </Container1>
                 <Container1>
-                    <PullQuote3>
-                        Live-edge prism post-ironic letterpress, put a bird on it palo santo direct trade flannel kitsch 90's.
-                    </PullQuote3>
+                    <PullQuote1>
+                        Banjo photo booth deep v bespoke typewriter twee iPhone lyft vegan meditation mumblecore copper mug blog whatever.\
+                        Neat Name
+                    </PullQuote1>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
                     <SubHeading4>
-                        Pull Quote 4
+                        Type 2: Pull Quote 2
                     </SubHeading4>
                 </Container1>
                 <Container1>
-                    <PullQuote4>
-                        Vinyl gochujang irony, microdosing synth VHS mlkshk keytar mumblecore kale chips roof party meggings cliche.
-                    </PullQuote4>
+                    <PullQuote2>
+                        Echo park XOXO seitan, fixie before they sold out bushwick edison bulb listicle 3 wolf moon irony hot chicken typewriter dreamcatcher.\
+                        Neat Name
+                    </PullQuote2>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
                     <SubHeading4>
-                        Pull Quote 5
+                        Type 3: Pull Quote 1
                     </SubHeading4>
                 </Container1>
                 <Container1>
-                    <PullQuote5>
-                        Shoreditch unicorn artisan single-origin coffee. Tattooed asymmetrical umami vegan.
-                    </PullQuote5>
+                    <PullQuote1>
+                        Banjo photo booth deep v bespoke typewriter twee iPhone lyft vegan meditation mumblecore copper mug blog whatever.\
+                        Neat Name
+                    </PullQuote1>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
                     <SubHeading4>
-                        Pull Quote 6
+                        Type 3: Pull Quote 2
                     </SubHeading4>
                 </Container1>
                 <Container1>
-                    <PullQuote6>
-                        Shoreditch unicorn artisan single-origin coffee. Tattooed asymmetrical umami vegan.
-                    </PullQuote6>
+                    <PullQuote2>
+                        Echo park XOXO seitan, fixie before they sold out bushwick edison bulb listicle 3 wolf moon irony hot chicken typewriter dreamcatcher.\
+                        Neat Name
+                    </PullQuote2>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
                     <SubHeading4>
-                        Pull Quote 7
+                        Type 4: Pull Quote 1
                     </SubHeading4>
                 </Container1>
                 <Container1>
-                    <PullQuote7>
-                        Shoreditch unicorn artisan single-origin coffee. Tattooed asymmetrical umami vegan.
-                    </PullQuote7>
+                    <PullQuote1>
+                        Banjo photo booth deep v bespoke typewriter twee iPhone lyft vegan meditation mumblecore copper mug blog whatever.\
+                        Neat Name
+                    </PullQuote1>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
                     <SubHeading4>
-                        Pull Quote 8
+                        Type 4: Pull Quote 2
                     </SubHeading4>
                 </Container1>
                 <Container1>
-                    <PullQuote8>
-                        Shoreditch unicorn artisan single-origin coffee. Tattooed asymmetrical umami vegan.
-                    </PullQuote8>
+                    <PullQuote2>
+                        Echo park XOXO seitan, fixie before they sold out bushwick edison bulb listicle 3 wolf moon irony hot chicken typewriter dreamcatcher.\
+                        Neat Name
+                    </PullQuote2>
                 </Container1>
                 <HorizontalTestBlock1 />
             </section>

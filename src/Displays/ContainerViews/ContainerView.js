@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import Navigation from '../Navigation';
 
 import Container1,
@@ -19,6 +20,7 @@ import {
     MainHeading1,
     SubHeading4,
     HorizontalTestBlock1,
+    SubNavbar1
 } from '../../Component/Blocks';
 
 export default class ContainerView extends Component {
@@ -26,8 +28,11 @@ export default class ContainerView extends Component {
         return (
             <section>
                 <Navigation />
-                <HorizontalTestBlock1 />
-                <HorizontalTestBlock1 />
+                <SubNavbar1>
+                    <Link to="/containers/styled">Styled Containers</Link>
+                    <Link to="/containers/unstyled">Unstyled Containers</Link>
+                    <Link to="/holders">Holders</Link>
+                </SubNavbar1>
                 <Container1>
                     <MainHeading1>
                         UnStyled Containers

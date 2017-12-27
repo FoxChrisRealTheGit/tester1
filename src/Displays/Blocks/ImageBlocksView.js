@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Navigation from '../Navigation';
 
 import chrischillin from '../../images/Chris-hangingout.jpg';
@@ -7,6 +8,7 @@ import Container1, { Container3 } from '../../Component/Containers';
 import {
     Heading1,
     SubHeading4,
+    SubNavbar1,
     HorizontalTestBlock1,
     CircleImage1,
     CircleImage2,
@@ -40,7 +42,13 @@ export default class ImageBlocksView extends Component {
         return (
             <section>
                 <Navigation />
-                <HorizontalTestBlock1 />
+                <SubNavbar1>
+                    <Link to="/blocks/buttonviews">Button</Link>
+                    <Link to="/blocks/headingviews">Headings</Link>
+                    <Link to="/blocks/imageviews">Images</Link>
+                    <Link to="/blocks/navbarviews">NavBars</Link>
+                    <Link to="/blocks/paragraphviews">Paragraphs</Link>
+                </SubNavbar1>
                 <Container1>
                     <Heading1>
                         Images
@@ -202,7 +210,7 @@ export default class ImageBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <Container3>
                     <SubHeading4>
-                       Rounded Rectangle Image 1
+                        Rounded Rectangle Image 1
                     </SubHeading4>
                     <RoundedRectangleImage1>
                         {chrischillin}
@@ -212,7 +220,7 @@ export default class ImageBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <Container3>
                     <SubHeading4>
-                       Rounded Rectangle Image 2
+                        Rounded Rectangle Image 2
                     </SubHeading4>
                     <RoundedRectangleImage2>
                         {chrischillin}
@@ -222,7 +230,7 @@ export default class ImageBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <Container3>
                     <SubHeading4>
-                       Rounded Rectangle Image 3
+                        Rounded Rectangle Image 3
                     </SubHeading4>
                     <RoundedRectangleImage3>
                         {chrischillin}
@@ -232,7 +240,7 @@ export default class ImageBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <Container3>
                     <SubHeading4>
-                       Rounded Rectangle Image 4
+                        Rounded Rectangle Image 4
                     </SubHeading4>
                     <RoundedRectangleImage4>
                         {chrischillin}
@@ -242,7 +250,7 @@ export default class ImageBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <Container3>
                     <SubHeading4>
-                       Rounded Rectangle Image 5
+                        Rounded Rectangle Image 5
                     </SubHeading4>
                     <RoundedRectangleImage5>
                         {chrischillin}
@@ -253,7 +261,7 @@ export default class ImageBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <Container3>
                     <SubHeading4>
-                       Rectangle Image 1
+                        Rectangle Image 1
                     </SubHeading4>
                     <RectangleImage1>
                         {chrischillin}
@@ -263,7 +271,7 @@ export default class ImageBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <Container3>
                     <SubHeading4>
-                       Rectangle Image 2
+                        Rectangle Image 2
                     </SubHeading4>
                     <RectangleImage2>
                         {chrischillin}
@@ -273,7 +281,7 @@ export default class ImageBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <Container3>
                     <SubHeading4>
-                       Rectangle Image 3
+                        Rectangle Image 3
                     </SubHeading4>
                     <RectangleImage3>
                         {chrischillin}
@@ -283,7 +291,7 @@ export default class ImageBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <Container3>
                     <SubHeading4>
-                       Rectangle Image 4
+                        Rectangle Image 4
                     </SubHeading4>
                     <RectangleImage4>
                         {chrischillin}
@@ -293,7 +301,7 @@ export default class ImageBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <Container3>
                     <SubHeading4>
-                       Rectangle Image 5
+                        Rectangle Image 5
                     </SubHeading4>
                     <RectangleImage5>
                         {chrischillin}

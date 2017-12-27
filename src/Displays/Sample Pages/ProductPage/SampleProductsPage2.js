@@ -1,12 +1,19 @@
-import React ,{Component} from 'react';
+import React, { Component } from 'react';
 import Navigation from '../../Navigation';
 
-export default class SampleProductPage2 extends Component{
+import { Link } from 'react-router-dom';
+import { SubNavbar1 } from '../../../Component/Blocks';
 
-    render(){
-        return(
+export default class SampleProductPage2 extends Component {
+
+    render() {
+        return (
             <section>
                 <Navigation />
+                <SubNavbar1>
+                    <Link to="/samplepages/product1">Product 1</Link>
+                    <Link to="/samplepages/product2">Product 2</Link>
+                </SubNavbar1>
             </section>
         )
     }

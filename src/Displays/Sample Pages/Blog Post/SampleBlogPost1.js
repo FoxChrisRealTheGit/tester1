@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 import Navigation from '../../Navigation';
 
 import Container1 from '../../../Component/Containers';
@@ -10,10 +11,12 @@ import Block1, {
     MainHeading1,
     SubHeading1,
     Paragraph6,
+    Paragraph7,
     Paragraph9,
     SecondarySubHeading2,
-    PullQuote3,
-    CircleImage2
+    PullQuote1,
+    CircleImage2,
+    SubNavbar1,
 } from '../../../Component/Blocks';
 
 import chrischillin from '../../../images/Chris-hangingout.jpg';
@@ -24,7 +27,13 @@ export default class SampleBlogPost1 extends Component {
         return (
             <section>
                 <Navigation />
-                <HorizontalTestBlock1 />
+                <SubNavbar1>
+                    <Link to="/samplepages/blog1">Blog 1</Link>
+                    <Link to="/samplepages/blog2">Blog 2</Link>
+                    <Link to="/samplepages/blog3">Blog 3</Link>
+                    <Link to="/samplepages/blog4">Blog 4</Link>
+                    <Link to="/samplepages/blog5">Blog 5</Link>
+                </SubNavbar1>
                 <Container1>
                     <Holder6>
                         <MainHeading1>
@@ -73,9 +82,10 @@ export default class SampleBlogPost1 extends Component {
                 </Container1>
                 <Container1>
                     <Holder7>
-                        <PullQuote3>
-                            Fashion axe adaptogen lomo 3 wolf moon plaid farm-to-table trust fund fanny pack disrupt migas air plant waistcoat flannel cornhole.
-                    </PullQuote3>
+                        <PullQuote1>
+                            Fashion axe adaptogen lomo 3 wolf moon plaid farm-to-table trust fund fanny pack disrupt migas air plant waistcoat flannel cornhole.\
+                            Hipster Person
+                        </PullQuote1>
                     </Holder7>
                 </Container1>
                 <Container1>

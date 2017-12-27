@@ -66,6 +66,9 @@ import SampleAboutPage2 from './Displays/Sample Pages/AboutPage/SampleAboutPage2
 
 import SampleBlogPost1 from './Displays/Sample Pages/Blog Post/SampleBlogPost1';
 import SampleBlogPost2 from './Displays/Sample Pages/Blog Post/SampleBlogPost2';
+import SampleBlogPost3 from './Displays/Sample Pages/Blog Post/SampleBlogPost3';
+import SampleBlogPost4 from './Displays/Sample Pages/Blog Post/SampleBlogPost4';
+import SampleBlogPost5 from './Displays/Sample Pages/Blog Post/SampleBlogPost5';
 
 import SampleContactPage1 from './Displays/Sample Pages/ContactPage/SampleContactPage1';
 import SampleContactPage2 from './Displays/Sample Pages/ContactPage/SampleContactPage2';
@@ -162,13 +165,18 @@ export default (
         <Route exact path="/samplepages" component={SamplePagesMain}></Route>
         <Route path="/samplepages/about1" component={SampleAboutPage1}></Route>
         <Route path="/samplepages/about2" component={SampleAboutPage2}></Route>
+
         <Route path="/samplepages/blog1" component={SampleBlogPost1}></Route>
         <Route path="/samplepages/blog2" component={SampleBlogPost2}></Route>
+        <Route path="/samplepages/blog3" component={SampleBlogPost3}></Route>
+        <Route path="/samplepages/blog4" component={SampleBlogPost4}></Route>
+        <Route path="/samplepages/blog5" component={SampleBlogPost5}></Route>
+
         <Route path="/samplepages/contact1" component={SampleContactPage1}></Route>
         <Route path="/samplepages/contact2" component={SampleContactPage2}></Route>
         <Route path="/samplepages/home1" component={SampleHomePage1}></Route>
         <Route path="/samplepages/home2" component={SampleHomePage2}></Route>
-        <Route path="samplepages/product1" component={SampleProductPage1}></Route>
+        <Route path="/samplepages/product1" component={SampleProductPage1}></Route>
         <Route path="/samplepages/product2" component={SampleProductPage2}></Route>
         
         <Route exact path="/templatesamples" component={TemplateSamplesMain}></Route>

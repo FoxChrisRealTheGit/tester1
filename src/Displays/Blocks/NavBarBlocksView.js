@@ -24,7 +24,13 @@ export default class NavBarBlocksView extends Component {
         return (
             <section>
                 <Navigation />
-                <HorizontalTestBlock1 />
+                <SubNavbar1>
+                    <Link to="/blocks/buttonviews">Button</Link>
+                    <Link to="/blocks/headingviews">Headings</Link>
+                    <Link to="/blocks/imageviews">Images</Link>
+                    <Link to="/blocks/navbarviews">NavBars</Link>
+                    <Link to="/blocks/paragraphviews">Paragraphs</Link>
+                </SubNavbar1>
                 <Container1>
                     <Heading1>
                         Navbars

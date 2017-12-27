@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import Navigation from '../Navigation';
 
 import Container1 from '../../Component/Containers';
 import {
     Heading1,
+    SubNavbar1,
     HorizontalTestBlock1,
     FlatButton1,
     FlatButton2,
@@ -18,7 +20,13 @@ export default class ButtonBlocksView extends Component {
         return (
             <section>
                 <Navigation />
-                <HorizontalTestBlock1 />
+                <SubNavbar1>
+                    <Link to="/blocks/buttonviews">Button</Link>
+                    <Link to="/blocks/headingviews">Headings</Link>
+                    <Link to="/blocks/imageviews">Images</Link>
+                    <Link to="/blocks/navbarviews">NavBars</Link>
+                    <Link to="/blocks/paragraphviews">Paragraphs</Link>
+                </SubNavbar1>
                 <Container1>
                     <Heading1>
                         Buttons
