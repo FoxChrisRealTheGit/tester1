@@ -47,6 +47,7 @@ export default class SampleBlogPost1 extends Component {
                     </Holder6>
                 </Container1>
                 <HorizontalTestBlock1 />
+                <HorizontalTestBlock1 />
                 <Container1>
                     <Holder1>
                         <CircleImage2>
