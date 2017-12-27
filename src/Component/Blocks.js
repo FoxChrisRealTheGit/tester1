@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import './component styles/reset.css';
 import './component styles/blocks.css';
 
+import Container1 from './Containers';
+import Holder1, { Holder2 } from './Holders';
+
 /* Blocks */
 /*
 Blocks Description and use
@@ -894,14 +897,28 @@ export class SubNavbar1 extends Component {
 export class SubNavbar2 extends Component {
     render() {
         const childs = React.Children.toArray(this.props.children)
-        const navBar = childs.map((x, i) => {
-            return <li key={i}>{x}</li>
+        const navBar = childs.map((x, i, arr) => {
+            return <li key={i}>{arr[i + 2]}</li>
         })
         return (
             <header className="subnavbar2">
-                <ul className="subnavbar2-navbar">
-                    {navBar}
-                </ul>
+                <Container1>
+                    <Holder1>
+                        <ul className="subnavbar2-navbar1">
+                            {childs[0]}
+                            {childs[1]}
+                        </ul>
+                        <Holder2>
+                            <Block1 />
+                            <div className="subnavbar2-globalSearch">
+                                <GlobalSearch1 >Search Holder</GlobalSearch1>
+                            </div>
+                            <ul className="subnavbar2-navbar2">
+                                {navBar}
+                            </ul>
+                        </Holder2>
+                    </Holder1>
+                </Container1>
             </header>
         )
     }
@@ -1421,3 +1438,19 @@ export class FloatingButton2 extends Component {
 }
 /* End of Floating Buttons */
 /* End of Button Blocks */
+/* Start of Search items */
+/* Global Search */
+export class GlobalSearch1 extends Component {
+    render() {
+        const childs = React.Children.toArray(this.props.children)
+        return (
+            <button className="globalSearch1">{childs[0]}</button>
+        )
+    }
+}
+/* End of Global Search */
+/* Start of Constrained Search */
+
+
+/* End of Constrained Search */
+/* End of Search Items */
