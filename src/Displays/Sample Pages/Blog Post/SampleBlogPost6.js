@@ -21,7 +21,7 @@ import Block1, {
 
 import chrischillin from '../../../images/Chris-hangingout.jpg';
 
-export default class SampleBlogPost3 extends Component {
+export default class SampleBlogPost6 extends Component {
 
     render() {
         return (
@@ -36,7 +36,7 @@ export default class SampleBlogPost3 extends Component {
                     <Link to="/samplepages/blog6">Blog 6</Link>
                     <Link to="/samplepages/blog7">Blog 7</Link>
                 </SubNavbar1>
-                play with images in layout completely to the right, oposite of 1
+                type 3 paragraph layout only, test many headers
             </section>
         )
     }

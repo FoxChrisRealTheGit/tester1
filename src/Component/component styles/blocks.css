@@ -904,7 +904,7 @@
 .subHeading17{
     width:inherit;
     font-family: monospace;
-    font-size: 4.187em;
+    font-size: 2.9075em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -920,9 +920,8 @@
 /* Start of SubHeading 18 Styles */
 .subHeading18{
     width:inherit;
-    font-family: serif;
-    color: lightgray;
-    font-size: 2.618em;
+    font-family: monospace;
+    font-size: 4.187em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1406,6 +1405,15 @@
     font-family: sans-serif;
     font-size: 1.333em;
 }
+.paragraph5::first-letter{
+    font-size: 6em;
+    float: left;
+    line-height: .1em;
+    padding:0;
+    color: rgba(220, 220, 220, 0.6);
+    margin: 0 -11px 0 -23px;
+
+}
 /* End of paragraph 5 */
 /* End of Type 1 Paragraph Styles */
 /* Start of Type 2 Paragraph Styles */
@@ -1453,6 +1461,15 @@
     line-height: 1.5em;
     font-family: serif;
     font-size: 1.333em;
+}
+.paragraph10::first-letter{
+    font-size: 6em;
+    float: left;
+    line-height: .1em;
+    padding:0;
+    color: rgba(220, 220, 220, 0.6);
+    margin: 0 -11px 0 -23px;
+
 }
 /* End of paragraph 10 */
 /* End of Type 2 Paragraph Styles */
@@ -1502,6 +1519,15 @@
     font-family: cursive;
     font-size: 1.333em;
 }
+.paragraph15::first-letter{
+    font-size: 6em;
+    float: left;
+    line-height: .1em;
+    padding:0;
+    color: rgba(220, 220, 220, 0.6);
+    margin: 0 -11px 0 -23px;
+
+}
 /* End of paragraph 15 */
 /* End of Type 3 Paragraph Styles */
 /* Start of Type 4 Paragraph Styles */
@@ -1549,6 +1575,15 @@
     line-height: 1.5em;
     font-family: monospace;
     font-size: 1.333em;
+}
+.paragraph20::first-letter{
+    font-size: 6em;
+    float: left;
+    line-height: .1em;
+    padding:0;
+    color: rgba(220, 220, 220, 0.6);
+    margin: 0 -11px 0 -23px;
+
 }
 /* End of paragraph 20 */
 /* End of Type 4 Paragraph Styles */

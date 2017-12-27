@@ -33,7 +33,10 @@ export default class SampleBlogPost5 extends Component {
                     <Link to="/samplepages/blog3">Blog 3</Link>
                     <Link to="/samplepages/blog4">Blog 4</Link>
                     <Link to="/samplepages/blog5">Blog 5</Link>
+                    <Link to="/samplepages/blog6">Blog 6</Link>
+                    <Link to="/samplepages/blog7">Blog 7</Link>
                 </SubNavbar1>
+                type 2 paragraph layout only, test many headers
             </section>
         )
     }

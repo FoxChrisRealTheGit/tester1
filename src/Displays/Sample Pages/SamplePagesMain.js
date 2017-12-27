@@ -4,7 +4,7 @@ import Navigation from '../Navigation';
 import { Link } from 'react-router-dom';
 
 import Container1 ,{ Container11 } from '../../Component/Containers';
-import Holder1 ,{Holder8}from '../../Component/Holders';
+import Holder1 ,{Holder9}from '../../Component/Holders';
 import {
     Heading1,
     SubHeading4,
@@ -60,7 +60,7 @@ export default class SamplesPagesMain extends Component{
             </Container1>
             <HorizontalTestBlock1 />
             <Container1>
-                <Holder8>
+                <Holder9>
                     <SubHeading4>
                         <Link to="/samplepages/blog1">blog1</Link>
                     </SubHeading4>
@@ -76,7 +76,13 @@ export default class SamplesPagesMain extends Component{
                     <SubHeading4>
                         <Link to="/samplepages/blog5">blog5</Link>
                     </SubHeading4>
-                </Holder8>
+                    <SubHeading4>
+                        <Link to="/samplepages/blog6">blog6</Link>
+                    </SubHeading4>
+                    <SubHeading4>
+                        <Link to="/samplepages/blog7">blog7</Link>
+                    </SubHeading4>
+                </Holder9>
             </Container1>
             <HorizontalTestBlock1 />
             <HorizontalTestBlock1 />

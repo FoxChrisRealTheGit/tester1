@@ -69,6 +69,8 @@ import SampleBlogPost2 from './Displays/Sample Pages/Blog Post/SampleBlogPost2';
 import SampleBlogPost3 from './Displays/Sample Pages/Blog Post/SampleBlogPost3';
 import SampleBlogPost4 from './Displays/Sample Pages/Blog Post/SampleBlogPost4';
 import SampleBlogPost5 from './Displays/Sample Pages/Blog Post/SampleBlogPost5';
+import SampleBlogPost6 from './Displays/Sample Pages/Blog Post/SampleBlogPost6';
+import SampleBlogPost7 from './Displays/Sample Pages/Blog Post/SampleBlogPost7';
 
 import SampleContactPage1 from './Displays/Sample Pages/ContactPage/SampleContactPage1';
 import SampleContactPage2 from './Displays/Sample Pages/ContactPage/SampleContactPage2';
@@ -171,6 +173,8 @@ export default (
         <Route path="/samplepages/blog3" component={SampleBlogPost3}></Route>
         <Route path="/samplepages/blog4" component={SampleBlogPost4}></Route>
         <Route path="/samplepages/blog5" component={SampleBlogPost5}></Route>
+        <Route path="/samplepages/blog6" component={SampleBlogPost6}></Route>
+        <Route path="/samplepages/blog7" component={SampleBlogPost7}></Route>
 
         <Route path="/samplepages/contact1" component={SampleContactPage1}></Route>
         <Route path="/samplepages/contact2" component={SampleContactPage2}></Route>
