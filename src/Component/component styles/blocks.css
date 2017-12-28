@@ -1195,7 +1195,7 @@
 }
 /* End of Secondary SubHeading 20 */
 /* End of Secondary Styles */
-/* Start of NavBar Styles */
+/* Start of Navigation Styles */
 /* Start of NavBar Styles */
 /* Start of NavBar 1 */
 .navbar1{
@@ -1429,6 +1429,79 @@
 }
 /* End of SubNavBar 5 */
 /* End of SubNavBar Styles */
+/* Start of Brand Styles */
+/* Start of Brand 1 */
+.brand1{
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+.brand1 img{
+    margin: 0;
+}
+.brand1-name{
+    display: flex;
+    margin: 0;
+    font-weight: 900;
+}
+/* End of Brand 1 */
+/* Start of Brand 2 */
+.brand2{
+    width: inherit;
+    display: flex;
+    align-items: center;
+}
+/* End of Brand 2 */
+/* Start of Brand 3 */
+.brand3{
+    width: inherit;
+    display: flex;
+    align-items: center;
+}
+/* End of Brand 3 */
+/* Start of Brand 4 */
+.brand4{
+    width: inherit;
+    display: flex;
+    align-items: center;
+}
+/* End of Brand 4 */
+/* Start of Brand 5 */
+.brand5{
+    width: inherit;
+    display: flex;
+    align-items: center;
+}
+/* End of Brand 5 */
+/* End of Brand Styles */
+/* Start of Drop Down Nav Styles */
+/* Start of Dropdown nav 1 */
+.dropdownnav1{
+    width: inherit;
+}
+/* End of Dropdown nav 1 */
+/* Start of Dropdown nav 2 */
+.dropdownnav2{
+    width: inherit;
+}
+/* End of Dropdown nav 2 */
+/* Start of Dropdown nav 3 */
+.dropdownnav3{
+    width: inherit;
+}
+/* End of Dropdown nav 3 */
+/* Start of Dropdown nav 4 */
+.dropdownnav4{
+    width: inherit;
+}
+/* End of Dropdown nav 4 */
+/* Start of Dropdown nav 5 */
+.dropdownnav5{
+    width: inherit;
+}
+/* End of Dropdown nav 5 */
+/* End of Drop Down Nav Styles */
+/* End of Navigation Styles */
 /* Start of Paragraph Styles */
 /* Start of Basic Paragraph Styles */
 /* Start of Type 1 Paragraph Styles */

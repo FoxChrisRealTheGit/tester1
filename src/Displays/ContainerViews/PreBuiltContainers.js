@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import Navigation from '../Navigation';
 
@@ -11,7 +11,20 @@ import {
     HorizontalTestBlock1
 } from '../../Component/Blocks';
 
-import Container1 from '../../Component/Containers';
+import StyluxStyledHeader1,
+{
+    StyluxStyledHeader2,
+    StyluxStyledHeader3,
+    StyluxStyledHeader4,
+    StyluxStyledHeader5,
+    StyluxStyledFooter1,
+    StyluxStyledFooter2,
+    StyluxStyledFooter3,
+    StyluxStyledFooter4,
+    StyluxStyledFooter5
+} from '../../Component/StyledContainers';
+
+import Container1, { Container3 } from '../../Component/Containers';
 
 export default class StyledContainerMain extends Component {
     render() {
@@ -35,35 +48,45 @@ export default class StyledContainerMain extends Component {
                     </Heading1>
                 </Container1>
                 <HorizontalTestBlock1 />
-                <Container1>
+                <Container3>
                     <SubHeading4>
                         Header 1
                     </SubHeading4>
-                </Container1>
+                    <StyluxStyledHeader1>
+                    </StyluxStyledHeader1>
+                </Container3>
                 <HorizontalTestBlock1 />
-                <Container1>
+                <Container3>
                     <SubHeading4>
                         Header 2
                     </SubHeading4>
-                </Container1>
+                    <StyluxStyledHeader2>
+                    </StyluxStyledHeader2>
+                </Container3>
                 <HorizontalTestBlock1 />
-                <Container1>
+                <Container3>
                     <SubHeading4>
                         Header 3
                     </SubHeading4>
-                </Container1>
+                    <StyluxStyledHeader3>
+                    </StyluxStyledHeader3>
+                </Container3>
                 <HorizontalTestBlock1 />
-                <Container1>
+                <Container3>
                     <SubHeading4>
                         Header 4
                     </SubHeading4>
-                </Container1>
+                    <StyluxStyledHeader4>
+                    </StyluxStyledHeader4>
+                </Container3>
                 <HorizontalTestBlock1 />
-                <Container1>
+                <Container3>
                     <SubHeading4>
                         Header 5
                     </SubHeading4>
-                </Container1>
+                    <StyluxStyledHeader5>
+                    </StyluxStyledHeader5>
+                </Container3>
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Container1>
@@ -72,35 +95,45 @@ export default class StyledContainerMain extends Component {
                     </Heading1>
                 </Container1>
                 <HorizontalTestBlock1 />
-                <Container1>
+                <Container3>
                     <SubHeading4>
                         Footer 1
                     </SubHeading4>
-                </Container1>
+                    <StyluxStyledFooter1>
+                    </StyluxStyledFooter1>
+                </Container3>
                 <HorizontalTestBlock1 />
-                <Container1>
+                <Container3>
                     <SubHeading4>
                         Footer 2
                     </SubHeading4>
-                </Container1>
+                    <StyluxStyledFooter1>
+                    </StyluxStyledFooter1>
+                </Container3>
                 <HorizontalTestBlock1 />
-                <Container1>
+                <Container3>
                     <SubHeading4>
                         Footer 3
                     </SubHeading4>
-                </Container1>
+                    <StyluxStyledFooter1>
+                    </StyluxStyledFooter1>
+                </Container3>
                 <HorizontalTestBlock1 />
-                <Container1>
+                <Container3>
                     <SubHeading4>
                         Footer 4
                     </SubHeading4>
-                </Container1>
+                    <StyluxStyledFooter1>
+                    </StyluxStyledFooter1>
+                </Container3>
                 <HorizontalTestBlock1 />
-                <Container1>
+                <Container3>
                     <SubHeading4>
                         Footer 5
                     </SubHeading4>
-                </Container1>
+                    <StyluxStyledFooter1>
+                    </StyluxStyledFooter1>
+                </Container3>
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Container1>

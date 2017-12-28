@@ -800,7 +800,7 @@ export class SecondarySubHeading20 extends Component {
 /* End of Type 4 secondary subheading */
 /* End of h4 Secondary SubHeading */
 /* End of Heading Blocks */
-/* Start of NavBar Blocks */
+/* Start of Navigation Blocks */
 /* Start of NavBar Blocks */
 export class Navbar1 extends Component {
     render() {
@@ -971,9 +971,113 @@ export class SubNavbar5 extends Component {
 
 /* End of Sub NavBar Blocks */
 /* Start of Brand Blocks */
-
+export class Brand1 extends Component {
+    render() {
+        const childs = React.Children.toArray(this.props.children)
+        return (
+            <section className="brand1">
+                <SquareImage1>
+                    {childs[0]}
+                    logo
+                </SquareImage1>
+                <p className="brand1-name">{childs[1]}</p>
+            </section>
+        )
+    }
+}
+export class Brand2 extends Component {
+    render() {
+        const childs = React.Children.toArray(this.props.children)
+        return (
+            <section className="brand2">
+                <RectangleImage2>
+                    {childs[0]}
+                    logo
+                </RectangleImage2>
+            </section>
+        )
+    }
+}
+export class Brand3 extends Component {
+    render() {
+        const childs = React.Children.toArray(this.props.children)
+        return (
+            <section className="brand3">
+                <SquareImage2>
+                    {childs[0]}
+                    logo
+                </SquareImage2>
+            </section>
+        )
+    }
+}
+export class Brand4 extends Component {
+    render() {
+        const childs = React.Children.toArray(this.props.children)
+        return (
+            <section className="brand4">
+                <RectangleImage4>
+                    {childs[0]}
+                    logo
+                </RectangleImage4>
+            </section>
+        )
+    }
+}
+export class Brand5 extends Component {
+    render() {
+        const childs = React.Children.toArray(this.props.children)
+        return (
+            <section className="brand5">
+            </section>
+        )
+    }
+}
 /* End of Brand Blocks */
-/* End of NavBar Blocks */
+/* Start of Drop Down Nav Blocks */
+export class DropDownNav1 extends Component{
+    render(){
+        return(
+            <section className="dropdownnav1">
+            </section>
+        )
+    }
+}
+export class DropDownNav2 extends Component{
+    render(){
+        return(
+            <section className="dropdownnav2">
+            </section>
+        )
+    }
+}
+export class DropDownNav3 extends Component{
+    render(){
+        return(
+            <section className="dropdownnav3">
+            </section>
+        )
+    }
+}
+export class DropDownNav4 extends Component{
+    render(){
+        return(
+            <section className="dropdownnav4">
+            </section>
+        )
+    }
+}
+export class DropDownNav5 extends Component{
+    render(){
+        return(
+            <section className="dropdownnav5">
+            </section>
+        )
+    }
+}
+
+/* End of Drop Down Nav Blocks */
+/* End of Navigation Blocks */
 /* Start of Paragraph Blocks */
 /* Start of Basic Paragraph Blocks */
 /* Start of Type 1 Paragraph Blocks */
