@@ -1228,13 +1228,15 @@
 /* Start of NavBar 2 */
 .navbar2{
     width:inherit;
-    height: 100px;
+    height: inherit;
     display: flex;
+    align-items: center;
 }
 .navbar2-navbar{
     width: inherit;
-    height: 100px;
+    height: inherit;
     display: flex;
+    align-items: center;
     margin: 0 10px;
 }
 .navbar2-navbar a{
@@ -1252,13 +1254,14 @@
 /* Start of NavBar 3 */
 .navbar3{
     width:inherit;
-    height: 100px;
+    height: inherit;
     display: flex;
 }
 .navbar3-navbar{
     width: inherit;
-    height: 100px;
+    height: inherit;
     display: flex;
+    align-items: center;
     margin: 0 10px;
     justify-content: flex-end; 
 }

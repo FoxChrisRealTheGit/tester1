@@ -4,40 +4,43 @@
 /* Start of Stylux Styled Header 1 */
 .StyluxStyledHeader1{
     width: 100%;
-    height: 100px;
-    background: black;
+    background:slategray;
+    padding: 10px;
+    display: flex;
+    align-items: center;
 }
 
 /* End of Stylux Header 1 */
 /* Start of Stylux Styled Header 2 */
 .StyluxStyledHeader2{
     width: 100%;
-    height: 100px;
-    background: black;
+    background: slategray;
+    display: flex;
 }
 
 /* End of Stylux Header 2 */
 /* Start of Stylux Styled Header 3 */
 .StyluxStyledHeader3{
     width: 100%;
-    height: 100px;
-    background: black;
+    background: slategray;
 }
 
 /* End of Stylux Header 3 */
 /* Start of Stylux Styled Header 4 */
 .StyluxStyledHeader4{
     width: 100%;
-    height: 100px;
-    background: black;
+    background: slategray;
 }
 
 /* End of Stylux Header 4 */
 /* Start of Stylux Styled Header 5 */
 .StyluxStyledHeader5{
-    width: 100%;
-    height: 100px;
-    background: black;
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: slategray;
+
 }
 
 /* End of Stylux Header 5 */
@@ -46,32 +49,32 @@
 /* Start of Stylux Footer 1 */
 .StyluxStyledFooter1{
     width: 100%;
-    height: 100px;
-    background: black;
+    background: slategray;
+    padding: 0 10% 0 15%;
 }
 
 /* End of Stylux Footer 1 */
 /* Start of Stylux Footer 2 */
 .StyluxStyledFooter2{
     width: 100%;
-    height: 100px;
-    background: black;
+    background: slategray;
+    padding: 0 10% 0 15%;
 }
 
 /* End of Stylux Footer 2 */
 /* Start of Stylux Footer 3 */
 .StyluxStyledFooter3{
     width: 100%;
-    height: 100px;
-    background: black;
+    background: slategray;
+    padding: 0 10% 0 15%;
 }
 
 /* End of Stylux Footer 3 */
 /* Start of Stylux Footer 4 */
 .StyluxStyledFooter4{
     width: 100%;
-    height: 100px;
-    background: black;
+    background: slategray;
+    padding: 0 10% 0 15%;
 }
 
 /* End of Stylux Footer 4 */

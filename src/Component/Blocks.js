@@ -809,11 +809,11 @@ export class Navbar1 extends Component {
             return <li key={i}>{x}</li>
         })
         return (
-            <div className="navbar1">
+            <section className="navbar1">
                 <ul className="navbar1-navbar">
                     {navBar}
                 </ul>
-            </div>
+            </section>
         )
     }
 }
@@ -824,11 +824,11 @@ export class Navbar2 extends Component {
             return <li key={i}>{x}</li>
         })
         return (
-            <header className="navbar2">
+            <section className="navbar2">
                 <ul className="navbar2-navbar">
                     {navBar}
                 </ul>
-            </header>
+            </section>
         )
     }
 }
@@ -839,11 +839,11 @@ export class Navbar3 extends Component {
             return <li key={i}>{x}</li>
         })
         return (
-            <header className="navbar3">
+            <section className="navbar3">
                 <ul className="navbar3-navbar">
                     {navBar}
                 </ul>
-            </header>
+            </section>
         )
     }
 }
@@ -854,11 +854,11 @@ export class Navbar4 extends Component {
             return <li key={i}>{x}</li>
         })
         return (
-            <header className="navbar4">
+            <section className="navbar4">
                 <ul className="navbar4-navbar">
                     {navBar}
                 </ul>
-            </header>
+            </section>
         )
     }
 }
@@ -869,11 +869,11 @@ export class Navbar5 extends Component {
             return <li key={i}>{x}</li>
         })
         return (
-            <header className="navbar5">
+            <section className="navbar5">
                 <ul className="navbar5-navbar">
                     {navBar}
                 </ul>
-            </header>
+            </section>
         )
     }
 }
