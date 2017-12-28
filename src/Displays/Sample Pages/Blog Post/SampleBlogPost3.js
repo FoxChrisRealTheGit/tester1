@@ -7,6 +7,8 @@ import Container1, { Container3, Container2 } from '../../../Component/Container
 
 import Holder1, { Holder4, Holder5, Holder6, Holder7 } from '../../../Component/Holders';
 
+import TwitterFeed1, { FacebookFeed1,FacebookFeed2 , FacebookFeed3  } from '../../../Component/SocialMediaContainers';
+
 import Block1, {
     HorizontalTestBlock1,
     MainHeading4,
@@ -53,7 +55,17 @@ export default class SampleBlogPost3 extends Component {
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Container2>
-                    <Block1 />
+                    <Holder5>
+                        <FacebookFeed1>
+                            FoxDesignAgency
+                        </FacebookFeed1>
+                        <FacebookFeed2>
+                            FoxDesignAgency
+                        </FacebookFeed2>
+                        <FacebookFeed3>
+                            FoxDesignAgency
+                        </FacebookFeed3>
+                    </Holder5>
                     <Holder6>
                         <Holder4>
                             <CircleImage2>

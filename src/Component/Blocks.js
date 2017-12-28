@@ -1558,3 +1558,6 @@ export class GlobalSearch1 extends Component {
 
 /* End of Constrained Search */
 /* End of Search Items */
+/* Start of Paralax Stuff */
+
+/* End of Paralax Stuff */
