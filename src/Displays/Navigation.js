@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { NavbarTest1, SquareImage2 } from '../Component/Blocks';
 
-import Container1 from '../Component/Containers';
+import Container1 from '../Components 1.0.0/Containers';
 import { Holder5 } from '../Component/Holders';
 
 import { SubHeading4, Navbar1 } from '../Component/Blocks';

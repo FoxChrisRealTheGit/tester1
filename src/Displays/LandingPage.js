@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Navigation from './Navigation';
 
-import Container1 from '../Component/Containers';
+import Container1 from '../Components 1.0.0/Containers';
 
 import { HorizontalTestBlock1, SubHeading4 } from '../Component/Blocks';
 
