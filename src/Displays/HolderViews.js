@@ -4,7 +4,9 @@ import {Link} from 'react-router-dom';
 
 import Container1 from '../Components 1.0.0/Containers';
 
-import { Block2, MainHeading1, SubHeading4, HorizontalTestBlock1, SubNavbar1 } from '../Component/Blocks';
+import {Block2} from '../Components 1.0.0/Blocks';
+
+import {MainHeading1, SubHeading4, HorizontalTestBlock1, SubNavbar1 } from '../Component/Blocks';
 
 import Holder1, {
     Holder2,

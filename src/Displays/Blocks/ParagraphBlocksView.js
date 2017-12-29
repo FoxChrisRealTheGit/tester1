@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import Navigation from '../Navigation';
 
-import Container1 from '../../Component/Containers';
+import Container1 from '../../Components 1.0.0/Containers';
 import {
     MainHeading1,
     Heading1,
