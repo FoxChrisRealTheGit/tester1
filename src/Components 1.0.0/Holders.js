@@ -13,13 +13,15 @@ export default class Holder1 extends Component {
         this.state={
                 display: props.display || 'flex',
                 direction: props.direction || 'row',
+                block1Direction: props.block1direction || 'row',
                 block1: props.block1 || '1',
                 alignBlock1: props.alignBlock1 || 'center',
                 block2: props.block2 || '1',
                 alignBlock2: props.alignBlock2 || 'center',
                 textColor: props.textColor || 'black',
                 background: props.background || 'white',
-                margin: '10px',
+                padding: props.padding || '0',
+                margin: props.margin || '10px',
             }
         }
 
@@ -73,7 +75,8 @@ export class Holder2 extends Component {
                 alignBlock3: props.alignBlock3 || 'center',
                 textColor: props.textColor || 'black',
                 background: props.background || 'white',
-                margin: '10px',
+                padding: props.padding || '0',
+                margin: props.margin || '10px',
             }
         }
         render() {
@@ -137,7 +140,8 @@ export class Holder3 extends Component {
                 alignBlock4: props.alignBlock4 || 'center',
                 textColor: props.textColor || 'black',
                 background: props.background || 'white',
-                margin: '10px',
+                padding: props.padding || '0',
+                margin: props.margin || '10px',
             }
         }
     render() {
@@ -206,7 +210,8 @@ export class Holder4 extends Component {
                 alignBlock2: props.alignBlock2 || 'center',
                 textColor: props.textColor || 'black',
                 background: props.background || 'white',
-                margin: '10px',
+                padding: props.padding || '0',
+                margin: props.margin || '10px',
             }
         }
     render() {
@@ -259,7 +264,8 @@ export class Holder5 extends Component {
                 alignBlock3: props.alignBlock3 || 'center',
                 textColor: props.textColor || 'black',
                 background: props.background || 'white',
-                margin: '10px',
+                padding: props.padding || '0',
+                margin: props.margin || '10px',
             }
         }
     render() {
@@ -323,7 +329,8 @@ export class Holder6 extends Component {
                 alignBlock4: props.alignBlock4 || 'center',
                 textColor: props.textColor || 'black',
                 background: props.background || 'white',
-                margin: '10px'
+                padding: props.padding || '0',
+                margin: props.margin || '10px',
             }
         }
     render() {
@@ -398,7 +405,8 @@ export class Holder7 extends Component {
                 alignBlock5: props.alignBlock5|| 'center',
                 textColor: props.textColor || 'black',
                 background: props.background || 'white',
-                margin: '10px'
+                padding: props.padding || '0',
+                margin: props.margin || '10px',
             }
         }
     render() {

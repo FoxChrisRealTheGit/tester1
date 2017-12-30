@@ -79,7 +79,8 @@ export default class SampleBlogPost3 extends Component {
                         <Paragraph10>
                             Humblebrag bitters tofu fingerstache authentic palo santo listicle ugh snackwave shoreditch keffiyeh pug hoodie distillery meh. Cold-pressed butcher pork belly gastropub raw denim offal actually kogi post-ironic cliche readymade retro semiotics slow-carb tousled. Kinfolk schlitz brunch, blog cardigan direct trade fingerstache man braid franzen vaporware palo santo poke kitsch. Try-hard tbh pour-over cornhole snackwave mlkshk austin coloring book quinoa ramps four loko heirloom. Authentic plaid unicorn food truck. Gluten-free crucifix poke, vaporware copper mug woke chambray kitsch swag next level biodiesel. Copper mug pug vinyl narwhal activated charcoal organic wolf celiac edison bulb sartorial leggings hoodie authentic.
                         </Paragraph10>
-                        <Holder1>
+                        <Holder1
+                            alignBlock1= 'center'>
                             <RoundedImage3>
                                 {chrischillin}
                             </RoundedImage3>

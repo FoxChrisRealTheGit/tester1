@@ -1,0 +1,51 @@
+
+
+
+
+/* images */
+/* Start of Image Styles */
+/* Start of nonrectangle Image Sizes */
+.img-exsm{
+    width: 50px;
+    height: 50px;
+}
+.img-sm{
+    width: 150px;
+    height: 150px;
+}
+.img-md{
+    width: 300px;
+    height: 300px;
+}
+.img-lg{
+    width: 500px;
+    height: 500px;
+}
+.img-exlg{
+    width: 700px;
+    height: 700px;
+}
+/* Start of Rectangle Image Sizes */
+/* Width * 1.618 ish */
+.recimg-exsm{
+    width: 81px;
+    height: 50px;
+}
+.recimg-sm{
+    width: 243px;
+    height: 150px;
+}
+.recimg-md{
+    width: 485px;
+    height: 300px;
+}
+.recimg-lg{
+    width: 809px;
+    height: 500px;
+}
+.recimg-exlg{
+    width: 1137px;
+    height: 700px;
+}
+/* End of Rectangle Image Sizes
+/* End of Image Sizes */

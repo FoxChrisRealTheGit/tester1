@@ -16,6 +16,8 @@ export default class Container1 extends Component {
             block1: props.block1 || '1',
             textColor: props.textColor || 'yellow',
             background: props.background || 'white',
+            padding: props.padding || '0',
+            margin: props.margin || '0',
         }
     }
     render() {

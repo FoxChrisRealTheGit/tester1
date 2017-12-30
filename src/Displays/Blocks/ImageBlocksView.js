@@ -5,38 +5,18 @@ import Navigation from '../Navigation';
 import chrischillin from '../../images/Chris-hangingout.jpg';
 
 import Container1 from '../../Components 1.0.0/Containers';
-import {Holder4} from '../../Components 1.0.0/Holders';
+import { Holder4 } from '../../Components 1.0.0/Holders';
 import {
     Heading1,
     SubHeading4,
     SubNavbar1,
     HorizontalTestBlock1,
-    CircleImage1,
-    CircleImage2,
-    CircleImage3,
-    CircleImage4,
-    CircleImage5,
-    RoundedImage1,
-    RoundedImage2,
-    RoundedImage3,
-    RoundedImage4,
-    RoundedImage5,
-    SquareImage1,
-    SquareImage2,
-    SquareImage3,
-    SquareImage4,
-    SquareImage5,
-    RoundedRectangleImage1,
-    RoundedRectangleImage2,
-    RoundedRectangleImage3,
-    RoundedRectangleImage4,
-    RoundedRectangleImage5,
-    RectangleImage1,
-    RectangleImage2,
-    RectangleImage3,
-    RectangleImage4,
-    RectangleImage5
-} from '../../Component/Blocks';
+    CircleImage,
+    RoundedImage,
+    SquareImage,
+    RoundedRectangleImage,
+    RectangleImage,
+} from '../../Components 1.0.0/Blocks';
 
 export default class ImageBlocksView extends Component {
     render() {
@@ -61,50 +41,55 @@ export default class ImageBlocksView extends Component {
                     <SubHeading4>
                         Circle Image 1
                     </SubHeading4>
-                    <CircleImage1>
+                    <CircleImage
+                        size="exsm">
                         {chrischillin}
                         Chris Hanging out
-                    </CircleImage1>
+                    </CircleImage>
                 </Holder4>
                 <HorizontalTestBlock1 />
                 <Holder4>
                     <SubHeading4>
                         Circle Image 2
                     </SubHeading4>
-                    <CircleImage2>
+                    <CircleImage
+                        size="sm">
                         {chrischillin}
                         Chris Hanging out
-                    </CircleImage2>
+                    </CircleImage>
                 </Holder4>
                 <HorizontalTestBlock1 />
                 <Holder4>
                     <SubHeading4>
                         Circle Image 3
                     </SubHeading4>
-                    <CircleImage3>
+                    <CircleImage
+                        size="md">
                         {chrischillin}
                         Chris Hanging out
-                    </CircleImage3>
+                    </CircleImage>
                 </Holder4>
                 <HorizontalTestBlock1 />
                 <Holder4>
                     <SubHeading4>
                         Circle Image 4
                     </SubHeading4>
-                    <CircleImage4>
+                    <CircleImage
+                        size="lg">
                         {chrischillin}
                         Chris Hanging out
-                    </CircleImage4>
+                    </CircleImage>
                 </Holder4>
                 <HorizontalTestBlock1 />
                 <Holder4>
                     <SubHeading4>
                         Circle Image 5
                     </SubHeading4>
-                    <CircleImage5>
+                    <CircleImage
+                        size="exlg">
                         {chrischillin}
                         Chris Hanging out
-                    </CircleImage5>
+                    </CircleImage>
                 </Holder4>
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
@@ -112,50 +97,55 @@ export default class ImageBlocksView extends Component {
                     <SubHeading4>
                         Rounded Image 1
                     </SubHeading4>
-                    <RoundedImage1>
+                    <RoundedImage
+                        size="exsm">
                         {chrischillin}
                         Chris Hanging out
-                    </RoundedImage1>
+                    </RoundedImage>
                 </Holder4>
                 <HorizontalTestBlock1 />
                 <Holder4>
                     <SubHeading4>
                         Rounded Image 2
                     </SubHeading4>
-                    <RoundedImage2>
+                    <RoundedImage
+                        size="sm">
                         {chrischillin}
                         Chris Hanging out
-                    </RoundedImage2>
+                    </RoundedImage>
                 </Holder4>
                 <HorizontalTestBlock1 />
                 <Holder4>
                     <SubHeading4>
                         Rounded Image 3
                     </SubHeading4>
-                    <RoundedImage3>
+                    <RoundedImage
+                        size="md">
                         {chrischillin}
                         Chris Hanging out
-                    </RoundedImage3>
+                    </RoundedImage>
                 </Holder4>
                 <HorizontalTestBlock1 />
                 <Holder4>
                     <SubHeading4>
                         Rounded Image 4
                     </SubHeading4>
-                    <RoundedImage4>
+                    <RoundedImage
+                        size="lg">
                         {chrischillin}
                         Chris Hanging out
-                    </RoundedImage4>
+                    </RoundedImage>
                 </Holder4>
                 <HorizontalTestBlock1 />
                 <Holder4>
                     <SubHeading4>
                         Rounded Image 5
                     </SubHeading4>
-                    <RoundedImage5>
+                    <RoundedImage
+                        size="exlg">
                         {chrischillin}
                         Chris Hanging out
-                    </RoundedImage5>
+                    </RoundedImage>
                 </Holder4>
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
@@ -163,49 +153,54 @@ export default class ImageBlocksView extends Component {
                     <SubHeading4>
                         Square Image 1
                     </SubHeading4>
-                    <SquareImage1>
+                    <SquareImage
+                        size="exsm">
                         {chrischillin}
                         Chris Hanging out
-                    </SquareImage1>
+                    </SquareImage>
                 </Holder4>
                 <HorizontalTestBlock1 />
                 <Holder4>
                     <SubHeading4>
                         Square Image 2
                     </SubHeading4>
-                    <SquareImage2>
+                    <SquareImage
+                        size="sm">
                         {chrischillin}
                         Chris Hanging out
-                    </SquareImage2>
+                    </SquareImage>
                 </Holder4>
                 <Holder4>
                     <SubHeading4>
                         Square Image 3
                     </SubHeading4>
-                    <SquareImage3>
+                    <SquareImage
+                        size="md">
                         {chrischillin}
                         Chris Hanging out
-                    </SquareImage3>
+                    </SquareImage>
                 </Holder4>
                 <HorizontalTestBlock1 />
                 <Holder4>
                     <SubHeading4>
                         Square Image 4
                     </SubHeading4>
-                    <SquareImage4>
+                    <SquareImage
+                        size="lg">
                         {chrischillin}
                         Chris Hanging out
-                    </SquareImage4>
+                    </SquareImage>
                 </Holder4>
                 <HorizontalTestBlock1 />
                 <Holder4>
                     <SubHeading4>
                         Square Image 5
                     </SubHeading4>
-                    <SquareImage5>
+                    <SquareImage
+                        size="exlg">
                         {chrischillin}
                         Chris Hanging out
-                    </SquareImage5>
+                    </SquareImage>
                 </Holder4>
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
@@ -213,50 +208,55 @@ export default class ImageBlocksView extends Component {
                     <SubHeading4>
                         Rounded Rectangle Image 1
                     </SubHeading4>
-                    <RoundedRectangleImage1>
+                    <RoundedRectangleImage
+                        size="exsm">
                         {chrischillin}
                         Chris Hanging out
-                    </RoundedRectangleImage1>
+                    </RoundedRectangleImage>
                 </Holder4>
                 <HorizontalTestBlock1 />
                 <Holder4>
                     <SubHeading4>
                         Rounded Rectangle Image 2
                     </SubHeading4>
-                    <RoundedRectangleImage2>
+                    <RoundedRectangleImage
+                        size="sm">
                         {chrischillin}
                         Chris Hanging out
-                    </RoundedRectangleImage2>
+                    </RoundedRectangleImage>
                 </Holder4>
                 <HorizontalTestBlock1 />
                 <Holder4>
                     <SubHeading4>
                         Rounded Rectangle Image 3
                     </SubHeading4>
-                    <RoundedRectangleImage3>
+                    <RoundedRectangleImage
+                        size="md">
                         {chrischillin}
                         Chris Hanging out
-                    </RoundedRectangleImage3>
+                    </RoundedRectangleImage>
                 </Holder4>
                 <HorizontalTestBlock1 />
                 <Holder4>
                     <SubHeading4>
                         Rounded Rectangle Image 4
                     </SubHeading4>
-                    <RoundedRectangleImage4>
+                    <RoundedRectangleImage
+                        size="lg">
                         {chrischillin}
                         Chris Hanging out
-                    </RoundedRectangleImage4>
+                    </RoundedRectangleImage>
                 </Holder4>
                 <HorizontalTestBlock1 />
                 <Holder4>
                     <SubHeading4>
                         Rounded Rectangle Image 5
                     </SubHeading4>
-                    <RoundedRectangleImage5>
+                    <RoundedRectangleImage
+                        size="exlg">
                         {chrischillin}
                         Chris Hanging out
-                    </RoundedRectangleImage5>
+                    </RoundedRectangleImage>
                 </Holder4>
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
@@ -264,50 +264,55 @@ export default class ImageBlocksView extends Component {
                     <SubHeading4>
                         Rectangle Image 1
                     </SubHeading4>
-                    <RectangleImage1>
+                    <RectangleImage
+                        size="exsm">
                         {chrischillin}
                         Chris Hanging out
-                    </RectangleImage1>
+                    </RectangleImage>
                 </Holder4>
                 <HorizontalTestBlock1 />
                 <Holder4>
                     <SubHeading4>
                         Rectangle Image 2
                     </SubHeading4>
-                    <RectangleImage2>
+                    <RectangleImage
+                        size="sm">
                         {chrischillin}
                         Chris Hanging out
-                    </RectangleImage2>
+                    </RectangleImage>
                 </Holder4>
                 <HorizontalTestBlock1 />
                 <Holder4>
                     <SubHeading4>
                         Rectangle Image 3
                     </SubHeading4>
-                    <RectangleImage3>
+                    <RectangleImage
+                        size="md">
                         {chrischillin}
                         Chris Hanging out
-                    </RectangleImage3>
+                    </RectangleImage>
                 </Holder4>
                 <HorizontalTestBlock1 />
                 <Holder4>
                     <SubHeading4>
                         Rectangle Image 4
                     </SubHeading4>
-                    <RectangleImage4>
+                    <RectangleImage
+                        size="lg">
                         {chrischillin}
                         Chris Hanging out
-                    </RectangleImage4>
+                    </RectangleImage>
                 </Holder4>
                 <HorizontalTestBlock1 />
                 <Holder4>
                     <SubHeading4>
                         Rectangle Image 5
                     </SubHeading4>
-                    <RectangleImage5>
+                    <RectangleImage
+                        size="exlg">
                         {chrischillin}
                         Chris Hanging out
-                    </RectangleImage5>
+                    </RectangleImage>
                 </Holder4>
                 <HorizontalTestBlock1 />
             </section>
