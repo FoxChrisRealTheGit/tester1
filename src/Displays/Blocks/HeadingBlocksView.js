@@ -25,11 +25,8 @@ import {
     SecondarySubHeading2,
     SecondarySubHeading3,
     SecondarySubHeading4,
-    SecondarySubHeading5, } from '../../Components 1.0.0/Blocks';
-
-import {
-    SubNavbar1,
-} from '../../Component/Blocks';
+    SecondarySubHeading5,  
+    SubNavbar1,} from '../../Components 1.0.0/Blocks';
 
 export default class HeadingBlocksView extends Component {
     render() {

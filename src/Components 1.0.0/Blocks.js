@@ -4,6 +4,10 @@ import '../Component/component styles/reset.css';
 import Container1 from './Containers';
 import Holder1 from './Holders';
 
+//temporary css sheet
+import '../Component/component styles/blocks.css';
+
+
 /* Blocks */
 /*
 Blocks Description and use
@@ -75,6 +79,8 @@ export class MainHeading1 extends Component {
             fontWeight: props.weight || '900',
             display: props.display || 'flex',
             align: props.align || 'center',
+            padding: props.padding || '0',
+            margin: props.margin || '0',
        }
    }
    
@@ -88,6 +94,8 @@ export class MainHeading1 extends Component {
                 display: this.state.display,
                 flexDirection: 'column',
                 alignItems: this.state.align,
+                padding: this.state.padding,
+                margin: this.state.margin,
           
         } 
         const childs = React.Children.toArray(this.props.children)
@@ -106,6 +114,8 @@ export class MainHeading2 extends Component {
              fontWeight: props.weight || '900',
              display: props.display || 'flex',
              align: props.align || 'center',
+             padding: props.padding || '0',
+             margin: props.margin || '0',
         }
     }
     render() {
@@ -118,6 +128,8 @@ export class MainHeading2 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            padding: this.state.padding,
+            margin: this.state.margin,
       
     } 
         const childs = React.Children.toArray(this.props.children)
@@ -136,6 +148,8 @@ export class MainHeading3 extends Component {
              fontWeight: props.weight || '900',
              display: props.display || 'flex',
              align: props.align || 'center',
+             padding: props.padding || '0',
+             margin: props.margin || '0',
         }
     }
     render() {
@@ -148,6 +162,8 @@ export class MainHeading3 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            padding: this.state.padding,
+            margin: this.state.margin,
     } 
         const childs = React.Children.toArray(this.props.children)
         return (
@@ -165,6 +181,8 @@ export class MainHeading4 extends Component {
              fontWeight: props.weight || '900',
              display: props.display || 'flex',
              align: props.align || 'center',
+             padding: props.padding || '0',
+             margin: props.margin || '0',
         }
     }
     render() {
@@ -177,6 +195,8 @@ export class MainHeading4 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            padding: this.state.padding,
+            margin: this.state.margin,
     } 
         const childs = React.Children.toArray(this.props.children)
         return (
@@ -194,6 +214,8 @@ export class MainHeading5 extends Component {
              fontWeight: props.weight || '900',
              display: props.display || 'flex',
              align: props.align || 'center',
+             padding: props.padding || '0',
+             margin: props.margin || '0',
         }
     }
     render() {
@@ -206,6 +228,8 @@ export class MainHeading5 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            padding: this.state.padding,
+            margin: this.state.margin,
     } 
         const childs = React.Children.toArray(this.props.children)
         return (
@@ -225,6 +249,8 @@ export class Heading1 extends Component {
              fontWeight: props.weight || '600',
              display: props.display || 'flex',
              align: props.align || 'center',
+             padding: props.padding || '0',
+             margin: props.margin || '0',
         }
     }
     render() {
@@ -237,6 +263,8 @@ export class Heading1 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            padding: this.state.padding,
+            margin: this.state.margin,
     } 
         const childs = React.Children.toArray(this.props.children)
         return (
@@ -254,6 +282,8 @@ export class Heading2 extends Component {
              fontWeight: props.weight || '600',
              display: props.display || 'flex',
              align: props.align || 'center',
+             padding: props.padding || '0',
+             margin: props.margin || '0',
         }
     }
     render() {
@@ -266,6 +296,8 @@ export class Heading2 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            padding: this.state.padding,
+            margin: this.state.margin,
     } 
         const childs = React.Children.toArray(this.props.children)
         return (
@@ -283,6 +315,8 @@ export class Heading3 extends Component {
              fontWeight: props.weight || '600',
              display: props.display || 'flex',
              align: props.align || 'center',
+             padding: props.padding || '0',
+             margin: props.margin || '0',
         }
     }
     render() {
@@ -295,6 +329,8 @@ export class Heading3 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            padding: this.state.padding,
+            margin: this.state.margin,
     } 
         const childs = React.Children.toArray(this.props.children)
         return (
@@ -312,6 +348,8 @@ export class Heading4 extends Component {
              fontWeight: props.weight || '600',
              display: props.display || 'flex',
              align: props.align || 'center',
+             padding: props.padding || '0',
+             margin: props.margin || '0',
         }
     }
     render() {
@@ -324,6 +362,8 @@ export class Heading4 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            padding: this.state.padding,
+            margin: this.state.margin,
     } 
         const childs = React.Children.toArray(this.props.children)
         return (
@@ -341,6 +381,8 @@ export class Heading5 extends Component {
              fontWeight: props.weight || '600',
              display: props.display || 'flex',
              align: props.align || 'center',
+             padding: props.padding || '0',
+             margin: props.margin || '0',
         }
     }
     render() {
@@ -353,6 +395,8 @@ export class Heading5 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            padding: this.state.padding,
+            margin: this.state.margin,
     } 
         const childs = React.Children.toArray(this.props.children)
         return (
@@ -372,6 +416,8 @@ export class SubHeading1 extends Component {
              fontWeight: props.weight || '400',
              display: props.display || 'flex',
              align: props.align || 'center',
+             padding: props.padding || '0',
+             margin: props.margin || '0',
         }
     }
     render() {
@@ -384,6 +430,8 @@ export class SubHeading1 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            padding: this.state.padding,
+            margin: this.state.margin,
     } 
         const childs = React.Children.toArray(this.props.children)
         return (
@@ -401,6 +449,8 @@ export class SubHeading2 extends Component {
              fontWeight: props.weight || '400',
              display: props.display || 'flex',
              align: props.align || 'center',
+             padding: props.padding || '0',
+             margin: props.margin || '0',
         }
     }
     render() {
@@ -413,6 +463,8 @@ export class SubHeading2 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            padding: this.state.padding,
+            margin: this.state.margin,
     } 
         const childs = React.Children.toArray(this.props.children)
         return (
@@ -430,6 +482,8 @@ export class SubHeading3 extends Component {
              fontWeight: props.weight || '400',
              display: props.display || 'flex',
              align: props.align || 'center',
+             padding: props.padding || '0',
+             margin: props.margin || '0',
         }
     }
     render() {
@@ -442,6 +496,8 @@ export class SubHeading3 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            padding: this.state.padding,
+            margin: this.state.margin,
     } 
         const childs = React.Children.toArray(this.props.children)
         return (
@@ -459,6 +515,8 @@ export class SubHeading4 extends Component {
              fontWeight: props.weight || '400',
              display: props.display || 'flex',
              align: props.align || 'center',
+             padding: props.padding || '0',
+             margin: props.margin || '0',
         }
     }
     render() {
@@ -471,6 +529,8 @@ export class SubHeading4 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            padding: this.state.padding,
+            margin: this.state.margin,
     } 
         const childs = React.Children.toArray(this.props.children)
         return (
@@ -488,6 +548,8 @@ export class SubHeading5 extends Component {
              fontWeight: props.weight || '400',
              display: props.display || 'flex',
              align: props.align || 'center',
+             padding: props.padding || '0',
+             margin: props.margin || '0',
         }
     }
     render() {
@@ -500,6 +562,8 @@ export class SubHeading5 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            padding: this.state.padding,
+            margin: this.state.margin,
     } 
         const childs = React.Children.toArray(this.props.children)
         return (
@@ -519,6 +583,8 @@ export class SecondarySubHeading1 extends Component {
              fontWeight: props.weight || '200',
              display: props.display || 'flex',
              align: props.align || 'center',
+             padding: props.padding || '0',
+             margin: props.margin || '0',
         }
     }
     render() {
@@ -531,6 +597,9 @@ export class SecondarySubHeading1 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            padding: this.state.padding,
+            margin: this.state.margin,
+            
     } 
         const childs = React.Children.toArray(this.props.children)
         return (
@@ -548,6 +617,8 @@ export class SecondarySubHeading2 extends Component {
              fontWeight: props.weight || '200',
              display: props.display || 'flex',
              align: props.align || 'center',
+             padding: props.padding || '0',
+             margin: props.margin || '0',
         }
     }
     render() {
@@ -560,6 +631,8 @@ export class SecondarySubHeading2 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            padding: this.state.padding,
+            margin: this.state.margin,
     } 
         const childs = React.Children.toArray(this.props.children)
         return (
@@ -577,6 +650,8 @@ export class SecondarySubHeading3 extends Component {
              fontWeight: props.weight || '200',
              display: props.display || 'flex',
              align: props.align || 'center',
+             padding: props.padding || '0',
+             margin: props.margin || '0',
         }
     }
     render() {
@@ -589,6 +664,8 @@ export class SecondarySubHeading3 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            padding: this.state.padding,
+            margin: this.state.margin,
     } 
         const childs = React.Children.toArray(this.props.children)
         return (
@@ -606,6 +683,8 @@ export class SecondarySubHeading4 extends Component {
              fontWeight: props.weight || '200',
              display: props.display || 'flex',
              align: props.align || 'center',
+             padding: props.padding || '0',
+             margin: props.margin || '0',
         }
     }
     render() {
@@ -618,6 +697,8 @@ export class SecondarySubHeading4 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            padding: this.state.padding,
+            margin: this.state.margin,
     } 
         const childs = React.Children.toArray(this.props.children)
         return (
@@ -635,6 +716,8 @@ export class SecondarySubHeading5 extends Component {
              fontWeight: props.weight || '200',
              display: props.display || 'flex',
              align: props.align || 'center',
+             padding: props.padding || '0',
+             margin: props.margin || '0',
         }
     }
     render() {
@@ -647,6 +730,8 @@ export class SecondarySubHeading5 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            padding: this.state.padding,
+            margin: this.state.margin,
     } 
         const childs = React.Children.toArray(this.props.children)
         return (
@@ -659,40 +744,178 @@ export class SecondarySubHeading5 extends Component {
  /* Start of Paragraph Blocks */
 /* Start of Basic Paragraph Blocks */
 export class Paragraph1 extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+             color: props.color || 'black',
+             fontFamily: props.font || 'serif',
+             fontSize: props.size || '1.333em',
+             lineHeight: props.lineHeight || '1.5em',
+             fontWeight: props.weight || '400',
+             display: props.display || 'flex',
+             align: props.align || 'center',
+             padding: props.padding || '10px 10%',
+             margin: props.margin || '0',
+        }
+    }
     render() {
+        const paragraph ={
+            width: 'inherit',
+            color: this.state.color,
+            fontFamily: this.state.fontFamily,
+            fontSize: this.state.fontSize,
+            lineHeight: this.state.lineHeight,
+            fontWeight: this.state.fontWeight,
+            display: this.state.display,
+            flexDirection: 'column',
+            alignItems: this.state.align,
+            padding: this.state.padding,
+            margin: this.state.margin,
+    } 
         const childs = React.Children.toArray(this.props.children)
         return (
-            <p className="paragraph1">{childs[0]}</p>
+            <p style={paragraph}>{childs[0]}</p>
         )
     }
 }
 export class Paragraph2 extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+             color: props.color || 'black',
+             fontFamily: props.font || 'serif',
+             fontSize: props.size || '0.9em',
+             lineHeight: props.lineHeight || '1.22em',
+             fontWeight: props.weight || '400',
+             display: props.display || 'flex',
+             align: props.align || 'center',
+             padding: props.padding || '10px 10%',
+             margin: props.margin || '0',
+        }
+    }
     render() {
+        const paragraph ={
+            width: 'inherit',
+            color: this.state.color,
+            fontFamily: this.state.fontFamily,
+            fontSize: this.state.fontSize,
+            lineHeight: this.state.lineHeight,
+            fontWeight: this.state.fontWeight,
+            display: this.state.display,
+            flexDirection: 'column',
+            alignItems: this.state.align,
+            padding: this.state.padding,
+            margin: this.state.margin,
+    } 
         const childs = React.Children.toArray(this.props.children)
         return (
-            <p className="paragraph2">{childs[0]}</p>
+            <p style={paragraph}>{childs[0]}</p>
         )
     }
 }
 export class Paragraph3 extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+             color: props.color || 'black',
+             fontFamily: props.font || 'serif',
+             fontSize: props.size || '1.6em',
+             lineHeight: props.lineHeight || '1.8em',
+             fontWeight: props.weight || '400',
+             display: props.display || 'flex',
+             align: props.align || 'center',
+             padding: props.padding || '10px 10%',
+             margin: props.margin || '0',
+        }
+    }
     render() {
+        const paragraph ={
+            width: 'inherit',
+            color: this.state.color,
+            fontFamily: this.state.fontFamily,
+            fontSize: this.state.fontSize,
+            lineHeight: this.state.lineHeight,
+            fontWeight: this.state.fontWeight,
+            display: this.state.display,
+            flexDirection: 'column',
+            alignItems: this.state.align,
+            padding: this.state.padding,
+            margin: this.state.margin,
+    } 
         const childs = React.Children.toArray(this.props.children)
         return (
-            <p className="paragraph3">{childs[0]}</p>
+            <p style={paragraph}>{childs[0]}</p>
         )
     }
 }
 export class Paragraph4 extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+             color: props.color || 'lightgray',
+             fontFamily: props.font || 'serif',
+             fontSize: props.size || '1.6em',
+             lineHeight: props.lineHeight || '1.8em',
+             fontWeight: props.weight || '400',
+             display: props.display || 'flex',
+             align: props.align || 'center',
+             padding: props.padding || '10px 10%',
+             margin: props.margin || '0',
+        }
+    }
     render() {
+        const paragraph ={
+            width: 'inherit',
+            color: this.state.color,
+            fontFamily: this.state.fontFamily,
+            fontSize: this.state.fontSize,
+            lineHeight: this.state.lineHeight,
+            fontWeight: this.state.fontWeight,
+            display: this.state.display,
+            flexDirection: 'column',
+            alignItems: this.state.align,
+            padding: this.state.padding,
+            margin: this.state.margin,
+    } 
         const childs = React.Children.toArray(this.props.children)
         return (
-            <p className="paragraph4">{childs[0]}</p>
+            <p style={paragraph}>{childs[0]}</p>
         )
     }
 }
+
 export class Paragraph5 extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+             color: props.color || 'black',
+             fontFamily: props.font || 'serif',
+             fontSize: props.size || '1.333em',
+             lineHeight: props.lineHeight || '1.5em',
+             fontWeight: props.weight || '400',
+             display: props.display || 'flex',
+             align: props.align || 'center',
+             padding: props.padding || '10px 10%',
+             margin: props.margin || '0',
+        }
+    }
     render() {
+        const paragraph ={
+            width: 'inherit',
+            color: this.state.color,
+            fontFamily: this.state.fontFamily,
+            fontSize: this.state.fontSize,
+            lineHeight: this.state.lineHeight,
+            fontWeight: this.state.fontWeight,
+            display: this.state.display,
+            flexDirection: 'column',
+            alignItems: this.state.align,
+            padding: this.state.padding,
+            margin: this.state.margin,
+    } 
         const childs = React.Children.toArray(this.props.children)
+
+        //cannt implement without being able to pass multiple styles
         return (
             <p className="paragraph5">{childs[0]}</p>
         )
