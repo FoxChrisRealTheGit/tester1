@@ -78,10 +78,16 @@ import Portfolio3Main from './Displays/Template Samples/Portfolio/Portfolio3/Por
 import Portfolio4Main from './Displays/Template Samples/Portfolio/Portfolio4/Portfolio4Main';
 import Portfolio5Main from './Displays/Template Samples/Portfolio/Portfolio5/Portfolio5Main';
 
+
+
+
+import testing12 from './Testing12';
 //End Router Imports
 //Begin Router
 export default (
     <Switch>
+        <Route path="/testing12" component={testing12}></Route>
+
         <Route exact path="/" component={LandingPage}></Route>
 
         <Route exact path="/containers" component={ContainerViewMain}></Route>

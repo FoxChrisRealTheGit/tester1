@@ -772,6 +772,7 @@ export class Paragraph1 extends Component {
             padding: this.state.padding,
             margin: this.state.margin,
         }
+
         const childs = React.Children.toArray(this.props.children)
         return (
             <p style={paragraph}>{childs[0]}</p>
