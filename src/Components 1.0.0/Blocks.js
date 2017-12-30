@@ -66,49 +66,178 @@ Blocks Description and use
 /* Start of Heading Blocks */
 /* Start of h1 Main Heading */
 export class MainHeading1 extends Component {
+   constructor(props){
+       super(props);
+       this.state={
+            color: props.color || 'black',
+            fontFamily: props.font || 'sans-serif',
+            fontSize: props.size || '9.136em',
+            fontWeight: props.weight || '900',
+            display: props.display || 'flex',
+            align: props.align || 'center',
+       }
+   }
+   
     render() {
+        const heading ={
+                width: 'inherit',
+                color: this.state.color,
+                fontFamily: this.state.fontFamily,
+                fontSize: this.state.fontSize,
+                fontWeight: this.state.fontWeight,
+                display: this.state.display,
+                flexDirection: 'column',
+                alignItems: this.state.align,
+          
+        } 
         const childs = React.Children.toArray(this.props.children)
         return (
-            <h1 className="mainHeading1">{childs[0]}</h1>
+            <h1 style={heading}>{childs[0]}</h1>
         )
     }
 }
 export class MainHeading2 extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+             color: props.color || 'black',
+             fontFamily: props.font || 'sans-serif',
+             fontSize: props.size || '7.613em',
+             fontWeight: props.weight || '900',
+             display: props.display || 'flex',
+             align: props.align || 'center',
+        }
+    }
     render() {
+        const heading ={
+            width: 'inherit',
+            color: this.state.color,
+            fontFamily: this.state.fontFamily,
+            fontSize: this.state.fontSize,
+            fontWeight: this.state.fontWeight,
+            display: this.state.display,
+            flexDirection: 'column',
+            alignItems: this.state.align,
+      
+    } 
         const childs = React.Children.toArray(this.props.children)
         return (
-            <h1 className="mainHeading2">{childs[0]}</h1>
+            <h1 style={heading}>{childs[0]}</h1>
         )
     }
 }
 export class MainHeading3 extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+             color: props.color || 'black',
+             fontFamily: props.font || 'sans-serif',
+             fontSize: props.size || '10.963em',
+             fontWeight: props.weight || '900',
+             display: props.display || 'flex',
+             align: props.align || 'center',
+        }
+    }
     render() {
+        const heading ={
+            width: 'inherit',
+            color: this.state.color,
+            fontFamily: this.state.fontFamily,
+            fontSize: this.state.fontSize,
+            fontWeight: this.state.fontWeight,
+            display: this.state.display,
+            flexDirection: 'column',
+            alignItems: this.state.align,
+    } 
         const childs = React.Children.toArray(this.props.children)
         return (
-            <h1 className="mainHeading3">{childs[0]}</h1>
+            <h1 style={heading}>{childs[0]}</h1>
         )
     }
 }
 export class MainHeading4 extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+             color: props.color || 'lightgray',
+             fontFamily: props.font || 'sans-serif',
+             fontSize: props.size || '9.136em',
+             fontWeight: props.weight || '900',
+             display: props.display || 'flex',
+             align: props.align || 'center',
+        }
+    }
     render() {
+        const heading ={
+            width: 'inherit',
+            color: this.state.color,
+            fontFamily: this.state.fontFamily,
+            fontSize: this.state.fontSize,
+            fontWeight: this.state.fontWeight,
+            display: this.state.display,
+            flexDirection: 'column',
+            alignItems: this.state.align,
+    } 
         const childs = React.Children.toArray(this.props.children)
         return (
-            <h1 className="mainHeading4">{childs[0]}</h1>
+            <h1 style={heading}>{childs[0]}</h1>
         )
     }
 }
 export class MainHeading5 extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+             color: props.color || 'black',
+             fontFamily: props.font || 'sans-serif',
+             fontSize: props.size || '9.136em',
+             fontWeight: props.weight || '900',
+             display: props.display || 'flex',
+             align: props.align || 'center',
+        }
+    }
     render() {
+        const heading ={
+            width: 'inherit',
+            color: this.state.color,
+            fontFamily: this.state.fontFamily,
+            fontSize: this.state.fontSize,
+            fontWeight: this.state.fontWeight,
+            display: this.state.display,
+            flexDirection: 'column',
+            alignItems: this.state.align,
+    } 
         const childs = React.Children.toArray(this.props.children)
         return (
-            <h1 className="mainHeading5">{childs[0]}</h1>
+            <h1 style={heading}>{childs[0]}</h1>
         )
     }
 }
 /* End of h1 Main Heading */
 /* Start of h2 Heading */
 export class Heading1 extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+             color: props.color || 'black',
+             fontFamily: props.font || 'sans-serif',
+             fontSize: props.size || '5.646em',
+             fontWeight: props.weight || '600',
+             display: props.display || 'flex',
+             align: props.align || 'center',
+        }
+    }
     render() {
+        const heading ={
+            width: 'inherit',
+            color: this.state.color,
+            fontFamily: this.state.fontFamily,
+            fontSize: this.state.fontSize,
+            fontWeight: this.state.fontWeight,
+            display: this.state.display,
+            flexDirection: 'column',
+            alignItems: this.state.align,
+    } 
         const childs = React.Children.toArray(this.props.children)
         return (
             <h2 className="heading1">{childs[0]}</h2>
@@ -116,7 +245,28 @@ export class Heading1 extends Component {
     }
 }
 export class Heading2 extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+             color: props.color || 'black',
+             fontFamily: props.font || 'sans-serif',
+             fontSize: props.size || '4.705em',
+             fontWeight: props.weight || '600',
+             display: props.display || 'flex',
+             align: props.align || 'center',
+        }
+    }
     render() {
+        const heading ={
+            width: 'inherit',
+            color: this.state.color,
+            fontFamily: this.state.fontFamily,
+            fontSize: this.state.fontSize,
+            fontWeight: this.state.fontWeight,
+            display: this.state.display,
+            flexDirection: 'column',
+            alignItems: this.state.align,
+    } 
         const childs = React.Children.toArray(this.props.children)
         return (
             <h2 className="heading2">{childs[0]}</h2>
@@ -124,7 +274,28 @@ export class Heading2 extends Component {
     }
 }
 export class Heading3 extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+             color: props.color || 'black',
+             fontFamily: props.font || 'sans-serif',
+             fontSize: props.size || '6.775em',
+             fontWeight: props.weight || '600',
+             display: props.display || 'flex',
+             align: props.align || 'center',
+        }
+    }
     render() {
+        const heading ={
+            width: 'inherit',
+            color: this.state.color,
+            fontFamily: this.state.fontFamily,
+            fontSize: this.state.fontSize,
+            fontWeight: this.state.fontWeight,
+            display: this.state.display,
+            flexDirection: 'column',
+            alignItems: this.state.align,
+    } 
         const childs = React.Children.toArray(this.props.children)
         return (
             <h2 className="heading3">{childs[0]}</h2>
@@ -132,7 +303,28 @@ export class Heading3 extends Component {
     }
 }
 export class Heading4 extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+             color: props.color || 'lightgray',
+             fontFamily: props.font || 'sans-serif',
+             fontSize: props.size || '5.646em',
+             fontWeight: props.weight || '600',
+             display: props.display || 'flex',
+             align: props.align || 'center',
+        }
+    }
     render() {
+        const heading ={
+            width: 'inherit',
+            color: this.state.color,
+            fontFamily: this.state.fontFamily,
+            fontSize: this.state.fontSize,
+            fontWeight: this.state.fontWeight,
+            display: this.state.display,
+            flexDirection: 'column',
+            alignItems: this.state.align,
+    } 
         const childs = React.Children.toArray(this.props.children)
         return (
             <h2 className="heading4">{childs[0]}</h2>
@@ -140,7 +332,28 @@ export class Heading4 extends Component {
     }
 }
 export class Heading5 extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+             color: props.color || 'black',
+             fontFamily: props.font || 'sans-serif',
+             fontSize: props.size || '5.646em',
+             fontWeight: props.weight || '600',
+             display: props.display || 'flex',
+             align: props.align || 'center',
+        }
+    }
     render() {
+        const heading ={
+            width: 'inherit',
+            color: this.state.color,
+            fontFamily: this.state.fontFamily,
+            fontSize: this.state.fontSize,
+            fontWeight: this.state.fontWeight,
+            display: this.state.display,
+            flexDirection: 'column',
+            alignItems: this.state.align,
+    } 
         const childs = React.Children.toArray(this.props.children)
         return (
             <h2 className="heading5">{childs[0]}</h2>
@@ -150,7 +363,28 @@ export class Heading5 extends Component {
 /* End of h2 Heading */
 /* Start of h3 SubHeading */
 export class SubHeading1 extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+             color: props.color || 'black',
+             fontFamily: props.font || 'sans-serif',
+             fontSize: props.size || '3.489em',
+             fontWeight: props.weight || '400',
+             display: props.display || 'flex',
+             align: props.align || 'center',
+        }
+    }
     render() {
+        const heading ={
+            width: 'inherit',
+            color: this.state.color,
+            fontFamily: this.state.fontFamily,
+            fontSize: this.state.fontSize,
+            fontWeight: this.state.fontWeight,
+            display: this.state.display,
+            flexDirection: 'column',
+            alignItems: this.state.align,
+    } 
         const childs = React.Children.toArray(this.props.children)
         return (
             <h3 className="subHeading1">{childs[0]}</h3>
@@ -158,7 +392,28 @@ export class SubHeading1 extends Component {
     }
 }
 export class SubHeading2 extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+             color: props.color || 'black',
+             fontFamily: props.font || 'sans-serif',
+             fontSize: props.size || '2.9075em',
+             fontWeight: props.weight || '400',
+             display: props.display || 'flex',
+             align: props.align || 'center',
+        }
+    }
     render() {
+        const heading ={
+            width: 'inherit',
+            color: this.state.color,
+            fontFamily: this.state.fontFamily,
+            fontSize: this.state.fontSize,
+            fontWeight: this.state.fontWeight,
+            display: this.state.display,
+            flexDirection: 'column',
+            alignItems: this.state.align,
+    } 
         const childs = React.Children.toArray(this.props.children)
         return (
             <h3 className="subHeading2">{childs[0]}</h3>
@@ -166,7 +421,28 @@ export class SubHeading2 extends Component {
     }
 }
 export class SubHeading3 extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+             color: props.color || 'black',
+             fontFamily: props.font || 'sans-serif',
+             fontSize: props.size || '4.187em',
+             fontWeight: props.weight || '400',
+             display: props.display || 'flex',
+             align: props.align || 'center',
+        }
+    }
     render() {
+        const heading ={
+            width: 'inherit',
+            color: this.state.color,
+            fontFamily: this.state.fontFamily,
+            fontSize: this.state.fontSize,
+            fontWeight: this.state.fontWeight,
+            display: this.state.display,
+            flexDirection: 'column',
+            alignItems: this.state.align,
+    } 
         const childs = React.Children.toArray(this.props.children)
         return (
             <h3 className="subHeading3">{childs[0]}</h3>
@@ -174,7 +450,28 @@ export class SubHeading3 extends Component {
     }
 }
 export class SubHeading4 extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+             color: props.color || 'lightgray',
+             fontFamily: props.font || 'sans-serif',
+             fontSize: props.size || '3.489em',
+             fontWeight: props.weight || '400',
+             display: props.display || 'flex',
+             align: props.align || 'center',
+        }
+    }
     render() {
+        const heading ={
+            width: 'inherit',
+            color: this.state.color,
+            fontFamily: this.state.fontFamily,
+            fontSize: this.state.fontSize,
+            fontWeight: this.state.fontWeight,
+            display: this.state.display,
+            flexDirection: 'column',
+            alignItems: this.state.align,
+    } 
         const childs = React.Children.toArray(this.props.children)
         return (
             <h3 className="subHeading4">{childs[0]}</h3>
@@ -182,7 +479,28 @@ export class SubHeading4 extends Component {
     }
 }
 export class SubHeading5 extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+             color: props.color || 'black',
+             fontFamily: props.font || 'sans-serif',
+             fontSize: props.size || '3.489em',
+             fontWeight: props.weight || '400',
+             display: props.display || 'flex',
+             align: props.align || 'center',
+        }
+    }
     render() {
+        const heading ={
+            width: 'inherit',
+            color: this.state.color,
+            fontFamily: this.state.fontFamily,
+            fontSize: this.state.fontSize,
+            fontWeight: this.state.fontWeight,
+            display: this.state.display,
+            flexDirection: 'column',
+            alignItems: this.state.align,
+    } 
         const childs = React.Children.toArray(this.props.children)
         return (
             <h3 className="subHeading5">{childs[0]}</h3>
@@ -192,7 +510,28 @@ export class SubHeading5 extends Component {
 /* End of h3 SubHeading */
 /* Start of h4 Secondary SubHeading */
 export class SecondarySubHeading1 extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+             color: props.color || 'black',
+             fontFamily: props.font || 'sans-serif',
+             fontSize: props.size || '2.157em',
+             fontWeight: props.weight || '200',
+             display: props.display || 'flex',
+             align: props.align || 'center',
+        }
+    }
     render() {
+        const heading ={
+            width: 'inherit',
+            color: this.state.color,
+            fontFamily: this.state.fontFamily,
+            fontSize: this.state.fontSize,
+            fontWeight: this.state.fontWeight,
+            display: this.state.display,
+            flexDirection: 'column',
+            alignItems: this.state.align,
+    } 
         const childs = React.Children.toArray(this.props.children)
         return (
             <h4 className="secondarySubHeading1">{childs[0]}</h4>
@@ -200,7 +539,28 @@ export class SecondarySubHeading1 extends Component {
     }
 }
 export class SecondarySubHeading2 extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+             color: props.color || 'black',
+             fontFamily: props.font || 'sans-serif',
+             fontSize: props.size || '1.7975em',
+             fontWeight: props.weight || '200',
+             display: props.display || 'flex',
+             align: props.align || 'center',
+        }
+    }
     render() {
+        const heading ={
+            width: 'inherit',
+            color: this.state.color,
+            fontFamily: this.state.fontFamily,
+            fontSize: this.state.fontSize,
+            fontWeight: this.state.fontWeight,
+            display: this.state.display,
+            flexDirection: 'column',
+            alignItems: this.state.align,
+    } 
         const childs = React.Children.toArray(this.props.children)
         return (
             <h4 className="secondarySubHeading2">{childs[0]}</h4>
@@ -208,7 +568,28 @@ export class SecondarySubHeading2 extends Component {
     }
 }
 export class SecondarySubHeading3 extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+             color: props.color || 'black',
+             fontFamily: props.font || 'sans-serif',
+             fontSize: props.size || '2.588em',
+             fontWeight: props.weight || '200',
+             display: props.display || 'flex',
+             align: props.align || 'center',
+        }
+    }
     render() {
+        const heading ={
+            width: 'inherit',
+            color: this.state.color,
+            fontFamily: this.state.fontFamily,
+            fontSize: this.state.fontSize,
+            fontWeight: this.state.fontWeight,
+            display: this.state.display,
+            flexDirection: 'column',
+            alignItems: this.state.align,
+    } 
         const childs = React.Children.toArray(this.props.children)
         return (
             <h4 className="secondarySubHeading3">{childs[0]}</h4>
@@ -216,7 +597,28 @@ export class SecondarySubHeading3 extends Component {
     }
 }
 export class SecondarySubHeading4 extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+             color: props.color || 'lightgray',
+             fontFamily: props.font || 'sans-serif',
+             fontSize: props.size || '2.157em',
+             fontWeight: props.weight || '200',
+             display: props.display || 'flex',
+             align: props.align || 'center',
+        }
+    }
     render() {
+        const heading ={
+            width: 'inherit',
+            color: this.state.color,
+            fontFamily: this.state.fontFamily,
+            fontSize: this.state.fontSize,
+            fontWeight: this.state.fontWeight,
+            display: this.state.display,
+            flexDirection: 'column',
+            alignItems: this.state.align,
+    } 
         const childs = React.Children.toArray(this.props.children)
         return (
             <h4 className="secondarySubHeading4">{childs[0]}</h4>
@@ -224,7 +626,28 @@ export class SecondarySubHeading4 extends Component {
     }
 }
 export class SecondarySubHeading5 extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+             color: props.color || 'black',
+             fontFamily: props.font || 'sans-serif',
+             fontSize: props.size || '2.157em',
+             fontWeight: props.weight || '200',
+             display: props.display || 'flex',
+             align: props.align || 'center',
+        }
+    }
     render() {
+        const heading ={
+            width: 'inherit',
+            color: this.state.color,
+            fontFamily: this.state.fontFamily,
+            fontSize: this.state.fontSize,
+            fontWeight: this.state.fontWeight,
+            display: this.state.display,
+            flexDirection: 'column',
+            alignItems: this.state.align,
+    } 
         const childs = React.Children.toArray(this.props.children)
         return (
             <h4 className="secondarySubHeading5">{childs[0]}</h4>

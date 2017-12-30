@@ -4,10 +4,8 @@ import Navigation from '../Navigation';
 
 import { Holder5, Holder7 } from '../../Components 1.0.0/Holders';
 import Container1, { Container3 } from '../../Components 1.0.0/Containers';
-
-import {
+import { 
     HorizontalTestBlock1,
-    SubNavbar1,
     MainHeading1,
     MainHeading2,
     MainHeading3,
@@ -27,7 +25,10 @@ import {
     SecondarySubHeading2,
     SecondarySubHeading3,
     SecondarySubHeading4,
-    SecondarySubHeading5,
+    SecondarySubHeading5, } from '../../Components 1.0.0/Blocks';
+
+import {
+    SubNavbar1,
 } from '../../Component/Blocks';
 
 export default class HeadingBlocksView extends Component {
