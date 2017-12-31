@@ -9,7 +9,7 @@ import {
     Heading1,
     SubHeading4,
     HorizontalTestBlock1
-} from '../../Component/Blocks';
+} from '../../Components 1.0.0/Blocks';
 
 import StyluxStyledHeader1,
 {

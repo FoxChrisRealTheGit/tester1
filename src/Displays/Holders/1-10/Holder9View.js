@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import Navigation from '../../Navigation';
 
 import { Heading1, SubHeading4, HorizontalTestBlock1, SubNavbar1 } from '../../../Component/Blocks';
 
-import { Block2 } from '../../../Components 1.0.0/Blocks';
+import {Block2} from '../../../Components 1.0.0/Blocks';
 
-import { Holder5 } from '../../../Components 1.0.0/Holders';
+import { Holder9 } from '../../../Components 1.0.0/Holders';
 
-import Container1, {
+import Container1,{
     Container2,
     Container3,
     Container4,
     Container5,
 } from '../../../Components 1.0.0/Containers';
 
-export default class Holder5View extends Component {
+export default class Holder9View extends Component {
     render() {
         return (
             <section>
@@ -27,7 +27,7 @@ export default class Holder5View extends Component {
                 </SubNavbar1>
                 <Container1>
                     <Heading1>
-                        holder 5
+                        holder 9
                     </Heading1>
                 </Container1>
                 <HorizontalTestBlock1 />
@@ -38,10 +38,14 @@ export default class Holder5View extends Component {
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <Holder5>
+                    <Holder9>
                         <Block2 />
                         <Block2 />
-                    </Holder5>
+                        <Block2 />
+                        <Block2 />
+                        <Block2 />
+                        <Block2 />
+                    </Holder9>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
@@ -51,14 +55,22 @@ export default class Holder5View extends Component {
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container2>
-                    <Holder5>
+                    <Holder9>
                         <Block2 />
                         <Block2 />
-                    </Holder5>
-                    <Holder5>
                         <Block2 />
                         <Block2 />
-                    </Holder5>
+                        <Block2 />
+                        <Block2 />
+                    </Holder9>
+                    <Holder9>
+                        <Block2 />
+                        <Block2 />
+                        <Block2 />
+                        <Block2 />
+                        <Block2 />
+                        <Block2 />
+                    </Holder9>
                 </Container2>
                 <HorizontalTestBlock1 />
                 <Container1>
@@ -68,18 +80,30 @@ export default class Holder5View extends Component {
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container3>
-                    <Holder5>
+                    <Holder9>
                         <Block2 />
                         <Block2 />
-                    </Holder5>
-                    <Holder5>
                         <Block2 />
                         <Block2 />
-                    </Holder5>
-                    <Holder5>
                         <Block2 />
                         <Block2 />
-                    </Holder5>
+                    </Holder9>
+                    <Holder9>
+                        <Block2 />
+                        <Block2 />
+                        <Block2 />
+                        <Block2 />
+                        <Block2 />
+                        <Block2 />
+                    </Holder9>
+                    <Holder9>
+                        <Block2 />
+                        <Block2 />
+                        <Block2 />
+                        <Block2 />
+                        <Block2 />
+                        <Block2 />
+                    </Holder9>
                 </Container3>
                 <HorizontalTestBlock1 />
                 <Container1>
@@ -89,22 +113,38 @@ export default class Holder5View extends Component {
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container4>
-                    <Holder5>
+                    <Holder9>
                         <Block2 />
                         <Block2 />
-                    </Holder5>
-                    <Holder5>
                         <Block2 />
                         <Block2 />
-                    </Holder5>
-                    <Holder5>
                         <Block2 />
                         <Block2 />
-                    </Holder5>
-                    <Holder5>
+                    </Holder9>
+                    <Holder9>
                         <Block2 />
                         <Block2 />
-                    </Holder5>
+                        <Block2 />
+                        <Block2 />
+                        <Block2 />
+                        <Block2 />
+                    </Holder9>
+                    <Holder9>
+                        <Block2 />
+                        <Block2 />
+                        <Block2 />
+                        <Block2 />
+                        <Block2 />
+                        <Block2 />
+                    </Holder9>
+                    <Holder9>
+                        <Block2 />
+                        <Block2 />
+                        <Block2 />
+                        <Block2 />
+                        <Block2 />
+                        <Block2 />
+                    </Holder9>
                 </Container4>
                 <HorizontalTestBlock1 />
                 <Container1>
@@ -114,26 +154,46 @@ export default class Holder5View extends Component {
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container5>
-                    <Holder5>
+                    <Holder9>
                         <Block2 />
                         <Block2 />
-                    </Holder5>
-                    <Holder5>
                         <Block2 />
                         <Block2 />
-                    </Holder5>
-                    <Holder5>
                         <Block2 />
                         <Block2 />
-                    </Holder5>
-                    <Holder5>
+                    </Holder9>
+                    <Holder9>
                         <Block2 />
                         <Block2 />
-                    </Holder5>
-                    <Holder5>
                         <Block2 />
                         <Block2 />
-                    </Holder5>
+                        <Block2 />
+                        <Block2 />
+                    </Holder9>
+                    <Holder9>
+                        <Block2 />
+                        <Block2 />
+                        <Block2 />
+                        <Block2 />
+                        <Block2 />
+                        <Block2 />
+                    </Holder9>
+                    <Holder9>
+                        <Block2 />
+                        <Block2 />
+                        <Block2 />
+                        <Block2 />
+                        <Block2 />
+                        <Block2 />
+                    </Holder9>
+                    <Holder9>
+                        <Block2 />
+                        <Block2 />
+                        <Block2 />
+                        <Block2 />
+                        <Block2 />
+                        <Block2 />
+                    </Holder9>
                 </Container5>
                 <HorizontalTestBlock1 />
             </section>

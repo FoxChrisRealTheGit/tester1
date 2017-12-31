@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import '../Component/component styles/reset.css';
+import './reset.css';
 
 import Container1 from './Containers';
 import Holder1 from './Holders';
 
 //temporary css sheet
 import '../Component/component styles/blocks.css';
-
+//non temporary css sheet
+import '../Components 1.0.0/SuperStyleSheet.css';
 
 /* Blocks */
 /*
@@ -268,7 +269,7 @@ export class Heading1 extends Component {
         }
         const childs = React.Children.toArray(this.props.children)
         return (
-            <h2 className="heading1">{childs[0]}</h2>
+            <h2 style={heading}>{childs[0]}</h2>
         )
     }
 }
@@ -301,7 +302,7 @@ export class Heading2 extends Component {
         }
         const childs = React.Children.toArray(this.props.children)
         return (
-            <h2 className="heading2">{childs[0]}</h2>
+            <h2 style={heading}>{childs[0]}</h2>
         )
     }
 }
@@ -334,7 +335,7 @@ export class Heading3 extends Component {
         }
         const childs = React.Children.toArray(this.props.children)
         return (
-            <h2 className="heading3">{childs[0]}</h2>
+            <h2 style={heading}>{childs[0]}</h2>
         )
     }
 }
@@ -367,7 +368,7 @@ export class Heading4 extends Component {
         }
         const childs = React.Children.toArray(this.props.children)
         return (
-            <h2 className="heading4">{childs[0]}</h2>
+            <h2 style={heading}>{childs[0]}</h2>
         )
     }
 }
@@ -400,7 +401,7 @@ export class Heading5 extends Component {
         }
         const childs = React.Children.toArray(this.props.children)
         return (
-            <h2 className="heading5">{childs[0]}</h2>
+            <h2 style={heading}>{childs[0]}</h2>
         )
     }
 }
@@ -435,7 +436,7 @@ export class SubHeading1 extends Component {
         }
         const childs = React.Children.toArray(this.props.children)
         return (
-            <h3 className="subHeading1">{childs[0]}</h3>
+            <h3 style={heading}>{childs[0]}</h3>
         )
     }
 }
@@ -468,7 +469,7 @@ export class SubHeading2 extends Component {
         }
         const childs = React.Children.toArray(this.props.children)
         return (
-            <h3 className="subHeading2">{childs[0]}</h3>
+            <h3 style={heading}>{childs[0]}</h3>
         )
     }
 }
@@ -501,7 +502,7 @@ export class SubHeading3 extends Component {
         }
         const childs = React.Children.toArray(this.props.children)
         return (
-            <h3 className="subHeading3">{childs[0]}</h3>
+            <h3 style={heading}>{childs[0]}</h3>
         )
     }
 }
@@ -534,7 +535,7 @@ export class SubHeading4 extends Component {
         }
         const childs = React.Children.toArray(this.props.children)
         return (
-            <h3 className="subHeading4">{childs[0]}</h3>
+            <h3 style={heading}>{childs[0]}</h3>
         )
     }
 }
@@ -567,7 +568,7 @@ export class SubHeading5 extends Component {
         }
         const childs = React.Children.toArray(this.props.children)
         return (
-            <h3 className="subHeading5">{childs[0]}</h3>
+            <h3 style={heading}>{childs[0]}</h3>
         )
     }
 }
@@ -603,7 +604,7 @@ export class SecondarySubHeading1 extends Component {
         }
         const childs = React.Children.toArray(this.props.children)
         return (
-            <h4 className="secondarySubHeading1">{childs[0]}</h4>
+            <h4 style={heading}>{childs[0]}</h4>
         )
     }
 }
@@ -636,7 +637,7 @@ export class SecondarySubHeading2 extends Component {
         }
         const childs = React.Children.toArray(this.props.children)
         return (
-            <h4 className="secondarySubHeading2">{childs[0]}</h4>
+            <h4 style={heading}>{childs[0]}</h4>
         )
     }
 }
@@ -669,7 +670,7 @@ export class SecondarySubHeading3 extends Component {
         }
         const childs = React.Children.toArray(this.props.children)
         return (
-            <h4 className="secondarySubHeading3">{childs[0]}</h4>
+            <h4 style={heading}>{childs[0]}</h4>
         )
     }
 }
@@ -702,7 +703,7 @@ export class SecondarySubHeading4 extends Component {
         }
         const childs = React.Children.toArray(this.props.children)
         return (
-            <h4 className="secondarySubHeading4">{childs[0]}</h4>
+            <h4 style={heading}>{childs[0]}</h4>
         )
     }
 }
@@ -735,7 +736,7 @@ export class SecondarySubHeading5 extends Component {
         }
         const childs = React.Children.toArray(this.props.children)
         return (
-            <h4 className="secondarySubHeading5">{childs[0]}</h4>
+            <h4 style={heading}>{childs[0]}</h4>
         )
     }
 }
@@ -1056,6 +1057,7 @@ export class FlatButton1 extends Component {
     }
 }
 export class FlatButton2 extends Component {
+
     render() {
         const childs = React.Children.toArray(this.props.children)
         return (
@@ -1066,10 +1068,36 @@ export class FlatButton2 extends Component {
 /* End of Flat Buttons */
 /* Start of Raised Buttons */
 export class RaisedButton1 extends Component {
+    constructor(props) {
+        super();
+        this.state = {
+            height: "150px",
+            width: "150px",
+            fontFamily: "inherit",
+            color: "blue",
+
+        }
+    }
     render() {
+        const buttonStyle ={
+            height: this.state.height,
+            width: this.state.width,
+            fontFamily: this.state.fontFamily,
+            margin:0,
+            padding: 0,
+        }
+        const buttonColor={
+            display: "flex",
+            flex: 2,
+            background: this.state.color,
+        }
         const childs = React.Children.toArray(this.props.children)
         return (
-            <button className="raisedButton1">{childs[0]}</button>
+            <button style={buttonStyle} className="raisedButton1">
+                <div style ={buttonColor}>
+                        {childs[0]}
+                </div>
+            </button>
         )
     }
 }
@@ -1110,11 +1138,11 @@ export class Navbar1 extends Component {
             return <li key={i}>{x}</li>
         })
         return (
-            <section className="navbar1">
+            <div className="navbar1">
                 <ul className="navbar1-navbar">
                     {navBar}
                 </ul>
-            </section>
+            </div>
         )
     }
 }
@@ -1125,11 +1153,11 @@ export class Navbar2 extends Component {
             return <li key={i}>{x}</li>
         })
         return (
-            <section className="navbar2">
+            <div className="navbar2">
                 <ul className="navbar2-navbar">
                     {navBar}
                 </ul>
-            </section>
+            </div>
         )
     }
 }
@@ -1140,11 +1168,11 @@ export class Navbar3 extends Component {
             return <li key={i}>{x}</li>
         })
         return (
-            <section className="navbar3">
+            <div className="navbar3">
                 <ul className="navbar3-navbar">
                     {navBar}
                 </ul>
-            </section>
+            </div>
         )
     }
 }
@@ -1155,11 +1183,11 @@ export class Navbar4 extends Component {
             return <li key={i}>{x}</li>
         })
         return (
-            <section className="navbar4">
+            <div className="navbar4">
                 <ul className="navbar4-navbar">
                     {navBar}
                 </ul>
-            </section>
+            </div>
         )
     }
 }
@@ -1170,11 +1198,11 @@ export class Navbar5 extends Component {
             return <li key={i}>{x}</li>
         })
         return (
-            <section className="navbar5">
+            <div className="navbar5">
                 <ul className="navbar5-navbar">
                     {navBar}
                 </ul>
-            </section>
+            </div>
         )
     }
 }
@@ -1187,11 +1215,11 @@ export class SubNavbar1 extends Component {
             return <li key={i}>{x}</li>
         })
         return (
-            <header className="subnavbar1">
+            <div className="subnavbar1">
                 <ul className="subnavbar1-navbar">
                     {navBar}
                 </ul>
-            </header>
+            </div>
         )
     }
 }
@@ -1231,11 +1259,11 @@ export class SubNavbar3 extends Component {
             return <li key={i}>{x}</li>
         })
         return (
-            <header className="subnavbar3">
+            <div className="subnavbar3">
                 <ul className="subnavbar3-navbar">
                     {navBar}
                 </ul>
-            </header>
+            </div>
         )
     }
 }
@@ -1246,11 +1274,11 @@ export class SubNavbar4 extends Component {
             return <li key={i}>{x}</li>
         })
         return (
-            <header className="subnavbar4">
+            <div className="subnavbar4">
                 <ul className="subnavbar4-navbar">
                     {navBar}
                 </ul>
-            </header>
+            </div>
         )
     }
 }
@@ -1261,11 +1289,11 @@ export class SubNavbar5 extends Component {
             return <li key={i}>{x}</li>
         })
         return (
-            <header className="subnavbar5">
+            <div className="subnavbar5">
                 <ul className="subnavbar5-navbar">
                     {navBar}
                 </ul>
-            </header>
+            </div>
         )
     }
 }
@@ -1339,40 +1367,40 @@ export class SubNavbar5 extends Component {
 export class DropDownNav1 extends Component {
     render() {
         return (
-            <section className="dropdownnav1">
-            </section>
+            <div className="dropdownnav1">
+            </div>
         )
     }
 }
 export class DropDownNav2 extends Component {
     render() {
         return (
-            <section className="dropdownnav2">
-            </section>
+            <div className="dropdownnav2">
+            </div>
         )
     }
 }
 export class DropDownNav3 extends Component {
     render() {
         return (
-            <section className="dropdownnav3">
-            </section>
+            <div className="dropdownnav3">
+            </div>
         )
     }
 }
 export class DropDownNav4 extends Component {
     render() {
         return (
-            <section className="dropdownnav4">
-            </section>
+            <div className="dropdownnav4">
+            </div>
         )
     }
 }
 export class DropDownNav5 extends Component {
     render() {
         return (
-            <section className="dropdownnav5">
-            </section>
+            <div className="dropdownnav5">
+            </div>
         )
     }
 }

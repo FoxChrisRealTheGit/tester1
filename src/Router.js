@@ -20,6 +20,13 @@ import Holder4View from './Displays/Holders/1-10/Holder4View';
 import Holder5View from './Displays/Holders/1-10/Holder5View';
 import Holder6View from './Displays/Holders/1-10/Holder6View';
 import Holder7View from './Displays/Holders/1-10/Holder7View';
+import Holder8View from './Displays/Holders/1-10/Holder8View';
+import Holder9View from './Displays/Holders/1-10/Holder9View';
+import Holder10View from './Displays/Holders/1-10/Holder10View';
+//11-20
+import Holder11View from './Displays/Holders/11-20/Holder11View';
+import Holder12View from './Displays/Holders/11-20/Holder12View';
+import Holder13View from './Displays/Holders/11-20/Holder13View';
 
 //Block Views
 import ButtonBlocksView from './Displays/Blocks/ButtonBlocksView';
@@ -103,6 +110,13 @@ export default (
         <Route path="/holders/holder5" component={Holder5View}></Route>
         <Route path="/holders/holder6" component={Holder6View}></Route>
         <Route path="/holders/holder7" component={Holder7View}></Route>
+        <Route path="/holders/holder8" component={Holder8View}></Route>
+        <Route path="/holders/holder9" component={Holder9View}></Route>
+        <Route path="/holders/holder10" component={Holder10View}></Route>
+
+        <Route path="/holders/holder11" component={Holder11View}></Route>
+        <Route path="/holders/holder12" component={Holder12View}></Route>
+        <Route path="/holders/holder13" component={Holder13View}></Route>
 
         <Route exact path="/blocks" component={BlockView}></Route>
         <Route path="/blocks/buttonviews" component={ButtonBlocksView}></Route>

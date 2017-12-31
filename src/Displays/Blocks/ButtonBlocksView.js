@@ -13,7 +13,7 @@ import {
     RaisedButton2,
     FloatingButton1,
     FloatingButton2
-} from '../../Component/Blocks';
+} from '../../Components 1.0.0/Blocks';
 
 export default class ButtonBlocksView extends Component {
     render() {

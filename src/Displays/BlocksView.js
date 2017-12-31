@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom';
 
 import Container1 from '../Components 1.0.0/Containers';
 
-import { Holder6 } from '../Components 1.0.0/Holders';
+import { Holder8 } from '../Components 1.0.0/Holders';
 
 import {
     SubHeading4,
     HorizontalTestBlock1,
-} from '../Component/Blocks';
+} from '../Components 1.0.0/Blocks';
 
 
 export default class BlockViews extends Component {
@@ -20,7 +20,7 @@ export default class BlockViews extends Component {
                 <Navigation />
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <Holder6>
+                    <Holder8>
                         <SubHeading4>
                             <Link to="/blocks/headingviews">heading blocks</Link>
                         </SubHeading4>
@@ -30,15 +30,13 @@ export default class BlockViews extends Component {
                         <SubHeading4>
                             <Link to="/blocks/paragraphviews">paragraph blocks</Link>
                         </SubHeading4>
-                        <Holder6>
-                            <SubHeading4>
-                                <Link to="/blocks/imageviews">image blocks</Link>
-                            </SubHeading4>
-                            <SubHeading4>
-                                <Link to="/blocks/buttonviews">button blocks</Link>
-                            </SubHeading4>
-                        </Holder6>
-                    </Holder6>
+                        <SubHeading4>
+                            <Link to="/blocks/imageviews">image blocks</Link>
+                        </SubHeading4>
+                        <SubHeading4>
+                            <Link to="/blocks/buttonviews">button blocks</Link>
+                        </SubHeading4>
+                    </Holder8>
                 </Container1>
             </section>
         )
