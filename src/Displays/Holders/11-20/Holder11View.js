@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from '../../Navigation';
 
-import { Heading1, SubHeading4, HorizontalTestBlock1, SubNavbar1 } from '../../../Component/Blocks';
-
-import { Block2 } from '../../../Components 1.0.0/Blocks';
+import { Block2, Heading1, SubHeading4, HorizontalTestBlock1, SubNavbar1 } from '../../../Components 1.0.0/Blocks';
 
 import { Holder11 } from '../../../Components 1.0.0/Holders';
 

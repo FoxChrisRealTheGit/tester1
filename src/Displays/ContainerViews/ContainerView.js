@@ -14,7 +14,7 @@ import {
     SubHeading4,
     HorizontalTestBlock1,
     SubNavbar1
-} from '../../Component/Blocks';
+} from '../../Components 1.0.0/Blocks';
 
 export default class ContainerView extends Component {
     render() {

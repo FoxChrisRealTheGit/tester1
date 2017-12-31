@@ -5,7 +5,8 @@ import Container1 from './Containers';
 import Holder1 from './Holders';
 
 //temporary css sheet
-import '../Component/component styles/blocks.css';
+import '../Components 0.5.0/component styles/blocks.css';
+
 //non temporary css sheet
 import '../Components 1.0.0/SuperStyleSheet.css';
 

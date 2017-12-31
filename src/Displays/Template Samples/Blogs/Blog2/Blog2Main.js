@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 
 import Navigation from '../../../Navigation';
 
-import { SubNavbar1, MainHeading1, Navbar2, Navbar5, Paragraph1 } from '../../../../Component/Blocks';
+import { SubNavbar1, MainHeading1, Navbar2, Navbar5, Paragraph1 } from '../../../../Components 1.0.0/Blocks';
 
-import Container1 from '../../../../Component/Containers';
+import Container1 from '../../../../Components 1.0.0/Containers';
 
-import { StyluxStyledHeader2, StyluxStyledFooter2 } from '../../../../Component/StyledContainers';
+import { StyluxStyledHeader2, StyluxStyledFooter2 } from '../../../../Components 0.5.0/StyledContainers';
 
 import Logo from '../../../../images/Logo/QuickFirstDraft.svg';
 

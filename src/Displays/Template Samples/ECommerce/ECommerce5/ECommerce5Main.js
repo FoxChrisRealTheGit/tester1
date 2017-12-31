@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import Navigation from '../../../Navigation';
 
-import { SubNavbar1 } from '../../../../Component/Blocks';
+import { SubNavbar1 } from '../../../../Components 1.0.0/Blocks';
 
 export default class ECommerce5Main extends Component {
     render() {

@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 
 import Navigation from '../../../Navigation';
 
-import { SubNavbar1, MainHeading1, SubNavbar2, Navbar2, Navbar1, Navbar3, Paragraph2 } from '../../../../Component/Blocks';
+import { SubNavbar1, MainHeading1,  Navbar2, Navbar1, Navbar3, Paragraph2 } from '../../../../Components 1.0.0/Blocks';
 
-import Container1 from '../../../../Component/Containers';
+import Container1 from '../../../../Components 1.0.0/Containers';
 
-import { StyluxStyledHeader4, StyluxStyledFooter4 } from '../../../../Component/StyledContainers';
+import { StyluxStyledHeader4, StyluxStyledFooter4 } from '../../../../Components 0.5.0/StyledContainers';
 
 export default class Blog3Main extends Component {
     render() {
@@ -27,15 +27,15 @@ export default class Blog3Main extends Component {
                 </MainHeading1>
                 </Container1>
                 <Container1>
-                    <SubNavbar2>
-                        <Link to="">Info</Link>
-                        <Link to="">Shop</Link>
-                        <Link to="">I</Link>
-                        <Link to="">T</Link>
+                    <SubNavbar1>
+                        <Link to="">used</Link>
+                        <Link to="">to</Link>
+                        <Link to="">be</Link>
+                        <Link to="">two</Link>
                         <Link to="">P</Link>
                         <Link to="">F</Link>
                         <Link to="">Y</Link>
-                    </SubNavbar2>
+                    </SubNavbar1>
                 </Container1>
                 <StyluxStyledHeader4>
                     <Navbar2>

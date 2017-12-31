@@ -1,12 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { NavbarTest1, SquareImage2 } from '../Component/Blocks';
-
 import Container1 from '../Components 1.0.0/Containers';
 import { Holder6 } from '../Components 1.0.0/Holders';
-
-import { SubHeading4, Navbar1 } from '../Components 1.0.0/Blocks';
+import { SubHeading4, Navbar1, NavbarTest1, SquareImage } from '../Components 1.0.0/Blocks';
 
 import Logo from '../images/Logo/QuickFirstDraft.svg';
 
@@ -16,9 +13,9 @@ export default function Navigation() {
             <Container1>
                 <Holder6>
                 <Link to="/">
-                    <SquareImage2>
+                    <SquareImage>
                         {Logo}
-                    </SquareImage2>
+                    </SquareImage>
                     </Link>
                     <SubHeading4>
                         Stylux

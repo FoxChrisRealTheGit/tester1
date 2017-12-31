@@ -29,7 +29,7 @@ import {
     DropDownNav3,
     DropDownNav4,
     DropDownNav5
-} from '../../Component/Blocks';
+} from '../../Components 0.5.0/Blocks';
 
 import Logo from '../../images/Logo/QuickFirstDraft.svg';
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import TestingContainer1, { TestingHolder1, TestingBlock1 } from './Component/Testing12';
+import TestingContainer1, { TestingHolder1, TestingBlock1 } from './Components 0.5.0/Testing12';
 
 import { Holder2, Holder4 } from './Components 1.0.0/Holders';
 

@@ -22,9 +22,9 @@ import StyluxStyledHeader1,
     StyluxStyledFooter3,
     StyluxStyledFooter4,
     StyluxStyledFooter5
-} from '../../Component/StyledContainers';
+} from '../../Components 0.5.0/StyledContainers';
 
-import Container1, { Container3 } from '../../Component/Containers';
+import Container1, { Container3 } from '../../Components 1.0.0/Containers';
 
 export default class StyledContainerMain extends Component {
     render() {

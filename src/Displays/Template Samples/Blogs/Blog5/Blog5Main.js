@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 
 import Navigation from '../../../Navigation';
 
-import { SubNavbar1, MainHeading1, CircleImage2, Navbar4, Paragraph6 } from '../../../../Component/Blocks';
+import { SubNavbar1, MainHeading1, CircleImage, Navbar4, Paragraph1 } from '../../../../Components 1.0.0/Blocks';
 
-import Container1 from '../../../../Component/Containers';
+import Container1 from '../../../../Components 1.0.0/Containers';
 
-import { StyluxStyledHeader5 } from '../../../../Component/StyledContainers';
+import { StyluxStyledHeader5 } from '../../../../Components 0.5.0/StyledContainers';
 
 import Logo from '../../../../images/Logo/QuickFirstDraft.svg';
 
@@ -30,9 +30,9 @@ export default class Blog5Main extends Component {
                     </MainHeading1>
                 </Container1>
                 <StyluxStyledHeader5>
-                    <CircleImage2>
+                    <CircleImage>
                         {Logo}
-                    </CircleImage2>
+                    </CircleImage>
                     <Navbar4>
                         <Link to="">About</Link>
                         <Link to="">Adventure</Link>
@@ -41,9 +41,9 @@ export default class Blog5Main extends Component {
                         <Link to="">Contact</Link>
                         <Link to="">Disclaimer</Link>
                     </Navbar4>
-                    <Paragraph6>
+                    <Paragraph1>
                         copyright info
-                    </Paragraph6>
+                    </Paragraph1>
                 </StyluxStyledHeader5>
                 <Container1>
 

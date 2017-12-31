@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 import Navigation from '../../Navigation';
 
-import Container1, { Container3 } from '../../../Component/Containers';
+import Container1, { Container3 } from '../../../Components 1.0.0/Containers';
 
-import Holder1, { Holder4, Holder5, Holder6, Holder7 } from '../../../Component/Holders';
+import Holder1, { Holder4, Holder5, Holder6, Holder7 } from '../../../Components 1.0.0/Holders';
 
 import Block1, {
     HorizontalTestBlock1,
@@ -16,13 +16,13 @@ import Block1, {
     Paragraph6,
     Paragraph9,
     PullQuote1,
-    CircleImage2,
+    CircleImage,
     SubNavbar1,
     Paragraph4,
     SecondarySubHeading3,
     Paragraph1,
-    RoundedRectangleImage4
-} from '../../../Component/Blocks';
+    RoundedRectangleImage
+} from '../../../Components 1.0.0/Blocks';
 
 import chrischillin from '../../../images/Chris-hangingout.jpg';
 
@@ -54,10 +54,10 @@ export default class SampleBlogPost4 extends Component {
                 <Container1>
                     <Holder6>
                         <Holder4>
-                            <CircleImage2>
+                            <CircleImage>
                                 {chrischillin}
                                 Chris Hanging out
-                            </CircleImage2>
+                            </CircleImage>
                             <SecondarySubHeading2>
                                 By: The Hipster King
                             </SecondarySubHeading2>
@@ -85,9 +85,9 @@ export default class SampleBlogPost4 extends Component {
                                 <Paragraph1>
                                     Viral disrupt bicycle rights, brunch craft beer fashion axe food truck mumblecore. Taiyaki hammock gentrify hella poutine, fam cliche wolf butcher glossier authentic blog scenester craft beer green juice. Chambray messenger bag iceland kale chips cronut franzen. Hammock normcore photo booth, bitters taiyaki poutine tousled gastropub ethical keffiyeh tumeric microdosing pop-up. La croix activated charcoal kale chips vinyl cronut narwhal yuccie heirloom tattooed glossier normcore shaman. Direct trade mustache trust fund, edison bulb poutine hammock everyday carry scenester selfies. Salvia ramps four dollar toast, waistcoat iceland flannel four loko put a bird on it sriracha you probably haven't heard of them vexillologist.
                                 </Paragraph1>
-                                <RoundedRectangleImage4>
+                                <RoundedRectangleImage>
                                     {chrischillin}
-                                </RoundedRectangleImage4>
+                                </RoundedRectangleImage>
                                 <Paragraph1>
                                     Hot chicken flannel coloring book truffaut taxidermy gentrify kale chips twee typewriter glossier. Subway tile before they sold out live-edge food truck waistcoat farm-to-table lo-fi 8-bit prism williamsburg slow-carb la croix. Unicorn live-edge kitsch street art ugh. Photo booth kitsch pop-up seitan authentic tbh. Pork belly post-ironic irony, beard iPhone shabby chic street art drinking vinegar enamel pin. Blog chambray fashion axe, XOXO man braid lomo kickstarter distillery subway tile jean shorts wayfarers pop-up thundercats roof party kinfolk.
                                 </Paragraph1>

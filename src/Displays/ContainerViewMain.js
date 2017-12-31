@@ -3,7 +3,7 @@ import Navigation from './Navigation';
 
 import { Link } from 'react-router-dom';
 
-import Container1 from '../Component/Containers';
+import Container1 from '../Components 1.0.0/Containers';
 
 import { Holder5 } from '../Components 1.0.0/Holders';
 
