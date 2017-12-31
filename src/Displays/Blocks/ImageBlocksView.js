@@ -5,9 +5,9 @@ import Navigation from '../Navigation';
 import chrischillin from '../../images/Chris-hangingout.jpg';
 
 import Container1 from '../../Components 1.0.0/Containers';
-import { Holder4 } from '../../Components 1.0.0/Holders';
+import { Holder5 } from '../../Components 1.0.0/Holders';
 import {
-    Heading1,
+    MainHeading1,
     SubHeading4,
     SubNavbar1,
     HorizontalTestBlock1,
@@ -31,13 +31,13 @@ export default class ImageBlocksView extends Component {
                     <Link to="/blocks/paragraphviews">Paragraphs</Link>
                 </SubNavbar1>
                 <Container1>
-                    <Heading1>
+                    <MainHeading1>
                         Images
-                    </Heading1>
+                    </MainHeading1>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Circle Image 1
                     </SubHeading4>
@@ -46,9 +46,9 @@ export default class ImageBlocksView extends Component {
                         {chrischillin}
                         Chris Hanging out
                     </CircleImage>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Circle Image 2
                     </SubHeading4>
@@ -57,9 +57,9 @@ export default class ImageBlocksView extends Component {
                         {chrischillin}
                         Chris Hanging out
                 </CircleImage>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Circle Image 3
                     </SubHeading4>
@@ -68,9 +68,9 @@ export default class ImageBlocksView extends Component {
                         {chrischillin}
                         Chris Hanging out
                 </CircleImage>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Circle Image 4
                     </SubHeading4>
@@ -79,9 +79,9 @@ export default class ImageBlocksView extends Component {
                         {chrischillin}
                         Chris Hanging out
                 </CircleImage>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Circle Image 5
                     </SubHeading4>
@@ -90,9 +90,9 @@ export default class ImageBlocksView extends Component {
                         {chrischillin}
                         Chris Hanging out
                 </CircleImage>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Circle Image 6
                     </SubHeading4>
@@ -101,10 +101,10 @@ export default class ImageBlocksView extends Component {
                         {chrischillin}
                         Chris Hanging out
                 </CircleImage>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Rounded Image 1
                     </SubHeading4>
@@ -113,9 +113,9 @@ export default class ImageBlocksView extends Component {
                         {chrischillin}
                         Chris Hanging out
                     </RoundedImage>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Rounded Image 2
                     </SubHeading4>
@@ -124,9 +124,9 @@ export default class ImageBlocksView extends Component {
                         {chrischillin}
                         Chris Hanging out
                     </RoundedImage>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Rounded Image 3
                     </SubHeading4>
@@ -135,9 +135,9 @@ export default class ImageBlocksView extends Component {
                         {chrischillin}
                         Chris Hanging out
                     </RoundedImage>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Rounded Image 4
                     </SubHeading4>
@@ -146,9 +146,9 @@ export default class ImageBlocksView extends Component {
                         {chrischillin}
                         Chris Hanging out
                     </RoundedImage>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Rounded Image 5
                     </SubHeading4>
@@ -157,9 +157,9 @@ export default class ImageBlocksView extends Component {
                         {chrischillin}
                         Chris Hanging out
                     </RoundedImage>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Rounded Image 6
                     </SubHeading4>
@@ -168,10 +168,10 @@ export default class ImageBlocksView extends Component {
                         {chrischillin}
                         Chris Hanging out
                     </RoundedImage>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Square Image 1
                     </SubHeading4>
@@ -180,9 +180,9 @@ export default class ImageBlocksView extends Component {
                         {chrischillin}
                         Chris Hanging out
                     </SquareImage>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Square Image 2
                     </SubHeading4>
@@ -191,9 +191,9 @@ export default class ImageBlocksView extends Component {
                         {chrischillin}
                         Chris Hanging out
                     </SquareImage>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Square Image 3
                     </SubHeading4>
@@ -202,8 +202,8 @@ export default class ImageBlocksView extends Component {
                         {chrischillin}
                         Chris Hanging out
                     </SquareImage>
-                </Holder4>
-                <Holder4>
+                </Holder5>
+                <Holder5>
                     <SubHeading4>
                         Square Image 4
                     </SubHeading4>
@@ -212,9 +212,9 @@ export default class ImageBlocksView extends Component {
                         {chrischillin}
                         Chris Hanging out
                     </SquareImage>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Square Image 5
                     </SubHeading4>
@@ -223,9 +223,9 @@ export default class ImageBlocksView extends Component {
                         {chrischillin}
                         Chris Hanging out
                     </SquareImage>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Square Image 6
                     </SubHeading4>
@@ -234,10 +234,10 @@ export default class ImageBlocksView extends Component {
                         {chrischillin}
                         Chris Hanging out
                     </SquareImage>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Rounded Rectangle Image 1
                     </SubHeading4>
@@ -246,9 +246,9 @@ export default class ImageBlocksView extends Component {
                         {chrischillin}
                         Chris Hanging out
                     </RoundedRectangleImage>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Rounded Rectangle Image 2
                     </SubHeading4>
@@ -257,9 +257,9 @@ export default class ImageBlocksView extends Component {
                         {chrischillin}
                         Chris Hanging out
                     </RoundedRectangleImage>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Rounded Rectangle Image 3
                     </SubHeading4>
@@ -268,9 +268,9 @@ export default class ImageBlocksView extends Component {
                         {chrischillin}
                         Chris Hanging out
                     </RoundedRectangleImage>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Rounded Rectangle Image 4
                     </SubHeading4>
@@ -279,9 +279,9 @@ export default class ImageBlocksView extends Component {
                         {chrischillin}
                         Chris Hanging out
                     </RoundedRectangleImage>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Rounded Rectangle Image 5
                     </SubHeading4>
@@ -290,9 +290,9 @@ export default class ImageBlocksView extends Component {
                         {chrischillin}
                         Chris Hanging out
                     </RoundedRectangleImage>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Rounded Rectangle Image 6
                     </SubHeading4>
@@ -301,10 +301,10 @@ export default class ImageBlocksView extends Component {
                         {chrischillin}
                         Chris Hanging out
                     </RoundedRectangleImage>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Rectangle Image 1
                     </SubHeading4>
@@ -313,9 +313,9 @@ export default class ImageBlocksView extends Component {
                         {chrischillin}
                         Chris Hanging out
                     </RectangleImage>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Rectangle Image 2
                     </SubHeading4>
@@ -324,9 +324,9 @@ export default class ImageBlocksView extends Component {
                         {chrischillin}
                         Chris Hanging out
                     </RectangleImage>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Rectangle Image 3
                     </SubHeading4>
@@ -335,9 +335,9 @@ export default class ImageBlocksView extends Component {
                         {chrischillin}
                         Chris Hanging out
                     </RectangleImage>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Rectangle Image 4
                     </SubHeading4>
@@ -346,9 +346,9 @@ export default class ImageBlocksView extends Component {
                         {chrischillin}
                         Chris Hanging out
                     </RectangleImage>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Rectangle Image 5
                     </SubHeading4>
@@ -357,9 +357,9 @@ export default class ImageBlocksView extends Component {
                         {chrischillin}
                         Chris Hanging out
                     </RectangleImage>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Rectangle Image 6
                     </SubHeading4>
@@ -368,7 +368,7 @@ export default class ImageBlocksView extends Component {
                         {chrischillin}
                         Chris Hanging out
                     </RectangleImage>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
             </section>
         )

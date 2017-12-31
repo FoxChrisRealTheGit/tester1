@@ -4,7 +4,7 @@ import Navigation from '../Navigation';
 
 import Container1 from '../../Components 1.0.0/Containers';
 import {
-    Heading1,
+    MainHeading1,
     SubNavbar1,
     HorizontalTestBlock1,
     FlatButton1,
@@ -28,9 +28,9 @@ export default class ButtonBlocksView extends Component {
                     <Link to="/blocks/paragraphviews">Paragraphs</Link>
                 </SubNavbar1>
                 <Container1>
-                    <Heading1>
+                    <MainHeading1>
                         Buttons
-                    </Heading1>
+                    </MainHeading1>
                 </Container1>
                 <HorizontalTestBlock1 />        
                 <HorizontalTestBlock1 />

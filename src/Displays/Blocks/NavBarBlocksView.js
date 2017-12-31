@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom';
 
 import Container1 from '../../Components 1.0.0/Containers';
 
-import {Holder4} from '../../Components 1.0.0/Holders';
+import {Holder5} from '../../Components 1.0.0/Holders';
 import {
+    MainHeading1,
     Heading1,
     HorizontalTestBlock1,
     SubHeading4,
@@ -46,13 +47,13 @@ export default class NavBarBlocksView extends Component {
                     <Link to="/blocks/paragraphviews">Paragraphs</Link>
                 </SubNavbar1>
                 <Container1>
-                    <Heading1>
+                    <MainHeading1>
                         Navbars
-                    </Heading1>
+                    </MainHeading1>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Navbar1
                     </SubHeading4>
@@ -63,9 +64,9 @@ export default class NavBarBlocksView extends Component {
                         <Link to="/blocks/navbarviews">item4</Link>
                         <Link to="/blocks/navbarviews">item5</Link>
                     </Navbar1>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Navbar2
                     </SubHeading4>
@@ -76,9 +77,9 @@ export default class NavBarBlocksView extends Component {
                         <Link to="/blocks/navbarviews">item4</Link>
                         <Link to="/blocks/navbarviews">item5</Link>
                     </Navbar2>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Navbar3
                     </SubHeading4>
@@ -89,9 +90,9 @@ export default class NavBarBlocksView extends Component {
                         <Link to="/blocks/navbarviews">item4</Link>
                         <Link to="/blocks/navbarviews">item5</Link>
                     </Navbar3>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Navbar4
                     </SubHeading4>
@@ -102,9 +103,9 @@ export default class NavBarBlocksView extends Component {
                         <Link to="/blocks/navbarviews">item4</Link>
                         <Link to="/blocks/navbarviews">item5</Link>
                     </Navbar4>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Navbar5
                     </SubHeading4>
@@ -115,7 +116,7 @@ export default class NavBarBlocksView extends Component {
                         <Link to="/blocks/navbarviews">item4</Link>
                         <Link to="/blocks/navbarviews">item5</Link>
                     </Navbar5>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Container1>
@@ -125,7 +126,7 @@ export default class NavBarBlocksView extends Component {
                 </Container1>
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Sub Navbar1
                     </SubHeading4>
@@ -136,9 +137,9 @@ export default class NavBarBlocksView extends Component {
                         <Link to="/blocks/navbarviews">item4</Link>
                         <Link to="/blocks/navbarviews">item5</Link>
                     </SubNavbar1>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Sub Navbar2
                     </SubHeading4>
@@ -149,9 +150,9 @@ export default class NavBarBlocksView extends Component {
                         <Link to="/blocks/navbarviews">item4</Link>
                         <Link to="/blocks/navbarviews">item5</Link>
                     </SubNavbar2>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Sub Navbar3
                     </SubHeading4>
@@ -162,9 +163,9 @@ export default class NavBarBlocksView extends Component {
                         <Link to="/blocks/navbarviews">item4</Link>
                         <Link to="/blocks/navbarviews">item5</Link>
                     </SubNavbar3>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Sub Navbar4
                     </SubHeading4>
@@ -175,9 +176,9 @@ export default class NavBarBlocksView extends Component {
                         <Link to="/blocks/navbarviews">item4</Link>
                         <Link to="/blocks/navbarviews">item5</Link>
                     </SubNavbar4>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Sub Navbar5
                     </SubHeading4>
@@ -188,7 +189,7 @@ export default class NavBarBlocksView extends Component {
                         <Link to="/blocks/navbarviews">item4</Link>
                         <Link to="/blocks/navbarviews">item5</Link>
                     </SubNavbar5>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Container1>
@@ -197,8 +198,7 @@ export default class NavBarBlocksView extends Component {
                     </Heading1>
                 </Container1>
                 <HorizontalTestBlock1 />
-
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Brand1
                     </SubHeading4>
@@ -206,40 +206,40 @@ export default class NavBarBlocksView extends Component {
                         {Logo}
                         Stylux
                     </Brand1>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Brand2
                     </SubHeading4>
                     <Brand2>
                         {Logo}
                     </Brand2>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Brand3
                     </SubHeading4>
                     <Brand3>
                         {Logo}
                     </Brand3>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Brand4
                     </SubHeading4>
                     <Brand3>
                         {Logo}
                     </Brand3>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         Brand5
                     </SubHeading4>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Container1>
@@ -248,35 +248,35 @@ export default class NavBarBlocksView extends Component {
                     </Heading1>
                 </Container1>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         DropDown Navigation 1
                     </SubHeading4>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         DropDown Navigation 2
                     </SubHeading4>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         DropDown Navigation 3
                     </SubHeading4>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         DropDown Navigation 4
                     </SubHeading4>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
-                <Holder4>
+                <Holder5>
                     <SubHeading4>
                         DropDown Navigation 5
                     </SubHeading4>
-                </Holder4>
+                </Holder5>
                 <HorizontalTestBlock1 />
             </section>
         )

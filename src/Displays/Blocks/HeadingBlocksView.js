@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from '../Navigation';
 
-import { Holder5, Holder7 } from '../../Components 1.0.0/Holders';
+import { Holder5, Holder8 } from '../../Components 1.0.0/Holders';
 import Container1, { Container3 } from '../../Components 1.0.0/Containers';
 import { 
     HorizontalTestBlock1,
@@ -60,7 +60,7 @@ export default class HeadingBlocksView extends Component {
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <Holder7>
+                    <Holder8>
                         <MainHeading1>
                             MainHeading1
                         </MainHeading1>
@@ -76,7 +76,7 @@ export default class HeadingBlocksView extends Component {
                         <MainHeading5>
                             MainHeading5
                         </MainHeading5>
-                    </Holder7>
+                    </Holder8>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
@@ -86,7 +86,7 @@ export default class HeadingBlocksView extends Component {
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <Holder7>
+                    <Holder8>
                         <Heading1>
                             Heading1
                         </Heading1>
@@ -102,7 +102,7 @@ export default class HeadingBlocksView extends Component {
                         <Heading5>
                             Heading5
                         </Heading5>
-                    </Holder7>
+                    </Holder8>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
@@ -112,7 +112,7 @@ export default class HeadingBlocksView extends Component {
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <Holder7>
+                    <Holder8>
                         <SubHeading1>
                             SubHeading1
                         </SubHeading1>
@@ -128,7 +128,7 @@ export default class HeadingBlocksView extends Component {
                         <SubHeading5>
                             SubHeading5
                         </SubHeading5>
-                    </Holder7>
+                    </Holder8>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
@@ -138,7 +138,7 @@ export default class HeadingBlocksView extends Component {
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <Holder7>
+                    <Holder8>
                         <SecondarySubHeading1>
                             SecondarySubHeading1
                         </SecondarySubHeading1>
@@ -154,7 +154,7 @@ export default class HeadingBlocksView extends Component {
                         <SecondarySubHeading5>
                             SecondarySubHeading5
                         </SecondarySubHeading5>
-                    </Holder7>
+                    </Holder8>
                 </Container1>
                 <HorizontalTestBlock1 />
             </section>

@@ -77,7 +77,7 @@ export class MainHeading1 extends Component {
         this.state = {
             color: props.color || 'black',
             fontFamily: props.font || 'sans-serif',
-            fontSize: props.size || '9.136em',
+            fontSize: props.size || '8em',
             fontWeight: props.weight || '900',
             display: props.display || 'flex',
             align: props.align || 'center',
@@ -112,7 +112,7 @@ export class MainHeading2 extends Component {
         this.state = {
             color: props.color || 'black',
             fontFamily: props.font || 'sans-serif',
-            fontSize: props.size || '7.613em',
+            fontSize: props.size || '7em',
             fontWeight: props.weight || '900',
             display: props.display || 'flex',
             align: props.align || 'center',
@@ -146,7 +146,7 @@ export class MainHeading3 extends Component {
         this.state = {
             color: props.color || 'black',
             fontFamily: props.font || 'sans-serif',
-            fontSize: props.size || '10.963em',
+            fontSize: props.size || '9em',
             fontWeight: props.weight || '900',
             display: props.display || 'flex',
             align: props.align || 'center',
@@ -179,7 +179,7 @@ export class MainHeading4 extends Component {
         this.state = {
             color: props.color || 'lightgray',
             fontFamily: props.font || 'sans-serif',
-            fontSize: props.size || '9.136em',
+            fontSize: props.size || '8em',
             fontWeight: props.weight || '900',
             display: props.display || 'flex',
             align: props.align || 'center',
@@ -212,7 +212,7 @@ export class MainHeading5 extends Component {
         this.state = {
             color: props.color || 'black',
             fontFamily: props.font || 'sans-serif',
-            fontSize: props.size || '9.136em',
+            fontSize: props.size || '8em',
             fontWeight: props.weight || '900',
             display: props.display || 'flex',
             align: props.align || 'center',
@@ -1046,6 +1046,23 @@ export class RectangleImage extends Component {
 }
 
 /* End of Regular Rectangle Image */
+/* Start of Figure Blocks */
+export class Figure1 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            size: props.size || 'sm',
+        }
+    }
+    render() {
+        const childs = React.Children.toArray(this.props.children)
+        return (
+            <div></div>
+        )
+    }
+}
+
+/* End of Figure Blocks */
 /* End of Image Blocks */
 /* Start of Button Blocks */
 /* Start of Flat Buttons */
@@ -1080,14 +1097,14 @@ export class RaisedButton1 extends Component {
         }
     }
     render() {
-        const buttonStyle ={
+        const buttonStyle = {
             height: this.state.height,
             width: this.state.width,
             fontFamily: this.state.fontFamily,
-            margin:0,
+            margin: 0,
             padding: 0,
         }
-        const buttonColor={
+        const buttonColor = {
             display: "flex",
             flex: 2,
             background: this.state.color,
@@ -1095,8 +1112,8 @@ export class RaisedButton1 extends Component {
         const childs = React.Children.toArray(this.props.children)
         return (
             <button style={buttonStyle} className="raisedButton1">
-                <div style ={buttonColor}>
-                        {childs[0]}
+                <div style={buttonColor}>
+                    {childs[0]}
                 </div>
             </button>
         )
@@ -1133,10 +1150,26 @@ export class FloatingButton2 extends Component {
 /* Start of Navigation Blocks */
 /* Start of NavBar Blocks */
 export class Navbar1 extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+            fontFamily: props.font || 'serif',
+        }
+    }
     render() {
+        const NavBar ={
+
+        };
+        const NavBar_NavBar ={
+
+        };
+        const NavBar_NavBar_Li ={
+
+        };
+
         const childs = React.Children.toArray(this.props.children)
         const navBar = childs.map((x, i) => {
-            return <li key={i}>{x}</li>
+            return <li key={i} style={NavBar_NavBar_Li}>{x}</li>
         })
         return (
             <div className="navbar1">
@@ -1148,7 +1181,19 @@ export class Navbar1 extends Component {
     }
 }
 export class Navbar2 extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+            fontFamily: props.font || 'serif',
+        }
+    }
     render() {
+        const NavBar ={
+
+        };
+        const NavBar_NavBar ={
+
+        };
         const childs = React.Children.toArray(this.props.children)
         const navBar = childs.map((x, i) => {
             return <li key={i}>{x}</li>
@@ -1163,7 +1208,19 @@ export class Navbar2 extends Component {
     }
 }
 export class Navbar3 extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+            fontFamily: props.font || 'serif',
+        }
+    }
     render() {
+        const NavBar ={
+
+        };
+        const NavBar_NavBar ={
+
+        };
         const childs = React.Children.toArray(this.props.children)
         const navBar = childs.map((x, i) => {
             return <li key={i}>{x}</li>
@@ -1178,7 +1235,19 @@ export class Navbar3 extends Component {
     }
 }
 export class Navbar4 extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+            fontFamily: props.font || 'serif',
+        }
+    }
     render() {
+        const NavBar ={
+
+        };
+        const NavBar_NavBar ={
+
+        };
         const childs = React.Children.toArray(this.props.children)
         const navBar = childs.map((x, i) => {
             return <li key={i}>{x}</li>
@@ -1193,7 +1262,19 @@ export class Navbar4 extends Component {
     }
 }
 export class Navbar5 extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+            fontFamily: props.font || 'serif',
+        }
+    }
     render() {
+        const NavBar ={
+
+        };
+        const NavBar_NavBar ={
+
+        };
         const childs = React.Children.toArray(this.props.children)
         const navBar = childs.map((x, i) => {
             return <li key={i}>{x}</li>
