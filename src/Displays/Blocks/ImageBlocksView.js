@@ -16,6 +16,7 @@ import {
     SquareImage,
     RoundedRectangleImage,
     RectangleImage,
+    Figure,
 } from '../../Components 1.0.0/Blocks';
 
 export default class ImageBlocksView extends Component {
@@ -56,7 +57,7 @@ export default class ImageBlocksView extends Component {
                         size="exsm">
                         {chrischillin}
                         Chris Hanging out
-                </CircleImage>
+                    </CircleImage>
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
@@ -67,7 +68,7 @@ export default class ImageBlocksView extends Component {
                         size="sm">
                         {chrischillin}
                         Chris Hanging out
-                </CircleImage>
+                    </CircleImage>
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
@@ -78,7 +79,7 @@ export default class ImageBlocksView extends Component {
                         size="md">
                         {chrischillin}
                         Chris Hanging out
-                </CircleImage>
+                    </CircleImage>
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
@@ -89,7 +90,7 @@ export default class ImageBlocksView extends Component {
                         size="lg">
                         {chrischillin}
                         Chris Hanging out
-                </CircleImage>
+                    </CircleImage>
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
@@ -100,7 +101,7 @@ export default class ImageBlocksView extends Component {
                         size="exlg">
                         {chrischillin}
                         Chris Hanging out
-                </CircleImage>
+                    </CircleImage>
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
@@ -368,6 +369,20 @@ export default class ImageBlocksView extends Component {
                         {chrischillin}
                         Chris Hanging out
                     </RectangleImage>
+                </Holder5>
+                <HorizontalTestBlock1 />
+                <Holder5>
+                    <SubHeading4>
+                        Figure
+                    </SubHeading4>
+                    <Figure>
+                        <CircleImage
+                            size="md">
+                            {chrischillin}
+                            Chris Hanging out
+                        </CircleImage>
+                            Just Chris Hanging Out
+                    </Figure>
                 </Holder5>
                 <HorizontalTestBlock1 />
             </section>

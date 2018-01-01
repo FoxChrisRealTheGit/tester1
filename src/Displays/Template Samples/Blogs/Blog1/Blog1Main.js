@@ -7,7 +7,7 @@ import Container1 , {Container2, Container3}from '../../../../Components 1.0.0/C
 
 import {StyluxStyledHeader3, StyluxStyledFooter3} from '../../../../Components 0.5.0/StyledContainers';
 
-import { SubNavbar1, MainHeading1, Navbar3, Navbar2, Navbar1, Paragraph2 } from '../../../../Components 1.0.0/Blocks';
+import { SubNavbar1, MainHeading1, Navbar1, Paragraph2 } from '../../../../Components 1.0.0/Blocks';
 
 import Logo from '../../../../images/Logo/QuickFirstDraft.svg';
 
@@ -29,7 +29,7 @@ export default class Blog1Main extends Component {
                     </MainHeading1>
                 </Container1>
                 <StyluxStyledHeader3>
-                    <Navbar2>
+                    <Navbar1>
                         <Link to="">About</Link>
                         <Link to="">Link</Link>
                         <Link to="">Link</Link>
@@ -37,13 +37,13 @@ export default class Blog1Main extends Component {
                         <Link to="">Link</Link>
                         <Link to="">Link</Link>
                         <Link to="">Link</Link>
-                    </Navbar2>    
-                    <Navbar3>
+                    </Navbar1>    
+                    <Navbar1>
                     <Link to="">T</Link>
                     <Link to="">I</Link>
                     <Link to="">P</Link>
                     <Link to="">IN</Link>
-                    </Navbar3>
+                    </Navbar1>
                 </StyluxStyledHeader3>
                 <Container3>
   

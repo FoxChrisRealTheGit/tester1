@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import Navigation from '../../../Navigation';
 
-import { SubNavbar1, MainHeading1, Navbar2, Navbar5, Paragraph1 } from '../../../../Components 1.0.0/Blocks';
+import { SubNavbar1, MainHeading1, Navbar1, Paragraph1 } from '../../../../Components 1.0.0/Blocks';
 
 import Container1 from '../../../../Components 1.0.0/Containers';
 
@@ -31,55 +31,55 @@ export default class Blog2Main extends Component {
                 <StyluxStyledHeader2>
                     {Logo}
                     <Link to="">Contact us</Link>
-                    <Navbar2>
+                    <Navbar1>
                         <Link to="">News</Link>
                         <Link to="">Video</Link>
                         <Link to="">Events</Link>
                         <Link to="">Stuff</Link>
-                    </Navbar2>
-                    <Navbar2>
+                    </Navbar1>
+                    <Navbar1>
                         <Link to="">F</Link>
                         <Link to="">T</Link>
                         <Link to="">P</Link>
                         <Link to="">I</Link>
-                    </Navbar2>
+                    </Navbar1>
                 </StyluxStyledHeader2>
                 <Container1>
                 </Container1>
                 <StyluxStyledFooter2>
-                    <Navbar5>
+                    <Navbar1>
                         <Link to="">news</Link>
                         <Link to="">video</Link>
                         <Link to="">events</Link>
                         <Link to="">base</Link>
                         <Link to="">store</Link>
-                    </Navbar5>
-                    <Navbar5>
+                    </Navbar1>
+                    <Navbar1>
                         <Link to="">staff</Link>
                         <Link to="">contact us</Link>
                         <Link to="">advertise</Link>
                         <Link to="">send a tip</Link>
                         <Link to="">activations blog</Link>
-                    </Navbar5>
-                    <Navbar5>
+                    </Navbar1>
+                    <Navbar1>
                         <Link to="">country</Link>
                         <Link to="">country</Link>
                         <Link to="">country</Link>
                         <Link to="">country</Link>
                         <Link to="">country</Link>
-                    </Navbar5>
-                    <Navbar2>
+                    </Navbar1>
+                    <Navbar1>
                         <Link to="">f</Link>
                         <Link to="">t</Link>
                         <Link to="">g</Link>
                         <Link to="">in</Link>
                         <Link to="">Y</Link>
-                    </Navbar2>
-                    <Navbar2>
+                    </Navbar1>
+                    <Navbar1>
                         <Link to="">app</Link>
                         <Link to="">app</Link>
                         <Link to="">app</Link>
-                    </Navbar2>
+                    </Navbar1>
                     <Paragraph1>
                         Subscribe>
                     </Paragraph1>

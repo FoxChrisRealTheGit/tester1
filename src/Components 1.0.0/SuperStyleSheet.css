@@ -57,3 +57,16 @@
 }
 /* End of Rectangle Image Sizes
 /* End of Image Sizes */
+/* Start of NavBar Styles */
+.navbar1-navbar a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.333em;
+}
+.navbar1-navbar a:hover{
+    color: yellow;
+    text-shadow: 1px 1px 3px black;
+}
+
+
+/* End of NavBar Styles */

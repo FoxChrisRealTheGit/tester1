@@ -1217,7 +1217,6 @@
 .navbar1-navbar a{
     text-decoration: none;
     color: black;
-    font-variant: small-caps;
     font-size: 1.333em;
 }
 .navbar1-navbar a:hover{
@@ -1243,7 +1242,6 @@
     margin: 0 10px;
     text-decoration: none;
     color: black;
-    font-variant: small-caps;
     font-size: 1.333em;
 }
 .navbar2-navbar a:hover{

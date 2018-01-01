@@ -10,7 +10,6 @@ import {
     Heading1,
     HorizontalTestBlock1,
     SubHeading4,
-    Navbar1,
     Navbar2,
     Navbar3,
     Navbar4,
@@ -31,6 +30,9 @@ import {
     DropDownNav4,
     DropDownNav5
 } from '../../Components 0.5.0/Blocks';
+import{
+    Navbar1,
+} from '../../Components 1.0.0/Blocks';
 
 import Logo from '../../images/Logo/QuickFirstDraft.svg';
 
@@ -53,7 +55,8 @@ export default class NavBarBlocksView extends Component {
                 </Container1>
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
-                <Holder5>
+                <Holder5
+                    >
                     <SubHeading4>
                         Navbar1
                     </SubHeading4>
@@ -64,58 +67,6 @@ export default class NavBarBlocksView extends Component {
                         <Link to="/blocks/navbarviews">item4</Link>
                         <Link to="/blocks/navbarviews">item5</Link>
                     </Navbar1>
-                </Holder5>
-                <HorizontalTestBlock1 />
-                <Holder5>
-                    <SubHeading4>
-                        Navbar2
-                    </SubHeading4>
-                    <Navbar2>
-                        <Link to="/blocks/navbarviews">item1</Link>
-                        <Link to="/blocks/navbarviews">item2</Link>
-                        <Link to="/blocks/navbarviews">item3</Link>
-                        <Link to="/blocks/navbarviews">item4</Link>
-                        <Link to="/blocks/navbarviews">item5</Link>
-                    </Navbar2>
-                </Holder5>
-                <HorizontalTestBlock1 />
-                <Holder5>
-                    <SubHeading4>
-                        Navbar3
-                    </SubHeading4>
-                    <Navbar3>
-                        <Link to="/blocks/navbarviews">item1</Link>
-                        <Link to="/blocks/navbarviews">item2</Link>
-                        <Link to="/blocks/navbarviews">item3</Link>
-                        <Link to="/blocks/navbarviews">item4</Link>
-                        <Link to="/blocks/navbarviews">item5</Link>
-                    </Navbar3>
-                </Holder5>
-                <HorizontalTestBlock1 />
-                <Holder5>
-                    <SubHeading4>
-                        Navbar4
-                    </SubHeading4>
-                    <Navbar4>
-                        <Link to="/blocks/navbarviews">item1</Link>
-                        <Link to="/blocks/navbarviews">item2</Link>
-                        <Link to="/blocks/navbarviews">item3</Link>
-                        <Link to="/blocks/navbarviews">item4</Link>
-                        <Link to="/blocks/navbarviews">item5</Link>
-                    </Navbar4>
-                </Holder5>
-                <HorizontalTestBlock1 />
-                <Holder5>
-                    <SubHeading4>
-                        Navbar5
-                    </SubHeading4>
-                    <Navbar5>
-                        <Link to="/blocks/navbarviews">item1</Link>
-                        <Link to="/blocks/navbarviews">item2</Link>
-                        <Link to="/blocks/navbarviews">item3</Link>
-                        <Link to="/blocks/navbarviews">item4</Link>
-                        <Link to="/blocks/navbarviews">item5</Link>
-                    </Navbar5>
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />

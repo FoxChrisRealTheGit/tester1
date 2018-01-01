@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import Navigation from '../../../Navigation';
 
-import { SubNavbar1, MainHeading1, Navbar2, Navbar3, Navbar5, Navbar1, Paragraph2 } from '../../../../Components 1.0.0/Blocks';
+import { SubNavbar1, MainHeading1, Navbar1, Paragraph2 } from '../../../../Components 1.0.0/Blocks';
 
 import Container1 from '../../../../Components 1.0.0/Containers';
 
@@ -31,54 +31,54 @@ export default class Blog4Main extends Component {
                 <Container1>
                     <StyluxStyledHeader1>
                         {Logo}
-                        <Navbar2>
+                        <Navbar1>
                             <Link to="">Blog</Link>
                             <Link to="">Resources</Link>
                             <Link to="">Guides</Link>
                             <Link to="">Tools</Link>
                             <Link to="">About</Link>
-                        </Navbar2>
-                        <Navbar3>
+                        </Navbar1>
+                        <Navbar1>
                             <Link to="">Stuff</Link>
                             <Link to="">More Stuff</Link>
-                        </Navbar3>
+                        </Navbar1>
                     </StyluxStyledHeader1>
                 </Container1>
                 <Container1>
 
                 </Container1>
                 <StyluxStyledFooter1>
-                    <Navbar5>
+                    <Navbar1>
                         <Link to="">Blog</Link>
                         <Link to="">Resources</Link>
                         <Link to="">Guides</Link>
                         <Link to="">Tools</Link>
                         <Link to="">About</Link>
-                    </Navbar5>
-                    <Navbar5>
+                    </Navbar1>
+                    <Navbar1>
                         <Link to="">Guides</Link>
                         <Link to="">one</Link>
                         <Link to="">two</Link>
                         <Link to="">three</Link>
                         <Link to="">four</Link>
-                    </Navbar5>
-                    <Navbar5>
+                    </Navbar1>
+                    <Navbar1>
                         <Link to="">Reviews</Link>
                         <Link to="">one</Link>
                         <Link to="">two</Link>
                         <Link to="">three</Link>
                         <Link to="">four</Link>
-                    </Navbar5>
-                    <Navbar5>
+                    </Navbar1>
+                    <Navbar1>
                         <Link to="">Comparison</Link>
                         <Link to="">one</Link>
                         <Link to="">two</Link>
                         <Link to="">three</Link>
                         <Link to="">four</Link>
-                    </Navbar5>
-                    <Navbar5>
+                    </Navbar1>
+                    <Navbar1>
                         <Link to="">Let us help you</Link>
-                    </Navbar5>
+                    </Navbar1>
                     <Navbar1>
                         <p>Copyright 2017</p>
                         <Link to="">Moar Guides and stuff</Link>
@@ -89,12 +89,12 @@ export default class Blog4Main extends Component {
                     <Paragraph2>
                         some super long string about this company and why it does what it does and stuff.
                     </Paragraph2>
-                    <Navbar3>
+                    <Navbar1>
                         <Link to="">one</Link>
                         <Link to="">two</Link>
                         <Link to="">three</Link>
                         <Link to="">four</Link>
-                    </Navbar3>
+                    </Navbar1>
                 </StyluxStyledFooter1>
             </section>
         )

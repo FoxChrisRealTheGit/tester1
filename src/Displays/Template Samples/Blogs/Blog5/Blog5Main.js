@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import Navigation from '../../../Navigation';
 
-import { SubNavbar1, MainHeading1, CircleImage, Navbar4, Paragraph1 } from '../../../../Components 1.0.0/Blocks';
+import { SubNavbar1, MainHeading1, CircleImage, Navbar1, Paragraph1 } from '../../../../Components 1.0.0/Blocks';
 
 import Container1 from '../../../../Components 1.0.0/Containers';
 
@@ -33,14 +33,14 @@ export default class Blog5Main extends Component {
                     <CircleImage>
                         {Logo}
                     </CircleImage>
-                    <Navbar4>
+                    <Navbar1>
                         <Link to="">About</Link>
                         <Link to="">Adventure</Link>
                         <Link to="">Climb</Link>
                         <Link to="">Eat</Link>
                         <Link to="">Contact</Link>
                         <Link to="">Disclaimer</Link>
-                    </Navbar4>
+                    </Navbar1>
                     <Paragraph1>
                         copyright info
                     </Paragraph1>

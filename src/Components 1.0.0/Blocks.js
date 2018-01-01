@@ -4,9 +4,6 @@ import './reset.css';
 import Container1 from './Containers';
 import Holder1 from './Holders';
 
-//temporary css sheet
-import '../Components 0.5.0/component styles/blocks.css';
-
 //non temporary css sheet
 import '../Components 1.0.0/SuperStyleSheet.css';
 
@@ -1047,7 +1044,7 @@ export class RectangleImage extends Component {
 
 /* End of Regular Rectangle Image */
 /* Start of Figure Blocks */
-export class Figure1 extends Component {
+export class Figure extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -1057,7 +1054,12 @@ export class Figure1 extends Component {
     render() {
         const childs = React.Children.toArray(this.props.children)
         return (
-            <div></div>
+            <figure>
+                {childs[0]}
+                <figcaption>
+                    {childs[1]}
+                </figcaption>
+            </figure>
         )
     }
 }
@@ -1150,144 +1152,69 @@ export class FloatingButton2 extends Component {
 /* Start of Navigation Blocks */
 /* Start of NavBar Blocks */
 export class Navbar1 extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
-        this.state={
+        this.state = {
             fontFamily: props.font || 'serif',
+            totalWidth: props.totalWidth || '100%',
+            //totalHeight: props.totalHeight || '150px',
+            display: props.display || 'flex',
+            direction: props.direction || 'row',
+            alignItems: props.align || 'center',
+            margin: props.margin || '0',
+            padding: props.padding || '0',
+            itemSpaceing: props.itemSpacing || '10px 0',
+            mainBackground: props.mainBackground || 'inherit',
+            itemBackground: props.itemBackground || 'inherit',
+            fontSize: props.fontSize || '1em',
+            fontWeight: props.fontWeight || '100',
+            fontVariant: props.fontVariant || 'none',
         }
     }
     render() {
-        const NavBar ={
-
+        const NavBar = {
+            width: this.state.totalWidth,
+            //height: this.state.totalHeight,
+            display: this.state.display,
+            flexDirection: 'column',
+            alignItems: this.state.alignItems,
+            margin: '0',
+            padding: '0',
+            background: this.state.mainBackground,
         };
-        const NavBar_NavBar ={
-
+        const NavBar_NavBar = {
+            //width: 'inherit',
+            height: 'inherit',
+            display: 'flex',
+            flexWrap: 'wrap',
+            fontFamily: this.state.fontFamily,
+            flexDirection: this.state.direction,
         };
-        const NavBar_NavBar_Li ={
-
+        const NavBar_NavBar_Li = {
+            display: 'flex',
+            flex: 1,
+            fontSize: this.state.fontSize,
+            fontWeight: this.state.fontWeight,
+            justifyContent: 'center',
+            margin: this.state.itemSpaceing,
+            background: this.state.itemBackground,
+            fontVariant: this.state.fontVariant,
         };
-
+        
         const childs = React.Children.toArray(this.props.children)
         const navBar = childs.map((x, i) => {
             return <li key={i} style={NavBar_NavBar_Li}>{x}</li>
         })
         return (
-            <div className="navbar1">
-                <ul className="navbar1-navbar">
+            <div style={NavBar}>
+                <ul style={NavBar_NavBar} className="navbar1-navbar">
                     {navBar}
                 </ul>
             </div>
         )
     }
 }
-export class Navbar2 extends Component {
-    constructor(props){
-        super(props);
-        this.state={
-            fontFamily: props.font || 'serif',
-        }
-    }
-    render() {
-        const NavBar ={
 
-        };
-        const NavBar_NavBar ={
-
-        };
-        const childs = React.Children.toArray(this.props.children)
-        const navBar = childs.map((x, i) => {
-            return <li key={i}>{x}</li>
-        })
-        return (
-            <div className="navbar2">
-                <ul className="navbar2-navbar">
-                    {navBar}
-                </ul>
-            </div>
-        )
-    }
-}
-export class Navbar3 extends Component {
-    constructor(props){
-        super(props);
-        this.state={
-            fontFamily: props.font || 'serif',
-        }
-    }
-    render() {
-        const NavBar ={
-
-        };
-        const NavBar_NavBar ={
-
-        };
-        const childs = React.Children.toArray(this.props.children)
-        const navBar = childs.map((x, i) => {
-            return <li key={i}>{x}</li>
-        })
-        return (
-            <div className="navbar3">
-                <ul className="navbar3-navbar">
-                    {navBar}
-                </ul>
-            </div>
-        )
-    }
-}
-export class Navbar4 extends Component {
-    constructor(props){
-        super(props);
-        this.state={
-            fontFamily: props.font || 'serif',
-        }
-    }
-    render() {
-        const NavBar ={
-
-        };
-        const NavBar_NavBar ={
-
-        };
-        const childs = React.Children.toArray(this.props.children)
-        const navBar = childs.map((x, i) => {
-            return <li key={i}>{x}</li>
-        })
-        return (
-            <div className="navbar4">
-                <ul className="navbar4-navbar">
-                    {navBar}
-                </ul>
-            </div>
-        )
-    }
-}
-export class Navbar5 extends Component {
-    constructor(props){
-        super(props);
-        this.state={
-            fontFamily: props.font || 'serif',
-        }
-    }
-    render() {
-        const NavBar ={
-
-        };
-        const NavBar_NavBar ={
-
-        };
-        const childs = React.Children.toArray(this.props.children)
-        const navBar = childs.map((x, i) => {
-            return <li key={i}>{x}</li>
-        })
-        return (
-            <div className="navbar5">
-                <ul className="navbar5-navbar">
-                    {navBar}
-                </ul>
-            </div>
-        )
-    }
-}
 /* End of NavBar Blocks */
 /* Start of Sub NavBar Blocks */
 export class SubNavbar1 extends Component {

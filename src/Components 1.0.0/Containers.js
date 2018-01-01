@@ -13,7 +13,9 @@ export default class Container1 extends Component {
         this.state={
             display: props.display || 'flex',
             direction: props.direction || 'row',
+            alignBlock1: props.alignBlock1 || 'center',
             block1: props.block1 || '1',
+            justifyBlock1: props.justifyBlock1 || 'center',
             textColor: props.textColor || 'yellow',
             background: props.background || 'white',
             padding: props.padding || '0',
@@ -30,7 +32,8 @@ export default class Container1 extends Component {
             background: this.state.background,
             flexDirection: 'column',
             flexWrap: 'wrap',
-            alignItems: this.state.alignBlock2,
+            alignItems: this.state.alignBlock1,
+            justifyContent: this.state.justifyBlock1,
             margin: this.state.margin,
         }
         const childs = React.Children.toArray(this.props.children);
@@ -51,12 +54,14 @@ export class Container2 extends Component {
             direction: props.direction || 'column',
             block1: props.block1 || '1',
             alignBlock1: props.alignBlock1 || 'center',
+            justifyBlock1: props.justifyBlock1 || 'center',
             block2: props.block2 || '1',
             alignBlock2: props.alignBlock2 || 'center',
+            justifyBlock2: props.justifyBlock2 || 'center',
             textColor: props.textColor || 'black',
             background: props.background || 'white',
             padding: props.padding || '0',
-            margin: props.margin || '10px',  
+            margin: props.margin || '10px 0',  
         }
     }
     render() {
@@ -69,7 +74,8 @@ export class Container2 extends Component {
             background: this.state.background,
             flexDirection: 'column',
             flexWrap: 'wrap',
-            alignItems: this.state.alignBlock2,
+            alignItems: this.state.alignBlock1,
+            justifyContent: this.state.justifyBlock1,
             margin: this.state.margin,
         }
         const block2style ={
@@ -78,6 +84,7 @@ export class Container2 extends Component {
             flexDirection: 'column',
             flexWrap: 'wrap',
             alignItems: this.state.alignBlock2,
+            justifyContent: this.state.justifyBlock2,
             margin: this.state.margin,
         }
         const childs = React.Children.toArray(this.props.children);
@@ -99,14 +106,17 @@ export class Container3 extends Component {
             direction: props.direction || 'column',
             block1: props.block1 || '1',
             alignBlock1: props.alignBlock1 || 'center',
+            justifyBlock1: props.justifyBlock1 || 'center',
             block2: props.block2 || '1',
             alignBlock2: props.alignBlock2 || 'center',
+            justifyBlock2: props.justifyBlock2 || 'center',
             block3: props.block3 || '1',
             alignBlock3: props.alignBlock3 || 'center',
+            justifyBlock3: props.justifyBlock3 || 'center',
             textColor: props.textColor || 'black',
             background: props.background || 'white',
             padding: props.padding || '0',
-            margin: props.margin || '10px',  
+            margin: props.margin || '10px 0',  
         }
     }
     render() {
@@ -119,7 +129,8 @@ export class Container3 extends Component {
             background: this.state.background,
             flexDirection: 'column',
             flexWrap: 'wrap',
-            alignItems: this.state.alignBlock2,
+            alignItems: this.state.alignBlock1,
+            justifyContent: this.state.justifyBlock1,
             margin: this.state.margin,
         }
         const block2style ={
@@ -128,6 +139,7 @@ export class Container3 extends Component {
             flexDirection: 'column',
             flexWrap: 'wrap',
             alignItems: this.state.alignBlock2,
+            justifyContent: this.state.justifyBlock2,
             margin: this.state.margin,
         }
         const block3style ={
@@ -135,7 +147,8 @@ export class Container3 extends Component {
             background: this.state.background,
             flexDirection: 'column',
             flexWrap: 'wrap',
-            alignItems: this.state.alignBlock2,
+            alignItems: this.state.alignBlock3,
+            justifyContent: this.state.justifyBlock3,
             margin: this.state.margin,
         } 
         const childs = React.Children.toArray(this.props.children);
@@ -158,16 +171,20 @@ export class Container4 extends Component {
             direction: props.direction || 'column',
             block1: props.block1 || '1',
             alignBlock1: props.alignBlock1 || 'center',
+            justifyBlock1: props.justifyBlock1 || 'center',
             block2: props.block2 || '1',
             alignBlock2: props.alignBlock2 || 'center',
+            justifyBlock2: props.justifyBlock2 || 'center',
             block3: props.block3 || '1',
             alignBlock3: props.alignBlock3 || 'center',
+            justifyBlock3: props.justifyBlock3 || 'center',
             block4: props.block4 || '1',
             alignBlock4: props.alignBlock4 || 'center',
+            justifyBlock4: props.justifyBlock4 || 'center',
             textColor: props.textColor || 'black',
             background: props.background || 'white',
             padding: props.padding || '0',
-            margin: props.margin || '10px',  
+            margin: props.margin || '10px 0',  
         }
     }
     render() {
@@ -180,7 +197,8 @@ export class Container4 extends Component {
             background: this.state.background,
             flexDirection: 'column',
             flexWrap: 'wrap',
-            alignItems: this.state.alignBlock2,
+            alignItems: this.state.alignBlock1,
+            justifyContent: this.state.justifyBlock1,
             margin: this.state.margin,
         }
         const block2style ={
@@ -189,6 +207,7 @@ export class Container4 extends Component {
             flexDirection: 'column',
             flexWrap: 'wrap',
             alignItems: this.state.alignBlock2,
+            justifyContent: this.state.justifyBlock2,
             margin: this.state.margin,
         }
         const block3style ={
@@ -196,7 +215,8 @@ export class Container4 extends Component {
             background: this.state.background,
             flexDirection: 'column',
             flexWrap: 'wrap',
-            alignItems: this.state.alignBlock2,
+            alignItems: this.state.alignBlock3,
+            justifyContent: this.state.justifyBlock3,
             margin: this.state.margin,
         }  
         const block4style ={
@@ -204,7 +224,8 @@ export class Container4 extends Component {
             background: this.state.background,
             flexDirection: 'column',
             flexWrap: 'wrap',
-            alignItems: this.state.alignBlock2,
+            alignItems: this.state.alignBlock4,
+            justifyContent: this.state.justifyBlock4,
             margin: this.state.margin,
         }
         const childs = React.Children.toArray(this.props.children);
@@ -228,18 +249,23 @@ export class Container5 extends Component {
             direction: props.direction || 'column',
             block1: props.block1 || '1',
             alignBlock1: props.alignBlock1 || 'center',
+            justifyBlock1: props.justifyBlock1 || 'center',
             block2: props.block2 || '1',
             alignBlock2: props.alignBlock2 || 'center',
+            justifyBlock2: props.justifyBlock2 || 'center',
             block3: props.block3 || '1',
             alignBlock3: props.alignBlock3 || 'center',
+            justifyBlock3: props.justifyBlock3 || 'center',
             block4: props.block4 || '1',
             alignBlock4: props.alignBlock4 || 'center',
+            justifyBlock4: props.justifyBlock4 || 'center',
             block5: props.block5 || '1',
             alignBlock5: props.alignBlock5 || 'center',
+            justifyBlock5: props.justifyBlock5 || 'center',
             textColor: props.textColor || 'black',
             background: props.background || 'white',
             padding: props.padding || '0',
-            margin: props.margin || '10px',  
+            margin: props.margin || '10px 0',  
         }
     }
     render() {
@@ -252,7 +278,8 @@ export class Container5 extends Component {
             background: this.state.background,
             flexDirection: 'column',
             flexWrap: 'wrap',
-            alignItems: this.state.alignBlock2,
+            alignItems: this.state.alignBlock1,
+            justifyContent: this.state.justifyBlock1,
             margin: this.state.margin,
         }
         const block2style ={
@@ -261,6 +288,7 @@ export class Container5 extends Component {
             flexDirection: 'column',
             flexWrap: 'wrap',
             alignItems: this.state.alignBlock2,
+            justifyContent: this.state.justifyBlock2,
             margin: this.state.margin,
         }
         const block3style ={
@@ -268,7 +296,8 @@ export class Container5 extends Component {
             background: this.state.background,
             flexDirection: 'column',
             flexWrap: 'wrap',
-            alignItems: this.state.alignBlock2,
+            alignItems: this.state.alignBlock3,
+            justifyContent: this.state.justifyBlock3,
             margin: this.state.margin,
         }  
         const block4style ={
@@ -276,7 +305,8 @@ export class Container5 extends Component {
             background: this.state.background,
             flexDirection: 'column',
             flexWrap: 'wrap',
-            alignItems: this.state.alignBlock2,
+            alignItems: this.state.alignBlock4,
+            justifyContent: this.state.justifyBlock4,
             margin: this.state.margin,
         } 
         const block5style ={
@@ -284,7 +314,8 @@ export class Container5 extends Component {
             background: this.state.background,
             flexDirection: 'column',
             flexWrap: 'wrap',
-            alignItems: this.state.alignBlock2,
+            alignItems: this.state.alignBlock5,
+            justifyContent: this.state.justifyBlock5,
             margin: this.state.margin,
         }
         const childs = React.Children.toArray(this.props.children);
