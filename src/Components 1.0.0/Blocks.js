@@ -1163,7 +1163,7 @@ export class Navbar1 extends Component {
             direction: props.direction || 'row',
             alignItems: props.align || 'center',
             columnAlign: props.columnAlign || 'center',
-           //margin: props.margin || '0',
+            //margin: props.margin || '0',
             padding: props.padding || '0',
             itemSpaceing: props.itemSpacing || '10px 0',
             mainBackground: props.mainBackground || 'inherit',
@@ -1188,7 +1188,7 @@ export class Navbar1 extends Component {
             width: this.state.navBarWidth,
             height: 'inherit',
             display: 'flex',
-            flexWrap: 'wrap',           
+            flexWrap: 'wrap',
             alignItems: this.state.columnAlign,
             fontFamily: this.state.fontFamily,
             flexDirection: this.state.direction,
@@ -1203,7 +1203,7 @@ export class Navbar1 extends Component {
             background: this.state.itemBackground,
             fontVariant: this.state.fontVariant,
         };
-        
+
         const childs = React.Children.toArray(this.props.children)
         const navBar = childs.map((x, i) => {
             return <li key={i} style={NavBar_NavBar_Li}>{x}</li>
@@ -1221,49 +1221,164 @@ export class Navbar1 extends Component {
 /* End of NavBar Blocks */
 /* Start of Sub NavBar Blocks */
 export class SubNavbar1 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            fontFamily: props.font || 'serif',
+            totalWidth: props.totalWidth || '100%',
+            navBarWidth: props.navbarWidth || '50%',
+            totalHeight: props.height,
+            display: props.display || 'flex',
+            direction: props.direction || 'row',
+            alignItems: props.align || 'flex-start',
+            columnAlign: props.columnAlign || 'center',
+            //margin: props.margin || '0',
+            padding: props.padding || '0',
+            itemSpaceing: props.itemSpacing || '0',
+            mainBackground: props.mainBackground || 'black',
+            itemBackground: props.itemBackground || 'inherit',
+            fontSize: props.fontSize || '0.8em',
+            fontWeight: props.fontWeight || '100',
+            fontVariant: props.fontVariant || 'none',
+        }
+    }
     render() {
+        const SubNavBar = {
+            width: this.state.totalWidth,
+            height: this.state.totalHeight,
+            display: this.state.display,
+            flexDirection: 'column',
+            alignItems: this.state.alignItems,
+            margin: '0',
+            padding: this.state.padding,
+            background: this.state.mainBackground,
+            posistion: 'sticky',
+            top: 0,
+        };
+        const SubNavBar_NavBar = {
+            width: this.state.navBarWidth,
+            height: 'inherit',
+            display: 'flex',
+            flexWrap: 'wrap',
+            flex: 1,
+            alignItems: this.state.columnAlign,
+            fontFamily: this.state.fontFamily,
+            flexDirection: this.state.direction,
+        };
+        const SubNavBar_NavBar_Li = {
+            display: 'flex',
+            flex: 1,
+            fontSize: this.state.fontSize,
+            fontWeight: this.state.fontWeight,
+            justifyContent: 'center',
+            margin: this.state.itemSpaceing,
+            background: this.state.itemBackground,
+            fontVariant: this.state.fontVariant,
+        };
         const childs = React.Children.toArray(this.props.children)
         const navBar = childs.map((x, i) => {
-            return <li key={i}>{x}</li>
+            return <li key={i} style={SubNavBar_NavBar_Li}>{x}</li>
         })
         return (
-            <div className="subnavbar1 socialness">
-                <ul className="subnavbar1-navbar">
+            <div style={SubNavBar} className="subnavbar1 socialness">
+                <ul style={SubNavBar_NavBar} className="subnavbar1-navbar">
                     {navBar}
                 </ul>
             </div>
         )
     }
 }
-/*export class SubNavbar2 extends Component {
+export class SubNavbar2 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            fontFamily: props.font || 'serif',
+            totalWidth: props.totalWidth || '100%',
+            navBarWidth: props.navbarWidth || '50%',
+            totalHeight: props.height,
+            display: props.display || 'flex',
+            direction: props.direction || 'row',
+            alignItems: props.align || 'center',
+            columnAlign: props.columnAlign || 'center',
+            //margin: props.margin || '0',
+            padding: props.padding || '0',
+            itemSpaceing: props.itemSpacing || '0',
+            mainBackground: props.mainBackground || 'gray',
+            itemBackground: props.itemBackground || 'inherit',
+            fontSize: props.fontSize || '0.8em',
+            fontWeight: props.fontWeight || '100',
+            fontVariant: props.fontVariant || 'none',
+        }
+    }
     render() {
+        const SubNavBar = {
+            width: this.state.totalWidth,
+            height: this.state.totalHeight,
+            display: this.state.display,
+            flexDirection: 'column',
+            alignItems: this.state.alignItems,
+            margin: '0',
+            padding: this.state.padding,
+            background: this.state.mainBackground,
+            posistion: 'sticky',
+            top: 0,
+        };
+        const SubNavBar_NavBar1 = {
+            width: this.state.navBarWidth,
+            height: 'inherit',
+            display: 'flex',
+            flexWrap: 'wrap',
+            flex: 1,
+            alignItems: this.state.columnAlign,
+            fontFamily: this.state.fontFamily,
+            flexDirection: this.state.direction,
+        };
+        const SubNavBar_NavBar2 = {
+            width: this.state.navBarWidth,
+            height: 'inherit',
+            display: 'flex',
+            flexWrap: 'wrap',
+            flex: 1,
+            alignItems: this.state.columnAlign,
+            fontFamily: this.state.fontFamily,
+            flexDirection: this.state.direction,
+        };
+        const SubNavBar_NavBar_Li = {
+            display: 'flex',
+            flex: 1,
+            fontSize: this.state.fontSize,
+            fontWeight: this.state.fontWeight,
+            justifyContent: 'center',
+            margin: this.state.itemSpaceing,
+            background: this.state.itemBackground,
+            fontVariant: this.state.fontVariant,
+        };
         const childs = React.Children.toArray(this.props.children)
         const navBar = childs.map((x, i, arr) => {
-            return <li key={i}>{arr[i + 2]}</li>
+            return <li key={i} style={SubNavBar_NavBar_Li}>{arr[i + 2]}</li>
         })
         return (
-            <header className="subnavbar2">
-                <Container1>
-                    <Holder1>
-                        <ul className="subnavbar2-navbar1">
-                            {childs[0]}
-                            {childs[1]}
+            <div style={SubNavBar} className="subnavbar2 socialness">
+                <Holder1>
+                    <ul style={SubNavBar_NavBar1} className="subnavbar2-navbar1">
+                        {childs[0]}
+                        {childs[1]}
+                    </ul>
+                    <Holder1
+                        alignBlock1="flex-end"
+                        alignBlock2="flex-start">
+                        <div className="subnavbar2-globalSearch">
+                            <p>Search Holder</p>
+                        </div>
+                        <ul style={SubNavBar_NavBar2} className="subnavbar2-navbar2">
+                            {navBar}
                         </ul>
-                        <Holder2>
-                            <Block1 />
-                            <div className="subnavbar2-globalSearch">
-                                <GlobalSearch1 >Search Holder</GlobalSearch1>
-                            </div>
-                            <ul className="subnavbar2-navbar2">
-                                {navBar}
-                            </ul>
-                        </Holder2>
                     </Holder1>
-                </Container1>
-            </header>
+                </Holder1>
+            </div>
         )
     }
-}*/
+}
 export class SubNavbar3 extends Component {
     render() {
         const childs = React.Children.toArray(this.props.children)
@@ -1312,68 +1427,147 @@ export class SubNavbar5 extends Component {
 
 /* End of Sub NavBar Blocks */
 /* Start of Brand Blocks */
-// export class Brand1 extends Component {
-//     render() {
-//         const childs = React.Children.toArray(this.props.children)
-//         return (
-//             <section className="brand1">
-//                 <SquareImage1>
-//                     {childs[0]}
-//                     logo
-//                 </SquareImage1>
-//                 <p className="brand1-name">{childs[1]}</p>
-//             </section>
-//         )
-//     }
-// }
-// export class Brand2 extends Component {
-//     render() {
-//         const childs = React.Children.toArray(this.props.children)
-//         return (
-//             <section className="brand2">
-//                 <RectangleImage2>
-//                     {childs[0]}
-//                     logo
-//                 </RectangleImage2>
-//             </section>
-//         )
-//     }
-// }
-// export class Brand3 extends Component {
-//     render() {
-//         const childs = React.Children.toArray(this.props.children)
-//         return (
-//             <section className="brand3">
-//                 <SquareImage2>
-//                     {childs[0]}
-//                     logo
-//                 </SquareImage2>
-//             </section>
-//         )
-//     }
-// }
-// export class Brand4 extends Component {
-//     render() {
-//         const childs = React.Children.toArray(this.props.children)
-//         return (
-//             <section className="brand4">
-//                 <RectangleImage4>
-//                     {childs[0]}
-//                     logo
-//                 </RectangleImage4>
-//             </section>
-//         )
-//     }
-// }
-// export class Brand5 extends Component {
-//     render() {
-//         const childs = React.Children.toArray(this.props.children)
-//         return (
-//             <section className="brand5">
-//             </section>
-//         )
-//     }
-// }
+export class Brand1 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            display: props.display || 'flex',
+            direction: props.direction || 'row',
+            link: props.link || '/'
+        }
+    }
+    render() {
+        const Brand = {
+            display: this.state.display,
+            flexDirection: this.state.direction,
+            //width: '15%',
+            alignItems: 'center',
+        }
+        const Brand_Name = {
+            display: 'flex',
+            fontWeight: '900',
+
+        }
+        const childs = React.Children.toArray(this.props.children)
+        return (
+            <div style={Brand}>
+                <a href={this.state.link}>
+                    <SquareImage
+                        size='tn'>
+                        {childs[0]}
+                        logo
+                        </SquareImage>
+                </a>
+                <a href={this.state.link}>
+                    <p style={Brand_Name}>{childs[1]}</p>
+                </a>
+
+            </div>
+        )
+    }
+}
+export class Brand2 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            display: props.display || 'flex',
+            link: props.link || '/'
+        }
+    }
+    render() {
+        const Brand = {
+            display: 'flex',
+            alignItems: 'center',
+        }
+        const childs = React.Children.toArray(this.props.children)
+        return (
+            <section style={Brand}>
+                <a href={this.state.link}>
+                    <RectangleImage
+                        size='exsm'>
+                        {childs[0]}
+                        logo
+                </RectangleImage>
+                </a>
+            </section>
+        )
+    }
+}
+export class Brand3 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            display: props.display || 'flex',
+            link: props.link || '/'
+        }
+    }
+    render() {
+        const Brand = {
+            display: 'flex',
+            alignItems: 'center',
+        }
+        const childs = React.Children.toArray(this.props.children)
+        return (
+            <section style={Brand}>
+                <a href={this.state.link}>
+                    <SquareImage>
+                        {childs[0]}
+                        logo
+                </SquareImage>
+                </a>
+            </section>
+        )
+    }
+}
+export class Brand4 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            display: props.display || 'flex',
+            link: props.link || '/'
+        }
+    }
+    render() {
+        const Brand = {
+            display: 'flex',
+            alignItems: 'center',
+        }
+        const childs = React.Children.toArray(this.props.children)
+        return (
+            <section style={Brand}>
+                <a href={this.state.link}>
+                    <RectangleImage>
+                        {childs[0]}
+                        logo
+                </RectangleImage>
+                </a>
+            </section>
+        )
+    }
+}
+export class Brand5 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            display: props.display || 'flex',
+            link: props.link || '/'
+        }
+    }
+    render() {
+        const Brand = {
+            display: 'flex',
+            alignItems: 'center',
+        }
+        const childs = React.Children.toArray(this.props.children)
+        return (
+            <section style={Brand}>
+                <a href={this.state.link}>
+
+                </a>
+            </section>
+        )
+    }
+}
 /* End of Brand Blocks */
 /* Start of Drop Down Nav Blocks */
 export class DropDownNav1 extends Component {

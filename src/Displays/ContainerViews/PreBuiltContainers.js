@@ -32,9 +32,9 @@ export default class StyledContainerMain extends Component {
             <section>
                 <Navigation />
                 <SubNavbar1>
-                    <Link to="/containers/styled">Styled Containers</Link>
-                    <Link to="/containers/unstyled">Unstyled Containers</Link>
-                    <Link to="/holders">Holders</Link>
+                    <Link to="/containers/styled">styled containers</Link>
+                    <Link to="/containers/unstyled">unstyled containers</Link>
+                    <Link to="/holders">holders</Link>
                 </SubNavbar1>
                 <Container1>
                     <MainHeading1>

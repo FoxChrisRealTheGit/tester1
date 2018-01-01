@@ -6,16 +6,20 @@ import Container1 from '../../Components 1.0.0/Containers';
 
 import { Holder5 } from '../../Components 1.0.0/Holders';
 import {
+    DropDownNav1,
+    DropDownNav2,
+    DropDownNav3,
+    DropDownNav4,
+    DropDownNav5
+} from '../../Components 0.5.0/Blocks';
+import {    
     MainHeading1,
     Heading1,
     HorizontalTestBlock1,
     SubHeading4,
-    Navbar2,
-    Navbar3,
-    Navbar4,
-    Navbar5,
-    SubNavbar1,
+    Navbar1,
     SubNavbar2,
+    SubNavbar1,    
     SubNavbar3,
     SubNavbar4,
     SubNavbar5,
@@ -24,14 +28,6 @@ import {
     Brand3,
     Brand4,
     Brand5,
-    DropDownNav1,
-    DropDownNav2,
-    DropDownNav3,
-    DropDownNav4,
-    DropDownNav5
-} from '../../Components 0.5.0/Blocks';
-import {
-    Navbar1,
 } from '../../Components 1.0.0/Blocks';
 
 import Logo from '../../images/Logo/QuickFirstDraft.svg';
@@ -42,11 +38,11 @@ export default class NavBarBlocksView extends Component {
             <section>
                 <Navigation />
                 <SubNavbar1>
-                    <Link to="/blocks/buttonviews">Button</Link>
-                    <Link to="/blocks/headingviews">Headings</Link>
-                    <Link to="/blocks/imageviews">Images</Link>
-                    <Link to="/blocks/navbarviews">NavBars</Link>
-                    <Link to="/blocks/paragraphviews">Paragraphs</Link>
+                    <Link to="/blocks/buttonviews">button</Link>
+                    <Link to="/blocks/headingviews">headings</Link>
+                    <Link to="/blocks/imageviews">images</Link>
+                    <Link to="/blocks/navbarviews">navbars</Link>
+                    <Link to="/blocks/paragraphviews">paragraphs</Link>
                 </SubNavbar1>
                 <Container1>
                     <MainHeading1>
@@ -119,7 +115,8 @@ export default class NavBarBlocksView extends Component {
                     <SubHeading4>
                         Sub Navbar1
                     </SubHeading4>
-                    <SubNavbar1>
+                    <SubNavbar1
+                        padding="0 0 0 5%">
                         <Link to="/blocks/navbarviews">item1</Link>
                         <Link to="/blocks/navbarviews">item2</Link>
                         <Link to="/blocks/navbarviews">item3</Link>

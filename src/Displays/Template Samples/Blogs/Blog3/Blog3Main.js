@@ -3,7 +3,13 @@ import { Link } from 'react-router-dom';
 
 import Navigation from '../../../Navigation';
 
-import { SubNavbar1, MainHeading1, Navbar1, Paragraph2 } from '../../../../Components 1.0.0/Blocks';
+import { 
+    SubNavbar1, 
+    SubNavbar2,
+    MainHeading1, 
+    Navbar1, 
+    Paragraph2 
+} from '../../../../Components 1.0.0/Blocks';
 
 import Container1 from '../../../../Components 1.0.0/Containers';
 
@@ -27,15 +33,16 @@ export default class Blog3Main extends Component {
                 </MainHeading1>
                 </Container1>
                 <Container1>
-                    <SubNavbar1>
-                        <Link to="">used</Link>
-                        <Link to="">to</Link>
-                        <Link to="">be</Link>
-                        <Link to="">two</Link>
-                        <Link to="">P</Link>
-                        <Link to="">F</Link>
-                        <Link to="">Y</Link>
-                    </SubNavbar1>
+                    <SubNavbar2>
+                        <Link to="">info</Link>
+                        <Link to="">shop</Link>
+                        <Link to="instagram.com"></Link>
+                        <Link to="twitter.com"></Link>
+                        <Link to="bloglovin.com"></Link>
+                        <Link to="pinterest.com"></Link>
+                        <Link to="facebook.com"></Link>
+                        <Link to="youtube.com"></Link>
+                    </SubNavbar2>
                 </Container1>
                 <StyluxStyledHeader4>
                     <Navbar1>
@@ -57,17 +64,17 @@ export default class Blog3Main extends Component {
                 </Container1>
                 <StyluxStyledFooter4>
                     <Navbar1>
-                        <Link to="">I</Link>
-                        <Link to="">T</Link>
-                        <Link to="">B</Link>
+                        <Link to="instagram.com"></Link>
+                        <Link to="twitter.com"></Link>
+                        <Link to="bloglovin.com"></Link>
                     </Navbar1>
                     <Navbar1>
                         <Link to="">Your Name</Link>
                     </Navbar1>
                     <Navbar1>
-                        <Link to="">P</Link>
-                        <Link to="">F</Link>
-                        <Link to="">Y</Link>
+                        <Link to="pinterest.com"></Link>
+                        <Link to="facebook.com"></Link>
+                        <Link to="youtube.com"></Link>
                     </Navbar1>
                     <Paragraph2>
                         Copyright statement. All Rights Reserved.

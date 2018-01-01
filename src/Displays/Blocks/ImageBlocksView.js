@@ -25,11 +25,11 @@ export default class ImageBlocksView extends Component {
             <section>
                 <Navigation />
                 <SubNavbar1>
-                    <Link to="/blocks/buttonviews">Button</Link>
-                    <Link to="/blocks/headingviews">Headings</Link>
-                    <Link to="/blocks/imageviews">Images</Link>
-                    <Link to="/blocks/navbarviews">NavBars</Link>
-                    <Link to="/blocks/paragraphviews">Paragraphs</Link>
+                    <Link to="/blocks/buttonviews">button</Link>
+                    <Link to="/blocks/headingviews">headings</Link>
+                    <Link to="/blocks/imageviews">images</Link>
+                    <Link to="/blocks/navbarviews">navbars</Link>
+                    <Link to="/blocks/paragraphviews">paragraphs</Link>
                 </SubNavbar1>
                 <Container1>
                     <MainHeading1>

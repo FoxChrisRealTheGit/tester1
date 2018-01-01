@@ -115,5 +115,14 @@
     text-shadow: 1px 1px 3px black;
 }
 
+.subnavbar1-navbar a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.333em;
+}
+.subnavbar1-navbar a:hover{
+    color: yellow;
+    text-shadow: 1px 1px 3px whitesmoke;
+}
 
 /* End of NavBar Styles */

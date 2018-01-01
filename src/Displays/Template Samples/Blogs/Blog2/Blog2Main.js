@@ -38,10 +38,10 @@ export default class Blog2Main extends Component {
                         <Link to="">Stuff</Link>
                     </Navbar1>
                     <Navbar1>
-                        <Link to="">F</Link>
-                        <Link to="">T</Link>
-                        <Link to="">P</Link>
-                        <Link to="">I</Link>
+                        <Link to="facebook.com"></Link>
+                        <Link to="twitter.com"></Link>
+                        <Link to="pinterest.com"></Link>
+                        <Link to="instagram.com"></Link>
                     </Navbar1>
                 </StyluxStyledHeader2>
                 <Container1>
@@ -69,11 +69,11 @@ export default class Blog2Main extends Component {
                         <Link to="">country</Link>
                     </Navbar1>
                     <Navbar1>
-                        <Link to="">f</Link>
-                        <Link to="">t</Link>
-                        <Link to="">g</Link>
-                        <Link to="">in</Link>
-                        <Link to="">Y</Link>
+                        <Link to="facebook.com"></Link>
+                        <Link to="twitter.com"></Link>
+                        <Link to="plus.google.com"></Link>
+                        <Link to="linkedin.com"></Link>
+                        <Link to="youtube.com"></Link>
                     </Navbar1>
                     <Navbar1>
                         <Link to="">app</Link>
@@ -81,7 +81,7 @@ export default class Blog2Main extends Component {
                         <Link to="">app</Link>
                     </Navbar1>
                     <Paragraph1>
-                        Subscribe>
+                        Subscribe
                     </Paragraph1>
                 </StyluxStyledFooter2>
             </section>
