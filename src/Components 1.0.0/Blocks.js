@@ -1157,11 +1157,13 @@ export class Navbar1 extends Component {
         this.state = {
             fontFamily: props.font || 'serif',
             totalWidth: props.totalWidth || '100%',
-            //totalHeight: props.totalHeight || '150px',
+            navBarWidth: props.navbarWidth || '100%',
+            totalHeight: props.height,
             display: props.display || 'flex',
             direction: props.direction || 'row',
             alignItems: props.align || 'center',
-            margin: props.margin || '0',
+            columnAlign: props.columnAlign || 'center',
+           //margin: props.margin || '0',
             padding: props.padding || '0',
             itemSpaceing: props.itemSpacing || '10px 0',
             mainBackground: props.mainBackground || 'inherit',
@@ -1174,19 +1176,20 @@ export class Navbar1 extends Component {
     render() {
         const NavBar = {
             width: this.state.totalWidth,
-            //height: this.state.totalHeight,
+            height: this.state.totalHeight,
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.alignItems,
             margin: '0',
-            padding: '0',
+            padding: this.state.padding,
             background: this.state.mainBackground,
         };
         const NavBar_NavBar = {
-            //width: 'inherit',
+            width: this.state.navBarWidth,
             height: 'inherit',
             display: 'flex',
-            flexWrap: 'wrap',
+            flexWrap: 'wrap',           
+            alignItems: this.state.columnAlign,
             fontFamily: this.state.fontFamily,
             flexDirection: this.state.direction,
         };
@@ -1207,7 +1210,7 @@ export class Navbar1 extends Component {
         })
         return (
             <div style={NavBar}>
-                <ul style={NavBar_NavBar} className="navbar1-navbar">
+                <ul style={NavBar_NavBar} className="navbar1-navbar socialness">
                     {navBar}
                 </ul>
             </div>
@@ -1224,7 +1227,7 @@ export class SubNavbar1 extends Component {
             return <li key={i}>{x}</li>
         })
         return (
-            <div className="subnavbar1">
+            <div className="subnavbar1 socialness">
                 <ul className="subnavbar1-navbar">
                     {navBar}
                 </ul>

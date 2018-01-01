@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import Container1 from '../../Components 1.0.0/Containers';
 
-import {Holder5} from '../../Components 1.0.0/Holders';
+import { Holder5 } from '../../Components 1.0.0/Holders';
 import {
     MainHeading1,
     Heading1,
@@ -30,7 +30,7 @@ import {
     DropDownNav4,
     DropDownNav5
 } from '../../Components 0.5.0/Blocks';
-import{
+import {
     Navbar1,
 } from '../../Components 1.0.0/Blocks';
 
@@ -55,19 +55,57 @@ export default class NavBarBlocksView extends Component {
                 </Container1>
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
-                <Holder5
-                    >
-                    <SubHeading4>
-                        Navbar1
-                    </SubHeading4>
-                    <Navbar1>
-                        <Link to="/blocks/navbarviews">item1</Link>
-                        <Link to="/blocks/navbarviews">item2</Link>
-                        <Link to="/blocks/navbarviews">item3</Link>
-                        <Link to="/blocks/navbarviews">item4</Link>
-                        <Link to="/blocks/navbarviews">item5</Link>
-                    </Navbar1>
-                </Holder5>
+                <Container1>
+                    <Holder5>
+                        <SubHeading4>
+                            Navbar1
+                        </SubHeading4>
+                        <Navbar1>
+                            <Link to="/blocks/navbarviews">item1</Link>
+                            <Link to="/blocks/navbarviews">item2</Link>
+                            <Link to="/blocks/navbarviews">item3</Link>
+                            <Link to="/blocks/navbarviews">item4</Link>
+                            <Link to="/blocks/navbarviews">item5</Link>
+                        </Navbar1>
+                    </Holder5>
+                </Container1>
+                <HorizontalTestBlock1 />
+                <Container1>
+                    <Holder5>
+                        <SubHeading4>
+                            Navbar1
+                        </SubHeading4>
+                        <Navbar1
+                            height= '100px'
+                            padding='0 7%'
+                            navbarWidth='20%'
+                            align="flex-end">
+                            <Link to="twitter.com"></Link>
+                            <Link to="facebook.com"></Link>
+                            <Link to="linkedin.com"></Link>
+                            <Link to="dribbble.com"></Link>
+                            <Link to="youtube.com"></Link>
+                        </Navbar1>
+                    </Holder5>
+                </Container1>
+                <HorizontalTestBlock1 />
+                <Container1>
+                    <Holder5>
+                        <SubHeading4>
+                            Navbar1
+                        </SubHeading4>
+                        <Navbar1
+                            direction="column"
+                            columnAlign='flex-start'
+                            padding="0 0 0 7%">
+                            <Link to="/blocks/navbarviews">item1</Link>
+                            <Link to="/blocks/navbarviews">item2</Link>
+                            <Link to="/blocks/navbarviews">item3</Link>
+                            <Link to="/blocks/navbarviews">item4</Link>
+                            <Link to="/blocks/navbarviews">item5</Link>
+                        </Navbar1>
+                    </Holder5>
+                </Container1>
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Container1>

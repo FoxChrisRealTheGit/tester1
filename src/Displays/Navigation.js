@@ -20,7 +20,9 @@ export default function Navigation() {
                     <SubHeading4>
                         Stylux
                     </SubHeading4>
-                    <Navbar1>
+                    <Navbar1
+                        fontVariant="small-caps"
+                        navbarWidth='80%'>
                         <Link to="/containers">containers</Link>
                         <Link to="/holders">holders</Link>
                         <Link to="/blocks">blocks</Link>

@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 import Navigation from '../../../Navigation';
 
-import Container1 , {Container2, Container3}from '../../../../Components 1.0.0/Containers';
+import Container1, { Container2, Container3 } from '../../../../Components 1.0.0/Containers';
 
-import {StyluxStyledHeader3, StyluxStyledFooter3} from '../../../../Components 0.5.0/StyledContainers';
+import { StyluxStyledHeader3, StyluxStyledFooter3 } from '../../../../Components 0.5.0/StyledContainers';
 
 import { SubNavbar1, MainHeading1, Navbar1, Paragraph2 } from '../../../../Components 1.0.0/Blocks';
 
@@ -37,31 +37,32 @@ export default class Blog1Main extends Component {
                         <Link to="">Link</Link>
                         <Link to="">Link</Link>
                         <Link to="">Link</Link>
-                    </Navbar1>    
+                    </Navbar1>
                     <Navbar1>
-                    <Link to="">T</Link>
-                    <Link to="">I</Link>
-                    <Link to="">P</Link>
-                    <Link to="">IN</Link>
+                        <Link to="twitter.com/foxchrisrealthe"></Link>
+                        <Link to="instagram.com"></Link>
+                        <Link to="pinterest.com"></Link>
+                        <Link to="bloglovin.com"></Link>
+                        <Link to="linkedin.com"></Link>
                     </Navbar1>
                 </StyluxStyledHeader3>
                 <Container3>
-  
+
 
                 </Container3>
                 <Container2>
-                    
+
                 </Container2>
                 <Container3>
 
                 </Container3>
                 <StyluxStyledFooter3>
                     <Navbar1>
-                        <Link to="">Twitter</Link>
-                        <Link to="">Instagram</Link>
-                        <Link to="">Pinterest</Link>
-                        <Link to="">Bloglovin</Link>
-                        <Link to="">Linkedin</Link>
+                        <Link to="twitter.com/foxchrisrealthe"></Link>
+                        <Link to="instagram.com"></Link>
+                        <Link to="pinterest.com"></Link>
+                        <Link to="bloglovin.com"></Link>
+                        <Link to="linkedin.com"></Link>
                     </Navbar1>
                     <Paragraph2>
                         Copyright Statement. All rights reserved.
