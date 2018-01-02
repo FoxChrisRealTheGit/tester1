@@ -1574,37 +1574,52 @@ export class DropDownNav1 extends Component {
     constructor(props){
         super(props);
         this.state={
-
+            display: 'none',
+            background: props.background,
+            offset: props.offset || '10px',
+            color: 'white',
+            margin: '',
+            padding: '',
+            width: props.width,
         }
+        // this.enter = this.enter.bind(this);
+        // this.left = this.left.bind(this);
     }
+    // enter(){
+    //     this.setState =({display: 'block'});
+    // }
+    // left(){
+    //     this.setState =({display: 'none'});
+    // }
+
     render() {
         const DropDown = {
             position: 'absolute',
-            margin: '0 0 0 10px',
+            display: this.state.display,
+            margin: `0 0 0 ${this.state.offset}`,
+            width: this.state.width,
+            padding:'5px',
+            textAlign: 'center',
+            flex: 1,
+            background: this.state.background,
         }
         const DropDown_NavBar_Li = {
-
+           
         }
         const hasChilds = {
-
+            
         }
         const childs = React.Children.toArray(this.props.children)
         const navBar = childs.map((x, i, arr) => {
             return <li key={i} style={DropDown_NavBar_Li}>{arr[i+1]}</li>
         })
-        const ENTER = function () {
-            document.querySelector(".DropDown").style.display="block";   
-        };
-        const LEFT = function () {
-            document.querySelector(".DropDown").style.display="none"; 
-        };
         return (
             <nav className="dropdownnav1">
-                <li style={hasChilds}
-                    onMouseEnter={ENTER}
-                    onMouseLeave={LEFT}>
+                <li style={hasChilds} className="DropDown"
+                    onMouseOver={()=> this.setState({display: 'block'})}
+                    onMouseOut={()=> this.setState({display: 'none'})}>
                     {childs[0]}
-                    <ul style={DropDown} className="DropDown">
+                    <ul style={DropDown}>
                         {navBar}
                     </ul>
                 </li>

@@ -5,13 +5,7 @@ import { Link } from 'react-router-dom';
 import Container1 from '../../Components 1.0.0/Containers';
 
 import { Holder5 } from '../../Components 1.0.0/Holders';
-import {
 
-    DropDownNav2,
-    DropDownNav3,
-    DropDownNav4,
-    DropDownNav5
-} from '../../Components 0.5.0/Blocks';
 import {
     MainHeading1,
     Heading1,
@@ -28,7 +22,11 @@ import {
     Brand3,
     Brand4,
     Brand5,
-    DropDownNav1,
+    DropDownNav1,   
+    DropDownNav2,
+    DropDownNav3,
+    DropDownNav4,
+    DropDownNav5
 } from '../../Components 1.0.0/Blocks';
 
 import Logo from '../../images/Logo/QuickFirstDraft.svg';
@@ -242,6 +240,41 @@ export default class NavBarBlocksView extends Component {
                 </Holder5>
                 <Container1>
                     <Navbar1>
+                        <DropDownNav1>
+                            <Link to="/blocks/navbarviews">item1</Link>
+                            <Link to="/blocks/navbarviews">item2</Link>
+                            <Link to="/blocks/navbarviews">item3</Link>
+                            <Link to="/blocks/navbarviews">item4</Link>
+                            <Link to="/blocks/navbarviews">item5</Link>
+                        </DropDownNav1>
+                        <DropDownNav1>
+                            <Link to="/blocks/navbarviews">item1</Link>
+                            <Link to="/blocks/navbarviews">item2</Link>
+                            <Link to="/blocks/navbarviews">item3</Link>
+                            <Link to="/blocks/navbarviews">item4</Link>
+                            <Link to="/blocks/navbarviews">item5</Link>
+                        </DropDownNav1>
+                        <DropDownNav1>
+                            <Link to="/blocks/navbarviews">item1</Link>
+                            <Link to="/blocks/navbarviews">item2</Link>
+                            <Link to="/blocks/navbarviews">item3</Link>
+                            <Link to="/blocks/navbarviews">item4</Link>
+                            <Link to="/blocks/navbarviews">item5</Link>
+                        </DropDownNav1>
+                        <DropDownNav1>
+                            <Link to="/blocks/navbarviews">item1</Link>
+                            <Link to="/blocks/navbarviews">item2</Link>
+                            <Link to="/blocks/navbarviews">item3</Link>
+                            <Link to="/blocks/navbarviews">item4</Link>
+                            <DropDownNav1>
+                                <Link to="/blocks/navbarviews">item1</Link>
+                                <Link to="/blocks/navbarviews">item2</Link>
+                                <Link to="/blocks/navbarviews">item3</Link>
+                                <Link to="/blocks/navbarviews">item4</Link>
+                                <Link to="/blocks/navbarviews">item5</Link>
+                            </DropDownNav1>
+                            <Link to="/blocks/navbarviews">item5</Link>
+                        </DropDownNav1>
                         <DropDownNav1>
                             <Link to="/blocks/navbarviews">item1</Link>
                             <Link to="/blocks/navbarviews">item2</Link>

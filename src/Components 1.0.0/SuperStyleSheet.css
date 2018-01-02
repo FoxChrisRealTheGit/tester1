@@ -128,8 +128,9 @@
 }
 /* End of subnavbar Styles */
 /* Dropdown Styles */
-.DropDown{
-    display: none;
+.DropDown::after{
+    font-family: 'FontAwesome';
+    content: '\f078';
 }
 
 /* End of Dropdown Styles */
