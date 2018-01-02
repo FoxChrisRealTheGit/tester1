@@ -1209,11 +1209,11 @@ export class Navbar1 extends Component {
             return <li key={i} style={NavBar_NavBar_Li}>{x}</li>
         })
         return (
-            <div style={NavBar}>
+            <nav style={NavBar}>
                 <ul style={NavBar_NavBar} className="navbar1-navbar socialness">
                     {navBar}
                 </ul>
-            </div>
+            </nav>
         )
     }
 }
@@ -1280,11 +1280,11 @@ export class SubNavbar1 extends Component {
             return <li key={i} style={SubNavBar_NavBar_Li}>{x}</li>
         })
         return (
-            <div style={SubNavBar} className="subnavbar1 socialness">
+            <nav style={SubNavBar} className="subnavbar1 socialness">
                 <ul style={SubNavBar_NavBar} className="subnavbar1-navbar">
                     {navBar}
                 </ul>
-            </div>
+            </nav>
         )
     }
 }
@@ -1358,7 +1358,7 @@ export class SubNavbar2 extends Component {
             return <li key={i} style={SubNavBar_NavBar_Li}>{arr[i + 2]}</li>
         })
         return (
-            <div style={SubNavBar} className="subnavbar2 socialness">
+            <nav style={SubNavBar} className="subnavbar2 socialness">
                 <Holder1>
                     <ul style={SubNavBar_NavBar1} className="subnavbar2-navbar1">
                         {childs[0]}
@@ -1375,7 +1375,7 @@ export class SubNavbar2 extends Component {
                         </ul>
                     </Holder1>
                 </Holder1>
-            </div>
+            </nav>
         )
     }
 }
@@ -1386,11 +1386,11 @@ export class SubNavbar3 extends Component {
             return <li key={i}>{x}</li>
         })
         return (
-            <div className="subnavbar3">
+            <nav className="subnavbar3">
                 <ul className="subnavbar3-navbar">
                     {navBar}
                 </ul>
-            </div>
+            </nav>
         )
     }
 }
@@ -1401,11 +1401,11 @@ export class SubNavbar4 extends Component {
             return <li key={i}>{x}</li>
         })
         return (
-            <div className="subnavbar4">
+            <nav className="subnavbar4">
                 <ul className="subnavbar4-navbar">
                     {navBar}
                 </ul>
-            </div>
+            </nav>
         )
     }
 }
@@ -1416,11 +1416,11 @@ export class SubNavbar5 extends Component {
             return <li key={i}>{x}</li>
         })
         return (
-            <div className="subnavbar5">
+            <nav className="subnavbar5">
                 <ul className="subnavbar5-navbar">
                     {navBar}
                 </ul>
-            </div>
+            </nav>
         )
     }
 }
@@ -1571,42 +1571,76 @@ export class Brand5 extends Component {
 /* End of Brand Blocks */
 /* Start of Drop Down Nav Blocks */
 export class DropDownNav1 extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+
+        }
+    }
     render() {
+        const DropDown = {
+            position: 'absolute',
+            margin: '0 0 0 10px',
+        }
+        const DropDown_NavBar_Li = {
+
+        }
+        const hasChilds = {
+
+        }
+        const childs = React.Children.toArray(this.props.children)
+        const navBar = childs.map((x, i, arr) => {
+            return <li key={i} style={DropDown_NavBar_Li}>{arr[i+1]}</li>
+        })
+        const ENTER = function () {
+            document.querySelector(".DropDown").style.display="block";   
+        };
+        const LEFT = function () {
+            document.querySelector(".DropDown").style.display="none"; 
+        };
         return (
-            <div className="dropdownnav1">
-            </div>
+            <nav className="dropdownnav1">
+                <li style={hasChilds}
+                    onMouseEnter={ENTER}
+                    onMouseLeave={LEFT}>
+                    {childs[0]}
+                    <ul style={DropDown} className="DropDown">
+                        {navBar}
+                    </ul>
+                </li>
+            </nav>
         )
     }
 }
 export class DropDownNav2 extends Component {
     render() {
         return (
-            <div className="dropdownnav2">
-            </div>
+            <nav className="dropdownnav2">
+            </nav>
         )
     }
 }
 export class DropDownNav3 extends Component {
     render() {
         return (
-            <div className="dropdownnav3">
-            </div>
+            <nav className="dropdownnav3">
+            </nav>
         )
     }
 }
 export class DropDownNav4 extends Component {
     render() {
         return (
-            <div className="dropdownnav4">
-            </div>
+            <nav className="dropdownnav4">
+            </nav>
         )
     }
 }
 export class DropDownNav5 extends Component {
     render() {
         return (
-            <div className="dropdownnav5">
-            </div>
+            <nav className="dropdownnav5">
+            </nav>
         )
     }
 }

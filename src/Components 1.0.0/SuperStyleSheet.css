@@ -114,6 +114,8 @@
     color: yellow;
     text-shadow: 1px 1px 3px black;
 }
+/* End of navbar styles */
+/* Start of subnavbar Styles */
 
 .subnavbar1-navbar a{
     text-decoration: none;
@@ -124,5 +126,11 @@
     color: yellow;
     text-shadow: 1px 1px 3px whitesmoke;
 }
+/* End of subnavbar Styles */
+/* Dropdown Styles */
+.DropDown{
+    display: none;
+}
 
+/* End of Dropdown Styles */
 /* End of NavBar Styles */

@@ -45,3 +45,6 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
+a{
+	color: inherit;
+}

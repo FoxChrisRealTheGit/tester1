@@ -6,20 +6,20 @@ import Container1 from '../../Components 1.0.0/Containers';
 
 import { Holder5 } from '../../Components 1.0.0/Holders';
 import {
-    DropDownNav1,
+
     DropDownNav2,
     DropDownNav3,
     DropDownNav4,
     DropDownNav5
 } from '../../Components 0.5.0/Blocks';
-import {    
+import {
     MainHeading1,
     Heading1,
     HorizontalTestBlock1,
     SubHeading4,
     Navbar1,
     SubNavbar2,
-    SubNavbar1,    
+    SubNavbar1,
     SubNavbar3,
     SubNavbar4,
     SubNavbar5,
@@ -28,6 +28,7 @@ import {
     Brand3,
     Brand4,
     Brand5,
+    DropDownNav1,
 } from '../../Components 1.0.0/Blocks';
 
 import Logo from '../../images/Logo/QuickFirstDraft.svg';
@@ -72,7 +73,7 @@ export default class NavBarBlocksView extends Component {
                             Navbar1
                         </SubHeading4>
                         <Navbar1
-                            height= '100px'
+                            height='100px'
                             padding='0 7%'
                             navbarWidth='20%'
                             align="flex-end">
@@ -239,6 +240,17 @@ export default class NavBarBlocksView extends Component {
                         DropDown Navigation 1
                     </SubHeading4>
                 </Holder5>
+                <Container1>
+                    <Navbar1>
+                        <DropDownNav1>
+                            <Link to="/blocks/navbarviews">item1</Link>
+                            <Link to="/blocks/navbarviews">item2</Link>
+                            <Link to="/blocks/navbarviews">item3</Link>
+                            <Link to="/blocks/navbarviews">item4</Link>
+                            <Link to="/blocks/navbarviews">item5</Link>
+                        </DropDownNav1>
+                    </Navbar1>
+                </Container1>
                 <HorizontalTestBlock1 />
                 <Holder5>
                     <SubHeading4>
