@@ -8,7 +8,8 @@ import {
     SubNavbar1,
     Heading1,
     SubHeading4,
-    HorizontalTestBlock1
+    HorizontalTestBlock1,
+    ImageSlider1,
 } from '../../Components 1.0.0/Blocks';
 
 import StyluxStyledHeader1,
@@ -22,9 +23,15 @@ import StyluxStyledHeader1,
     StyluxStyledFooter3,
     StyluxStyledFooter4,
     StyluxStyledFooter5
-} from '../../Components 0.5.0/StyledContainers';
+} from '../../Components 1.0.0/StyledContainers';
 
 import Container1, { Container3 } from '../../Components 1.0.0/Containers';
+
+/* Images */
+import chrisLeaves from "../../images/chrisLeaves.jpg";
+import KarenJump from "../../images/KarenJump.jpg";
+import Kristen from "../../images/Kristen.jpg";
+import KristenButt from "../../images/KristenButt.jpg";
 
 export default class StyledContainerMain extends Component {
     render() {
@@ -183,6 +190,14 @@ export default class StyledContainerMain extends Component {
                     <SubHeading4>
                         Carosel 1
                     </SubHeading4>
+                </Container1>
+                <Container1>
+                    <ImageSlider1>
+                        {chrisLeaves} 
+                        {KarenJump}
+                        {Kristen}
+                        {KristenButt}
+                    </ImageSlider1>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>

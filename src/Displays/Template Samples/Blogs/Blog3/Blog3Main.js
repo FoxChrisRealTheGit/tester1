@@ -13,7 +13,7 @@ import {
 
 import Container1 from '../../../../Components 1.0.0/Containers';
 
-import { StyluxStyledHeader4, StyluxStyledFooter4 } from '../../../../Components 0.5.0/StyledContainers';
+import { StyluxStyledHeader4, StyluxStyledFooter4 } from '../../../../Components 1.0.0/StyledContainers';
 
 export default class Blog3Main extends Component {
     render() {

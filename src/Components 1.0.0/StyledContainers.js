@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import './component styles/reset.css';
-import './component styles/styledContainers.css';
-
+import './reset.css';
+import './SuperStyleSheet.css';
 
 import Container1, { Container3 } from './Containers';
 
@@ -10,9 +9,8 @@ import {
     Navbar3,
     Brand2,
     Brand3,
-    GlobalSearch1
 } from './Blocks';
-import Holder1, { Holder2, Holder3, Holder4, Holder5, Holder7, Holder8, Holder18 } from './Holders';
+import Holder1, { Holder2, Holder3, Holder4, Holder5, Holder7, Holder8} from './Holders';
 /* Pre Styled Containers*/
 /*
    Pre Styled Description and use
@@ -57,9 +55,9 @@ export class StyluxStyledHeader2 extends Component {
                         </Holder4>
                         <Holder4>
                             {childs[3]}
-                            <GlobalSearch1>
+                            <p>
                                 Search Holder
-                            </GlobalSearch1>
+                            </p>
                         </Holder4>
                     </Holder2>
                 </header>
@@ -210,12 +208,12 @@ export class StyluxStyledFooter4 extends Component {
         return (
             <Container1>
                 <footer className="StyluxStyledFooter4">
-                    <Holder18>
+                    <Holder8>
                         {childs[0]}
                         {childs[1]}
                         {childs[2]}
                         {childs[3]}
-                    </Holder18>
+                    </Holder8>
                 </footer>
             </Container1>
         )

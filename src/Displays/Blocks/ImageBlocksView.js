@@ -381,7 +381,7 @@ export default class ImageBlocksView extends Component {
                             {chrischillin}
                             Chris Hanging out
                         </CircleImage>
-                            Just Chris Hanging Out
+                        Just Chris Hanging Out
                     </Figure>
                 </Holder5>
                 <HorizontalTestBlock1 />

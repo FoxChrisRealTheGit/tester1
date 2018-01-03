@@ -7,7 +7,7 @@ import Container1, { Container3, Container2 } from '../../../Components 1.0.0/Co
 
 import Holder1, { Holder4, Holder5, Holder6, Holder7 } from '../../../Components 1.0.0/Holders';
 
-import TwitterFeed1, { FacebookFeed1,FacebookFeed2 , FacebookFeed3  } from '../../../Components 0.5.0/SocialMediaContainers';
+import TwitterFeed1, { FacebookFeed1,FacebookFeed2 , FacebookFeed3  } from '../../../Components 1.0.0/SocialMediaContainers';
 
 import Block1, {
     HorizontalTestBlock1,

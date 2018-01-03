@@ -78,7 +78,7 @@ export class MainHeading1 extends Component {
             fontWeight: props.weight || '900',
             display: props.display || 'flex',
             align: props.align || 'center',
-            padding: props.padding || '0',
+            padding: props.padding || '0 0 15px 0',
             margin: props.margin || '0',
         }
     }
@@ -95,6 +95,8 @@ export class MainHeading1 extends Component {
             alignItems: this.state.align,
             padding: this.state.padding,
             margin: this.state.margin,
+            overflowX: 'hidden',
+            overflowY: 'hidden',
 
         }
         const childs = React.Children.toArray(this.props.children)
@@ -129,6 +131,8 @@ export class MainHeading2 extends Component {
             alignItems: this.state.align,
             padding: this.state.padding,
             margin: this.state.margin,
+            overflowX: 'hidden',
+            overflowY: 'hidden',
 
         }
         const childs = React.Children.toArray(this.props.children)
@@ -163,6 +167,8 @@ export class MainHeading3 extends Component {
             alignItems: this.state.align,
             padding: this.state.padding,
             margin: this.state.margin,
+            overflowX: 'hidden',
+            overflowY: 'hidden',
         }
         const childs = React.Children.toArray(this.props.children)
         return (
@@ -196,6 +202,8 @@ export class MainHeading4 extends Component {
             alignItems: this.state.align,
             padding: this.state.padding,
             margin: this.state.margin,
+            overflowX: 'hidden',
+            overflowY: 'hidden',
         }
         const childs = React.Children.toArray(this.props.children)
         return (
@@ -229,6 +237,8 @@ export class MainHeading5 extends Component {
             alignItems: this.state.align,
             padding: this.state.padding,
             margin: this.state.margin,
+            overflowX: 'hidden',
+            overflowY: 'hidden',
         }
         const childs = React.Children.toArray(this.props.children)
         return (
@@ -264,6 +274,8 @@ export class Heading1 extends Component {
             alignItems: this.state.align,
             padding: this.state.padding,
             margin: this.state.margin,
+            overflowX: 'hidden',
+            overflowY: 'hidden',
         }
         const childs = React.Children.toArray(this.props.children)
         return (
@@ -297,6 +309,8 @@ export class Heading2 extends Component {
             alignItems: this.state.align,
             padding: this.state.padding,
             margin: this.state.margin,
+            overflowX: 'hidden',
+            overflowY: 'hidden',
         }
         const childs = React.Children.toArray(this.props.children)
         return (
@@ -330,6 +344,8 @@ export class Heading3 extends Component {
             alignItems: this.state.align,
             padding: this.state.padding,
             margin: this.state.margin,
+            overflowX: 'hidden',
+            overflowY: 'hidden',
         }
         const childs = React.Children.toArray(this.props.children)
         return (
@@ -363,6 +379,8 @@ export class Heading4 extends Component {
             alignItems: this.state.align,
             padding: this.state.padding,
             margin: this.state.margin,
+            overflowX: 'hidden',
+            overflowY: 'hidden',
         }
         const childs = React.Children.toArray(this.props.children)
         return (
@@ -396,6 +414,8 @@ export class Heading5 extends Component {
             alignItems: this.state.align,
             padding: this.state.padding,
             margin: this.state.margin,
+            overflowX: 'hidden',
+            overflowY: 'hidden',
         }
         const childs = React.Children.toArray(this.props.children)
         return (
@@ -431,6 +451,8 @@ export class SubHeading1 extends Component {
             alignItems: this.state.align,
             padding: this.state.padding,
             margin: this.state.margin,
+            overflowX: 'hidden',
+            overflowY: 'hidden',
         }
         const childs = React.Children.toArray(this.props.children)
         return (
@@ -464,6 +486,8 @@ export class SubHeading2 extends Component {
             alignItems: this.state.align,
             padding: this.state.padding,
             margin: this.state.margin,
+            overflowX: 'hidden',
+            overflowY: 'hidden',
         }
         const childs = React.Children.toArray(this.props.children)
         return (
@@ -497,6 +521,8 @@ export class SubHeading3 extends Component {
             alignItems: this.state.align,
             padding: this.state.padding,
             margin: this.state.margin,
+            overflowX: 'hidden',
+            overflowY: 'hidden',
         }
         const childs = React.Children.toArray(this.props.children)
         return (
@@ -514,13 +540,14 @@ export class SubHeading4 extends Component {
             fontWeight: props.weight || '400',
             display: props.display || 'flex',
             align: props.align || 'center',
-            padding: props.padding || '0',
+            padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
         }
     }
     render() {
         const heading = {
             width: 'inherit',
+            height: 'inherit',
             color: this.state.color,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
@@ -530,6 +557,8 @@ export class SubHeading4 extends Component {
             alignItems: this.state.align,
             padding: this.state.padding,
             margin: this.state.margin,
+            overflowX: 'hidden',
+            overflowY: 'hidden',
         }
         const childs = React.Children.toArray(this.props.children)
         return (
@@ -563,6 +592,8 @@ export class SubHeading5 extends Component {
             alignItems: this.state.align,
             padding: this.state.padding,
             margin: this.state.margin,
+            overflowX: 'hidden',
+            overflowY: 'hidden',
         }
         const childs = React.Children.toArray(this.props.children)
         return (
@@ -598,6 +629,8 @@ export class SecondarySubHeading1 extends Component {
             alignItems: this.state.align,
             padding: this.state.padding,
             margin: this.state.margin,
+            overflowX: 'hidden',
+            overflowY: 'hidden',
 
         }
         const childs = React.Children.toArray(this.props.children)
@@ -632,6 +665,8 @@ export class SecondarySubHeading2 extends Component {
             alignItems: this.state.align,
             padding: this.state.padding,
             margin: this.state.margin,
+            overflowX: 'hidden',
+            overflowY: 'hidden',
         }
         const childs = React.Children.toArray(this.props.children)
         return (
@@ -665,6 +700,8 @@ export class SecondarySubHeading3 extends Component {
             alignItems: this.state.align,
             padding: this.state.padding,
             margin: this.state.margin,
+            overflowX: 'hidden',
+            overflowY: 'hidden',
         }
         const childs = React.Children.toArray(this.props.children)
         return (
@@ -698,6 +735,8 @@ export class SecondarySubHeading4 extends Component {
             alignItems: this.state.align,
             padding: this.state.padding,
             margin: this.state.margin,
+            overflowX: 'hidden',
+            overflowY: 'hidden',
         }
         const childs = React.Children.toArray(this.props.children)
         return (
@@ -731,6 +770,8 @@ export class SecondarySubHeading5 extends Component {
             alignItems: this.state.align,
             padding: this.state.padding,
             margin: this.state.margin,
+            overflowX: 'hidden',
+            overflowY: 'hidden',
         }
         const childs = React.Children.toArray(this.props.children)
         return (
@@ -1227,7 +1268,7 @@ export class SubNavbar1 extends Component {
             fontFamily: props.font || 'serif',
             totalWidth: props.totalWidth || '100%',
             navBarWidth: props.navbarWidth || '50%',
-            totalHeight: props.height,
+            totalHeight: props.height || '30px',
             display: props.display || 'flex',
             direction: props.direction || 'row',
             alignItems: props.align || 'flex-start',
@@ -1252,8 +1293,8 @@ export class SubNavbar1 extends Component {
             margin: '0',
             padding: this.state.padding,
             background: this.state.mainBackground,
-            posistion: 'sticky',
-            top: 0,
+            position: 'sticky',
+            top: '-1px'
         };
         const SubNavBar_NavBar = {
             width: this.state.navBarWidth,
@@ -1295,7 +1336,7 @@ export class SubNavbar2 extends Component {
             fontFamily: props.font || 'serif',
             totalWidth: props.totalWidth || '100%',
             navBarWidth: props.navbarWidth || '50%',
-            totalHeight: props.height,
+            totalHeight: props.height || '30px',
             display: props.display || 'flex',
             direction: props.direction || 'row',
             alignItems: props.align || 'center',
@@ -1571,9 +1612,9 @@ export class Brand5 extends Component {
 /* End of Brand Blocks */
 /* Start of Drop Down Nav Blocks */
 export class DropDownNav1 extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
-        this.state={
+        this.state = {
             display: 'none',
             background: props.background,
             offset: props.offset || '10px',
@@ -1598,26 +1639,26 @@ export class DropDownNav1 extends Component {
             display: this.state.display,
             margin: `0 0 0 ${this.state.offset}`,
             width: this.state.width,
-            padding:'5px',
+            padding: '5px',
             textAlign: 'center',
             flex: 1,
             background: this.state.background,
         }
         const DropDown_NavBar_Li = {
-           
+
         }
         const hasChilds = {
-            
+
         }
         const childs = React.Children.toArray(this.props.children)
         const navBar = childs.map((x, i, arr) => {
-            return <li key={i} style={DropDown_NavBar_Li}>{arr[i+1]}</li>
+            return <li key={i} style={DropDown_NavBar_Li}>{arr[i + 1]}</li>
         })
         return (
             <nav className="dropdownnav1">
                 <li style={hasChilds} className="DropDown"
-                    onMouseOver={()=> this.setState({display: 'block'})}
-                    onMouseOut={()=> this.setState({display: 'none'})}>
+                    onMouseOver={() => this.setState({ display: 'block' })}
+                    onMouseOut={() => this.setState({ display: 'none' })}>
                     {childs[0]}
                     <ul style={DropDown}>
                         {navBar}
@@ -1662,3 +1703,113 @@ export class DropDownNav5 extends Component {
 
 /* End of Drop Down Nav Blocks */
 /* End of Navigation Blocks */
+/* Start of image sliders */
+export class ImageSlider1 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            sliderImages: [],
+            cur:0,
+            arrowColor: props.arrowColor || 'white',
+            background: props.background || 'black',
+            padding: props.padding || '10px',
+        }
+        this.slideLeft = this.slideLeft.bind(this);
+    }
+    componentWillMount(){
+        let slides = [];
+        const CHILDS = React.Children.toArray(this.props.children)
+        for(var g = 0; g<CHILDS.length; g+=1){
+            slides.push(CHILDS[g])
+        }
+        this.setState({sliderImages: slides})
+    }
+    slideLeft(){
+        console.log(this.state.cur)
+        if(this.state.cur===0){
+            return this.setState({cur: this.state.sliderImages.length-1})
+        }else{
+            return this.setState({cur: this.state.cur-1})
+        }
+    }
+    slideRight(){
+        if(this.state.cur>=this.state.sliderImages.length-1){
+           console.log(this.state.sliderImages)
+           return this.setState({cur:0})
+            
+        }else{
+            return this.setState({cur: this.state.cur+1})
+        }
+    }
+    render() {
+        const WRAP = {
+            width:'100%',
+            overflowX: 'hidden',
+            background: this.state.background,
+            overflowY: 'hidden',
+            display: 'flex',
+            padding: this.state.padding,
+        };
+        const LEFT_ARROW = {
+            borderWidth:'30px 40px 30px 0',
+            borderColor: `transparent ${this.state.arrowColor} transparent transparent`,
+            left:'0',
+            marginLeft:'30px',
+        };
+        const RIGHT_ARROW = {
+            borderWidth:'30px 0 30px 40px',
+            borderColor: `transparent transparent transparent ${this.state.arrowColor}`,
+            right:'0',
+            marginRight:'30px',
+        };
+        const SLIDER = {
+            width:'100%',
+            overflowX: 'hidden',
+        };
+        const SLIDE = {
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundrepeat: 'no-repeat',
+            display:'block'
+
+        };
+        const SLIDE_CONTENT = {
+            width:'100%',
+            overflowX: 'hidden',
+            display: 'flex',
+            flexDirection:'column',
+            justifyContent:'center',
+            alignItems:'center',
+            textAlign:'center',
+        };
+        const SLIDE_TEXT = {
+            fontSize: '5em',
+            color: 'white',
+            posistion:'relative',
+            top: '-50px',
+        };
+        const renderSlides =this.state.sliderImages.map((x, i) =>
+        {
+            return (
+                <div key={i} stlye={SLIDE}>
+                    <div style={SLIDE_CONTENT}>
+                        <RectangleImage size='lg'>
+                            {x}
+                        </RectangleImage>
+                    </div>
+                </div>
+            )
+        })
+        return (     
+            <div style={WRAP}>
+                <div style={LEFT_ARROW} className="arrow" onClick={()=> this.slideLeft()}></div>
+                <div style={SLIDER}>
+                    {renderSlides[this.state.cur]}
+                </div>
+                <div style={RIGHT_ARROW} className="arrow" onClick={()=> this.slideRight()}></div>
+            </div>
+        )
+    }
+}
+
+/* End of image sliders */

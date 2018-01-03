@@ -7,7 +7,7 @@ import { SubNavbar1, MainHeading1, Navbar1, Paragraph1 } from '../../../../Compo
 
 import Container1 from '../../../../Components 1.0.0/Containers';
 
-import { StyluxStyledHeader2, StyluxStyledFooter2 } from '../../../../Components 0.5.0/StyledContainers';
+import { StyluxStyledHeader2, StyluxStyledFooter2 } from '../../../../Components 1.0.0/StyledContainers';
 
 import Logo from '../../../../images/Logo/QuickFirstDraft.svg';
 

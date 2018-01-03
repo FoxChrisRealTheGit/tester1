@@ -5,7 +5,7 @@ import Navigation from '../../../Navigation';
 
 import Container1, { Container2, Container3 } from '../../../../Components 1.0.0/Containers';
 
-import { StyluxStyledHeader3, StyluxStyledFooter3 } from '../../../../Components 0.5.0/StyledContainers';
+import { StyluxStyledHeader3, StyluxStyledFooter3 } from '../../../../Components 1.0.0/StyledContainers';
 
 import { SubNavbar1, MainHeading1, Navbar1, Paragraph2 } from '../../../../Components 1.0.0/Blocks';
 

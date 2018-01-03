@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './component styles/reset.css';
-import './component styles/socialMediaContainers.css';
+import './reset.css';
+import './SuperStyleSheet.css';
 
 /* Social Media Containers */
 /* 
@@ -124,8 +124,4 @@ export class FacebookFeed3 extends Component {
 /* End of Facebook 3 */
 
 /* End of Facebook Containers */
-
-
-
-
 

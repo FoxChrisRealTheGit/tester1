@@ -22,7 +22,7 @@ import {
     Brand3,
     Brand4,
     Brand5,
-    DropDownNav1,   
+    DropDownNav1,
     DropDownNav2,
     DropDownNav3,
     DropDownNav4,
@@ -36,6 +36,7 @@ export default class NavBarBlocksView extends Component {
         return (
             <section>
                 <Navigation />
+
                 <SubNavbar1>
                     <Link to="/blocks/buttonviews">button</Link>
                     <Link to="/blocks/headingviews">headings</Link>
@@ -43,6 +44,7 @@ export default class NavBarBlocksView extends Component {
                     <Link to="/blocks/navbarviews">navbars</Link>
                     <Link to="/blocks/paragraphviews">paragraphs</Link>
                 </SubNavbar1>
+
                 <Container1>
                     <MainHeading1>
                         Navbars

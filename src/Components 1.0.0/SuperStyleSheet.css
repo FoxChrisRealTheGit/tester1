@@ -135,3 +135,15 @@
 
 /* End of Dropdown Styles */
 /* End of NavBar Styles */
+/* Start of Image SLider */
+.arrow{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    top: 220px;
+    width:0;
+    height: 0;
+    border-style: solid;
+}
+
+/* End of Image SLider */
