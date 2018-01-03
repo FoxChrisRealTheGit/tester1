@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from '../Navigation';
+import FooterNavigation from '../FooterNavigation';
 
 import Container1, {
     Container2,
@@ -21,16 +22,17 @@ export default class ContainerView extends Component {
         return (
             <section>
                 <Navigation />
-                <SubNavbar1>
-                    <Link to="/containers/styled">styled containers</Link>
-                    <Link to="/containers/unstyled">unstyled containers</Link>
-                    <Link to="/holders">holders</Link>
-                </SubNavbar1>
                 <Container1>
                     <MainHeading1>
                         UnStyled Containers
                     </MainHeading1>
                 </Container1>
+                <SubNavbar1>
+                    <Link to="/containers/styled">styled containers</Link>
+                    <Link to="/containers/unstyled">unstyled containers</Link>
+                    <Link to="/holders">holders</Link>
+                </SubNavbar1>
+                
                 <HorizontalTestBlock1 />
                 <Container1>
                     <SubHeading4>
@@ -92,6 +94,7 @@ export default class ContainerView extends Component {
                     <Block2 />
                 </Container5>
                 <HorizontalTestBlock1 />
+                <FooterNavigation />
             </section>
         );
     }

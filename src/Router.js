@@ -11,6 +11,7 @@ import StyledContainerView from './Displays/ContainerViews/PreBuiltContainers';
 import HolderView from './Displays/HolderViews';
 import BlockView from './Displays/BlocksView';
 
+import Contact from './Displays/Contact';
 //Holder Views
 //1-10
 import Holder1View from './Displays/Holders/1-10/Holder1View';
@@ -101,6 +102,7 @@ export default (
         <Route path="/containers/styled" component={StyledContainerView}></Route>
         <Route path="/containers/unstyled" component={UnstyledContainerView}></Route>
 
+        <Route path="/contact" component={Contact}></Route>
         <Route exact path="/holders" component={HolderView}></Route>
 
         <Route path="/holders/holder1" component={Holder1View}></Route>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navigation from './Navigation';
+import FooterNavigation from './FooterNavigation';
 
 import { Link } from 'react-router-dom';
 
@@ -28,6 +29,8 @@ export default class ContainerViewMain extends Component {
                         </SubHeading4>
                     </Holder5>
                 </Container1>
+                <HorizontalTestBlock1 />
+                <FooterNavigation />
             </section>
         )
     }

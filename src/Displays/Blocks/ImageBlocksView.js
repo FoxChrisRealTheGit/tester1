@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from '../Navigation';
+import FooterNavigation from '../FooterNavigation';
 
 import chrischillin from '../../images/Chris-hangingout.jpg';
 
@@ -24,6 +25,11 @@ export default class ImageBlocksView extends Component {
         return (
             <section>
                 <Navigation />
+                <Container1>
+                    <MainHeading1>
+                        Images
+                    </MainHeading1>
+                </Container1>
                 <SubNavbar1>
                     <Link to="/blocks/buttonviews">button</Link>
                     <Link to="/blocks/headingviews">headings</Link>
@@ -31,11 +37,7 @@ export default class ImageBlocksView extends Component {
                     <Link to="/blocks/navbarviews">navbars</Link>
                     <Link to="/blocks/paragraphviews">paragraphs</Link>
                 </SubNavbar1>
-                <Container1>
-                    <MainHeading1>
-                        Images
-                    </MainHeading1>
-                </Container1>
+
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Holder5>
@@ -385,6 +387,7 @@ export default class ImageBlocksView extends Component {
                     </Figure>
                 </Holder5>
                 <HorizontalTestBlock1 />
+                <FooterNavigation />
             </section>
         )
     }

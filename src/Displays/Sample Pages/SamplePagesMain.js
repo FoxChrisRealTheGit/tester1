@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Navigation from '../Navigation';
-
+import FooterNavigation from '../FooterNavigation';
 import { Link } from 'react-router-dom';
 
 import Container1 from '../../Components 1.0.0/Containers';
@@ -125,6 +125,7 @@ export default class SamplesPagesMain extends Component {
                     </Holder1>
                 </Container1>
                 <HorizontalTestBlock1 />
+                <FooterNavigation />
             </section>
         )
     }

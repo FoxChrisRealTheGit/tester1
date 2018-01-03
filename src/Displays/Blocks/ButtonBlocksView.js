@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Navigation from '../Navigation';
+import FooterNavigation from '../FooterNavigation';
 
 import Container1 from '../../Components 1.0.0/Containers';
 import {
@@ -20,6 +21,11 @@ export default class ButtonBlocksView extends Component {
         return (
             <section>
                 <Navigation />
+                <Container1>
+                    <MainHeading1>
+                        Buttons
+                    </MainHeading1>
+                </Container1>
                 <SubNavbar1>
                     <Link to="/blocks/buttonviews">button</Link>
                     <Link to="/blocks/headingviews">headings</Link>
@@ -27,12 +33,8 @@ export default class ButtonBlocksView extends Component {
                     <Link to="/blocks/navbarviews">navbars</Link>
                     <Link to="/blocks/paragraphviews">paragraphs</Link>
                 </SubNavbar1>
-                <Container1>
-                    <MainHeading1>
-                        Buttons
-                    </MainHeading1>
-                </Container1>
-                <HorizontalTestBlock1 />        
+
+                <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Container1>
                     <FlatButton1>
@@ -69,6 +71,8 @@ export default class ButtonBlocksView extends Component {
                         Floating Button 2
                     </FloatingButton2>
                 </Container1>
+                <HorizontalTestBlock1 />
+                <FooterNavigation />
             </section>
         )
     }

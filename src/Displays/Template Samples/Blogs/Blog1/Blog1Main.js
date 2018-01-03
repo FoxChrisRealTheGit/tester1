@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import Navigation from '../../../Navigation';
+import FooterNavigation from '../../../FooterNavigation';
 
 import Container1, { Container2, Container3 } from '../../../../Components 1.0.0/Containers';
 
@@ -16,6 +17,11 @@ export default class Blog1Main extends Component {
         return (
             <section>
                 <Navigation />
+                <Container1>
+                    <MainHeading1>
+                        Blog 1 Template
+                    </MainHeading1>
+                </Container1>
                 <SubNavbar1>
                     <Link to="/templatesamples/blog1">blog 1</Link>
                     <Link to="/templatesamples/blog2">blog 2</Link>
@@ -23,11 +29,7 @@ export default class Blog1Main extends Component {
                     <Link to="/templatesamples/blog4">blog 4</Link>
                     <Link to="/templatesamples/blog5">blog 5</Link>
                 </SubNavbar1>
-                <Container1>
-                    <MainHeading1>
-                        Blog 1 Template
-                    </MainHeading1>
-                </Container1>
+                
                 <StyluxStyledHeader3>
                     <Navbar1>
                         <Link to="">About</Link>
@@ -68,6 +70,8 @@ export default class Blog1Main extends Component {
                         Copyright Statement. All rights reserved.
                     </Paragraph2>
                 </StyluxStyledFooter3>
+
+                <FooterNavigation />
             </section>
         )
     }

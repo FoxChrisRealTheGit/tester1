@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
 import Navigation from '../../Navigation';
+import FooterNavigation from '../../FooterNavigation';
 
 import Container1 from '../../../Components 1.0.0/Containers';
 
@@ -27,15 +27,7 @@ export default class SampleBlogPost2 extends Component {
         return (
             <section>
                 <Navigation />
-                <SubNavbar1>
-                    <Link to="/samplepages/blog1">Blog 1</Link>
-                    <Link to="/samplepages/blog2">Blog 2</Link>
-                    <Link to="/samplepages/blog3">Blog 3</Link>
-                    <Link to="/samplepages/blog4">Blog 4</Link>
-                    <Link to="/samplepages/blog5">Blog 5</Link>
-                    <Link to="/samplepages/blog6">Blog 6</Link>
-                    <Link to="/samplepages/blog7">Blog 7</Link>
-                </SubNavbar1>
+                
                 <Container1>
                     <Holder5>
                         <MainHeading4>
@@ -46,6 +38,15 @@ export default class SampleBlogPost2 extends Component {
                         </SubHeading2>
                     </Holder5>
                 </Container1>
+                <SubNavbar1>
+                    <Link to="/samplepages/blog1">Blog 1</Link>
+                    <Link to="/samplepages/blog2">Blog 2</Link>
+                    <Link to="/samplepages/blog3">Blog 3</Link>
+                    <Link to="/samplepages/blog4">Blog 4</Link>
+                    <Link to="/samplepages/blog5">Blog 5</Link>
+                    <Link to="/samplepages/blog6">Blog 6</Link>
+                    <Link to="/samplepages/blog7">Blog 7</Link>
+                </SubNavbar1>
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Container1>
@@ -97,6 +98,8 @@ export default class SampleBlogPost2 extends Component {
                         </Paragraph1>
                     </Holder6>
                 </Container1>
+                <HorizontalTestBlock1 />
+                <FooterNavigation />
             </section>
         )
     }

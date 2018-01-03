@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navigation from './Navigation';
+import FooterNavigation from './FooterNavigation';
 
 import { Link } from 'react-router-dom';
 
@@ -38,6 +39,8 @@ export default class BlockViews extends Component {
                         </SubHeading4>
                     </Holder8>
                 </Container1>
+                <HorizontalTestBlock1 />
+                <FooterNavigation />
             </section>
         )
     }

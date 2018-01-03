@@ -84,7 +84,7 @@ export class MainHeading1 extends Component {
     }
 
     render() {
-        const heading = {
+        const HEADING = {
             width: 'inherit',
             color: this.state.color,
             fontFamily: this.state.fontFamily,
@@ -99,9 +99,9 @@ export class MainHeading1 extends Component {
             overflowY: 'hidden',
 
         }
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h1 style={heading}>{childs[0]}</h1>
+            <h1 style={HEADING}>{CHILDS[0]}</h1>
         )
     }
 }
@@ -115,12 +115,12 @@ export class MainHeading2 extends Component {
             fontWeight: props.weight || '900',
             display: props.display || 'flex',
             align: props.align || 'center',
-            padding: props.padding || '0',
+            padding: props.padding || '0 0 15px 0',
             margin: props.margin || '0',
         }
     }
     render() {
-        const heading = {
+        const HEADING = {
             width: 'inherit',
             color: this.state.color,
             fontFamily: this.state.fontFamily,
@@ -137,7 +137,7 @@ export class MainHeading2 extends Component {
         }
         const childs = React.Children.toArray(this.props.children)
         return (
-            <h1 style={heading}>{childs[0]}</h1>
+            <h1 style={HEADING}>{childs[0]}</h1>
         )
     }
 }
@@ -151,12 +151,12 @@ export class MainHeading3 extends Component {
             fontWeight: props.weight || '900',
             display: props.display || 'flex',
             align: props.align || 'center',
-            padding: props.padding || '0',
+            padding: props.padding || '0 0 15px 0',
             margin: props.margin || '0',
         }
     }
     render() {
-        const heading = {
+        const HEADING = {
             width: 'inherit',
             color: this.state.color,
             fontFamily: this.state.fontFamily,
@@ -170,9 +170,9 @@ export class MainHeading3 extends Component {
             overflowX: 'hidden',
             overflowY: 'hidden',
         }
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h1 style={heading}>{childs[0]}</h1>
+            <h1 style={HEADING}>{CHILDS[0]}</h1>
         )
     }
 }
@@ -186,12 +186,12 @@ export class MainHeading4 extends Component {
             fontWeight: props.weight || '900',
             display: props.display || 'flex',
             align: props.align || 'center',
-            padding: props.padding || '0',
+            padding: props.padding || '0 0 15px 0',
             margin: props.margin || '0',
         }
     }
     render() {
-        const heading = {
+        const HEADING = {
             width: 'inherit',
             color: this.state.color,
             fontFamily: this.state.fontFamily,
@@ -205,9 +205,9 @@ export class MainHeading4 extends Component {
             overflowX: 'hidden',
             overflowY: 'hidden',
         }
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h1 style={heading}>{childs[0]}</h1>
+            <h1 style={HEADING}>{CHILDS[0]}</h1>
         )
     }
 }
@@ -221,12 +221,12 @@ export class MainHeading5 extends Component {
             fontWeight: props.weight || '900',
             display: props.display || 'flex',
             align: props.align || 'center',
-            padding: props.padding || '0',
+            padding: props.padding || '0 0 15px 0',
             margin: props.margin || '0',
         }
     }
     render() {
-        const heading = {
+        const HEADING = {
             width: 'inherit',
             color: this.state.color,
             fontFamily: this.state.fontFamily,
@@ -240,9 +240,9 @@ export class MainHeading5 extends Component {
             overflowX: 'hidden',
             overflowY: 'hidden',
         }
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h1 style={heading}>{childs[0]}</h1>
+            <h1 style={HEADING}>{CHILDS[0]}</h1>
         )
     }
 }
@@ -258,12 +258,12 @@ export class Heading1 extends Component {
             fontWeight: props.weight || '600',
             display: props.display || 'flex',
             align: props.align || 'center',
-            padding: props.padding || '0',
+            padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
         }
     }
     render() {
-        const heading = {
+        const HEADING = {
             width: 'inherit',
             color: this.state.color,
             fontFamily: this.state.fontFamily,
@@ -277,9 +277,9 @@ export class Heading1 extends Component {
             overflowX: 'hidden',
             overflowY: 'hidden',
         }
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h2 style={heading}>{childs[0]}</h2>
+            <h2 style={HEADING}>{CHILDS[0]}</h2>
         )
     }
 }
@@ -293,12 +293,12 @@ export class Heading2 extends Component {
             fontWeight: props.weight || '600',
             display: props.display || 'flex',
             align: props.align || 'center',
-            padding: props.padding || '0',
+            padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
         }
     }
     render() {
-        const heading = {
+        const HEADING = {
             width: 'inherit',
             color: this.state.color,
             fontFamily: this.state.fontFamily,
@@ -312,9 +312,9 @@ export class Heading2 extends Component {
             overflowX: 'hidden',
             overflowY: 'hidden',
         }
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h2 style={heading}>{childs[0]}</h2>
+            <h2 style={HEADING}>{CHILDS[0]}</h2>
         )
     }
 }
@@ -328,12 +328,12 @@ export class Heading3 extends Component {
             fontWeight: props.weight || '600',
             display: props.display || 'flex',
             align: props.align || 'center',
-            padding: props.padding || '0',
+            padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
         }
     }
     render() {
-        const heading = {
+        const HEADING = {
             width: 'inherit',
             color: this.state.color,
             fontFamily: this.state.fontFamily,
@@ -347,9 +347,9 @@ export class Heading3 extends Component {
             overflowX: 'hidden',
             overflowY: 'hidden',
         }
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h2 style={heading}>{childs[0]}</h2>
+            <h2 style={HEADING}>{CHILDS[0]}</h2>
         )
     }
 }
@@ -363,12 +363,12 @@ export class Heading4 extends Component {
             fontWeight: props.weight || '600',
             display: props.display || 'flex',
             align: props.align || 'center',
-            padding: props.padding || '0',
+            padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
         }
     }
     render() {
-        const heading = {
+        const HEADING = {
             width: 'inherit',
             color: this.state.color,
             fontFamily: this.state.fontFamily,
@@ -382,9 +382,9 @@ export class Heading4 extends Component {
             overflowX: 'hidden',
             overflowY: 'hidden',
         }
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h2 style={heading}>{childs[0]}</h2>
+            <h2 style={HEADING}>{CHILDS[0]}</h2>
         )
     }
 }
@@ -398,12 +398,12 @@ export class Heading5 extends Component {
             fontWeight: props.weight || '600',
             display: props.display || 'flex',
             align: props.align || 'center',
-            padding: props.padding || '0',
+            padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
         }
     }
     render() {
-        const heading = {
+        const HEADING = {
             width: 'inherit',
             color: this.state.color,
             fontFamily: this.state.fontFamily,
@@ -417,9 +417,9 @@ export class Heading5 extends Component {
             overflowX: 'hidden',
             overflowY: 'hidden',
         }
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h2 style={heading}>{childs[0]}</h2>
+            <h2 style={HEADING}>{CHILDS[0]}</h2>
         )
     }
 }
@@ -435,12 +435,12 @@ export class SubHeading1 extends Component {
             fontWeight: props.weight || '400',
             display: props.display || 'flex',
             align: props.align || 'center',
-            padding: props.padding || '0',
+            padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
         }
     }
     render() {
-        const heading = {
+        const HEADING = {
             width: 'inherit',
             color: this.state.color,
             fontFamily: this.state.fontFamily,
@@ -454,9 +454,9 @@ export class SubHeading1 extends Component {
             overflowX: 'hidden',
             overflowY: 'hidden',
         }
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h3 style={heading}>{childs[0]}</h3>
+            <h3 style={HEADING}>{CHILDS[0]}</h3>
         )
     }
 }
@@ -470,12 +470,12 @@ export class SubHeading2 extends Component {
             fontWeight: props.weight || '400',
             display: props.display || 'flex',
             align: props.align || 'center',
-            padding: props.padding || '0',
+            padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
         }
     }
     render() {
-        const heading = {
+        const HEADING = {
             width: 'inherit',
             color: this.state.color,
             fontFamily: this.state.fontFamily,
@@ -489,9 +489,9 @@ export class SubHeading2 extends Component {
             overflowX: 'hidden',
             overflowY: 'hidden',
         }
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h3 style={heading}>{childs[0]}</h3>
+            <h3 style={HEADING}>{CHILDS[0]}</h3>
         )
     }
 }
@@ -505,12 +505,12 @@ export class SubHeading3 extends Component {
             fontWeight: props.weight || '400',
             display: props.display || 'flex',
             align: props.align || 'center',
-            padding: props.padding || '0',
+            padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
         }
     }
     render() {
-        const heading = {
+        const HEADING = {
             width: 'inherit',
             color: this.state.color,
             fontFamily: this.state.fontFamily,
@@ -524,9 +524,9 @@ export class SubHeading3 extends Component {
             overflowX: 'hidden',
             overflowY: 'hidden',
         }
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h3 style={heading}>{childs[0]}</h3>
+            <h3 style={HEADING}>{CHILDS[0]}</h3>
         )
     }
 }
@@ -545,7 +545,7 @@ export class SubHeading4 extends Component {
         }
     }
     render() {
-        const heading = {
+        const HEADING = {
             width: 'inherit',
             height: 'inherit',
             color: this.state.color,
@@ -560,9 +560,9 @@ export class SubHeading4 extends Component {
             overflowX: 'hidden',
             overflowY: 'hidden',
         }
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h3 style={heading}>{childs[0]}</h3>
+            <h3 style={HEADING}>{CHILDS[0]}</h3>
         )
     }
 }
@@ -576,12 +576,12 @@ export class SubHeading5 extends Component {
             fontWeight: props.weight || '400',
             display: props.display || 'flex',
             align: props.align || 'center',
-            padding: props.padding || '0',
+            padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
         }
     }
     render() {
-        const heading = {
+        const HEADING = {
             width: 'inherit',
             color: this.state.color,
             fontFamily: this.state.fontFamily,
@@ -595,9 +595,9 @@ export class SubHeading5 extends Component {
             overflowX: 'hidden',
             overflowY: 'hidden',
         }
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h3 style={heading}>{childs[0]}</h3>
+            <h3 style={HEADING}>{CHILDS[0]}</h3>
         )
     }
 }
@@ -613,12 +613,12 @@ export class SecondarySubHeading1 extends Component {
             fontWeight: props.weight || '200',
             display: props.display || 'flex',
             align: props.align || 'center',
-            padding: props.padding || '0',
+            padding: props.padding || '0 0 3px 0',
             margin: props.margin || '0',
         }
     }
     render() {
-        const heading = {
+        const HEADING = {
             width: 'inherit',
             color: this.state.color,
             fontFamily: this.state.fontFamily,
@@ -633,9 +633,9 @@ export class SecondarySubHeading1 extends Component {
             overflowY: 'hidden',
 
         }
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h4 style={heading}>{childs[0]}</h4>
+            <h4 style={HEADING}>{CHILDS[0]}</h4>
         )
     }
 }
@@ -649,12 +649,12 @@ export class SecondarySubHeading2 extends Component {
             fontWeight: props.weight || '200',
             display: props.display || 'flex',
             align: props.align || 'center',
-            padding: props.padding || '0',
+            padding: props.padding || '0 0 3px 0',
             margin: props.margin || '0',
         }
     }
     render() {
-        const heading = {
+        const HEADING = {
             width: 'inherit',
             color: this.state.color,
             fontFamily: this.state.fontFamily,
@@ -668,9 +668,9 @@ export class SecondarySubHeading2 extends Component {
             overflowX: 'hidden',
             overflowY: 'hidden',
         }
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h4 style={heading}>{childs[0]}</h4>
+            <h4 style={HEADING}>{CHILDS[0]}</h4>
         )
     }
 }
@@ -684,12 +684,12 @@ export class SecondarySubHeading3 extends Component {
             fontWeight: props.weight || '200',
             display: props.display || 'flex',
             align: props.align || 'center',
-            padding: props.padding || '0',
+            padding: props.padding || '0 0 3px 0',
             margin: props.margin || '0',
         }
     }
     render() {
-        const heading = {
+        const HEADING = {
             width: 'inherit',
             color: this.state.color,
             fontFamily: this.state.fontFamily,
@@ -703,9 +703,9 @@ export class SecondarySubHeading3 extends Component {
             overflowX: 'hidden',
             overflowY: 'hidden',
         }
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h4 style={heading}>{childs[0]}</h4>
+            <h4 style={HEADING}>{CHILDS[0]}</h4>
         )
     }
 }
@@ -719,12 +719,12 @@ export class SecondarySubHeading4 extends Component {
             fontWeight: props.weight || '200',
             display: props.display || 'flex',
             align: props.align || 'center',
-            padding: props.padding || '0',
+            padding: props.padding || '0 0 3px 0',
             margin: props.margin || '0',
         }
     }
     render() {
-        const heading = {
+        const HEADING = {
             width: 'inherit',
             color: this.state.color,
             fontFamily: this.state.fontFamily,
@@ -738,9 +738,9 @@ export class SecondarySubHeading4 extends Component {
             overflowX: 'hidden',
             overflowY: 'hidden',
         }
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h4 style={heading}>{childs[0]}</h4>
+            <h4 style={HEADING}>{CHILDS[0]}</h4>
         )
     }
 }
@@ -754,12 +754,12 @@ export class SecondarySubHeading5 extends Component {
             fontWeight: props.weight || '200',
             display: props.display || 'flex',
             align: props.align || 'center',
-            padding: props.padding || '0',
+            padding: props.padding || '0 0 3px 0',
             margin: props.margin || '0',
         }
     }
     render() {
-        const heading = {
+        const HEADING = {
             width: 'inherit',
             color: this.state.color,
             fontFamily: this.state.fontFamily,
@@ -773,9 +773,9 @@ export class SecondarySubHeading5 extends Component {
             overflowX: 'hidden',
             overflowY: 'hidden',
         }
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h4 style={heading}>{childs[0]}</h4>
+            <h4 style={HEADING}>{CHILDS[0]}</h4>
         )
     }
 }
@@ -799,7 +799,7 @@ export class Paragraph1 extends Component {
         }
     }
     render() {
-        const paragraph = {
+        const PARAGRAPH = {
             width: 'inherit',
             color: this.state.color,
             fontFamily: this.state.fontFamily,
@@ -813,9 +813,9 @@ export class Paragraph1 extends Component {
             margin: this.state.margin,
         }
 
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <p style={paragraph}>{childs[0]}</p>
+            <p style={PARAGRAPH}>{CHILDS[0]}</p>
         )
     }
 }
@@ -835,7 +835,7 @@ export class Paragraph2 extends Component {
         }
     }
     render() {
-        const paragraph = {
+        const PARAGRAPH = {
             width: 'inherit',
             color: this.state.color,
             fontFamily: this.state.fontFamily,
@@ -848,9 +848,9 @@ export class Paragraph2 extends Component {
             padding: this.state.padding,
             margin: this.state.margin,
         }
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <p style={paragraph}>{childs[0]}</p>
+            <p style={PARAGRAPH}>{CHILDS[0]}</p>
         )
     }
 }
@@ -870,7 +870,7 @@ export class Paragraph3 extends Component {
         }
     }
     render() {
-        const paragraph = {
+        const PARAGRAPH = {
             width: 'inherit',
             color: this.state.color,
             fontFamily: this.state.fontFamily,
@@ -883,9 +883,9 @@ export class Paragraph3 extends Component {
             padding: this.state.padding,
             margin: this.state.margin,
         }
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <p style={paragraph}>{childs[0]}</p>
+            <p style={PARAGRAPH}>{CHILDS[0]}</p>
         )
     }
 }
@@ -905,7 +905,7 @@ export class Paragraph4 extends Component {
         }
     }
     render() {
-        const paragraph = {
+        const PARAGRAPH = {
             width: 'inherit',
             color: this.state.color,
             fontFamily: this.state.fontFamily,
@@ -918,9 +918,9 @@ export class Paragraph4 extends Component {
             padding: this.state.padding,
             margin: this.state.margin,
         }
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <p style={paragraph}>{childs[0]}</p>
+            <p style={PARAGRAPH}>{CHILDS[0]}</p>
         )
     }
 }
@@ -941,7 +941,7 @@ export class Paragraph5 extends Component {
         }
     }
     render() {
-        const paragraph = {
+        const PARAGRAPH = {
             width: 'inherit',
             color: this.state.color,
             fontFamily: this.state.fontFamily,
@@ -954,11 +954,11 @@ export class Paragraph5 extends Component {
             padding: this.state.padding,
             margin: this.state.margin,
         }
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
 
         //cannt implement without being able to pass multiple styles
         return (
-            <p className="paragraph5">{childs[0]}</p>
+            <p style={PARAGRAPH}>{CHILDS[0]}</p>
         )
     }
 }
@@ -966,22 +966,22 @@ export class Paragraph5 extends Component {
 /* Start of Pull Quotes */
 export class PullQuote1 extends Component {
     render() {
-        const childs = React.Children.toArray(this.props.children.split('\\'))
+        const CHILDS = React.Children.toArray(this.props.children.split('\\'))
         return (
             <blockquote className="pullQuote1">
-                <p className="pullQuote1-text">{childs[0]}</p>
-                <cite>{childs[1]}</cite>
+                <p className="pullQuote1-text">{CHILDS[0]}</p>
+                <cite>{CHILDS[1]}</cite>
             </blockquote>
         )
     }
 }
 export class PullQuote2 extends Component {
     render() {
-        const childs = React.Children.toArray(this.props.children.split('\\'))
+        const CHILDS = React.Children.toArray(this.props.children.split('\\'))
         return (
             <blockquote className="pullQuote2">
-                <p className="pullQuote2-text">{childs[0]}</p>
-                <cite>{childs[1]}</cite>
+                <p className="pullQuote2-text">{CHILDS[0]}</p>
+                <cite>{CHILDS[1]}</cite>
             </blockquote>
         )
     }
@@ -998,12 +998,12 @@ export class CircleImage extends Component {
         }
     }
     render() {
-        const circleimg = {
+        const CIRCLEIMG = {
             borderRadius: "100%",
         }
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <img style={circleimg} className={`img-${this.state.size}`} src={childs[0]} alt={childs[1]} />
+            <img style={CIRCLEIMG} className={`img-${this.state.size}`} src={CHILDS[0]} alt={CHILDS[1]} />
         )
     }
 }
@@ -1018,12 +1018,12 @@ export class RoundedImage extends Component {
         }
     }
     render() {
-        const roundedimg = {
+        const ROUNDEDIMG = {
             borderRadius: '30%',
         }
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <img style={roundedimg} className={`img-${this.state.size}`} src={childs[0]} alt={childs[1]} />
+            <img style={ROUNDEDIMG} className={`img-${this.state.size}`} src={CHILDS[0]} alt={CHILDS[1]} />
         )
     }
 }
@@ -1038,9 +1038,9 @@ export class SquareImage extends Component {
         }
     }
     render() {
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <img className={`img-${this.state.size}`} src={childs[0]} alt={childs[1]} />
+            <img className={`img-${this.state.size}`} src={CHILDS[0]} alt={CHILDS[1]} />
         )
     }
 }
@@ -1055,12 +1055,12 @@ export class RoundedRectangleImage extends Component {
         }
     }
     render() {
-        const roundedRectangleimg = {
+        const ROUNDEDRECTANGLEIMG = {
             borderRadius: "30%",
         }
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <img style={roundedRectangleimg} className={`recimg-${this.state.size}`} src={childs[0]} alt={childs[1]} />
+            <img style={ROUNDEDRECTANGLEIMG} className={`recimg-${this.state.size}`} src={CHILDS[0]} alt={CHILDS[1]} />
         )
     }
 }
@@ -1075,10 +1075,9 @@ export class RectangleImage extends Component {
         }
     }
     render() {
-
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <img className={`recimg-${this.state.size}`} src={childs[0]} alt={childs[1]} />
+            <img className={`recimg-${this.state.size}`} src={CHILDS[0]} alt={CHILDS[1]} />
         )
     }
 }
@@ -1093,12 +1092,12 @@ export class Figure extends Component {
         }
     }
     render() {
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
             <figure>
-                {childs[0]}
+                {CHILDS[0]}
                 <figcaption>
-                    {childs[1]}
+                    {CHILDS[1]}
                 </figcaption>
             </figure>
         )
@@ -1111,18 +1110,18 @@ export class Figure extends Component {
 /* Start of Flat Buttons */
 export class FlatButton1 extends Component {
     render() {
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <button className="flatButton1">{childs[0]}</button>
+            <button className="flatButton1">{CHILDS[0]}</button>
         )
     }
 }
 export class FlatButton2 extends Component {
 
     render() {
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <button className="flatButton2">{childs[0]}</button>
+            <button className="flatButton2">{CHILDS[0]}</button>
         )
     }
 }
@@ -1136,27 +1135,26 @@ export class RaisedButton1 extends Component {
             width: "150px",
             fontFamily: "inherit",
             color: "blue",
-
         }
     }
     render() {
-        const buttonStyle = {
+        const BUTTONSTYLE = {
             height: this.state.height,
             width: this.state.width,
             fontFamily: this.state.fontFamily,
             margin: 0,
             padding: 0,
         }
-        const buttonColor = {
+        const BUTTONCOLOR = {
             display: "flex",
             flex: 2,
             background: this.state.color,
         }
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <button style={buttonStyle} className="raisedButton1">
-                <div style={buttonColor}>
-                    {childs[0]}
+            <button style={BUTTONSTYLE} className="raisedButton1">
+                <div style={BUTTONCOLOR}>
+                    {CHILDS[0]}
                 </div>
             </button>
         )
@@ -1164,9 +1162,9 @@ export class RaisedButton1 extends Component {
 }
 export class RaisedButton2 extends Component {
     render() {
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <button className="raisedButton2">{childs[0]}</button>
+            <button className="raisedButton2">{CHILDS[0]}</button>
         )
     }
 }
@@ -1174,17 +1172,17 @@ export class RaisedButton2 extends Component {
 /* Start of Floating Buttons */
 export class FloatingButton1 extends Component {
     render() {
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <button className="floatingButton1">{childs[0]}</button>
+            <button className="floatingButton1">{CHILDS[0]}</button>
         )
     }
 }
 export class FloatingButton2 extends Component {
     render() {
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <button className="floatingButton2">{childs[0]}</button>
+            <button className="floatingButton2">{CHILDS[0]}</button>
         )
     }
 }
@@ -1204,7 +1202,7 @@ export class Navbar1 extends Component {
             direction: props.direction || 'row',
             alignItems: props.align || 'center',
             columnAlign: props.columnAlign || 'center',
-            //margin: props.margin || '0',
+            margin: props.margin || '0',
             padding: props.padding || '0',
             itemSpaceing: props.itemSpacing || '10px 0',
             mainBackground: props.mainBackground || 'inherit',
@@ -1215,7 +1213,7 @@ export class Navbar1 extends Component {
         }
     }
     render() {
-        const NavBar = {
+        const NAVBAR = {
             width: this.state.totalWidth,
             height: this.state.totalHeight,
             display: this.state.display,
@@ -1225,7 +1223,7 @@ export class Navbar1 extends Component {
             padding: this.state.padding,
             background: this.state.mainBackground,
         };
-        const NavBar_NavBar = {
+        const NAVBAR_NAVBAR = {
             width: this.state.navBarWidth,
             height: 'inherit',
             display: 'flex',
@@ -1234,7 +1232,7 @@ export class Navbar1 extends Component {
             fontFamily: this.state.fontFamily,
             flexDirection: this.state.direction,
         };
-        const NavBar_NavBar_Li = {
+        const NAVBAR_NAVBAR_LI = {
             display: 'flex',
             flex: 1,
             fontSize: this.state.fontSize,
@@ -1245,14 +1243,14 @@ export class Navbar1 extends Component {
             fontVariant: this.state.fontVariant,
         };
 
-        const childs = React.Children.toArray(this.props.children)
-        const navBar = childs.map((x, i) => {
-            return <li key={i} style={NavBar_NavBar_Li}>{x}</li>
+        const CHILDS = React.Children.toArray(this.props.children)
+        const NAVBARACTUAL = CHILDS.map((x, i) => {
+            return <li key={i} style={NAVBAR_NAVBAR_LI}>{x}</li>
         })
         return (
-            <nav style={NavBar}>
-                <ul style={NavBar_NavBar} className="navbar1-navbar socialness">
-                    {navBar}
+            <nav style={NAVBAR}>
+                <ul style={NAVBAR_NAVBAR} className="navbar1-navbar socialness">
+                    {NAVBARACTUAL}
                 </ul>
             </nav>
         )
@@ -1284,7 +1282,7 @@ export class SubNavbar1 extends Component {
         }
     }
     render() {
-        const SubNavBar = {
+        const SUBNAVBAR = {
             width: this.state.totalWidth,
             height: this.state.totalHeight,
             display: this.state.display,
@@ -1296,7 +1294,7 @@ export class SubNavbar1 extends Component {
             position: 'sticky',
             top: '-1px'
         };
-        const SubNavBar_NavBar = {
+        const SUBNAVBAR_NAVBAR = {
             width: this.state.navBarWidth,
             height: 'inherit',
             display: 'flex',
@@ -1306,7 +1304,7 @@ export class SubNavbar1 extends Component {
             fontFamily: this.state.fontFamily,
             flexDirection: this.state.direction,
         };
-        const SubNavBar_NavBar_Li = {
+        const SUBNAVBAR_NAVBAR_LI = {
             display: 'flex',
             flex: 1,
             fontSize: this.state.fontSize,
@@ -1316,14 +1314,14 @@ export class SubNavbar1 extends Component {
             background: this.state.itemBackground,
             fontVariant: this.state.fontVariant,
         };
-        const childs = React.Children.toArray(this.props.children)
-        const navBar = childs.map((x, i) => {
-            return <li key={i} style={SubNavBar_NavBar_Li}>{x}</li>
+        const CHILDS = React.Children.toArray(this.props.children)
+        const NAVBAR = CHILDS.map((x, i) => {
+            return <li key={i} style={SUBNAVBAR_NAVBAR_LI}>{x}</li>
         })
         return (
-            <nav style={SubNavBar} className="subnavbar1 socialness">
-                <ul style={SubNavBar_NavBar} className="subnavbar1-navbar">
-                    {navBar}
+            <nav style={SUBNAVBAR} className="subnavbar1 socialness">
+                <ul style={SUBNAVBAR_NAVBAR} className="subnavbar1-navbar">
+                    {NAVBAR}
                 </ul>
             </nav>
         )
@@ -1352,7 +1350,7 @@ export class SubNavbar2 extends Component {
         }
     }
     render() {
-        const SubNavBar = {
+        const SUBNAVBAR = {
             width: this.state.totalWidth,
             height: this.state.totalHeight,
             display: this.state.display,
@@ -1364,7 +1362,7 @@ export class SubNavbar2 extends Component {
             posistion: 'sticky',
             top: 0,
         };
-        const SubNavBar_NavBar1 = {
+        const SUBNAVBAR_NAVBAR1 = {
             width: this.state.navBarWidth,
             height: 'inherit',
             display: 'flex',
@@ -1374,7 +1372,7 @@ export class SubNavbar2 extends Component {
             fontFamily: this.state.fontFamily,
             flexDirection: this.state.direction,
         };
-        const SubNavBar_NavBar2 = {
+        const SUBNAVBAR_NAVBAR2 = {
             width: this.state.navBarWidth,
             height: 'inherit',
             display: 'flex',
@@ -1384,7 +1382,7 @@ export class SubNavbar2 extends Component {
             fontFamily: this.state.fontFamily,
             flexDirection: this.state.direction,
         };
-        const SubNavBar_NavBar_Li = {
+        const SUBNAVBAR_NAVBAR_LI = {
             display: 'flex',
             flex: 1,
             fontSize: this.state.fontSize,
@@ -1394,16 +1392,16 @@ export class SubNavbar2 extends Component {
             background: this.state.itemBackground,
             fontVariant: this.state.fontVariant,
         };
-        const childs = React.Children.toArray(this.props.children)
-        const navBar = childs.map((x, i, arr) => {
-            return <li key={i} style={SubNavBar_NavBar_Li}>{arr[i + 2]}</li>
+        const CHILDS = React.Children.toArray(this.props.children)
+        const NAVBAR = CHILDS.map((x, i, arr) => {
+            return <li key={i} style={SUBNAVBAR_NAVBAR_LI}>{arr[i + 2]}</li>
         })
         return (
-            <nav style={SubNavBar} className="subnavbar2 socialness">
+            <nav style={SUBNAVBAR} className="subnavbar2 socialness">
                 <Holder1>
-                    <ul style={SubNavBar_NavBar1} className="subnavbar2-navbar1">
-                        {childs[0]}
-                        {childs[1]}
+                    <ul style={SUBNAVBAR_NAVBAR1} className="subnavbar2-navbar1">
+                        {CHILDS[0]}
+                        {CHILDS[1]}
                     </ul>
                     <Holder1
                         alignBlock1="flex-end"
@@ -1411,8 +1409,8 @@ export class SubNavbar2 extends Component {
                         <div className="subnavbar2-globalSearch">
                             <p>Search Holder</p>
                         </div>
-                        <ul style={SubNavBar_NavBar2} className="subnavbar2-navbar2">
-                            {navBar}
+                        <ul style={SUBNAVBAR_NAVBAR2} className="subnavbar2-navbar2">
+                            {NAVBAR}
                         </ul>
                     </Holder1>
                 </Holder1>
@@ -1422,14 +1420,14 @@ export class SubNavbar2 extends Component {
 }
 export class SubNavbar3 extends Component {
     render() {
-        const childs = React.Children.toArray(this.props.children)
-        const navBar = childs.map((x, i) => {
+        const CHILDS = React.Children.toArray(this.props.children)
+        const NAVBAR = CHILDS.map((x, i) => {
             return <li key={i}>{x}</li>
         })
         return (
             <nav className="subnavbar3">
                 <ul className="subnavbar3-navbar">
-                    {navBar}
+                    {NAVBAR}
                 </ul>
             </nav>
         )
@@ -1437,14 +1435,14 @@ export class SubNavbar3 extends Component {
 }
 export class SubNavbar4 extends Component {
     render() {
-        const childs = React.Children.toArray(this.props.children)
-        const navBar = childs.map((x, i) => {
+        const CHILDS = React.Children.toArray(this.props.children)
+        const NAVBAR = CHILDS.map((x, i) => {
             return <li key={i}>{x}</li>
         })
         return (
             <nav className="subnavbar4">
                 <ul className="subnavbar4-navbar">
-                    {navBar}
+                    {NAVBAR}
                 </ul>
             </nav>
         )
@@ -1452,14 +1450,14 @@ export class SubNavbar4 extends Component {
 }
 export class SubNavbar5 extends Component {
     render() {
-        const childs = React.Children.toArray(this.props.children)
-        const navBar = childs.map((x, i) => {
+        const CHILDS = React.Children.toArray(this.props.children)
+        const NAVBAR = CHILDS.map((x, i) => {
             return <li key={i}>{x}</li>
         })
         return (
             <nav className="subnavbar5">
                 <ul className="subnavbar5-navbar">
-                    {navBar}
+                    {NAVBAR}
                 </ul>
             </nav>
         )
@@ -1478,29 +1476,29 @@ export class Brand1 extends Component {
         }
     }
     render() {
-        const Brand = {
+        const BRAND = {
             display: this.state.display,
             flexDirection: this.state.direction,
             //width: '15%',
             alignItems: 'center',
         }
-        const Brand_Name = {
+        const BRAND_NAME = {
             display: 'flex',
             fontWeight: '900',
 
         }
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <div style={Brand}>
+            <div style={BRAND}>
                 <a href={this.state.link}>
                     <SquareImage
                         size='tn'>
-                        {childs[0]}
+                        {CHILDS[0]}
                         logo
                         </SquareImage>
                 </a>
                 <a href={this.state.link}>
-                    <p style={Brand_Name}>{childs[1]}</p>
+                    <p style={BRAND_NAME}>{CHILDS[1]}</p>
                 </a>
 
             </div>
@@ -1516,19 +1514,19 @@ export class Brand2 extends Component {
         }
     }
     render() {
-        const Brand = {
+        const BRAND = {
             display: 'flex',
             alignItems: 'center',
         }
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <section style={Brand}>
+            <section style={BRAND}>
                 <a href={this.state.link}>
                     <RectangleImage
                         size='exsm'>
-                        {childs[0]}
+                        {CHILDS[0]}
                         logo
-                </RectangleImage>
+                    </RectangleImage>
                 </a>
             </section>
         )
@@ -1543,18 +1541,18 @@ export class Brand3 extends Component {
         }
     }
     render() {
-        const Brand = {
+        const BRAND = {
             display: 'flex',
             alignItems: 'center',
         }
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <section style={Brand}>
+            <section style={BRAND}>
                 <a href={this.state.link}>
                     <SquareImage>
-                        {childs[0]}
+                        {CHILDS[0]}
                         logo
-                </SquareImage>
+                    </SquareImage>
                 </a>
             </section>
         )
@@ -1569,18 +1567,18 @@ export class Brand4 extends Component {
         }
     }
     render() {
-        const Brand = {
+        const BRAND = {
             display: 'flex',
             alignItems: 'center',
         }
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <section style={Brand}>
+            <section style={BRAND}>
                 <a href={this.state.link}>
                     <RectangleImage>
-                        {childs[0]}
+                        {CHILDS[0]}
                         logo
-                </RectangleImage>
+                    </RectangleImage>
                 </a>
             </section>
         )
@@ -1595,13 +1593,13 @@ export class Brand5 extends Component {
         }
     }
     render() {
-        const Brand = {
+        const BRAND = {
             display: 'flex',
             alignItems: 'center',
         }
-        const childs = React.Children.toArray(this.props.children)
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <section style={Brand}>
+            <section style={BRAND}>
                 <a href={this.state.link}>
 
                 </a>
@@ -1634,7 +1632,7 @@ export class DropDownNav1 extends Component {
     // }
 
     render() {
-        const DropDown = {
+        const DROPDOWN = {
             position: 'absolute',
             display: this.state.display,
             margin: `0 0 0 ${this.state.offset}`,
@@ -1647,21 +1645,21 @@ export class DropDownNav1 extends Component {
         const DropDown_NavBar_Li = {
 
         }
-        const hasChilds = {
-
+        const HASCHILDS = {
+            fontSize: '1.333em',
         }
-        const childs = React.Children.toArray(this.props.children)
-        const navBar = childs.map((x, i, arr) => {
+        const CHILDS = React.Children.toArray(this.props.children)
+        const NAVBAR = CHILDS.map((x, i, arr) => {
             return <li key={i} style={DropDown_NavBar_Li}>{arr[i + 1]}</li>
         })
         return (
             <nav className="dropdownnav1">
-                <li style={hasChilds} className="DropDown"
+                <li style={HASCHILDS} className="DropDown"
                     onMouseOver={() => this.setState({ display: 'block' })}
                     onMouseOut={() => this.setState({ display: 'none' })}>
-                    {childs[0]}
-                    <ul style={DropDown}>
-                        {navBar}
+                    {CHILDS[0]}
+                    <ul style={DROPDOWN}>
+                        {NAVBAR}
                     </ul>
                 </li>
             </nav>
@@ -1713,8 +1711,10 @@ export class ImageSlider1 extends Component {
             arrowColor: props.arrowColor || 'white',
             background: props.background || 'black',
             padding: props.padding || '10px',
+            size: props.size || 'lg',
         }
         this.slideLeft = this.slideLeft.bind(this);
+        this.slideRight = this.slideRight.bind(this);
     }
     componentWillMount(){
         let slides = [];
@@ -1767,10 +1767,10 @@ export class ImageSlider1 extends Component {
             overflowX: 'hidden',
         };
         const SLIDE = {
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
+            // backgroundSize: 'cover',
+            // backgroundPosition: 'center',
             backgroundrepeat: 'no-repeat',
-            display:'block'
+            // display:'block'
 
         };
         const SLIDE_CONTENT = {
@@ -1782,18 +1782,18 @@ export class ImageSlider1 extends Component {
             alignItems:'center',
             textAlign:'center',
         };
-        const SLIDE_TEXT = {
-            fontSize: '5em',
-            color: 'white',
-            posistion:'relative',
-            top: '-50px',
-        };
-        const renderSlides =this.state.sliderImages.map((x, i) =>
+        // const SLIDE_TEXT = {
+        //     fontSize: '5em',
+        //     color: 'white',
+        //     posistion:'relative',
+        //     top: '-50px',
+        // };
+        const RENDERSLIDES =this.state.sliderImages.map((x, i) =>
         {
             return (
                 <div key={i} stlye={SLIDE}>
                     <div style={SLIDE_CONTENT}>
-                        <RectangleImage size='lg'>
+                        <RectangleImage size={this.state.size}>
                             {x}
                         </RectangleImage>
                     </div>
@@ -1804,7 +1804,7 @@ export class ImageSlider1 extends Component {
             <div style={WRAP}>
                 <div style={LEFT_ARROW} className="arrow" onClick={()=> this.slideLeft()}></div>
                 <div style={SLIDER}>
-                    {renderSlides[this.state.cur]}
+                    {RENDERSLIDES[this.state.cur]}
                 </div>
                 <div style={RIGHT_ARROW} className="arrow" onClick={()=> this.slideRight()}></div>
             </div>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import Navigation from '../Navigation';
+import FooterNavigation from '../FooterNavigation';
 
 import {
     MainHeading1,
@@ -38,16 +39,17 @@ export default class StyledContainerMain extends Component {
         return (
             <section>
                 <Navigation />
-                <SubNavbar1>
-                    <Link to="/containers/styled">styled containers</Link>
-                    <Link to="/containers/unstyled">unstyled containers</Link>
-                    <Link to="/holders">holders</Link>
-                </SubNavbar1>
                 <Container1>
                     <MainHeading1>
                         Pre Styled Containers
                     </MainHeading1>
                 </Container1>
+                <SubNavbar1>
+                    <Link to="/containers/styled">styled containers</Link>
+                    <Link to="/containers/unstyled">unstyled containers</Link>
+                    <Link to="/holders">holders</Link>
+                </SubNavbar1>
+                
                 <HorizontalTestBlock1 />
                 <Container1>
                     <Heading1>
@@ -335,6 +337,7 @@ export default class StyledContainerMain extends Component {
                     </SubHeading4>
                 </Container1>
                 <HorizontalTestBlock1 />
+                <FooterNavigation />
             </section>
         )
     }

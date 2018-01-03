@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from '../../Navigation';
+import FooterNavigation from '../../FooterNavigation';
 
 import { Block2, SubHeading4, Heading1, HorizontalTestBlock1, SubNavbar1 } from '../../../Components 1.0.0/Blocks';
 
@@ -134,6 +135,7 @@ export default class Holder1View extends Component {
                     </Holder1>
                 </Container5>
                 <HorizontalTestBlock1 />
+                <FooterNavigation />
             </section>
         )
     }

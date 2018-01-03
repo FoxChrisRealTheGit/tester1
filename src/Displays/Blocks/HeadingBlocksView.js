@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from '../Navigation';
+import FooterNavigation from '../FooterNavigation';
 
 import { Holder5, Holder8 } from '../../Components 1.0.0/Holders';
 import Container1, { Container3 } from '../../Components 1.0.0/Containers';
-import { 
+import {
     HorizontalTestBlock1,
     MainHeading1,
     MainHeading2,
@@ -25,14 +26,20 @@ import {
     SecondarySubHeading2,
     SecondarySubHeading3,
     SecondarySubHeading4,
-    SecondarySubHeading5,  
-    SubNavbar1,} from '../../Components 1.0.0/Blocks';
+    SecondarySubHeading5,
+    SubNavbar1,
+} from '../../Components 1.0.0/Blocks';
 
 export default class HeadingBlocksView extends Component {
     render() {
         return (
             <section>
                 <Navigation />
+                <Container1>
+                    <MainHeading1>
+                        Headings
+                    </MainHeading1>
+                </Container1>
                 <SubNavbar1>
                     <Link to="/blocks/buttonviews">button</Link>
                     <Link to="/blocks/headingviews">headings</Link>
@@ -40,11 +47,7 @@ export default class HeadingBlocksView extends Component {
                     <Link to="/blocks/navbarviews">navbars</Link>
                     <Link to="/blocks/paragraphviews">paragraphs</Link>
                 </SubNavbar1>
-                <Container1>
-                    <MainHeading1>
-                        Headings
-                    </MainHeading1>
-                </Container1>
+
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Container1>
@@ -157,6 +160,7 @@ export default class HeadingBlocksView extends Component {
                     </Holder8>
                 </Container1>
                 <HorizontalTestBlock1 />
+                <FooterNavigation />
             </section>
         )
     }

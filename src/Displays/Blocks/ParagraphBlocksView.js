@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Navigation from '../Navigation';
+import FooterNavigation from '../FooterNavigation';
 
 import Container1 from '../../Components 1.0.0/Containers';
 import {
@@ -23,6 +24,11 @@ export default class ParagraphBlocksView extends Component {
         return (
             <section>
                 <Navigation />
+                <Container1>
+                    <MainHeading1>
+                        Paragraphs
+                    </MainHeading1>
+                </Container1>
                 <SubNavbar1>
                     <Link to="/blocks/buttonviews">button</Link>
                     <Link to="/blocks/headingviews">headings</Link>
@@ -30,11 +36,7 @@ export default class ParagraphBlocksView extends Component {
                     <Link to="/blocks/navbarviews">navbars</Link>
                     <Link to="/blocks/paragraphviews">paragraphs</Link>
                 </SubNavbar1>
-                <Container1>
-                    <MainHeading1>
-                        Paragraphs
-                    </MainHeading1>
-                </Container1>
+
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Container1>
@@ -107,7 +109,7 @@ export default class ParagraphBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <Container1>
                     <SubHeading4>
-                       Pull Quote 1
+                        Pull Quote 1
                     </SubHeading4>
                 </Container1>
                 <Container1>
@@ -129,6 +131,7 @@ export default class ParagraphBlocksView extends Component {
                     </PullQuote2>
                 </Container1>
                 <HorizontalTestBlock1 />
+                <FooterNavigation />
             </section>
         )
     }
