@@ -12,6 +12,7 @@ import HolderView from './Displays/HolderViews';
 import BlockView from './Displays/BlocksView';
 
 import Contact from './Displays/Contact';
+import Donate from './Displays/Donate';
 //Holder Views
 //1-10
 import Holder1View from './Displays/Holders/1-10/Holder1View';
@@ -103,6 +104,7 @@ export default (
         <Route path="/containers/unstyled" component={UnstyledContainerView}></Route>
 
         <Route path="/contact" component={Contact}></Route>
+        <Route path="/donate" component={Donate}></Route>
         <Route exact path="/holders" component={HolderView}></Route>
 
         <Route path="/holders/holder1" component={Holder1View}></Route>

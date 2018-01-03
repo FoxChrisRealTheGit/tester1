@@ -8,7 +8,7 @@ import Container1, { Container2, Container3 } from '../../../../Components 1.0.0
 
 import { StyluxStyledHeader3, StyluxStyledFooter3 } from '../../../../Components 1.0.0/StyledContainers';
 
-import { SubNavbar1, MainHeading1, Navbar1, Paragraph2 } from '../../../../Components 1.0.0/Blocks';
+import { SubNavbar1, MainHeading1, Navbar1, Paragraph2, HorizontalTestBlock1 } from '../../../../Components 1.0.0/Blocks';
 
 import Logo from '../../../../images/Logo/QuickFirstDraft.svg';
 
@@ -17,6 +17,7 @@ export default class Blog1Main extends Component {
         return (
             <section>
                 <Navigation />
+                <HorizontalTestBlock1 />
                 <Container1>
                     <MainHeading1>
                         Blog 1 Template
@@ -29,7 +30,8 @@ export default class Blog1Main extends Component {
                     <Link to="/templatesamples/blog4">blog 4</Link>
                     <Link to="/templatesamples/blog5">blog 5</Link>
                 </SubNavbar1>
-                
+                <HorizontalTestBlock1 />
+                <HorizontalTestBlock1 />
                 <StyluxStyledHeader3>
                     <Navbar1>
                         <Link to="">About</Link>
@@ -70,7 +72,7 @@ export default class Blog1Main extends Component {
                         Copyright Statement. All rights reserved.
                     </Paragraph2>
                 </StyluxStyledFooter3>
-
+                <HorizontalTestBlock1 />
                 <FooterNavigation />
             </section>
         )

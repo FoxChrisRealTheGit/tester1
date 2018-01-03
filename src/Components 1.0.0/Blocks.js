@@ -1074,10 +1074,14 @@ export class RectangleImage extends Component {
             size: props.size || 'sm',
         }
     }
+
     render() {
+        const image = {
+            margin: '0 auto',
+        }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <img className={`recimg-${this.state.size}`} src={CHILDS[0]} alt={CHILDS[1]} />
+            <img style={image} className={`recimg-${this.state.size}`} src={CHILDS[0]} alt={CHILDS[1]} />
         )
     }
 }
@@ -1691,9 +1695,49 @@ export class DropDownNav4 extends Component {
     }
 }
 export class DropDownNav5 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            display: 'none',
+            background: props.background,
+            offset: props.offset || '10px',
+            color: 'white',
+            margin: '',
+            padding: '',
+            width: props.width,
+        }
+    }
     render() {
+        const DROPDOWN = {
+            position: 'absolute',
+            display: this.state.display,
+            margin: `0 0 0 ${this.state.offset}`,
+            width: this.state.width,
+            padding: '5px',
+            textAlign: 'center',
+            flex: 1,
+            background: this.state.background,
+        }
+        const DropDown_NavBar_Li = {
+
+        }
+        const HASCHILDS = {
+            fontSize: '1.333em',
+        }
+        const CHILDS = React.Children.toArray(this.props.children)
+        const NAVBAR = CHILDS.map((x, i, arr) => {
+            return <li key={i} style={DropDown_NavBar_Li}>{arr[i + 1]}</li>
+        })
         return (
             <nav className="dropdownnav5">
+                <li style={HASCHILDS} className="DropDown_Side"
+                    onMouseOver={() => this.setState({ display: 'block' })}
+                    onMouseOut={() => this.setState({ display: 'none' })}>
+                    {CHILDS[0]}
+                    <ul style={DROPDOWN}>
+                        {NAVBAR}
+                    </ul>
+                </li>
             </nav>
         )
     }
@@ -1707,7 +1751,7 @@ export class ImageSlider1 extends Component {
         super(props);
         this.state = {
             sliderImages: [],
-            cur:0,
+            cur: 0,
             arrowColor: props.arrowColor || 'white',
             background: props.background || 'black',
             padding: props.padding || '10px',
@@ -1716,34 +1760,34 @@ export class ImageSlider1 extends Component {
         this.slideLeft = this.slideLeft.bind(this);
         this.slideRight = this.slideRight.bind(this);
     }
-    componentWillMount(){
+    componentWillMount() {
         let slides = [];
         const CHILDS = React.Children.toArray(this.props.children)
-        for(var g = 0; g<CHILDS.length; g+=1){
+        for (var g = 0; g < CHILDS.length; g += 1) {
             slides.push(CHILDS[g])
         }
-        this.setState({sliderImages: slides})
+        this.setState({ sliderImages: slides })
     }
-    slideLeft(){
+    slideLeft() {
         console.log(this.state.cur)
-        if(this.state.cur===0){
-            return this.setState({cur: this.state.sliderImages.length-1})
-        }else{
-            return this.setState({cur: this.state.cur-1})
+        if (this.state.cur === 0) {
+            return this.setState({ cur: this.state.sliderImages.length - 1 })
+        } else {
+            return this.setState({ cur: this.state.cur - 1 })
         }
     }
-    slideRight(){
-        if(this.state.cur>=this.state.sliderImages.length-1){
-           console.log(this.state.sliderImages)
-           return this.setState({cur:0})
-            
-        }else{
-            return this.setState({cur: this.state.cur+1})
+    slideRight() {
+        if (this.state.cur >= this.state.sliderImages.length - 1) {
+            console.log(this.state.sliderImages)
+            return this.setState({ cur: 0 })
+
+        } else {
+            return this.setState({ cur: this.state.cur + 1 })
         }
     }
     render() {
         const WRAP = {
-            width:'100%',
+            width: '100%',
             overflowX: 'hidden',
             background: this.state.background,
             overflowY: 'hidden',
@@ -1751,19 +1795,19 @@ export class ImageSlider1 extends Component {
             padding: this.state.padding,
         };
         const LEFT_ARROW = {
-            borderWidth:'30px 40px 30px 0',
+            borderWidth: '30px 40px 30px 0',
             borderColor: `transparent ${this.state.arrowColor} transparent transparent`,
-            left:'0',
-            marginLeft:'30px',
+            left: '0',
+            marginLeft: '30px',
         };
         const RIGHT_ARROW = {
-            borderWidth:'30px 0 30px 40px',
+            borderWidth: '30px 0 30px 40px',
             borderColor: `transparent transparent transparent ${this.state.arrowColor}`,
-            right:'0',
-            marginRight:'30px',
+            right: '0',
+            marginRight: '30px',
         };
         const SLIDER = {
-            width:'100%',
+            width: '100%',
             overflowX: 'hidden',
         };
         const SLIDE = {
@@ -1774,13 +1818,13 @@ export class ImageSlider1 extends Component {
 
         };
         const SLIDE_CONTENT = {
-            width:'100%',
+            width: '100%',
             overflowX: 'hidden',
             display: 'flex',
-            flexDirection:'column',
-            justifyContent:'center',
-            alignItems:'center',
-            textAlign:'center',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+            textAlign: 'center',
         };
         // const SLIDE_TEXT = {
         //     fontSize: '5em',
@@ -1788,8 +1832,7 @@ export class ImageSlider1 extends Component {
         //     posistion:'relative',
         //     top: '-50px',
         // };
-        const RENDERSLIDES =this.state.sliderImages.map((x, i) =>
-        {
+        const RENDERSLIDES = this.state.sliderImages.map((x, i) => {
             return (
                 <div key={i} stlye={SLIDE}>
                     <div style={SLIDE_CONTENT}>
@@ -1800,13 +1843,13 @@ export class ImageSlider1 extends Component {
                 </div>
             )
         })
-        return (     
+        return (
             <div style={WRAP}>
-                <div style={LEFT_ARROW} className="arrow" onClick={()=> this.slideLeft()}></div>
+                <div style={LEFT_ARROW} className="arrow" onClick={() => this.slideLeft()}></div>
                 <div style={SLIDER}>
                     {RENDERSLIDES[this.state.cur]}
                 </div>
-                <div style={RIGHT_ARROW} className="arrow" onClick={()=> this.slideRight()}></div>
+                <div style={RIGHT_ARROW} className="arrow" onClick={() => this.slideRight()}></div>
             </div>
         )
     }

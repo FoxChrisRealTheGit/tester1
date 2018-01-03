@@ -30,7 +30,7 @@ export default class Container1 extends Component {
         const block1style ={
             flex: this.state.block1,
             background: this.state.background,
-            flexDirection: 'column',
+            flexDirection: 'row',
             flexWrap: 'wrap',
             alignItems: this.state.alignBlock1,
             justifyContent: this.state.justifyBlock1,

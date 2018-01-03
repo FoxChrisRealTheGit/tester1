@@ -5,7 +5,7 @@ import FooterNavigation from '../../FooterNavigation';
 
 import Container1 from '../../../Components 1.0.0/Containers';
 
-import Holder1, { Holder4, Holder5, Holder6, Holder7 } from '../../../Components 1.0.0/Holders';
+import Holder1, { Holder4, Holder5, Holder6, Holder13 } from '../../../Components 1.0.0/Holders';
 
 import Block1, {
     HorizontalTestBlock1,
@@ -27,7 +27,7 @@ export default class SampleBlogPost2 extends Component {
         return (
             <section>
                 <Navigation />
-                
+                <HorizontalTestBlock1 />
                 <Container1>
                     <Holder5>
                         <MainHeading4>
@@ -50,7 +50,7 @@ export default class SampleBlogPost2 extends Component {
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <Holder4>
+                    <Holder5>
                         <CircleImage>
                             {chrischillin}
                             Chris Hanging out
@@ -58,10 +58,10 @@ export default class SampleBlogPost2 extends Component {
                         <SecondarySubHeading2>
                             By: The Hipster King
                         </SecondarySubHeading2>
-                    </Holder4>
+                    </Holder5>
                 </Container1>
                 <Container1>
-                    <Holder6>
+                    <Holder13>
                         <Paragraph4>
                             Migas squid lumbersexual, roof party etsy tumblr vexillologist hot chicken godard paleo tofu freegan. Vinyl pop-up cornhole, single-origin coffee quinoa snackwave aesthetic affogato master cleanse four loko sartorial plaid pug knausgaard. Polaroid viral plaid, asymmetrical cronut synth church-key vinyl chambray air plant subway tile letterpress shoreditch. YOLO artisan before they sold out jianbing helvetica direct trade.
                         </Paragraph4>
@@ -74,16 +74,10 @@ export default class SampleBlogPost2 extends Component {
                         <Paragraph1>
                             Craft beer hashtag viral air plant. Af sriracha activated charcoal copper mug swag. Etsy polaroid bitters selvage brooklyn roof party subway tile. Adaptogen migas sartorial post-ironic trust fund hexagon readymade skateboard dreamcatcher franzen banh mi typewriter. Mixtape plaid seitan before they sold out meggings health goth unicorn. Vice copper mug cliche austin you probably haven't heard of them, cornhole typewriter master cleanse slow-carb vaporware yr gentrify four loko. Normcore tattooed poutine squid, letterpress asymmetrical la croix etsy cliche.
                         </Paragraph1>
-                    </Holder6>
-                </Container1>
-                <Container1>
-                    <PullQuote1>
-                        Authentic artisan brunch, squid art party master cleanse godard put a bird on it pitchfork activated charcoal sriracha echo park church-key selfies cardigan.\
+                        <PullQuote1>
+                            Authentic artisan brunch, squid art party master cleanse godard put a bird on it pitchfork activated charcoal sriracha echo park church-key selfies cardigan.\
                         Hipster Know it All
-                    </PullQuote1>
-                </Container1>
-                <Container1>
-                    <Holder6>
+                        </PullQuote1>
                         <Paragraph1>
                             Heirloom gentrify hammock etsy yuccie enamel pin cray you probably haven't heard of them church-key. Schlitz VHS narwhal forage kickstarter tbh 3 wolf moon tote bag typewriter lomo fingerstache. Craft beer pug ethical selvage dreamcatcher shabby chic occupy. Hammock squid photo booth brooklyn hella selfies cray next level kogi. Dreamcatcher listicle lomo, poutine vinyl gochujang schlitz. Trust fund schlitz succulents, hexagon you probably haven't heard of them celiac taxidermy echo park YOLO shabby chic gastropub literally DIY intelligentsia readymade.
                         </Paragraph1>
@@ -96,7 +90,7 @@ export default class SampleBlogPost2 extends Component {
                         <Paragraph1>
                             Put a bird on it seitan retro etsy lomo. Bicycle rights twee man bun vaporware aesthetic. Artisan DIY semiotics waistcoat thundercats pop-up gluten-free hella. Pickled craft beer skateboard tote bag migas woke vinyl dreamcatcher gochujang banh mi neutra photo booth glossier. Kinfolk actually photo booth portland YOLO farm-to-table echo park plaid +1. Drinking vinegar hammock food truck, kale chips messenger bag waistcoat affogato pinterest raw denim farm-to-table chartreuse. PBR&B YOLO kogi prism cold-pressed iPhone jianbing slow-carb hexagon street art normcore synth ennui organic iceland.
                         </Paragraph1>
-                    </Holder6>
+                    </Holder13>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <FooterNavigation />

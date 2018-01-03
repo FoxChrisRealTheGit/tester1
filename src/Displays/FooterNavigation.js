@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import { Container3 } from '../Components 1.0.0/Containers';
-import Holder1 from '../Components 1.0.0/Holders';
-import { Paragraph2, Navbar1 } from '../Components 1.0.0/Blocks';
+import { Container5 } from '../Components 1.0.0/Containers';
+import {Holder2, Holder5} from '../Components 1.0.0/Holders';
+import { Paragraph2, Navbar1, HorizontalTestBlock1 } from '../Components 1.0.0/Blocks';
 
 export default class FooterNavigation extends Component {
 
     render() {
         return (
             <footer>
-                <Container3>
+                <Container5>
                     <Navbar1
                         navbarWidth='75%'>
                         <Link to="facebook.com"></Link>
@@ -18,8 +18,10 @@ export default class FooterNavigation extends Component {
                         <Link to="github.com"></Link>
                         <Link to="instagram.com"></Link>
                     </Navbar1>
-                    <Holder1
-                        justifyBlock2="flex-start">
+                    <HorizontalTestBlock1 />
+                    <Holder2
+                        justifyBlock2="flex-start"
+                        justifyBlock3="flex-start">
                         <Navbar1
                             direction="column"
                             padding="0 10px 0 0"
@@ -37,11 +39,19 @@ export default class FooterNavigation extends Component {
                             <Link to="/samplepages">Sample Pages</Link>
                             <Link to="/templatesamples">Template Samples</Link>
                         </Navbar1>
-                    </Holder1>
+                        <Holder5>
+                            <Navbar1>
+                                <Link to="/contact">Contact</Link>
+                                <Link to="/donate">Donate</Link>
+                            </Navbar1>
+                            <p>subscribe button holder</p>
+                        </Holder5>
+                    </Holder2>
+                    <HorizontalTestBlock1 />
                     <Paragraph2>
                         Copyright 2018 Some Design Agency
                     </Paragraph2>
-                </Container3>
+                </Container5>
             </footer>
         )
     }

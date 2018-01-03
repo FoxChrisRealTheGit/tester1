@@ -132,6 +132,10 @@
     font-family: 'FontAwesome';
     content: '\f078';
 }
+.DropDown_Side::after{
+    font-family: 'FontAwesome';
+    content: '\f054';
+}
 
 /* End of Dropdown Styles */
 /* End of NavBar Styles */
