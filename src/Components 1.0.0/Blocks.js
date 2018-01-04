@@ -1857,10 +1857,10 @@ export class ImageSlider1 extends Component {
 
 /* End of image sliders */
 /* Start of Ticker Styles */
-export class HorizontalTicker extends Component{
-    constructor(props){
+export class HorizontalTicker extends Component {
+    constructor(props) {
         super(props);
-        this.state={
+        this.state = {
 
         }
     }
@@ -1872,24 +1872,24 @@ export class HorizontalTicker extends Component{
     //     }
     //     this.setState({ sliderImages: slides })
     // }
-    render(){
-        const TICKERWRAPPER ={
+    render() {
+        const TICKERWRAPPER = {
             width: '100%',
-            overflow:'hidden',
-            paddingLeft:'100%',
+            overflow: 'hidden',
+            paddingLeft: '100%',
         }
-        const TICKER_ITEM={
+        const TICKER_ITEM = {
             display: 'inline-block',
-            padding:'0 2em',
-            
+            padding: '0 2em',
+
         }
         const CHILDS = React.Children.toArray(this.props.children)
-        const TICKERITEM = CHILDS.map((x, i)=>{
+        const TICKERITEM = CHILDS.map((x, i) => {
             return (
-                <div key= {i} style={TICKER_ITEM}>{x}</div>
+                <div key={i} style={TICKER_ITEM}>{x}</div>
             )
         })
-        return(
+        return (
             <div style={TICKERWRAPPER}>
                 <div className="horizontal-ticker">
                     {TICKERITEM}
@@ -1899,4 +1899,18 @@ export class HorizontalTicker extends Component{
     }
 }
 
+export class SeeSawTicker extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+
+        }
+    }
+    render() {
+        return (
+            <div>
+            </div>
+        )
+    }
+}
 /* End of ticker Styles */

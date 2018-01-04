@@ -13,6 +13,8 @@ import {
     HorizontalTestBlock1,
     MainHeading1,
     SubNavbar1,
+    Heading1,
+    Heading2,
 } from '../Components 1.0.0/Blocks';
 
 
@@ -32,6 +34,12 @@ export default class BlockViews extends Component {
                     <Link to="/holders">holders</Link>
                     <Link to="/blocks">blocks</Link>
                 </SubNavbar1>
+                <HorizontalTestBlock1 />
+                <Container1>
+                    <Heading2>
+                        react-stylux
+                    </Heading2>
+                </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
                     <Holder9>
@@ -54,6 +62,30 @@ export default class BlockViews extends Component {
                             <Link to="/blocks/carouseltickerviews">carsousels</Link>
                         </SubHeading4>
                     </Holder9>
+                </Container1>
+                <HorizontalTestBlock1 />
+                <Container1>
+                    <Heading2>
+                        react-stylux-blog
+                    </Heading2>
+                </Container1>
+                <HorizontalTestBlock1 />
+                <Container1>
+                    <SubHeading4>
+                        <Link to=""></Link>
+                    </SubHeading4>
+                </Container1>
+                <HorizontalTestBlock1 />
+                <Container1>
+                    <Heading2>
+                        react-stylux-ecommerce
+                    </Heading2>
+                </Container1>
+                <HorizontalTestBlock1 />
+                <Container1>
+                    <SubHeading4>
+                        <Link to=""></Link>
+                    </SubHeading4>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <FooterNavigation />
