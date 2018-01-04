@@ -10,7 +10,7 @@ import {
     Brand2,
     Brand3,
 } from './Blocks';
-import Holder1, { Holder2, Holder3, Holder4, Holder5, Holder7, Holder8} from './Holders';
+import Holder1, { Holder2, Holder3, Holder4, Holder5, Holder6, Holder7, Holder8 } from './Holders';
 /* Pre Styled Containers*/
 /*
    Pre Styled Description and use
@@ -24,7 +24,9 @@ export default class StyluxStyledHeader1 extends Component {
         return (
             <Container1>
                 <header className="StyluxStyledHeader1">
-                    <Holder2>
+                    <Holder2
+                        alignBlock1="flex-end"
+                            block1="0.75">
                         <Brand2>
                             {childs[0]}
                         </Brand2>
@@ -45,20 +47,28 @@ export class StyluxStyledHeader2 extends Component {
         return (
             <Container1>
                 <header className="StyluxStyledHeader2">
-                    <Holder2>
+                    <Holder2
+                        block1="0.5"
+                        alignBlock1="flex-end">
                         <Brand3>
                             {childs[0]}
                         </Brand3>
-                        <Holder4>
+                        <Holder5
+                            alignBlock1="flex-start"
+                            alignBlock2="flex-start">
                             {childs[1]}
                             {childs[2]}
-                        </Holder4>
-                        <Holder4>
+                        </Holder5>
+                        <Holder5
+                            alignBlock1="flex-end"
+                            justifyBlock1="flex-start"
+                            alignBlock2="flex-end"
+                            justifyBlock2="flex-start">
                             {childs[3]}
                             <p>
                                 Search Holder
                             </p>
-                        </Holder4>
+                        </Holder5>
                     </Holder2>
                 </header>
             </Container1>
@@ -92,7 +102,8 @@ export class StyluxStyledHeader4 extends Component {
         return (
             <Container1>
                 <header className="StyluxStyledHeader4">
-                    <Holder2>
+                    <Holder2
+                        block2="0.25">
                         {childs[0]}
                         {childs[1]}
                         {childs[2]}
@@ -132,8 +143,9 @@ export class StyluxStyledFooter1 extends Component {
         return (
             <Container1>
                 <footer className="StyluxStyledFooter1">
-                    <Holder4>
-                        <Holder3>
+                    <Holder5>
+                        <Holder4
+                            block1="2">
                             {childs[0]}
                             {childs[1]}
                             {childs[2]}
@@ -141,19 +153,15 @@ export class StyluxStyledFooter1 extends Component {
                                 {childs[3]}
                                 {childs[4]}
                             </Holder1>
-                        </Holder3>
-                        <Holder2>
-                            <Holder7>
+                        </Holder4>
+                        <Holder2
+                            block1="1.2"
+                            block2="0.75">
                                 {childs[5]}
-                            </Holder7>
-                            <Holder4>
                                 {childs[6]}
-                            </Holder4>
-                            <Holder4>
                                 {childs[7]}
-                            </Holder4>
                         </Holder2>
-                    </Holder4>
+                    </Holder5>
                 </footer>
             </Container1>
         )
@@ -168,14 +176,19 @@ export class StyluxStyledFooter2 extends Component {
         return (
             <Container1>
                 <footer className="StyluxStyledFooter2">
-                    <Holder8>
-                        {childs[0]}
-                        {childs[3]}
-                        {childs[1]}
-                        {childs[4]}
-                        {childs[2]}
-                        {childs[5]}
-                    </Holder8>
+                    <Holder6>
+                        <Holder2>
+                            {childs[0]}
+                            {childs[1]}
+                            {childs[2]}
+                        </Holder2>
+                        <Holder2>
+                            {childs[3]}
+                            {childs[4]}
+                            {childs[5]}
+                        </Holder2>
+                            {childs[6]}
+                    </Holder6>
                 </footer>
             </Container1>
         )
@@ -184,16 +197,15 @@ export class StyluxStyledFooter2 extends Component {
 /* End of Styled Footer 2 */
 /* Start of Styled Footer 3 */
 export class StyluxStyledFooter3 extends Component {
-
     render() {
         const childs = React.Children.toArray(this.props.children)
         return (
             <Container1>
                 <footer className="StyluxStyledFooter3">
-                    <Holder4>
+                    <Holder5>
                         {childs[0]}
                         {childs[1]}
-                    </Holder4>
+                    </Holder5>
                 </footer>
             </Container1>
         )
@@ -208,12 +220,15 @@ export class StyluxStyledFooter4 extends Component {
         return (
             <Container1>
                 <footer className="StyluxStyledFooter4">
-                    <Holder8>
+                    <Holder5>
+                        <Holder2
+                            block2="0.5">
                         {childs[0]}
                         {childs[1]}
                         {childs[2]}
+                        </Holder2>
                         {childs[3]}
-                    </Holder8>
+                    </Holder5>
                 </footer>
             </Container1>
         )

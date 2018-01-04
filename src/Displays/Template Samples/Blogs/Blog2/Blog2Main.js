@@ -35,51 +35,62 @@ export default class Blog2Main extends Component {
                 <StyluxStyledHeader2>
                     {Logo}
                     <Link to="">Contact us</Link>
-                    <Navbar1>
+                    <Navbar1
+                        align="flex-start"
+                        navbarWidth="70%">
                         <Link to="">News</Link>
                         <Link to="">Video</Link>
                         <Link to="">Events</Link>
                         <Link to="">Stuff</Link>
                     </Navbar1>
-                    <Navbar1>
+                    <Navbar1
+                        navbarWidth="70%"
+                        align="flex-end">
+                        Follow Us:
                         <Link to="facebook.com"></Link>
                         <Link to="twitter.com"></Link>
                         <Link to="pinterest.com"></Link>
                         <Link to="instagram.com"></Link>
                     </Navbar1>
                 </StyluxStyledHeader2>
+                <HorizontalTestBlock1 />
                 <Container1>
                 </Container1>
                 <StyluxStyledFooter2>
-                    <Navbar1>
+                    <Navbar1
+                        direction="column">
                         <Link to="">news</Link>
                         <Link to="">video</Link>
                         <Link to="">events</Link>
                         <Link to="">base</Link>
                         <Link to="">store</Link>
                     </Navbar1>
-                    <Navbar1>
+                    <Navbar1
+                        direction="column">
                         <Link to="">staff</Link>
                         <Link to="">contact us</Link>
                         <Link to="">advertise</Link>
                         <Link to="">send a tip</Link>
                         <Link to="">activations blog</Link>
                     </Navbar1>
-                    <Navbar1>
+                    <Navbar1
+                        direction="column">
                         <Link to="">country</Link>
                         <Link to="">country</Link>
                         <Link to="">country</Link>
                         <Link to="">country</Link>
                         <Link to="">country</Link>
                     </Navbar1>
-                    <Navbar1>
+                    <Navbar1
+                        navbarWidth="50%">
                         <Link to="facebook.com"></Link>
                         <Link to="twitter.com"></Link>
                         <Link to="plus.google.com"></Link>
                         <Link to="linkedin.com"></Link>
                         <Link to="youtube.com"></Link>
                     </Navbar1>
-                    <Navbar1>
+                    <Navbar1
+                        navbarWidth="50%">
                         <Link to="">app</Link>
                         <Link to="">app</Link>
                         <Link to="">app</Link>
@@ -87,6 +98,7 @@ export default class Blog2Main extends Component {
                     <Paragraph1>
                         Subscribe
                     </Paragraph1>
+                    <p>copyright 2018</p>
                 </StyluxStyledFooter2>
                 <HorizontalTestBlock1 />
                 <FooterNavigation />

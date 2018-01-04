@@ -5,10 +5,11 @@ import Navigation from '../../../Navigation';
 import FooterNavigation from '../../../FooterNavigation';
 
 import Container1, { Container2, Container3 } from '../../../../Components 1.0.0/Containers';
+import Holder1, { Holder5, Holder10} from '../../../../Components 1.0.0/Holders';
 
 import { StyluxStyledHeader3, StyluxStyledFooter3 } from '../../../../Components 1.0.0/StyledContainers';
 
-import { SubNavbar1, MainHeading1, Navbar1, Paragraph2, HorizontalTestBlock1 } from '../../../../Components 1.0.0/Blocks';
+import { SubNavbar1, MainHeading1, Navbar1, Paragraph2, HorizontalTestBlock1, Brand3 } from '../../../../Components 1.0.0/Blocks';
 
 import Logo from '../../../../images/Logo/QuickFirstDraft.svg';
 
@@ -33,7 +34,9 @@ export default class Blog1Main extends Component {
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <StyluxStyledHeader3>
-                    <Navbar1>
+                    <Navbar1
+                        align="flex-start"
+                        navbarWidth="80%">
                         <Link to="">About</Link>
                         <Link to="">Link</Link>
                         <Link to="">Link</Link>
@@ -42,7 +45,9 @@ export default class Blog1Main extends Component {
                         <Link to="">Link</Link>
                         <Link to="">Link</Link>
                     </Navbar1>
-                    <Navbar1>
+                    <Navbar1
+                        align="flex-end"
+                        navbarWidth="20%">
                         <Link to="twitter.com/foxchrisrealthe"></Link>
                         <Link to="instagram.com"></Link>
                         <Link to="pinterest.com"></Link>
@@ -50,23 +55,46 @@ export default class Blog1Main extends Component {
                         <Link to="linkedin.com"></Link>
                     </Navbar1>
                 </StyluxStyledHeader3>
-                <Container3>
-
-
-                </Container3>
-                <Container2>
-
-                </Container2>
-                <Container3>
-
-                </Container3>
+                <Container1>
+                    <Holder5>
+                        <Brand3>
+                            {Logo}
+                        </Brand3>
+                        <p>Blog ticker holder place thing</p>
+                    </Holder5>
+                </Container1>
+                <HorizontalTestBlock1 />
+                <Container1>
+                    <Holder1
+                        block1="1.5">
+                        <Holder10
+                            padding="25px"
+                            alignBlock1="flex-end">
+                            <p>left side</p>
+                        </Holder10>
+                        <Holder10
+                            padding="25px"
+                            alignBlock1="flex-start">
+                            <p>right side</p>
+                        </Holder10>
+                    </Holder1>
+                </Container1>
+                <HorizontalTestBlock1 />
+                <Container1>
+                    <Holder5>
+                        <p>Instgram title thing</p>
+                        <p>social mediainstagram showcase</p>
+                    </Holder5>
+                </Container1>
+                <HorizontalTestBlock1 />
                 <StyluxStyledFooter3>
-                    <Navbar1>
-                        <Link to="twitter.com/foxchrisrealthe"></Link>
-                        <Link to="instagram.com"></Link>
-                        <Link to="pinterest.com"></Link>
-                        <Link to="bloglovin.com"></Link>
-                        <Link to="linkedin.com"></Link>
+                    <Navbar1
+                        navbarWidth="60%">
+                        <Link to="twitter.com/foxchrisrealthe">Twitter</Link>
+                        <Link to="instagram.com">Instagram</Link>
+                        <Link to="pinterest.com">Pinterest</Link>
+                        <Link to="bloglovin.com">BlogLovin</Link>
+                        <Link to="linkedin.com">Linkedin</Link>
                     </Navbar1>
                     <Paragraph2>
                         Copyright Statement. All rights reserved.

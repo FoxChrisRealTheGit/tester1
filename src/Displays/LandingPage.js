@@ -58,7 +58,7 @@ export default class LandingPage extends Component {
                             columnAlign="flex-start"
                             alignItems="flex-start"
                             padding="0 0 0 20px">
-                            Elements
+                            Components
                             <Link to="">containers</Link>
                             <Link to="">holders</Link>
                             <Link to="">blocks</Link>
@@ -67,6 +67,7 @@ export default class LandingPage extends Component {
                             <Link to="/samplepages">samples pages</Link>
                             <Link to="/templatesamples">template samples</Link>
                             <Link to=""></Link>
+                            <Link to="/documentation">Documentation</Link>
                             <Link to="/contact">Contact</Link>
                             <Link to="/donate">Donate</Link>
 

@@ -14,7 +14,7 @@ import {
 } from '../../../../Components 1.0.0/Blocks';
 
 import Container1 from '../../../../Components 1.0.0/Containers';
-
+import {Holder5} from '../../../../Components 1.0.0/Holders';
 import { StyluxStyledHeader4, StyluxStyledFooter4 } from '../../../../Components 1.0.0/StyledContainers';
 
 export default class Blog3Main extends Component {
@@ -50,7 +50,9 @@ export default class Blog3Main extends Component {
                     </SubNavbar2>
                 </Container1>
                 <StyluxStyledHeader4>
-                    <Navbar1>
+                    <Navbar1
+                        align="flex-end"
+                        navbarWidth="80%">
                         <Link to="">Beauty</Link>
                         <Link to="">Fashion</Link>
                         <Link to="">Travel</Link>
@@ -59,7 +61,9 @@ export default class Blog3Main extends Component {
                     <Navbar1>
                         <Link to="">Your Name</Link>
                     </Navbar1>
-                    <Navbar1>
+                    <Navbar1
+                        align="flex-start"
+                        navbarWidth="60%">
                         <Link to="">Vids</Link>
                         <Link to="">Shop</Link>
                         <Link to="">Contact</Link>
@@ -67,8 +71,18 @@ export default class Blog3Main extends Component {
                 </StyluxStyledHeader4>
                 <Container1>
                 </Container1>
+                <HorizontalTestBlock1 />
+                <Container1>
+                    <Holder5>
+                        <p>Instgram title thing</p>
+                        <p>social mediainstagram showcase</p>
+                    </Holder5>
+                </Container1>
+                <HorizontalTestBlock1 />
                 <StyluxStyledFooter4>
-                    <Navbar1>
+                    <Navbar1
+                        align="flex-end"
+                        navbarWidth="50%">
                         <Link to="instagram.com"></Link>
                         <Link to="twitter.com"></Link>
                         <Link to="bloglovin.com"></Link>
@@ -76,7 +90,9 @@ export default class Blog3Main extends Component {
                     <Navbar1>
                         <Link to="">Your Name</Link>
                     </Navbar1>
-                    <Navbar1>
+                    <Navbar1
+                        align="flex-start"
+                        navbarWidth="50%">
                         <Link to="pinterest.com"></Link>
                         <Link to="facebook.com"></Link>
                         <Link to="youtube.com"></Link>

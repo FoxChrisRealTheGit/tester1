@@ -25,7 +25,7 @@ export default function Navigation() {
                         align="flex-start">
                         <DropDownNav1
                             background='white'>
-                            elements
+                            Components
                             <Link to="/containers">containers</Link>
                             <Link to="/holders">holders</Link>
                             <Link to="/blocks">blocks</Link>
@@ -36,6 +36,7 @@ export default function Navigation() {
                             <Link to="/samplepages">sample pages</Link>
                             <Link to="/templatesamples">template samples</Link>
                         </DropDownNav1>
+                        <Link to="/documentation">documentation</Link>
                         <Link to="/contact">contact</Link>
                     </Navbar1>
                     <Navbar1

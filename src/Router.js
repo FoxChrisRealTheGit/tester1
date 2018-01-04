@@ -87,7 +87,8 @@ import Portfolio3Main from './Displays/Template Samples/Portfolio/Portfolio3/Por
 import Portfolio4Main from './Displays/Template Samples/Portfolio/Portfolio4/Portfolio4Main';
 import Portfolio5Main from './Displays/Template Samples/Portfolio/Portfolio5/Portfolio5Main';
 
-
+//documentation Links
+import Documentation from './Displays/Documentation/Documentation';
 
 
 import testing12 from './Testing12';
@@ -174,5 +175,7 @@ export default (
         <Route path="/templatesamples/portfolio4" component={Portfolio4Main}></Route>
         <Route path="/templatesamples/portfolio5" component={Portfolio5Main}></Route>
 
+
+        <Route path="/documentation" component={Documentation}></Route>
     </Switch>
 )
