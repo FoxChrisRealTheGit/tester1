@@ -32,13 +32,13 @@ export default class HolderViews extends Component {
                 <HorizontalTestBlock1 />
                 <Container1>
                     <MainHeading1>
-                        UnStyled Holders
+                        Holders
                     </MainHeading1>
                 </Container1>
                 <SubNavbar1>
-                    <Link to="/containers/styled">styled containers</Link>
-                    <Link to="/containers/unstyled">unstyled containers</Link>
+                    <Link to="/containers">containers</Link>
                     <Link to="/holders">holders</Link>
+                    <Link to="/blocks">blocks</Link>
                 </SubNavbar1>
                 
                 <HorizontalTestBlock1 />

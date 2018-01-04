@@ -13,7 +13,8 @@ import {
     SubHeading2,
     ImageSlider1,
     Paragraph1,
-    SecondarySubHeading2
+    SecondarySubHeading2,
+    HorizontalTicker,
 }
     from '../Components 1.0.0/Blocks';
 
@@ -42,11 +43,10 @@ export default class LandingPage extends Component {
                 <Container1>
                     <Holder5>
                         <SecondarySubHeading2>Who uses Stylux?</SecondarySubHeading2>
-                        <Holder3>
-                        <Link to=''></Link>
-                        <RectangleImage size='tn'>{lies2logo}</RectangleImage>
-                        <RectangleImage size='exsm'>{ataraxylogo}</RectangleImage>
-                        </Holder3>
+                        <HorizontalTicker>
+                            <RectangleImage size='tn'>{lies2logo}</RectangleImage>
+                            <RectangleImage size='exsm'>{ataraxylogo}</RectangleImage>
+                        </HorizontalTicker>
                     </Holder5>
                 </Container1>
                 <HorizontalTestBlock1 />

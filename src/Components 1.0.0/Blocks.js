@@ -1856,3 +1856,47 @@ export class ImageSlider1 extends Component {
 }
 
 /* End of image sliders */
+/* Start of Ticker Styles */
+export class HorizontalTicker extends Component{
+    constructor(props){
+        super(props);
+        this.state={
+
+        }
+    }
+    // componentWillMount() {
+    //     let t_item = [];
+    //     const CHILDS = React.Children.toArray(this.props.children)
+    //     for (var g = 0; g < CHILDS.length; g += 1) {
+    //         slides.push(CHILDS[g])
+    //     }
+    //     this.setState({ sliderImages: slides })
+    // }
+    render(){
+        const TICKERWRAPPER ={
+            width: '100%',
+            overflow:'hidden',
+            paddingLeft:'100%',
+        }
+        const TICKER_ITEM={
+            display: 'inline-block',
+            padding:'0 2em',
+            
+        }
+        const CHILDS = React.Children.toArray(this.props.children)
+        const TICKERITEM = CHILDS.map((x, i)=>{
+            return (
+                <div key= {i} style={TICKER_ITEM}>{x}</div>
+            )
+        })
+        return(
+            <div style={TICKERWRAPPER}>
+                <div className="horizontal-ticker">
+                    {TICKERITEM}
+                </div>
+            </div>
+        )
+    }
+}
+
+/* End of ticker Styles */

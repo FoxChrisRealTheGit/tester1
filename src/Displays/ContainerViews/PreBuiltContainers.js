@@ -180,51 +180,7 @@ export default class StyledContainerMain extends Component {
                         SideBar 5
                     </SubHeading4>
                 </Container1>
-                <HorizontalTestBlock1 />
-                <HorizontalTestBlock1 />
-                <Container1>
-                    <Heading1>
-                        Carosels
-                    </Heading1>
-                </Container1>
-                <HorizontalTestBlock1 />
-                <Container1>
-                    <SubHeading4>
-                        Carosel 1
-                    </SubHeading4>
-                </Container1>
-                <Container1>
-                    <ImageSlider1>
-                        {chrisLeaves} 
-                        {KarenJump}
-                        {Kristen}
-                        {KristenButt}
-                    </ImageSlider1>
-                </Container1>
-                <HorizontalTestBlock1 />
-                <Container1>
-                    <SubHeading4>
-                        Carosel 2
-                    </SubHeading4>
-                </Container1>
-                <HorizontalTestBlock1 />
-                <Container1>
-                    <SubHeading4>
-                        Carosel 3
-                    </SubHeading4>
-                </Container1>
-                <HorizontalTestBlock1 />
-                <Container1>
-                    <SubHeading4>
-                        Carosel 4
-                    </SubHeading4>
-                </Container1>
-                <HorizontalTestBlock1 />
-                <Container1>
-                    <SubHeading4>
-                        Carosel 5
-                    </SubHeading4>
-                </Container1>
+                              
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Container1>

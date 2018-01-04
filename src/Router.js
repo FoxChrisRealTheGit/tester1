@@ -4,9 +4,7 @@ import { Switch, Route } from 'react-router';
 //Begin Router Imports
 //import all main components
 import LandingPage from './Displays/LandingPage';
-import ContainerViewMain from './Displays/ContainerViewMain';
-import UnstyledContainerView from './Displays/ContainerViews/ContainerView';
-import StyledContainerView from './Displays/ContainerViews/PreBuiltContainers';
+import ContainerViewMain from './Displays/ContainerViews/ContainerView';
 
 import HolderView from './Displays/HolderViews';
 import BlockView from './Displays/BlocksView';
@@ -36,6 +34,7 @@ import HeadingBlocksView from './Displays/Blocks/HeadingBlocksView';
 import ImageBlocksView from './Displays/Blocks/ImageBlocksView';
 import NavBarBlocksView from './Displays/Blocks/NavBarBlocksView';
 import ParagraphBlocksView from './Displays/Blocks/ParagraphBlocksView';
+import CaroselsTickersView from './Displays/Blocks/CarouselsTickerBlocksView';
 
 //page sample views
 import SamplePagesMain from './Displays/Sample Pages/SamplePagesMain';
@@ -101,8 +100,6 @@ export default (
         <Route exact path="/" component={LandingPage}></Route>
 
         <Route exact path="/containers" component={ContainerViewMain}></Route>
-        <Route path="/containers/styled" component={StyledContainerView}></Route>
-        <Route path="/containers/unstyled" component={UnstyledContainerView}></Route>
 
         <Route path="/contact" component={Contact}></Route>
         <Route path="/donate" component={Donate}></Route>
@@ -129,6 +126,7 @@ export default (
         <Route path="/blocks/imageviews" component={ImageBlocksView}></Route>
         <Route path="/blocks/navbarviews" component={NavBarBlocksView}></Route>
         <Route path="/blocks/paragraphviews" component={ParagraphBlocksView}></Route>
+        <Route path="/blocks/carouseltickerviews" component={CaroselsTickersView}></Route>
 
         <Route exact path="/samplepages" component={SamplePagesMain}></Route>
         <Route path="/samplepages/about1" component={SampleAboutPage1}></Route>

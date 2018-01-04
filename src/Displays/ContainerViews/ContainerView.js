@@ -22,17 +22,18 @@ export default class ContainerView extends Component {
         return (
             <section>
                 <Navigation />
+                <HorizontalTestBlock1 />
                 <Container1>
                     <MainHeading1>
-                        UnStyled Containers
+                        Containers
                     </MainHeading1>
                 </Container1>
                 <SubNavbar1>
-                    <Link to="/containers/styled">styled containers</Link>
-                    <Link to="/containers/unstyled">unstyled containers</Link>
+                    <Link to="/containers/unstyled">containers</Link>
                     <Link to="/holders">holders</Link>
+                    <Link to="/blocks">blocks</Link>
                 </SubNavbar1>
-                
+
                 <HorizontalTestBlock1 />
                 <Container1>
                     <SubHeading4>
