@@ -26,6 +26,7 @@ export default class CaroselsTickersView extends Component {
         return (
             <section>
                 <Navigation />
+                <HorizontalTestBlock1 />
                 <Container1>
                     <MainHeading1>
                         Carosels & Tickers

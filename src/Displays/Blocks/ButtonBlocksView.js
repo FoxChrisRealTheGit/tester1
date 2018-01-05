@@ -21,6 +21,7 @@ export default class ButtonBlocksView extends Component {
         return (
             <section>
                 <Navigation />
+                <HorizontalTestBlock1 />
                 <Container1>
                     <MainHeading1>
                         Buttons

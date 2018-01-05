@@ -37,6 +37,7 @@ export default class NavBarBlocksView extends Component {
         return (
             <section>
                 <Navigation />
+                <HorizontalTestBlock1 />
                 <Container1>
                     <MainHeading1>
                         Navbars

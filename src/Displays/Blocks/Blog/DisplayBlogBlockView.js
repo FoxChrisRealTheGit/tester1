@@ -23,6 +23,7 @@ export default class DisplayBlogBlockView extends Component {
         return (
             <section>
                 <Navigation />
+                <HorizontalTestBlock1 />
                 <Container1>
                     <MainHeading1>
                         Display Blog Blocks
@@ -44,6 +45,11 @@ export default class DisplayBlogBlockView extends Component {
                 <Container1>
                     <Holder5>
                         <DisplayBlog1>
+                        "../../../images/Chris-hangingout.jpg"\
+                        cat1, cat2\
+                        a neat title\
+                        Kogi wolf celiac echo park YOLO selfies. Pickled affogato salvia la croix venmo yr shabby chic biodiesel kickstarter sustainable taiyaki fixie. Venmo la croix tumeric mlkshk gluten-free gastropub swag butcher truffaut plaid. Succulents kogi biodiesel activated charcoal cred pok pok.\
+                        date of sometime
                         </DisplayBlog1>
                     </Holder5>
                 </Container1>
@@ -57,6 +63,10 @@ export default class DisplayBlogBlockView extends Component {
                 <Container1>
                     <Holder5>
                         <DisplayBlog2>
+                        a neat title\
+                        a neat name\
+                        Snackwave microdosing poutine, chia viral try-hard williamsburg. Jianbing chambray snackwave, paleo coloring book marfa yr polaroid cred man bun truffaut butcher. Craft beer sustainable YOLO, copper mug vaporware mustache kale chips paleo. Humblebrag semiotics brooklyn, hell of actually stumptown sriracha jean shorts farm-to-table enamel pin flannel.\
+                        "../../../images/Chris-hangingout.jpg"\
                         </DisplayBlog2>
                     </Holder5>
                 </Container1>
@@ -83,6 +93,8 @@ export default class DisplayBlogBlockView extends Component {
                 <Container1>
                     <Holder5>
                         <DisplayBlog4>
+                        "../../../images/Chris-hangingout.jpg"\
+                        a super neat title\
                         </DisplayBlog4>
                     </Holder5>
                 </Container1>

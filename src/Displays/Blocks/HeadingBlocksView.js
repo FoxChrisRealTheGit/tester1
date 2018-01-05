@@ -35,6 +35,7 @@ export default class HeadingBlocksView extends Component {
         return (
             <section>
                 <Navigation />
+                <HorizontalTestBlock1 />
                 <Container1>
                     <MainHeading1>
                         Headings
