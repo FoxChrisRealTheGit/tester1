@@ -51,6 +51,31 @@
     width: 1137px;
     height: 700px;
 }
+/* Width * 1.618 ish */
+.tallrecimg-tn{
+    width: 50px;
+    height: 50px;
+}
+.tallrecimg-exsm{
+    width: 50px;
+    height: 81px;
+}
+.tallrecimg-sm{
+    width: 150px;
+    height: 243px;
+}
+.tallrecimg-md{
+    width: 300px;
+    height: 485px;
+}
+.tallrecimg-lg{
+    width: 500px;
+    height: 809px;
+}
+.tallrecimg-exlg{
+    width: 700px;
+    height: 1197px;
+}
 /* End of Rectangle Image Sizes
 /* End of Image Sizes */
 /* Start of NavBar Styles */

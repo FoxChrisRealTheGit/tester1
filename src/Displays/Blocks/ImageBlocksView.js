@@ -13,10 +13,13 @@ import {
     SubNavbar1,
     HorizontalTestBlock1,
     CircleImage,
+    OvalImage,
     RoundedImage,
     SquareImage,
     RoundedRectangleImage,
     RectangleImage,
+    TallRoundedRectangleImage,
+    TallRectangleImage,
     Figure,
 } from '../../Components 1.0.0/Blocks';
 
@@ -106,6 +109,73 @@ export default class ImageBlocksView extends Component {
                         {chrischillin}
                         Chris Hanging out
                     </CircleImage>
+                </Holder5>
+                <HorizontalTestBlock1 />
+                <HorizontalTestBlock1 />
+                <Holder5>
+                    <SubHeading4>
+                        Oval Image 1
+                    </SubHeading4>
+                    <OvalImage
+                        size="tn">
+                        {chrischillin}
+                        Chris Hanging out
+                    </OvalImage>
+                </Holder5>
+                <HorizontalTestBlock1 />
+                <Holder5>
+                    <SubHeading4>
+                        Oval Image 2
+                    </SubHeading4>
+                    <OvalImage
+                        size="exsm">
+                        {chrischillin}
+                        Chris Hanging out
+                    </OvalImage>
+                </Holder5>
+                <HorizontalTestBlock1 />
+                <Holder5>
+                    <SubHeading4>
+                        Oval Image 3
+                    </SubHeading4>
+                    <OvalImage
+                        size="sm">
+                        {chrischillin}
+                        Chris Hanging out
+                    </OvalImage>
+                </Holder5>
+                <HorizontalTestBlock1 />
+                <Holder5>
+                    <SubHeading4>
+                        Oval Image 4
+                    </SubHeading4>
+                    <OvalImage
+                        size="md">
+                        {chrischillin}
+                        Chris Hanging out
+                    </OvalImage>
+                </Holder5>
+                <HorizontalTestBlock1 />
+                <Holder5>
+                    <SubHeading4>
+                        Oval Image 5
+                    </SubHeading4>
+                    <OvalImage
+                        size="lg">
+                        {chrischillin}
+                        Chris Hanging out
+                    </OvalImage>
+                </Holder5>
+                <HorizontalTestBlock1 />
+                <Holder5>
+                    <SubHeading4>
+                        Oval Image 6
+                    </SubHeading4>
+                    <OvalImage
+                        size="exlg">
+                        {chrischillin}
+                        Chris Hanging out
+                    </OvalImage>
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
@@ -374,6 +444,141 @@ export default class ImageBlocksView extends Component {
                         Chris Hanging out
                     </RectangleImage>
                 </Holder5>
+                <HorizontalTestBlock1 />
+                <HorizontalTestBlock1 />
+                <Holder5>
+                    <SubHeading4>
+                        Tall Rounded Rectangle Image 1
+                    </SubHeading4>
+                    <TallRoundedRectangleImage
+                        size="tn">
+                        {chrischillin}
+                        Chris Hanging out
+                    </TallRoundedRectangleImage>
+                </Holder5>
+                <HorizontalTestBlock1 />
+                <Holder5>
+                    <SubHeading4>
+                        Tall Rounded Rectangle Image 2
+                    </SubHeading4>
+                    <TallRoundedRectangleImage
+                        size="exsm">
+                        {chrischillin}
+                        Chris Hanging out
+                    </TallRoundedRectangleImage>
+                </Holder5>
+                <HorizontalTestBlock1 />
+                <Holder5>
+                    <SubHeading4>
+                        Tall Rounded Rectangle Image 3
+                    </SubHeading4>
+                    <TallRoundedRectangleImage
+                        size="sm">
+                        {chrischillin}
+                        Chris Hanging out
+                    </TallRoundedRectangleImage>
+                </Holder5>
+                <HorizontalTestBlock1 />
+                <Holder5>
+                    <SubHeading4>
+                        Tall Rounded Rectangle Image 4
+                    </SubHeading4>
+                    <TallRoundedRectangleImage
+                        size="md">
+                        {chrischillin}
+                        Chris Hanging out
+                    </TallRoundedRectangleImage>
+                </Holder5>
+                <HorizontalTestBlock1 />
+                <Holder5>
+                    <SubHeading4>
+                        Tall Rounded Rectangle Image 5
+                    </SubHeading4>
+                    <TallRoundedRectangleImage
+                        size="lg">
+                        {chrischillin}
+                        Chris Hanging out
+                    </TallRoundedRectangleImage>
+                </Holder5>
+                <HorizontalTestBlock1 />
+                <Holder5>
+                    <SubHeading4>
+                        Tall Rounded Rectangle Image 6
+                    </SubHeading4>
+                    <TallRoundedRectangleImage
+                        size="exlg">
+                        {chrischillin}
+                        Chris Hanging out
+                    </TallRoundedRectangleImage>
+                </Holder5>
+                <HorizontalTestBlock1 />
+                <HorizontalTestBlock1 />
+                <Holder5>
+                    <SubHeading4>
+                        Tall Rectangle Image 1
+                    </SubHeading4>
+                    <TallRectangleImage
+                        size="tn">
+                        {chrischillin}
+                        Chris Hanging out
+                    </TallRectangleImage>
+                </Holder5>
+                <HorizontalTestBlock1 />
+                <Holder5>
+                    <SubHeading4>
+                        Tall Rectangle Image 2
+                    </SubHeading4>
+                    <TallRectangleImage
+                        size="exsm">
+                        {chrischillin}
+                        Chris Hanging out
+                    </TallRectangleImage>
+                </Holder5>
+                <HorizontalTestBlock1 />
+                <Holder5>
+                    <SubHeading4>
+                        Tall Rectangle Image 3
+                    </SubHeading4>
+                    <TallRectangleImage
+                        size="sm">
+                        {chrischillin}
+                        Chris Hanging out
+                    </TallRectangleImage>
+                </Holder5>
+                <HorizontalTestBlock1 />
+                <Holder5>
+                    <SubHeading4>
+                        Tall Rectangle Image 4
+                    </SubHeading4>
+                    <TallRectangleImage
+                        size="md">
+                        {chrischillin}
+                        Chris Hanging out
+                    </TallRectangleImage>
+                </Holder5>
+                <HorizontalTestBlock1 />
+                <Holder5>
+                    <SubHeading4>
+                        Tall Rectangle Image 5
+                    </SubHeading4>
+                    <TallRectangleImage
+                        size="lg">
+                        {chrischillin}
+                        Chris Hanging out
+                    </TallRectangleImage>
+                </Holder5>
+                <HorizontalTestBlock1 />
+                <Holder5>
+                    <SubHeading4>
+                        Tall Rectangle Image 6
+                    </SubHeading4>
+                    <TallRectangleImage
+                        size="exlg">
+                        {chrischillin}
+                        Chris Hanging out
+                    </TallRectangleImage>
+                </Holder5>
+                <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Holder5>
                     <SubHeading4>

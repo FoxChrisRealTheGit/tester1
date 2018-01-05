@@ -1029,6 +1029,25 @@ export class RoundedImage extends Component {
 }
 
 /* End of Rounded Images */
+/* Start of Oval Images */
+export class OvalImage extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            size: props.size || 'sm',
+        }
+    }
+    render() {
+        const OVALIMG = {
+            borderRadius: '30%',
+        }
+        const CHILDS = React.Children.toArray(this.props.children)
+        return (
+            <img style={OVALIMG} className={`img-${this.state.size}`} src={CHILDS[0]} alt={CHILDS[1]} />
+        )
+    }
+}
+/* End of Oval Images */
 /* Start of Square Images */
 export class SquareImage extends Component {
     constructor(props) {
@@ -1087,6 +1106,44 @@ export class RectangleImage extends Component {
 }
 
 /* End of Regular Rectangle Image */
+/* Start of Tall Rounded Rectangle Image */
+export class TallRoundedRectangleImage extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            size: props.size || 'sm',
+        }
+    }
+    render() {
+        const TALLROUNDEDRECTANGLEIMG = {
+            borderRadius: "30%",
+        }
+        const CHILDS = React.Children.toArray(this.props.children)
+        return (
+            <img style={TALLROUNDEDRECTANGLEIMG} className={`tallrecimg-${this.state.size}`} src={CHILDS[0]} alt={CHILDS[1]} />
+        )
+    }
+}
+/* End of Tall Rounded Rectangle Iage */
+/* Start of Tall Rectangle Image */
+export class TallRectangleImage extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            size: props.size || 'sm',
+        }
+    }
+    render() {
+        const image = {
+            margin: '0 auto',
+        }
+        const CHILDS = React.Children.toArray(this.props.children)
+        return (
+            <img style={image} className={`tallrecimg-${this.state.size}`} src={CHILDS[0]} alt={CHILDS[1]} />
+        )
+    }
+}
+/* End of Tall Rectangle Image */
 /* Start of Figure Blocks */
 export class Figure extends Component {
     constructor(props) {
