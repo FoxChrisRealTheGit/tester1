@@ -11,7 +11,7 @@ Use and Description
 /* Start of Twitter 1 */
 export default class TwitterFeed1 extends Component {
     componentDidMount(){
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        //<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     }
     
     render() {

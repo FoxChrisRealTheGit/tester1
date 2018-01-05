@@ -35,6 +35,11 @@ import ImageBlocksView from './Displays/Blocks/ImageBlocksView';
 import NavBarBlocksView from './Displays/Blocks/NavBarBlocksView';
 import ParagraphBlocksView from './Displays/Blocks/ParagraphBlocksView';
 import CaroselsTickersView from './Displays/Blocks/CarouselsTickerBlocksView';
+//blog block views
+import DisplayBlogBlockView from './Displays/Blocks/Blog/DisplayBlogBlockView';
+import FeatureBlogBlocksView from './Displays/Blocks/Blog/FeatureBlogBlocksView';
+
+//ecommerce views
 
 //page sample views
 import SamplePagesMain from './Displays/Sample Pages/SamplePagesMain';
@@ -127,6 +132,9 @@ export default (
         <Route path="/blocks/navbarviews" component={NavBarBlocksView}></Route>
         <Route path="/blocks/paragraphviews" component={ParagraphBlocksView}></Route>
         <Route path="/blocks/carouseltickerviews" component={CaroselsTickersView}></Route>
+
+        <Route path="/blocks/blog/featureviews" component={FeatureBlogBlocksView}></Route>
+        <Route path="/blocks/blog/displayviews" component={DisplayBlogBlockView}></Route>
 
         <Route exact path="/samplepages" component={SamplePagesMain}></Route>
         <Route path="/samplepages/about1" component={SampleAboutPage1}></Route>

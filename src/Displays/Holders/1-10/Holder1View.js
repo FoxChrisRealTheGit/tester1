@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Navigation from '../../Navigation';
 import FooterNavigation from '../../FooterNavigation';
 
-import { Block2, SubHeading4, Heading1, HorizontalTestBlock1, SubNavbar1 } from '../../../Components 1.0.0/Blocks';
+import { Block2, SubHeading4, MainHeading1, Heading1, HorizontalTestBlock1, SubNavbar1 } from '../../../Components 1.0.0/Blocks';
 
 import Holder1 from '../../../Components 1.0.0/Holders';
 
@@ -19,16 +19,16 @@ export default class Holder1View extends Component {
         return (
             <section>
                 <Navigation />
-                <SubNavbar1>
-                    <Link to="/containers/styled">Styled Containers</Link>
-                    <Link to="/containers/unstyled">Unstyled Containers</Link>
-                    <Link to="/holders">Holders</Link>
-                </SubNavbar1>
                 <Container1>
-                    <SubHeading4>
-                        holder 1
-                    </SubHeading4>
+                    <MainHeading1>
+                        Holder 1
+                    </MainHeading1>
                 </Container1>
+                <SubNavbar1>
+                    <Link to="/containers">containers</Link>
+                    <Link to="/holders">holders</Link>
+                    <Link to="/blocks">blocks</Link>
+                </SubNavbar1>
                 <HorizontalTestBlock1 />
                 <Container1>
                     <SubHeading4>

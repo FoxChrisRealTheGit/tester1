@@ -29,7 +29,7 @@ export default class ContainerView extends Component {
                     </MainHeading1>
                 </Container1>
                 <SubNavbar1>
-                    <Link to="/containers/unstyled">containers</Link>
+                    <Link to="/containers">containers</Link>
                     <Link to="/holders">holders</Link>
                     <Link to="/blocks">blocks</Link>
                 </SubNavbar1>

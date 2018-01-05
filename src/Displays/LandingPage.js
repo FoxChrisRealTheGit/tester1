@@ -24,6 +24,7 @@ import heroGreeting1 from '../images/SVG/heroGreeting1.svg';
 
 import lies2logo from '../images/ticker/2lies&1truth.png';
 import ataraxylogo from '../images/ticker/ataraxybaselogo.svg';
+import foxTail from '../images/ticker/foxtail2.1.svg';
 
 export default class LandingPage extends Component {
     render() {
@@ -46,6 +47,7 @@ export default class LandingPage extends Component {
                         <HorizontalTicker>
                             <RectangleImage size='tn'>{lies2logo}</RectangleImage>
                             <RectangleImage size='exsm'>{ataraxylogo}</RectangleImage>
+                            <RectangleImage size='exsm'>{foxTail}</RectangleImage>
                         </HorizontalTicker>
                     </Holder5>
                 </Container1>
@@ -59,9 +61,9 @@ export default class LandingPage extends Component {
                             alignItems="flex-start"
                             padding="0 0 0 20px">
                             Components
-                            <Link to="">containers</Link>
-                            <Link to="">holders</Link>
-                            <Link to="">blocks</Link>
+                            <Link to="/containers">containers</Link>
+                            <Link to="/holders">holders</Link>
+                            <Link to="/blocks">blocks</Link>
                             <Link to=""></Link>
                             Examples
                             <Link to="/samplepages">samples pages</Link>
