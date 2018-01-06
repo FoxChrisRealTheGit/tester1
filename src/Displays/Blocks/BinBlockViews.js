@@ -12,7 +12,7 @@ import {
     SubHeading4,
 } from '../../Components 1.0.0/Blocks';
 
-export default class ListBlocksView extends Component {
+export default class BinBlocksView extends Component {
     render() {
         return (
             <section>
@@ -20,7 +20,7 @@ export default class ListBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <Container1>
                     <MainHeading1>
-                       List Blocks
+                        Bin Blocks
                     </MainHeading1>
                 </Container1>
                 <SubNavbar1>

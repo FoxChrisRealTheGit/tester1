@@ -1729,6 +1729,7 @@ export class DropDownNav1 extends Component {
 }
 export class DropDownNav2 extends Component {
     render() {
+        //firstguide
         return (
             <nav className="dropdownnav2">
             </nav>
@@ -1737,6 +1738,7 @@ export class DropDownNav2 extends Component {
 }
 export class DropDownNav3 extends Component {
     render() {
+        //amelia/menswarehouse/nordstromrack
         return (
             <nav className="dropdownnav3">
             </nav>
@@ -1745,12 +1747,14 @@ export class DropDownNav3 extends Component {
 }
 export class DropDownNav4 extends Component {
     render() {
+        
         return (
             <nav className="dropdownnav4">
             </nav>
         )
     }
 }
+//sideways
 export class DropDownNav5 extends Component {
     constructor(props) {
         super(props);
@@ -1971,3 +1975,31 @@ export class SeeSawTicker extends Component {
     }
 }
 /* End of ticker Styles */
+/* Start of bin blocks */
+//sidebar bin
+
+//collapsable bin like in khols product description
+
+//tab bin1 techcrunch main
+
+//tab bin2 kholes rating & reviews, Q&A
+
+/* end of bin blocks */
+/* Start of List Blocks */
+/* Start of Numbered List Blocks */
+
+
+/* End of Numbered List Blocks */
+/* Start of bullet list blocks */
+
+
+/* End of bullet list blocks */
+/* End of List Blocks */
+/* Start of Form Blocks */
+
+
+/* End of form Blocks */
+/* Start of Table Blocks */
+
+
+/* End of Table Blocks */

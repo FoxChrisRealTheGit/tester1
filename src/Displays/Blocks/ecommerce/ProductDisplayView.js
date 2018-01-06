@@ -7,6 +7,7 @@ import Container1 from '../../../Components 1.0.0/Containers';
 import { Holder5 } from '../../../Components 1.0.0/Holders';
 import {
     MainHeading1,
+    Heading1,
     SubNavbar1,
     HorizontalTestBlock1,
     SubHeading4,
@@ -53,7 +54,31 @@ export default class ProductDisplayView extends Component {
                 <HorizontalTestBlock1 />
                 <Container1>
                     <SubHeading4>
+                        Product Display 4
+                    </SubHeading4>
+                </Container1>
+                <HorizontalTestBlock1 />
+                <Container1>
+                    <Heading1>
+                        Product Thumbnail Blocks
+                    </Heading1>
+                </Container1>
+                <HorizontalTestBlock1 />
+                <Container1>
+                    <SubHeading4>
                         Product Thumbnail 1
+                    </SubHeading4>
+                </Container1>
+                <HorizontalTestBlock1 />
+                <Container1>
+                    <SubHeading4>
+                        Product Thumbnail 2
+                    </SubHeading4>
+                </Container1>
+                <HorizontalTestBlock1 />
+                <Container1>
+                    <SubHeading4>
+                        Product Thumbnail 3
                     </SubHeading4>
                 </Container1>
                 <HorizontalTestBlock1 />

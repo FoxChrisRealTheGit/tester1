@@ -8,6 +8,7 @@ import { Holder5 } from '../../../Components 1.0.0/Holders';
 import {
     MainHeading1,
     SubNavbar1,
+    Heading1,
     HorizontalTestBlock1,
     SubHeading4,
 } from '../../../Components 1.0.0/Blocks';
@@ -47,6 +48,18 @@ export default class FeatureProductView extends Component {
                 <Container1>
                     <SubHeading4>
                         Feature Product 3
+                    </SubHeading4>
+                </Container1>
+                <HorizontalTestBlock1 />
+                <Container1>
+                    <Heading1>
+                        Product Slider Blocks
+                    </Heading1>
+                </Container1>
+                <HorizontalTestBlock1 />
+                <Container1>
+                    <SubHeading4>
+                        Product Slider 1
                     </SubHeading4>
                 </Container1>
                 <HorizontalTestBlock1 />

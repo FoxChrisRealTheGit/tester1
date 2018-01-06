@@ -47,7 +47,13 @@ export default class CartView extends Component {
                 <HorizontalTestBlock1 />
                 <Container1>
                     <SubHeading4>
-                        DCart 3
+                        Cart 3
+                    </SubHeading4>
+                </Container1>
+                <HorizontalTestBlock1 />
+                <Container1>
+                    <SubHeading4>
+                        Cart 4
                     </SubHeading4>
                 </Container1>
                 <HorizontalTestBlock1 />
