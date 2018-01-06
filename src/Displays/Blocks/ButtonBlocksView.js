@@ -34,6 +34,9 @@ export default class ButtonBlocksView extends Component {
                     <Link to="/blocks/navbarviews">navbars</Link>
                     <Link to="/blocks/paragraphviews">paragraphs</Link>
                     <Link to="/blocks/carouseltickerviews">carsousels</Link>
+                    <Link to="/blocks/listviews">Lists</Link>
+                    <Link to="/blocks/formviews">Forms</Link>
+                    <Link to="/blocks/tableviews">Tables</Link>
                 </SubNavbar1>
 
                 <HorizontalTestBlock1 />

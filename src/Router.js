@@ -35,9 +35,18 @@ import ImageBlocksView from './Displays/Blocks/ImageBlocksView';
 import NavBarBlocksView from './Displays/Blocks/NavBarBlocksView';
 import ParagraphBlocksView from './Displays/Blocks/ParagraphBlocksView';
 import CaroselsTickersView from './Displays/Blocks/CarouselsTickerBlocksView';
+import FormBlockView from './Displays/Blocks/FormBlocksView';
+import TableBlockView from './Displays/Blocks/TableBlockViews';
+import ListBlockViews from './Displays/Blocks/ListBlockView';
+
 //blog block views
 import DisplayBlogBlockView from './Displays/Blocks/Blog/DisplayBlogBlockView';
 import FeatureBlogBlocksView from './Displays/Blocks/Blog/FeatureBlogBlocksView';
+
+//ecommerce block views
+import CartView from './Displays/Blocks/ecommerce/CartView';
+import FeatureProductViews from './Displays/Blocks/ecommerce/FeatureProductView';
+import DisplayProductViews from './Displays/Blocks/ecommerce/ProductDisplayView';
 
 //ecommerce views
 
@@ -132,9 +141,16 @@ export default (
         <Route path="/blocks/navbarviews" component={NavBarBlocksView}></Route>
         <Route path="/blocks/paragraphviews" component={ParagraphBlocksView}></Route>
         <Route path="/blocks/carouseltickerviews" component={CaroselsTickersView}></Route>
+        <Route path="/blocks/formviews" component={FormBlockView}></Route>
+        <Route path="/blocks/tableviews" component={TableBlockView}></Route>
+        <Route path="/blocks/listviews" component={ListBlockViews}></Route>
 
         <Route path="/blocks/blog/featureviews" component={FeatureBlogBlocksView}></Route>
         <Route path="/blocks/blog/displayviews" component={DisplayBlogBlockView}></Route>
+
+        <Route path="/blocks/ecommerce/cartviews" component={CartView}></Route>
+        <Route path="/blocks/ecommerce/featureviews" component={FeatureProductViews}></Route>
+        <Route path="/blocks/ecommerce/displayviews" component={DisplayProductViews}></Route>
 
         <Route exact path="/samplepages" component={SamplePagesMain}></Route>
         <Route path="/samplepages/about1" component={SampleAboutPage1}></Route>
@@ -154,7 +170,7 @@ export default (
         <Route path="/samplepages/home2" component={SampleHomePage2}></Route>
         <Route path="/samplepages/product1" component={SampleProductPage1}></Route>
         <Route path="/samplepages/product2" component={SampleProductPage2}></Route>
-        
+
         <Route exact path="/templatesamples" component={TemplateSamplesMain}></Route>
 
         <Route path="/templatesamples/appshowcase1" component={AppShowcase1Main}></Route>
