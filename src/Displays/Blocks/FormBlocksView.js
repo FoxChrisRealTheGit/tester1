@@ -37,6 +37,8 @@ export default class FormBlocksView extends Component {
                 </SubNavbar1>
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
+
+                <HorizontalTestBlock1 />
                 <FooterNavigation />
             </section>
         )

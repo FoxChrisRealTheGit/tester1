@@ -35,8 +35,9 @@ export default class TableBlocksView extends Component {
                     <Link to="/blocks/tableviews">Tables</Link>
                     <Link to="/blocks/binviews">Bins</Link>
                 </SubNavbar1>
-
                 <HorizontalTestBlock1 />
+                <HorizontalTestBlock1 />
+
                 <HorizontalTestBlock1 />
                 <FooterNavigation />
             </section>
