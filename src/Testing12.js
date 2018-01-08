@@ -14,7 +14,7 @@ export default class Testing12 extends Component {
                 <Container1>
                     <Holder2
                         alignBlock1="flex-end"
-                        block2='4'>
+                        block2="4">
                         <Brand1>
                         </Brand1>
                         <Navbar1

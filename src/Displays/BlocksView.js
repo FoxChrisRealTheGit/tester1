@@ -71,7 +71,7 @@ export default class BlockViews extends Component {
                             <Link to="/blocks/tableviews">Table Blocks</Link>
                         </SubHeading4>
                         <SubHeading4>
-                            <Link to="/blocks/binviews">Bin Blocks</Link>
+                            <Link to="/blocks/binviews">Toggler Blocks</Link>
                         </SubHeading4>
                     </Holder13>
                 </Container1>

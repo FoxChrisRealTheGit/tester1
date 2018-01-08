@@ -1170,10 +1170,19 @@ export class Figure extends Component {
 /* Start of Button Blocks */
 /* Start of Flat Buttons */
 export class FlatButton1 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            onClick: props.onClick,
+        }
+
+    }
+
     render() {
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <button className="flatButton1">{CHILDS[0]}</button>
+            <button className="flatButton1"
+                onClick={this.state.onClick}>{CHILDS[0]}</button>
         )
     }
 }
@@ -1747,7 +1756,7 @@ export class DropDownNav3 extends Component {
 }
 export class DropDownNav4 extends Component {
     render() {
-        
+
         return (
             <nav className="dropdownnav4">
             </nav>
@@ -1975,14 +1984,167 @@ export class SeeSawTicker extends Component {
     }
 }
 /* End of ticker Styles */
-/* Start of bin blocks */
-//sidebar bin
+/* Start of toggler blocks */
+//sidebar toggler
+export class Toggler1 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            show: false,
+            position: props.position || 'absolute',
+            width: props.width || '100px',
+            height: props.height || '100vh',
+            top: props.top || '0',
+            background: props.background || 'white',
+            buttonText: props.buttonText || 'toggler1',
+        }
+        this.toggle = this.toggle.bind(this);
+    }
+    toggle() {
+        this.setState({
+            show: !this.state.show
+        })
+    }
 
-//collapsable bin like in khols product description
+    render() {
+        const TOGGLERBOX = {
+            display: this.state.show ? 'inline' : 'none',
+            width: this.state.width,
+            height: this.state.height,
+            position: this.state.position,
+            background: this.state.background,
+            right: '0',
+            top: this.state.top,
+        }
+        const CLICKBOX = {
+            cursor: 'pointer',
+        }
+        const CHILDS = React.Children.toArray(this.props.children)
+        return (
+            <div>
+                <div style={CLICKBOX} onClick={this.toggle}>
+                    {this.state.buttonText}
+                </div>
+                <div style={TOGGLERBOX}>
+                    {CHILDS}
+                </div>
+            </div>
+        )
+    }
+}
+//collapsable toggler like in khols product description
+export class Toggler2 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            show: false,
+            width: props.width || '400px',
+            height: props.height,
+            background: props.background || 'white',
+            buttonText: props.buttonText || 'toggler2',
+            position: props.position,
 
-//tab bin1 techcrunch main
+        }
+        this.toggle = this.toggle.bind(this);
+    }
+    toggle() {
+        this.setState({
+            show: !this.state.show
+        })
+    }
+    render() {
+        const TOGGLERBOX = {
+            display: this.state.show ? 'flex' : 'none',
+            position: this.state.position,
+            width: this.state.width,
+            height: this.state.height,
+            background: this.state.background,
+            top: this.state.top,
+            overflow: 'hidden',
+        }
+        const CLICKBOX = {
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            cursor: 'pointer',
+        }
+        const CHILDS = React.Children.toArray(this.props.children)
+        return (
+            <div>
+                <div style={CLICKBOX} onClick={this.toggle}>
+                    {this.state.buttonText}
+                </div>
+                <div style={TOGGLERBOX}>
+                    {CHILDS}
+                </div>
+            </div>
+        )
+    }
+}
+//tab toggler3 techcrunch main
+export class Toggler3 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            show: false,
+            width: props.width || '400px',
+            height: props.height,
+            background: props.background || 'white',
+            buttonText: props.buttonText || 'toggler2',
+            position: props.position,
 
-//tab bin2 kholes rating & reviews, Q&A
+        }
+        this.toggle = this.toggle.bind(this);
+    }
+    toggle() {
+        this.setState({
+            show: !this.state.show
+        })
+    }
+    render() {
+        const TOGGLERBOX = {
+            display: this.state.show ? 'flex' : 'none',
+            position: this.state.position,
+            width: this.state.width,
+            height: this.state.height,
+            background: this.state.background,
+            top: this.state.top,
+            overflow: 'hidden',
+        }
+        const CLICKBOX = {
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            cursor: 'pointer',
+        }
+        const CHILDS = React.Children.toArray(this.props.children)
+        return (
+            <div>
+                <div style={CLICKBOX} onClick={this.toggle}>
+                    {this.state.buttonText}
+                </div>
+                <div style={TOGGLERBOX}>
+                    {CHILDS}
+                </div>
+            </div>
+        )
+    }
+}
+//tab toggler4 kholes rating & reviews, Q&A
+export class Toggler4 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+
+        }
+    }
+    render() {
+        return (
+            <div>
+            </div>
+        )
+    }
+}
 
 /* end of bin blocks */
 /* Start of List Blocks */
