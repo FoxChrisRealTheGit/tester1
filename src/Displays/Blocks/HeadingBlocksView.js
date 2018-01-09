@@ -41,7 +41,8 @@ export default class HeadingBlocksView extends Component {
                         Headings
                     </MainHeading1>
                 </Container1>
-                <SubNavbar1>
+                <SubNavbar1
+                    navbarWidth="70%">
                     <Link to="/blocks/buttonviews">button</Link>
                     <Link to="/blocks/headingviews">headings</Link>
                     <Link to="/blocks/imageviews">images</Link>

@@ -28,7 +28,8 @@ export default class BinBlocksView extends Component {
                         Toggler Blocks
                     </MainHeading1>
                 </Container1>
-                <SubNavbar1>
+                <SubNavbar1
+                    navbarWidth="70%">
                     <Link to="/blocks/buttonviews">button</Link>
                     <Link to="/blocks/headingviews">headings</Link>
                     <Link to="/blocks/imageviews">images</Link>
@@ -47,7 +48,8 @@ export default class BinBlocksView extends Component {
                         Toggler 1
                     </SubHeading4>
                     <Toggler1
-                        width='200px'>
+                        width='200px'
+                        right="0">
                         <Holder5>
                             <Navbar1
                                 direction="column">

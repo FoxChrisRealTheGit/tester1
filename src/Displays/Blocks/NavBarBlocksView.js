@@ -43,7 +43,8 @@ export default class NavBarBlocksView extends Component {
                         Navbars
                     </MainHeading1>
                 </Container1>
-                <SubNavbar1>
+                <SubNavbar1
+                    navbarWidth="70%">
                     <Link to="/blocks/buttonviews">button</Link>
                     <Link to="/blocks/headingviews">headings</Link>
                     <Link to="/blocks/imageviews">images</Link>
@@ -275,13 +276,14 @@ export default class NavBarBlocksView extends Component {
                             <Link to="/blocks/navbarviews">item2</Link>
                             <Link to="/blocks/navbarviews">item3</Link>
                             <Link to="/blocks/navbarviews">item4</Link>
-                            <DropDownNav1>
+                            <DropDownNav5
+                                background="white">
                                 <Link to="/blocks/navbarviews">item1</Link>
                                 <Link to="/blocks/navbarviews">item2</Link>
                                 <Link to="/blocks/navbarviews">item3</Link>
                                 <Link to="/blocks/navbarviews">item4</Link>
                                 <Link to="/blocks/navbarviews">item5</Link>
-                            </DropDownNav1>
+                            </DropDownNav5>
                             <Link to="/blocks/navbarviews">item5</Link>
                         </DropDownNav1>
                         <DropDownNav1>
@@ -304,18 +306,130 @@ export default class NavBarBlocksView extends Component {
                     <SubHeading4>
                         DropDown Navigation 3
                     </SubHeading4>
+                    <Navbar1>
+                        <DropDownNav3
+                            background="white">
+                            <Link to="">item 0</Link>
+                            <Navbar1
+                                direction="column">
+                                <Link to="">Item 1</Link>
+                                <Link to="">Item 2</Link>
+                                <Link to="">Item 3</Link>
+                            </Navbar1>
+                            <Navbar1
+                                direction="column">
+                                <Link to="">Item 1</Link>
+                                <Link to="">Item 2</Link>
+                                <Link to="">Item 3</Link>
+                            </Navbar1>
+                            <Navbar1
+                                direction="column">
+                                <Link to="">Item 1</Link>
+                                <Link to="">Item 2</Link>
+                                <Link to="">Item 3</Link>
+                            </Navbar1>
+                        </DropDownNav3>
+                        <DropDownNav3
+                            background="white">
+                            <Link to="">item 0</Link>
+                            <Navbar1
+                                direction="column">
+                                <Link to="">Item 1</Link>
+                                <Link to="">Item 2</Link>
+                                <Link to="">Item 3</Link>
+                            </Navbar1>
+                            <Navbar1
+                                direction="column">
+                                <Link to="">Item 1</Link>
+                                <Link to="">Item 2</Link>
+                                <Link to="">Item 3</Link>
+                            </Navbar1>
+                            <Navbar1
+                                direction="column">
+                                <Link to="">Item 1</Link>
+                                <Link to="">Item 2</Link>
+                                <Link to="">Item 3</Link>
+                            </Navbar1>
+                        </DropDownNav3>
+                        <DropDownNav3
+                            background="white">
+                            <Link to="">item 0</Link>
+                            <Navbar1
+                                direction="column">
+                                <Link to="">Item 1</Link>
+                                <Link to="">Item 2</Link>
+                                <Link to="">Item 3</Link>
+                            </Navbar1>
+                            <Navbar1
+                                direction="column">
+                                <Link to="">Item 1</Link>
+                                <Link to="">Item 2</Link>
+                                <Link to="">Item 3</Link>
+                            </Navbar1>
+                            <Navbar1
+                                direction="column">
+                                <Link to="">Item 1</Link>
+                                <Link to="">Item 2</Link>
+                                <Link to="">Item 3</Link>
+                            </Navbar1>
+                        </DropDownNav3>
+                    </Navbar1>
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
                     <SubHeading4>
                         DropDown Navigation 4
                     </SubHeading4>
+
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
                     <SubHeading4>
                         DropDown Navigation 5
                     </SubHeading4>
+                    <Navbar1
+                        direction="column">
+                        <DropDownNav5
+                            background="white">
+                            <Link to="">Item 1</Link>
+                            <Link to="">Item 2</Link>
+                            <Link to="">Item 3</Link>
+                            <Link to="">Item 4</Link>
+                            <Link to="">Item 5</Link>
+                        </DropDownNav5>
+                        <DropDownNav5
+                            background="white">
+                            <Link to="">Item 1</Link>
+                            <Link to="">Item 2</Link>
+                            <Link to="">Item 3</Link>
+                            <Link to="">Item 4</Link>
+                            <Link to="">Item 5</Link>
+                        </DropDownNav5>
+                        <DropDownNav5
+                            background="white">
+                            <Link to="">Item 1</Link>
+                            <Link to="">Item 2</Link>
+                            <Link to="">Item 3</Link>
+                            <Link to="">Item 4</Link>
+                            <Link to="">Item 5</Link>
+                        </DropDownNav5>
+                        <DropDownNav5
+                            background="white">
+                            <Link to="">Item 1</Link>
+                            <Link to="">Item 2</Link>
+                            <Link to="">Item 3</Link>
+                            <Link to="">Item 4</Link>
+                            <Link to="">Item 5</Link>
+                        </DropDownNav5>
+                        <DropDownNav5
+                            background="white">
+                            <Link to="">Item 1</Link>
+                            <Link to="">Item 2</Link>
+                            <Link to="">Item 3</Link>
+                            <Link to="">Item 4</Link>
+                            <Link to="">Item 5</Link>
+                        </DropDownNav5>
+                    </Navbar1>
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <FooterNavigation />

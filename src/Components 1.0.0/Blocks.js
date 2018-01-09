@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './reset.css';
 
 import Container1 from './Containers';
-import Holder1 from './Holders';
+import Holder1, { Holder2 } from './Holders';
 
 //non temporary css sheet
 import '../Components 1.0.0/SuperStyleSheet.css';
@@ -1746,10 +1746,56 @@ export class DropDownNav2 extends Component {
     }
 }
 export class DropDownNav3 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            display: 'none',
+            background: props.background,
+            offset: props.offset,
+            margin: '',
+            padding: props.padding,
+            width: props.width,
+        }
+    }
     render() {
-        //amelia/menswarehouse/nordstromrack
+        const DROPDOWN = {
+            position: 'absolute',
+            display: this.state.display,
+            margin: `0 0 0 ${this.state.offset}`,
+            width: this.state.width,
+            padding: '5px',
+            textAlign: 'center',
+            flex: 1,
+            background: this.state.background,
+        }
+        const DropDown_NavBar_Li = {
+
+        }
+        const HASCHILDS = {
+            fontSize: '1.333em',
+        }
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
             <nav className="dropdownnav3">
+                <li style={HASCHILDS}
+                    onMouseOver={() => this.setState({ display: 'block' })}
+                    onMouseOut={() => this.setState({ display: 'none' })}>
+                    {CHILDS[0]}
+                    <ul style={DROPDOWN}>
+                        <Holder2>
+                            {CHILDS[1]}
+                            {CHILDS[2]}
+                            {CHILDS[3]}
+                            {CHILDS[4]}
+                            {CHILDS[5]}
+                            {CHILDS[6]}
+                            {CHILDS[7]}
+                            {CHILDS[8]}
+                            {CHILDS[9]}
+                            {CHILDS[10]}
+                        </Holder2>
+                    </ul>
+                </li>
             </nav>
         )
     }
@@ -1758,7 +1804,7 @@ export class DropDownNav4 extends Component {
     render() {
 
         return (
-            <nav className="dropdownnav4">
+            <nav className="dropdownnav3">
             </nav>
         )
     }
@@ -1770,13 +1816,13 @@ export class DropDownNav5 extends Component {
         this.state = {
             display: 'none',
             background: props.background,
-            offset: props.offset || '10px',
-            color: 'white',
+            offset: props.offset,
             margin: '',
-            padding: '',
+            padding: props.padding,
             width: props.width,
         }
     }
+
     render() {
         const DROPDOWN = {
             position: 'absolute',
@@ -1801,7 +1847,7 @@ export class DropDownNav5 extends Component {
         return (
             <nav className="dropdownnav5">
                 <li style={HASCHILDS} className="DropDown_Side"
-                    onMouseOver={() => this.setState({ display: 'block' })}
+                    onMouseOver={() => this.setState({ display: 'inline' })}
                     onMouseOut={() => this.setState({ display: 'none' })}>
                     {CHILDS[0]}
                     <ul style={DROPDOWN}>
@@ -1997,6 +2043,8 @@ export class Toggler1 extends Component {
             top: props.top || '0',
             background: props.background || 'white',
             buttonText: props.buttonText || 'toggler1',
+            left: props.left,
+            right: props.right,
         }
         this.toggle = this.toggle.bind(this);
     }
@@ -2013,7 +2061,8 @@ export class Toggler1 extends Component {
             height: this.state.height,
             position: this.state.position,
             background: this.state.background,
-            right: '0',
+            right: this.state.right,
+            left: this.state.left,
             top: this.state.top,
         }
         const CLICKBOX = {
@@ -2043,7 +2092,8 @@ export class Toggler2 extends Component {
             background: props.background || 'white',
             buttonText: props.buttonText || 'toggler2',
             position: props.position,
-
+            padding: props.padding,
+            offset: props.offset + '%',
         }
         this.toggle = this.toggle.bind(this);
     }
@@ -2059,7 +2109,8 @@ export class Toggler2 extends Component {
             width: this.state.width,
             height: this.state.height,
             background: this.state.background,
-            top: this.state.top,
+            padding: this.state.padding,
+            margin: `0 0 0 ${this.state.offset}`,
             overflow: 'hidden',
         }
         const CLICKBOX = {
