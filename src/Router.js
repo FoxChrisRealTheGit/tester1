@@ -38,7 +38,7 @@ import CaroselsTickersView from './Displays/Blocks/CarouselsTickerBlocksView';
 import FormBlockView from './Displays/Blocks/FormBlocksView';
 import TableBlockView from './Displays/Blocks/TableBlockViews';
 import ListBlockViews from './Displays/Blocks/ListBlockView';
-import BinsBlockViews from './Displays/Blocks/BinBlockViews';
+import TogglersBlockViews from './Displays/Blocks/BinBlockViews';
 
 //blog block views
 import DisplayBlogBlockView from './Displays/Blocks/Blog/DisplayBlogBlockView';
@@ -145,7 +145,7 @@ export default (
         <Route path="/blocks/formviews" component={FormBlockView}></Route>
         <Route path="/blocks/tableviews" component={TableBlockView}></Route>
         <Route path="/blocks/listviews" component={ListBlockViews}></Route>
-        <Route path="/blocks/binviews" component={BinsBlockViews}></Route>
+        <Route path="/blocks/togglersviews" component={TogglersBlockViews}></Route>
 
         <Route path="/blocks/blog/featureviews" component={FeatureBlogBlocksView}></Route>
         <Route path="/blocks/blog/displayviews" component={DisplayBlogBlockView}></Route>

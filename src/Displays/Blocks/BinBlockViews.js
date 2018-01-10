@@ -14,7 +14,8 @@ import {
     FlatButton1,
     Navbar1,
     Toggler2,
-    Paragraph2
+    Paragraph2,
+    Toggler3
 } from '../../Components 1.0.0/Blocks';
 
 export default class BinBlocksView extends Component {
@@ -39,7 +40,7 @@ export default class BinBlocksView extends Component {
                     <Link to="/blocks/listviews">Lists</Link>
                     <Link to="/blocks/formviews">Forms</Link>
                     <Link to="/blocks/tableviews">Tables</Link>
-                    <Link to="/blocks/binviews">Bins</Link>
+                    <Link to="/blocks/togglersviews">Togglers</Link>
                 </SubNavbar1>
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
@@ -77,6 +78,16 @@ export default class BinBlocksView extends Component {
                     <SubHeading4>
                         Toggler 3
                     </SubHeading4>
+                    <Toggler3>
+                        title\
+                        some text\
+                        another title\
+                        moar text\
+                        last title\
+                        last text\
+                        not last\
+                        most last text
+                    </Toggler3>
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>

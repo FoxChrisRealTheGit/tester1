@@ -213,3 +213,41 @@
 
 /* End of horizontal ticker styles
 /* End of ticker styles */
+/* Toggler 3 */
+
+/* hides paragraphs */
+.panels > div{
+    display:none;
+}
+
+/* used for highlighting selected tab */
+.panels >input[id="tab1"]:checked ~ nav label[for="tab1"],
+.panels >input[id="tab2"]:checked ~ nav label[for="tab2"],
+.panels >input[id="tab3"]:checked ~ nav label[for="tab3"],
+.panels >input[id="tab4"]:checked ~ nav label[for="tab4"],
+.panels >input[id="tab5"]:checked ~ nav label[for="tab5"],
+.panels >input[id="tab6"]:checked ~ nav label[for="tab6"],
+.panels >input[id="tab7"]:checked ~ nav label[for="tab7"],
+.panels >input[id="tab8"]:checked ~ nav label[for="tab8"],
+.panels >input[id="tab9"]:checked ~ nav label[for="tab9"],
+.panels >input[id="tab10"]:checked ~ nav label[for="tab10"]
+{
+    background-color: yellow;
+    color: black;
+}
+
+.panels > input[id="tab1"]:checked ~ div[id="panel1"],
+.panels > input[id="tab2"]:checked ~ div[id="panel2"],
+.panels > input[id="tab3"]:checked ~ div[id="panel3"],
+.panels > input[id="tab4"]:checked ~ div[id="panel4"],
+.panels > input[id="tab5"]:checked ~ div[id="panel5"],
+.panels > input[id="tab6"]:checked ~ div[id="panel6"],
+.panels > input[id="tab7"]:checked ~ div[id="panel7"],
+.panels > input[id="tab8"]:checked ~ div[id="panel8"],
+.panels > input[id="tab9"]:checked ~ div[id="panel9"],
+.panels > input[id="tab10"]:checked ~ div[id="panel10"]
+{
+    display: flex;
+}
+
+/* Toggler 3*/

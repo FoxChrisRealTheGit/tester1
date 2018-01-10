@@ -54,7 +54,7 @@ export default class NavBarBlocksView extends Component {
                     <Link to="/blocks/listviews">Lists</Link>
                     <Link to="/blocks/formviews">Forms</Link>
                     <Link to="/blocks/tableviews">Tables</Link>
-                    <Link to="/blocks/binviews">Bins</Link>
+                    <Link to="/blocks/togglersviews">Togglers</Link>
                 </SubNavbar1>
 
 

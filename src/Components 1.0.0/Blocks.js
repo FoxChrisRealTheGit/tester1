@@ -2081,7 +2081,7 @@ export class Toggler1 extends Component {
         )
     }
 }
-//collapsable toggler like in khols product description
+//collapsable multiuse toggler
 export class Toggler2 extends Component {
     constructor(props) {
         super(props);
@@ -2132,29 +2132,53 @@ export class Toggler2 extends Component {
         )
     }
 }
-//tab toggler3 techcrunch main
+
+//panel toggler
 export class Toggler3 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            show: false,
+            show: true,
             width: props.width || '400px',
             height: props.height,
             background: props.background || 'white',
             buttonText: props.buttonText || 'toggler2',
             position: props.position,
 
+
+            textvertical: props.textVertical || 'center',
+            texthorizontal: props.textHorizontal || 'center',
+            textheight: props.textHeight || '200px',
+            textwidth: props.textWidth || '300px',
+            labels: [],
+            text: [],
         }
-        this.toggle = this.toggle.bind(this);
     }
-    toggle() {
+    componentWillMount() {
+        const CHILDS = React.Children.toArray(this.props.children.split('\\'))
+        let labels = [];
+        let text = [];
+        for (var i = 0; i < CHILDS.length; i += 1) {
+            if ((i + 1) % 2 === 0) {
+                text.push(CHILDS[i])
+            } else {
+                labels.push(CHILDS[i])
+            }
+        }
         this.setState({
-            show: !this.state.show
+            labels: labels,
+            text: text
         })
     }
+
     render() {
-        const TOGGLERBOX = {
-            display: this.state.show ? 'flex' : 'none',
+        const CHECKSSTYLE = {
+            display: "none",
+        }
+        const PANELS = {
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
             position: this.state.position,
             width: this.state.width,
             height: this.state.height,
@@ -2162,26 +2186,44 @@ export class Toggler3 extends Component {
             top: this.state.top,
             overflow: 'hidden',
         }
-        const CLICKBOX = {
+        const TEXTBOX = {
+            height: this.state.textheight,
+            width: this.state.textwidth,
             display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            cursor: 'pointer',
+            flexDirection: 'column',
+            alignItems: this.state.texthorizontal,
+            justifyContent: this.state.textvertical,
         }
-        const CHILDS = React.Children.toArray(this.props.children)
+        const CHECKS = this.state.labels.map((x, i, arr) => {
+            return <input key={i} id={'tab' + (i + 1)} type="radio" name="panel_select" defaultChecked style={CHECKSSTYLE} />
+        })
+        const LABELS = this.state.labels.map((x, i, arr) => {
+            return <label key={i} htmlFor={'tab' + (i + 1)}>{x}</label>
+        })
+        const TEXT = this.state.text.map((x, i, arr) => {
+            return (
+                <div key={i} id={'panel' + (i + 1)}>
+                    <p style={TEXTBOX}>
+                        {x}
+                    </p>
+                </div>
+            )
+        })
+
         return (
-            <div>
-                <div style={CLICKBOX} onClick={this.toggle}>
-                    {this.state.buttonText}
-                </div>
-                <div style={TOGGLERBOX}>
-                    {CHILDS}
-                </div>
+            <div style={PANELS} className="panels">
+                {CHECKS}
+                <nav>
+                    {LABELS}
+                </nav>
+                {TEXT}
             </div>
         )
     }
 }
-//tab toggler4 kholes rating & reviews, Q&A
+
+
+//I have not idea about this one
 export class Toggler4 extends Component {
     constructor(props) {
         super(props);
