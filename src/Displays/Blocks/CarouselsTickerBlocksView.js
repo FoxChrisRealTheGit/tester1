@@ -13,6 +13,8 @@ import {
     SubHeading4,
     SubNavbar1,
     RectangleImage,
+    Hero2,
+    Paragraph2,
 } from '../../Components 1.0.0/Blocks';
 
 /* Images */
@@ -61,10 +63,19 @@ export default class CaroselsTickersView extends Component {
                 </Container1>
                 <Container1>
                     <ImageSlider1>
-                        {chrisLeaves}
-                        {KarenJump}
-                        {Kristen}
-                        {KristenButt}
+                        <Hero2
+                            image={`url(${chrisLeaves})`}>
+                            <Paragraph2>some neat text</Paragraph2>
+                        </Hero2>
+                        <Hero2
+                            image={`url(${KarenJump})`}>
+                        </Hero2>
+                        <Hero2
+                            image={`url(${Kristen})`}>
+                        </Hero2>
+                        <Hero2
+                            image={`url(${KristenButt})`}>
+                        </Hero2>
                     </ImageSlider1>
                 </Container1>
                 <HorizontalTestBlock1 />

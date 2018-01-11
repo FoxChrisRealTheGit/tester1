@@ -15,6 +15,7 @@ import {
     Paragraph1,
     SecondarySubHeading2,
     HorizontalTicker,
+    Hero2,
 }
     from '../Components 1.0.0/Blocks';
 
@@ -81,8 +82,12 @@ export default class LandingPage extends Component {
                             <ImageSlider1
                                 background="white"
                                 arrowColor="black">
-                                {KarenJump}
-                                {chrischillin}
+                                <Hero2
+                                    image={`url(${KarenJump})`}>
+                                </Hero2>
+                                <Hero2
+                                    image={`url(${chrischillin}`}>
+                                </Hero2>
                             </ImageSlider1>
                         </Holder5>
                     </Holder1>

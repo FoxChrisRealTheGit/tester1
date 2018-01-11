@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './reset.css';
 
 import Container1 from './Containers';
-import Holder1, { Holder2 } from './Holders';
+import Holder1, { Holder2, Holder5, Holder7 } from './Holders';
 
 //non temporary css sheet
 import '../Components 1.0.0/SuperStyleSheet.css';
@@ -1153,11 +1153,16 @@ export class Figure extends Component {
         }
     }
     render() {
+        const CAPTION = {
+            padding: '10px',
+            color: 'gray',
+            textAlign: 'center',
+        }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
             <figure>
                 {CHILDS[0]}
-                <figcaption>
+                <figcaption style={CAPTION}>
                     {CHILDS[1]}
                 </figcaption>
             </figure>
@@ -1166,6 +1171,216 @@ export class Figure extends Component {
 }
 
 /* End of Figure Blocks */
+/* Start of Hero Blocks */
+export class Hero1 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            background: props.background,
+            backgroundImage: props.image,
+            backgroundRepeat: props.imageRepeat || 'no-repeat',
+            backgroundPosition: props.backgroundPosition || 'center',
+            backgroundSize: props.imageSize || 'cover',
+            width: props.width || '100%',
+            height: props.height,
+        }
+    }
+    render() {
+        const HEROSTYLE = {
+            background: this.state.background,
+            backgroundImage: this.state.backgroundImage,
+            backgroundRepeat: this.state.backgroundRepeat,
+            backgroundPosition: this.state.backgroundPosition,
+            backgroundSize: this.state.backgroundSize,
+            width: this.state.width,
+            height: this.state.height,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+
+        }
+        const CHILDS = React.Children.toArray(this.props.children)
+        return (
+            <div style={HEROSTYLE}>
+                <Holder7>
+                    {CHILDS[0]}
+                    {CHILDS[2]}
+                    {CHILDS[1]}
+                </Holder7>
+            </div>
+        )
+    }
+}
+export class Hero2 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            background: props.background,
+            backgroundImage: props.image,
+            backgroundRepeat: props.imageRepeat || 'no-repeat',
+            backgroundPosition: props.backgroundPosition || 'center',
+            backgroundSize: props.imageSize || 'cover',
+            width: props.width || '100%',
+            height: props.height || 'inherit',
+            bottomBoxWidth: props.bottomBoxWidth || '100%',
+            bottomBoxHeight: props.bottomBoxHeight || '25%',
+            bottomBoxPadding: props.bottomBoxPadding,
+            bottomBoxBackgroundColor: props.bottomBoxBC || 'rgba(0, 0, 0, 0.5)',
+        }
+    }
+    render() {
+        const HEROSTYLE = {
+            background: this.state.background,
+            backgroundImage: this.state.backgroundImage,
+            backgroundRepeat: this.state.backgroundRepeat,
+            backgroundPosition: this.state.backgroundPosition,
+            backgroundSize: this.state.backgroundSize,
+            width: this.state.width,
+            height: this.state.height,
+            display: 'flex',
+            alignItems: 'flex-end',
+            justifyContent: 'center',
+        }
+        const BOTTOMBACKGROUND = {
+            backgroundColor: this.state.bottomBoxBackgroundColor,
+            width: this.state.bottomBoxWidth,
+            height: this.state.bottomBoxHeight,
+            padding: this.state.bottomBoxPadding,
+            overflow: 'hidden',
+
+        }
+        const CHILDS = React.Children.toArray(this.props.children)
+        return (
+            <div style={HEROSTYLE}>
+                <div style={BOTTOMBACKGROUND}>
+                    <Holder5>
+                        {CHILDS[0]}
+                    </Holder5>
+                </div>
+            </div>
+        )
+    }
+}
+export class Hero3 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            background: props.background,
+            backgroundImage: props.image,
+            backgroundRepeat: props.imageRepeat || 'no-repeat',
+            backgroundPosition: props.backgroundPosition || 'center',
+            backgroundSize: props.imageSize || 'cover',
+            width: props.width || '100%',
+            height: props.height,
+        }
+    }
+    render() {
+        const HEROSTYLE = {
+            background: this.state.background,
+            backgroundImage: this.state.backgroundImage,
+            backgroundRepeat: this.state.backgroundRepeat,
+            backgroundPosition: this.state.backgroundPosition,
+            backgroundSize: this.state.backgroundSize,
+            width: this.state.width,
+            height: this.state.height,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+        }
+        const CHILDS = React.Children.toArray(this.props.children)
+        return (
+            <div style={HEROSTYLE}>
+                <Holder1>
+                    {CHILDS[0]}
+                </Holder1>
+            </div>
+        )
+    }
+}
+export class Hero4 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            background: props.background,
+            backgroundImage: props.image,
+            backgroundRepeat: props.imageRepeat || 'no-repeat',
+            backgroundPosition: props.backgroundPosition || 'center',
+            backgroundSize: props.imageSize || 'cover',
+            width: props.width || '100%',
+            height: props.height,
+        }
+    }
+    render() {
+        const HEROSTYLE = {
+            background: this.state.background,
+            backgroundImage: this.state.backgroundImage,
+            backgroundRepeat: this.state.backgroundRepeat,
+            backgroundPosition: this.state.backgroundPosition,
+            backgroundSize: this.state.backgroundSize,
+            width: this.state.width,
+            height: this.state.height,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+        }
+        const CHILDS = React.Children.toArray(this.props.children)
+        return (
+            <div style={HEROSTYLE}>
+                <Holder1>
+                    {CHILDS[2]}
+                    {CHILDS[0]}
+                </Holder1>
+            </div>
+        )
+    }
+}
+export class Hero5 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            background: props.background,
+            backgroundImage: props.image,
+            backgroundRepeat: props.imageRepeat || 'no-repeat',
+            backgroundPosition: props.backgroundPosition || 'center',
+            backgroundSize: props.imageSize || 'cover',
+            width: props.width || '100%',
+            height: props.height,
+        }
+    }
+    render() {
+        const HEROSTYLE = {
+            background: this.state.background,
+            backgroundImage: this.state.backgroundImage,
+            backgroundRepeat: this.state.backgroundRepeat,
+            backgroundPosition: this.state.backgroundPosition,
+            backgroundSize: this.state.backgroundSize,
+            width: this.state.width,
+            height: this.state.height,
+            display: 'flex',
+            alignItems: 'flex-end',
+            justifyContent: 'center',
+        }
+        const CHILDS = React.Children.toArray(this.props.children)
+        return (
+            <div style={HEROSTYLE}>
+                <Holder7>
+                    {CHILDS[0]}
+                    <Holder2>
+                        {CHILDS[1]}
+                        {CHILDS[2]}
+                        {CHILDS[3]}
+                    </Holder2>
+                    <Holder2>
+                        {CHILDS[4]}
+                        {CHILDS[5]}
+                        {CHILDS[6]}
+                    </Holder2>
+                </Holder7>
+            </div>
+        )
+    }
+}
+/* End of Hero Blocks */
 /* End of Image Blocks */
 /* Start of Button Blocks */
 /* Start of Flat Buttons */
@@ -1870,8 +2085,9 @@ export class ImageSlider1 extends Component {
             cur: 0,
             arrowColor: props.arrowColor || 'white',
             background: props.background || 'black',
-            padding: props.padding || '10px',
-            size: props.size || 'lg',
+            padding: props.padding,
+            height: props.height || '450px',
+
         }
         this.slideLeft = this.slideLeft.bind(this);
         this.slideRight = this.slideRight.bind(this);
@@ -1904,6 +2120,7 @@ export class ImageSlider1 extends Component {
     render() {
         const WRAP = {
             width: '100%',
+            height: this.state.height,
             overflowX: 'hidden',
             background: this.state.background,
             overflowY: 'hidden',
@@ -1925,16 +2142,19 @@ export class ImageSlider1 extends Component {
         const SLIDER = {
             width: '100%',
             overflowX: 'hidden',
+            height: this.state.height,
         };
         const SLIDE = {
             // backgroundSize: 'cover',
             // backgroundPosition: 'center',
-            backgroundrepeat: 'no-repeat',
+            height: this.state.height,
+
             // display:'block'
 
         };
         const SLIDE_CONTENT = {
             width: '100%',
+            height: this.state.height,
             overflowX: 'hidden',
             display: 'flex',
             flexDirection: 'column',
@@ -1950,11 +2170,9 @@ export class ImageSlider1 extends Component {
         // };
         const RENDERSLIDES = this.state.sliderImages.map((x, i) => {
             return (
-                <div key={i} stlye={SLIDE}>
+                <div key={i} style={SLIDE}>
                     <div style={SLIDE_CONTENT}>
-                        <RectangleImage size={this.state.size}>
-                            {x}
-                        </RectangleImage>
+                        {x}
                     </div>
                 </div>
             )
@@ -1977,32 +2195,38 @@ export class HorizontalTicker extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            slide1: [],
         }
     }
-    // componentWillMount() {
-    //     let t_item = [];
-    //     const CHILDS = React.Children.toArray(this.props.children)
-    //     for (var g = 0; g < CHILDS.length; g += 1) {
-    //         slides.push(CHILDS[g])
-    //     }
-    //     this.setState({ sliderImages: slides })
-    // }
+    componentWillMount() {
+        let t_item = [];
+        const CHILDS = React.Children.toArray(this.props.children)
+        for (var g = 0; g < CHILDS.length; g += 1) { 
+                t_item.push(CHILDS[g])
+        }
+        this.setState({
+            slide1: t_item
+        })
+    }
     render() {
         const TICKERWRAPPER = {
             width: '100%',
             overflow: 'hidden',
             paddingLeft: '100%',
+            display: 'flex',
         }
         const TICKER_ITEM = {
-            display: 'inline-block',
+            display: 'flex',
             padding: '0 2em',
 
         }
+        const HORIZONTALTICKER2= {
+            paddingLeft: '50%',
+        }
         const CHILDS = React.Children.toArray(this.props.children)
-        const TICKERITEM = CHILDS.map((x, i) => {
+        const TICKERITEM = this.state.slide1.map((x, i) => {
             return (
-                <div key={i} style={TICKER_ITEM}>{x}</div>
+                <div key={i} style={TICKER_ITEM} >{x}</div>
             )
         })
         return (
@@ -2145,7 +2369,6 @@ export class Toggler3 extends Component {
             buttonText: props.buttonText || 'toggler2',
             position: props.position,
 
-
             textvertical: props.textVertical || 'center',
             texthorizontal: props.textHorizontal || 'center',
             textheight: props.textHeight || '200px',
@@ -2194,11 +2417,14 @@ export class Toggler3 extends Component {
             alignItems: this.state.texthorizontal,
             justifyContent: this.state.textvertical,
         }
+        const LABELSSTYLES = {
+            cursor: 'pointer',
+        }
         const CHECKS = this.state.labels.map((x, i, arr) => {
             return <input key={i} id={'tab' + (i + 1)} type="radio" name="panel_select" defaultChecked style={CHECKSSTYLE} />
         })
         const LABELS = this.state.labels.map((x, i, arr) => {
-            return <label key={i} htmlFor={'tab' + (i + 1)}>{x}</label>
+            return <label key={i} style={LABELSSTYLES} htmlFor={'tab' + (i + 1)}>{x}</label>
         })
         const TEXT = this.state.text.map((x, i, arr) => {
             return (

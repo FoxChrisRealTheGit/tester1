@@ -21,6 +21,13 @@ import {
     TallRoundedRectangleImage,
     TallRectangleImage,
     Figure,
+    Hero1,
+    Hero2,
+    Hero3,
+    Hero4,
+    Hero5,
+    Heading2,
+    Paragraph2,
 } from '../../Components 1.0.0/Blocks';
 
 export default class ImageBlocksView extends Component {
@@ -599,8 +606,72 @@ export default class ImageBlocksView extends Component {
                     </Figure>
                 </Holder5>
                 <HorizontalTestBlock1 />
+                <HorizontalTestBlock1 />
+                <Holder5>
+                    <SubHeading4>
+                        Hero Image 1
+                    </SubHeading4>
+                    <Hero1
+                        height="500px"
+                        image={`url(${chrischillin})`}>
+                        <Heading2>title of awesomeness</Heading2>
+                        <button>button of coolness</button>
+                        <Paragraph2>A descriptive super sweet tagline</Paragraph2>
+                    </Hero1>
+                </Holder5>
+                <HorizontalTestBlock1 />
+                <Holder5>
+                    <SubHeading4>
+                        Hero Image 2
+                    </SubHeading4>
+                    <Hero2
+                        height="500px"
+                        image={`url(${chrischillin})`}>
+                        <Paragraph2>Something really cool and neat and super awesome</Paragraph2>
+                    </Hero2>
+                </Holder5>
+                <HorizontalTestBlock1 />
+                <Holder5>
+                    <SubHeading4>
+                        Hero Image 3
+                    </SubHeading4>
+                    <Hero3
+                        height="500px"
+                        image={`url(${chrischillin})`}>
+                        <button>button of awesomeness</button>
+                    </Hero3>
+                </Holder5>
+                <HorizontalTestBlock1 />
+                <Holder5>
+                    <SubHeading4>
+                        Hero Image 4
+                    </SubHeading4>
+                    <Hero4
+                        height="500px"
+                        image={`url(${chrischillin})`}>
+                        <button>button of awesomeness</button>
+                    </Hero4>
+                </Holder5>
+                <HorizontalTestBlock1 />
+                <Holder5>
+                    <SubHeading4>
+                        Hero Image 5
+                    </SubHeading4>
+                    <Hero5
+                        height="500px"
+                        image={`url(${chrischillin})`}>
+                        <button>button of amazingness</button>
+                        <button>button of awesomeness</button>
+                        <button>button of awesomeness</button>
+                        <button>button of awesomeness</button>
+                        <button>button of awesomeness</button>
+                        <button>button of awesomeness</button>
+                        <button>button of awesomeness</button>
+                    </Hero5>
+                </Holder5>
+                <HorizontalTestBlock1 />
                 <FooterNavigation />
-            </section>
+            </section >
         )
     }
 }
