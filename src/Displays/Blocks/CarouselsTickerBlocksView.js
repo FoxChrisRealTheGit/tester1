@@ -15,6 +15,10 @@ import {
     RectangleImage,
     Hero2,
     Paragraph2,
+    ImageSlider2,
+    ImageSlider3,
+    ImageSlider4,
+    ImageSlider5,
 } from '../../Components 1.0.0/Blocks';
 
 /* Images */
@@ -22,6 +26,7 @@ import chrisLeaves from "../../images/chrisLeaves.jpg";
 import KarenJump from "../../images/KarenJump.jpg";
 import Kristen from "../../images/Kristen.jpg";
 import KristenButt from "../../images/KristenButt.jpg";
+import { Holder5 } from '../../Components 1.0.0/Holders';
 
 export default class CaroselsTickersView extends Component {
     render() {
@@ -53,13 +58,13 @@ export default class CaroselsTickersView extends Component {
                 <Container1>
                     <Heading1>
                         Carosels
-                </Heading1>
+                    </Heading1>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
                     <SubHeading4>
                         Carosel 1
-                </SubHeading4>
+                    </SubHeading4>
                 </Container1>
                 <Container1>
                     <ImageSlider1>
@@ -82,37 +87,105 @@ export default class CaroselsTickersView extends Component {
                 <Container1>
                     <SubHeading4>
                         Carosel 2
-                </SubHeading4>
+                    </SubHeading4>
+                </Container1>
+                <Container1>
+                    <ImageSlider2>
+                        <Hero2
+                            image={`url(${chrisLeaves})`}>
+                            <Paragraph2>some neat text</Paragraph2>
+                        </Hero2>
+                        <Hero2
+                            image={`url(${KarenJump})`}>
+                        </Hero2>
+                        <Hero2
+                            image={`url(${Kristen})`}>
+                        </Hero2>
+                        <Hero2
+                            image={`url(${KristenButt})`}>
+                        </Hero2>
+                    </ImageSlider2>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
                     <SubHeading4>
                         Carosel 3
-                </SubHeading4>
+                    </SubHeading4>
+                </Container1>
+                <Container1>
+                    <ImageSlider3>
+                        <Hero2
+                            image={`url(${chrisLeaves})`}>
+                            <Paragraph2>some neat text</Paragraph2>
+                        </Hero2>
+                        <Hero2
+                            image={`url(${KarenJump})`}>
+                        </Hero2>
+                        <Hero2
+                            image={`url(${Kristen})`}>
+                        </Hero2>
+                        <Hero2
+                            image={`url(${KristenButt})`}>
+                        </Hero2>
+                    </ImageSlider3>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
                     <SubHeading4>
                         Carosel 4
-                </SubHeading4>
+                    </SubHeading4>
+                </Container1>
+                <Container1>
+                    <ImageSlider4>
+                        <Hero2
+                            image={`url(${chrisLeaves})`}>
+                            <Paragraph2>some neat text</Paragraph2>
+                        </Hero2>
+                        <Hero2
+                            image={`url(${KarenJump})`}>
+                        </Hero2>
+                        <Hero2
+                            image={`url(${Kristen})`}>
+                        </Hero2>
+                        <Hero2
+                            image={`url(${KristenButt})`}>
+                        </Hero2>
+                    </ImageSlider4>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
                     <SubHeading4>
                         Carosel 5
-                </SubHeading4>
+                    </SubHeading4>
+                </Container1>
+                <Container1>
+                    <ImageSlider5>
+                        <Hero2
+                            image={`url(${chrisLeaves})`}>
+                            <Paragraph2>some neat text</Paragraph2>
+                        </Hero2>
+                        <Hero2
+                            image={`url(${KarenJump})`}>
+                        </Hero2>
+                        <Hero2
+                            image={`url(${Kristen})`}>
+                        </Hero2>
+                        <Hero2
+                            image={`url(${KristenButt})`}>
+                        </Hero2>
+                    </ImageSlider5>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Container1>
                     <Heading1>
                         Tickers
-                </Heading1>
+                    </Heading1>
                 </Container1>
                 <Container1>
                     <SubHeading4>
                         Horizontal Ticker
-                </SubHeading4>
+                    </SubHeading4>
                 </Container1>
                 <HorizontalTicker>
                     <RectangleImage>

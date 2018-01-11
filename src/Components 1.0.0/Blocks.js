@@ -2087,6 +2087,7 @@ export class ImageSlider1 extends Component {
             background: props.background || 'black',
             padding: props.padding,
             height: props.height || '450px',
+            slideTimer: props.slideTimer || '5000',
 
         }
         this.slideLeft = this.slideLeft.bind(this);
@@ -2100,8 +2101,10 @@ export class ImageSlider1 extends Component {
         }
         this.setState({ sliderImages: slides })
     }
+    componentDidMount() {
+        setInterval(this.slideRight, this.state.slideTimer);
+    }
     slideLeft() {
-        console.log(this.state.cur)
         if (this.state.cur === 0) {
             return this.setState({ cur: this.state.sliderImages.length - 1 })
         } else {
@@ -2110,7 +2113,6 @@ export class ImageSlider1 extends Component {
     }
     slideRight() {
         if (this.state.cur >= this.state.sliderImages.length - 1) {
-            console.log(this.state.sliderImages)
             return this.setState({ cur: 0 })
 
         } else {
@@ -2188,7 +2190,379 @@ export class ImageSlider1 extends Component {
         )
     }
 }
+/* end of image slider 1 */
+/* start of image slider 2 */
+export class ImageSlider2 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            sliderImages: [],
+            cur: 0,
+            arrowColor: props.arrowColor || 'white',
+            background: props.background || 'black',
+            padding: props.padding,
+            height: props.height || '450px',
+            slideTimer: props.slideTimer || '5000',
+        }
+        this.slideLeft = this.slideLeft.bind(this);
+        this.slideRight = this.slideRight.bind(this);
+    }
+    componentWillMount() {
+        let slides = [];
+        const CHILDS = React.Children.toArray(this.props.children)
+        for (var g = 0; g < CHILDS.length; g += 1) {
+            slides.push(CHILDS[g])
+        }
+        this.setState({ sliderImages: slides })
+    }
+    componentDidMount() {
+        setInterval(this.slideRight, this.state.slideTimer);
+    }
+    slideLeft() {
+        if (this.state.cur === 0) {
+            return this.setState({ cur: this.state.sliderImages.length - 1 })
+        } else {
+            return this.setState({ cur: this.state.cur - 1 })
+        }
+    }
+    slideRight() {
+        if (this.state.cur >= this.state.sliderImages.length - 1) {
+            return this.setState({ cur: 0 })
 
+        } else {
+            return this.setState({ cur: this.state.cur + 1 })
+        }
+    }
+
+    render() {
+        const WRAP = {
+            width: '100%',
+            height: this.state.height,
+            overflowX: 'hidden',
+            background: this.state.background,
+            overflowY: 'hidden',
+            display: 'flex',
+            padding: this.state.padding,
+        };
+        const SLIDER = {
+            width: '100%',
+            overflowX: 'hidden',
+            height: this.state.height,
+        };
+        const SLIDE = {
+            // backgroundSize: 'cover',
+            // backgroundPosition: 'center',
+            height: this.state.height,
+            // display:'block'
+        };
+        const SLIDE_CONTENT = {
+            width: '100%',
+            height: this.state.height,
+            overflowX: 'hidden',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+            textAlign: 'center',
+        };
+        const RENDERSLIDES = this.state.sliderImages.map((x, i) => {
+            return (
+                <div key={i} style={SLIDE}>
+                    <div style={SLIDE_CONTENT}>
+                        {x}
+                    </div>
+                </div>
+            )
+        })
+        return (
+            <div style={WRAP}>
+                <div style={SLIDER}>
+                    {RENDERSLIDES[this.state.cur]}
+                </div>
+            </div>
+        )
+    }
+}
+/* end of image slider 2 */
+/* start of image slider 3 */
+export class ImageSlider3 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            sliderImages: [],
+            cur: 0,
+            arrowColor: props.arrowColor || 'white',
+            background: props.background || 'black',
+            padding: props.padding,
+            height: props.height || '450px',
+            slideTimer: props.slideTimer || '5000',
+        }
+        this.slideLeft = this.slideLeft.bind(this);
+        this.slideRight = this.slideRight.bind(this);
+    }
+    componentWillMount() {
+        let slides = [];
+        const CHILDS = React.Children.toArray(this.props.children)
+        for (var g = 0; g < CHILDS.length; g += 1) {
+            slides.push(CHILDS[g])
+        }
+        this.setState({ sliderImages: slides })
+    }
+    componentDidMount() {
+        setInterval(this.slideRight, this.state.slideTimer);
+    }
+    slideLeft() {
+        if (this.state.cur === 0) {
+            return this.setState({ cur: this.state.sliderImages.length - 1 })
+        } else {
+            return this.setState({ cur: this.state.cur - 1 })
+        }
+    }
+    slideRight() {
+        if (this.state.cur >= this.state.sliderImages.length - 1) {
+            return this.setState({ cur: 0 })
+
+        } else {
+            return this.setState({ cur: this.state.cur + 1 })
+        }
+    }
+
+    render() {
+        const WRAP = {
+            width: '100%',
+            height: this.state.height,
+            overflowX: 'hidden',
+            background: this.state.background,
+            overflowY: 'hidden',
+            display: 'flex',
+            padding: this.state.padding,
+        };
+        const SLIDER = {
+            width: '100%',
+            overflowX: 'hidden',
+            height: this.state.height,
+        };
+        const SLIDE = {
+            // backgroundSize: 'cover',
+            // backgroundPosition: 'center',
+            height: this.state.height,
+            // display:'block'
+        };
+        const SLIDE_CONTENT = {
+            width: '100%',
+            height: this.state.height,
+            overflowX: 'hidden',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+            textAlign: 'center',
+        };
+        const RENDERSLIDES = this.state.sliderImages.map((x, i) => {
+            return (
+                <div key={i} style={SLIDE}>
+                    <div style={SLIDE_CONTENT}>
+                        {x}
+                    </div>
+                </div>
+            )
+        })
+        return (
+            <div style={WRAP}>
+                <div style={SLIDER}>
+                    {RENDERSLIDES[this.state.cur]}
+                </div>
+            </div>
+        )
+    }
+}
+/* end of image slider 3 */
+/* start of image slider 4 */
+export class ImageSlider4 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            sliderImages: [],
+            cur: 0,
+            arrowColor: props.arrowColor || 'white',
+            background: props.background || 'black',
+            padding: props.padding,
+            height: props.height || '450px',
+            slideTimer: props.slideTimer || '5000',
+        }
+        this.slideLeft = this.slideLeft.bind(this);
+        this.slideRight = this.slideRight.bind(this);
+    }
+    componentWillMount() {
+        let slides = [];
+        const CHILDS = React.Children.toArray(this.props.children)
+        for (var g = 0; g < CHILDS.length; g += 1) {
+            slides.push(CHILDS[g])
+        }
+        this.setState({ sliderImages: slides })
+    }
+    componentDidMount() {
+        setInterval(this.slideRight, this.state.slideTimer);
+    }
+    slideLeft() {
+        if (this.state.cur === 0) {
+            return this.setState({ cur: this.state.sliderImages.length - 1 })
+        } else {
+            return this.setState({ cur: this.state.cur - 1 })
+        }
+    }
+    slideRight() {
+        if (this.state.cur >= this.state.sliderImages.length - 1) {
+            return this.setState({ cur: 0 })
+
+        } else {
+            return this.setState({ cur: this.state.cur + 1 })
+        }
+    }
+
+    render() {
+        const WRAP = {
+            width: '100%',
+            height: this.state.height,
+            overflowX: 'hidden',
+            background: this.state.background,
+            overflowY: 'hidden',
+            display: 'flex',
+            padding: this.state.padding,
+        };
+        const SLIDER = {
+            width: '100%',
+            overflowX: 'hidden',
+            height: this.state.height,
+        };
+        const SLIDE = {
+            // backgroundSize: 'cover',
+            // backgroundPosition: 'center',
+            height: this.state.height,
+            // display:'block'
+        };
+        const SLIDE_CONTENT = {
+            width: '100%',
+            height: this.state.height,
+            overflowX: 'hidden',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+            textAlign: 'center',
+        };
+        const RENDERSLIDES = this.state.sliderImages.map((x, i) => {
+            return (
+                <div key={i} style={SLIDE}>
+                    <div style={SLIDE_CONTENT}>
+                        {x}
+                    </div>
+                </div>
+            )
+        })
+        return (
+            <div style={WRAP}>
+                <div style={SLIDER}>
+                    {RENDERSLIDES[this.state.cur]}
+                </div>
+            </div>
+        )
+    }
+}
+/* end of image slider 4 */
+/* sart of image slider 5 */
+export class ImageSlider5 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            sliderImages: [],
+            cur: 0,
+            arrowColor: props.arrowColor || 'white',
+            background: props.background || 'black',
+            padding: props.padding,
+            height: props.height || '450px',
+            slideTimer: props.slideTimer || '5000',
+        }
+        this.slideLeft = this.slideLeft.bind(this);
+        this.slideRight = this.slideRight.bind(this);
+    }
+    componentWillMount() {
+        let slides = [];
+        const CHILDS = React.Children.toArray(this.props.children)
+        for (var g = 0; g < CHILDS.length; g += 1) {
+            slides.push(CHILDS[g])
+        }
+        this.setState({ sliderImages: slides })
+    }
+    componentDidMount() {
+        setInterval(this.slideRight, this.state.slideTimer);
+    }
+    slideLeft() {
+        if (this.state.cur === 0) {
+            return this.setState({ cur: this.state.sliderImages.length - 1 })
+        } else {
+            return this.setState({ cur: this.state.cur - 1 })
+        }
+    }
+    slideRight() {
+        if (this.state.cur >= this.state.sliderImages.length - 1) {
+            return this.setState({ cur: 0 })
+
+        } else {
+            return this.setState({ cur: this.state.cur + 1 })
+        }
+    }
+
+    render() {
+        const WRAP = {
+            width: '100%',
+            height: this.state.height,
+            overflowX: 'hidden',
+            background: this.state.background,
+            overflowY: 'hidden',
+            display: 'flex',
+            padding: this.state.padding,
+        };
+        const SLIDER = {
+            width: '100%',
+            overflowX: 'hidden',
+            height: this.state.height,
+        };
+        const SLIDE = {
+            // backgroundSize: 'cover',
+            // backgroundPosition: 'center',
+            height: this.state.height,
+            // display:'block'
+        };
+        const SLIDE_CONTENT = {
+            width: '100%',
+            height: this.state.height,
+            overflowX: 'hidden',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+            textAlign: 'center',
+        };
+        const RENDERSLIDES = this.state.sliderImages.map((x, i) => {
+            return (
+                <div key={i} style={SLIDE}>
+                    <div style={SLIDE_CONTENT}>
+                        {x}
+                    </div>
+                </div>
+            )
+        })
+        return (
+            <div style={WRAP}>
+                <div style={SLIDER}>
+                    {RENDERSLIDES[this.state.cur]}
+                </div>
+            </div>
+        )
+    }
+}
+/* end of image slider 5 */
 /* End of image sliders */
 /* Start of Ticker Styles */
 export class HorizontalTicker extends Component {
@@ -2201,8 +2575,8 @@ export class HorizontalTicker extends Component {
     componentWillMount() {
         let t_item = [];
         const CHILDS = React.Children.toArray(this.props.children)
-        for (var g = 0; g < CHILDS.length; g += 1) { 
-                t_item.push(CHILDS[g])
+        for (var g = 0; g < CHILDS.length; g += 1) {
+            t_item.push(CHILDS[g])
         }
         this.setState({
             slide1: t_item
@@ -2220,7 +2594,7 @@ export class HorizontalTicker extends Component {
             padding: '0 2em',
 
         }
-        const HORIZONTALTICKER2= {
+        const HORIZONTALTICKER2 = {
             paddingLeft: '50%',
         }
         const CHILDS = React.Children.toArray(this.props.children)
