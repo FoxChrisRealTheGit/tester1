@@ -10,6 +10,10 @@ import {
     SubNavbar1,
     HorizontalTestBlock1,
     SubHeading4,
+    Table1,
+    Table2,
+    Table3,
+    PieChart1,
 } from '../../Components 1.0.0/Blocks';
 
 export default class TableBlocksView extends Component {
@@ -38,7 +42,50 @@ export default class TableBlocksView extends Component {
                 </SubNavbar1>
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
+                <Container1>
+                    <Holder5>
+                        <SubHeading4>
+                            Table 1
+                        </SubHeading4>
+                        <Table1>
 
+                        </Table1>
+                    </Holder5>
+                </Container1>
+                <HorizontalTestBlock1 />
+                <Container1>
+                    <Holder5>
+                        <SubHeading4>
+                            Table 2
+                        </SubHeading4>
+                        <Table2>
+
+                        </Table2>
+                    </Holder5>
+                </Container1>
+                <HorizontalTestBlock1 />
+                <Container1>
+                    <Holder5>
+                        <SubHeading4>
+                            Table 3
+                        </SubHeading4>
+                        <Table3>
+
+                        </Table3>
+                    </Holder5>
+                </Container1>
+                <HorizontalTestBlock1 />
+                <Container1>
+                    <Holder5>
+                        <SubHeading4>
+                            Pie Chart 1
+                        </SubHeading4>
+                        <PieChart1>
+
+                        </PieChart1>
+                    </Holder5>
+                </Container1>
+                <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <FooterNavigation />
             </section>

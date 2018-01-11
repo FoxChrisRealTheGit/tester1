@@ -10,6 +10,10 @@ import {
     SubNavbar1,
     HorizontalTestBlock1,
     SubHeading4,
+    NumberList1,
+    NumberList2,
+    BulletList1,
+    BulletList2,
 } from '../../Components 1.0.0/Blocks';
 
 export default class ListBlocksView extends Component {
@@ -20,7 +24,7 @@ export default class ListBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <Container1>
                     <MainHeading1>
-                       List Blocks
+                        List Blocks
                     </MainHeading1>
                 </Container1>
                 <SubNavbar1
@@ -38,7 +42,50 @@ export default class ListBlocksView extends Component {
                 </SubNavbar1>
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
+                <Container1>
+                    <Holder5>
+                        <SubHeading4>
+                            Number List 1
+                        </SubHeading4>
+                        <NumberList1>
 
+                        </NumberList1>
+                    </Holder5>
+                </Container1>
+                <HorizontalTestBlock1 />
+                <Container1>
+                    <Holder5>
+                        <SubHeading4>
+                            Number List 2
+                        </SubHeading4>
+                        <NumberList2>
+
+                        </NumberList2>
+                    </Holder5>
+                </Container1>
+                <HorizontalTestBlock1 />
+                <Container1>
+                    <Holder5>
+                        <SubHeading4>
+                            Bullet List 1
+                        </SubHeading4>
+                        <BulletList1>
+
+                        </BulletList1>
+                    </Holder5>
+                </Container1>
+                <HorizontalTestBlock1 />
+                <Container1>
+                    <Holder5>
+                        <SubHeading4>
+                            Bullet List 2
+                        </SubHeading4>
+                        <BulletList2>
+
+                        </BulletList2>
+                    </Holder5>
+                </Container1>
+                <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <FooterNavigation />
             </section>

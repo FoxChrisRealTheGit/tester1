@@ -13,6 +13,7 @@ import {
     SubHeading4,
     SubNavbar1,
     RectangleImage,
+    Hero1,
     Hero2,
     Paragraph2,
     ImageSlider2,
@@ -160,19 +161,30 @@ export default class CaroselsTickersView extends Component {
                 </Container1>
                 <Container1>
                     <ImageSlider5>
-                        <Hero2
+                        <Hero1
                             image={`url(${chrisLeaves})`}>
+                            <Heading1>Some sort of heading</Heading1>
+                            <button>click me</button>
                             <Paragraph2>some neat text</Paragraph2>
-                        </Hero2>
-                        <Hero2
+                        </Hero1>
+                        <Hero1
                             image={`url(${KarenJump})`}>
-                        </Hero2>
-                        <Hero2
+                            <Heading1>Another heading</Heading1>
+                            <button>click me</button>
+                            <Paragraph2>some neater text</Paragraph2>
+                        </Hero1>
+                        <Hero1
                             image={`url(${Kristen})`}>
-                        </Hero2>
-                        <Hero2
+                            <Heading1>Some sort of heading</Heading1>
+                            <button>click me</button>
+                            <Paragraph2>the neatest text</Paragraph2>
+                        </Hero1>
+                        <Hero1
                             image={`url(${KristenButt})`}>
-                        </Hero2>
+                            <Heading1>a neat heading</Heading1>
+                            <button>click me</button>
+                            <Paragraph2>some neat text</Paragraph2>
+                        </Hero1>
                     </ImageSlider5>
                 </Container1>
                 <HorizontalTestBlock1 />

@@ -1182,7 +1182,7 @@ export class Hero1 extends Component {
             backgroundPosition: props.backgroundPosition || 'center',
             backgroundSize: props.imageSize || 'cover',
             width: props.width || '100%',
-            height: props.height,
+            height: props.height || 'inherit',
         }
     }
     render() {
@@ -1219,7 +1219,7 @@ export class Hero2 extends Component {
             backgroundImage: props.image,
             backgroundRepeat: props.imageRepeat || 'no-repeat',
             backgroundPosition: props.backgroundPosition || 'center',
-            backgroundSize: props.imageSize || 'cover',
+            backgroundSize: props.imageSize || 'contain 80%',
             width: props.width || '100%',
             height: props.height || 'inherit',
             bottomBoxWidth: props.bottomBoxWidth || '100%',
@@ -2842,19 +2842,146 @@ export class Toggler4 extends Component {
 /* end of bin blocks */
 /* Start of List Blocks */
 /* Start of Numbered List Blocks */
+//styled default numbered
+export class NumberList1 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+
+        }
+    }
+    render() {
+        return (
+            <div>
+            </div>
+        )
+    }
+}
+//big number list
+export class NumberList2 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+
+        }
+    }
+    render() {
+        return (
+            <div>
+            </div>
+        )
+    }
+}
 
 
 /* End of Numbered List Blocks */
 /* Start of bullet list blocks */
+//styled default bullet
+export class BulletList1 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
 
+        }
+    }
+    render() {
+        return (
+            <div>
+            </div>
+        )
+    }
+}
+
+//icon bullet list
+export class BulletList2 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+
+        }
+    }
+    render() {
+        return (
+            <div>
+            </div>
+        )
+    }
+}
 
 /* End of bullet list blocks */
 /* End of List Blocks */
 /* Start of Form Blocks */
 
 
+
+
+
 /* End of form Blocks */
 /* Start of Table Blocks */
+//single header top
+export class Table1 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
 
+        }
+    }
+    render() {
+        return (
+            <div>
+            </div>
+        )
+    }
+}
+
+//single header side
+export class Table2 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+
+        }
+    }
+    render() {
+        return (
+            <div>
+            </div>
+        )
+    }
+}
+
+//double header top and side
+export class Table3 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+
+        }
+    }
+    render() {
+        return (
+            <div>
+            </div>
+        )
+    }
+}
 
 /* End of Table Blocks */
+/* Start of Chart Blocks */
+//pie chart
+export class PieChart1 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+
+        }
+    }
+    render() {
+        return (
+            <div>
+            </div>
+        )
+    }
+}
+
+/* End of Chart Blocks */
