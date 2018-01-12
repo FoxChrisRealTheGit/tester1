@@ -12,6 +12,7 @@ import {
     SubHeading4,
     NumberList1,
     NumberList2,
+    NumberList3,
     BulletList1,
     BulletList2,
 } from '../../Components 1.0.0/Blocks';
@@ -48,7 +49,10 @@ export default class ListBlocksView extends Component {
                             Number List 1
                         </SubHeading4>
                         <NumberList1>
-
+                            listItem1\
+                            listItem2\
+                            listItem3\
+                            listItem4
                         </NumberList1>
                     </Holder5>
                 </Container1>
@@ -58,9 +62,37 @@ export default class ListBlocksView extends Component {
                         <SubHeading4>
                             Number List 2
                         </SubHeading4>
-                        <NumberList2>
-
+                        <NumberList2 listAmount='3'>
+                            <p>listItem1</p>
+                            <p>nestedlistItem1</p>
+                            <p>nestedlistItem2</p>
+                            <p>listItem2</p>
+                            <p>nestedlistItem1</p>
+                            <p>nestedlistItem2</p>
+                            <p>listItem3</p>
+                            <p>nestedlistItem1</p>
+                            <p>nestedlistItem2</p>
+                            <p>listItem4</p>
+                            <p>nestedlistItem1</p>
+                            <p>nestedlistItem2</p>
+                            <p>listItem5</p>
+                            <p>nestedlistItem1</p>
+                            <p>nestedlistItem2</p>
                         </NumberList2>
+                    </Holder5>
+                </Container1>
+                <HorizontalTestBlock1 />
+                <Container1>
+                    <Holder5>
+                        <SubHeading4>
+                            Number List 3
+                        </SubHeading4>
+                        <NumberList3>
+                            listItem1\
+                            listItem2\
+                            listItem3\
+                            listItem4
+                        </NumberList3>
                     </Holder5>
                 </Container1>
                 <HorizontalTestBlock1 />
@@ -70,7 +102,10 @@ export default class ListBlocksView extends Component {
                             Bullet List 1
                         </SubHeading4>
                         <BulletList1>
-
+                            listItem1\
+                            listItem2\
+                            listItem3\
+                            listItem4
                         </BulletList1>
                     </Holder5>
                 </Container1>
@@ -81,7 +116,10 @@ export default class ListBlocksView extends Component {
                             Bullet List 2
                         </SubHeading4>
                         <BulletList2>
-
+                            listItem1\
+                            listItem2\
+                            listItem3\
+                            listItem4
                         </BulletList2>
                     </Holder5>
                 </Container1>

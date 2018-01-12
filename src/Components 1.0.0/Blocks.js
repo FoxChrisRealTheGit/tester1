@@ -2093,15 +2093,14 @@ export class ImageSlider1 extends Component {
         this.slideLeft = this.slideLeft.bind(this);
         this.slideRight = this.slideRight.bind(this);
     }
-    componentWillMount() {
+
+    componentDidMount() {
         let slides = [];
         const CHILDS = React.Children.toArray(this.props.children)
         for (var g = 0; g < CHILDS.length; g += 1) {
             slides.push(CHILDS[g])
         }
         this.setState({ sliderImages: slides })
-    }
-    componentDidMount() {
         setInterval(this.slideRight, this.state.slideTimer);
     }
     slideLeft() {
@@ -2207,15 +2206,14 @@ export class ImageSlider2 extends Component {
         this.slideLeft = this.slideLeft.bind(this);
         this.slideRight = this.slideRight.bind(this);
     }
-    componentWillMount() {
+
+    componentDidMount() {
         let slides = [];
         const CHILDS = React.Children.toArray(this.props.children)
         for (var g = 0; g < CHILDS.length; g += 1) {
             slides.push(CHILDS[g])
         }
         this.setState({ sliderImages: slides })
-    }
-    componentDidMount() {
         setInterval(this.slideRight, this.state.slideTimer);
     }
     slideLeft() {
@@ -2300,15 +2298,14 @@ export class ImageSlider3 extends Component {
         this.slideLeft = this.slideLeft.bind(this);
         this.slideRight = this.slideRight.bind(this);
     }
-    componentWillMount() {
+
+    componentDidMount() {
         let slides = [];
         const CHILDS = React.Children.toArray(this.props.children)
         for (var g = 0; g < CHILDS.length; g += 1) {
             slides.push(CHILDS[g])
         }
         this.setState({ sliderImages: slides })
-    }
-    componentDidMount() {
         setInterval(this.slideRight, this.state.slideTimer);
     }
     slideLeft() {
@@ -2393,15 +2390,14 @@ export class ImageSlider4 extends Component {
         this.slideLeft = this.slideLeft.bind(this);
         this.slideRight = this.slideRight.bind(this);
     }
-    componentWillMount() {
+
+    componentDidMount() {
         let slides = [];
         const CHILDS = React.Children.toArray(this.props.children)
         for (var g = 0; g < CHILDS.length; g += 1) {
             slides.push(CHILDS[g])
         }
         this.setState({ sliderImages: slides })
-    }
-    componentDidMount() {
         setInterval(this.slideRight, this.state.slideTimer);
     }
     slideLeft() {
@@ -2486,15 +2482,14 @@ export class ImageSlider5 extends Component {
         this.slideLeft = this.slideLeft.bind(this);
         this.slideRight = this.slideRight.bind(this);
     }
-    componentWillMount() {
+
+    componentDidMount() {
         let slides = [];
         const CHILDS = React.Children.toArray(this.props.children)
         for (var g = 0; g < CHILDS.length; g += 1) {
             slides.push(CHILDS[g])
         }
         this.setState({ sliderImages: slides })
-    }
-    componentDidMount() {
         setInterval(this.slideRight, this.state.slideTimer);
     }
     slideLeft() {
@@ -2572,7 +2567,7 @@ export class HorizontalTicker extends Component {
             slide1: [],
         }
     }
-    componentWillMount() {
+    componentDidMount() {
         let t_item = [];
         const CHILDS = React.Children.toArray(this.props.children)
         for (var g = 0; g < CHILDS.length; g += 1) {
@@ -2751,7 +2746,7 @@ export class Toggler3 extends Component {
             text: [],
         }
     }
-    componentWillMount() {
+    componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children.split('\\'))
         let labels = [];
         let text = [];
@@ -2847,13 +2842,55 @@ export class NumberList1 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            listItem: [],
+            color: props.color || 'black',
+            fontFamily: props.font || 'serif',
+            fontSize: props.size || '1.333em',
+            lineHeight: props.lineHeight || '1.5em',
+            fontWeight: props.weight || '400',
+            paddingLeft: props.paddingLeft,
+            listStyleType: props.listStyleType || 'decimal',
+            listStyleImage: props.listStyleImage || 'none',
+            listStylePosition: props.listStylePosition || 'inside',
         }
     }
+    componentDidMount() {
+        let listItems = []
+        const CHILDS = React.Children.toArray(this.props.children.split('\\'))
+        listItems = CHILDS.map((x) => x)
+        this.setState({ listItem: listItems })
+    }
+
+
     render() {
+        const LISTSTYLE = {
+            color: this.state.color,
+            fontFamily: this.state.fontFamily,
+            fontSize: this.state.fontSize,
+            lineHeight: this.state.lineHeight,
+            fontWeight: this.state.fontWeight,
+            paddingLeft: this.state.paddingLeft,
+            listStyleType: this.state.listStyleType,
+            listStyleImage: this.state.listStyleImage,
+            listStylePosition: this.state.listStylePosition,
+
+        }
+        const LISTITEMSTYLE = {
+            paddingLeft: this.state.itemPadding,
+            backgroundImage: this.state.itemBGImage,
+            backgroundPosition: this.state.itemBGPosition,
+            backgroundSize: this.state.itemBGSize,
+            backgroundRepeat: 'no-repeat',
+        }
+        const LIST = this.state.listItem.map((x, i) => {
+            return (
+                <li key={i} style={LISTITEMSTYLE}>{x}</li>
+            )
+        })
         return (
-            <div>
-            </div>
+            <ol style={LISTSTYLE}>
+                {LIST}
+            </ol>
         )
     }
 }
@@ -2862,17 +2899,114 @@ export class NumberList2 extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            listAmount: props.listAmount || '1',
+            listItem: [],
 
         }
     }
+    componentDidMount() {
+        let listItems = []
+        let nestedItems = []
+        const CHILDS = React.Children.toArray(this.props.children)
+        let tempItems = CHILDS.map((x) => x)
+        for (var q = 0; q < CHILDS.length; q += +this.state.listAmount) {
+            for (var w = 0; w < +this.state.listAmount; w += 1) {
+                nestedItems.push(tempItems[w])
+            }
+            listItems.push(nestedItems)
+            nestedItems = []
+            tempItems.splice(0, this.state.listAmount)
+        }
+        this.setState({ listItem: listItems })
+    }
+
     render() {
+        const LISTSTYLE = {
+            color: this.state.color,
+            fontFamily: this.state.fontFamily,
+            fontSize: this.state.fontSize,
+            lineHeight: this.state.lineHeight,
+            fontWeight: this.state.fontWeight,
+            paddingLeft: this.state.paddingLeft,
+            position: 'relative'
+
+        }
+        const LISTITEMSTYLE = {
+            paddingLeft: '70px',
+            counterIncrement: 'aCounter',
+
+        }
+        const LIST = this.state.listItem.map((x, i) => {
+            return (
+
+                <li key={i} style={LISTITEMSTYLE}>{x}</li>
+
+            )
+        })
         return (
-            <div>
-            </div>
+            <ol style={LISTSTYLE} className="bigList">
+                {LIST}
+            </ol>
         )
     }
 }
 
+export class NumberList3 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            listItem: [],
+            color: props.color || 'black',
+            fontFamily: props.font || 'serif',
+            fontSize: props.size || '1.333em',
+            lineHeight: props.lineHeight || '1.5em',
+            fontWeight: props.weight || '400',
+            paddingLeft: props.paddingLeft,
+            listStyleType: props.listStyleType || 'upper-roman',
+            listStyleImage: props.listStyleImage || 'none',
+            listStylePosition: props.listStylePosition || 'inside',
+        }
+    }
+    componentDidMount() {
+        let listItems = []
+        const CHILDS = React.Children.toArray(this.props.children.split('\\'))
+        listItems = CHILDS.map((x) => x)
+        this.setState({ listItem: listItems })
+    }
+
+
+    render() {
+        const LISTSTYLE = {
+            color: this.state.color,
+            fontFamily: this.state.fontFamily,
+            fontSize: this.state.fontSize,
+            lineHeight: this.state.lineHeight,
+            fontWeight: this.state.fontWeight,
+            paddingLeft: this.state.paddingLeft,
+            listStyleType: this.state.listStyleType,
+            listStyleImage: this.state.listStyleImage,
+            listStylePosition: this.state.listStylePosition,
+
+        }
+        const LISTITEMSTYLE = {
+            paddingLeft: this.state.itemPadding,
+            backgroundImage: this.state.itemBGImage,
+            backgroundPosition: this.state.itemBGPosition,
+            backgroundSize: this.state.itemBGSize,
+            backgroundRepeat: 'no-repeat',
+        }
+        const LIST = this.state.listItem.map((x, i) => {
+            return (
+                <li key={i} style={LISTITEMSTYLE}>{x}</li>
+            )
+        })
+        return (
+            <ol style={LISTSTYLE}>
+                {LIST}
+            </ol>
+        )
+    }
+}
 
 /* End of Numbered List Blocks */
 /* Start of bullet list blocks */
@@ -2881,13 +3015,57 @@ export class BulletList1 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            lisItem: [],
+            color: props.color || 'black',
+            fontFamily: props.font || 'serif',
+            fontSize: props.size || '1.333em',
+            lineHeight: props.lineHeight || '1.5em',
+            fontWeight: props.weight || '400',
+            paddingLeft: props.paddingLeft,
+            listStyleType: props.listStyleType || 'disc',
+            listStyleImage: props.listStyleImage || 'none',
+            listStylePosition: props.listStylePosition || 'inside',
+            itemPadding: props.itemPadding,
+            itemBGImage: props.itemBGImage,
+            itemBGPosition: props.itemBGPosition,
+            itemBGSize: props.itemBGSize,
         }
     }
+    componentDidMount() {
+        let listItems = []
+        const CHILDS = React.Children.toArray(this.props.children.split('\\'))
+        listItems = CHILDS.map((x) => x)
+        this.setState({ listItem: listItems })
+    }
+
     render() {
+        const LISTSTYLE = {
+            color: this.state.color,
+            fontFamily: this.state.fontFamily,
+            fontSize: this.state.fontSize,
+            lineHeight: this.state.lineHeight,
+            fontWeight: this.state.fontWeight,
+            paddingLeft: this.state.paddingLeft,
+            listStyleType: this.state.listStyleType,
+            listStyleImage: this.state.listStyleImage,
+            listStylePosition: this.state.listStylePosition,
+        }
+        const LISTITEMSTYLE = {
+            paddingLeft: this.state.itemPadding,
+            backgroundImage: this.state.itemBGImage,
+            backgroundPosition: this.state.itemBGPosition,
+            backgroundSize: this.state.itemBGSize,
+            backgroundRepeat: 'no-repeat',
+        }
+        const LIST = this.state.listItem.map((x, i) => {
+            return (
+                <li key={i} style={LISTITEMSTYLE}>{x}</li>
+            )
+        })
         return (
-            <div>
-            </div>
+            <ul style={LISTSTYLE}>
+                {LIST}
+            </ul>
         )
     }
 }
@@ -2897,13 +3075,53 @@ export class BulletList2 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            listItem: [],
+            color: props.color || 'black',
+            fontFamily: props.font || 'serif',
+            fontSize: props.size || '1.333em',
+            lineHeight: props.lineHeight || '1.5em',
+            fontWeight: props.weight || '400',
+            paddingLeft: props.paddingLeft,
+            listStyleType: props.listStyleType || 'square',
+            listStyleImage: props.listStyleImage || 'none',
+            listStylePosition: props.listStylePosition || 'inside',
         }
     }
+    componentDidMount() {
+        let listItems = []
+        const CHILDS = React.Children.toArray(this.props.children.split('\\'))
+        listItems = CHILDS.map((x) => x)
+        this.setState({ listItem: listItems })
+    }
+
     render() {
+        const LISTSTYLE = {
+            color: this.state.color,
+            fontFamily: this.state.fontFamily,
+            fontSize: this.state.fontSize,
+            lineHeight: this.state.lineHeight,
+            fontWeight: this.state.fontWeight,
+            paddingLeft: this.state.paddingLeft,
+            listStyleType: this.state.listStyleType,
+            listStyleImage: this.state.listStyleImage,
+            listStylePosition: this.state.listStylePosition,
+        }
+        const LISTITEMSTYLE = {
+            paddingLeft: this.state.itemPadding,
+            backgroundImage: this.state.itemBGImage,
+            backgroundPosition: this.state.itemBGPosition,
+            backgroundSize: this.state.itemBGSize,
+            backgroundRepeat: 'no-repeat',
+        }
+        const LIST = this.state.listItem.map((x, i) => {
+            return (
+                <li key={i} style={LISTITEMSTYLE}>{x}</li>
+            )
+        })
         return (
-            <div>
-            </div>
+            <ul style={LISTSTYLE}>
+                {LIST}
+            </ul>
         )
     }
 }

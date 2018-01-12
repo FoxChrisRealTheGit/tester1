@@ -250,3 +250,15 @@
 }
 
 /* Toggler 3*/
+/* start big list numbers */
+ol.bigList li::before{
+    content: counter(aCounter, decimal-leading-zero);
+    display: flex;
+    padding: 0;
+    font-size: 5.3em;
+    text-align: right;
+    position: relative;
+    left: -100px;
+    top: 65px;
+}
+/* end of big list numbers */
