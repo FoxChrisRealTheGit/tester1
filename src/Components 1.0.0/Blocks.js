@@ -3015,7 +3015,7 @@ export class BulletList1 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            lisItem: [],
+            listItem: [],
             color: props.color || 'black',
             fontFamily: props.font || 'serif',
             fontSize: props.size || '1.333em',
