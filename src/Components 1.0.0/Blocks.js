@@ -80,6 +80,8 @@ export class MainHeading1 extends Component {
             align: props.align || 'center',
             padding: props.padding || '0 0 15px 0',
             margin: props.margin || '0',
+            id: props.id,
+            className: props.className,
         }
     }
 
@@ -117,6 +119,8 @@ export class MainHeading2 extends Component {
             align: props.align || 'center',
             padding: props.padding || '0 0 15px 0',
             margin: props.margin || '0',
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
@@ -153,6 +157,8 @@ export class MainHeading3 extends Component {
             align: props.align || 'center',
             padding: props.padding || '0 0 15px 0',
             margin: props.margin || '0',
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
@@ -188,6 +194,8 @@ export class MainHeading4 extends Component {
             align: props.align || 'center',
             padding: props.padding || '0 0 15px 0',
             margin: props.margin || '0',
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
@@ -223,6 +231,8 @@ export class MainHeading5 extends Component {
             align: props.align || 'center',
             padding: props.padding || '0 0 15px 0',
             margin: props.margin || '0',
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
@@ -260,6 +270,8 @@ export class Heading1 extends Component {
             align: props.align || 'center',
             padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
@@ -295,6 +307,8 @@ export class Heading2 extends Component {
             align: props.align || 'center',
             padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
@@ -330,6 +344,8 @@ export class Heading3 extends Component {
             align: props.align || 'center',
             padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
@@ -365,6 +381,8 @@ export class Heading4 extends Component {
             align: props.align || 'center',
             padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
@@ -400,6 +418,8 @@ export class Heading5 extends Component {
             align: props.align || 'center',
             padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
@@ -437,6 +457,8 @@ export class SubHeading1 extends Component {
             align: props.align || 'center',
             padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
@@ -472,6 +494,8 @@ export class SubHeading2 extends Component {
             align: props.align || 'center',
             padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
@@ -507,6 +531,8 @@ export class SubHeading3 extends Component {
             align: props.align || 'center',
             padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
@@ -542,6 +568,8 @@ export class SubHeading4 extends Component {
             align: props.align || 'center',
             padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
@@ -578,6 +606,8 @@ export class SubHeading5 extends Component {
             align: props.align || 'center',
             padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
@@ -615,6 +645,8 @@ export class SecondarySubHeading1 extends Component {
             align: props.align || 'center',
             padding: props.padding || '0 0 3px 0',
             margin: props.margin || '0',
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
@@ -651,6 +683,8 @@ export class SecondarySubHeading2 extends Component {
             align: props.align || 'center',
             padding: props.padding || '0 0 3px 0',
             margin: props.margin || '0',
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
@@ -686,6 +720,8 @@ export class SecondarySubHeading3 extends Component {
             align: props.align || 'center',
             padding: props.padding || '0 0 3px 0',
             margin: props.margin || '0',
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
@@ -721,6 +757,8 @@ export class SecondarySubHeading4 extends Component {
             align: props.align || 'center',
             padding: props.padding || '0 0 3px 0',
             margin: props.margin || '0',
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
@@ -756,6 +794,8 @@ export class SecondarySubHeading5 extends Component {
             align: props.align || 'center',
             padding: props.padding || '0 0 3px 0',
             margin: props.margin || '0',
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
@@ -796,6 +836,8 @@ export class Paragraph1 extends Component {
             align: props.align || 'center',
             padding: props.padding || '10px 10%',
             margin: props.margin || '0',
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
@@ -832,6 +874,8 @@ export class Paragraph2 extends Component {
             align: props.align || 'center',
             padding: props.padding || '10px 10%',
             margin: props.margin || '0',
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
@@ -867,6 +911,8 @@ export class Paragraph3 extends Component {
             align: props.align || 'center',
             padding: props.padding || '10px 10%',
             margin: props.margin || '0',
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
@@ -902,6 +948,8 @@ export class Paragraph4 extends Component {
             align: props.align || 'center',
             padding: props.padding || '10px 10%',
             margin: props.margin || '0',
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
@@ -938,6 +986,8 @@ export class Paragraph5 extends Component {
             align: props.align || 'center',
             padding: props.padding || '10px 10%',
             margin: props.margin || '0',
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
@@ -953,6 +1003,7 @@ export class Paragraph5 extends Component {
             alignItems: this.state.align,
             padding: this.state.padding,
             margin: this.state.margin,
+
         }
         const CHILDS = React.Children.toArray(this.props.children)
 
@@ -965,6 +1016,18 @@ export class Paragraph5 extends Component {
 /* End of Basic Paragraph Blocks */
 /* Start of Pull Quotes */
 export class PullQuote1 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+
+            blockid: props.blockid,
+            textid: props.testid,
+            citeid: props.citeid,
+            blockclassName: props.blockClassName,
+            textclassName: props.textClassName,
+            citeclassName: props.citeClassName,
+        }
+    }
     render() {
         const CHILDS = React.Children.toArray(this.props.children.split('\\'))
         return (
@@ -976,6 +1039,18 @@ export class PullQuote1 extends Component {
     }
 }
 export class PullQuote2 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+
+            blockid: props.blockid,
+            textid: props.testid,
+            citeid: props.citeid,
+            blockclassName: props.blockClassName,
+            textclassName: props.textClassName,
+            citeclassName: props.citeClassName,
+        }
+    }
     render() {
         const CHILDS = React.Children.toArray(this.props.children.split('\\'))
         return (
@@ -995,6 +1070,8 @@ export class CircleImage extends Component {
         super(props);
         this.state = {
             size: props.size || 'sm',
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
@@ -1015,6 +1092,8 @@ export class RoundedImage extends Component {
         super(props);
         this.state = {
             size: props.size || 'sm',
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
@@ -1035,6 +1114,8 @@ export class OvalImage extends Component {
         super(props);
         this.state = {
             size: props.size || 'sm',
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
@@ -1054,6 +1135,8 @@ export class SquareImage extends Component {
         super(props);
         this.state = {
             size: props.size || 'sm',
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
@@ -1071,6 +1154,8 @@ export class RoundedRectangleImage extends Component {
         super(props);
         this.state = {
             size: props.size || 'sm',
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
@@ -1091,6 +1176,8 @@ export class RectangleImage extends Component {
         super(props);
         this.state = {
             size: props.size || 'sm',
+            id: props.id,
+            className: props.className,
         }
     }
 
@@ -1112,6 +1199,8 @@ export class TallRoundedRectangleImage extends Component {
         super(props);
         this.state = {
             size: props.size || 'sm',
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
@@ -1131,6 +1220,8 @@ export class TallRectangleImage extends Component {
         super(props);
         this.state = {
             size: props.size || 'sm',
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
@@ -1150,6 +1241,8 @@ export class Figure extends Component {
         super(props);
         this.state = {
             size: props.size || 'sm',
+            figid: props.figid,
+            figClassName: props.figClassName,
         }
     }
     render() {
@@ -1183,6 +1276,8 @@ export class Hero1 extends Component {
             backgroundSize: props.imageSize || 'cover',
             width: props.width || '100%',
             height: props.height || 'inherit',
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
@@ -1226,6 +1321,10 @@ export class Hero2 extends Component {
             bottomBoxHeight: props.bottomBoxHeight || '25%',
             bottomBoxPadding: props.bottomBoxPadding,
             bottomBoxBackgroundColor: props.bottomBoxBC || 'rgba(0, 0, 0, 0.5)',
+            heroid: props.heroid,
+            bottomid: props.bottomid,
+            heroClassName: props.heroClassName,
+            bottomClassName: props.bottomClassName,
         }
     }
     render() {
@@ -1272,6 +1371,8 @@ export class Hero3 extends Component {
             backgroundSize: props.imageSize || 'cover',
             width: props.width || '100%',
             height: props.height,
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
@@ -1308,6 +1409,8 @@ export class Hero4 extends Component {
             backgroundSize: props.imageSize || 'cover',
             width: props.width || '100%',
             height: props.height,
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
@@ -1345,6 +1448,8 @@ export class Hero5 extends Component {
             backgroundSize: props.imageSize || 'cover',
             width: props.width || '100%',
             height: props.height,
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
@@ -1389,6 +1494,8 @@ export class FlatButton1 extends Component {
         super(props);
         this.state = {
             onClick: props.onClick,
+            id: props.id,
+            className: props.className,
         }
 
     }
@@ -1402,7 +1509,15 @@ export class FlatButton1 extends Component {
     }
 }
 export class FlatButton2 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            onClick: props.onClick,
+            id: props.id,
+            className: props.className,
+        }
 
+    }
     render() {
         const CHILDS = React.Children.toArray(this.props.children)
         return (
@@ -1420,6 +1535,8 @@ export class RaisedButton1 extends Component {
             width: "150px",
             fontFamily: "inherit",
             color: "blue",
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
@@ -1495,6 +1612,10 @@ export class Navbar1 extends Component {
             fontSize: props.fontSize || '1em',
             fontWeight: props.fontWeight || '100',
             fontVariant: props.fontVariant || 'none',
+            navid: props.navid,
+            itemsid: props.itemsid,
+            navClassName: props.navClassName,
+            itemsClassName: props.itemsClassName,
         }
     }
     render() {
@@ -1564,6 +1685,10 @@ export class SubNavbar1 extends Component {
             fontSize: props.fontSize || '0.8em',
             fontWeight: props.fontWeight || '100',
             fontVariant: props.fontVariant || 'none',
+            navid: props.navid,
+            itemsid: props.itemsid,
+            navClassName: props.navClassName,
+            itemsClassName: props.itemsClassName,
         }
     }
     render() {
@@ -1632,6 +1757,12 @@ export class SubNavbar2 extends Component {
             fontSize: props.fontSize || '0.8em',
             fontWeight: props.fontWeight || '100',
             fontVariant: props.fontVariant || 'none',
+            navid: props.navid,
+            leftItemsid: props.leftItemsid,
+            rightItemsid: props.rightItemsid,
+            navClassName: props.navClassName,
+            leftItemsClassName: props.leftItemsClassName,
+            rightItemsClassName: props.rightItemsClassName,
         }
     }
     render() {
@@ -1905,6 +2036,12 @@ export class DropDownNav1 extends Component {
             margin: '',
             padding: '',
             width: props.width,
+            mainid: props.mainid,
+            titleid: props.titleid,
+            itemsid: props.itemsid,
+            mainClassName: props.mainClassName,
+            titleClassName: props.titleClassName,
+            itemsClassName: props.itemsClassName,
         }
         // this.enter = this.enter.bind(this);
         // this.left = this.left.bind(this);
@@ -1970,6 +2107,12 @@ export class DropDownNav3 extends Component {
             margin: '',
             padding: props.padding,
             width: props.width,
+            mainid: props.mainid,
+            titleid: props.titleid,
+            itemsid: props.itemsid,
+            mainClassName: props.mainClassName,
+            titleClassName: props.titleClassName,
+            itemsClassName: props.itemsClassName,
         }
     }
     render() {
@@ -2035,6 +2178,12 @@ export class DropDownNav5 extends Component {
             margin: '',
             padding: props.padding,
             width: props.width,
+            mainid: props.mainid,
+            titleid: props.titleid,
+            itemsid: props.itemsid,
+            mainClassName: props.mainClassName,
+            titleClassName: props.titleClassName,
+            itemsClassName: props.itemsClassName,
         }
     }
 
@@ -2088,6 +2237,14 @@ export class ImageSlider1 extends Component {
             padding: props.padding,
             height: props.height || '450px',
             slideTimer: props.slideTimer || '5000',
+            mainid: props.mainid,
+            leftArrowid: props.leftArrowid,
+            rightArrowid: props.rightArrowid,
+            sliderid: props.sliderid,
+            mainClassName: props.mainClassName,
+            leftArrowClassName: props.leftArrowClassName,
+            rightArrowClassName: props.rightArrowClassName,
+            sliderClassName: props.sliderClassName,
 
         }
         this.slideLeft = this.slideLeft.bind(this);
@@ -2202,6 +2359,10 @@ export class ImageSlider2 extends Component {
             padding: props.padding,
             height: props.height || '450px',
             slideTimer: props.slideTimer || '5000',
+            mainid: props.mainid,
+            sliderid: props.sliderid,
+            mainClassName: props.mainClassName,
+            sliderClassName: props.sliderClassName,
         }
         this.slideLeft = this.slideLeft.bind(this);
         this.slideRight = this.slideRight.bind(this);
@@ -2294,6 +2455,14 @@ export class ImageSlider3 extends Component {
             padding: props.padding,
             height: props.height || '450px',
             slideTimer: props.slideTimer || '5000',
+            mainid: props.mainid,
+            leftArrowid: props.leftArrowid,
+            rightArrowid: props.rightArrowid,
+            sliderid: props.sliderid,
+            mainClassName: props.mainClassName,
+            leftArrowClassName: props.leftArrowClassName,
+            rightArrowClassName: props.rightArrowClassName,
+            sliderClassName: props.sliderClassName,
         }
         this.slideLeft = this.slideLeft.bind(this);
         this.slideRight = this.slideRight.bind(this);
@@ -2386,6 +2555,10 @@ export class ImageSlider4 extends Component {
             padding: props.padding,
             height: props.height || '450px',
             slideTimer: props.slideTimer || '5000',
+            mainid: props.mainid,
+            sliderid: props.sliderid,
+            mainClassName: props.mainClassName,
+            sliderClassName: props.sliderClassName,
         }
         this.slideLeft = this.slideLeft.bind(this);
         this.slideRight = this.slideRight.bind(this);
@@ -2478,6 +2651,10 @@ export class ImageSlider5 extends Component {
             padding: props.padding,
             height: props.height || '450px',
             slideTimer: props.slideTimer || '5000',
+            mainid: props.mainid,
+            sliderid: props.sliderid,
+            mainClassName: props.mainClassName,
+            sliderClassName: props.sliderClassName,
         }
         this.slideLeft = this.slideLeft.bind(this);
         this.slideRight = this.slideRight.bind(this);
@@ -2638,6 +2815,10 @@ export class Toggler1 extends Component {
             buttonText: props.buttonText || 'toggler1',
             left: props.left,
             right: props.right,
+            mainid: props.mainid,
+            toggleid: props.toggleid,
+            mainClassName: props.mainClassName,
+            toggleClassName: props.toggleClassName,
         }
         this.toggle = this.toggle.bind(this);
     }
@@ -2687,6 +2868,10 @@ export class Toggler2 extends Component {
             position: props.position,
             padding: props.padding,
             offset: props.offset + '%',
+            mainid: props.mainid,
+            toggleid: props.toggleid,
+            mainClassName: props.mainClassName,
+            toggleClassName: props.toggleClassName,
         }
         this.toggle = this.toggle.bind(this);
     }
@@ -2744,6 +2929,12 @@ export class Toggler3 extends Component {
             textwidth: props.textWidth || '300px',
             labels: [],
             text: [],
+            mainid: props.mainid,
+            toggleid: props.toggleid,
+            panelid: props.panelid,
+            panelClassName: props.panelClassName,
+            mainClassName: props.mainClassName,
+            toggleClassName: props.toggleClassName,
         }
     }
     componentDidMount() {
@@ -2852,6 +3043,8 @@ export class NumberList1 extends Component {
             listStyleType: props.listStyleType || 'decimal',
             listStyleImage: props.listStyleImage || 'none',
             listStylePosition: props.listStylePosition || 'inside',
+            id: props.id,
+            className: props.className,
         }
     }
     componentDidMount() {
@@ -2901,6 +3094,8 @@ export class NumberList2 extends Component {
         this.state = {
             listAmount: props.listAmount || '1',
             listItem: [],
+            id: props.id,
+            className: props.className,
 
         }
     }
@@ -2965,6 +3160,8 @@ export class NumberList3 extends Component {
             listStyleType: props.listStyleType || 'upper-roman',
             listStyleImage: props.listStyleImage || 'none',
             listStylePosition: props.listStylePosition || 'inside',
+            id: props.id,
+            className: props.className,
         }
     }
     componentDidMount() {
@@ -3029,6 +3226,8 @@ export class BulletList1 extends Component {
             itemBGImage: props.itemBGImage,
             itemBGPosition: props.itemBGPosition,
             itemBGSize: props.itemBGSize,
+            id: props.id,
+            className: props.className,
         }
     }
     componentDidMount() {
@@ -3085,6 +3284,8 @@ export class BulletList2 extends Component {
             listStyleType: props.listStyleType || 'square',
             listStyleImage: props.listStyleImage || 'none',
             listStylePosition: props.listStylePosition || 'inside',
+            id: props.id,
+            className: props.className,
         }
     }
     componentDidMount() {
@@ -3141,7 +3342,8 @@ export class Table1 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
@@ -3157,6 +3359,8 @@ export class Table2 extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            id: props.id,
+            className: props.className,
 
         }
     }
@@ -3173,6 +3377,8 @@ export class Table3 extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            id: props.id,
+            className: props.className,
 
         }
     }
@@ -3191,7 +3397,8 @@ export class PieChart1 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            id: props.id,
+            className: props.className,
         }
     }
     render() {
