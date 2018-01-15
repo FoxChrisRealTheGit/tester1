@@ -103,7 +103,7 @@ export class MainHeading1 extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h1 style={HEADING}>{CHILDS[0]}</h1>
+            <h1 style={HEADING} id={this.state.id} className={this.state.className}>{CHILDS[0]}</h1>
         )
     }
 }
@@ -141,7 +141,7 @@ export class MainHeading2 extends Component {
         }
         const childs = React.Children.toArray(this.props.children)
         return (
-            <h1 style={HEADING}>{childs[0]}</h1>
+            <h1 style={HEADING} id={this.state.id} className={this.state.className}>{childs[0]}</h1>
         )
     }
 }
@@ -178,7 +178,7 @@ export class MainHeading3 extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h1 style={HEADING}>{CHILDS[0]}</h1>
+            <h1 style={HEADING} id={this.state.id} className={this.state.className}>{CHILDS[0]}</h1>
         )
     }
 }
@@ -215,7 +215,7 @@ export class MainHeading4 extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h1 style={HEADING}>{CHILDS[0]}</h1>
+            <h1 style={HEADING} id={this.state.id} className={this.state.className}>{CHILDS[0]}</h1>
         )
     }
 }
@@ -252,7 +252,7 @@ export class MainHeading5 extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h1 style={HEADING}>{CHILDS[0]}</h1>
+            <h1 style={HEADING} id={this.state.id} className={this.state.className}>{CHILDS[0]}</h1>
         )
     }
 }
@@ -291,7 +291,7 @@ export class Heading1 extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h2 style={HEADING}>{CHILDS[0]}</h2>
+            <h2 style={HEADING} id={this.state.id} className={this.state.className}>{CHILDS[0]}</h2>
         )
     }
 }
@@ -328,7 +328,7 @@ export class Heading2 extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h2 style={HEADING}>{CHILDS[0]}</h2>
+            <h2 style={HEADING} id={this.state.id} className={this.state.className}>{CHILDS[0]}</h2>
         )
     }
 }
@@ -365,7 +365,7 @@ export class Heading3 extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h2 style={HEADING}>{CHILDS[0]}</h2>
+            <h2 style={HEADING} id={this.state.id} className={this.state.className}>{CHILDS[0]}</h2>
         )
     }
 }
@@ -402,7 +402,7 @@ export class Heading4 extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h2 style={HEADING}>{CHILDS[0]}</h2>
+            <h2 style={HEADING} id={this.state.id} className={this.state.className}>{CHILDS[0]}</h2>
         )
     }
 }
@@ -439,7 +439,7 @@ export class Heading5 extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h2 style={HEADING}>{CHILDS[0]}</h2>
+            <h2 style={HEADING} id={this.state.id} className={this.state.className}>{CHILDS[0]}</h2>
         )
     }
 }
@@ -478,7 +478,7 @@ export class SubHeading1 extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h3 style={HEADING}>{CHILDS[0]}</h3>
+            <h3 style={HEADING} id={this.state.id} className={this.state.className}>{CHILDS[0]}</h3>
         )
     }
 }
@@ -515,7 +515,7 @@ export class SubHeading2 extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h3 style={HEADING}>{CHILDS[0]}</h3>
+            <h3 style={HEADING} id={this.state.id} className={this.state.className}>{CHILDS[0]}</h3>
         )
     }
 }
@@ -552,7 +552,7 @@ export class SubHeading3 extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h3 style={HEADING}>{CHILDS[0]}</h3>
+            <h3 style={HEADING} id={this.state.id} className={this.state.className}>{CHILDS[0]}</h3>
         )
     }
 }
@@ -590,7 +590,7 @@ export class SubHeading4 extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h3 style={HEADING}>{CHILDS[0]}</h3>
+            <h3 style={HEADING} id={this.state.id} className={this.state.className}>{CHILDS[0]}</h3>
         )
     }
 }
@@ -627,7 +627,7 @@ export class SubHeading5 extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h3 style={HEADING}>{CHILDS[0]}</h3>
+            <h3 style={HEADING} id={this.state.id} className={this.state.className}>{CHILDS[0]}</h3>
         )
     }
 }
@@ -667,7 +667,7 @@ export class SecondarySubHeading1 extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h4 style={HEADING}>{CHILDS[0]}</h4>
+            <h4 style={HEADING} id={this.state.id} className={this.state.className}>{CHILDS[0]}</h4>
         )
     }
 }
@@ -704,7 +704,7 @@ export class SecondarySubHeading2 extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h4 style={HEADING}>{CHILDS[0]}</h4>
+            <h4 style={HEADING} id={this.state.id} className={this.state.className}>{CHILDS[0]}</h4>
         )
     }
 }
@@ -741,7 +741,7 @@ export class SecondarySubHeading3 extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h4 style={HEADING}>{CHILDS[0]}</h4>
+            <h4 style={HEADING} id={this.state.id} className={this.state.className}>{CHILDS[0]}</h4>
         )
     }
 }
@@ -778,7 +778,7 @@ export class SecondarySubHeading4 extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h4 style={HEADING}>{CHILDS[0]}</h4>
+            <h4 style={HEADING} id={this.state.id} className={this.state.className}>{CHILDS[0]}</h4>
         )
     }
 }
@@ -815,7 +815,7 @@ export class SecondarySubHeading5 extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <h4 style={HEADING}>{CHILDS[0]}</h4>
+            <h4 style={HEADING} id={this.state.id} className={this.state.className}>{CHILDS[0]}</h4>
         )
     }
 }
@@ -857,7 +857,7 @@ export class Paragraph1 extends Component {
 
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <p style={PARAGRAPH}>{CHILDS[0]}</p>
+            <p style={PARAGRAPH} id={this.state.id} className={this.state.className}>{CHILDS[0]}</p>
         )
     }
 }
@@ -894,7 +894,7 @@ export class Paragraph2 extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <p style={PARAGRAPH}>{CHILDS[0]}</p>
+            <p style={PARAGRAPH} id={this.state.id} className={this.state.className}>{CHILDS[0]}</p>
         )
     }
 }
@@ -931,7 +931,7 @@ export class Paragraph3 extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <p style={PARAGRAPH}>{CHILDS[0]}</p>
+            <p style={PARAGRAPH} id={this.state.id} className={this.state.className}>{CHILDS[0]}</p>
         )
     }
 }
@@ -968,7 +968,7 @@ export class Paragraph4 extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <p style={PARAGRAPH}>{CHILDS[0]}</p>
+            <p style={PARAGRAPH} id={this.state.id} className={this.state.className}>{CHILDS[0]}</p>
         )
     }
 }
@@ -1009,7 +1009,7 @@ export class Paragraph5 extends Component {
 
         //cannt implement without being able to pass multiple styles
         return (
-            <p style={PARAGRAPH}>{CHILDS[0]}</p>
+            <p style={PARAGRAPH} id={this.state.id} className={this.state.className}>{CHILDS[0]}</p>
         )
     }
 }
@@ -1021,19 +1021,19 @@ export class PullQuote1 extends Component {
         this.state = {
 
             blockid: props.blockid,
-            textid: props.testid,
+            textid: props.textid,
             citeid: props.citeid,
-            blockclassName: props.blockClassName,
-            textclassName: props.textClassName,
-            citeclassName: props.citeClassName,
+            blockClassName: props.blockClassName,
+            textClassName: props.textClassName,
+            citeClassName: props.citeClassName,
         }
     }
     render() {
         const CHILDS = React.Children.toArray(this.props.children.split('\\'))
         return (
-            <blockquote className="pullQuote1">
-                <p className="pullQuote1-text">{CHILDS[0]}</p>
-                <cite>{CHILDS[1]}</cite>
+            <blockquote id={this.state.blockid} className={`pullQuote1 ${this.state.blockClassName}`}>
+                <p id={this.state.textid} className={`pullQuote1-text ${this.state.textClassName}`}>{CHILDS[0]}</p>
+                <cite id={this.state.citeid} className={this.state.citeClassName}>{CHILDS[1]}</cite>
             </blockquote>
         )
     }
@@ -1054,9 +1054,9 @@ export class PullQuote2 extends Component {
     render() {
         const CHILDS = React.Children.toArray(this.props.children.split('\\'))
         return (
-            <blockquote className="pullQuote2">
-                <p className="pullQuote2-text">{CHILDS[0]}</p>
-                <cite>{CHILDS[1]}</cite>
+            <blockquote id={this.state.blockid} className={`pullQuote2 ${this.state.blockClassName}`}>
+                <p id={this.state.textid} className={`pullQuote2-text ${this.state.textClassName}`}>{CHILDS[0]}</p>
+                <cite id={this.state.citeid} className={this.state.citeClassName}>{CHILDS[1]}</cite>
             </blockquote>
         )
     }
@@ -1080,7 +1080,7 @@ export class CircleImage extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <img style={CIRCLEIMG} className={`img-${this.state.size}`} src={CHILDS[0]} alt={CHILDS[1]} />
+            <img style={CIRCLEIMG} id={this.state.id} className={`img-${this.state.size} ${this.state.className}`} src={CHILDS[0]} alt={CHILDS[1]} />
         )
     }
 }
@@ -1102,7 +1102,7 @@ export class RoundedImage extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <img style={ROUNDEDIMG} className={`img-${this.state.size}`} src={CHILDS[0]} alt={CHILDS[1]} />
+            <img style={ROUNDEDIMG} id={this.state.id} className={`img-${this.state.size} ${this.state.className}`} src={CHILDS[0]} alt={CHILDS[1]} />
         )
     }
 }
@@ -1124,7 +1124,7 @@ export class OvalImage extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <img style={OVALIMG} className={`img-${this.state.size}`} src={CHILDS[0]} alt={CHILDS[1]} />
+            <img style={OVALIMG} id={this.state.id} className={`img-${this.state.size} ${this.state.className}`} src={CHILDS[0]} alt={CHILDS[1]} />
         )
     }
 }
@@ -1142,7 +1142,7 @@ export class SquareImage extends Component {
     render() {
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <img className={`img-${this.state.size}`} src={CHILDS[0]} alt={CHILDS[1]} />
+            <img id={this.state.id} className={`img-${this.state.size} ${this.state.className}`} src={CHILDS[0]} alt={CHILDS[1]} />
         )
     }
 }
@@ -1164,7 +1164,7 @@ export class RoundedRectangleImage extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <img style={ROUNDEDRECTANGLEIMG} className={`recimg-${this.state.size}`} src={CHILDS[0]} alt={CHILDS[1]} />
+            <img style={ROUNDEDRECTANGLEIMG} id={this.state.id} className={`recimg-${this.state.size} ${this.state.className}`} src={CHILDS[0]} alt={CHILDS[1]} />
         )
     }
 }
@@ -1187,7 +1187,7 @@ export class RectangleImage extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <img style={image} className={`recimg-${this.state.size}`} src={CHILDS[0]} alt={CHILDS[1]} />
+            <img style={image} id={this.state.id} className={`recimg-${this.state.size} ${this.state.className}`} src={CHILDS[0]} alt={CHILDS[1]} />
         )
     }
 }
@@ -1209,7 +1209,7 @@ export class TallRoundedRectangleImage extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <img style={TALLROUNDEDRECTANGLEIMG} className={`tallrecimg-${this.state.size}`} src={CHILDS[0]} alt={CHILDS[1]} />
+            <img style={TALLROUNDEDRECTANGLEIMG} id={this.state.id} className={`tallrecimg-${this.state.size} ${this.state.className}`} src={CHILDS[0]} alt={CHILDS[1]} />
         )
     }
 }
@@ -1230,7 +1230,7 @@ export class TallRectangleImage extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <img style={image} className={`tallrecimg-${this.state.size}`} src={CHILDS[0]} alt={CHILDS[1]} />
+            <img style={image} id={this.state.id} className={`tallrecimg-${this.state.size} ${this.state.className}`} src={CHILDS[0]} alt={CHILDS[1]} />
         )
     }
 }
@@ -1242,7 +1242,9 @@ export class Figure extends Component {
         this.state = {
             size: props.size || 'sm',
             figid: props.figid,
+            figCapid: props.figCapid,
             figClassName: props.figClassName,
+            figCapClassName: props.figCapClassName,
         }
     }
     render() {
@@ -1253,9 +1255,9 @@ export class Figure extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <figure>
+            <figure id={this.state.figid} className={this.state.figClassName}>
                 {CHILDS[0]}
-                <figcaption style={CAPTION}>
+                <figcaption style={CAPTION} id={this.state.figCapid} className={this.state.figCapClassName}>
                     {CHILDS[1]}
                 </figcaption>
             </figure>
@@ -1296,7 +1298,7 @@ export class Hero1 extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <div style={HEROSTYLE}>
+            <div style={HEROSTYLE} id={this.state.id} className={this.state.className}>
                 <Holder7>
                     {CHILDS[0]}
                     {CHILDS[2]}
@@ -1350,8 +1352,8 @@ export class Hero2 extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <div style={HEROSTYLE}>
-                <div style={BOTTOMBACKGROUND}>
+            <div style={HEROSTYLE} id={this.state.heroid} className={this.state.heroClassName}>
+                <div style={BOTTOMBACKGROUND} id={this.state.bottomid} className={this.state.bottomClassName}>
                     <Holder5>
                         {CHILDS[0]}
                     </Holder5>
@@ -1390,7 +1392,7 @@ export class Hero3 extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <div style={HEROSTYLE}>
+            <div style={HEROSTYLE} id={this.state.id} className={this.state.className}>
                 <Holder1>
                     {CHILDS[0]}
                 </Holder1>
@@ -1428,7 +1430,7 @@ export class Hero4 extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <div style={HEROSTYLE}>
+            <div style={HEROSTYLE} id={this.state.id} className={this.state.className}>
                 <Holder1>
                     {CHILDS[2]}
                     {CHILDS[0]}
@@ -1467,7 +1469,7 @@ export class Hero5 extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <div style={HEROSTYLE}>
+            <div style={HEROSTYLE} id={this.state.id} className={this.state.className}>
                 <Holder7>
                     {CHILDS[0]}
                     <Holder2>
@@ -1503,7 +1505,7 @@ export class FlatButton1 extends Component {
     render() {
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <button className="flatButton1"
+            <button id={this.state.id} className={`flatButton1 ${this.state.className}`}
                 onClick={this.state.onClick}>{CHILDS[0]}</button>
         )
     }
@@ -1521,7 +1523,7 @@ export class FlatButton2 extends Component {
     render() {
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <button className="flatButton2">{CHILDS[0]}</button>
+            <button id={this.state.id} className={`flatButton2 ${this.state.className}`}>{CHILDS[0]}</button>
         )
     }
 }
@@ -1554,7 +1556,7 @@ export class RaisedButton1 extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <button style={BUTTONSTYLE} className="raisedButton1">
+            <button style={BUTTONSTYLE} id={this.state.id} className={`raisedButton1 ${this.state.className}`}>
                 <div style={BUTTONCOLOR}>
                     {CHILDS[0]}
                 </div>
@@ -3081,7 +3083,7 @@ export class NumberList1 extends Component {
             )
         })
         return (
-            <ol style={LISTSTYLE}>
+            <ol style={LISTSTYLE} id={this.state.id} className={this.state.className}>
                 {LIST}
             </ol>
         )
@@ -3139,7 +3141,7 @@ export class NumberList2 extends Component {
             )
         })
         return (
-            <ol style={LISTSTYLE} className="bigList">
+            <ol style={LISTSTYLE} id={this.state.id} className={`bigList ${this.state.className}`}>
                 {LIST}
             </ol>
         )
@@ -3198,7 +3200,7 @@ export class NumberList3 extends Component {
             )
         })
         return (
-            <ol style={LISTSTYLE}>
+            <ol style={LISTSTYLE} id={this.state.id} className={this.state.className}>
                 {LIST}
             </ol>
         )
@@ -3262,7 +3264,7 @@ export class BulletList1 extends Component {
             )
         })
         return (
-            <ul style={LISTSTYLE}>
+            <ul style={LISTSTYLE} id={this.state.id} className={this.state.className}>
                 {LIST}
             </ul>
         )
@@ -3320,7 +3322,7 @@ export class BulletList2 extends Component {
             )
         })
         return (
-            <ul style={LISTSTYLE}>
+            <ul style={LISTSTYLE} id={this.state.id} className={this.state.className}>
                 {LIST}
             </ul>
         )
