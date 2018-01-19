@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Navigation from '../../Navigation';
 import FooterNavigation from '../../FooterNavigation';
 
-import { Block2, MainHeading1, Heading1, SubHeading4, HorizontalTestBlock1, SubNavbar1 } from '../../../Components 1.0.0/Blocks';
+import { Block2, H11, H21, H34, HorizontalTestBlock1, SubNavbar1 } from '../../../Components 1.0.0/Blocks';
 
 import { Holder7 } from '../../../Components 1.0.0/Holders';
 
@@ -20,9 +20,9 @@ export default class Holder7View extends Component {
             <section>
                 <Navigation />
                 <Container1>
-                    <MainHeading1>
+                    <H11>
                         Holder 7
-                    </MainHeading1>
+                    </H11>
                 </Container1>
                 <SubNavbar1>
                     <Link to="/containers">containers</Link>
@@ -32,9 +32,9 @@ export default class Holder7View extends Component {
 
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <SubHeading4>
+                    <H34>
                         container 1
-                    </SubHeading4>
+                    </H34>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
@@ -47,9 +47,9 @@ export default class Holder7View extends Component {
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <SubHeading4>
+                    <H34>
                         container 2
-                    </SubHeading4>
+                    </H34>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container2>
@@ -68,9 +68,9 @@ export default class Holder7View extends Component {
                 </Container2>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <SubHeading4>
+                    <H34>
                         container 3
-                    </SubHeading4>
+                    </H34>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container3>
@@ -95,9 +95,9 @@ export default class Holder7View extends Component {
                 </Container3>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <SubHeading4>
+                    <H34>
                         container 4
-                    </SubHeading4>
+                    </H34>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container4>
@@ -128,9 +128,9 @@ export default class Holder7View extends Component {
                 </Container4>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <SubHeading4>
+                    <H34>
                         container 5
-                    </SubHeading4>
+                    </H34>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container5>

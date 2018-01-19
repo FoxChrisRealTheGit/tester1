@@ -6,10 +6,10 @@ import FooterNavigation from '../FooterNavigation';
 import Container1 from '../../Components 1.0.0/Containers';
 import { Holder5 } from '../../Components 1.0.0/Holders';
 import {
-    MainHeading1,
+    H11,
     SubNavbar1,
     HorizontalTestBlock1,
-    SubHeading4,
+    H34,
     Table1,
     Table2,
     Table3,
@@ -23,9 +23,9 @@ export default class TableBlocksView extends Component {
                 <Navigation />
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <MainHeading1>
+                    <H11>
                         Table Blocks
-                    </MainHeading1>
+                    </H11>
                 </Container1>
                 <SubNavbar1
                     navbarWidth="70%">
@@ -44,9 +44,9 @@ export default class TableBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <Container1>
                     <Holder5>
-                        <SubHeading4>
+                        <H34>
                             Table 1
-                        </SubHeading4>
+                        </H34>
                         <Table1>
 
                         </Table1>
@@ -55,9 +55,9 @@ export default class TableBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <Container1>
                     <Holder5>
-                        <SubHeading4>
+                        <H34>
                             Table 2
-                        </SubHeading4>
+                        </H34>
                         <Table2>
 
                         </Table2>
@@ -66,9 +66,9 @@ export default class TableBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <Container1>
                     <Holder5>
-                        <SubHeading4>
+                        <H34>
                             Table 3
-                        </SubHeading4>
+                        </H34>
                         <Table3>
 
                         </Table3>
@@ -77,9 +77,9 @@ export default class TableBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <Container1>
                     <Holder5>
-                        <SubHeading4>
+                        <H34>
                             Pie Chart 1
-                        </SubHeading4>
+                        </H34>
                         <PieChart1>
 
                         </PieChart1>

@@ -8,8 +8,8 @@ import chrischillin from '../../images/Chris-hangingout.jpg';
 import Container1 from '../../Components 1.0.0/Containers';
 import { Holder5 } from '../../Components 1.0.0/Holders';
 import {
-    MainHeading1,
-    SubHeading4,
+    H11,
+    H34,
     SubNavbar1,
     HorizontalTestBlock1,
     CircleImage,
@@ -26,8 +26,8 @@ import {
     Hero3,
     Hero4,
     Hero5,
-    Heading2,
-    Paragraph2,
+    H22,
+    P2,
 } from '../../Components 1.0.0/Blocks';
 
 export default class ImageBlocksView extends Component {
@@ -37,9 +37,9 @@ export default class ImageBlocksView extends Component {
                 <Navigation />
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <MainHeading1>
+                    <H11>
                         Images
-                    </MainHeading1>
+                    </H11>
                 </Container1>
                 <SubNavbar1
                     navbarWidth="70%">
@@ -58,9 +58,9 @@ export default class ImageBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Circle Image tn
-                    </SubHeading4>
+                    </H34>
                     <CircleImage
                         size="tn">
                         {chrischillin}
@@ -69,9 +69,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Circle Image exsm
-                    </SubHeading4>
+                    </H34>
                     <CircleImage
                         size="exsm">
                         {chrischillin}
@@ -80,9 +80,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Circle Image sm
-                    </SubHeading4>
+                    </H34>
                     <CircleImage
                         size="sm">
                         {chrischillin}
@@ -91,9 +91,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Circle Image md
-                    </SubHeading4>
+                    </H34>
                     <CircleImage
                         size="md">
                         {chrischillin}
@@ -102,9 +102,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Circle Image lg
-                    </SubHeading4>
+                    </H34>
                     <CircleImage
                         size="lg">
                         {chrischillin}
@@ -113,9 +113,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Circle Image exlg
-                    </SubHeading4>
+                    </H34>
                     <CircleImage
                         size="exlg">
                         {chrischillin}
@@ -125,9 +125,9 @@ export default class ImageBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Oval Image tn
-                    </SubHeading4>
+                    </H34>
                     <OvalImage
                         size="tn">
                         {chrischillin}
@@ -136,9 +136,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Oval Image exsm
-                    </SubHeading4>
+                    </H34>
                     <OvalImage
                         size="exsm">
                         {chrischillin}
@@ -147,9 +147,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Oval Image sm
-                    </SubHeading4>
+                    </H34>
                     <OvalImage
                         size="sm">
                         {chrischillin}
@@ -158,9 +158,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Oval Image md
-                    </SubHeading4>
+                    </H34>
                     <OvalImage
                         size="md">
                         {chrischillin}
@@ -169,9 +169,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Oval Image lg
-                    </SubHeading4>
+                    </H34>
                     <OvalImage
                         size="lg">
                         {chrischillin}
@@ -180,9 +180,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Oval Image exlg
-                    </SubHeading4>
+                    </H34>
                     <OvalImage
                         size="exlg">
                         {chrischillin}
@@ -192,9 +192,9 @@ export default class ImageBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Rounded Image tn
-                    </SubHeading4>
+                    </H34>
                     <RoundedImage
                         size="tn">
                         {chrischillin}
@@ -203,9 +203,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Rounded Image exsm
-                    </SubHeading4>
+                    </H34>
                     <RoundedImage
                         size="exsm">
                         {chrischillin}
@@ -214,9 +214,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Rounded Image sm
-                    </SubHeading4>
+                    </H34>
                     <RoundedImage
                         size="sm">
                         {chrischillin}
@@ -225,9 +225,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Rounded Image md
-                    </SubHeading4>
+                    </H34>
                     <RoundedImage
                         size="md">
                         {chrischillin}
@@ -236,9 +236,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Rounded Image lg
-                    </SubHeading4>
+                    </H34>
                     <RoundedImage
                         size="lg">
                         {chrischillin}
@@ -247,9 +247,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Rounded Image exlg
-                    </SubHeading4>
+                    </H34>
                     <RoundedImage
                         size="exlg">
                         {chrischillin}
@@ -259,9 +259,9 @@ export default class ImageBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Square Image tn
-                    </SubHeading4>
+                    </H34>
                     <SquareImage
                         size="tn">
                         {chrischillin}
@@ -270,9 +270,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Square Image exsm
-                    </SubHeading4>
+                    </H34>
                     <SquareImage
                         size="exsm">
                         {chrischillin}
@@ -281,9 +281,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Square Image sm
-                    </SubHeading4>
+                    </H34>
                     <SquareImage
                         size="sm">
                         {chrischillin}
@@ -291,9 +291,9 @@ export default class ImageBlocksView extends Component {
                     </SquareImage>
                 </Holder5>
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Square Image md
-                    </SubHeading4>
+                    </H34>
                     <SquareImage
                         size="md">
                         {chrischillin}
@@ -302,9 +302,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Square Image lg
-                    </SubHeading4>
+                    </H34>
                     <SquareImage
                         size="lg">
                         {chrischillin}
@@ -313,9 +313,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Square Image exlg
-                    </SubHeading4>
+                    </H34>
                     <SquareImage
                         size="exlg">
                         {chrischillin}
@@ -325,9 +325,9 @@ export default class ImageBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Rounded Rectangle Image tn
-                    </SubHeading4>
+                    </H34>
                     <RoundedRectangleImage
                         size="tn">
                         {chrischillin}
@@ -336,9 +336,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Rounded Rectangle Image exsm
-                    </SubHeading4>
+                    </H34>
                     <RoundedRectangleImage
                         size="exsm">
                         {chrischillin}
@@ -347,9 +347,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Rounded Rectangle Image sm
-                    </SubHeading4>
+                    </H34>
                     <RoundedRectangleImage
                         size="sm">
                         {chrischillin}
@@ -358,9 +358,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Rounded Rectangle Image md
-                    </SubHeading4>
+                    </H34>
                     <RoundedRectangleImage
                         size="md">
                         {chrischillin}
@@ -369,9 +369,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Rounded Rectangle Image lg
-                    </SubHeading4>
+                    </H34>
                     <RoundedRectangleImage
                         size="lg">
                         {chrischillin}
@@ -380,9 +380,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Rounded Rectangle Image exlg
-                    </SubHeading4>
+                    </H34>
                     <RoundedRectangleImage
                         size="exlg">
                         {chrischillin}
@@ -392,9 +392,9 @@ export default class ImageBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Rectangle Image tn
-                    </SubHeading4>
+                    </H34>
                     <RectangleImage
                         size="tn">
                         {chrischillin}
@@ -403,9 +403,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Rectangle Image exsm
-                    </SubHeading4>
+                    </H34>
                     <RectangleImage
                         size="exsm">
                         {chrischillin}
@@ -414,9 +414,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Rectangle Image sm
-                    </SubHeading4>
+                    </H34>
                     <RectangleImage
                         size="sm">
                         {chrischillin}
@@ -425,9 +425,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Rectangle Image md
-                    </SubHeading4>
+                    </H34>
                     <RectangleImage
                         size="md">
                         {chrischillin}
@@ -436,9 +436,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Rectangle Image lg
-                    </SubHeading4>
+                    </H34>
                     <RectangleImage
                         size="lg">
                         {chrischillin}
@@ -447,9 +447,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Rectangle Image exlg
-                    </SubHeading4>
+                    </H34>
                     <RectangleImage
                         size="exlg">
                         {chrischillin}
@@ -459,9 +459,9 @@ export default class ImageBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Tall Rounded Rectangle Image tn
-                    </SubHeading4>
+                    </H34>
                     <TallRoundedRectangleImage
                         size="tn">
                         {chrischillin}
@@ -470,9 +470,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Tall Rounded Rectangle Image exsm
-                    </SubHeading4>
+                    </H34>
                     <TallRoundedRectangleImage
                         size="exsm">
                         {chrischillin}
@@ -481,9 +481,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Tall Rounded Rectangle Image sm
-                    </SubHeading4>
+                    </H34>
                     <TallRoundedRectangleImage
                         size="sm">
                         {chrischillin}
@@ -492,9 +492,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Tall Rounded Rectangle Image md
-                    </SubHeading4>
+                    </H34>
                     <TallRoundedRectangleImage
                         size="md">
                         {chrischillin}
@@ -503,9 +503,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Tall Rounded Rectangle Image lg
-                    </SubHeading4>
+                    </H34>
                     <TallRoundedRectangleImage
                         size="lg">
                         {chrischillin}
@@ -514,9 +514,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Tall Rounded Rectangle Image exlg
-                    </SubHeading4>
+                    </H34>
                     <TallRoundedRectangleImage
                         size="exlg">
                         {chrischillin}
@@ -526,9 +526,9 @@ export default class ImageBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Tall Rectangle Image tn
-                    </SubHeading4>
+                    </H34>
                     <TallRectangleImage
                         size="tn">
                         {chrischillin}
@@ -537,9 +537,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Tall Rectangle Image exsm
-                    </SubHeading4>
+                    </H34>
                     <TallRectangleImage
                         size="exsm">
                         {chrischillin}
@@ -548,9 +548,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Tall Rectangle Image sm
-                    </SubHeading4>
+                    </H34>
                     <TallRectangleImage
                         size="sm">
                         {chrischillin}
@@ -559,9 +559,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Tall Rectangle Image md
-                    </SubHeading4>
+                    </H34>
                     <TallRectangleImage
                         size="md">
                         {chrischillin}
@@ -570,9 +570,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Tall Rectangle Image lg
-                    </SubHeading4>
+                    </H34>
                     <TallRectangleImage
                         size="lg">
                         {chrischillin}
@@ -581,9 +581,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Tall Rectangle Image exlg
-                    </SubHeading4>
+                    </H34>
                     <TallRectangleImage
                         size="exlg">
                         {chrischillin}
@@ -593,9 +593,9 @@ export default class ImageBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Figure
-                    </SubHeading4>
+                    </H34>
                     <Figure>
                         <CircleImage
                             size="md">
@@ -608,33 +608,33 @@ export default class ImageBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Hero Image 1
-                    </SubHeading4>
+                    </H34>
                     <Hero1
                         height="500px"
                         image={`url(${chrischillin})`}>
-                        <Heading2>title of awesomeness</Heading2>
+                        <H22>title of awesomeness</H22>
                         <button>button of coolness</button>
-                        <Paragraph2>A descriptive super sweet tagline</Paragraph2>
+                        <P2>A descriptive super sweet tagline</P2>
                     </Hero1>
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Hero Image 2
-                    </SubHeading4>
+                    </H34>
                     <Hero2
                         height="500px"
                         image={`url(${chrischillin})`}>
-                        <Paragraph2>Something really cool and neat and super awesome</Paragraph2>
+                        <P2>Something really cool and neat and super awesome</P2>
                     </Hero2>
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Hero Image 3
-                    </SubHeading4>
+                    </H34>
                     <Hero3
                         height="500px"
                         image={`url(${chrischillin})`}>
@@ -643,9 +643,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Hero Image 4
-                    </SubHeading4>
+                    </H34>
                     <Hero4
                         height="500px"
                         image={`url(${chrischillin})`}>
@@ -654,9 +654,9 @@ export default class ImageBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Hero Image 5
-                    </SubHeading4>
+                    </H34>
                     <Hero5
                         height="500px"
                         image={`url(${chrischillin})`}>

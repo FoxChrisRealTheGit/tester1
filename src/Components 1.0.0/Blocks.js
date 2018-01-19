@@ -68,7 +68,7 @@ Blocks Description and use
 */
 /* Start of Heading Blocks */
 /* Start of h1 Main Heading */
-export class MainHeading1 extends Component {
+export class H11 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -78,6 +78,7 @@ export class MainHeading1 extends Component {
             fontWeight: props.weight || '900',
             display: props.display || 'flex',
             align: props.align || 'center',
+            textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 15px 0',
             margin: props.margin || '0',
             id: props.id,
@@ -95,6 +96,7 @@ export class MainHeading1 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            textAlign: this.state.textAlign,
             padding: this.state.padding,
             margin: this.state.margin,
             overflowX: 'hidden',
@@ -107,7 +109,7 @@ export class MainHeading1 extends Component {
         )
     }
 }
-export class MainHeading2 extends Component {
+export class H12 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -117,6 +119,7 @@ export class MainHeading2 extends Component {
             fontWeight: props.weight || '900',
             display: props.display || 'flex',
             align: props.align || 'center',
+            textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 15px 0',
             margin: props.margin || '0',
             id: props.id,
@@ -133,6 +136,7 @@ export class MainHeading2 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            textAlign: this.state.textAlign,
             padding: this.state.padding,
             margin: this.state.margin,
             overflowX: 'hidden',
@@ -145,7 +149,7 @@ export class MainHeading2 extends Component {
         )
     }
 }
-export class MainHeading3 extends Component {
+export class H13 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -155,6 +159,7 @@ export class MainHeading3 extends Component {
             fontWeight: props.weight || '900',
             display: props.display || 'flex',
             align: props.align || 'center',
+            textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 15px 0',
             margin: props.margin || '0',
             id: props.id,
@@ -171,6 +176,7 @@ export class MainHeading3 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            textAlign: this.state.textAlign,
             padding: this.state.padding,
             margin: this.state.margin,
             overflowX: 'hidden',
@@ -182,7 +188,7 @@ export class MainHeading3 extends Component {
         )
     }
 }
-export class MainHeading4 extends Component {
+export class H14 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -192,6 +198,7 @@ export class MainHeading4 extends Component {
             fontWeight: props.weight || '900',
             display: props.display || 'flex',
             align: props.align || 'center',
+            textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 15px 0',
             margin: props.margin || '0',
             id: props.id,
@@ -208,6 +215,7 @@ export class MainHeading4 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            textAlign: this.state.textAlign,
             padding: this.state.padding,
             margin: this.state.margin,
             overflowX: 'hidden',
@@ -219,7 +227,7 @@ export class MainHeading4 extends Component {
         )
     }
 }
-export class MainHeading5 extends Component {
+export class H15 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -229,6 +237,7 @@ export class MainHeading5 extends Component {
             fontWeight: props.weight || '900',
             display: props.display || 'flex',
             align: props.align || 'center',
+            textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 15px 0',
             margin: props.margin || '0',
             id: props.id,
@@ -245,6 +254,7 @@ export class MainHeading5 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            textAlign: this.state.textAlign,
             padding: this.state.padding,
             margin: this.state.margin,
             overflowX: 'hidden',
@@ -258,7 +268,7 @@ export class MainHeading5 extends Component {
 }
 /* End of h1 Main Heading */
 /* Start of h2 Heading */
-export class Heading1 extends Component {
+export class H21 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -268,6 +278,7 @@ export class Heading1 extends Component {
             fontWeight: props.weight || '600',
             display: props.display || 'flex',
             align: props.align || 'center',
+            textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
             id: props.id,
@@ -284,6 +295,7 @@ export class Heading1 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            textAlign: this.state.textAlign,
             padding: this.state.padding,
             margin: this.state.margin,
             overflowX: 'hidden',
@@ -295,7 +307,7 @@ export class Heading1 extends Component {
         )
     }
 }
-export class Heading2 extends Component {
+export class H22 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -305,6 +317,7 @@ export class Heading2 extends Component {
             fontWeight: props.weight || '600',
             display: props.display || 'flex',
             align: props.align || 'center',
+            textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
             id: props.id,
@@ -321,6 +334,7 @@ export class Heading2 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            textAlign: this.state.textAlign,
             padding: this.state.padding,
             margin: this.state.margin,
             overflowX: 'hidden',
@@ -332,7 +346,7 @@ export class Heading2 extends Component {
         )
     }
 }
-export class Heading3 extends Component {
+export class H23 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -342,6 +356,7 @@ export class Heading3 extends Component {
             fontWeight: props.weight || '600',
             display: props.display || 'flex',
             align: props.align || 'center',
+            textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
             id: props.id,
@@ -358,6 +373,7 @@ export class Heading3 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            textAlign: this.state.textAlign,
             padding: this.state.padding,
             margin: this.state.margin,
             overflowX: 'hidden',
@@ -369,7 +385,7 @@ export class Heading3 extends Component {
         )
     }
 }
-export class Heading4 extends Component {
+export class H24 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -379,6 +395,7 @@ export class Heading4 extends Component {
             fontWeight: props.weight || '600',
             display: props.display || 'flex',
             align: props.align || 'center',
+            textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
             id: props.id,
@@ -395,6 +412,7 @@ export class Heading4 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            textAlign: this.state.textAlign,
             padding: this.state.padding,
             margin: this.state.margin,
             overflowX: 'hidden',
@@ -406,7 +424,7 @@ export class Heading4 extends Component {
         )
     }
 }
-export class Heading5 extends Component {
+export class H25 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -416,6 +434,7 @@ export class Heading5 extends Component {
             fontWeight: props.weight || '600',
             display: props.display || 'flex',
             align: props.align || 'center',
+            textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
             id: props.id,
@@ -432,6 +451,7 @@ export class Heading5 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            textAlign: this.state.textAlign,
             padding: this.state.padding,
             margin: this.state.margin,
             overflowX: 'hidden',
@@ -445,7 +465,7 @@ export class Heading5 extends Component {
 }
 /* End of h2 Heading */
 /* Start of h3 SubHeading */
-export class SubHeading1 extends Component {
+export class H31 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -455,6 +475,7 @@ export class SubHeading1 extends Component {
             fontWeight: props.weight || '400',
             display: props.display || 'flex',
             align: props.align || 'center',
+            textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
             id: props.id,
@@ -471,6 +492,7 @@ export class SubHeading1 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            textAlign: this.state.textAlign,
             padding: this.state.padding,
             margin: this.state.margin,
             overflowX: 'hidden',
@@ -482,7 +504,7 @@ export class SubHeading1 extends Component {
         )
     }
 }
-export class SubHeading2 extends Component {
+export class H32 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -492,6 +514,7 @@ export class SubHeading2 extends Component {
             fontWeight: props.weight || '400',
             display: props.display || 'flex',
             align: props.align || 'center',
+            textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
             id: props.id,
@@ -508,6 +531,7 @@ export class SubHeading2 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            textAlign: this.state.textAlign,
             padding: this.state.padding,
             margin: this.state.margin,
             overflowX: 'hidden',
@@ -519,7 +543,7 @@ export class SubHeading2 extends Component {
         )
     }
 }
-export class SubHeading3 extends Component {
+export class H33 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -529,6 +553,7 @@ export class SubHeading3 extends Component {
             fontWeight: props.weight || '400',
             display: props.display || 'flex',
             align: props.align || 'center',
+            textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
             id: props.id,
@@ -545,6 +570,7 @@ export class SubHeading3 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            textAlign: this.state.textAlign,
             padding: this.state.padding,
             margin: this.state.margin,
             overflowX: 'hidden',
@@ -556,7 +582,7 @@ export class SubHeading3 extends Component {
         )
     }
 }
-export class SubHeading4 extends Component {
+export class H34 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -566,6 +592,7 @@ export class SubHeading4 extends Component {
             fontWeight: props.weight || '400',
             display: props.display || 'flex',
             align: props.align || 'center',
+            textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
             id: props.id,
@@ -583,6 +610,7 @@ export class SubHeading4 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            textAlign: this.state.textAlign,
             padding: this.state.padding,
             margin: this.state.margin,
             overflowX: 'hidden',
@@ -594,7 +622,7 @@ export class SubHeading4 extends Component {
         )
     }
 }
-export class SubHeading5 extends Component {
+export class H35 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -604,6 +632,7 @@ export class SubHeading5 extends Component {
             fontWeight: props.weight || '400',
             display: props.display || 'flex',
             align: props.align || 'center',
+            textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
             id: props.id,
@@ -620,6 +649,7 @@ export class SubHeading5 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            textAlign: this.state.textAlign,
             padding: this.state.padding,
             margin: this.state.margin,
             overflowX: 'hidden',
@@ -633,7 +663,7 @@ export class SubHeading5 extends Component {
 }
 /* End of h3 SubHeading */
 /* Start of h4 Secondary SubHeading */
-export class SecondarySubHeading1 extends Component {
+export class H41 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -643,6 +673,7 @@ export class SecondarySubHeading1 extends Component {
             fontWeight: props.weight || '200',
             display: props.display || 'flex',
             align: props.align || 'center',
+            textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 3px 0',
             margin: props.margin || '0',
             id: props.id,
@@ -659,6 +690,7 @@ export class SecondarySubHeading1 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            textAlign: this.state.textAlign,
             padding: this.state.padding,
             margin: this.state.margin,
             overflowX: 'hidden',
@@ -671,7 +703,7 @@ export class SecondarySubHeading1 extends Component {
         )
     }
 }
-export class SecondarySubHeading2 extends Component {
+export class H42 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -681,6 +713,7 @@ export class SecondarySubHeading2 extends Component {
             fontWeight: props.weight || '200',
             display: props.display || 'flex',
             align: props.align || 'center',
+            textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 3px 0',
             margin: props.margin || '0',
             id: props.id,
@@ -697,6 +730,7 @@ export class SecondarySubHeading2 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            textAlign: this.state.textAlign,
             padding: this.state.padding,
             margin: this.state.margin,
             overflowX: 'hidden',
@@ -708,7 +742,7 @@ export class SecondarySubHeading2 extends Component {
         )
     }
 }
-export class SecondarySubHeading3 extends Component {
+export class H43 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -718,6 +752,7 @@ export class SecondarySubHeading3 extends Component {
             fontWeight: props.weight || '200',
             display: props.display || 'flex',
             align: props.align || 'center',
+            textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 3px 0',
             margin: props.margin || '0',
             id: props.id,
@@ -734,6 +769,7 @@ export class SecondarySubHeading3 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            textAlign: this.state.textAlign,
             padding: this.state.padding,
             margin: this.state.margin,
             overflowX: 'hidden',
@@ -745,7 +781,7 @@ export class SecondarySubHeading3 extends Component {
         )
     }
 }
-export class SecondarySubHeading4 extends Component {
+export class H44 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -755,6 +791,7 @@ export class SecondarySubHeading4 extends Component {
             fontWeight: props.weight || '200',
             display: props.display || 'flex',
             align: props.align || 'center',
+            textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 3px 0',
             margin: props.margin || '0',
             id: props.id,
@@ -771,6 +808,7 @@ export class SecondarySubHeading4 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            textAlign: this.state.textAlign,
             padding: this.state.padding,
             margin: this.state.margin,
             overflowX: 'hidden',
@@ -782,7 +820,7 @@ export class SecondarySubHeading4 extends Component {
         )
     }
 }
-export class SecondarySubHeading5 extends Component {
+export class H45 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -792,6 +830,7 @@ export class SecondarySubHeading5 extends Component {
             fontWeight: props.weight || '200',
             display: props.display || 'flex',
             align: props.align || 'center',
+            textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 3px 0',
             margin: props.margin || '0',
             id: props.id,
@@ -808,6 +847,7 @@ export class SecondarySubHeading5 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            textAlign: this.state.textAlign,
             padding: this.state.padding,
             margin: this.state.margin,
             overflowX: 'hidden',
@@ -823,7 +863,7 @@ export class SecondarySubHeading5 extends Component {
 /* End of Heading Blocks */
 /* Start of Paragraph Blocks */
 /* Start of Basic Paragraph Blocks */
-export class Paragraph1 extends Component {
+export class P1 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -834,6 +874,7 @@ export class Paragraph1 extends Component {
             fontWeight: props.weight || '400',
             display: props.display || 'flex',
             align: props.align || 'center',
+            textAlign: props.textAlign || 'center',
             padding: props.padding || '10px 10%',
             margin: props.margin || '0',
             id: props.id,
@@ -851,6 +892,7 @@ export class Paragraph1 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            textAlign: this.state.textAlign,
             padding: this.state.padding,
             margin: this.state.margin,
         }
@@ -861,7 +903,7 @@ export class Paragraph1 extends Component {
         )
     }
 }
-export class Paragraph2 extends Component {
+export class P2 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -872,6 +914,7 @@ export class Paragraph2 extends Component {
             fontWeight: props.weight || '400',
             display: props.display || 'flex',
             align: props.align || 'center',
+            textAlign: props.textAlign || 'center',
             padding: props.padding || '10px 10%',
             margin: props.margin || '0',
             id: props.id,
@@ -889,6 +932,7 @@ export class Paragraph2 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            textAlign: this.state.textAlign,
             padding: this.state.padding,
             margin: this.state.margin,
         }
@@ -898,7 +942,7 @@ export class Paragraph2 extends Component {
         )
     }
 }
-export class Paragraph3 extends Component {
+export class P3 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -909,6 +953,7 @@ export class Paragraph3 extends Component {
             fontWeight: props.weight || '400',
             display: props.display || 'flex',
             align: props.align || 'center',
+            textAlign: props.textAlign || 'center',
             padding: props.padding || '10px 10%',
             margin: props.margin || '0',
             id: props.id,
@@ -926,6 +971,7 @@ export class Paragraph3 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            textAlign: this.state.textAlign,
             padding: this.state.padding,
             margin: this.state.margin,
         }
@@ -935,7 +981,7 @@ export class Paragraph3 extends Component {
         )
     }
 }
-export class Paragraph4 extends Component {
+export class P4 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -946,6 +992,7 @@ export class Paragraph4 extends Component {
             fontWeight: props.weight || '400',
             display: props.display || 'flex',
             align: props.align || 'center',
+            textAlign: props.textAlign || 'center',
             padding: props.padding || '10px 10%',
             margin: props.margin || '0',
             id: props.id,
@@ -963,6 +1010,7 @@ export class Paragraph4 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            textAlign: this.state.textAlign,
             padding: this.state.padding,
             margin: this.state.margin,
         }
@@ -973,7 +1021,7 @@ export class Paragraph4 extends Component {
     }
 }
 
-export class Paragraph5 extends Component {
+export class P5 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -984,6 +1032,7 @@ export class Paragraph5 extends Component {
             fontWeight: props.weight || '400',
             display: props.display || 'flex',
             align: props.align || 'center',
+            textAlign: props.textAlign || 'center',
             padding: props.padding || '10px 10%',
             margin: props.margin || '0',
             id: props.id,
@@ -1001,6 +1050,7 @@ export class Paragraph5 extends Component {
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.align,
+            textAlign: this.state.textAlign,
             padding: this.state.padding,
             margin: this.state.margin,
 
@@ -1015,7 +1065,7 @@ export class Paragraph5 extends Component {
 }
 /* End of Basic Paragraph Blocks */
 /* Start of Pull Quotes */
-export class PullQuote1 extends Component {
+export class PLQ1 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -1038,7 +1088,7 @@ export class PullQuote1 extends Component {
         )
     }
 }
-export class PullQuote2 extends Component {
+export class PLQ2 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -1688,8 +1738,10 @@ export class SubNavbar1 extends Component {
             fontWeight: props.fontWeight || '100',
             fontVariant: props.fontVariant || 'none',
             navid: props.navid,
+            listid: props.listid,
             itemsid: props.itemsid,
             navClassName: props.navClassName,
+            listClassName: props.listClassName,
             itemsClassName: props.itemsClassName,
         }
     }
@@ -1728,11 +1780,11 @@ export class SubNavbar1 extends Component {
         };
         const CHILDS = React.Children.toArray(this.props.children)
         const NAVBAR = CHILDS.map((x, i) => {
-            return <li key={i} style={SUBNAVBAR_NAVBAR_LI}>{x}</li>
+            return <li key={i} style={SUBNAVBAR_NAVBAR_LI} id={this.state.itemsid} className={this.state.itemsClassName}>{x}</li>
         })
         return (
-            <nav style={SUBNAVBAR} className="subnavbar1 socialness">
-                <ul style={SUBNAVBAR_NAVBAR} className="subnavbar1-navbar">
+            <nav style={SUBNAVBAR} id={this.state.navid} className={`subnavbar1 socialness ${this.state.navClassName}`}>
+                <ul style={SUBNAVBAR_NAVBAR} id={this.state.listid} className={`subnavbar1-navbar ${this.state.listClassName}`}>
                     {NAVBAR}
                 </ul>
             </nav>
@@ -1817,17 +1869,17 @@ export class SubNavbar2 extends Component {
         return (
             <nav style={SUBNAVBAR} className="subnavbar2 socialness">
                 <Holder1>
-                    <ul style={SUBNAVBAR_NAVBAR1} className="subnavbar2-navbar1">
+                    <ul style={SUBNAVBAR_NAVBAR1} id={this.state.navid} className={`subnavbar2-navbar1 ${this.state.navClassName}`}>
                         {CHILDS[0]}
                         {CHILDS[1]}
                     </ul>
                     <Holder1
                         alignBlock1="flex-end"
                         alignBlock2="flex-start">
-                        <div className="subnavbar2-globalSearch">
+                        <div id={this.state.leftItemsid} className={`subnavbar2-globalSearch ${this.state.leftItemsClassName}`}>
                             <p>Search Holder</p>
                         </div>
-                        <ul style={SUBNAVBAR_NAVBAR2} className="subnavbar2-navbar2">
+                        <ul style={SUBNAVBAR_NAVBAR2} id={this.state.rightItemsid} className={`subnavbar2-navbar2 ${this.state.rightItemsClassName}`}>
                             {NAVBAR}
                         </ul>
                     </Holder1>
@@ -1913,7 +1965,7 @@ export class Brand1 extends Component {
                         size='tn'>
                         {CHILDS[0]}
                         logo
-                        </SquareImage>
+                    </SquareImage>
                 </a>
                 <a href={this.state.link}>
                     <p style={BRAND_NAME}>{CHILDS[1]}</p>
@@ -2077,12 +2129,12 @@ export class DropDownNav1 extends Component {
             return <li key={i} style={DropDown_NavBar_Li}>{arr[i + 1]}</li>
         })
         return (
-            <nav className="dropdownnav1">
-                <li style={HASCHILDS} className="DropDown"
+            <nav id={this.state.mainid} className={`dropdownnav1 ${this.state.mainClassName}`}>
+                <li style={HASCHILDS} id={this.state.titleid} className={`DropDown ${this.state.titleClassName}`}
                     onMouseOver={() => this.setState({ display: 'block' })}
                     onMouseOut={() => this.setState({ display: 'none' })}>
                     {CHILDS[0]}
-                    <ul style={DROPDOWN}>
+                    <ul style={DROPDOWN} id={this.state.itemsid} className={this.state.itemsClassName}>
                         {NAVBAR}
                     </ul>
                 </li>
@@ -2136,12 +2188,13 @@ export class DropDownNav3 extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <nav className="dropdownnav3">
+            <nav id={this.state.mainid} className={`dropdownnav3 ${this.state.mainClassName}`}>
                 <li style={HASCHILDS}
                     onMouseOver={() => this.setState({ display: 'block' })}
-                    onMouseOut={() => this.setState({ display: 'none' })}>
+                    onMouseOut={() => this.setState({ display: 'none' })}
+                    id={this.state.titleid} className={this.state.titleClassName}>
                     {CHILDS[0]}
-                    <ul style={DROPDOWN}>
+                    <ul style={DROPDOWN}id={this.state.itemsid} className={this.state.itemsClassName}>
                         <Holder2>
                             {CHILDS[1]}
                             {CHILDS[2]}
@@ -2211,12 +2264,12 @@ export class DropDownNav5 extends Component {
             return <li key={i} style={DropDown_NavBar_Li}>{arr[i + 1]}</li>
         })
         return (
-            <nav className="dropdownnav5">
-                <li style={HASCHILDS} className="DropDown_Side"
+            <nav id={this.state.mainid} className={`dropdownnav5 ${this.state.mainClassName}`}>
+                <li style={HASCHILDS} id={this.state.titleid} className={`DropDown_Side ${this.state.titleClassName}`}
                     onMouseOver={() => this.setState({ display: 'inline' })}
                     onMouseOut={() => this.setState({ display: 'none' })}>
                     {CHILDS[0]}
-                    <ul style={DROPDOWN}>
+                    <ul style={DROPDOWN} id={this.state.itemsid} className={this.state.itemsClassName}>
                         {NAVBAR}
                     </ul>
                 </li>
@@ -2338,12 +2391,12 @@ export class ImageSlider1 extends Component {
             )
         })
         return (
-            <div style={WRAP}>
-                <div style={LEFT_ARROW} className="arrow" onClick={() => this.slideLeft()}></div>
+            <div style={WRAP} id={this.state.mainid} className={this.state.mainClassName}>
+                <div style={LEFT_ARROW} id ={this.state.leftArrowid} className={`arrow ${this.state.leftArrowClassName}`} onClick={() => this.slideLeft()}></div>
                 <div style={SLIDER}>
                     {RENDERSLIDES[this.state.cur]}
                 </div>
-                <div style={RIGHT_ARROW} className="arrow" onClick={() => this.slideRight()}></div>
+                <div style={RIGHT_ARROW} id={this.state.rightArrowid} className={`arrow ${this.state.rightArrowClassName}`} onClick={() => this.slideRight()}></div>
             </div>
         )
     }
@@ -2436,8 +2489,8 @@ export class ImageSlider2 extends Component {
             )
         })
         return (
-            <div style={WRAP}>
-                <div style={SLIDER}>
+            <div style={WRAP} id={this.state.mainid} className={this.state.mainClassName}>
+                <div style={SLIDER} id={this.state.sliderid} className={this.state.sliderClassName}>
                     {RENDERSLIDES[this.state.cur]}
                 </div>
             </div>
@@ -2536,8 +2589,8 @@ export class ImageSlider3 extends Component {
             )
         })
         return (
-            <div style={WRAP}>
-                <div style={SLIDER}>
+            <div style={WRAP} id={this.state.mainid} className={this.state.mainClassName}>
+                <div style={SLIDER} id={this.state.sliderid} className={this.state.sliderClassName}>
                     {RENDERSLIDES[this.state.cur]}
                 </div>
             </div>
@@ -2632,8 +2685,8 @@ export class ImageSlider4 extends Component {
             )
         })
         return (
-            <div style={WRAP}>
-                <div style={SLIDER}>
+            <div style={WRAP} id={this.state.mainid} className={this.state.mainClassName}>
+                <div style={SLIDER} id={this.state.sliderid} className={this.state.sliderClassName}>
                     {RENDERSLIDES[this.state.cur]}
                 </div>
             </div>
@@ -2728,8 +2781,8 @@ export class ImageSlider5 extends Component {
             )
         })
         return (
-            <div style={WRAP}>
-                <div style={SLIDER}>
+            <div style={WRAP} id={this.state.mainid} className={this.state.mainClassName}>
+                <div style={SLIDER} id={this.state.sliderid} className={this.state.sliderClassName}>
                     {RENDERSLIDES[this.state.cur]}
                 </div>
             </div>
@@ -2819,6 +2872,8 @@ export class Toggler1 extends Component {
             right: props.right,
             mainid: props.mainid,
             toggleid: props.toggleid,
+            titleid: props.titleid,
+            titleClassName: props.titleClassName,
             mainClassName: props.mainClassName,
             toggleClassName: props.toggleClassName,
         }
@@ -2846,11 +2901,11 @@ export class Toggler1 extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <div>
-                <div style={CLICKBOX} onClick={this.toggle}>
+            <div id={this.state.mainid} className={this.state.mainClassName}>
+                <div style={CLICKBOX} id={this.state.titleid} className={this.state.titleClassName} onClick={this.toggle}>
                     {this.state.buttonText}
                 </div>
-                <div style={TOGGLERBOX}>
+                <div style={TOGGLERBOX} id={this.state.toggleid} className={this.state.toggleClassName}>
                     {CHILDS}
                 </div>
             </div>
@@ -2872,6 +2927,8 @@ export class Toggler2 extends Component {
             offset: props.offset + '%',
             mainid: props.mainid,
             toggleid: props.toggleid,
+            titleid: props.titleid,
+            titleClassName: props.titleClassName,
             mainClassName: props.mainClassName,
             toggleClassName: props.toggleClassName,
         }
@@ -2901,11 +2958,11 @@ export class Toggler2 extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <div>
-                <div style={CLICKBOX} onClick={this.toggle}>
+            <div id={this.state.mainid} className={this.state.mainClassName}>
+                <div style={CLICKBOX} id={this.state.titleid} className={this.state.titleClassName} onClick={this.toggle}>
                     {this.state.buttonText}
                 </div>
-                <div style={TOGGLERBOX}>
+                <div style={TOGGLERBOX} id={this.state.toggleid} className={this.state.toggleClassName}>
                     {CHILDS}
                 </div>
             </div>
@@ -2933,7 +2990,6 @@ export class Toggler3 extends Component {
             text: [],
             mainid: props.mainid,
             toggleid: props.toggleid,
-            panelid: props.panelid,
             panelClassName: props.panelClassName,
             mainClassName: props.mainClassName,
             toggleClassName: props.toggleClassName,
@@ -2990,7 +3046,7 @@ export class Toggler3 extends Component {
         })
         const TEXT = this.state.text.map((x, i, arr) => {
             return (
-                <div key={i} id={'panel' + (i + 1)}>
+                <div key={i} id={'panel' + (i + 1)} className={this.state.panelClassName}>
                     <p style={TEXTBOX}>
                         {x}
                     </p>
@@ -2999,9 +3055,9 @@ export class Toggler3 extends Component {
         })
 
         return (
-            <div style={PANELS} className="panels">
+            <div style={PANELS} id={this.state.mainid} className={`panels ${this.state.mainClassName}`}>
                 {CHECKS}
-                <nav>
+                <nav id={this.state.toggleid} className={this.state.toggleClassName}>
                     {LABELS}
                 </nav>
                 {TEXT}
@@ -3026,7 +3082,36 @@ export class Toggler4 extends Component {
         )
     }
 }
+/* start of moduls */
+export class Modul1 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
 
+        }
+    }
+    render() {
+        return (
+            <div>
+            </div>
+        )
+    }
+}
+export class Modul2 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+
+        }
+    }
+    render() {
+        return (
+            <div>
+            </div>
+        )
+    }
+}
+/* end of moduls */
 /* end of bin blocks */
 /* Start of List Blocks */
 /* Start of Numbered List Blocks */

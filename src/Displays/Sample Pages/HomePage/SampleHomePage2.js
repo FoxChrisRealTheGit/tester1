@@ -5,7 +5,7 @@ import Navigation from '../../Navigation';
 import FooterNavigation from '../../FooterNavigation';
 
 import Container1 from '../../../Components 1.0.0/Containers';
-import { SubNavbar1, MainHeading1 } from '../../../Components 1.0.0/Blocks';
+import { SubNavbar1, H11 } from '../../../Components 1.0.0/Blocks';
 
 export default class SampleHomePage2 extends Component {
 
@@ -14,9 +14,9 @@ export default class SampleHomePage2 extends Component {
             <section>
                 <Navigation />
                 <Container1>
-                    <MainHeading1>
+                    <H11>
                         Home 2
-                    </MainHeading1>
+                    </H11>
                 </Container1>
                 <SubNavbar1>
                     <Link to="/samplepages/home1">Home 1</Link>

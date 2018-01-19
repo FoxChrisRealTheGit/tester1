@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Navigation from '../../../Navigation';
 import FooterNavigation from '../../../FooterNavigation';
 
-import { HorizontalTestBlock1, SubNavbar1, MainHeading1 } from '../../../../Components 1.0.0/Blocks';
+import { HorizontalTestBlock1, SubNavbar1, H11 } from '../../../../Components 1.0.0/Blocks';
 import Container1 from '../../../../Components 1.0.0/Containers';
 
 export default class Portfolio5Main extends Component {
@@ -13,9 +13,9 @@ export default class Portfolio5Main extends Component {
             <section>
                 <Navigation />
                 <Container1>
-                    <MainHeading1>
+                    <H11>
                         Portfolio 5 Template
-                    </MainHeading1>
+                    </H11>
                 </Container1>
                 <SubNavbar1>
                     <Link to="/templatesamples/portfolio1">Portfolio 1</Link>

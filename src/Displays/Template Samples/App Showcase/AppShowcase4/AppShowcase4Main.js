@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Navigation from '../../../Navigation';
 import FooterNavigation from '../../../FooterNavigation';
 
-import { SubNavbar1, MainHeading1 } from '../../../../Components 1.0.0/Blocks';
+import { SubNavbar1, H11 } from '../../../../Components 1.0.0/Blocks';
 import Container1 from '../../../../Components 1.0.0/Containers';
 
 export default class AppShowcase4Main extends Component {
@@ -12,9 +12,9 @@ export default class AppShowcase4Main extends Component {
             <section>
                 <Navigation />
                 <Container1>
-                    <MainHeading1>
+                    <H11>
                         App 4 Template
-                    </MainHeading1>
+                    </H11>
                 </Container1>
                 <SubNavbar1>
                     <Link to="/templatesamples/appshowcase1">app 1</Link>

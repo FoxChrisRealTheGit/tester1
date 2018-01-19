@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { Container5 } from '../Components 1.0.0/Containers';
 import {Holder2, Holder5} from '../Components 1.0.0/Holders';
-import { Paragraph2, Navbar1, HorizontalTestBlock1 } from '../Components 1.0.0/Blocks';
+import { P2, Navbar1, HorizontalTestBlock1 } from '../Components 1.0.0/Blocks';
 
 export default class FooterNavigation extends Component {
 
@@ -48,9 +48,9 @@ export default class FooterNavigation extends Component {
                         </Holder5>
                     </Holder2>
                     <HorizontalTestBlock1 />
-                    <Paragraph2>
+                    <P2>
                         Copyright 2018 Some Design Agency
-                    </Paragraph2>
+                    </P2>
                 </Container5>
             </footer>
         )

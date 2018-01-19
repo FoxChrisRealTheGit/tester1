@@ -9,7 +9,7 @@ import Container1 from '../Components 1.0.0/Containers';
 import { Holder5 } from '../Components 1.0.0/Holders';
 
 import {
-    SubHeading4,
+    H34,
     HorizontalTestBlock1
 } from '../Components 1.0.0/Blocks';
 
@@ -21,12 +21,12 @@ export default class ContainerViewMain extends Component {
                 <HorizontalTestBlock1 />
                 <Container1>
                     <Holder5>
-                        <SubHeading4>
+                        <H34>
                             <Link to="/containers/styled">PreStyled Containers</Link>
-                        </SubHeading4>
-                        <SubHeading4>
+                        </H34>
+                        <H34>
                             <Link to="/containers/unstyled">UnStyled Containers</Link>
-                        </SubHeading4>
+                        </H34>
                     </Holder5>
                 </Container1>
                 <HorizontalTestBlock1 />

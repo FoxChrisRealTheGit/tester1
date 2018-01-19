@@ -5,7 +5,7 @@ import FooterNavigation from '../FooterNavigation';
 
 import Container1 from '../../Components 1.0.0/Containers';
 import {
-    MainHeading1,
+    H11,
     SubNavbar1,
     HorizontalTestBlock1,
     FlatButton1,
@@ -23,9 +23,9 @@ export default class ButtonBlocksView extends Component {
                 <Navigation />
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <MainHeading1>
+                    <H11>
                         Buttons
-                    </MainHeading1>
+                    </H11>
                 </Container1>
                 <SubNavbar1
                     navbarWidth="70%">

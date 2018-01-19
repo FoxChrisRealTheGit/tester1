@@ -7,15 +7,15 @@ import Container1 from '../../Components 1.0.0/Containers';
 import {
     ImageSlider1,
     HorizontalTicker,
-    MainHeading1,
+    H11,
     HorizontalTestBlock1,
-    Heading1,
-    SubHeading4,
+    H21,
+    H34,
     SubNavbar1,
     RectangleImage,
     Hero1,
     Hero2,
-    Paragraph2,
+    P2,
     ImageSlider2,
     ImageSlider3,
     ImageSlider4,
@@ -36,9 +36,9 @@ export default class CaroselsTickersView extends Component {
                 <Navigation />
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <MainHeading1>
+                    <H11>
                         Carosels & Tickers
-                    </MainHeading1>
+                    </H11>
                 </Container1>
                 <SubNavbar1
                     navbarWidth="70%">
@@ -57,21 +57,21 @@ export default class CaroselsTickersView extends Component {
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <Heading1>
+                    <H21>
                         Carosels
-                    </Heading1>
+                    </H21>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <SubHeading4>
+                    <H34>
                         Carosel 1
-                    </SubHeading4>
+                    </H34>
                 </Container1>
                 <Container1>
                     <ImageSlider1>
                         <Hero2
                             image={`url(${chrisLeaves})`}>
-                            <Paragraph2>some neat text</Paragraph2>
+                            <P2>some neat text</P2>
                         </Hero2>
                         <Hero2
                             image={`url(${KarenJump})`}>
@@ -86,15 +86,15 @@ export default class CaroselsTickersView extends Component {
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <SubHeading4>
+                    <H34>
                         Carosel 2
-                    </SubHeading4>
+                    </H34>
                 </Container1>
                 <Container1>
                     <ImageSlider2>
                         <Hero2
                             image={`url(${chrisLeaves})`}>
-                            <Paragraph2>some neat text</Paragraph2>
+                            <P2>some neat text</P2>
                         </Hero2>
                         <Hero2
                             image={`url(${KarenJump})`}>
@@ -109,15 +109,15 @@ export default class CaroselsTickersView extends Component {
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <SubHeading4>
+                    <H34>
                         Carosel 3
-                    </SubHeading4>
+                    </H34>
                 </Container1>
                 <Container1>
                     <ImageSlider3>
                         <Hero2
                             image={`url(${chrisLeaves})`}>
-                            <Paragraph2>some neat text</Paragraph2>
+                            <P2>some neat text</P2>
                         </Hero2>
                         <Hero2
                             image={`url(${KarenJump})`}>
@@ -132,15 +132,15 @@ export default class CaroselsTickersView extends Component {
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <SubHeading4>
+                    <H34>
                         Carosel 4
-                    </SubHeading4>
+                    </H34>
                 </Container1>
                 <Container1>
                     <ImageSlider4>
                         <Hero2
                             image={`url(${chrisLeaves})`}>
-                            <Paragraph2>some neat text</Paragraph2>
+                            <P2>some neat text</P2>
                         </Hero2>
                         <Hero2
                             image={`url(${KarenJump})`}>
@@ -155,49 +155,49 @@ export default class CaroselsTickersView extends Component {
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <SubHeading4>
+                    <H34>
                         Carosel 5
-                    </SubHeading4>
+                    </H34>
                 </Container1>
                 <Container1>
                     <ImageSlider5>
                         <Hero1
                             image={`url(${chrisLeaves})`}>
-                            <Heading1>Some sort of heading</Heading1>
+                            <H21>Some sort of heading</H21>
                             <button>click me</button>
-                            <Paragraph2>some neat text</Paragraph2>
+                            <P2>some neat text</P2>
                         </Hero1>
                         <Hero1
                             image={`url(${KarenJump})`}>
-                            <Heading1>Another heading</Heading1>
+                            <H21>Another heading</H21>
                             <button>click me</button>
-                            <Paragraph2>some neater text</Paragraph2>
+                            <P2>some neater text</P2>
                         </Hero1>
                         <Hero1
                             image={`url(${Kristen})`}>
-                            <Heading1>Some sort of heading</Heading1>
+                            <H21>Some sort of heading</H21>
                             <button>click me</button>
-                            <Paragraph2>the neatest text</Paragraph2>
+                            <P2>the neatest text</P2>
                         </Hero1>
                         <Hero1
                             image={`url(${KristenButt})`}>
-                            <Heading1>a neat heading</Heading1>
+                            <H21>a neat heading</H21>
                             <button>click me</button>
-                            <Paragraph2>some neat text</Paragraph2>
+                            <P2>some neat text</P2>
                         </Hero1>
                     </ImageSlider5>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <Heading1>
+                    <H21>
                         Tickers
-                    </Heading1>
+                    </H21>
                 </Container1>
                 <Container1>
-                    <SubHeading4>
+                    <H34>
                         Horizontal Ticker
-                    </SubHeading4>
+                    </H34>
                 </Container1>
                 <HorizontalTicker>
                     <RectangleImage>

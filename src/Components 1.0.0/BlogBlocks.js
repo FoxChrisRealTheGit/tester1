@@ -12,7 +12,7 @@ import Holder1, {
 } from './Holders';
 
 import {
-    Paragraph2, SquareImage, Heading2, SecondarySubHeading2, SecondarySubHeading4, SecondarySubHeading1, Navbar1
+    P2, SquareImage, H22, H42, H44, H41, Navbar1
 } from './Blocks';
 /* Blog blocks */
 
@@ -32,11 +32,11 @@ export default class FeatureBlog1 extends Component {
         const CHILDS = React.Children.toArray(this.props.children.split("\\"));
         return (
             <Holder9>
-                <SecondarySubHeading4>{CHILDS[0]}</SecondarySubHeading4>
-                <Heading2>{CHILDS[1]}</Heading2>
-                <SecondarySubHeading2>{CHILDS[2]}</SecondarySubHeading2>
+                <H44>{CHILDS[0]}</H44>
+                <H22>{CHILDS[1]}</H22>
+                <H42>{CHILDS[2]}</H42>
                 <SquareImage size="lg">{CHILDS[3]}</SquareImage>
-                <Paragraph2>{CHILDS[4]}</Paragraph2>
+                <P2>{CHILDS[4]}</P2>
                 <button>{this.state.buttonText}</button>
             </Holder9>
         )
@@ -60,12 +60,12 @@ export class FeatureBlog2 extends Component {
                         <Holder5
                             alignBlock1="flex-start"
                             alignBlock2="flex-start">
-                            <SecondarySubHeading1>
+                            <H41>
                                 {CHILDS[2]}
-                            </SecondarySubHeading1>
-                            <SecondarySubHeading4>
+                            </H41>
+                            <H44>
                                 {CHILDS[3]}
-                            </SecondarySubHeading4>
+                            </H44>
                         </Holder5>
                     </Holder1>
                     <Holder1
@@ -74,12 +74,12 @@ export class FeatureBlog2 extends Component {
                         <Holder5
                             alignBlock1="flex-start"
                             alignBlock2="flex-start">
-                            <SecondarySubHeading1>
+                            <H41>
                                 {CHILDS[5]}
-                            </SecondarySubHeading1>
-                            <SecondarySubHeading4>
+                            </H41>
+                            <H44>
                                 {CHILDS[6]}
-                            </SecondarySubHeading4>
+                            </H44>
                         </Holder5>
                     </Holder1>
                     <Holder1
@@ -88,12 +88,12 @@ export class FeatureBlog2 extends Component {
                         <Holder5
                             alignBlock1="flex-start"
                             alignBlock2="flex-start">
-                            <SecondarySubHeading1>
+                            <H41>
                                 {CHILDS[8]}
-                            </SecondarySubHeading1>
-                            <SecondarySubHeading4>
+                            </H41>
+                            <H44>
                                 {CHILDS[9]}
-                            </SecondarySubHeading4>
+                            </H44>
                         </Holder5>
                     </Holder1>
                 </Holder6>
@@ -119,10 +119,10 @@ export class DisplayBlog1 extends Component {
                     alignBlock2="flex-start"
                     alignBlock3="flex-start"
                     alignBlock4="flex-start">
-                    <SecondarySubHeading4>{CHILDS[1]}</SecondarySubHeading4>
-                    <Heading2>{CHILDS[2]}</Heading2>
-                    <Paragraph2>{CHILDS[3] + "..."} </Paragraph2>
-                    <SecondarySubHeading2>{CHILDS[4]}</SecondarySubHeading2>
+                    <H44>{CHILDS[1]}</H44>
+                    <H22>{CHILDS[2]}</H22>
+                    <P2>{CHILDS[3] + "..."} </P2>
+                    <H42>{CHILDS[4]}</H42>
                 </Holder7>
             </Holder1>
         )
@@ -148,9 +148,9 @@ export class DisplayBlog2 extends Component {
                     alignBlock1="flex-start"
                     alignBlock2="flex-start"
                     alignBlock3="flex-start">
-                    <Heading2>{CHILDS[0]}</Heading2>
-                    <SecondarySubHeading2>{"by: " + CHILDS[1]}</SecondarySubHeading2>
-                    <Paragraph2>{CHILDS[2] + "..." + this.state.linkText} </Paragraph2>
+                    <H22>{CHILDS[0]}</H22>
+                    <H42>{"by: " + CHILDS[1]}</H42>
+                    <P2>{CHILDS[2] + "..." + this.state.linkText} </P2>
                     <Navbar1
                         align="flex-start"
                         navbarWidth="30%">
@@ -185,7 +185,7 @@ export class DisplayBlog4 extends Component {
         return (
             <Holder5>
                 <SquareImage>{CHILDS[0]}</SquareImage>
-                <SecondarySubHeading2>{CHILDS[1]}</SecondarySubHeading2>
+                <H42>{CHILDS[1]}</H42>
             </Holder5>
         )
     }

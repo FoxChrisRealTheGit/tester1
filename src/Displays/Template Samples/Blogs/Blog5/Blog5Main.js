@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Navigation from '../../../Navigation';
 import FooterNavigation from '../../../FooterNavigation';
 
-import { SubNavbar1, MainHeading1, CircleImage, Navbar1, Paragraph1, HorizontalTestBlock1 } from '../../../../Components 1.0.0/Blocks';
+import { SubNavbar1, H11, CircleImage, Navbar1, P1, HorizontalTestBlock1 } from '../../../../Components 1.0.0/Blocks';
 
 import Container1 from '../../../../Components 1.0.0/Containers';
 
@@ -19,9 +19,9 @@ export default class Blog5Main extends Component {
                 <Navigation />
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <MainHeading1>
+                    <H11>
                         Blog 5 Template
-                    </MainHeading1>
+                    </H11>
                 </Container1>
                 <SubNavbar1>
                     <Link to="/templatesamples/blog1">blog 1</Link>
@@ -45,9 +45,9 @@ export default class Blog5Main extends Component {
                         <Link to="">Contact</Link>
                         <Link to="">Disclaimer</Link>
                     </Navbar1>
-                    <Paragraph1>
+                    <P1>
                         copyright info
-                    </Paragraph1>
+                    </P1>
                 </StyluxStyledHeader5>
                 <Container1>
 

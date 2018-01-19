@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Navigation from '../../../Navigation';
 import FooterNavigation from '../../../FooterNavigation';
 
-import { SubNavbar1, MainHeading1, Navbar1, Paragraph2, HorizontalTestBlock1 } from '../../../../Components 1.0.0/Blocks';
+import { SubNavbar1, H11, Navbar1, P2, HorizontalTestBlock1 } from '../../../../Components 1.0.0/Blocks';
 
 import Container1 from '../../../../Components 1.0.0/Containers';
 
@@ -19,9 +19,9 @@ export default class Blog4Main extends Component {
                 <Navigation />
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <MainHeading1>
+                    <H11>
                         Blog 4 Template
-                    </MainHeading1>
+                    </H11>
                 </Container1>
                 <SubNavbar1>
                     <Link to="/templatesamples/blog1">blog 1</Link>
@@ -103,9 +103,9 @@ export default class Blog4Main extends Component {
                         <Link to="">Terms & Conditions</Link>
                         <Link to="">Contact</Link>
                     </Navbar1>
-                    <Paragraph2>
+                    <P2>
                         some super long string about this company and why it does what it does and stuff.
-                    </Paragraph2>
+                    </P2>
                     <Navbar1
                         align="flex-start"
                         navbarWidth="50%">

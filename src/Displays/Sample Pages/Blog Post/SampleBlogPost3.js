@@ -12,18 +12,18 @@ import TwitterFeed1, { FacebookFeed1, FacebookFeed2, FacebookFeed3 } from '../..
 
 import Block1, {
     HorizontalTestBlock1,
-    MainHeading4,
-    SubHeading2,
-    SecondarySubHeading2,
-    Paragraph1,
-    PullQuote1,
+    H14,
+    H32,
+    H42,
+    P1,
+    PLQ1,
     CircleImage,
     SubNavbar1,
-    MainHeading1,
-    Paragraph5,
-    Heading4,
+    H11,
+    P5,
+    H24,
     RoundedImage,
-    PullQuote2
+    PLQ2
 } from '../../../Components 1.0.0/Blocks';
 
 import chrischillin from '../../../images/Chris-hangingout.jpg';
@@ -37,12 +37,12 @@ export default class SampleBlogPost3 extends Component {
                 <HorizontalTestBlock1 />
                 <Container1>
                     <Holder5>
-                        <MainHeading1>
+                        <H11>
                             Most Hipster Ipsum
-                        </MainHeading1>
-                        <Heading4>
+                        </H11>
+                        <H24>
                             Handlebar Mustaches And All
-                        </Heading4>
+                        </H24>
                     </Holder5>
                 </Container1>
                 <SubNavbar1>
@@ -75,37 +75,37 @@ export default class SampleBlogPost3 extends Component {
                                 {chrischillin}
                                 Chris Hanging out
                             </CircleImage>
-                            <SecondarySubHeading2>
+                            <H42>
                                 By: The Hipster King
-                            </SecondarySubHeading2>
-                            <Paragraph5>
+                            </H42>
+                            <P5>
                                 Humblebrag bitters tofu fingerstache authentic palo santo listicle ugh snackwave shoreditch keffiyeh pug hoodie distillery meh. Cold-pressed butcher pork belly gastropub raw denim offal actually kogi post-ironic cliche readymade retro semiotics slow-carb tousled. Kinfolk schlitz brunch, blog cardigan direct trade fingerstache man braid franzen vaporware palo santo poke kitsch. Try-hard tbh pour-over cornhole snackwave mlkshk austin coloring book quinoa ramps four loko heirloom. Authentic plaid unicorn food truck. Gluten-free crucifix poke, vaporware copper mug woke chambray kitsch swag next level biodiesel. Copper mug pug vinyl narwhal activated charcoal organic wolf celiac edison bulb sartorial leggings hoodie authentic.
-                            </Paragraph5>
+                            </P5>
                             <Holder1>
                                 <RoundedImage
                                 size="md">
                                     {chrischillin}
                                 </RoundedImage>
-                                <Paragraph1>
+                                <P1>
                                     Lo-fi man braid jean shorts umami pop-up, unicorn you probably haven't heard of them echo park ennui. Selvage coloring book adaptogen blog venmo narwhal, chicharrones small batch put a bird on it synth edison bulb kogi vexillologist waistcoat. Artisan chillwave bespoke pug whatever. Next level polaroid forage af jean shorts. Authentic copper mug kombucha, farm-to-table occupy fam fashion axe gastropub keffiyeh organic yr VHS cardigan. Lumbersexual la croix brunch tote bag pinterest godard yuccie unicorn humblebrag adaptogen prism umami cornhole everyday carry cred.
-                                </Paragraph1>
+                                </P1>
                             </Holder1>
-                            <Paragraph1>
+                            <P1>
                                 Adaptogen ennui distillery try-hard ramps vape biodiesel cardigan beard. Cred health goth neutra knausgaard, chambray sartorial vegan pour-over. Hexagon before they sold out succulents health goth ugh tumeric messenger bag, pitchfork seitan readymade hot chicken unicorn. Echo park hashtag PBR&B sriracha letterpress blue bottle tbh, kogi hoodie fingerstache keffiyeh. Adaptogen green juice bicycle rights, kale chips listicle stumptown lumbersexual chicharrones. PBR&B cray chillwave blue bottle synth schlitz salvia try-hard.
-                            </Paragraph1>
-                            <Paragraph1>
+                            </P1>
+                            <P1>
                                 Vaporware salvia artisan locavore marfa keytar enamel pin. XOXO shoreditch offal ethical. Yuccie ugh asymmetrical organic direct trade cold-pressed knausgaard. Cred try-hard vexillologist 3 wolf moon bicycle rights blue bottle. Pickled stumptown succulents hoodie seitan palo santo forage blog fingerstache meggings locavore drinking vinegar cliche biodiesel. Chicharrones poutine sriracha before they sold out ennui, godard tumeric 3 wolf moon umami af beard neutra craft beer messenger bag locavore.
-                            </Paragraph1>
-                            <PullQuote2>
+                            </P1>
+                            <PLQ2>
                                 Humblebrag bitters tofu fingerstache authentic palo santo listicle ugh snackwave shoreditch keffiyeh pug hoodie distillery meh.\
                                     Hipster Senpai
-                            </PullQuote2>
-                            <Paragraph1>
+                            </PLQ2>
+                            <P1>
                                 Organic selvage farm-to-table brooklyn selfies, paleo meh mustache salvia trust fund keytar pitchfork 3 wolf moon. Viral celiac pug, paleo ethical woke pop-up. Everyday carry authentic +1, raclette chillwave roof party mustache wolf twee biodiesel. Four loko kale chips authentic vaporware cronut. Fashion axe locavore copper mug small batch ramps, taiyaki hoodie retro VHS hot chicken offal marfa. Pour-over locavore tousled pickled lo-fi crucifix.
-                            </Paragraph1>
-                            <Paragraph1>
+                            </P1>
+                            <P1>
                                 Godard chicharrones you probably haven't heard of them, narwhal asymmetrical umami biodiesel williamsburg normcore tilde lomo keffiyeh lumbersexual snackwave paleo. Mustache scenester 3 wolf moon kitsch umami, prism pop-up slow-carb ethical roof party. Jianbing la croix iceland tote bag venmo fanny pack 90's 8-bit leggings. Pickled photo booth paleo succulents, before they sold out messenger bag normcore poutine lumbersexual.
-                            </Paragraph1>
+                            </P1>
                         </Holder13>
                     </Holder1>
                 </Container1>

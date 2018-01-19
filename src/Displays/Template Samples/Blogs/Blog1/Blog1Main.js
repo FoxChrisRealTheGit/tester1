@@ -9,7 +9,7 @@ import Holder1, { Holder5, Holder10} from '../../../../Components 1.0.0/Holders'
 
 import { StyluxStyledHeader3, StyluxStyledFooter3 } from '../../../../Components 1.0.0/StyledContainers';
 
-import { SubNavbar1, MainHeading1, Navbar1, Paragraph2, HorizontalTestBlock1, Brand3 } from '../../../../Components 1.0.0/Blocks';
+import { SubNavbar1, H11, Navbar1, P2, HorizontalTestBlock1, Brand3 } from '../../../../Components 1.0.0/Blocks';
 
 import Logo from '../../../../images/Logo/QuickFirstDraft.svg';
 
@@ -20,9 +20,9 @@ export default class Blog1Main extends Component {
                 <Navigation />
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <MainHeading1>
+                    <H11>
                         Blog 1 Template
-                    </MainHeading1>
+                    </H11>
                 </Container1>
                 <SubNavbar1>
                     <Link to="/templatesamples/blog1">blog 1</Link>
@@ -96,9 +96,9 @@ export default class Blog1Main extends Component {
                         <Link to="bloglovin.com">BlogLovin</Link>
                         <Link to="linkedin.com">Linkedin</Link>
                     </Navbar1>
-                    <Paragraph2>
+                    <P2>
                         Copyright Statement. All rights reserved.
-                    </Paragraph2>
+                    </P2>
                 </StyluxStyledFooter3>
                 <HorizontalTestBlock1 />
                 <FooterNavigation />

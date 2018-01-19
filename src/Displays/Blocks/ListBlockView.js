@@ -6,10 +6,10 @@ import FooterNavigation from '../FooterNavigation';
 import Container1 from '../../Components 1.0.0/Containers';
 import { Holder5 } from '../../Components 1.0.0/Holders';
 import {
-    MainHeading1,
+    H11,
     SubNavbar1,
     HorizontalTestBlock1,
-    SubHeading4,
+    H34,
     NumberList1,
     NumberList2,
     NumberList3,
@@ -24,9 +24,9 @@ export default class ListBlocksView extends Component {
                 <Navigation />
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <MainHeading1>
+                    <H11>
                         List Blocks
-                    </MainHeading1>
+                    </H11>
                 </Container1>
                 <SubNavbar1
                     navbarWidth="70%">
@@ -45,9 +45,9 @@ export default class ListBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <Container1>
                     <Holder5>
-                        <SubHeading4>
+                        <H34>
                             Number List 1
-                        </SubHeading4>
+                        </H34>
                         <NumberList1>
                             listItem1\
                             listItem2\
@@ -59,9 +59,9 @@ export default class ListBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <Container1>
                     <Holder5>
-                        <SubHeading4>
+                        <H34>
                             Number List 2
-                        </SubHeading4>
+                        </H34>
                         <NumberList2 listAmount='3'>
                             <p>listItem1</p>
                             <p>nestedlistItem1</p>
@@ -84,9 +84,9 @@ export default class ListBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <Container1>
                     <Holder5>
-                        <SubHeading4>
+                        <H34>
                             Number List 3
-                        </SubHeading4>
+                        </H34>
                         <NumberList3>
                             listItem1\
                             listItem2\
@@ -98,9 +98,9 @@ export default class ListBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <Container1>
                     <Holder5>
-                        <SubHeading4>
+                        <H34>
                             Bullet List 1
-                        </SubHeading4>
+                        </H34>
                         <BulletList1>
                             listItem1\
                             listItem2\
@@ -112,9 +112,9 @@ export default class ListBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <Container1>
                     <Holder5>
-                        <SubHeading4>
+                        <H34>
                             Bullet List 2
-                        </SubHeading4>
+                        </H34>
                         <BulletList2>
                             listItem1\
                             listItem2\

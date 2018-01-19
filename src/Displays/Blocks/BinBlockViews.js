@@ -6,15 +6,15 @@ import FooterNavigation from '../FooterNavigation';
 import Container1 from '../../Components 1.0.0/Containers';
 import { Holder5 } from '../../Components 1.0.0/Holders';
 import {
-    MainHeading1,
+    H11,
     SubNavbar1,
     HorizontalTestBlock1,
-    SubHeading4,
+    H34,
     Toggler1,
     FlatButton1,
     Navbar1,
     Toggler2,
-    Paragraph2,
+    P2,
     Toggler3
 } from '../../Components 1.0.0/Blocks';
 
@@ -25,9 +25,9 @@ export default class BinBlocksView extends Component {
                 <Navigation />
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <MainHeading1>
+                    <H11>
                         Toggler Blocks
-                    </MainHeading1>
+                    </H11>
                 </Container1>
                 <SubNavbar1
                     navbarWidth="70%">
@@ -45,9 +45,9 @@ export default class BinBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Toggler 1
-                    </SubHeading4>
+                    </H34>
                     <Toggler1
                         width='200px'
                         right="0">
@@ -64,20 +64,20 @@ export default class BinBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Toggler 2
-                    </SubHeading4>
+                    </H34>
                     <Toggler2>
-                        <Paragraph2>
+                        <P2>
                         Artisan man bun kombucha palo santo DIY godard af distillery offal. IPhone tote bag cardigan tumeric keytar health goth skateboard tbh succulents taxidermy poke sustainable fingerstache celiac. Etsy taxidermy four dollar toast hexagon tbh unicorn, hashtag pinterest. Vape pok pok hexagon sartorial fam tumblr, palo santo literally kitsch woke wolf DIY. Tote bag glossier bushwick gluten-free butcher pug, mumblecore leggings. Cred kale chips microdosing chicharrones taiyaki, synth typewriter neutra chartreuse jianbing pinterest lyft. Stumptown taxidermy pork belly, photo booth blog +1 glossier iceland.
-                        </Paragraph2>
+                        </P2>
                     </Toggler2>
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Toggler 3
-                    </SubHeading4>
+                    </H34>
                     <Toggler3>
                         title\
                         some text\
@@ -91,9 +91,9 @@ export default class BinBlocksView extends Component {
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>
-                    <SubHeading4>
+                    <H34>
                         Toggler 4
-                    </SubHeading4>
+                    </H34>
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <FooterNavigation />

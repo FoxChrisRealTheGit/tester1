@@ -7,9 +7,9 @@ import FooterNavigation from '../../../FooterNavigation';
 import {
     SubNavbar1,
     SubNavbar2,
-    MainHeading1,
+    H11,
     Navbar1,
-    Paragraph2,
+    P2,
     HorizontalTestBlock1
 } from '../../../../Components 1.0.0/Blocks';
 
@@ -24,9 +24,9 @@ export default class Blog3Main extends Component {
                 <Navigation />
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <MainHeading1>
+                    <H11>
                         Blog 3 Template
-                    </MainHeading1>
+                    </H11>
                 </Container1>
                 <SubNavbar1>
                     <Link to="/templatesamples/blog1">blog 1</Link>
@@ -97,9 +97,9 @@ export default class Blog3Main extends Component {
                         <Link to="facebook.com"></Link>
                         <Link to="youtube.com"></Link>
                     </Navbar1>
-                    <Paragraph2>
+                    <P2>
                         Copyright statement. All Rights Reserved.
-                    </Paragraph2>
+                    </P2>
                 </StyluxStyledFooter4>
                 <HorizontalTestBlock1 />
                 <FooterNavigation />

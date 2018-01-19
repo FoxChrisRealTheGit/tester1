@@ -7,13 +7,13 @@ import Container1 from '../Components 1.0.0/Containers';
 import Holder1, { Holder3, Holder5 } from '../Components 1.0.0/Holders';
 import {
     HorizontalTestBlock1,
-    SubHeading4,
+    H34,
     Navbar1,
     RectangleImage,
-    SubHeading2,
+    H32,
     ImageSlider1,
-    Paragraph1,
-    SecondarySubHeading2,
+    P1,
+    H42,
     HorizontalTicker,
     Hero2,
 }
@@ -44,7 +44,7 @@ export default class LandingPage extends Component {
                 <HorizontalTestBlock1 />
                 <Container1>
                     <Holder5>
-                        <SecondarySubHeading2>Who uses Stylux?</SecondarySubHeading2>
+                        <H42>Who uses Stylux?</H42>
                         <HorizontalTicker>
                             <RectangleImage size='tn'>{lies2logo}</RectangleImage>
                             <RectangleImage size='exsm'>{ataraxylogo}</RectangleImage>
@@ -76,9 +76,9 @@ export default class LandingPage extends Component {
 
                         </Navbar1>
                         <Holder5>
-                            <SubHeading2>
+                            <H32>
                                 Get stuff done fast
-                            </SubHeading2>
+                            </H32>
                             <ImageSlider1
                                 background="white"
                                 arrowColor="black">
@@ -95,23 +95,23 @@ export default class LandingPage extends Component {
                 <HorizontalTestBlock1 />
                 <Container1>
                     <Holder5>
-                        <SubHeading2>
+                        <H32>
                             How does it work?
-                        </SubHeading2>
-                        <Paragraph1>
+                        </H32>
+                        <P1>
                             insert steps on how stylux works
-                        </Paragraph1>
+                        </P1>
                     </Holder5>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
                     <Holder5>
-                        <SubHeading2>
+                        <H32>
                             Want to help out?
-                        </SubHeading2>
-                        <Paragraph1>
+                        </H32>
+                        <P1>
                             insert steps on how to help out, probable a mini clone of contact
-                        </Paragraph1>
+                        </P1>
                     </Holder5>
                 </Container1>
                 <HorizontalTestBlock1 />

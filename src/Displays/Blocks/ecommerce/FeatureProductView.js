@@ -6,11 +6,11 @@ import FooterNavigation from '../../FooterNavigation';
 import Container1 from '../../../Components 1.0.0/Containers';
 import { Holder5 } from '../../../Components 1.0.0/Holders';
 import {
-    MainHeading1,
+    H11,
     SubNavbar1,
-    Heading1,
+    H21,
     HorizontalTestBlock1,
-    SubHeading4,
+    H34,
 } from '../../../Components 1.0.0/Blocks';
 
 // just feature product displays
@@ -21,9 +21,9 @@ export default class FeatureProductView extends Component {
                 <Navigation />
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <MainHeading1>
+                    <H11>
                         Feature Product Blocks
-                    </MainHeading1>
+                    </H11>
                 </Container1>
                 <SubNavbar1>
                     <Link to="/blocks">Blocks</Link>
@@ -34,33 +34,33 @@ export default class FeatureProductView extends Component {
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <SubHeading4>
+                    <H34>
                         Feature Product 1
-                    </SubHeading4>
+                    </H34>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <SubHeading4>
+                    <H34>
                         Feature Product 2
-                    </SubHeading4>
+                    </H34>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <SubHeading4>
+                    <H34>
                         Feature Product 3
-                    </SubHeading4>
+                    </H34>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <Heading1>
+                    <H21>
                         Product Slider Blocks
-                    </Heading1>
+                    </H21>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <SubHeading4>
+                    <H34>
                         Product Slider 1
-                    </SubHeading4>
+                    </H34>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <FooterNavigation />

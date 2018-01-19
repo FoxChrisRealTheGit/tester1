@@ -7,26 +7,26 @@ import { Holder5, Holder8 } from '../../Components 1.0.0/Holders';
 import Container1, { Container3 } from '../../Components 1.0.0/Containers';
 import {
     HorizontalTestBlock1,
-    MainHeading1,
-    MainHeading2,
-    MainHeading3,
-    MainHeading4,
-    MainHeading5,
-    Heading1,
-    Heading2,
-    Heading3,
-    Heading4,
-    Heading5,
-    SubHeading1,
-    SubHeading2,
-    SubHeading3,
-    SubHeading4,
-    SubHeading5,
-    SecondarySubHeading1,
-    SecondarySubHeading2,
-    SecondarySubHeading3,
-    SecondarySubHeading4,
-    SecondarySubHeading5,
+    H11,
+    H12,
+    H13,
+    H14,
+    H15,
+    H21,
+    H22,
+    H23,
+    H24,
+    H25,
+    H31,
+    H32,
+    H33,
+    H34,
+    H35,
+    H41,
+    H42,
+    H43,
+    H44,
+    H45,
     SubNavbar1,
 } from '../../Components 1.0.0/Blocks';
 
@@ -37,9 +37,9 @@ export default class HeadingBlocksView extends Component {
                 <Navigation />
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <MainHeading1>
+                    <H11>
                         Headings
-                    </MainHeading1>
+                    </H11>
                 </Container1>
                 <SubNavbar1
                     navbarWidth="70%">
@@ -58,112 +58,112 @@ export default class HeadingBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <Heading1>
+                    <H21>
                         Default: Sans-serif
-                    </Heading1>
+                    </H21>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <SubHeading4>
+                    <H34>
                         main headings
-                    </SubHeading4>
+                    </H34>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
                     <Holder8>
-                        <MainHeading1>
-                            MainHeading1
-                        </MainHeading1>
-                        <MainHeading2>
-                            MainHeading2
-                        </MainHeading2>
-                        <MainHeading3>
-                            MainHeading3
-                        </MainHeading3>
-                        <MainHeading4>
-                            MainHeading4
-                        </MainHeading4>
-                        <MainHeading5>
-                            MainHeading5
-                        </MainHeading5>
+                        <H11>
+                            H11
+                        </H11>
+                        <H12>
+                            H12
+                        </H12>
+                        <H13>
+                            H13
+                        </H13>
+                        <H14>
+                            H14
+                        </H14>
+                        <H15>
+                            H15
+                        </H15>
                     </Holder8>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <SubHeading4>
+                    <H34>
                         heading
-                    </SubHeading4>
+                    </H34>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
                     <Holder8>
-                        <Heading1>
-                            Heading1
-                        </Heading1>
-                        <Heading2>
-                            Heading2
-                        </Heading2>
-                        <Heading3>
-                            Heading3
-                        </Heading3>
-                        <Heading4>
-                            Heading4
-                        </Heading4>
-                        <Heading5>
-                            Heading5
-                        </Heading5>
+                        <H21>
+                            H21
+                        </H21>
+                        <H22>
+                            H22
+                        </H22>
+                        <H23>
+                            H23
+                        </H23>
+                        <H24>
+                            H24
+                        </H24>
+                        <H25>
+                            H25
+                        </H25>
                     </Holder8>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <SubHeading4>
+                    <H34>
                         subheadings
-                    </SubHeading4>
+                    </H34>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
                     <Holder8>
-                        <SubHeading1>
-                            SubHeading1
-                        </SubHeading1>
-                        <SubHeading2>
-                            SubHeading2
-                        </SubHeading2>
-                        <SubHeading3>
-                            SubHeading3
-                        </SubHeading3>
-                        <SubHeading4>
-                            SubHeading4
-                        </SubHeading4>
-                        <SubHeading5>
-                            SubHeading5
-                        </SubHeading5>
+                        <H31>
+                            H31
+                        </H31>
+                        <H32>
+                            H32
+                        </H32>
+                        <H33>
+                            H33
+                        </H33>
+                        <H34>
+                            H34
+                        </H34>
+                        <H35>
+                            H35
+                        </H35>
                     </Holder8>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <SubHeading4>
+                    <H34>
                         secondary subheadings
-                    </SubHeading4>
+                    </H34>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
                     <Holder8>
-                        <SecondarySubHeading1>
-                            SecondarySubHeading1
-                        </SecondarySubHeading1>
-                        <SecondarySubHeading2>
-                            SecondarySubHeading2
-                        </SecondarySubHeading2>
-                        <SecondarySubHeading3>
-                            SecondarySubHeading3
-                        </SecondarySubHeading3>
-                        <SecondarySubHeading4>
-                            SecondarySubHeading4
-                        </SecondarySubHeading4>
-                        <SecondarySubHeading5>
-                            SecondarySubHeading5
-                        </SecondarySubHeading5>
+                        <H41>
+                            H41
+                        </H41>
+                        <H42>
+                            H42
+                        </H42>
+                        <H43>
+                            H43
+                        </H43>
+                        <H44>
+                            H44
+                        </H44>
+                        <H45>
+                            H45
+                        </H45>
                     </Holder8>
                 </Container1>
                 <HorizontalTestBlock1 />
