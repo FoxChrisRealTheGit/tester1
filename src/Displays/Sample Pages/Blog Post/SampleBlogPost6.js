@@ -6,18 +6,16 @@ import FooterNavigation from '../../FooterNavigation';
 
 import Container1, { Container3 } from '../../../Components 1.0.0/Containers';
 
-import Holder1, { Holder4, Holder5, Holder6, Holder13 } from '../../../Components 1.0.0/Holders';
+import { Holder6, Holder13 } from '../../../Components 1.0.0/Holders';
 
-import Block1, {
+import {
     HorizontalTestBlock1,
     H11,
     H22,
-    H32,
     H42,
     H43,
     P1,
     P4,
-    PLQ1,
     CircleImage,
     SubNavbar1,
     RoundedRectangleImage,

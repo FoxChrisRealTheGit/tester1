@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import Navigation from '../Navigation';
 import FooterNavigation from '../FooterNavigation';
 
-import { Holder5, Holder8 } from '../../Components 1.0.0/Holders';
-import Container1, { Container3 } from '../../Components 1.0.0/Containers';
+import {  Holder8 } from '../../Components 1.0.0/Holders';
+import Container1 from '../../Components 1.0.0/Containers';
 import {
     HorizontalTestBlock1,
     H11,

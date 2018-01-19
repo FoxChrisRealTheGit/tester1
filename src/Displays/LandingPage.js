@@ -4,10 +4,9 @@ import Navigation from './Navigation';
 import FooterNavigation from './FooterNavigation';
 
 import Container1 from '../Components 1.0.0/Containers';
-import Holder1, { Holder3, Holder5 } from '../Components 1.0.0/Holders';
+import Holder1, { Holder5 } from '../Components 1.0.0/Holders';
 import {
     HorizontalTestBlock1,
-    H34,
     Navbar1,
     RectangleImage,
     H32,

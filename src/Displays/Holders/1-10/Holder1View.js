@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Navigation from '../../Navigation';
 import FooterNavigation from '../../FooterNavigation';
 
-import { Block2, H34, H11, H21, HorizontalTestBlock1, SubNavbar1 } from '../../../Components 1.0.0/Blocks';
+import { Block2, H34, H11,  HorizontalTestBlock1, SubNavbar1 } from '../../../Components 1.0.0/Blocks';
 
 import Holder1 from '../../../Components 1.0.0/Holders';
 

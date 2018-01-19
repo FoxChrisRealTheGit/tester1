@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import './reset.css';
 
-import Container1 from './Containers';
-
 import Holder1, {
     Holder6,
     Holder9,

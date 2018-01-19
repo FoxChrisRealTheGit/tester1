@@ -21,12 +21,8 @@ import {
     Brand1,
     Brand2,
     Brand3,
-    Brand4,
-    Brand5,
     DropDownNav1,
-    DropDownNav2,
     DropDownNav3,
-    DropDownNav4,
     DropDownNav5
 } from '../../Components 1.0.0/Blocks';
 

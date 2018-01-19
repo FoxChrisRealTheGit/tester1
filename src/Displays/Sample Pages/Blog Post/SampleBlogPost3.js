@@ -4,19 +4,16 @@ import { Link } from 'react-router-dom';
 import Navigation from '../../Navigation';
 import FooterNavigation from '../../FooterNavigation';
 
-import Container1, { Container3, Container2 } from '../../../Components 1.0.0/Containers';
+import Container1 from '../../../Components 1.0.0/Containers';
 
-import Holder1, { Holder4, Holder5, Holder6, Holder13 } from '../../../Components 1.0.0/Holders';
+import Holder1, {  Holder5, Holder6, Holder13 } from '../../../Components 1.0.0/Holders';
 
-import TwitterFeed1, { FacebookFeed1, FacebookFeed2, FacebookFeed3 } from '../../../Components 1.0.0/SocialMediaContainers';
+import { FacebookFeed1, FacebookFeed2, FacebookFeed3 } from '../../../Components 1.0.0/SocialMediaContainers';
 
-import Block1, {
+import {
     HorizontalTestBlock1,
-    H14,
-    H32,
     H42,
     P1,
-    PLQ1,
     CircleImage,
     SubNavbar1,
     H11,

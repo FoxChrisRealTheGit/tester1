@@ -27,7 +27,6 @@ import chrisLeaves from "../../images/chrisLeaves.jpg";
 import KarenJump from "../../images/KarenJump.jpg";
 import Kristen from "../../images/Kristen.jpg";
 import KristenButt from "../../images/KristenButt.jpg";
-import { Holder5 } from '../../Components 1.0.0/Holders';
 
 export default class CaroselsTickersView extends Component {
     render() {

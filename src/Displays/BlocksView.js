@@ -13,7 +13,6 @@ import {
     HorizontalTestBlock1,
     H11,
     SubNavbar1,
-    H21,
     H22,
 } from '../Components 1.0.0/Blocks';
 

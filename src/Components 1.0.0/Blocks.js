@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './reset.css';
 
-import Container1 from './Containers';
 import Holder1, { Holder2, Holder5, Holder7 } from './Holders';
 
 //non temporary css sheet
@@ -51,7 +50,7 @@ export class Block2 extends Component {
 /* Start of horizontal test block1 */
 export class HorizontalTestBlock1 extends Component {
     render() {
-        const childs = React.Children.toArray(this.props.children);
+        // const childs = React.Children.toArray(this.props.children);
         return (
             <section className="horizontalTest1">
                 <hr />
@@ -81,6 +80,8 @@ export class H11 extends Component {
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 15px 0',
             margin: props.margin || '0',
+            width: props.width || 'inherit',
+            height: props.height,
             id: props.id,
             className: props.className,
         }
@@ -88,7 +89,8 @@ export class H11 extends Component {
 
     render() {
         const HEADING = {
-            width: 'inherit',
+            width: this.state.width,
+            height: this.state.height,
             color: this.state.color,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
@@ -122,13 +124,16 @@ export class H12 extends Component {
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 15px 0',
             margin: props.margin || '0',
+            width: props.width || 'inherit',
+            height: props.height,
             id: props.id,
             className: props.className,
         }
     }
     render() {
         const HEADING = {
-            width: 'inherit',
+            width: this.state.width,
+            height: this.state.height,
             color: this.state.color,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
@@ -162,13 +167,16 @@ export class H13 extends Component {
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 15px 0',
             margin: props.margin || '0',
+            width: props.width || 'inherit',
+            height: props.height,
             id: props.id,
             className: props.className,
         }
     }
     render() {
         const HEADING = {
-            width: 'inherit',
+            width: this.state.width,
+            height: this.state.height,
             color: this.state.color,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
@@ -201,13 +209,16 @@ export class H14 extends Component {
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 15px 0',
             margin: props.margin || '0',
+            width: props.width || 'inherit',
+            height: props.height,
             id: props.id,
             className: props.className,
         }
     }
     render() {
         const HEADING = {
-            width: 'inherit',
+            width: this.state.width,
+            height: this.state.height,
             color: this.state.color,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
@@ -240,13 +251,16 @@ export class H15 extends Component {
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 15px 0',
             margin: props.margin || '0',
+            width: props.width || 'inherit',
+            height: props.height,
             id: props.id,
             className: props.className,
         }
     }
     render() {
         const HEADING = {
-            width: 'inherit',
+            width: this.state.width,
+            height: this.state.height,
             color: this.state.color,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
@@ -281,13 +295,16 @@ export class H21 extends Component {
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
+            width: props.width || 'inherit',
+            height: props.height,
             id: props.id,
             className: props.className,
         }
     }
     render() {
         const HEADING = {
-            width: 'inherit',
+            width: this.state.width,
+            height: this.state.height,
             color: this.state.color,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
@@ -320,13 +337,16 @@ export class H22 extends Component {
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
+            width: props.width || 'inherit',
+            height: props.height,
             id: props.id,
             className: props.className,
         }
     }
     render() {
         const HEADING = {
-            width: 'inherit',
+            width: this.state.width,
+            height: this.state.height,
             color: this.state.color,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
@@ -359,13 +379,16 @@ export class H23 extends Component {
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
+            width: props.width || 'inherit',
+            height: props.height,
             id: props.id,
             className: props.className,
         }
     }
     render() {
         const HEADING = {
-            width: 'inherit',
+            width: this.state.width,
+            height: this.state.height,
             color: this.state.color,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
@@ -398,13 +421,16 @@ export class H24 extends Component {
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
+            width: props.width || 'inherit',
+            height: props.height,
             id: props.id,
             className: props.className,
         }
     }
     render() {
         const HEADING = {
-            width: 'inherit',
+            width: this.state.width,
+            height: this.state.height,
             color: this.state.color,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
@@ -437,13 +463,16 @@ export class H25 extends Component {
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
+            width: props.width || 'width',
+            height: props.height,
             id: props.id,
             className: props.className,
         }
     }
     render() {
         const HEADING = {
-            width: 'inherit',
+            width: this.state.width,
+            height: this.state.height,
             color: this.state.color,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
@@ -478,13 +507,16 @@ export class H31 extends Component {
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
+            width: props.width || 'inherit',
+            height: props.height,
             id: props.id,
             className: props.className,
         }
     }
     render() {
         const HEADING = {
-            width: 'inherit',
+            width: this.state.width,
+            height: this.state.height,
             color: this.state.color,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
@@ -517,13 +549,16 @@ export class H32 extends Component {
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
+            width: props.width || 'inherit',
+            height: props.height,
             id: props.id,
             className: props.className,
         }
     }
     render() {
         const HEADING = {
-            width: 'inherit',
+            width: this.state.width,
+            height: this.state.height,
             color: this.state.color,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
@@ -556,13 +591,16 @@ export class H33 extends Component {
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
+            width: props.width || 'inherit',
+            height: props.height,
             id: props.id,
             className: props.className,
         }
     }
     render() {
         const HEADING = {
-            width: 'inherit',
+            width: this.state.width,
+            height: this.state.height,
             color: this.state.color,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
@@ -595,14 +633,16 @@ export class H34 extends Component {
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
+            width: props.width || 'inherit',
+            height: props.height,
             id: props.id,
             className: props.className,
         }
     }
     render() {
         const HEADING = {
-            width: 'inherit',
-            height: 'inherit',
+            width: this.state.width,
+            height: this.state.height,
             color: this.state.color,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
@@ -635,13 +675,16 @@ export class H35 extends Component {
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 5px 0',
             margin: props.margin || '0',
+            width: props.width || 'inherit',
+            height: props.height,
             id: props.id,
             className: props.className,
         }
     }
     render() {
         const HEADING = {
-            width: 'inherit',
+            width: this.state.width,
+            height: this.state.height,
             color: this.state.color,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
@@ -676,13 +719,16 @@ export class H41 extends Component {
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 3px 0',
             margin: props.margin || '0',
+            width: props.width || 'inherit',
+            height: props.height,
             id: props.id,
             className: props.className,
         }
     }
     render() {
         const HEADING = {
-            width: 'inherit',
+            width: this.state.width,
+            height: this.state.height,
             color: this.state.color,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
@@ -716,13 +762,16 @@ export class H42 extends Component {
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 3px 0',
             margin: props.margin || '0',
+            width: props.width || 'inherit',
+            height: props.height,
             id: props.id,
             className: props.className,
         }
     }
     render() {
         const HEADING = {
-            width: 'inherit',
+            width: this.state.width,
+            height: this.state.height,
             color: this.state.color,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
@@ -755,13 +804,16 @@ export class H43 extends Component {
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 3px 0',
             margin: props.margin || '0',
+            width: props.width || 'inherit',
+            height: props.height,
             id: props.id,
             className: props.className,
         }
     }
     render() {
         const HEADING = {
-            width: 'inherit',
+            width: this.state.width,
+            height: this.state.height,
             color: this.state.color,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
@@ -794,13 +846,16 @@ export class H44 extends Component {
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 3px 0',
             margin: props.margin || '0',
+            width: props.width || 'inherit',
+            height: props.height,
             id: props.id,
             className: props.className,
         }
     }
     render() {
         const HEADING = {
-            width: 'inherit',
+            width: this.state.width,
+            height: this.state.height,
             color: this.state.color,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
@@ -833,13 +888,17 @@ export class H45 extends Component {
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 3px 0',
             margin: props.margin || '0',
+            width: props.width || 'inherit',
+            height: props.height,
             id: props.id,
             className: props.className,
+            
         }
     }
     render() {
         const HEADING = {
-            width: 'inherit',
+            width: this.state.width,
+            height: this.state.height,
             color: this.state.color,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
@@ -877,13 +936,16 @@ export class P1 extends Component {
             textAlign: props.textAlign || 'center',
             padding: props.padding || '10px 10%',
             margin: props.margin || '0',
+            width: props.width || 'inherit',
+            height: props.height,
             id: props.id,
             className: props.className,
         }
     }
     render() {
         const PARAGRAPH = {
-            width: 'inherit',
+            width: this.state.width,
+            height: this.state.height,
             color: this.state.color,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
@@ -917,13 +979,16 @@ export class P2 extends Component {
             textAlign: props.textAlign || 'center',
             padding: props.padding || '10px 10%',
             margin: props.margin || '0',
+            width: props.width || 'inherit',
+            height: props.height,
             id: props.id,
             className: props.className,
         }
     }
     render() {
         const PARAGRAPH = {
-            width: 'inherit',
+            width: this.state.width,
+            height: this.state.height,
             color: this.state.color,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
@@ -956,13 +1021,16 @@ export class P3 extends Component {
             textAlign: props.textAlign || 'center',
             padding: props.padding || '10px 10%',
             margin: props.margin || '0',
+            width: props.width || 'inherit',
+            height: props.height,
             id: props.id,
             className: props.className,
         }
     }
     render() {
         const PARAGRAPH = {
-            width: 'inherit',
+            width: this.state.width,
+            height: this.state.height,
             color: this.state.color,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
@@ -995,13 +1063,16 @@ export class P4 extends Component {
             textAlign: props.textAlign || 'center',
             padding: props.padding || '10px 10%',
             margin: props.margin || '0',
+            width: props.width || 'inherit',
+            height: props.height,
             id: props.id,
             className: props.className,
         }
     }
     render() {
         const PARAGRAPH = {
-            width: 'inherit',
+            width: this.state.width,
+            height: this.state.height,
             color: this.state.color,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
@@ -1035,13 +1106,16 @@ export class P5 extends Component {
             textAlign: props.textAlign || 'center',
             padding: props.padding || '10px 10%',
             margin: props.margin || '0',
+            width: props.width || 'inherit',
+            height: props.height,
             id: props.id,
             className: props.className,
         }
     }
     render() {
         const PARAGRAPH = {
-            width: 'inherit',
+            width: this.state.width,
+            height: this.state.height,
             color: this.state.color,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
@@ -1755,8 +1829,9 @@ export class SubNavbar1 extends Component {
             margin: '0',
             padding: this.state.padding,
             background: this.state.mainBackground,
-            position: 'sticky',
-            top: '-1px'
+            top: '-1px',
+            position: "sticky",
+            zIndex: "200",
         };
         const SUBNAVBAR_NAVBAR = {
             width: this.state.navBarWidth,
@@ -2117,6 +2192,7 @@ export class DropDownNav1 extends Component {
             textAlign: 'center',
             flex: 1,
             background: this.state.background,
+            zIndex: "1000",
         }
         const DropDown_NavBar_Li = {
 
@@ -2180,9 +2256,9 @@ export class DropDownNav3 extends Component {
             flex: 1,
             background: this.state.background,
         }
-        const DropDown_NavBar_Li = {
+        // const DropDown_NavBar_Li = {
 
-        }
+        // }
         const HASCHILDS = {
             fontSize: '1.333em',
         }
@@ -2821,10 +2897,10 @@ export class HorizontalTicker extends Component {
             padding: '0 2em',
 
         }
-        const HORIZONTALTICKER2 = {
-            paddingLeft: '50%',
-        }
-        const CHILDS = React.Children.toArray(this.props.children)
+        // const HORIZONTALTICKER2 = {
+        //     paddingLeft: '50%',
+        // }
+        // const CHILDS = React.Children.toArray(this.props.children)
         const TICKERITEM = this.state.slide1.map((x, i) => {
             return (
                 <div key={i} style={TICKER_ITEM} >{x}</div>

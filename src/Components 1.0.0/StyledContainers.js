@@ -2,15 +2,13 @@ import React, { Component } from 'react';
 import './reset.css';
 import './SuperStyleSheet.css';
 
-import Container1, { Container3 } from './Containers';
+import Container1 from './Containers';
 
 import {
-    Navbar2,
-    Navbar3,
     Brand2,
     Brand3,
 } from './Blocks';
-import Holder1, { Holder2, Holder3, Holder4, Holder5, Holder6, Holder7, Holder8 } from './Holders';
+import Holder1, { Holder2, Holder4, Holder5, Holder6 } from './Holders';
 /* Pre Styled Containers*/
 /*
    Pre Styled Description and use
@@ -239,7 +237,7 @@ export class StyluxStyledFooter4 extends Component {
 export class StyluxStyledFooter5 extends Component {
 
     render() {
-        const childs = React.Children.toArray(this.props.children)
+        // const childs = React.Children.toArray(this.props.children)
         return (
             <Container1>
                 <footer className="StyluxStyledFooter5">

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import Container1 from '../Components 1.0.0/Containers';
 import { Holder2 } from '../Components 1.0.0/Holders';
-import { H34, Navbar1, DropDownNav1, Brand1 } from '../Components 1.0.0/Blocks';
+import { Navbar1, DropDownNav1, Brand1 } from '../Components 1.0.0/Blocks';
 
 import Logo from '../images/Logo/QuickFirstDraft.svg';
 

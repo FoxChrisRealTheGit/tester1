@@ -15,8 +15,6 @@ import FeatureBlog1, {
     FeatureBlog2,
 } from '../../../Components 1.0.0/BlogBlocks';
 
-import chrisChillin from '../../../images/Chris-hangingout.jpg';
-
 export default class FeatureBlogBlocksView extends Component {
     render() {
         return (

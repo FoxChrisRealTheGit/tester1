@@ -11,7 +11,6 @@ import {
     HorizontalTestBlock1,
     H34,
     Toggler1,
-    FlatButton1,
     Navbar1,
     Toggler2,
     P2,

@@ -4,7 +4,7 @@ import FooterNavigation from '../FooterNavigation';
 import { Link } from 'react-router-dom';
 
 import Container1 from '../../Components 1.0.0/Containers';
-import Holder1, { Holder4, Holder5, Holder9 } from '../../Components 1.0.0/Holders';
+import Holder1, { Holder4, Holder5 } from '../../Components 1.0.0/Holders';
 import {
     H21,
     H34,
