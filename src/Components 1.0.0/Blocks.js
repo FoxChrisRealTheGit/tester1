@@ -72,6 +72,7 @@ export class H11 extends Component {
         super(props);
         this.state = {
             color: props.color || 'black',
+            textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '8em',
             fontWeight: props.weight || '900',
@@ -82,6 +83,11 @@ export class H11 extends Component {
             margin: props.margin || '0',
             width: props.width || 'inherit',
             height: props.height,
+            border: props.border,
+            bLEft: props.bLeft,
+            bRight: props.bRight,
+            bTop: props.bTop,
+            bBottom: props.bBottom,
             id: props.id,
             className: props.className,
         }
@@ -92,6 +98,12 @@ export class H11 extends Component {
             width: this.state.width,
             height: this.state.height,
             color: this.state.color,
+            textShadow: this.state.textShadow,
+            borderLeft: this.state.bLeft,
+            borderRight: this.state.bRight,
+            borderTop: this.state.bTop,
+            borderBottom: this.state.bBottom,
+            border: this.state.border,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
             fontWeight: this.state.fontWeight,
@@ -116,6 +128,7 @@ export class H12 extends Component {
         super(props);
         this.state = {
             color: props.color || 'black',
+            textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '7em',
             fontWeight: props.weight || '900',
@@ -126,6 +139,11 @@ export class H12 extends Component {
             margin: props.margin || '0',
             width: props.width || 'inherit',
             height: props.height,
+            border: props.border,
+            bLEft: props.bLeft,
+            bRight: props.bRight,
+            bTop: props.bTop,
+            bBottom: props.bBottom,
             id: props.id,
             className: props.className,
         }
@@ -135,6 +153,12 @@ export class H12 extends Component {
             width: this.state.width,
             height: this.state.height,
             color: this.state.color,
+            textShadow: this.state.textShadow,
+            borderLeft: this.state.bLeft,
+            borderRight: this.state.bRight,
+            borderTop: this.state.bTop,
+            borderBottom: this.state.bBottom,
+            border: this.state.border,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
             fontWeight: this.state.fontWeight,
@@ -144,6 +168,7 @@ export class H12 extends Component {
             textAlign: this.state.textAlign,
             padding: this.state.padding,
             margin: this.state.margin,
+            
             overflowX: 'hidden',
             overflowY: 'hidden',
 
@@ -159,6 +184,7 @@ export class H13 extends Component {
         super(props);
         this.state = {
             color: props.color || 'black',
+            textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '9em',
             fontWeight: props.weight || '900',
@@ -169,6 +195,11 @@ export class H13 extends Component {
             margin: props.margin || '0',
             width: props.width || 'inherit',
             height: props.height,
+            border: props.border,
+            bLEft: props.bLeft,
+            bRight: props.bRight,
+            bTop: props.bTop,
+            bBottom: props.bBottom,
             id: props.id,
             className: props.className,
         }
@@ -178,6 +209,12 @@ export class H13 extends Component {
             width: this.state.width,
             height: this.state.height,
             color: this.state.color,
+            textShadow: this.state.textShadow,
+            borderLeft: this.state.bLeft,
+            borderRight: this.state.bRight,
+            borderTop: this.state.bTop,
+            borderBottom: this.state.bBottom,
+            border: this.state.border,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
             fontWeight: this.state.fontWeight,
@@ -201,6 +238,7 @@ export class H14 extends Component {
         super(props);
         this.state = {
             color: props.color || 'lightgray',
+            textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '8em',
             fontWeight: props.weight || '900',
@@ -211,6 +249,11 @@ export class H14 extends Component {
             margin: props.margin || '0',
             width: props.width || 'inherit',
             height: props.height,
+            border: props.border,
+            bLEft: props.bLeft,
+            bRight: props.bRight,
+            bTop: props.bTop,
+            bBottom: props.bBottom,
             id: props.id,
             className: props.className,
         }
@@ -220,6 +263,12 @@ export class H14 extends Component {
             width: this.state.width,
             height: this.state.height,
             color: this.state.color,
+            textShadow: this.state.textShadow,
+            borderLeft: this.state.bLeft,
+            borderRight: this.state.bRight,
+            borderTop: this.state.bTop,
+            borderBottom: this.state.bBottom,
+            border: this.state.border,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
             fontWeight: this.state.fontWeight,
@@ -243,6 +292,7 @@ export class H15 extends Component {
         super(props);
         this.state = {
             color: props.color || 'black',
+            textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '8em',
             fontWeight: props.weight || '900',
@@ -253,6 +303,11 @@ export class H15 extends Component {
             margin: props.margin || '0',
             width: props.width || 'inherit',
             height: props.height,
+            border: props.border,
+            bLEft: props.bLeft,
+            bRight: props.bRight,
+            bTop: props.bTop,
+            bBottom: props.bBottom,
             id: props.id,
             className: props.className,
         }
@@ -262,6 +317,12 @@ export class H15 extends Component {
             width: this.state.width,
             height: this.state.height,
             color: this.state.color,
+            textShadow: this.state.textShadow,
+            borderLeft: this.state.bLeft,
+            borderRight: this.state.bRight,
+            borderTop: this.state.bTop,
+            borderBottom: this.state.bBottom,
+            border: this.state.border,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
             fontWeight: this.state.fontWeight,
@@ -287,6 +348,7 @@ export class H21 extends Component {
         super(props);
         this.state = {
             color: props.color || 'black',
+            textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '5.646em',
             fontWeight: props.weight || '600',
@@ -297,6 +359,11 @@ export class H21 extends Component {
             margin: props.margin || '0',
             width: props.width || 'inherit',
             height: props.height,
+            border: props.border,
+            bLEft: props.bLeft,
+            bRight: props.bRight,
+            bTop: props.bTop,
+            bBottom: props.bBottom,
             id: props.id,
             className: props.className,
         }
@@ -306,6 +373,12 @@ export class H21 extends Component {
             width: this.state.width,
             height: this.state.height,
             color: this.state.color,
+            textShadow: this.state.textShadow,
+            borderLeft: this.state.bLeft,
+            borderRight: this.state.bRight,
+            borderTop: this.state.bTop,
+            borderBottom: this.state.bBottom, 
+            border: this.state.border,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
             fontWeight: this.state.fontWeight,
@@ -329,6 +402,7 @@ export class H22 extends Component {
         super(props);
         this.state = {
             color: props.color || 'black',
+            textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '4.705em',
             fontWeight: props.weight || '600',
@@ -339,6 +413,11 @@ export class H22 extends Component {
             margin: props.margin || '0',
             width: props.width || 'inherit',
             height: props.height,
+            border: props.border,
+            bLEft: props.bLeft,
+            bRight: props.bRight,
+            bTop: props.bTop,
+            bBottom: props.bBottom,
             id: props.id,
             className: props.className,
         }
@@ -348,6 +427,12 @@ export class H22 extends Component {
             width: this.state.width,
             height: this.state.height,
             color: this.state.color,
+            textShadow: this.state.textShadow,
+            borderLeft: this.state.bLeft,
+            borderRight: this.state.bRight,
+            borderTop: this.state.bTop,
+            borderBottom: this.state.bBottom,
+            border: this.state.border,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
             fontWeight: this.state.fontWeight,
@@ -371,6 +456,7 @@ export class H23 extends Component {
         super(props);
         this.state = {
             color: props.color || 'black',
+            textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '6.775em',
             fontWeight: props.weight || '600',
@@ -381,6 +467,11 @@ export class H23 extends Component {
             margin: props.margin || '0',
             width: props.width || 'inherit',
             height: props.height,
+            border: props.border,
+            bLEft: props.bLeft,
+            bRight: props.bRight,
+            bTop: props.bTop,
+            bBottom: props.bBottom,
             id: props.id,
             className: props.className,
         }
@@ -390,6 +481,12 @@ export class H23 extends Component {
             width: this.state.width,
             height: this.state.height,
             color: this.state.color,
+            textShadow: this.state.textShadow,
+            borderLeft: this.state.bLeft,
+            borderRight: this.state.bRight,
+            borderTop: this.state.bTop,
+            borderBottom: this.state.bBottom,
+            border: this.state.border,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
             fontWeight: this.state.fontWeight,
@@ -413,6 +510,7 @@ export class H24 extends Component {
         super(props);
         this.state = {
             color: props.color || 'lightgray',
+            textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '5.646em',
             fontWeight: props.weight || '600',
@@ -423,6 +521,11 @@ export class H24 extends Component {
             margin: props.margin || '0',
             width: props.width || 'inherit',
             height: props.height,
+            border: props.border,
+            bLEft: props.bLeft,
+            bRight: props.bRight,
+            bTop: props.bTop,
+            bBottom: props.bBottom,
             id: props.id,
             className: props.className,
         }
@@ -432,6 +535,12 @@ export class H24 extends Component {
             width: this.state.width,
             height: this.state.height,
             color: this.state.color,
+            textShadow: this.state.textShadow,
+            borderLeft: this.state.bLeft,
+            borderRight: this.state.bRight,
+            borderTop: this.state.bTop,
+            borderBottom: this.state.bBottom,
+            border: this.state.border,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
             fontWeight: this.state.fontWeight,
@@ -455,6 +564,7 @@ export class H25 extends Component {
         super(props);
         this.state = {
             color: props.color || 'black',
+            textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '5.646em',
             fontWeight: props.weight || '600',
@@ -465,6 +575,11 @@ export class H25 extends Component {
             margin: props.margin || '0',
             width: props.width || 'width',
             height: props.height,
+            border: props.border,
+            bLEft: props.bLeft,
+            bRight: props.bRight,
+            bTop: props.bTop,
+            bBottom: props.bBottom,
             id: props.id,
             className: props.className,
         }
@@ -474,6 +589,12 @@ export class H25 extends Component {
             width: this.state.width,
             height: this.state.height,
             color: this.state.color,
+            textShadow: this.state.textShadow,
+            borderLeft: this.state.bLeft,
+            borderRight: this.state.bRight,
+            borderTop: this.state.bTop,
+            borderBottom: this.state.bBottom,
+            border: this.state.border,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
             fontWeight: this.state.fontWeight,
@@ -499,6 +620,7 @@ export class H31 extends Component {
         super(props);
         this.state = {
             color: props.color || 'black',
+            textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '3.489em',
             fontWeight: props.weight || '400',
@@ -509,6 +631,11 @@ export class H31 extends Component {
             margin: props.margin || '0',
             width: props.width || 'inherit',
             height: props.height,
+            border: props.border,
+            bLEft: props.bLeft,
+            bRight: props.bRight,
+            bTop: props.bTop,
+            bBottom: props.bBottom,
             id: props.id,
             className: props.className,
         }
@@ -518,6 +645,12 @@ export class H31 extends Component {
             width: this.state.width,
             height: this.state.height,
             color: this.state.color,
+            textShadow: this.state.textShadow,
+            borderLeft: this.state.bLeft,
+            borderRight: this.state.bRight,
+            borderTop: this.state.bTop,
+            borderBottom: this.state.bBottom,
+            border: this.state.border,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
             fontWeight: this.state.fontWeight,
@@ -541,6 +674,7 @@ export class H32 extends Component {
         super(props);
         this.state = {
             color: props.color || 'black',
+            textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '2.9075em',
             fontWeight: props.weight || '400',
@@ -551,6 +685,11 @@ export class H32 extends Component {
             margin: props.margin || '0',
             width: props.width || 'inherit',
             height: props.height,
+            border: props.border,
+            bLEft: props.bLeft,
+            bRight: props.bRight,
+            bTop: props.bTop,
+            bBottom: props.bBottom,
             id: props.id,
             className: props.className,
         }
@@ -560,6 +699,12 @@ export class H32 extends Component {
             width: this.state.width,
             height: this.state.height,
             color: this.state.color,
+            textShadow: this.state.textShadow,
+            borderLeft: this.state.bLeft,
+            borderRight: this.state.bRight,
+            borderTop: this.state.bTop,
+            borderBottom: this.state.bBottom,
+            border: this.state.border,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
             fontWeight: this.state.fontWeight,
@@ -583,6 +728,7 @@ export class H33 extends Component {
         super(props);
         this.state = {
             color: props.color || 'black',
+            textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '4.187em',
             fontWeight: props.weight || '400',
@@ -593,6 +739,11 @@ export class H33 extends Component {
             margin: props.margin || '0',
             width: props.width || 'inherit',
             height: props.height,
+            border: props.border,
+            bLEft: props.bLeft,
+            bRight: props.bRight,
+            bTop: props.bTop,
+            bBottom: props.bBottom,
             id: props.id,
             className: props.className,
         }
@@ -602,6 +753,12 @@ export class H33 extends Component {
             width: this.state.width,
             height: this.state.height,
             color: this.state.color,
+            textShadow: this.state.textShadow,
+            borderLeft: this.state.bLeft,
+            borderRight: this.state.bRight,
+            borderTop: this.state.bTop,
+            borderBottom: this.state.bBottom,
+            border: this.state.border,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
             fontWeight: this.state.fontWeight,
@@ -625,6 +782,7 @@ export class H34 extends Component {
         super(props);
         this.state = {
             color: props.color || 'lightgray',
+            textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '3.489em',
             fontWeight: props.weight || '400',
@@ -635,6 +793,11 @@ export class H34 extends Component {
             margin: props.margin || '0',
             width: props.width || 'inherit',
             height: props.height,
+            border: props.border,
+            bLEft: props.bLeft,
+            bRight: props.bRight,
+            bTop: props.bTop,
+            bBottom: props.bBottom,
             id: props.id,
             className: props.className,
         }
@@ -644,6 +807,12 @@ export class H34 extends Component {
             width: this.state.width,
             height: this.state.height,
             color: this.state.color,
+            textShadow: this.state.textShadow,
+            borderLeft: this.state.bLeft,
+            borderRight: this.state.bRight,
+            borderTop: this.state.bTop,
+            borderBottom: this.state.bBottom,
+            border: this.state.border,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
             fontWeight: this.state.fontWeight,
@@ -667,6 +836,7 @@ export class H35 extends Component {
         super(props);
         this.state = {
             color: props.color || 'black',
+            textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '3.489em',
             fontWeight: props.weight || '400',
@@ -677,6 +847,11 @@ export class H35 extends Component {
             margin: props.margin || '0',
             width: props.width || 'inherit',
             height: props.height,
+            border: props.border,
+            bLEft: props.bLeft,
+            bRight: props.bRight,
+            bTop: props.bTop,
+            bBottom: props.bBottom,
             id: props.id,
             className: props.className,
         }
@@ -686,6 +861,12 @@ export class H35 extends Component {
             width: this.state.width,
             height: this.state.height,
             color: this.state.color,
+            textShadow: this.state.textShadow,
+            borderLeft: this.state.bLeft,
+            borderRight: this.state.bRight,
+            borderTop: this.state.bTop,
+            borderBottom: this.state.bBottom, 
+            border: this.state.border,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
             fontWeight: this.state.fontWeight,
@@ -711,6 +892,7 @@ export class H41 extends Component {
         super(props);
         this.state = {
             color: props.color || 'black',
+            textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '2.157em',
             fontWeight: props.weight || '200',
@@ -721,6 +903,11 @@ export class H41 extends Component {
             margin: props.margin || '0',
             width: props.width || 'inherit',
             height: props.height,
+            border: props.border,
+            bLEft: props.bLeft,
+            bRight: props.bRight,
+            bTop: props.bTop,
+            bBottom: props.bBottom,
             id: props.id,
             className: props.className,
         }
@@ -730,6 +917,12 @@ export class H41 extends Component {
             width: this.state.width,
             height: this.state.height,
             color: this.state.color,
+            textShadow: this.state.textShadow,
+            borderLeft: this.state.bLeft,
+            borderRight: this.state.bRight,
+            borderTop: this.state.bTop,
+            borderBottom: this.state.bBottom,
+            border: this.state.border,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
             fontWeight: this.state.fontWeight,
@@ -754,6 +947,7 @@ export class H42 extends Component {
         super(props);
         this.state = {
             color: props.color || 'black',
+            textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '1.7975em',
             fontWeight: props.weight || '200',
@@ -764,6 +958,11 @@ export class H42 extends Component {
             margin: props.margin || '0',
             width: props.width || 'inherit',
             height: props.height,
+            border: props.border,
+            bLEft: props.bLeft,
+            bRight: props.bRight,
+            bTop: props.bTop,
+            bBottom: props.bBottom,
             id: props.id,
             className: props.className,
         }
@@ -773,6 +972,12 @@ export class H42 extends Component {
             width: this.state.width,
             height: this.state.height,
             color: this.state.color,
+            textShadow: this.state.textShadow,
+            borderLeft: this.state.bLeft,
+            borderRight: this.state.bRight,
+            borderTop: this.state.bTop,
+            borderBottom: this.state.bBottom,
+            border: this.state.border,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
             fontWeight: this.state.fontWeight,
@@ -796,6 +1001,7 @@ export class H43 extends Component {
         super(props);
         this.state = {
             color: props.color || 'black',
+            textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '2.588em',
             fontWeight: props.weight || '200',
@@ -806,6 +1012,11 @@ export class H43 extends Component {
             margin: props.margin || '0',
             width: props.width || 'inherit',
             height: props.height,
+            border: props.border,
+            bLEft: props.bLeft,
+            bRight: props.bRight,
+            bTop: props.bTop,
+            bBottom: props.bBottom,
             id: props.id,
             className: props.className,
         }
@@ -815,6 +1026,12 @@ export class H43 extends Component {
             width: this.state.width,
             height: this.state.height,
             color: this.state.color,
+            textShadow: this.state.textShadow,
+            borderLeft: this.state.bLeft,
+            borderRight: this.state.bRight,
+            borderTop: this.state.bTop,
+            borderBottom: this.state.bBottom,
+            border: this.state.border,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
             fontWeight: this.state.fontWeight,
@@ -838,6 +1055,7 @@ export class H44 extends Component {
         super(props);
         this.state = {
             color: props.color || 'lightgray',
+            textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '2.157em',
             fontWeight: props.weight || '200',
@@ -848,6 +1066,11 @@ export class H44 extends Component {
             margin: props.margin || '0',
             width: props.width || 'inherit',
             height: props.height,
+            border: props.border,
+            bLEft: props.bLeft,
+            bRight: props.bRight,
+            bTop: props.bTop,
+            bBottom: props.bBottom,
             id: props.id,
             className: props.className,
         }
@@ -857,6 +1080,12 @@ export class H44 extends Component {
             width: this.state.width,
             height: this.state.height,
             color: this.state.color,
+            textShadow: this.state.textShadow,
+            borderLeft: this.state.bLeft,
+            borderRight: this.state.bRight,
+            borderTop: this.state.bTop,
+            borderBottom: this.state.bBottom,
+            border: this.state.border,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
             fontWeight: this.state.fontWeight,
@@ -880,6 +1109,7 @@ export class H45 extends Component {
         super(props);
         this.state = {
             color: props.color || 'black',
+            textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '2.157em',
             fontWeight: props.weight || '200',
@@ -890,6 +1120,11 @@ export class H45 extends Component {
             margin: props.margin || '0',
             width: props.width || 'inherit',
             height: props.height,
+            border: props.border,
+            bLEft: props.bLeft,
+            bRight: props.bRight,
+            bTop: props.bTop,
+            bBottom: props.bBottom,
             id: props.id,
             className: props.className,
             
@@ -900,6 +1135,12 @@ export class H45 extends Component {
             width: this.state.width,
             height: this.state.height,
             color: this.state.color,
+            textShadow: this.state.textShadow,
+            borderLeft: this.state.bLeft,
+            borderRight: this.state.bRight,
+            borderTop: this.state.bTop,
+            borderBottom: this.state.bBottom,
+            border: this.state.border,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
             fontWeight: this.state.fontWeight,
@@ -927,6 +1168,7 @@ export class P1 extends Component {
         super(props);
         this.state = {
             color: props.color || 'black',
+            textShadow: props.shadow,
             fontFamily: props.font || 'serif',
             fontSize: props.size || '1.333em',
             lineHeight: props.lineHeight || '1.5em',
@@ -938,6 +1180,11 @@ export class P1 extends Component {
             margin: props.margin || '0',
             width: props.width || 'inherit',
             height: props.height,
+            border: props.border,
+            bLEft: props.bLeft,
+            bRight: props.bRight,
+            bTop: props.bTop,
+            bBottom: props.bBottom,
             id: props.id,
             className: props.className,
         }
@@ -947,6 +1194,12 @@ export class P1 extends Component {
             width: this.state.width,
             height: this.state.height,
             color: this.state.color,
+            textShadow: this.state.textShadow,
+            borderLeft: this.state.bLeft,
+            borderRight: this.state.bRight,
+            borderTop: this.state.bTop,
+            borderBottom: this.state.bBottom, 
+            border: this.state.border,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
             lineHeight: this.state.lineHeight,
@@ -970,6 +1223,7 @@ export class P2 extends Component {
         super(props);
         this.state = {
             color: props.color || 'black',
+            textShadow: props.shadow,
             fontFamily: props.font || 'serif',
             fontSize: props.size || '0.9em',
             lineHeight: props.lineHeight || '1.22em',
@@ -981,6 +1235,11 @@ export class P2 extends Component {
             margin: props.margin || '0',
             width: props.width || 'inherit',
             height: props.height,
+            border: props.border,
+            bLEft: props.bLeft,
+            bRight: props.bRight,
+            bTop: props.bTop,
+            bBottom: props.bBottom,
             id: props.id,
             className: props.className,
         }
@@ -990,6 +1249,12 @@ export class P2 extends Component {
             width: this.state.width,
             height: this.state.height,
             color: this.state.color,
+            textShadow: this.state.textShadow,
+            borderLeft: this.state.bLeft,
+            borderRight: this.state.bRight,
+            borderTop: this.state.bTop,
+            borderBottom: this.state.bBottom,
+            border: this.state.border,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
             lineHeight: this.state.lineHeight,
@@ -1012,6 +1277,7 @@ export class P3 extends Component {
         super(props);
         this.state = {
             color: props.color || 'black',
+            textShadow: props.shadow,
             fontFamily: props.font || 'serif',
             fontSize: props.size || '1.6em',
             lineHeight: props.lineHeight || '1.8em',
@@ -1023,6 +1289,11 @@ export class P3 extends Component {
             margin: props.margin || '0',
             width: props.width || 'inherit',
             height: props.height,
+            border: props.border,
+            bLEft: props.bLeft,
+            bRight: props.bRight,
+            bTop: props.bTop,
+            bBottom: props.bBottom,
             id: props.id,
             className: props.className,
         }
@@ -1032,6 +1303,12 @@ export class P3 extends Component {
             width: this.state.width,
             height: this.state.height,
             color: this.state.color,
+            textShadow: this.state.textShadow,
+            borderLeft: this.state.bLeft,
+            borderRight: this.state.bRight,
+            borderTop: this.state.bTop,
+            borderBottom: this.state.bBottom,
+            border: this.state.border,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
             lineHeight: this.state.lineHeight,
@@ -1054,6 +1331,7 @@ export class P4 extends Component {
         super(props);
         this.state = {
             color: props.color || 'lightgray',
+            textShadow: props.shadow,
             fontFamily: props.font || 'serif',
             fontSize: props.size || '1.6em',
             lineHeight: props.lineHeight || '1.8em',
@@ -1065,6 +1343,11 @@ export class P4 extends Component {
             margin: props.margin || '0',
             width: props.width || 'inherit',
             height: props.height,
+            border: props.border,
+            bLEft: props.bLeft,
+            bRight: props.bRight,
+            bTop: props.bTop,
+            bBottom: props.bBottom,
             id: props.id,
             className: props.className,
         }
@@ -1074,6 +1357,12 @@ export class P4 extends Component {
             width: this.state.width,
             height: this.state.height,
             color: this.state.color,
+            textShadow: this.state.textShadow,
+            borderLeft: this.state.bLeft,
+            borderRight: this.state.bRight,
+            borderTop: this.state.bTop,
+            borderBottom: this.state.bBottom,
+            border: this.state.border,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
             lineHeight: this.state.lineHeight,
@@ -1097,6 +1386,7 @@ export class P5 extends Component {
         super(props);
         this.state = {
             color: props.color || 'black',
+            textShadow: props.shadow,
             fontFamily: props.font || 'serif',
             fontSize: props.size || '1.333em',
             lineHeight: props.lineHeight || '1.5em',
@@ -1108,6 +1398,11 @@ export class P5 extends Component {
             margin: props.margin || '0',
             width: props.width || 'inherit',
             height: props.height,
+            border: props.border,
+            bLEft: props.bLeft,
+            bRight: props.bRight,
+            bTop: props.bTop,
+            bBottom: props.bBottom,
             id: props.id,
             className: props.className,
         }
@@ -1117,6 +1412,12 @@ export class P5 extends Component {
             width: this.state.width,
             height: this.state.height,
             color: this.state.color,
+            textShadow: this.state.textShadow,
+            borderLeft: this.state.bLeft,
+            borderRight: this.state.bRight,
+            borderTop: this.state.bTop,
+            borderBottom: this.state.bBottom,
+            border: this.state.border,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
             lineHeight: this.state.lineHeight,
@@ -1418,7 +1719,6 @@ export class Hero1 extends Component {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
@@ -1472,7 +1772,6 @@ export class Hero2 extends Component {
             height: this.state.bottomBoxHeight,
             padding: this.state.bottomBoxPadding,
             overflow: 'hidden',
-
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
@@ -1735,6 +2034,7 @@ export class Navbar1 extends Component {
             itemSpaceing: props.itemSpacing || '10px 0',
             mainBackground: props.mainBackground || 'inherit',
             itemBackground: props.itemBackground || 'inherit',
+            color: props.color || 'black',
             fontSize: props.fontSize || '1em',
             fontWeight: props.fontWeight || '100',
             fontVariant: props.fontVariant || 'none',
@@ -1754,6 +2054,7 @@ export class Navbar1 extends Component {
             margin: '0',
             padding: this.state.padding,
             background: this.state.mainBackground,
+            color: this.state.color,
         };
         const NAVBAR_NAVBAR = {
             width: this.state.navBarWidth,
@@ -1808,6 +2109,7 @@ export class SubNavbar1 extends Component {
             itemSpaceing: props.itemSpacing || '0',
             mainBackground: props.mainBackground || 'black',
             itemBackground: props.itemBackground || 'inherit',
+            color: props.color || 'whitesmoke',
             fontSize: props.fontSize || '0.8em',
             fontWeight: props.fontWeight || '100',
             fontVariant: props.fontVariant || 'none',
@@ -1829,6 +2131,7 @@ export class SubNavbar1 extends Component {
             margin: '0',
             padding: this.state.padding,
             background: this.state.mainBackground,
+            color: this.state.color,
             top: '-1px',
             position: "sticky",
             zIndex: "200",
@@ -1883,6 +2186,7 @@ export class SubNavbar2 extends Component {
             itemSpaceing: props.itemSpacing || '0',
             mainBackground: props.mainBackground || 'gray',
             itemBackground: props.itemBackground || 'inherit',
+            color: props.color || 'black',
             fontSize: props.fontSize || '0.8em',
             fontWeight: props.fontWeight || '100',
             fontVariant: props.fontVariant || 'none',
@@ -1898,6 +2202,7 @@ export class SubNavbar2 extends Component {
         const SUBNAVBAR = {
             width: this.state.totalWidth,
             height: this.state.totalHeight,
+            color: this.state.color,
             display: this.state.display,
             flexDirection: 'column',
             alignItems: this.state.alignItems,
@@ -2017,7 +2322,6 @@ export class Brand1 extends Component {
         this.state = {
             display: props.display || 'flex',
             direction: props.direction || 'row',
-            link: props.link || '/'
         }
     }
     render() {
@@ -2035,17 +2339,12 @@ export class Brand1 extends Component {
         const CHILDS = React.Children.toArray(this.props.children)
         return (
             <div style={BRAND}>
-                <a href={this.state.link}>
                     <SquareImage
                         size='tn'>
                         {CHILDS[0]}
                         logo
                     </SquareImage>
-                </a>
-                <a href={this.state.link}>
                     <p style={BRAND_NAME}>{CHILDS[1]}</p>
-                </a>
-
             </div>
         )
     }
@@ -2055,7 +2354,6 @@ export class Brand2 extends Component {
         super(props);
         this.state = {
             display: props.display || 'flex',
-            link: props.link || '/'
         }
     }
     render() {
@@ -2066,13 +2364,11 @@ export class Brand2 extends Component {
         const CHILDS = React.Children.toArray(this.props.children)
         return (
             <section style={BRAND}>
-                <a href={this.state.link}>
                     <RectangleImage
                         size='exsm'>
                         {CHILDS[0]}
                         logo
                     </RectangleImage>
-                </a>
             </section>
         )
     }
@@ -2082,7 +2378,6 @@ export class Brand3 extends Component {
         super(props);
         this.state = {
             display: props.display || 'flex',
-            link: props.link || '/'
         }
     }
     render() {
@@ -2093,12 +2388,10 @@ export class Brand3 extends Component {
         const CHILDS = React.Children.toArray(this.props.children)
         return (
             <section style={BRAND}>
-                <a href={this.state.link}>
                     <SquareImage>
                         {CHILDS[0]}
                         logo
                     </SquareImage>
-                </a>
             </section>
         )
     }
@@ -2108,7 +2401,6 @@ export class Brand4 extends Component {
         super(props);
         this.state = {
             display: props.display || 'flex',
-            link: props.link || '/'
         }
     }
     render() {
@@ -2119,12 +2411,10 @@ export class Brand4 extends Component {
         const CHILDS = React.Children.toArray(this.props.children)
         return (
             <section style={BRAND}>
-                <a href={this.state.link}>
                     <RectangleImage>
                         {CHILDS[0]}
                         logo
                     </RectangleImage>
-                </a>
             </section>
         )
     }
@@ -2134,7 +2424,6 @@ export class Brand5 extends Component {
         super(props);
         this.state = {
             display: props.display || 'flex',
-            link: props.link || '/'
         }
     }
     render() {
@@ -2145,9 +2434,6 @@ export class Brand5 extends Component {
         const CHILDS = React.Children.toArray(this.props.children)
         return (
             <section style={BRAND}>
-                <a href={this.state.link}>
-
-                </a>
             </section>
         )
     }
@@ -2160,8 +2446,11 @@ export class DropDownNav1 extends Component {
         this.state = {
             display: 'none',
             background: props.background,
-            offset: props.offset || '10px',
-            color: 'white',
+            boxShadow: props.boxShadow || '1px 2px 2px black',
+            borderRadius: props.borderRadius || '0 0 5px 5px',
+            offset: props.offset || '-5px',
+            color: props.color || 'black',
+            textAlign: props.textAlign || 'center',
             margin: '',
             padding: '',
             width: props.width,
@@ -2186,19 +2475,23 @@ export class DropDownNav1 extends Component {
         const DROPDOWN = {
             position: 'absolute',
             display: this.state.display,
+            borderRadius: this.state.borderRadius,
+            boxShadow: this.state.boxShadow,
             margin: `0 0 0 ${this.state.offset}`,
             width: this.state.width,
             padding: '5px',
-            textAlign: 'center',
+            textAlign: this.state.textAlign,
             flex: 1,
             background: this.state.background,
             zIndex: "1000",
+            color: this.state.color,
         }
         const DropDown_NavBar_Li = {
-
+            color: this.state.color,
         }
         const HASCHILDS = {
             fontSize: '1.333em',
+            color: this.state.color,
         }
         const CHILDS = React.Children.toArray(this.props.children)
         const NAVBAR = CHILDS.map((x, i, arr) => {
@@ -2206,7 +2499,7 @@ export class DropDownNav1 extends Component {
         })
         return (
             <nav id={this.state.mainid} className={`dropdownnav1 ${this.state.mainClassName}`}>
-                <li style={HASCHILDS} id={this.state.titleid} className={`DropDown ${this.state.titleClassName}`}
+                <li  id={this.state.titleid} className={`DropDown ${this.state.titleClassName}`} style={HASCHILDS}
                     onMouseOver={() => this.setState({ display: 'block' })}
                     onMouseOut={() => this.setState({ display: 'none' })}>
                     {CHILDS[0]}
@@ -2944,6 +3237,24 @@ export class Toggler1 extends Component {
             top: props.top || '0',
             background: props.background || 'white',
             buttonText: props.buttonText || 'toggler1',
+            bColor: props.bColor || 'black',
+            bBackground: props.bBackground,
+            bFontSize: props.bFontSize || '1.333em',
+            bFontVariant: props.bFontVariant,
+            bFontWeight: props.bFontWeight,
+            bTextShadow: props.bTextShadow,
+            bMargin: props.bMargin,
+            bPadding: props.bPadding,
+            bBorderLeft: props.bBorderLeft,
+            bBorderRight: props.bBorderRight,
+            bBorderTop: props.bBorderTop,
+            bBorderBottom: props.bBorderBottom,
+            border: props.bBorder,
+            border: props.border,
+            bLEft: props.bLeft,
+            bRight: props.bRight,
+            bTop: props.bTop,
+            bBottom: props.bBottom,
             left: props.left,
             right: props.right,
             mainid: props.mainid,
@@ -2952,6 +3263,7 @@ export class Toggler1 extends Component {
             titleClassName: props.titleClassName,
             mainClassName: props.mainClassName,
             toggleClassName: props.toggleClassName,
+            boxShadow: props.shadow || '1px 2px 2px black',
         }
         this.toggle = this.toggle.bind(this);
     }
@@ -2966,14 +3278,34 @@ export class Toggler1 extends Component {
             display: this.state.show ? 'inline' : 'none',
             width: this.state.width,
             height: this.state.height,
+            boxShadow: this.state.boxShadow,
             position: this.state.position,
             background: this.state.background,
+            borderLeft: this.state.bLeft,
+            borderRight: this.state.bRight,
+            borderTop: this.state.bTop,
+            borderBottom: this.state.bBottom,
+            border: this.state.border,
             right: this.state.right,
             left: this.state.left,
             top: this.state.top,
+            zIndex: 2000,
         }
         const CLICKBOX = {
             cursor: 'pointer',
+            color: this.state.bColor,
+            background: this.state.bBackground,
+            fontSize: this.state.bFontSize,
+            fontVariant: this.state.bFontVariant,
+            fontWeight: this.state.bFontWeight,
+            textShadow: this.state.bTextShadow,
+            margin: this.state.bMargin,
+            padding: this.state.bPadding,
+            borderLeft: this.state.bBorderLeft,
+            borderRight: this.state.bBorderRight,
+            borderTop: this.state.bBorderTop,
+            borderBottom: this.state.bBorderBottom,
+            border: this.state.bBorder,
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
@@ -2997,10 +3329,28 @@ export class Toggler2 extends Component {
             width: props.width || '400px',
             height: props.height,
             background: props.background || 'white',
+            border: props.border,
+            bLEft: props.bLeft,
+            bRight: props.bRight,
+            bTop: props.bTop,
+            bBottom: props.bBottom,
             buttonText: props.buttonText || 'toggler2',
+            bColor: props.bColor || 'black',
+            bBackground: props.bBackground,
+            bFontSize: props.bFontSize || '1.333em',
+            bFontVariant: props.bFontVariant,
+            bFontWeight: props.bFontWeight,
+            bTextShadow: props.bTextShadow,
+            bMargin: props.bMargin,
+            bPadding: props.bPadding,
+            bBorderLeft: props.bBorderLeft,
+            bBorderRight: props.bBorderRight,
+            bBorderTop: props.bBorderTop,
+            bBorderBottom: props.bBorderBottom,
             position: props.position,
             padding: props.padding,
             offset: props.offset + '%',
+            boxShadow: props.shadow || '1px 2px 2px black',
             mainid: props.mainid,
             toggleid: props.toggleid,
             titleid: props.titleid,
@@ -3024,13 +3374,33 @@ export class Toggler2 extends Component {
             background: this.state.background,
             padding: this.state.padding,
             margin: `0 0 0 ${this.state.offset}`,
+            borderLeft: this.state.bLeft,
+            borderRight: this.state.bRight,
+            borderTop: this.state.bTop,
+            borderBottom: this.state.bBottom,
+            border: this.state.border,
+            boxShadow: this.state.boxShadow,
             overflow: 'hidden',
+            zIndex: 2000,
         }
         const CLICKBOX = {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             cursor: 'pointer',
+            color: this.state.bColor,
+            background: this.state.bBackground,
+            fontSize: this.state.bFontSize,
+            fontVariant: this.state.bFontVariant,
+            fontWeight: this.state.bFontWeight,
+            textShadow: this.state.bTextShadow,
+            margin: this.state.bMargin,
+            padding: this.state.bPadding,
+            borderLeft: this.state.bBorderLeft,
+            borderRight: this.state.bBorderRight,
+            borderTop: this.state.bBorderTop,
+            borderBottom: this.state.bBorderBottom,
+            border: this.state.bBorder,
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
@@ -3159,6 +3529,7 @@ export class Toggler4 extends Component {
     }
 }
 /* start of moduls */
+//center popup
 export class Modul1 extends Component {
     constructor(props) {
         super(props);
@@ -3173,6 +3544,7 @@ export class Modul1 extends Component {
         )
     }
 }
+//popup on element
 export class Modul2 extends Component {
     constructor(props) {
         super(props);

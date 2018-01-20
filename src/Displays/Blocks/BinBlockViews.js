@@ -68,7 +68,7 @@ export default class BinBlocksView extends Component {
                     </H34>
                     <Toggler2>
                         <P2>
-                        Artisan man bun kombucha palo santo DIY godard af distillery offal. IPhone tote bag cardigan tumeric keytar health goth skateboard tbh succulents taxidermy poke sustainable fingerstache celiac. Etsy taxidermy four dollar toast hexagon tbh unicorn, hashtag pinterest. Vape pok pok hexagon sartorial fam tumblr, palo santo literally kitsch woke wolf DIY. Tote bag glossier bushwick gluten-free butcher pug, mumblecore leggings. Cred kale chips microdosing chicharrones taiyaki, synth typewriter neutra chartreuse jianbing pinterest lyft. Stumptown taxidermy pork belly, photo booth blog +1 glossier iceland.
+                            Artisan man bun kombucha palo santo DIY godard af distillery offal. IPhone tote bag cardigan tumeric keytar health goth skateboard tbh succulents taxidermy poke sustainable fingerstache celiac. Etsy taxidermy four dollar toast hexagon tbh unicorn, hashtag pinterest. Vape pok pok hexagon sartorial fam tumblr, palo santo literally kitsch woke wolf DIY. Tote bag glossier bushwick gluten-free butcher pug, mumblecore leggings. Cred kale chips microdosing chicharrones taiyaki, synth typewriter neutra chartreuse jianbing pinterest lyft. Stumptown taxidermy pork belly, photo booth blog +1 glossier iceland.
                         </P2>
                     </Toggler2>
                 </Holder5>
@@ -92,6 +92,18 @@ export default class BinBlocksView extends Component {
                 <Holder5>
                     <H34>
                         Toggler 4
+                    </H34>
+                </Holder5>
+                <HorizontalTestBlock1 />
+                <Holder5>
+                    <H34>
+                        Modul 1
+                    </H34>
+                </Holder5>
+                <HorizontalTestBlock1 />
+                <Holder5>
+                    <H34>
+                        Modul 2
                     </H34>
                 </Holder5>
                 <HorizontalTestBlock1 />
