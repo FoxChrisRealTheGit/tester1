@@ -15,17 +15,19 @@ export default function Navigation() {
                     alignBlock1="flex-end"
                     block1="0.5"
                     block2="3">
-                    <Brand1>
-                        {Logo}
-                        Stylux
+                    <Link to="/">
+                        <Brand1>
+                            {Logo}
+                            Stylux
                         </Brand1>
+                    </Link>
                     <Navbar1
                         fontVariant="small-caps"
                         navbarWidth='80%'
                         align="flex-start">
                         <DropDownNav1
                             background='white'>
-                            Components
+                            components
                             <Link to="/containers">containers</Link>
                             <Link to="/holders">holders</Link>
                             <Link to="/blocks">blocks</Link>
@@ -40,14 +42,14 @@ export default function Navigation() {
                         <Link to="/contact">contact</Link>
                     </Navbar1>
                     <Navbar1
-                            navbarWidth="50%"
-                            align="flex-end">
-                            <Link to="facebook.com"></Link>
-                            <Link to="twitter.com"></Link>
-                            <Link to="github.com"></Link>
+                        navbarWidth="50%"
+                        align="flex-end">
+                        <Link to="facebook.com"></Link>
+                        <Link to="twitter.com"></Link>
+                        <Link to="github.com"></Link>
                     </Navbar1>
                 </Holder2>
             </Container1>
         </header>
-            )
+    )
 }

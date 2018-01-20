@@ -2492,6 +2492,7 @@ export class DropDownNav1 extends Component {
         const HASCHILDS = {
             fontSize: '1.333em',
             color: this.state.color,
+            cursor: 'default',
         }
         const CHILDS = React.Children.toArray(this.props.children)
         const NAVBAR = CHILDS.map((x, i, arr) => {
