@@ -14,7 +14,8 @@ import {
     Navbar1,
     Toggler2,
     P2,
-    Toggler3
+    Toggler3,
+    Modul1
 } from '../../Components 1.0.0/Blocks';
 
 export default class BinBlocksView extends Component {
@@ -99,6 +100,9 @@ export default class BinBlocksView extends Component {
                     <H34>
                         Modul 1
                     </H34>
+                    <Modul1>
+                        Hello!
+                    </Modul1>
                 </Holder5>
                 <HorizontalTestBlock1 />
                 <Holder5>

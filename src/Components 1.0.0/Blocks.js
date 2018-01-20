@@ -168,7 +168,7 @@ export class H12 extends Component {
             textAlign: this.state.textAlign,
             padding: this.state.padding,
             margin: this.state.margin,
-            
+
             overflowX: 'hidden',
             overflowY: 'hidden',
 
@@ -377,7 +377,7 @@ export class H21 extends Component {
             borderLeft: this.state.bLeft,
             borderRight: this.state.bRight,
             borderTop: this.state.bTop,
-            borderBottom: this.state.bBottom, 
+            borderBottom: this.state.bBottom,
             border: this.state.border,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
@@ -865,7 +865,7 @@ export class H35 extends Component {
             borderLeft: this.state.bLeft,
             borderRight: this.state.bRight,
             borderTop: this.state.bTop,
-            borderBottom: this.state.bBottom, 
+            borderBottom: this.state.bBottom,
             border: this.state.border,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
@@ -1127,7 +1127,7 @@ export class H45 extends Component {
             bBottom: props.bBottom,
             id: props.id,
             className: props.className,
-            
+
         }
     }
     render() {
@@ -1198,7 +1198,7 @@ export class P1 extends Component {
             borderLeft: this.state.bLeft,
             borderRight: this.state.bRight,
             borderTop: this.state.bTop,
-            borderBottom: this.state.bBottom, 
+            borderBottom: this.state.bBottom,
             border: this.state.border,
             fontFamily: this.state.fontFamily,
             fontSize: this.state.fontSize,
@@ -2035,7 +2035,7 @@ export class Navbar1 extends Component {
             mainBackground: props.mainBackground || 'inherit',
             itemBackground: props.itemBackground || 'inherit',
             color: props.color || 'black',
-            fontSize: props.fontSize || '1em',
+            fontSize: props.fontSize || '1.333em',
             fontWeight: props.fontWeight || '100',
             fontVariant: props.fontVariant || 'none',
             navid: props.navid,
@@ -2339,12 +2339,12 @@ export class Brand1 extends Component {
         const CHILDS = React.Children.toArray(this.props.children)
         return (
             <div style={BRAND}>
-                    <SquareImage
-                        size='tn'>
-                        {CHILDS[0]}
-                        logo
+                <SquareImage
+                    size='tn'>
+                    {CHILDS[0]}
+                    logo
                     </SquareImage>
-                    <p style={BRAND_NAME}>{CHILDS[1]}</p>
+                <p style={BRAND_NAME}>{CHILDS[1]}</p>
             </div>
         )
     }
@@ -2364,10 +2364,10 @@ export class Brand2 extends Component {
         const CHILDS = React.Children.toArray(this.props.children)
         return (
             <section style={BRAND}>
-                    <RectangleImage
-                        size='exsm'>
-                        {CHILDS[0]}
-                        logo
+                <RectangleImage
+                    size='exsm'>
+                    {CHILDS[0]}
+                    logo
                     </RectangleImage>
             </section>
         )
@@ -2388,9 +2388,9 @@ export class Brand3 extends Component {
         const CHILDS = React.Children.toArray(this.props.children)
         return (
             <section style={BRAND}>
-                    <SquareImage>
-                        {CHILDS[0]}
-                        logo
+                <SquareImage>
+                    {CHILDS[0]}
+                    logo
                     </SquareImage>
             </section>
         )
@@ -2411,9 +2411,9 @@ export class Brand4 extends Component {
         const CHILDS = React.Children.toArray(this.props.children)
         return (
             <section style={BRAND}>
-                    <RectangleImage>
-                        {CHILDS[0]}
-                        logo
+                <RectangleImage>
+                    {CHILDS[0]}
+                    logo
                     </RectangleImage>
             </section>
         )
@@ -2448,7 +2448,7 @@ export class DropDownNav1 extends Component {
             background: props.background,
             boxShadow: props.boxShadow || '1px 2px 2px black',
             borderRadius: props.borderRadius || '0 0 5px 5px',
-            offset: props.offset || '-5px',
+            offset: props.offset,
             color: props.color || 'black',
             textAlign: props.textAlign || 'center',
             margin: props.margin,
@@ -2490,7 +2490,7 @@ export class DropDownNav1 extends Component {
             color: this.state.color,
         }
         const HASCHILDS = {
-            fontSize: '1.333em',
+            fontSize: '1em',
             color: this.state.color,
             cursor: 'default',
         }
@@ -2500,7 +2500,7 @@ export class DropDownNav1 extends Component {
         })
         return (
             <nav id={this.state.mainid} className={`dropdownnav1 ${this.state.mainClassName}`}>
-                <li  id={this.state.titleid} className={`DropDown ${this.state.titleClassName}`} style={HASCHILDS}
+                <li id={this.state.titleid} className={`DropDown ${this.state.titleClassName}`} style={HASCHILDS}
                     onMouseOver={() => this.setState({ display: 'block' })}
                     onMouseOut={() => this.setState({ display: 'none' })}>
                     {CHILDS[0]}
@@ -2564,7 +2564,7 @@ export class DropDownNav3 extends Component {
                     onMouseOut={() => this.setState({ display: 'none' })}
                     id={this.state.titleid} className={this.state.titleClassName}>
                     {CHILDS[0]}
-                    <ul style={DROPDOWN}id={this.state.itemsid} className={this.state.itemsClassName}>
+                    <ul style={DROPDOWN} id={this.state.itemsid} className={this.state.itemsClassName}>
                         <Holder2>
                             {CHILDS[1]}
                             {CHILDS[2]}
@@ -2762,7 +2762,7 @@ export class ImageSlider1 extends Component {
         })
         return (
             <div style={WRAP} id={this.state.mainid} className={this.state.mainClassName}>
-                <div style={LEFT_ARROW} id ={this.state.leftArrowid} className={`arrow ${this.state.leftArrowClassName}`} onClick={() => this.slideLeft()}></div>
+                <div style={LEFT_ARROW} id={this.state.leftArrowid} className={`arrow ${this.state.leftArrowClassName}`} onClick={() => this.slideLeft()}></div>
                 <div style={SLIDER}>
                     {RENDERSLIDES[this.state.cur]}
                 </div>
@@ -3232,7 +3232,7 @@ export class Toggler1 extends Component {
         super(props);
         this.state = {
             show: false,
-            position: props.position || 'absolute',
+            position: props.position || 'fixed',
             width: props.width || '100px',
             height: props.height || '100vh',
             top: props.top || '0',
@@ -3349,6 +3349,7 @@ export class Toggler2 extends Component {
             bBorderTop: props.bBorderTop,
             bBorderBottom: props.bBorderBottom,
             position: props.position,
+            togglePlace: props.togglePlace || 'column',
             padding: props.padding,
             offset: props.offset + '%',
             boxShadow: props.shadow || '1px 2px 2px black',
@@ -3367,8 +3368,13 @@ export class Toggler2 extends Component {
         })
     }
     render() {
+        const FullElement = {
+            display: 'flex',
+            flexDirection: this.state.togglePlace,
+        }
         const TOGGLERBOX = {
             display: this.state.show ? 'flex' : 'none',
+            flexDirection: 'column-reverse',
             position: this.state.position,
             width: this.state.width,
             height: this.state.height,
@@ -3405,7 +3411,7 @@ export class Toggler2 extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <div id={this.state.mainid} className={this.state.mainClassName}>
+            <div id={this.state.mainid} style={FullElement} className={this.state.mainClassName}>
                 <div style={CLICKBOX} id={this.state.titleid} className={this.state.titleClassName} onClick={this.toggle}>
                     {this.state.buttonText}
                 </div>
@@ -3535,12 +3541,101 @@ export class Modul1 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            show: false,
+            boxTop: props.boxTop || '40%',
+            boxRight: props.boxRight || '45%',
+            boxLeft: props.boxLeft,
+            boxBottom: props.boxBottom,
+            boxPosition: props.boxPosition || 'fixed',
+            boxBackground: props.boxBackground || 'white',
+            boxHeight: props.boxHeight || '200px',
+            boxWidth: props.boxWidth || '200px',
+            boxAlign: props.boxAlign || 'center',
+            boxJustify: props.boxJustify || 'center',
+            buttonText: props.buttonText || 'Modul 1',
+            boxShadow: props.boxShadow || '1px 2px 2px black',
+            btnBackground: props.btnBackground || 'white',
+            bColor: props.bColor || 'black',
+            bBackground: props.bBackground,
+            bFontSize: props.bFontSize || '1.333em',
+            bFontVariant: props.bFontVariant,
+            bFontWeight: props.bFontWeight,
+            bTextShadow: props.bTextShadow,
+            bMargin: props.bMargin,
+            bPadding: props.bPadding,
+            bBorderLeft: props.bBorderLeft,
+            bBorderRight: props.bBorderRight,
+            bBorderTop: props.bBorderTop,
+            bBorderBottom: props.bBorderBottom,
+            boxId: props.boxId,
+            titleId: props.titleId,
+            backId: props.backId,
+            titleClassName: props.titleClassName,
+            boxClassName: props.boxClassName,
+            backClassName: props.backClassName,
         }
+        this.toggle = this.toggle.bind(this);
     }
+    toggle() {
+        this.setState({
+            show: !this.state.show
+        })
+    }
+
     render() {
+        const BOXSTYLES = {
+            width: this.state.boxWidth,
+            height: this.state.boxHeight,
+            background: this.state.boxBackground,
+            position: this.state.boxPosition,
+            top: this.state.boxTop,
+            left: this.state.boxLeft,
+            right: this.state.boxRight,
+            bottom: this.state.boxBottom,
+            display: this.state.show ? 'flex' : 'none',
+            alignItems: this.state.boxAlign,
+            justifyContent: this.state.boxJustify,
+            boxShadow: this.state.boxShadow,
+            zIndex: '2000',
+        }
+        const CLICKBOX = {
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            cursor: 'pointer',
+            color: this.state.bColor,
+            background: this.state.bBackground,
+            fontSize: this.state.bFontSize,
+            fontVariant: this.state.bFontVariant,
+            fontWeight: this.state.bFontWeight,
+            textShadow: this.state.bTextShadow,
+            margin: this.state.bMargin,
+            padding: this.state.bPadding,
+            borderLeft: this.state.bBorderLeft,
+            borderRight: this.state.bBorderRight,
+            borderTop: this.state.bBorderTop,
+            borderBottom: this.state.bBorderBottom,
+            border: this.state.bBorder,
+        }
+        const BTNSTYLE = {
+            borderRadius: '100%',
+            cursor: 'pointer',
+            position: 'absolute',
+            left: this.state.boxWidth,
+            bottom: this.state.boxHeight,
+            background: this.state.btnBackground,
+        }
+
+        const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <div>
+            <div >
+                <div style={CLICKBOX} id={this.state.titleid} className={this.state.titleClassName} onClick={this.toggle}>
+                    {this.state.buttonText}
+                </div>
+                <div style={BOXSTYLES} id={this.state.boxId} className={this.state.boxClassName}>
+                    <button style={BTNSTYLE} id={this.state.btnId} className={this.state.btnClassName} onClick={this.toggle}>X</button>
+                    {CHILDS}
+                </div>
             </div>
         )
     }
