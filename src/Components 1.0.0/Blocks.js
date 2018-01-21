@@ -3368,7 +3368,7 @@ export class Toggler2 extends Component {
         })
     }
     render() {
-        const FullElement = {
+        const FULLELEMENT = {
             display: 'flex',
             flexDirection: this.state.togglePlace,
         }
@@ -3411,7 +3411,7 @@ export class Toggler2 extends Component {
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
-            <div id={this.state.mainid} style={FullElement} className={this.state.mainClassName}>
+            <div id={this.state.mainid} style={FULLELEMENT} className={this.state.mainClassName}>
                 <div style={CLICKBOX} id={this.state.titleid} className={this.state.titleClassName} onClick={this.toggle}>
                     {this.state.buttonText}
                 </div>
@@ -3536,7 +3536,7 @@ export class Toggler4 extends Component {
     }
 }
 /* start of moduls */
-//center popup
+//center adjustable popup
 export class Modul1 extends Component {
     constructor(props) {
         super(props);
@@ -3973,13 +3973,71 @@ export class Table1 extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            columns: props.columns || 3,
+            rows: props.rows || 3,
+            head: props.head,
+            body: props.body,
             id: props.id,
             className: props.className,
         }
     }
+    componentDidMount() {
+        let tempHead = []
+        let tempBody = []
+        let childs = []
+        let rows = this.state.rows
+        let HEADROW, HEAD, BODY
+        let BODYROW = []
+        const CHILDS = React.Children.toArray(this.props.children.split('\\'))
+
+        childs = CHILDS.map((x, i, arr) => x);
+        for(var b = 1; b<=this.state.columns;b+=1){
+           tempHead.push(childs[b -1])
+        }
+        childs.splice(0, this.state.columns)
+        //need to divide by this.state.columns and make rows here
+        tempBody = childs.map((x, i, arr)=>x);
+        while (rows > 0) {
+            if (rows === this.state.rows) {
+                HEAD = tempHead.map((x, i, arr) => {
+                    return (
+                        <th key={i}>
+                            {x}
+                        </th>
+                    )
+                })
+                HEADROW = <tr>{HEAD}</tr>
+            } else {
+                //need to map over previously created rows to generate all rows
+                BODY = tempBody.map((x, i, arr) => {
+                    return (
+                        <td key={i}>
+                            {x}
+                        </td>
+                    )
+                })
+                BODYROW.push(<tr>{BODY}</tr>)
+            }
+            rows -= 1
+        }
+        this.setState({ head: HEADROW, body: BODYROW })
+    }
     render() {
+        const TABLESTYLE = {
+
+        }
+
+
         return (
-            <div>
+            <div >
+                <table style={TABLESTYLE} className='oddRowHighlights'>
+                    <thead>
+                        {this.state.head}
+                    </thead>
+                    <tbody>
+                        {this.state.body}
+                    </tbody>
+                </table>
             </div>
         )
     }
@@ -4024,6 +4082,7 @@ export class Table3 extends Component {
 /* End of Table Blocks */
 /* Start of Chart Blocks */
 //pie chart
+//having set backs here
 export class PieChart1 extends Component {
     constructor(props) {
         super(props);
@@ -4033,8 +4092,9 @@ export class PieChart1 extends Component {
         }
     }
     render() {
+
         return (
-            <div>
+            <div >
             </div>
         )
     }

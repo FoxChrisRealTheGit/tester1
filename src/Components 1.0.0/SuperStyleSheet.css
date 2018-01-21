@@ -256,3 +256,13 @@ ol.bigList li::before{
     top: 65px;
 }
 /* end of big list numbers */
+/* start of table styles */
+.evenRowHighlights tbody tr:nth-child(even){
+    background-color: aquamarine;
+}
+
+.oddRowHighlights tbody tr:nth-child(odd){
+    background-color: aquamarine;
+}
+
+/* end of table styles */

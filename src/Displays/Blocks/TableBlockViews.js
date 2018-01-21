@@ -48,7 +48,13 @@ export default class TableBlocksView extends Component {
                             Table 1
                         </H34>
                         <Table1>
-
+                            Head1\
+                            Head2\
+                            Head3\
+                            body\
+                            body\
+                            body\
+                            body
                         </Table1>
                     </Holder5>
                 </Container1>
