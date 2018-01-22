@@ -2252,8 +2252,8 @@ export class Navbar1 extends Component {
             flexDirection: this.state.direction,
         };
         return (
-            <nav style={NAVBAR}>
-                <ul style={NAVBAR_NAVBAR} className="navbar1-navbar socialness">
+            <nav style={NAVBAR} id={this.state.navid} className={this.state.navClassName}>
+                <ul style={NAVBAR_NAVBAR} id={this.state.navid} className={`${this.state.navClassName} navbar1-navbar socialness`}>
                     {this.state.childs}
                 </ul>
             </nav>
