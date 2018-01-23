@@ -1855,8 +1855,8 @@ export class PLQ1 extends Component {
         this.setState({ childs: CHILDS })
     }
     componentWillReceiveProps(newProps) {
-        const CHILDS = React.Children.toArray(newProps.children)
-        return this.setState({ childs: CHILDS })
+        const CHILDS = React.Children.toArray(newProps.children.split('\\'))
+        this.setState({ childs: CHILDS })
     }
     render() {
         return (
@@ -1890,8 +1890,8 @@ export class PLQ2 extends Component {
         this.setState({ childs: CHILDS })
     }
     componentWillReceiveProps(newProps) {
-        const CHILDS = React.Children.toArray(newProps.children)
-        return this.setState({ childs: CHILDS })
+        const CHILDS = React.Children.toArray(newProps.children.split('\\'))
+        this.setState({ childs: CHILDS })
     }
     render() {
         return (
@@ -3473,8 +3473,13 @@ export class ImageSlider1 extends Component {
         this.timer = setInterval(this.slideRight, this.state.slideTimer)
     }
     componentWillReceiveProps(newProps) {
+        let slides = [];
         const CHILDS = React.Children.toArray(newProps.children)
-        return this.setState({ childs: CHILDS })
+        for (var g = 0; g < CHILDS.length; g += 1) {
+            slides.push(CHILDS[g])
+        }
+        this.setState({ sliderImages: slides })
+        this.timer = setInterval(this.slideRight, this.state.slideTimer)
     }
 
     componentWillUnmount() {
@@ -3598,8 +3603,13 @@ export class ImageSlider2 extends Component {
         this.timer = setInterval(this.slideRight, this.state.slideTimer);
     }
     componentWillReceiveProps(newProps) {
+        let slides = [];
         const CHILDS = React.Children.toArray(newProps.children)
-        return this.setState({ childs: CHILDS })
+        for (var g = 0; g < CHILDS.length; g += 1) {
+            slides.push(CHILDS[g])
+        }
+        this.setState({ sliderImages: slides })
+        this.timer = setInterval(this.slideRight, this.state.slideTimer);
     }
 
     componentWillUnmount() {
@@ -3706,8 +3716,13 @@ export class ImageSlider3 extends Component {
         this.timer = setInterval(this.slideRight, this.state.slideTimer);
     }
     componentWillReceiveProps(newProps) {
+        let slides = [];
         const CHILDS = React.Children.toArray(newProps.children)
-        return this.setState({ childs: CHILDS })
+        for (var g = 0; g < CHILDS.length; g += 1) {
+            slides.push(CHILDS[g])
+        }
+        this.setState({ sliderImages: slides })
+        this.timer = setInterval(this.slideRight, this.state.slideTimer);
     }
 
     componentWillUnmount() {
@@ -3810,8 +3825,13 @@ export class ImageSlider4 extends Component {
         this.timer = setInterval(this.slideRight, this.state.slideTimer);
     }
     componentWillReceiveProps(newProps) {
+        let slides = [];
         const CHILDS = React.Children.toArray(newProps.children)
-        return this.setState({ childs: CHILDS })
+        for (var g = 0; g < CHILDS.length; g += 1) {
+            slides.push(CHILDS[g])
+        }
+        this.setState({ sliderImages: slides })
+        this.timer = setInterval(this.slideRight, this.state.slideTimer);
     }
 
     componentWillUnmount() {
@@ -3883,7 +3903,7 @@ export class ImageSlider4 extends Component {
     }
 }
 /* end of image slider 4 */
-/* sart of image slider 5 */
+/* start of image slider 5 */
 export class ImageSlider5 extends Component {
     constructor(props) {
         super(props);
@@ -3914,8 +3934,13 @@ export class ImageSlider5 extends Component {
         this.timer = setInterval(this.slideRight, this.state.slideTimer);
     }
     componentWillReceiveProps(newProps) {
+        let slides = [];
         const CHILDS = React.Children.toArray(newProps.children)
-        return this.setState({ childs: CHILDS })
+        for (var g = 0; g < CHILDS.length; g += 1) {
+            slides.push(CHILDS[g])
+        }
+        this.setState({ sliderImages: slides })
+        this.timer = setInterval(this.slideRight, this.state.slideTimer);
     }
 
     componentWillUnmount() {
