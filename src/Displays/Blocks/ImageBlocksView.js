@@ -31,6 +31,7 @@ import {
 } from '../../Components 1.0.0/Blocks';
 
 export default class ImageBlocksView extends Component {
+
     render() {
         return (
             <section>
@@ -606,6 +607,7 @@ export default class ImageBlocksView extends Component {
                     </Figure>
                 </Holder5>
                 <HorizontalTestBlock1 />
+               
                 <HorizontalTestBlock1 />
                 <Holder5>
                     <H34>

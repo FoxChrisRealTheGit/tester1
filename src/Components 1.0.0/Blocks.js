@@ -90,12 +90,20 @@ export class H11 extends Component {
             bBottom: props.bBottom,
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
-    componentDidMount() {
+    componentDidMount(nextProps) {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const HEADING = {
@@ -119,6 +127,10 @@ export class H11 extends Component {
             margin: this.state.margin,
             overflowX: 'hidden',
             overflowY: 'hidden',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
 
         }
         return (
@@ -149,12 +161,20 @@ export class H12 extends Component {
             bBottom: props.bBottom,
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const HEADING = {
@@ -178,7 +198,10 @@ export class H12 extends Component {
             margin: this.state.margin,
             overflowX: 'hidden',
             overflowY: 'hidden',
-
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
         }
         return (
             <h1 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h1>
@@ -208,12 +231,20 @@ export class H13 extends Component {
             bBottom: props.bBottom,
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const HEADING = {
@@ -237,6 +268,10 @@ export class H13 extends Component {
             margin: this.state.margin,
             overflowX: 'hidden',
             overflowY: 'hidden',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
         }
         return (
             <h1 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h1>
@@ -266,12 +301,20 @@ export class H14 extends Component {
             bBottom: props.bBottom,
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const HEADING = {
@@ -295,6 +338,10 @@ export class H14 extends Component {
             margin: this.state.margin,
             overflowX: 'hidden',
             overflowY: 'hidden',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
         }
         return (
             <h1 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h1>
@@ -324,12 +371,20 @@ export class H15 extends Component {
             bBottom: props.bBottom,
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const HEADING = {
@@ -353,6 +408,10 @@ export class H15 extends Component {
             margin: this.state.margin,
             overflowX: 'hidden',
             overflowY: 'hidden',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
         }
         return (
             <h1 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h1>
@@ -384,12 +443,20 @@ export class H21 extends Component {
             bBottom: props.bBottom,
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const HEADING = {
@@ -413,6 +480,10 @@ export class H21 extends Component {
             margin: this.state.margin,
             overflowX: 'hidden',
             overflowY: 'hidden',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
         }
         return (
             <h2 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h2>
@@ -442,12 +513,20 @@ export class H22 extends Component {
             bBottom: props.bBottom,
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const HEADING = {
@@ -471,6 +550,10 @@ export class H22 extends Component {
             margin: this.state.margin,
             overflowX: 'hidden',
             overflowY: 'hidden',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
         }
         return (
             <h2 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h2>
@@ -500,12 +583,20 @@ export class H23 extends Component {
             bBottom: props.bBottom,
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const HEADING = {
@@ -529,6 +620,10 @@ export class H23 extends Component {
             margin: this.state.margin,
             overflowX: 'hidden',
             overflowY: 'hidden',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
         }
         return (
             <h2 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h2>
@@ -558,12 +653,20 @@ export class H24 extends Component {
             bBottom: props.bBottom,
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime || 'linear',
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const HEADING = {
@@ -587,6 +690,10 @@ export class H24 extends Component {
             margin: this.state.margin,
             overflowX: 'hidden',
             overflowY: 'hidden',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
         }
         return (
             <h2 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h2>
@@ -616,12 +723,20 @@ export class H25 extends Component {
             bBottom: props.bBottom,
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const HEADING = {
@@ -645,6 +760,10 @@ export class H25 extends Component {
             margin: this.state.margin,
             overflowX: 'hidden',
             overflowY: 'hidden',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
         }
         return (
             <h2 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h2>
@@ -676,12 +795,20 @@ export class H31 extends Component {
             bBottom: props.bBottom,
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const HEADING = {
@@ -705,6 +832,10 @@ export class H31 extends Component {
             margin: this.state.margin,
             overflowX: 'hidden',
             overflowY: 'hidden',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
         }
         return (
             <h3 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h3>
@@ -734,12 +865,20 @@ export class H32 extends Component {
             bBottom: props.bBottom,
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const HEADING = {
@@ -763,6 +902,10 @@ export class H32 extends Component {
             margin: this.state.margin,
             overflowX: 'hidden',
             overflowY: 'hidden',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
         }
         return (
             <h3 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h3>
@@ -792,12 +935,20 @@ export class H33 extends Component {
             bBottom: props.bBottom,
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const HEADING = {
@@ -821,6 +972,10 @@ export class H33 extends Component {
             margin: this.state.margin,
             overflowX: 'hidden',
             overflowY: 'hidden',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
         }
         return (
             <h3 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h3>
@@ -850,12 +1005,20 @@ export class H34 extends Component {
             bBottom: props.bBottom,
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const HEADING = {
@@ -879,6 +1042,10 @@ export class H34 extends Component {
             margin: this.state.margin,
             overflowX: 'hidden',
             overflowY: 'hidden',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
         }
         return (
             <h3 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h3>
@@ -908,12 +1075,20 @@ export class H35 extends Component {
             bBottom: props.bBottom,
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const HEADING = {
@@ -937,6 +1112,10 @@ export class H35 extends Component {
             margin: this.state.margin,
             overflowX: 'hidden',
             overflowY: 'hidden',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
         }
         return (
             <h3 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h3>
@@ -968,12 +1147,20 @@ export class H41 extends Component {
             bBottom: props.bBottom,
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const HEADING = {
@@ -997,6 +1184,10 @@ export class H41 extends Component {
             margin: this.state.margin,
             overflowX: 'hidden',
             overflowY: 'hidden',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
 
         }
         return (
@@ -1027,12 +1218,20 @@ export class H42 extends Component {
             bBottom: props.bBottom,
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const HEADING = {
@@ -1056,6 +1255,10 @@ export class H42 extends Component {
             margin: this.state.margin,
             overflowX: 'hidden',
             overflowY: 'hidden',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
         }
         return (
             <h4 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h4>
@@ -1085,12 +1288,20 @@ export class H43 extends Component {
             bBottom: props.bBottom,
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const HEADING = {
@@ -1114,6 +1325,10 @@ export class H43 extends Component {
             margin: this.state.margin,
             overflowX: 'hidden',
             overflowY: 'hidden',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
         }
         return (
             <h4 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h4>
@@ -1143,12 +1358,20 @@ export class H44 extends Component {
             bBottom: props.bBottom,
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const HEADING = {
@@ -1172,6 +1395,10 @@ export class H44 extends Component {
             margin: this.state.margin,
             overflowX: 'hidden',
             overflowY: 'hidden',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
         }
         return (
             <h4 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h4>
@@ -1201,12 +1428,20 @@ export class H45 extends Component {
             bBottom: props.bBottom,
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const HEADING = {
@@ -1230,6 +1465,10 @@ export class H45 extends Component {
             margin: this.state.margin,
             overflowX: 'hidden',
             overflowY: 'hidden',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
         }
         return (
             <h4 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h4>
@@ -1264,12 +1503,20 @@ export class P1 extends Component {
             bBottom: props.bBottom,
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const PARAGRAPH = {
@@ -1292,6 +1539,10 @@ export class P1 extends Component {
             textAlign: this.state.textAlign,
             padding: this.state.padding,
             margin: this.state.margin,
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
         }
         return (
             <p style={PARAGRAPH} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</p>
@@ -1322,12 +1573,20 @@ export class P2 extends Component {
             bBottom: props.bBottom,
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const PARAGRAPH = {
@@ -1350,6 +1609,10 @@ export class P2 extends Component {
             textAlign: this.state.textAlign,
             padding: this.state.padding,
             margin: this.state.margin,
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
         }
         return (
             <p style={PARAGRAPH} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</p>
@@ -1380,12 +1643,20 @@ export class P3 extends Component {
             bBottom: props.bBottom,
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const PARAGRAPH = {
@@ -1408,6 +1679,10 @@ export class P3 extends Component {
             textAlign: this.state.textAlign,
             padding: this.state.padding,
             margin: this.state.margin,
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
         }
         return (
             <p style={PARAGRAPH} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</p>
@@ -1438,12 +1713,20 @@ export class P4 extends Component {
             bBottom: props.bBottom,
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const PARAGRAPH = {
@@ -1466,6 +1749,10 @@ export class P4 extends Component {
             textAlign: this.state.textAlign,
             padding: this.state.padding,
             margin: this.state.margin,
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
         }
         return (
             <p style={PARAGRAPH} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</p>
@@ -1497,12 +1784,20 @@ export class P5 extends Component {
             bBottom: props.bBottom,
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const PARAGRAPH = {
@@ -1525,7 +1820,10 @@ export class P5 extends Component {
             textAlign: this.state.textAlign,
             padding: this.state.padding,
             margin: this.state.margin,
-
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
         }
         return (
             <p style={PARAGRAPH} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</p>
@@ -1545,12 +1843,20 @@ export class PLQ1 extends Component {
             blockClassName: props.blockClassName,
             textClassName: props.textClassName,
             citeClassName: props.citeClassName,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children.split('\\'))
         this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         return (
@@ -1572,12 +1878,20 @@ export class PLQ2 extends Component {
             blockclassName: props.blockClassName,
             textclassName: props.textClassName,
             citeclassName: props.citeClassName,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children.split('\\'))
         this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         return (
@@ -1599,17 +1913,34 @@ export class CircleImage extends Component {
             size: props.size || 'sm',
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
     }
+
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
+    }
+
     render() {
         const CIRCLEIMG = {
             borderRadius: "100%",
+            overflowX: 'hidden',
+            overflowY: 'hidden',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
         }
+
         return (
             <img style={CIRCLEIMG} id={this.state.id} className={`img-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]} />
         )
@@ -1625,16 +1956,28 @@ export class RoundedImage extends Component {
             size: props.size || 'sm',
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
     }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
+    }
     render() {
         const ROUNDEDIMG = {
             borderRadius: '30%',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
         }
         return (
             <img style={ROUNDEDIMG} id={this.state.id} className={`img-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]} />
@@ -1651,16 +1994,28 @@ export class OvalImage extends Component {
             size: props.size || 'sm',
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
     }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
+    }
     render() {
         const OVALIMG = {
             borderRadius: '30%',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
         }
         return (
             <img style={OVALIMG} id={this.state.id} className={`img-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]} />
@@ -1676,16 +2031,30 @@ export class SquareImage extends Component {
             size: props.size || 'sm',
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
     }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
+    }
     render() {
+        const IMAGE = {
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
+        }
         return (
-            <img id={this.state.id} className={`img-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]} />
+            <img style={IMAGE} id={this.state.id} className={`img-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]} />
         )
     }
 }
@@ -1699,16 +2068,29 @@ export class RoundedRectangleImage extends Component {
             size: props.size || 'sm',
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
+
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
     }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
+    }
     render() {
         const ROUNDEDRECTANGLEIMG = {
             borderRadius: "30%",
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
         }
         return (
             <img style={ROUNDEDRECTANGLEIMG} id={this.state.id} className={`recimg-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]} />
@@ -1725,20 +2107,32 @@ export class RectangleImage extends Component {
             size: props.size || 'sm',
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
     }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
+    }
 
     render() {
-        const image = {
+        const IMAGE = {
             margin: '0 auto',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
         }
         return (
-            <img style={image} id={this.state.id} className={`recimg-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]} />
+            <img style={IMAGE} id={this.state.id} className={`recimg-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]} />
         )
     }
 }
@@ -1752,16 +2146,28 @@ export class TallRoundedRectangleImage extends Component {
             size: props.size || 'sm',
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
     }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
+    }
     render() {
         const TALLROUNDEDRECTANGLEIMG = {
             borderRadius: "30%",
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
         }
         return (
             <img style={TALLROUNDEDRECTANGLEIMG} id={this.state.id} className={`tallrecimg-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]} />
@@ -1777,19 +2183,31 @@ export class TallRectangleImage extends Component {
             size: props.size || 'sm',
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
     }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
+    }
     render() {
-        const image = {
+        const IMAGE = {
             margin: '0 auto',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
         }
         return (
-            <img style={image} id={this.state.id} className={`tallrecimg-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]} />
+            <img style={IMAGE} id={this.state.id} className={`tallrecimg-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]} />
         )
     }
 }
@@ -1804,12 +2222,16 @@ export class Figure extends Component {
             figCapid: props.figCapid,
             figClassName: props.figClassName,
             figCapClassName: props.figCapClassName,
-            childs: ''
+            childs: '',
         }
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const CAPTION = {
@@ -1849,6 +2271,10 @@ export class Hero1 extends Component {
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const HEROSTYLE = {
@@ -1899,6 +2325,10 @@ export class Hero2 extends Component {
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const HEROSTYLE = {
@@ -1951,6 +2381,10 @@ export class Hero3 extends Component {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
     }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
+    }
     render() {
         const HEROSTYLE = {
             background: this.state.background,
@@ -1992,6 +2426,10 @@ export class Hero4 extends Component {
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const HEROSTYLE = {
@@ -2036,6 +2474,10 @@ export class Hero5 extends Component {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
     }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
+    }
     render() {
         const HEROSTYLE = {
             background: this.state.background,
@@ -2079,12 +2521,20 @@ export class FlatButton1 extends Component {
             onClick: props.onClick,
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime || 'linear',
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
 
     render() {
@@ -2101,12 +2551,20 @@ export class FlatButton2 extends Component {
             onClick: props.onClick,
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime || 'linear',
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         return (
@@ -2126,12 +2584,20 @@ export class RaisedButton1 extends Component {
             color: "blue",
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime || 'linear',
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const BUTTONSTYLE = {
@@ -2230,6 +2696,23 @@ export class Navbar1 extends Component {
         })
         this.setState({ childs: NAVBARACTUAL })
     }
+    componentWillReceiveProps(newProps) {
+        const NAVBAR_NAVBAR_LI = {
+            display: 'flex',
+            flex: 1,
+            fontSize: this.state.fontSize,
+            fontWeight: this.state.fontWeight,
+            justifyContent: 'center',
+            margin: this.state.itemSpaceing,
+            background: this.state.itemBackground,
+            fontVariant: this.state.fontVariant,
+        };
+        const CHILDS = React.Children.toArray(newProps.children)
+        const NAVBARACTUAL = CHILDS.map((x, i) => {
+            return <li key={i} style={NAVBAR_NAVBAR_LI}>{x}</li>
+        })
+        this.setState({ childs: NAVBARACTUAL })
+    }
     render() {
         const NAVBAR = {
             width: this.state.totalWidth,
@@ -2310,6 +2793,24 @@ export class SubNavbar1 extends Component {
         })
         this.setState({ childs: NAVBAR })
     }
+    componentWillReceiveProps(newProps) {
+        const SUBNAVBAR_NAVBAR_LI = {
+            display: 'flex',
+            flex: 1,
+            fontSize: this.state.fontSize,
+            fontWeight: this.state.fontWeight,
+            justifyContent: 'center',
+            margin: this.state.itemSpaceing,
+            background: this.state.itemBackground,
+            fontVariant: this.state.fontVariant,
+        };
+        const CHILDS = React.Children.toArray(newProps.children)
+        const NAVBAR = CHILDS.map((x, i) => {
+            return <li key={i} style={SUBNAVBAR_NAVBAR_LI} id={this.state.itemsid} className={this.state.itemsClassName}>{x}</li>
+        })
+        this.setState({ childs: NAVBAR })
+    }
+
     render() {
         const SUBNAVBAR = {
             width: this.state.totalWidth,
@@ -2392,6 +2893,25 @@ export class SubNavbar2 extends Component {
         })
         this.setState({ childs: NAVBAR })
     }
+
+    componentWillReceiveProps(newProps) {
+        const SUBNAVBAR_NAVBAR_LI = {
+            display: 'flex',
+            flex: 1,
+            fontSize: this.state.fontSize,
+            fontWeight: this.state.fontWeight,
+            justifyContent: 'center',
+            margin: this.state.itemSpaceing,
+            background: this.state.itemBackground,
+            fontVariant: this.state.fontVariant,
+        };
+        const CHILDS = React.Children.toArray(newProps.children)
+        const NAVBAR = CHILDS.map((x, i) => {
+            return <li key={i} style={SUBNAVBAR_NAVBAR_LI} id={this.state.itemsid} className={this.state.itemsClassName}>{x}</li>
+        })
+        this.setState({ childs: NAVBAR })
+    }
+
     render() {
         const SUBNAVBAR = {
             width: this.state.totalWidth,
@@ -2502,7 +3022,15 @@ export class Brand1 extends Component {
         this.state = {
             display: props.display || 'flex',
             direction: props.direction || 'row',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const BRAND = {
@@ -2510,10 +3038,18 @@ export class Brand1 extends Component {
             flexDirection: this.state.direction,
             //width: '15%',
             alignItems: 'center',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
         }
         const BRAND_NAME = {
             display: 'flex',
             fontWeight: '900',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
 
         }
         const CHILDS = React.Children.toArray(this.props.children)
@@ -2534,12 +3070,24 @@ export class Brand2 extends Component {
         super(props);
         this.state = {
             display: props.display || 'flex',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const BRAND = {
             display: 'flex',
             alignItems: 'center',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
@@ -2558,12 +3106,24 @@ export class Brand3 extends Component {
         super(props);
         this.state = {
             display: props.display || 'flex',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const BRAND = {
             display: 'flex',
             alignItems: 'center',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
@@ -2581,12 +3141,24 @@ export class Brand4 extends Component {
         super(props);
         this.state = {
             display: props.display || 'flex',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const BRAND = {
             display: 'flex',
             alignItems: 'center',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
@@ -2604,12 +3176,24 @@ export class Brand5 extends Component {
         super(props);
         this.state = {
             display: props.display || 'flex',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
         }
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const BRAND = {
             display: 'flex',
             alignItems: 'center',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
         }
         const CHILDS = React.Children.toArray(this.props.children)
         return (
@@ -2659,6 +3243,20 @@ export class DropDownNav1 extends Component {
         const FIRST = CHILDS[0];
         this.setState({ childs: NAVBAR, first: FIRST })
     }
+    componentWillReceiveProps(newProps) {
+        const DropDown_NavBar_Li = {
+            color: this.state.color,
+        }
+
+        const CHILDS = React.Children.toArray(newProps.children)
+
+        const NAVBAR = CHILDS.map((x, i, arr) => {
+            return <li key={i} style={DropDown_NavBar_Li}>{arr[i + 1]}</li>
+        })
+        const FIRST = CHILDS[0];
+        this.setState({ childs: NAVBAR, first: FIRST })
+    }
+
     // enter(){
     //     this.setState =({display: 'block'});
     // }
@@ -2860,7 +3458,6 @@ export class ImageSlider1 extends Component {
             leftArrowClassName: props.leftArrowClassName,
             rightArrowClassName: props.rightArrowClassName,
             sliderClassName: props.sliderClassName,
-
         }
         this.slideLeft = this.slideLeft.bind(this);
         this.slideRight = this.slideRight.bind(this);
@@ -2873,7 +3470,15 @@ export class ImageSlider1 extends Component {
             slides.push(CHILDS[g])
         }
         this.setState({ sliderImages: slides })
-        setInterval(this.slideRight, this.state.slideTimer);
+        this.timer = setInterval(this.slideRight, this.state.slideTimer)
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.timer);
     }
     slideLeft() {
         if (this.state.cur === 0) {
@@ -2990,7 +3595,15 @@ export class ImageSlider2 extends Component {
             slides.push(CHILDS[g])
         }
         this.setState({ sliderImages: slides })
-        setInterval(this.slideRight, this.state.slideTimer);
+        this.timer = setInterval(this.slideRight, this.state.slideTimer);
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.timer);
     }
     slideLeft() {
         if (this.state.cur === 0) {
@@ -3090,7 +3703,15 @@ export class ImageSlider3 extends Component {
             slides.push(CHILDS[g])
         }
         this.setState({ sliderImages: slides })
-        setInterval(this.slideRight, this.state.slideTimer);
+        this.timer = setInterval(this.slideRight, this.state.slideTimer);
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.timer);
     }
     slideLeft() {
         if (this.state.cur === 0) {
@@ -3186,7 +3807,15 @@ export class ImageSlider4 extends Component {
             slides.push(CHILDS[g])
         }
         this.setState({ sliderImages: slides })
-        setInterval(this.slideRight, this.state.slideTimer);
+        this.timer = setInterval(this.slideRight, this.state.slideTimer);
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.timer);
     }
     slideLeft() {
         if (this.state.cur === 0) {
@@ -3282,7 +3911,15 @@ export class ImageSlider5 extends Component {
             slides.push(CHILDS[g])
         }
         this.setState({ sliderImages: slides })
-        setInterval(this.slideRight, this.state.slideTimer);
+        this.timer = setInterval(this.slideRight, this.state.slideTimer);
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.timer);
     }
     slideLeft() {
         if (this.state.cur === 0) {
@@ -3463,6 +4100,10 @@ export class Toggler1 extends Component {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
     }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
+    }
     toggle() {
         this.setState({
             show: !this.state.show
@@ -3554,13 +4195,17 @@ export class Toggler2 extends Component {
             titleClassName: props.titleClassName,
             mainClassName: props.mainClassName,
             toggleClassName: props.toggleClassName,
-            childs:[],
+            childs: [],
         }
         this.toggle = this.toggle.bind(this);
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     toggle() {
         this.setState({
@@ -3649,6 +4294,22 @@ export class Toggler3 extends Component {
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children.split('\\'))
+        let labels = [];
+        let text = [];
+        for (var i = 0; i < CHILDS.length; i += 1) {
+            if ((i + 1) % 2 === 0) {
+                text.push(CHILDS[i])
+            } else {
+                labels.push(CHILDS[i])
+            }
+        }
+        this.setState({
+            labels: labels,
+            text: text
+        })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children.split('\\'))
         let labels = [];
         let text = [];
         for (var i = 0; i < CHILDS.length; i += 1) {
@@ -3772,13 +4433,17 @@ export class Modul1 extends Component {
             titleClassName: props.titleClassName,
             boxClassName: props.boxClassName,
             backClassName: props.backClassName,
-            childs:[],
+            childs: [],
         }
         this.toggle = this.toggle.bind(this);
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     toggle() {
         this.setState({
@@ -3886,7 +4551,12 @@ export class NumberList1 extends Component {
         listItems = CHILDS.map((x) => x)
         this.setState({ listItem: listItems })
     }
-
+    componentWillReceiveProps(newProps) {
+        let listItems = []
+        const CHILDS = React.Children.toArray(newProps.children.split('\\'))
+        listItems = CHILDS.map((x) => x)
+        this.setState({ listItem: listItems })
+    }
 
     render() {
         const LISTSTYLE = {
@@ -3936,6 +4606,21 @@ export class NumberList2 extends Component {
         let listItems = []
         let nestedItems = []
         const CHILDS = React.Children.toArray(this.props.children)
+        let tempItems = CHILDS.map((x) => x)
+        for (var q = 0; q < CHILDS.length; q += +this.state.listAmount) {
+            for (var w = 0; w < +this.state.listAmount; w += 1) {
+                nestedItems.push(tempItems[w])
+            }
+            listItems.push(nestedItems)
+            nestedItems = []
+            tempItems.splice(0, this.state.listAmount)
+        }
+        this.setState({ listItem: listItems })
+    }
+    componentWillReceiveProps(newProps) {
+        let listItems = []
+        let nestedItems = []
+        const CHILDS = React.Children.toArray(newProps.children)
         let tempItems = CHILDS.map((x) => x)
         for (var q = 0; q < CHILDS.length; q += +this.state.listAmount) {
             for (var w = 0; w < +this.state.listAmount; w += 1) {
@@ -4003,7 +4688,12 @@ export class NumberList3 extends Component {
         listItems = CHILDS.map((x) => x)
         this.setState({ listItem: listItems })
     }
-
+    componentWillReceiveProps(newProps) {
+        let listItems = []
+        const CHILDS = React.Children.toArray(newProps.children.split('\\'))
+        listItems = CHILDS.map((x) => x)
+        this.setState({ listItem: listItems })
+    }
 
     render() {
         const LISTSTYLE = {
@@ -4070,6 +4760,13 @@ export class BulletList1 extends Component {
         this.setState({ listItem: listItems })
     }
 
+    componentWillReceiveProps(newProps) {
+        let listItems = []
+        const CHILDS = React.Children.toArray(newProps.children.split('\\'))
+        listItems = CHILDS.map((x) => x)
+        this.setState({ listItem: listItems })
+    }
+
     render() {
         const LISTSTYLE = {
             color: this.state.color,
@@ -4124,6 +4821,12 @@ export class BulletList2 extends Component {
     componentDidMount() {
         let listItems = []
         const CHILDS = React.Children.toArray(this.props.children.split('\\'))
+        listItems = CHILDS.map((x) => x)
+        this.setState({ listItem: listItems })
+    }
+    componentWillReceiveProps(newProps) {
+        let listItems = []
+        const CHILDS = React.Children.toArray(newProps.children.split('\\'))
         listItems = CHILDS.map((x) => x)
         this.setState({ listItem: listItems })
     }
@@ -4227,6 +4930,49 @@ export class Table1 extends Component {
             this.setState({ head: HEADROW, body: BODYROW })
         }
     }
+    componentWillReceiveProps(newProps) {
+        let tempHead = []
+        let tempBody = []
+        let childs = []
+        let rows = this.state.rows
+        let HEADROW, HEAD, BODY
+        let BODYROW = []
+        const CHILDS = React.Children.count(newProps.children) === 0 ? '' : React.Children.toArray(newProps.children.split('\\'))
+        if (CHILDS !== '') {
+            childs = CHILDS.map((x, i, arr) => x);
+            for (var b = 1; b <= this.state.columns; b += 1) {
+                tempHead.push(childs[b - 1])
+            }
+            childs.splice(0, this.state.columns)
+            //need to divide by this.state.columns and make rows here
+            tempBody = childs.map((x, i, arr) => x);
+            while (rows > 0) {
+                if (rows === this.state.rows) {
+                    HEAD = tempHead.map((x, i, arr) => {
+                        return (
+                            <th key={i}>
+                                {x}
+                            </th>
+                        )
+                    })
+                    HEADROW = <tr>{HEAD}</tr>
+                } else {
+                    var temperBody = tempBody.splice(0, this.state.columns);
+                    BODY = temperBody.map((x, i, arr) => {
+                        return (
+                            <td key={i}>
+                                {x}
+                            </td>
+                        )
+                    })
+                    BODYROW.push(<tr key={rows}>{BODY}</tr>)
+                }
+                rows -= 1
+            }
+            this.setState({ head: HEADROW, body: BODYROW })
+        }
+    }
+
     render() {
         const TABLESTYLE = {
 
@@ -4268,6 +5014,31 @@ export class Table2 extends Component {
         let HEAD, BODY
         let BODYROW = []
         const CHILDS = React.Children.count(this.props.children) === 0 ? '' : React.Children.toArray(this.props.children.split('\\'));
+        if (CHILDS !== '') {
+            tempBody = CHILDS.map((x, i, arr) => x);
+
+            while (rows > 0) {
+                var temperBody = tempBody.splice(0, this.state.columns);
+                BODY = temperBody.map((x, i, arr) => {
+                    return (
+                        <td key={i}>
+                            {x}
+                        </td>
+                    )
+                })
+                BODYROW.push(<tr key={rows}>{BODY}</tr>)
+
+                rows -= 1
+            }
+            this.setState({ body: BODYROW })
+        }
+    }
+    componentWillReceiveProps(newProps) {
+        let tempBody = []
+        let rows = this.state.rows
+        let HEAD, BODY
+        let BODYROW = []
+        const CHILDS = React.Children.count(newProps.children) === 0 ? '' : React.Children.toArray(newProps.children.split('\\'));
         if (CHILDS !== '') {
             tempBody = CHILDS.map((x, i, arr) => x);
 
