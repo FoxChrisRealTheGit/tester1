@@ -23,7 +23,7 @@ export default class ContainerView extends Component {
             <section>
                 <Navigation />
                 <HorizontalTestBlock1 />
-                <Container1>
+                <Container1 theme="2">
                     <H11>
                         Containers
                     </H11>
@@ -45,7 +45,8 @@ export default class ContainerView extends Component {
                     <Block2 />
                 </Container1>
                 <HorizontalTestBlock1 />
-                <Container1>
+                <Container1
+                    theme='2'>
                     <H34>
                         container 2
                     </H34>

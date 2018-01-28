@@ -3,9 +3,11 @@ import './reset.css';
 
 import Holder1, { Holder2, Holder5, Holder7 } from './Holders';
 
+import StyleSheet from 'nestingstyles';
+
 //non temporary css sheet
 import '../Components 1.0.0/SuperStyleSheet.css';
-
+//import Themes from './Themes';
 /* Blocks */
 /*
 Blocks Description and use
@@ -71,11 +73,11 @@ export class H11 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            color: props.color || 'black',
+            color: props.color,
             textShadow: props.shadow,
-            fontFamily: props.font || 'sans-serif',
+            fontFamily: props.font || 'inherit',
             fontSize: props.size || '8em',
-            fontWeight: props.weight || '900',
+            fontWeight: props.fontWeight || '900',
             display: props.display || 'flex',
             align: props.align || 'center',
             textAlign: props.textAlign || 'center',
@@ -95,46 +97,74 @@ export class H11 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            //theme: props.theme || 'inherit',   
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount(nextProps) {
         const CHILDS = React.Children.toArray(this.props.children)
-        this.setState({ childs: CHILDS })
+        //const theme = Themes(this.state.theme)
+        this.setState({
+            childs: CHILDS,
+            //color: theme.color,
+            //background: theme.background,
+        })
     }
     componentWillReceiveProps(newProps) {
         const CHILDS = React.Children.toArray(newProps.children)
         return this.setState({ childs: CHILDS })
     }
     render() {
-        const HEADING = {
-            width: this.state.width,
-            height: this.state.height,
-            color: this.state.color,
-            textShadow: this.state.textShadow,
-            borderLeft: this.state.bLeft,
-            borderRight: this.state.bRight,
-            borderTop: this.state.bTop,
-            borderBottom: this.state.bBottom,
-            border: this.state.border,
-            fontFamily: this.state.fontFamily,
-            fontSize: this.state.fontSize,
-            fontWeight: this.state.fontWeight,
-            display: this.state.display,
-            flexDirection: 'column',
-            alignItems: this.state.align,
-            textAlign: this.state.textAlign,
-            padding: this.state.padding,
-            margin: this.state.margin,
-            overflowX: 'hidden',
-            overflowY: 'hidden',
-            animationIterationCount: this.state.animationIterationCount,
-            animationTimingFunction: this.state.animationTimingFunction,
-            animationName: this.state.animationName,
-            animationDuration: this.state.animationDuration,
-
-        }
+        const HEADING = StyleSheet.create({
+            heading: {
+                width: this.state.width,
+                height: this.state.height,
+                color: this.state.color,
+                textShadow: this.state.textShadow,
+                borderLeft: this.state.bLeft,
+                borderRight: this.state.bRight,
+                borderTop: this.state.bTop,
+                borderBottom: this.state.bBottom,
+                border: this.state.border,
+                fontFamily: this.state.fontFamily,
+                fontSize: this.state.fontSize,
+                fontWeight: this.state.fontWeight,
+                display: this.state.display,
+                flexDirection: 'column',
+                alignItems: this.state.align,
+                textAlign: this.state.textAlign,
+                padding: this.state.padding,
+                margin: this.state.margin,
+                overflowX: 'hidden',
+                overflowY: 'hidden',
+                animationIterationCount: this.state.animationIterationCount,
+                animationTimingFunction: this.state.animationTimingFunction,
+                animationName: this.state.animationName,
+                animationDuration: this.state.animationDuration,
+            },
+            hoverStyle: {
+                color: 'yellow'
+            },
+            '@media screen and (max-width: 440px)': {
+                heading: {
+                    display: this.state.smDis,
+                    color: this.state.color,
+                    fontSize: '6em'
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                heading: {
+                    display: this.state.mdDis,
+                    color: this.state.color,
+                    fontSize: '4em'
+                }
+            },
+        })
         return (
-            <h1 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h1>
+            <h1 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                onMouseLeave={() => this.setState({ color: this.props.color })}>{this.state.childs[0]}</h1>
         )
     }
 }
@@ -166,6 +196,8 @@ export class H12 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -177,34 +209,50 @@ export class H12 extends Component {
         return this.setState({ childs: CHILDS })
     }
     render() {
-        const HEADING = {
-            width: this.state.width,
-            height: this.state.height,
-            color: this.state.color,
-            textShadow: this.state.textShadow,
-            borderLeft: this.state.bLeft,
-            borderRight: this.state.bRight,
-            borderTop: this.state.bTop,
-            borderBottom: this.state.bBottom,
-            border: this.state.border,
-            fontFamily: this.state.fontFamily,
-            fontSize: this.state.fontSize,
-            fontWeight: this.state.fontWeight,
-            display: this.state.display,
-            flexDirection: 'column',
-            alignItems: this.state.align,
-            textAlign: this.state.textAlign,
-            padding: this.state.padding,
-            margin: this.state.margin,
-            overflowX: 'hidden',
-            overflowY: 'hidden',
-            animationIterationCount: this.state.animationIterationCount,
-            animationTimingFunction: this.state.animationTimingFunction,
-            animationName: this.state.animationName,
-            animationDuration: this.state.animationDuration,
-        }
+        const HEADING = StyleSheet.create({
+            heading: {
+                width: this.state.width,
+                height: this.state.height,
+                color: this.state.color,
+                textShadow: this.state.textShadow,
+                borderLeft: this.state.bLeft,
+                borderRight: this.state.bRight,
+                borderTop: this.state.bTop,
+                borderBottom: this.state.bBottom,
+                border: this.state.border,
+                fontFamily: this.state.fontFamily,
+                fontSize: this.state.fontSize,
+                fontWeight: this.state.fontWeight,
+                display: this.state.display,
+                flexDirection: 'column',
+                alignItems: this.state.align,
+                textAlign: this.state.textAlign,
+                padding: this.state.padding,
+                margin: this.state.margin,
+                overflowX: 'hidden',
+                overflowY: 'hidden',
+                animationIterationCount: this.state.animationIterationCount,
+                animationTimingFunction: this.state.animationTimingFunction,
+                animationName: this.state.animationName,
+                animationDuration: this.state.animationDuration,
+            },
+            '@media screen and (max-width: 440px)': {
+                heading: {
+                    display: this.state.smDis,
+                    color: this.state.color,
+                    fontSize: '6em'
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                heading: {
+                    display: this.state.mdDis,
+                    color: this.state.color,
+                    fontSize: '4em'
+                }
+            },
+        })
         return (
-            <h1 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h1>
+            <h1 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h1>
         )
     }
 }
@@ -236,6 +284,8 @@ export class H13 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -247,34 +297,50 @@ export class H13 extends Component {
         return this.setState({ childs: CHILDS })
     }
     render() {
-        const HEADING = {
-            width: this.state.width,
-            height: this.state.height,
-            color: this.state.color,
-            textShadow: this.state.textShadow,
-            borderLeft: this.state.bLeft,
-            borderRight: this.state.bRight,
-            borderTop: this.state.bTop,
-            borderBottom: this.state.bBottom,
-            border: this.state.border,
-            fontFamily: this.state.fontFamily,
-            fontSize: this.state.fontSize,
-            fontWeight: this.state.fontWeight,
-            display: this.state.display,
-            flexDirection: 'column',
-            alignItems: this.state.align,
-            textAlign: this.state.textAlign,
-            padding: this.state.padding,
-            margin: this.state.margin,
-            overflowX: 'hidden',
-            overflowY: 'hidden',
-            animationIterationCount: this.state.animationIterationCount,
-            animationTimingFunction: this.state.animationTimingFunction,
-            animationName: this.state.animationName,
-            animationDuration: this.state.animationDuration,
-        }
+        const HEADING = StyleSheet.create({
+            heading: {
+                width: this.state.width,
+                height: this.state.height,
+                color: this.state.color,
+                textShadow: this.state.textShadow,
+                borderLeft: this.state.bLeft,
+                borderRight: this.state.bRight,
+                borderTop: this.state.bTop,
+                borderBottom: this.state.bBottom,
+                border: this.state.border,
+                fontFamily: this.state.fontFamily,
+                fontSize: this.state.fontSize,
+                fontWeight: this.state.fontWeight,
+                display: this.state.display,
+                flexDirection: 'column',
+                alignItems: this.state.align,
+                textAlign: this.state.textAlign,
+                padding: this.state.padding,
+                margin: this.state.margin,
+                overflowX: 'hidden',
+                overflowY: 'hidden',
+                animationIterationCount: this.state.animationIterationCount,
+                animationTimingFunction: this.state.animationTimingFunction,
+                animationName: this.state.animationName,
+                animationDuration: this.state.animationDuration,
+            },
+            '@media screen and (max-width: 440px)': {
+                heading: {
+                    display: this.state.smDis,
+                    color: this.state.color,
+                    fontSize: '6em'
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                heading: {
+                    display: this.state.mdDis,
+                    color: this.state.color,
+                    fontSize: '4em'
+                }
+            },
+        })
         return (
-            <h1 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h1>
+            <h1 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h1>
         )
     }
 }
@@ -306,6 +372,8 @@ export class H14 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -317,34 +385,50 @@ export class H14 extends Component {
         return this.setState({ childs: CHILDS })
     }
     render() {
-        const HEADING = {
-            width: this.state.width,
-            height: this.state.height,
-            color: this.state.color,
-            textShadow: this.state.textShadow,
-            borderLeft: this.state.bLeft,
-            borderRight: this.state.bRight,
-            borderTop: this.state.bTop,
-            borderBottom: this.state.bBottom,
-            border: this.state.border,
-            fontFamily: this.state.fontFamily,
-            fontSize: this.state.fontSize,
-            fontWeight: this.state.fontWeight,
-            display: this.state.display,
-            flexDirection: 'column',
-            alignItems: this.state.align,
-            textAlign: this.state.textAlign,
-            padding: this.state.padding,
-            margin: this.state.margin,
-            overflowX: 'hidden',
-            overflowY: 'hidden',
-            animationIterationCount: this.state.animationIterationCount,
-            animationTimingFunction: this.state.animationTimingFunction,
-            animationName: this.state.animationName,
-            animationDuration: this.state.animationDuration,
-        }
+        const HEADING = StyleSheet.create({
+            heading: {
+                width: this.state.width,
+                height: this.state.height,
+                color: this.state.color,
+                textShadow: this.state.textShadow,
+                borderLeft: this.state.bLeft,
+                borderRight: this.state.bRight,
+                borderTop: this.state.bTop,
+                borderBottom: this.state.bBottom,
+                border: this.state.border,
+                fontFamily: this.state.fontFamily,
+                fontSize: this.state.fontSize,
+                fontWeight: this.state.fontWeight,
+                display: this.state.display,
+                flexDirection: 'column',
+                alignItems: this.state.align,
+                textAlign: this.state.textAlign,
+                padding: this.state.padding,
+                margin: this.state.margin,
+                overflowX: 'hidden',
+                overflowY: 'hidden',
+                animationIterationCount: this.state.animationIterationCount,
+                animationTimingFunction: this.state.animationTimingFunction,
+                animationName: this.state.animationName,
+                animationDuration: this.state.animationDuration,
+            },
+            '@media screen and (max-width: 440px)': {
+                heading: {
+                    display: this.state.smDis,
+                    color: this.state.color,
+                    fontSize: '6em'
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                heading: {
+                    display: this.state.mdDis,
+                    color: this.state.color,
+                    fontSize: '6em'
+                }
+            },
+        })
         return (
-            <h1 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h1>
+            <h1 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h1>
         )
     }
 }
@@ -376,6 +460,8 @@ export class H15 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -387,34 +473,50 @@ export class H15 extends Component {
         return this.setState({ childs: CHILDS })
     }
     render() {
-        const HEADING = {
-            width: this.state.width,
-            height: this.state.height,
-            color: this.state.color,
-            textShadow: this.state.textShadow,
-            borderLeft: this.state.bLeft,
-            borderRight: this.state.bRight,
-            borderTop: this.state.bTop,
-            borderBottom: this.state.bBottom,
-            border: this.state.border,
-            fontFamily: this.state.fontFamily,
-            fontSize: this.state.fontSize,
-            fontWeight: this.state.fontWeight,
-            display: this.state.display,
-            flexDirection: 'column',
-            alignItems: this.state.align,
-            textAlign: this.state.textAlign,
-            padding: this.state.padding,
-            margin: this.state.margin,
-            overflowX: 'hidden',
-            overflowY: 'hidden',
-            animationIterationCount: this.state.animationIterationCount,
-            animationTimingFunction: this.state.animationTimingFunction,
-            animationName: this.state.animationName,
-            animationDuration: this.state.animationDuration,
-        }
+        const HEADING = StyleSheet.create({
+            heading: {
+                width: this.state.width,
+                height: this.state.height,
+                color: this.state.color,
+                textShadow: this.state.textShadow,
+                borderLeft: this.state.bLeft,
+                borderRight: this.state.bRight,
+                borderTop: this.state.bTop,
+                borderBottom: this.state.bBottom,
+                border: this.state.border,
+                fontFamily: this.state.fontFamily,
+                fontSize: this.state.fontSize,
+                fontWeight: this.state.fontWeight,
+                display: this.state.display,
+                flexDirection: 'column',
+                alignItems: this.state.align,
+                textAlign: this.state.textAlign,
+                padding: this.state.padding,
+                margin: this.state.margin,
+                overflowX: 'hidden',
+                overflowY: 'hidden',
+                animationIterationCount: this.state.animationIterationCount,
+                animationTimingFunction: this.state.animationTimingFunction,
+                animationName: this.state.animationName,
+                animationDuration: this.state.animationDuration,
+            },
+            '@media screen and (max-width: 440px)': {
+                heading: {
+                    display: this.state.smDis,
+                    color: this.state.color,
+                    fontSize: '6em'
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                heading: {
+                    display: this.state.mdDis,
+                    color: this.state.color,
+                    fontSize: '4em'
+                }
+            },
+        })
         return (
-            <h1 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h1>
+            <h1 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h1>
         )
     }
 }
@@ -448,6 +550,8 @@ export class H21 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -459,34 +563,50 @@ export class H21 extends Component {
         return this.setState({ childs: CHILDS })
     }
     render() {
-        const HEADING = {
-            width: this.state.width,
-            height: this.state.height,
-            color: this.state.color,
-            textShadow: this.state.textShadow,
-            borderLeft: this.state.bLeft,
-            borderRight: this.state.bRight,
-            borderTop: this.state.bTop,
-            borderBottom: this.state.bBottom,
-            border: this.state.border,
-            fontFamily: this.state.fontFamily,
-            fontSize: this.state.fontSize,
-            fontWeight: this.state.fontWeight,
-            display: this.state.display,
-            flexDirection: 'column',
-            alignItems: this.state.align,
-            textAlign: this.state.textAlign,
-            padding: this.state.padding,
-            margin: this.state.margin,
-            overflowX: 'hidden',
-            overflowY: 'hidden',
-            animationIterationCount: this.state.animationIterationCount,
-            animationTimingFunction: this.state.animationTimingFunction,
-            animationName: this.state.animationName,
-            animationDuration: this.state.animationDuration,
-        }
+        const HEADING = StyleSheet.create({
+            heading: {
+                width: this.state.width,
+                height: this.state.height,
+                color: this.state.color,
+                textShadow: this.state.textShadow,
+                borderLeft: this.state.bLeft,
+                borderRight: this.state.bRight,
+                borderTop: this.state.bTop,
+                borderBottom: this.state.bBottom,
+                border: this.state.border,
+                fontFamily: this.state.fontFamily,
+                fontSize: this.state.fontSize,
+                fontWeight: this.state.fontWeight,
+                display: this.state.display,
+                flexDirection: 'column',
+                alignItems: this.state.align,
+                textAlign: this.state.textAlign,
+                padding: this.state.padding,
+                margin: this.state.margin,
+                overflowX: 'hidden',
+                overflowY: 'hidden',
+                animationIterationCount: this.state.animationIterationCount,
+                animationTimingFunction: this.state.animationTimingFunction,
+                animationName: this.state.animationName,
+                animationDuration: this.state.animationDuration,
+            },
+            '@media screen and (max-width: 440px)': {
+                heading: {
+                    display: this.state.smDis,
+                    color: this.state.color,
+                    fontSize: '4em'
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                heading: {
+                    display: this.state.mdDis,
+                    color: this.state.color,
+                    fontSize: '2em'
+                }
+            },
+        })
         return (
-            <h2 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h2>
+            <h2 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h2>
         )
     }
 }
@@ -518,6 +638,8 @@ export class H22 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -529,34 +651,50 @@ export class H22 extends Component {
         return this.setState({ childs: CHILDS })
     }
     render() {
-        const HEADING = {
-            width: this.state.width,
-            height: this.state.height,
-            color: this.state.color,
-            textShadow: this.state.textShadow,
-            borderLeft: this.state.bLeft,
-            borderRight: this.state.bRight,
-            borderTop: this.state.bTop,
-            borderBottom: this.state.bBottom,
-            border: this.state.border,
-            fontFamily: this.state.fontFamily,
-            fontSize: this.state.fontSize,
-            fontWeight: this.state.fontWeight,
-            display: this.state.display,
-            flexDirection: 'column',
-            alignItems: this.state.align,
-            textAlign: this.state.textAlign,
-            padding: this.state.padding,
-            margin: this.state.margin,
-            overflowX: 'hidden',
-            overflowY: 'hidden',
-            animationIterationCount: this.state.animationIterationCount,
-            animationTimingFunction: this.state.animationTimingFunction,
-            animationName: this.state.animationName,
-            animationDuration: this.state.animationDuration,
-        }
+        const HEADING = StyleSheet.create({
+            heading: {
+                width: this.state.width,
+                height: this.state.height,
+                color: this.state.color,
+                textShadow: this.state.textShadow,
+                borderLeft: this.state.bLeft,
+                borderRight: this.state.bRight,
+                borderTop: this.state.bTop,
+                borderBottom: this.state.bBottom,
+                border: this.state.border,
+                fontFamily: this.state.fontFamily,
+                fontSize: this.state.fontSize,
+                fontWeight: this.state.fontWeight,
+                display: this.state.display,
+                flexDirection: 'column',
+                alignItems: this.state.align,
+                textAlign: this.state.textAlign,
+                padding: this.state.padding,
+                margin: this.state.margin,
+                overflowX: 'hidden',
+                overflowY: 'hidden',
+                animationIterationCount: this.state.animationIterationCount,
+                animationTimingFunction: this.state.animationTimingFunction,
+                animationName: this.state.animationName,
+                animationDuration: this.state.animationDuration,
+            },
+            '@media screen and (max-width: 440px)': {
+                heading: {
+                    display: this.state.smDis,
+                    color: this.state.color,
+                    fontSize: '4em'
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                heading: {
+                    display: this.state.mdDis,
+                    color: this.state.color,
+                    fontSize: '2em'
+                }
+            },
+        })
         return (
-            <h2 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h2>
+            <h2 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h2>
         )
     }
 }
@@ -588,6 +726,8 @@ export class H23 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -599,34 +739,50 @@ export class H23 extends Component {
         return this.setState({ childs: CHILDS })
     }
     render() {
-        const HEADING = {
-            width: this.state.width,
-            height: this.state.height,
-            color: this.state.color,
-            textShadow: this.state.textShadow,
-            borderLeft: this.state.bLeft,
-            borderRight: this.state.bRight,
-            borderTop: this.state.bTop,
-            borderBottom: this.state.bBottom,
-            border: this.state.border,
-            fontFamily: this.state.fontFamily,
-            fontSize: this.state.fontSize,
-            fontWeight: this.state.fontWeight,
-            display: this.state.display,
-            flexDirection: 'column',
-            alignItems: this.state.align,
-            textAlign: this.state.textAlign,
-            padding: this.state.padding,
-            margin: this.state.margin,
-            overflowX: 'hidden',
-            overflowY: 'hidden',
-            animationIterationCount: this.state.animationIterationCount,
-            animationTimingFunction: this.state.animationTimingFunction,
-            animationName: this.state.animationName,
-            animationDuration: this.state.animationDuration,
-        }
+        const HEADING = StyleSheet.create({
+            heading: {
+                width: this.state.width,
+                height: this.state.height,
+                color: this.state.color,
+                textShadow: this.state.textShadow,
+                borderLeft: this.state.bLeft,
+                borderRight: this.state.bRight,
+                borderTop: this.state.bTop,
+                borderBottom: this.state.bBottom,
+                border: this.state.border,
+                fontFamily: this.state.fontFamily,
+                fontSize: this.state.fontSize,
+                fontWeight: this.state.fontWeight,
+                display: this.state.display,
+                flexDirection: 'column',
+                alignItems: this.state.align,
+                textAlign: this.state.textAlign,
+                padding: this.state.padding,
+                margin: this.state.margin,
+                overflowX: 'hidden',
+                overflowY: 'hidden',
+                animationIterationCount: this.state.animationIterationCount,
+                animationTimingFunction: this.state.animationTimingFunction,
+                animationName: this.state.animationName,
+                animationDuration: this.state.animationDuration,
+            },
+            '@media screen and (max-width: 440px)': {
+                heading: {
+                    display: this.state.smDis,
+                    color: this.state.color,
+                    fontSize: '4em'
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                heading: {
+                    display: this.state.mdDis,
+                    color: this.state.color,
+                    fontSize: '2em'
+                }
+            },
+        })
         return (
-            <h2 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h2>
+            <h2 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h2>
         )
     }
 }
@@ -658,6 +814,8 @@ export class H24 extends Component {
             animationTimingFunction: props.aniTime || 'linear',
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -669,34 +827,50 @@ export class H24 extends Component {
         return this.setState({ childs: CHILDS })
     }
     render() {
-        const HEADING = {
-            width: this.state.width,
-            height: this.state.height,
-            color: this.state.color,
-            textShadow: this.state.textShadow,
-            borderLeft: this.state.bLeft,
-            borderRight: this.state.bRight,
-            borderTop: this.state.bTop,
-            borderBottom: this.state.bBottom,
-            border: this.state.border,
-            fontFamily: this.state.fontFamily,
-            fontSize: this.state.fontSize,
-            fontWeight: this.state.fontWeight,
-            display: this.state.display,
-            flexDirection: 'column',
-            alignItems: this.state.align,
-            textAlign: this.state.textAlign,
-            padding: this.state.padding,
-            margin: this.state.margin,
-            overflowX: 'hidden',
-            overflowY: 'hidden',
-            animationIterationCount: this.state.animationIterationCount,
-            animationTimingFunction: this.state.animationTimingFunction,
-            animationName: this.state.animationName,
-            animationDuration: this.state.animationDuration,
-        }
+        const HEADING = StyleSheet.create({
+            heading: {
+                width: this.state.width,
+                height: this.state.height,
+                color: this.state.color,
+                textShadow: this.state.textShadow,
+                borderLeft: this.state.bLeft,
+                borderRight: this.state.bRight,
+                borderTop: this.state.bTop,
+                borderBottom: this.state.bBottom,
+                border: this.state.border,
+                fontFamily: this.state.fontFamily,
+                fontSize: this.state.fontSize,
+                fontWeight: this.state.fontWeight,
+                display: this.state.display,
+                flexDirection: 'column',
+                alignItems: this.state.align,
+                textAlign: this.state.textAlign,
+                padding: this.state.padding,
+                margin: this.state.margin,
+                overflowX: 'hidden',
+                overflowY: 'hidden',
+                animationIterationCount: this.state.animationIterationCount,
+                animationTimingFunction: this.state.animationTimingFunction,
+                animationName: this.state.animationName,
+                animationDuration: this.state.animationDuration,
+            },
+            '@media screen and (max-width: 440px)': {
+                heading: {
+                    display: this.state.smDis,
+                    color: this.state.color,
+                    fontSize: '4em'
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                heading: {
+                    display: this.state.mdDis,
+                    color: this.state.color,
+                    fontSize: '2em'
+                }
+            },
+        })
         return (
-            <h2 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h2>
+            <h2 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h2>
         )
     }
 }
@@ -728,6 +902,8 @@ export class H25 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -739,34 +915,50 @@ export class H25 extends Component {
         return this.setState({ childs: CHILDS })
     }
     render() {
-        const HEADING = {
-            width: this.state.width,
-            height: this.state.height,
-            color: this.state.color,
-            textShadow: this.state.textShadow,
-            borderLeft: this.state.bLeft,
-            borderRight: this.state.bRight,
-            borderTop: this.state.bTop,
-            borderBottom: this.state.bBottom,
-            border: this.state.border,
-            fontFamily: this.state.fontFamily,
-            fontSize: this.state.fontSize,
-            fontWeight: this.state.fontWeight,
-            display: this.state.display,
-            flexDirection: 'column',
-            alignItems: this.state.align,
-            textAlign: this.state.textAlign,
-            padding: this.state.padding,
-            margin: this.state.margin,
-            overflowX: 'hidden',
-            overflowY: 'hidden',
-            animationIterationCount: this.state.animationIterationCount,
-            animationTimingFunction: this.state.animationTimingFunction,
-            animationName: this.state.animationName,
-            animationDuration: this.state.animationDuration,
-        }
+        const HEADING = StyleSheet.create({
+            heading: {
+                width: this.state.width,
+                height: this.state.height,
+                color: this.state.color,
+                textShadow: this.state.textShadow,
+                borderLeft: this.state.bLeft,
+                borderRight: this.state.bRight,
+                borderTop: this.state.bTop,
+                borderBottom: this.state.bBottom,
+                border: this.state.border,
+                fontFamily: this.state.fontFamily,
+                fontSize: this.state.fontSize,
+                fontWeight: this.state.fontWeight,
+                display: this.state.display,
+                flexDirection: 'column',
+                alignItems: this.state.align,
+                textAlign: this.state.textAlign,
+                padding: this.state.padding,
+                margin: this.state.margin,
+                overflowX: 'hidden',
+                overflowY: 'hidden',
+                animationIterationCount: this.state.animationIterationCount,
+                animationTimingFunction: this.state.animationTimingFunction,
+                animationName: this.state.animationName,
+                animationDuration: this.state.animationDuration,
+            },
+            '@media screen and (max-width: 440px)': {
+                heading: {
+                    display: this.state.smDis,
+                    color: this.state.color,
+                    fontSize: '4em'
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                heading: {
+                    display: this.state.mdDis,
+                    color: this.state.color,
+                    fontSize: '2em'
+                }
+            },
+        })
         return (
-            <h2 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h2>
+            <h2 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h2>
         )
     }
 }
@@ -800,6 +992,8 @@ export class H31 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -811,34 +1005,50 @@ export class H31 extends Component {
         return this.setState({ childs: CHILDS })
     }
     render() {
-        const HEADING = {
-            width: this.state.width,
-            height: this.state.height,
-            color: this.state.color,
-            textShadow: this.state.textShadow,
-            borderLeft: this.state.bLeft,
-            borderRight: this.state.bRight,
-            borderTop: this.state.bTop,
-            borderBottom: this.state.bBottom,
-            border: this.state.border,
-            fontFamily: this.state.fontFamily,
-            fontSize: this.state.fontSize,
-            fontWeight: this.state.fontWeight,
-            display: this.state.display,
-            flexDirection: 'column',
-            alignItems: this.state.align,
-            textAlign: this.state.textAlign,
-            padding: this.state.padding,
-            margin: this.state.margin,
-            overflowX: 'hidden',
-            overflowY: 'hidden',
-            animationIterationCount: this.state.animationIterationCount,
-            animationTimingFunction: this.state.animationTimingFunction,
-            animationName: this.state.animationName,
-            animationDuration: this.state.animationDuration,
-        }
+        const HEADING = StyleSheet.create({
+            heading: {
+                width: this.state.width,
+                height: this.state.height,
+                color: this.state.color,
+                textShadow: this.state.textShadow,
+                borderLeft: this.state.bLeft,
+                borderRight: this.state.bRight,
+                borderTop: this.state.bTop,
+                borderBottom: this.state.bBottom,
+                border: this.state.border,
+                fontFamily: this.state.fontFamily,
+                fontSize: this.state.fontSize,
+                fontWeight: this.state.fontWeight,
+                display: this.state.display,
+                flexDirection: 'column',
+                alignItems: this.state.align,
+                textAlign: this.state.textAlign,
+                padding: this.state.padding,
+                margin: this.state.margin,
+                overflowX: 'hidden',
+                overflowY: 'hidden',
+                animationIterationCount: this.state.animationIterationCount,
+                animationTimingFunction: this.state.animationTimingFunction,
+                animationName: this.state.animationName,
+                animationDuration: this.state.animationDuration,
+            },
+            '@media screen and (max-width: 440px)': {
+                heading: {
+                    display: this.state.smDis,
+                    color: this.state.color,
+                    fontSize: '3em'
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                heading: {
+                    display: this.state.mdDis,
+                    color: this.state.color,
+                    fontSize: '2em'
+                }
+            },
+        })
         return (
-            <h3 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h3>
+            <h3 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h3>
         )
     }
 }
@@ -870,6 +1080,8 @@ export class H32 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -881,34 +1093,50 @@ export class H32 extends Component {
         return this.setState({ childs: CHILDS })
     }
     render() {
-        const HEADING = {
-            width: this.state.width,
-            height: this.state.height,
-            color: this.state.color,
-            textShadow: this.state.textShadow,
-            borderLeft: this.state.bLeft,
-            borderRight: this.state.bRight,
-            borderTop: this.state.bTop,
-            borderBottom: this.state.bBottom,
-            border: this.state.border,
-            fontFamily: this.state.fontFamily,
-            fontSize: this.state.fontSize,
-            fontWeight: this.state.fontWeight,
-            display: this.state.display,
-            flexDirection: 'column',
-            alignItems: this.state.align,
-            textAlign: this.state.textAlign,
-            padding: this.state.padding,
-            margin: this.state.margin,
-            overflowX: 'hidden',
-            overflowY: 'hidden',
-            animationIterationCount: this.state.animationIterationCount,
-            animationTimingFunction: this.state.animationTimingFunction,
-            animationName: this.state.animationName,
-            animationDuration: this.state.animationDuration,
-        }
+        const HEADING = StyleSheet.create({
+            heading: {
+                width: this.state.width,
+                height: this.state.height,
+                color: this.state.color,
+                textShadow: this.state.textShadow,
+                borderLeft: this.state.bLeft,
+                borderRight: this.state.bRight,
+                borderTop: this.state.bTop,
+                borderBottom: this.state.bBottom,
+                border: this.state.border,
+                fontFamily: this.state.fontFamily,
+                fontSize: this.state.fontSize,
+                fontWeight: this.state.fontWeight,
+                display: this.state.display,
+                flexDirection: 'column',
+                alignItems: this.state.align,
+                textAlign: this.state.textAlign,
+                padding: this.state.padding,
+                margin: this.state.margin,
+                overflowX: 'hidden',
+                overflowY: 'hidden',
+                animationIterationCount: this.state.animationIterationCount,
+                animationTimingFunction: this.state.animationTimingFunction,
+                animationName: this.state.animationName,
+                animationDuration: this.state.animationDuration,
+            },
+            '@media screen and (max-width: 440px)': {
+                heading: {
+                    display: this.state.smDis,
+                    color: this.state.color,
+                    fontSize: '3em'
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                heading: {
+                    display: this.state.mdDis,
+                    color: this.state.color,
+                    fontSize: '2em'
+                }
+            },
+        })
         return (
-            <h3 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h3>
+            <h3 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h3>
         )
     }
 }
@@ -940,6 +1168,8 @@ export class H33 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -951,34 +1181,50 @@ export class H33 extends Component {
         return this.setState({ childs: CHILDS })
     }
     render() {
-        const HEADING = {
-            width: this.state.width,
-            height: this.state.height,
-            color: this.state.color,
-            textShadow: this.state.textShadow,
-            borderLeft: this.state.bLeft,
-            borderRight: this.state.bRight,
-            borderTop: this.state.bTop,
-            borderBottom: this.state.bBottom,
-            border: this.state.border,
-            fontFamily: this.state.fontFamily,
-            fontSize: this.state.fontSize,
-            fontWeight: this.state.fontWeight,
-            display: this.state.display,
-            flexDirection: 'column',
-            alignItems: this.state.align,
-            textAlign: this.state.textAlign,
-            padding: this.state.padding,
-            margin: this.state.margin,
-            overflowX: 'hidden',
-            overflowY: 'hidden',
-            animationIterationCount: this.state.animationIterationCount,
-            animationTimingFunction: this.state.animationTimingFunction,
-            animationName: this.state.animationName,
-            animationDuration: this.state.animationDuration,
-        }
+        const HEADING = StyleSheet.create({
+            heading: {
+                width: this.state.width,
+                height: this.state.height,
+                color: this.state.color,
+                textShadow: this.state.textShadow,
+                borderLeft: this.state.bLeft,
+                borderRight: this.state.bRight,
+                borderTop: this.state.bTop,
+                borderBottom: this.state.bBottom,
+                border: this.state.border,
+                fontFamily: this.state.fontFamily,
+                fontSize: this.state.fontSize,
+                fontWeight: this.state.fontWeight,
+                display: this.state.display,
+                flexDirection: 'column',
+                alignItems: this.state.align,
+                textAlign: this.state.textAlign,
+                padding: this.state.padding,
+                margin: this.state.margin,
+                overflowX: 'hidden',
+                overflowY: 'hidden',
+                animationIterationCount: this.state.animationIterationCount,
+                animationTimingFunction: this.state.animationTimingFunction,
+                animationName: this.state.animationName,
+                animationDuration: this.state.animationDuration,
+            },
+            '@media screen and (max-width: 440px)': {
+                heading: {
+                    display: this.state.smDis,
+                    color: this.state.color,
+                    fontSize: '3em'
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                heading: {
+                    display: this.state.mdDis,
+                    color: this.state.color,
+                    fontSize: '2em'
+                }
+            },
+        })
         return (
-            <h3 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h3>
+            <h3 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h3>
         )
     }
 }
@@ -1010,6 +1256,8 @@ export class H34 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -1021,34 +1269,50 @@ export class H34 extends Component {
         return this.setState({ childs: CHILDS })
     }
     render() {
-        const HEADING = {
-            width: this.state.width,
-            height: this.state.height,
-            color: this.state.color,
-            textShadow: this.state.textShadow,
-            borderLeft: this.state.bLeft,
-            borderRight: this.state.bRight,
-            borderTop: this.state.bTop,
-            borderBottom: this.state.bBottom,
-            border: this.state.border,
-            fontFamily: this.state.fontFamily,
-            fontSize: this.state.fontSize,
-            fontWeight: this.state.fontWeight,
-            display: this.state.display,
-            flexDirection: 'column',
-            alignItems: this.state.align,
-            textAlign: this.state.textAlign,
-            padding: this.state.padding,
-            margin: this.state.margin,
-            overflowX: 'hidden',
-            overflowY: 'hidden',
-            animationIterationCount: this.state.animationIterationCount,
-            animationTimingFunction: this.state.animationTimingFunction,
-            animationName: this.state.animationName,
-            animationDuration: this.state.animationDuration,
-        }
+        const HEADING = StyleSheet.create({
+            heading: {
+                width: this.state.width,
+                height: this.state.height,
+                color: this.state.color,
+                textShadow: this.state.textShadow,
+                borderLeft: this.state.bLeft,
+                borderRight: this.state.bRight,
+                borderTop: this.state.bTop,
+                borderBottom: this.state.bBottom,
+                border: this.state.border,
+                fontFamily: this.state.fontFamily,
+                fontSize: this.state.fontSize,
+                fontWeight: this.state.fontWeight,
+                display: this.state.display,
+                flexDirection: 'column',
+                alignItems: this.state.align,
+                textAlign: this.state.textAlign,
+                padding: this.state.padding,
+                margin: this.state.margin,
+                overflowX: 'hidden',
+                overflowY: 'hidden',
+                animationIterationCount: this.state.animationIterationCount,
+                animationTimingFunction: this.state.animationTimingFunction,
+                animationName: this.state.animationName,
+                animationDuration: this.state.animationDuration,
+            },
+            '@media screen and (max-width: 440px)': {
+                heading: {
+                    display: this.state.smDis,
+                    color: this.state.color,
+                    fontSize: '3em'
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                heading: {
+                    display: this.state.mdDis,
+                    color: this.state.color,
+                    fontSize: '2em'
+                }
+            },
+        })
         return (
-            <h3 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h3>
+            <h3 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h3>
         )
     }
 }
@@ -1080,6 +1344,8 @@ export class H35 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -1091,34 +1357,50 @@ export class H35 extends Component {
         return this.setState({ childs: CHILDS })
     }
     render() {
-        const HEADING = {
-            width: this.state.width,
-            height: this.state.height,
-            color: this.state.color,
-            textShadow: this.state.textShadow,
-            borderLeft: this.state.bLeft,
-            borderRight: this.state.bRight,
-            borderTop: this.state.bTop,
-            borderBottom: this.state.bBottom,
-            border: this.state.border,
-            fontFamily: this.state.fontFamily,
-            fontSize: this.state.fontSize,
-            fontWeight: this.state.fontWeight,
-            display: this.state.display,
-            flexDirection: 'column',
-            alignItems: this.state.align,
-            textAlign: this.state.textAlign,
-            padding: this.state.padding,
-            margin: this.state.margin,
-            overflowX: 'hidden',
-            overflowY: 'hidden',
-            animationIterationCount: this.state.animationIterationCount,
-            animationTimingFunction: this.state.animationTimingFunction,
-            animationName: this.state.animationName,
-            animationDuration: this.state.animationDuration,
-        }
+        const HEADING = StyleSheet.create({
+            heading: {
+                width: this.state.width,
+                height: this.state.height,
+                color: this.state.color,
+                textShadow: this.state.textShadow,
+                borderLeft: this.state.bLeft,
+                borderRight: this.state.bRight,
+                borderTop: this.state.bTop,
+                borderBottom: this.state.bBottom,
+                border: this.state.border,
+                fontFamily: this.state.fontFamily,
+                fontSize: this.state.fontSize,
+                fontWeight: this.state.fontWeight,
+                display: this.state.display,
+                flexDirection: 'column',
+                alignItems: this.state.align,
+                textAlign: this.state.textAlign,
+                padding: this.state.padding,
+                margin: this.state.margin,
+                overflowX: 'hidden',
+                overflowY: 'hidden',
+                animationIterationCount: this.state.animationIterationCount,
+                animationTimingFunction: this.state.animationTimingFunction,
+                animationName: this.state.animationName,
+                animationDuration: this.state.animationDuration,
+            },
+            '@media screen and (max-width: 440px)': {
+                heading: {
+                    display: this.state.smDis,
+                    color: this.state.color,
+                    fontSize: '3em'
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                heading: {
+                    display: this.state.mdDis,
+                    color: this.state.color,
+                    fontSize: '2em'
+                }
+            },
+        })
         return (
-            <h3 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h3>
+            <h3 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h3>
         )
     }
 }
@@ -1152,6 +1434,8 @@ export class H41 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -1163,35 +1447,51 @@ export class H41 extends Component {
         return this.setState({ childs: CHILDS })
     }
     render() {
-        const HEADING = {
-            width: this.state.width,
-            height: this.state.height,
-            color: this.state.color,
-            textShadow: this.state.textShadow,
-            borderLeft: this.state.bLeft,
-            borderRight: this.state.bRight,
-            borderTop: this.state.bTop,
-            borderBottom: this.state.bBottom,
-            border: this.state.border,
-            fontFamily: this.state.fontFamily,
-            fontSize: this.state.fontSize,
-            fontWeight: this.state.fontWeight,
-            display: this.state.display,
-            flexDirection: 'column',
-            alignItems: this.state.align,
-            textAlign: this.state.textAlign,
-            padding: this.state.padding,
-            margin: this.state.margin,
-            overflowX: 'hidden',
-            overflowY: 'hidden',
-            animationIterationCount: this.state.animationIterationCount,
-            animationTimingFunction: this.state.animationTimingFunction,
-            animationName: this.state.animationName,
-            animationDuration: this.state.animationDuration,
+        const HEADING = StyleSheet.create({
+            heading: {
+                width: this.state.width,
+                height: this.state.height,
+                color: this.state.color,
+                textShadow: this.state.textShadow,
+                borderLeft: this.state.bLeft,
+                borderRight: this.state.bRight,
+                borderTop: this.state.bTop,
+                borderBottom: this.state.bBottom,
+                border: this.state.border,
+                fontFamily: this.state.fontFamily,
+                fontSize: this.state.fontSize,
+                fontWeight: this.state.fontWeight,
+                display: this.state.display,
+                flexDirection: 'column',
+                alignItems: this.state.align,
+                textAlign: this.state.textAlign,
+                padding: this.state.padding,
+                margin: this.state.margin,
+                overflowX: 'hidden',
+                overflowY: 'hidden',
+                animationIterationCount: this.state.animationIterationCount,
+                animationTimingFunction: this.state.animationTimingFunction,
+                animationName: this.state.animationName,
+                animationDuration: this.state.animationDuration,
 
-        }
+            },
+            '@media screen and (max-width: 440px)': {
+                heading: {
+                    display: this.state.smDis,
+                    color: this.state.color,
+                    fontSize: '3em'
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                heading: {
+                    display: this.state.mdDis,
+                    color: this.state.color,
+                    fontSize: '2em'
+                }
+            },
+        })
         return (
-            <h4 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h4>
+            <h4 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h4>
         )
     }
 }
@@ -1223,6 +1523,8 @@ export class H42 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -1234,34 +1536,50 @@ export class H42 extends Component {
         return this.setState({ childs: CHILDS })
     }
     render() {
-        const HEADING = {
-            width: this.state.width,
-            height: this.state.height,
-            color: this.state.color,
-            textShadow: this.state.textShadow,
-            borderLeft: this.state.bLeft,
-            borderRight: this.state.bRight,
-            borderTop: this.state.bTop,
-            borderBottom: this.state.bBottom,
-            border: this.state.border,
-            fontFamily: this.state.fontFamily,
-            fontSize: this.state.fontSize,
-            fontWeight: this.state.fontWeight,
-            display: this.state.display,
-            flexDirection: 'column',
-            alignItems: this.state.align,
-            textAlign: this.state.textAlign,
-            padding: this.state.padding,
-            margin: this.state.margin,
-            overflowX: 'hidden',
-            overflowY: 'hidden',
-            animationIterationCount: this.state.animationIterationCount,
-            animationTimingFunction: this.state.animationTimingFunction,
-            animationName: this.state.animationName,
-            animationDuration: this.state.animationDuration,
-        }
+        const HEADING = StyleSheet.create({
+            heading: {
+                width: this.state.width,
+                height: this.state.height,
+                color: this.state.color,
+                textShadow: this.state.textShadow,
+                borderLeft: this.state.bLeft,
+                borderRight: this.state.bRight,
+                borderTop: this.state.bTop,
+                borderBottom: this.state.bBottom,
+                border: this.state.border,
+                fontFamily: this.state.fontFamily,
+                fontSize: this.state.fontSize,
+                fontWeight: this.state.fontWeight,
+                display: this.state.display,
+                flexDirection: 'column',
+                alignItems: this.state.align,
+                textAlign: this.state.textAlign,
+                padding: this.state.padding,
+                margin: this.state.margin,
+                overflowX: 'hidden',
+                overflowY: 'hidden',
+                animationIterationCount: this.state.animationIterationCount,
+                animationTimingFunction: this.state.animationTimingFunction,
+                animationName: this.state.animationName,
+                animationDuration: this.state.animationDuration,
+            },
+            '@media screen and (max-width: 440px)': {
+                heading: {
+                    display: this.state.smDis,
+                    color: this.state.color,
+                    fontSize: '2em'
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                heading: {
+                    display: this.state.mdDis,
+                    color: this.state.color,
+                    fontSize: '2em'
+                }
+            },
+        })
         return (
-            <h4 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h4>
+            <h4 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h4>
         )
     }
 }
@@ -1293,6 +1611,8 @@ export class H43 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -1304,34 +1624,50 @@ export class H43 extends Component {
         return this.setState({ childs: CHILDS })
     }
     render() {
-        const HEADING = {
-            width: this.state.width,
-            height: this.state.height,
-            color: this.state.color,
-            textShadow: this.state.textShadow,
-            borderLeft: this.state.bLeft,
-            borderRight: this.state.bRight,
-            borderTop: this.state.bTop,
-            borderBottom: this.state.bBottom,
-            border: this.state.border,
-            fontFamily: this.state.fontFamily,
-            fontSize: this.state.fontSize,
-            fontWeight: this.state.fontWeight,
-            display: this.state.display,
-            flexDirection: 'column',
-            alignItems: this.state.align,
-            textAlign: this.state.textAlign,
-            padding: this.state.padding,
-            margin: this.state.margin,
-            overflowX: 'hidden',
-            overflowY: 'hidden',
-            animationIterationCount: this.state.animationIterationCount,
-            animationTimingFunction: this.state.animationTimingFunction,
-            animationName: this.state.animationName,
-            animationDuration: this.state.animationDuration,
-        }
+        const HEADING = StyleSheet.create({
+            heading: {
+                width: this.state.width,
+                height: this.state.height,
+                color: this.state.color,
+                textShadow: this.state.textShadow,
+                borderLeft: this.state.bLeft,
+                borderRight: this.state.bRight,
+                borderTop: this.state.bTop,
+                borderBottom: this.state.bBottom,
+                border: this.state.border,
+                fontFamily: this.state.fontFamily,
+                fontSize: this.state.fontSize,
+                fontWeight: this.state.fontWeight,
+                display: this.state.display,
+                flexDirection: 'column',
+                alignItems: this.state.align,
+                textAlign: this.state.textAlign,
+                padding: this.state.padding,
+                margin: this.state.margin,
+                overflowX: 'hidden',
+                overflowY: 'hidden',
+                animationIterationCount: this.state.animationIterationCount,
+                animationTimingFunction: this.state.animationTimingFunction,
+                animationName: this.state.animationName,
+                animationDuration: this.state.animationDuration,
+            },
+            '@media screen and (max-width: 440px)': {
+                heading: {
+                    display: this.state.smDis,
+                    color: this.state.color,
+                    fontSize: '2em'
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                heading: {
+                    display: this.state.mdDis,
+                    color: this.state.color,
+                    fontSize: '2em'
+                }
+            },
+        })
         return (
-            <h4 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h4>
+            <h4 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h4>
         )
     }
 }
@@ -1363,6 +1699,8 @@ export class H44 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -1374,34 +1712,50 @@ export class H44 extends Component {
         return this.setState({ childs: CHILDS })
     }
     render() {
-        const HEADING = {
-            width: this.state.width,
-            height: this.state.height,
-            color: this.state.color,
-            textShadow: this.state.textShadow,
-            borderLeft: this.state.bLeft,
-            borderRight: this.state.bRight,
-            borderTop: this.state.bTop,
-            borderBottom: this.state.bBottom,
-            border: this.state.border,
-            fontFamily: this.state.fontFamily,
-            fontSize: this.state.fontSize,
-            fontWeight: this.state.fontWeight,
-            display: this.state.display,
-            flexDirection: 'column',
-            alignItems: this.state.align,
-            textAlign: this.state.textAlign,
-            padding: this.state.padding,
-            margin: this.state.margin,
-            overflowX: 'hidden',
-            overflowY: 'hidden',
-            animationIterationCount: this.state.animationIterationCount,
-            animationTimingFunction: this.state.animationTimingFunction,
-            animationName: this.state.animationName,
-            animationDuration: this.state.animationDuration,
-        }
+        const HEADING = StyleSheet.create({
+            heading: {
+                width: this.state.width,
+                height: this.state.height,
+                color: this.state.color,
+                textShadow: this.state.textShadow,
+                borderLeft: this.state.bLeft,
+                borderRight: this.state.bRight,
+                borderTop: this.state.bTop,
+                borderBottom: this.state.bBottom,
+                border: this.state.border,
+                fontFamily: this.state.fontFamily,
+                fontSize: this.state.fontSize,
+                fontWeight: this.state.fontWeight,
+                display: this.state.display,
+                flexDirection: 'column',
+                alignItems: this.state.align,
+                textAlign: this.state.textAlign,
+                padding: this.state.padding,
+                margin: this.state.margin,
+                overflowX: 'hidden',
+                overflowY: 'hidden',
+                animationIterationCount: this.state.animationIterationCount,
+                animationTimingFunction: this.state.animationTimingFunction,
+                animationName: this.state.animationName,
+                animationDuration: this.state.animationDuration,
+            },
+            '@media screen and (max-width: 440px)': {
+                heading: {
+                    display: this.state.smDis,
+                    color: this.state.color,
+                    fontSize: '2em'
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                heading: {
+                    display: this.state.mdDis,
+                    color: this.state.color,
+                    fontSize: '2em'
+                }
+            },
+        })
         return (
-            <h4 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h4>
+            <h4 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h4>
         )
     }
 }
@@ -1433,6 +1787,8 @@ export class H45 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -1444,34 +1800,50 @@ export class H45 extends Component {
         return this.setState({ childs: CHILDS })
     }
     render() {
-        const HEADING = {
-            width: this.state.width,
-            height: this.state.height,
-            color: this.state.color,
-            textShadow: this.state.textShadow,
-            borderLeft: this.state.bLeft,
-            borderRight: this.state.bRight,
-            borderTop: this.state.bTop,
-            borderBottom: this.state.bBottom,
-            border: this.state.border,
-            fontFamily: this.state.fontFamily,
-            fontSize: this.state.fontSize,
-            fontWeight: this.state.fontWeight,
-            display: this.state.display,
-            flexDirection: 'column',
-            alignItems: this.state.align,
-            textAlign: this.state.textAlign,
-            padding: this.state.padding,
-            margin: this.state.margin,
-            overflowX: 'hidden',
-            overflowY: 'hidden',
-            animationIterationCount: this.state.animationIterationCount,
-            animationTimingFunction: this.state.animationTimingFunction,
-            animationName: this.state.animationName,
-            animationDuration: this.state.animationDuration,
-        }
+        const HEADING = StyleSheet.create({
+            heading: {
+                width: this.state.width,
+                height: this.state.height,
+                color: this.state.color,
+                textShadow: this.state.textShadow,
+                borderLeft: this.state.bLeft,
+                borderRight: this.state.bRight,
+                borderTop: this.state.bTop,
+                borderBottom: this.state.bBottom,
+                border: this.state.border,
+                fontFamily: this.state.fontFamily,
+                fontSize: this.state.fontSize,
+                fontWeight: this.state.fontWeight,
+                display: this.state.display,
+                flexDirection: 'column',
+                alignItems: this.state.align,
+                textAlign: this.state.textAlign,
+                padding: this.state.padding,
+                margin: this.state.margin,
+                overflowX: 'hidden',
+                overflowY: 'hidden',
+                animationIterationCount: this.state.animationIterationCount,
+                animationTimingFunction: this.state.animationTimingFunction,
+                animationName: this.state.animationName,
+                animationDuration: this.state.animationDuration,
+            },
+            '@media screen and (max-width: 440px)': {
+                heading: {
+                    display: this.state.smDis,
+                    color: this.state.color,
+                    fontSize: '2em'
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                heading: {
+                    display: this.state.mdDis,
+                    color: this.state.color,
+                    fontSize: '2em'
+                }
+            },
+        })
         return (
-            <h4 style={HEADING} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h4>
+            <h4 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h4>
         )
     }
 }
@@ -1508,6 +1880,8 @@ export class P1 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -1519,33 +1893,49 @@ export class P1 extends Component {
         return this.setState({ childs: CHILDS })
     }
     render() {
-        const PARAGRAPH = {
-            width: this.state.width,
-            height: this.state.height,
-            color: this.state.color,
-            textShadow: this.state.textShadow,
-            borderLeft: this.state.bLeft,
-            borderRight: this.state.bRight,
-            borderTop: this.state.bTop,
-            borderBottom: this.state.bBottom,
-            border: this.state.border,
-            fontFamily: this.state.fontFamily,
-            fontSize: this.state.fontSize,
-            lineHeight: this.state.lineHeight,
-            fontWeight: this.state.fontWeight,
-            display: this.state.display,
-            flexDirection: 'column',
-            alignItems: this.state.align,
-            textAlign: this.state.textAlign,
-            padding: this.state.padding,
-            margin: this.state.margin,
-            animationIterationCount: this.state.animationIterationCount,
-            animationTimingFunction: this.state.animationTimingFunction,
-            animationName: this.state.animationName,
-            animationDuration: this.state.animationDuration,
-        }
+        const PARAGRAPH = StyleSheet.create({
+            paragraph: {
+                width: this.state.width,
+                height: this.state.height,
+                color: this.state.color,
+                textShadow: this.state.textShadow,
+                borderLeft: this.state.bLeft,
+                borderRight: this.state.bRight,
+                borderTop: this.state.bTop,
+                borderBottom: this.state.bBottom,
+                border: this.state.border,
+                fontFamily: this.state.fontFamily,
+                fontSize: this.state.fontSize,
+                lineHeight: this.state.lineHeight,
+                fontWeight: this.state.fontWeight,
+                display: this.state.display,
+                flexDirection: 'column',
+                alignItems: this.state.align,
+                textAlign: this.state.textAlign,
+                padding: this.state.padding,
+                margin: this.state.margin,
+                animationIterationCount: this.state.animationIterationCount,
+                animationTimingFunction: this.state.animationTimingFunction,
+                animationName: this.state.animationName,
+                animationDuration: this.state.animationDuration,
+            },
+            '@media screen and (max-width: 440px)': {
+                paragraph: {
+                    display: this.state.smDis,
+                    color: this.state.color,
+                    fontSize: '1.1em'
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                paragraph: {
+                    display: this.state.mdDis,
+                    color: this.state.color,
+                    fontSize: '0.9em'
+                }
+            },
+        })
         return (
-            <p style={PARAGRAPH} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</p>
+            <p style={PARAGRAPH.paragraph} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</p>
         )
     }
 }
@@ -1578,6 +1968,8 @@ export class P2 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -1589,33 +1981,49 @@ export class P2 extends Component {
         return this.setState({ childs: CHILDS })
     }
     render() {
-        const PARAGRAPH = {
-            width: this.state.width,
-            height: this.state.height,
-            color: this.state.color,
-            textShadow: this.state.textShadow,
-            borderLeft: this.state.bLeft,
-            borderRight: this.state.bRight,
-            borderTop: this.state.bTop,
-            borderBottom: this.state.bBottom,
-            border: this.state.border,
-            fontFamily: this.state.fontFamily,
-            fontSize: this.state.fontSize,
-            lineHeight: this.state.lineHeight,
-            fontWeight: this.state.fontWeight,
-            display: this.state.display,
-            flexDirection: 'column',
-            alignItems: this.state.align,
-            textAlign: this.state.textAlign,
-            padding: this.state.padding,
-            margin: this.state.margin,
-            animationIterationCount: this.state.animationIterationCount,
-            animationTimingFunction: this.state.animationTimingFunction,
-            animationName: this.state.animationName,
-            animationDuration: this.state.animationDuration,
-        }
+        const PARAGRAPH = StyleSheet.create({
+            paragraph: {
+                width: this.state.width,
+                height: this.state.height,
+                color: this.state.color,
+                textShadow: this.state.textShadow,
+                borderLeft: this.state.bLeft,
+                borderRight: this.state.bRight,
+                borderTop: this.state.bTop,
+                borderBottom: this.state.bBottom,
+                border: this.state.border,
+                fontFamily: this.state.fontFamily,
+                fontSize: this.state.fontSize,
+                lineHeight: this.state.lineHeight,
+                fontWeight: this.state.fontWeight,
+                display: this.state.display,
+                flexDirection: 'column',
+                alignItems: this.state.align,
+                textAlign: this.state.textAlign,
+                padding: this.state.padding,
+                margin: this.state.margin,
+                animationIterationCount: this.state.animationIterationCount,
+                animationTimingFunction: this.state.animationTimingFunction,
+                animationName: this.state.animationName,
+                animationDuration: this.state.animationDuration,
+            },
+            '@media screen and (max-width: 440px)': {
+                paragraph: {
+                    display: this.state.smDis,
+                    color: this.state.color,
+                    fontSize: '0.9em'
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                paragraph: {
+                    display: this.state.mdDis,
+                    color: this.state.color,
+                    fontSize: '1.1em'
+                }
+            },
+        })
         return (
-            <p style={PARAGRAPH} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</p>
+            <p style={PARAGRAPH.paragraph} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</p>
         )
     }
 }
@@ -1648,6 +2056,8 @@ export class P3 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -1659,33 +2069,49 @@ export class P3 extends Component {
         return this.setState({ childs: CHILDS })
     }
     render() {
-        const PARAGRAPH = {
-            width: this.state.width,
-            height: this.state.height,
-            color: this.state.color,
-            textShadow: this.state.textShadow,
-            borderLeft: this.state.bLeft,
-            borderRight: this.state.bRight,
-            borderTop: this.state.bTop,
-            borderBottom: this.state.bBottom,
-            border: this.state.border,
-            fontFamily: this.state.fontFamily,
-            fontSize: this.state.fontSize,
-            lineHeight: this.state.lineHeight,
-            fontWeight: this.state.fontWeight,
-            display: this.state.display,
-            flexDirection: 'column',
-            alignItems: this.state.align,
-            textAlign: this.state.textAlign,
-            padding: this.state.padding,
-            margin: this.state.margin,
-            animationIterationCount: this.state.animationIterationCount,
-            animationTimingFunction: this.state.animationTimingFunction,
-            animationName: this.state.animationName,
-            animationDuration: this.state.animationDuration,
-        }
+        const PARAGRAPH = StyleSheet.create({
+            paragraph: {
+                width: this.state.width,
+                height: this.state.height,
+                color: this.state.color,
+                textShadow: this.state.textShadow,
+                borderLeft: this.state.bLeft,
+                borderRight: this.state.bRight,
+                borderTop: this.state.bTop,
+                borderBottom: this.state.bBottom,
+                border: this.state.border,
+                fontFamily: this.state.fontFamily,
+                fontSize: this.state.fontSize,
+                lineHeight: this.state.lineHeight,
+                fontWeight: this.state.fontWeight,
+                display: this.state.display,
+                flexDirection: 'column',
+                alignItems: this.state.align,
+                textAlign: this.state.textAlign,
+                padding: this.state.padding,
+                margin: this.state.margin,
+                animationIterationCount: this.state.animationIterationCount,
+                animationTimingFunction: this.state.animationTimingFunction,
+                animationName: this.state.animationName,
+                animationDuration: this.state.animationDuration,
+            },
+            '@media screen and (max-width: 440px)': {
+                paragraph: {
+                    display: this.state.smDis,
+                    color: this.state.color,
+                    fontSize: '0.9em'
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                paragraph: {
+                    display: this.state.mdDis,
+                    color: this.state.color,
+                    fontSize: '1.1em'
+                }
+            },
+        })
         return (
-            <p style={PARAGRAPH} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</p>
+            <p style={PARAGRAPH.paragraph} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</p>
         )
     }
 }
@@ -1718,6 +2144,8 @@ export class P4 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -1729,33 +2157,49 @@ export class P4 extends Component {
         return this.setState({ childs: CHILDS })
     }
     render() {
-        const PARAGRAPH = {
-            width: this.state.width,
-            height: this.state.height,
-            color: this.state.color,
-            textShadow: this.state.textShadow,
-            borderLeft: this.state.bLeft,
-            borderRight: this.state.bRight,
-            borderTop: this.state.bTop,
-            borderBottom: this.state.bBottom,
-            border: this.state.border,
-            fontFamily: this.state.fontFamily,
-            fontSize: this.state.fontSize,
-            lineHeight: this.state.lineHeight,
-            fontWeight: this.state.fontWeight,
-            display: this.state.display,
-            flexDirection: 'column',
-            alignItems: this.state.align,
-            textAlign: this.state.textAlign,
-            padding: this.state.padding,
-            margin: this.state.margin,
-            animationIterationCount: this.state.animationIterationCount,
-            animationTimingFunction: this.state.animationTimingFunction,
-            animationName: this.state.animationName,
-            animationDuration: this.state.animationDuration,
-        }
+        const PARAGRAPH = StyleSheet.create({
+            paragraph: {
+                width: this.state.width,
+                height: this.state.height,
+                color: this.state.color,
+                textShadow: this.state.textShadow,
+                borderLeft: this.state.bLeft,
+                borderRight: this.state.bRight,
+                borderTop: this.state.bTop,
+                borderBottom: this.state.bBottom,
+                border: this.state.border,
+                fontFamily: this.state.fontFamily,
+                fontSize: this.state.fontSize,
+                lineHeight: this.state.lineHeight,
+                fontWeight: this.state.fontWeight,
+                display: this.state.display,
+                flexDirection: 'column',
+                alignItems: this.state.align,
+                textAlign: this.state.textAlign,
+                padding: this.state.padding,
+                margin: this.state.margin,
+                animationIterationCount: this.state.animationIterationCount,
+                animationTimingFunction: this.state.animationTimingFunction,
+                animationName: this.state.animationName,
+                animationDuration: this.state.animationDuration,
+            },
+            '@media screen and (max-width: 440px)': {
+                paragraph: {
+                    display: this.state.smDis,
+                    color: this.state.color,
+                    fontSize: '1.1em'
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                paragraph: {
+                    display: this.state.mdDis,
+                    color: this.state.color,
+                    fontSize: '0.9em'
+                }
+            },
+        })
         return (
-            <p style={PARAGRAPH} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</p>
+            <p style={PARAGRAPH.paragraph} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</p>
         )
     }
 }
@@ -1789,6 +2233,8 @@ export class P5 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -1800,33 +2246,49 @@ export class P5 extends Component {
         return this.setState({ childs: CHILDS })
     }
     render() {
-        const PARAGRAPH = {
-            width: this.state.width,
-            height: this.state.height,
-            color: this.state.color,
-            textShadow: this.state.textShadow,
-            borderLeft: this.state.bLeft,
-            borderRight: this.state.bRight,
-            borderTop: this.state.bTop,
-            borderBottom: this.state.bBottom,
-            border: this.state.border,
-            fontFamily: this.state.fontFamily,
-            fontSize: this.state.fontSize,
-            lineHeight: this.state.lineHeight,
-            fontWeight: this.state.fontWeight,
-            display: this.state.display,
-            flexDirection: 'column',
-            alignItems: this.state.align,
-            textAlign: this.state.textAlign,
-            padding: this.state.padding,
-            margin: this.state.margin,
-            animationIterationCount: this.state.animationIterationCount,
-            animationTimingFunction: this.state.animationTimingFunction,
-            animationName: this.state.animationName,
-            animationDuration: this.state.animationDuration,
-        }
+        const PARAGRAPH = StyleSheet.create({
+            paragraph: {
+                width: this.state.width,
+                height: this.state.height,
+                color: this.state.color,
+                textShadow: this.state.textShadow,
+                borderLeft: this.state.bLeft,
+                borderRight: this.state.bRight,
+                borderTop: this.state.bTop,
+                borderBottom: this.state.bBottom,
+                border: this.state.border,
+                fontFamily: this.state.fontFamily,
+                fontSize: this.state.fontSize,
+                lineHeight: this.state.lineHeight,
+                fontWeight: this.state.fontWeight,
+                display: this.state.display,
+                flexDirection: 'column',
+                alignItems: this.state.align,
+                textAlign: this.state.textAlign,
+                padding: this.state.padding,
+                margin: this.state.margin,
+                animationIterationCount: this.state.animationIterationCount,
+                animationTimingFunction: this.state.animationTimingFunction,
+                animationName: this.state.animationName,
+                animationDuration: this.state.animationDuration,
+            },
+            '@media screen and (max-width: 440px)': {
+                paragraph: {
+                    display: this.state.smDis,
+                    color: this.state.color,
+                    fontSize: '0.9em'
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                paragraph: {
+                    display: this.state.mdDis,
+                    color: this.state.color,
+                    fontSize: '1.1em'
+                }
+            },
+        })
         return (
-            <p style={PARAGRAPH} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</p>
+            <p style={PARAGRAPH.paragraph} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</p>
         )
     }
 }
@@ -1848,6 +2310,8 @@ export class PLQ1 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -1883,6 +2347,8 @@ export class PLQ2 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -1918,6 +2384,8 @@ export class CircleImage extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -1931,18 +2399,30 @@ export class CircleImage extends Component {
     }
 
     render() {
-        const CIRCLEIMG = {
-            borderRadius: "100%",
-            overflowX: 'hidden',
-            overflowY: 'hidden',
-            animationIterationCount: this.state.animationIterationCount,
-            animationTimingFunction: this.state.animationTimingFunction,
-            animationName: this.state.animationName,
-            animationDuration: this.state.animationDuration,
-        }
+        const CIRCLEIMG = StyleSheet.create({
+            circleimg: {
+                borderRadius: "100%",
+                overflowX: 'hidden',
+                overflowY: 'hidden',
+                animationIterationCount: this.state.animationIterationCount,
+                animationTimingFunction: this.state.animationTimingFunction,
+                animationName: this.state.animationName,
+                animationDuration: this.state.animationDuration,
+            },
+            '@media screen and (max-width: 440px)': {
+                circleimg: {
+                    display: this.state.smDis,
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                circleimg: {
+                    display: this.state.mdDis,
+                }
+            },
+        })
 
         return (
-            <img style={CIRCLEIMG} id={this.state.id} className={`img-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]} />
+            <img style={CIRCLEIMG.circleimg} id={this.state.id} className={`img-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]} />
         )
     }
 }
@@ -1961,6 +2441,8 @@ export class RoundedImage extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -1972,15 +2454,27 @@ export class RoundedImage extends Component {
         return this.setState({ childs: CHILDS })
     }
     render() {
-        const ROUNDEDIMG = {
-            borderRadius: '30%',
-            animationIterationCount: this.state.animationIterationCount,
-            animationTimingFunction: this.state.animationTimingFunction,
-            animationName: this.state.animationName,
-            animationDuration: this.state.animationDuration,
-        }
+        const ROUNDEDIMG = StyleSheet.create({
+            roundedimg: {
+                borderRadius: '30%',
+                animationIterationCount: this.state.animationIterationCount,
+                animationTimingFunction: this.state.animationTimingFunction,
+                animationName: this.state.animationName,
+                animationDuration: this.state.animationDuration,
+            },
+            '@media screen and (max-width: 440px)': {
+                roundedimg: {
+                    display: this.state.smDis,
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                roundedimg: {
+                    display: this.state.mdDis,
+                }
+            },
+        })
         return (
-            <img style={ROUNDEDIMG} id={this.state.id} className={`img-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]} />
+            <img style={ROUNDEDIMG.roundedimg} id={this.state.id} className={`img-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]} />
         )
     }
 }
@@ -1999,6 +2493,8 @@ export class OvalImage extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -2010,15 +2506,27 @@ export class OvalImage extends Component {
         return this.setState({ childs: CHILDS })
     }
     render() {
-        const OVALIMG = {
-            borderRadius: '30%',
-            animationIterationCount: this.state.animationIterationCount,
-            animationTimingFunction: this.state.animationTimingFunction,
-            animationName: this.state.animationName,
-            animationDuration: this.state.animationDuration,
-        }
+        const OVALIMG = StyleSheet.create({
+            ovalimg: {
+                borderRadius: '30%',
+                animationIterationCount: this.state.animationIterationCount,
+                animationTimingFunction: this.state.animationTimingFunction,
+                animationName: this.state.animationName,
+                animationDuration: this.state.animationDuration,
+            },
+            '@media screen and (max-width: 440px)': {
+                ovalimg: {
+                    display: this.state.smDis,
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                ovalimg: {
+                    display: this.state.mdDis,
+                }
+            },
+        })
         return (
-            <img style={OVALIMG} id={this.state.id} className={`img-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]} />
+            <img style={OVALIMG.ovalimg} id={this.state.id} className={`img-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]} />
         )
     }
 }
@@ -2036,6 +2544,8 @@ export class SquareImage extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -2047,14 +2557,26 @@ export class SquareImage extends Component {
         return this.setState({ childs: CHILDS })
     }
     render() {
-        const IMAGE = {
-            animationIterationCount: this.state.animationIterationCount,
-            animationTimingFunction: this.state.animationTimingFunction,
-            animationName: this.state.animationName,
-            animationDuration: this.state.animationDuration,
-        }
+        const IMAGE = StyleSheet.create({
+            squareimg: {
+                animationIterationCount: this.state.animationIterationCount,
+                animationTimingFunction: this.state.animationTimingFunction,
+                animationName: this.state.animationName,
+                animationDuration: this.state.animationDuration,
+            },
+            '@media screen and (max-width: 440px)': {
+                squareimg: {
+                    display: this.state.smDis,
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                squareimg: {
+                    display: this.state.mdDis,
+                }
+            },
+        })
         return (
-            <img style={IMAGE} id={this.state.id} className={`img-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]} />
+            <img style={IMAGE.squareimg} id={this.state.id} className={`img-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]} />
         )
     }
 }
@@ -2073,6 +2595,8 @@ export class RoundedRectangleImage extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
 
@@ -2085,15 +2609,27 @@ export class RoundedRectangleImage extends Component {
         return this.setState({ childs: CHILDS })
     }
     render() {
-        const ROUNDEDRECTANGLEIMG = {
-            borderRadius: "30%",
-            animationIterationCount: this.state.animationIterationCount,
-            animationTimingFunction: this.state.animationTimingFunction,
-            animationName: this.state.animationName,
-            animationDuration: this.state.animationDuration,
-        }
+        const ROUNDEDRECTANGLEIMG = StyleSheet.create({
+            roundedrectangleimg: {
+                borderRadius: "30%",
+                animationIterationCount: this.state.animationIterationCount,
+                animationTimingFunction: this.state.animationTimingFunction,
+                animationName: this.state.animationName,
+                animationDuration: this.state.animationDuration,
+            },
+            '@media screen and (max-width: 440px)': {
+                roundedrectangleimg: {
+                    display: this.state.smDis,
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                roundedrectangleimg: {
+                    display: this.state.mdDis,
+                }
+            },
+        })
         return (
-            <img style={ROUNDEDRECTANGLEIMG} id={this.state.id} className={`recimg-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]} />
+            <img style={ROUNDEDRECTANGLEIMG.roundedrectangleimg} id={this.state.id} className={`recimg-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]} />
         )
     }
 }
@@ -2112,6 +2648,8 @@ export class RectangleImage extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -2124,15 +2662,27 @@ export class RectangleImage extends Component {
     }
 
     render() {
-        const IMAGE = {
-            margin: '0 auto',
-            animationIterationCount: this.state.animationIterationCount,
-            animationTimingFunction: this.state.animationTimingFunction,
-            animationName: this.state.animationName,
-            animationDuration: this.state.animationDuration,
-        }
+        const IMAGE = StyleSheet.create({
+            rectangleimg: {
+                margin: '0 auto',
+                animationIterationCount: this.state.animationIterationCount,
+                animationTimingFunction: this.state.animationTimingFunction,
+                animationName: this.state.animationName,
+                animationDuration: this.state.animationDuration,
+            },
+            '@media screen and (max-width: 440px)': {
+                rectangleimg: {
+                    display: this.state.smDis,
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                rectangleimg: {
+                    display: this.state.mdDis,
+                }
+            },
+        })
         return (
-            <img style={IMAGE} id={this.state.id} className={`recimg-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]} />
+            <img style={IMAGE.rectangleimg} id={this.state.id} className={`recimg-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]} />
         )
     }
 }
@@ -2151,6 +2701,8 @@ export class TallRoundedRectangleImage extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -2162,15 +2714,27 @@ export class TallRoundedRectangleImage extends Component {
         return this.setState({ childs: CHILDS })
     }
     render() {
-        const TALLROUNDEDRECTANGLEIMG = {
-            borderRadius: "30%",
-            animationIterationCount: this.state.animationIterationCount,
-            animationTimingFunction: this.state.animationTimingFunction,
-            animationName: this.state.animationName,
-            animationDuration: this.state.animationDuration,
-        }
+        const TALLROUNDEDRECTANGLEIMG = StyleSheet.create({
+            tallroundedrectangleimg: {
+                borderRadius: "30%",
+                animationIterationCount: this.state.animationIterationCount,
+                animationTimingFunction: this.state.animationTimingFunction,
+                animationName: this.state.animationName,
+                animationDuration: this.state.animationDuration,
+            },
+            '@media screen and (max-width: 440px)': {
+                tallroundedrectangleimg: {
+                    display: this.state.smDis,
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                tallroundedrectangleimg: {
+                    display: this.state.mdDis,
+                }
+            },
+        })
         return (
-            <img style={TALLROUNDEDRECTANGLEIMG} id={this.state.id} className={`tallrecimg-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]} />
+            <img style={TALLROUNDEDRECTANGLEIMG.tallroundedrectangleimg} id={this.state.id} className={`tallrecimg-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]} />
         )
     }
 }
@@ -2188,6 +2752,8 @@ export class TallRectangleImage extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -2199,15 +2765,27 @@ export class TallRectangleImage extends Component {
         return this.setState({ childs: CHILDS })
     }
     render() {
-        const IMAGE = {
-            margin: '0 auto',
-            animationIterationCount: this.state.animationIterationCount,
-            animationTimingFunction: this.state.animationTimingFunction,
-            animationName: this.state.animationName,
-            animationDuration: this.state.animationDuration,
-        }
+        const IMAGE = StyleSheet.create({
+            tallrectangleimg: {
+                margin: '0 auto',
+                animationIterationCount: this.state.animationIterationCount,
+                animationTimingFunction: this.state.animationTimingFunction,
+                animationName: this.state.animationName,
+                animationDuration: this.state.animationDuration,
+            },
+            '@media screen and (max-width: 440px)': {
+                tallrectangleimg: {
+                    display: this.state.smDis,
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                tallrectangleimg: {
+                    display: this.state.mdDis,
+                }
+            },
+        })
         return (
-            <img style={IMAGE} id={this.state.id} className={`tallrecimg-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]} />
+            <img style={IMAGE.tallrectangleimg} id={this.state.id} className={`tallrecimg-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]} />
         )
     }
 }
@@ -2223,6 +2801,8 @@ export class Figure extends Component {
             figClassName: props.figClassName,
             figCapClassName: props.figCapClassName,
             childs: '',
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -2234,15 +2814,29 @@ export class Figure extends Component {
         return this.setState({ childs: CHILDS })
     }
     render() {
-        const CAPTION = {
-            padding: '10px',
-            color: 'gray',
-            textAlign: 'center',
-        }
+        const CAPTION = StyleSheet.create({
+            caption: {
+                padding: '10px',
+                color: 'gray',
+                textAlign: 'center',
+            },
+            '@media screen and (max-width: 440px)': {
+                caption: {
+                    display: this.state.smDis,
+                    fontSize: '6em'
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+                caption: {
+                    display: this.state.mdDis,
+                    fontSize: '6em'
+                }
+            },
+        })
         return (
             <figure id={this.state.figid} className={this.state.figClassName}>
                 {this.state.childs[0]}
-                <figcaption style={CAPTION} id={this.state.figCapid} className={this.state.figCapClassName}>
+                <figcaption style={CAPTION.caption} id={this.state.figCapid} className={this.state.figCapClassName}>
                     {this.state.childs[1]}
                 </figcaption>
             </figure>
@@ -2265,7 +2859,9 @@ export class Hero1 extends Component {
             height: props.height || 'inherit',
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -2319,7 +2915,9 @@ export class Hero2 extends Component {
             bottomid: props.bottomid,
             heroClassName: props.heroClassName,
             bottomClassName: props.bottomClassName,
-            childs: ''
+            childs: '',
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -2374,7 +2972,9 @@ export class Hero3 extends Component {
             height: props.height,
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -2420,7 +3020,9 @@ export class Hero4 extends Component {
             height: props.height,
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -2467,7 +3069,9 @@ export class Hero5 extends Component {
             height: props.height,
             id: props.id,
             className: props.className,
-            childs: ''
+            childs: '',
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -2526,6 +3130,8 @@ export class FlatButton1 extends Component {
             animationTimingFunction: props.aniTime || 'linear',
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -2556,6 +3162,8 @@ export class FlatButton2 extends Component {
             animationTimingFunction: props.aniTime || 'linear',
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -2589,6 +3197,8 @@ export class RaisedButton1 extends Component {
             animationTimingFunction: props.aniTime || 'linear',
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -2676,7 +3286,9 @@ export class Navbar1 extends Component {
             itemsid: props.itemsid,
             navClassName: props.navClassName,
             itemsClassName: props.itemsClassName,
-            childs: ''
+            childs: '',
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -2773,7 +3385,9 @@ export class SubNavbar1 extends Component {
             navClassName: props.navClassName,
             listClassName: props.listClassName,
             itemsClassName: props.itemsClassName,
-            childs: ''
+            childs: '',
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -2873,7 +3487,9 @@ export class SubNavbar2 extends Component {
             navClassName: props.navClassName,
             leftItemsClassName: props.leftItemsClassName,
             rightItemsClassName: props.rightItemsClassName,
-            childs: ''
+            childs: '',
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -3026,6 +3642,8 @@ export class Brand1 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentWillReceiveProps(newProps) {
@@ -3074,6 +3692,8 @@ export class Brand2 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentWillReceiveProps(newProps) {
@@ -3110,6 +3730,8 @@ export class Brand3 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentWillReceiveProps(newProps) {
@@ -3145,6 +3767,8 @@ export class Brand4 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentWillReceiveProps(newProps) {
@@ -3180,6 +3804,8 @@ export class Brand5 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentWillReceiveProps(newProps) {
@@ -3225,7 +3851,9 @@ export class DropDownNav1 extends Component {
             titleClassName: props.titleClassName,
             itemsClassName: props.itemsClassName,
             childs: [],
-            first: []
+            first: [],
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
         // this.enter = this.enter.bind(this);
         // this.left = this.left.bind(this);
@@ -3325,6 +3953,8 @@ export class DropDownNav3 extends Component {
             mainClassName: props.mainClassName,
             titleClassName: props.titleClassName,
             itemsClassName: props.itemsClassName,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     render() {
@@ -3397,6 +4027,8 @@ export class DropDownNav5 extends Component {
             mainClassName: props.mainClassName,
             titleClassName: props.titleClassName,
             itemsClassName: props.itemsClassName,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
 
@@ -3458,6 +4090,8 @@ export class ImageSlider1 extends Component {
             leftArrowClassName: props.leftArrowClassName,
             rightArrowClassName: props.rightArrowClassName,
             sliderClassName: props.sliderClassName,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
         this.slideLeft = this.slideLeft.bind(this);
         this.slideRight = this.slideRight.bind(this);
@@ -3469,8 +4103,8 @@ export class ImageSlider1 extends Component {
         for (var g = 0; g < CHILDS.length; g += 1) {
             slides.push(CHILDS[g])
         }
-        this.setState({ sliderImages: slides })
-        this.timer = setInterval(this.slideRight, this.state.slideTimer)
+        const intervalTime = setInterval(this.slideRight, this.state.slideTimer)
+        this.setState({ sliderImages: slides, intervalTime })
     }
     componentWillReceiveProps(newProps) {
         let slides = [];
@@ -3478,12 +4112,12 @@ export class ImageSlider1 extends Component {
         for (var g = 0; g < CHILDS.length; g += 1) {
             slides.push(CHILDS[g])
         }
-        this.setState({ sliderImages: slides })
-        this.timer = setInterval(this.slideRight, this.state.slideTimer)
+        const intervalTime = setInterval(this.slideRight, this.state.slideTimer)
+        this.setState({ sliderImages: slides, intervalTime })
     }
 
     componentWillUnmount() {
-        clearInterval(this.timer);
+        clearInterval(this.state.intervalTime);
     }
     slideLeft() {
         if (this.state.cur === 0) {
@@ -3588,6 +4222,8 @@ export class ImageSlider2 extends Component {
             sliderid: props.sliderid,
             mainClassName: props.mainClassName,
             sliderClassName: props.sliderClassName,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
         this.slideLeft = this.slideLeft.bind(this);
         this.slideRight = this.slideRight.bind(this);
@@ -3599,8 +4235,8 @@ export class ImageSlider2 extends Component {
         for (var g = 0; g < CHILDS.length; g += 1) {
             slides.push(CHILDS[g])
         }
-        this.setState({ sliderImages: slides })
-        this.timer = setInterval(this.slideRight, this.state.slideTimer);
+        const intervalTime = setInterval(this.slideRight, this.state.slideTimer)
+        this.setState({ sliderImages: slides, intervalTime })
     }
     componentWillReceiveProps(newProps) {
         let slides = [];
@@ -3608,12 +4244,12 @@ export class ImageSlider2 extends Component {
         for (var g = 0; g < CHILDS.length; g += 1) {
             slides.push(CHILDS[g])
         }
-        this.setState({ sliderImages: slides })
-        this.timer = setInterval(this.slideRight, this.state.slideTimer);
+        const intervalTime = setInterval(this.slideRight, this.state.slideTimer)
+        this.setState({ sliderImages: slides, intervalTime })
     }
 
     componentWillUnmount() {
-        clearInterval(this.timer);
+        clearInterval(this.state.intervalTime);
     }
     slideLeft() {
         if (this.state.cur === 0) {
@@ -3701,6 +4337,8 @@ export class ImageSlider3 extends Component {
             leftArrowClassName: props.leftArrowClassName,
             rightArrowClassName: props.rightArrowClassName,
             sliderClassName: props.sliderClassName,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
         this.slideLeft = this.slideLeft.bind(this);
         this.slideRight = this.slideRight.bind(this);
@@ -3712,8 +4350,8 @@ export class ImageSlider3 extends Component {
         for (var g = 0; g < CHILDS.length; g += 1) {
             slides.push(CHILDS[g])
         }
-        this.setState({ sliderImages: slides })
-        this.timer = setInterval(this.slideRight, this.state.slideTimer);
+        const intervalTime = setInterval(this.slideRight, this.state.slideTimer)
+        this.setState({ sliderImages: slides, intervalTime })
     }
     componentWillReceiveProps(newProps) {
         let slides = [];
@@ -3721,12 +4359,12 @@ export class ImageSlider3 extends Component {
         for (var g = 0; g < CHILDS.length; g += 1) {
             slides.push(CHILDS[g])
         }
-        this.setState({ sliderImages: slides })
-        this.timer = setInterval(this.slideRight, this.state.slideTimer);
+        const intervalTime = setInterval(this.slideRight, this.state.slideTimer)
+        this.setState({ sliderImages: slides, intervalTime })
     }
 
     componentWillUnmount() {
-        clearInterval(this.timer);
+        clearInterval(this.state.intervalTime);
     }
     slideLeft() {
         if (this.state.cur === 0) {
@@ -3810,6 +4448,8 @@ export class ImageSlider4 extends Component {
             sliderid: props.sliderid,
             mainClassName: props.mainClassName,
             sliderClassName: props.sliderClassName,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
         this.slideLeft = this.slideLeft.bind(this);
         this.slideRight = this.slideRight.bind(this);
@@ -3821,8 +4461,8 @@ export class ImageSlider4 extends Component {
         for (var g = 0; g < CHILDS.length; g += 1) {
             slides.push(CHILDS[g])
         }
-        this.setState({ sliderImages: slides })
-        this.timer = setInterval(this.slideRight, this.state.slideTimer);
+        const intervalTime = setInterval(this.slideRight, this.state.slideTimer)
+        this.setState({ sliderImages: slides, intervalTime })
     }
     componentWillReceiveProps(newProps) {
         let slides = [];
@@ -3830,12 +4470,12 @@ export class ImageSlider4 extends Component {
         for (var g = 0; g < CHILDS.length; g += 1) {
             slides.push(CHILDS[g])
         }
-        this.setState({ sliderImages: slides })
-        this.timer = setInterval(this.slideRight, this.state.slideTimer);
+        const intervalTime = setInterval(this.slideRight, this.state.slideTimer)
+        this.setState({ sliderImages: slides, intervalTime })
     }
 
     componentWillUnmount() {
-        clearInterval(this.timer);
+        clearInterval(this.state.intervalTime);
     }
     slideLeft() {
         if (this.state.cur === 0) {
@@ -3919,6 +4559,8 @@ export class ImageSlider5 extends Component {
             sliderid: props.sliderid,
             mainClassName: props.mainClassName,
             sliderClassName: props.sliderClassName,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
         this.slideLeft = this.slideLeft.bind(this);
         this.slideRight = this.slideRight.bind(this);
@@ -3930,8 +4572,8 @@ export class ImageSlider5 extends Component {
         for (var g = 0; g < CHILDS.length; g += 1) {
             slides.push(CHILDS[g])
         }
-        this.setState({ sliderImages: slides })
-        this.timer = setInterval(this.slideRight, this.state.slideTimer);
+        const intervalTime = setInterval(this.slideRight, this.state.slideTimer)
+        this.setState({ sliderImages: slides, intervalTime })
     }
     componentWillReceiveProps(newProps) {
         let slides = [];
@@ -3939,12 +4581,12 @@ export class ImageSlider5 extends Component {
         for (var g = 0; g < CHILDS.length; g += 1) {
             slides.push(CHILDS[g])
         }
-        this.setState({ sliderImages: slides })
-        this.timer = setInterval(this.slideRight, this.state.slideTimer);
+        const intervalTime = setInterval(this.slideRight, this.state.slideTimer)
+        this.setState({ sliderImages: slides, intervalTime })
     }
 
     componentWillUnmount() {
-        clearInterval(this.timer);
+        clearInterval(this.state.intervalTime);
     }
     slideLeft() {
         if (this.state.cur === 0) {
@@ -4019,6 +4661,8 @@ export class HorizontalTicker extends Component {
         super(props);
         this.state = {
             slide1: [],
+            smdis: props.smDis,
+            mddis: props.mdDis,
         }
     }
     componentDidMount() {
@@ -4066,7 +4710,8 @@ export class SeeSawTicker extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            smdis: props.smDis,
+            mddis: props.mdDis,
         }
     }
     render() {
@@ -4118,6 +4763,8 @@ export class Toggler1 extends Component {
             toggleClassName: props.toggleClassName,
             boxShadow: props.shadow || '1px 2px 2px black',
             childs: [],
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
         this.toggle = this.toggle.bind(this);
     }
@@ -4221,6 +4868,8 @@ export class Toggler2 extends Component {
             mainClassName: props.mainClassName,
             toggleClassName: props.toggleClassName,
             childs: [],
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
         this.toggle = this.toggle.bind(this);
     }
@@ -4315,6 +4964,8 @@ export class Toggler3 extends Component {
             panelClassName: props.panelClassName,
             mainClassName: props.mainClassName,
             toggleClassName: props.toggleClassName,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -4410,7 +5061,8 @@ export class Toggler4 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     render() {
@@ -4459,6 +5111,8 @@ export class Modul1 extends Component {
             boxClassName: props.boxClassName,
             backClassName: props.backClassName,
             childs: [],
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
         this.toggle = this.toggle.bind(this);
     }
@@ -4537,7 +5191,8 @@ export class Modul2 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     render() {
@@ -4568,6 +5223,8 @@ export class NumberList1 extends Component {
             listStylePosition: props.listStylePosition || 'inside',
             id: props.id,
             className: props.className,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -4624,6 +5281,8 @@ export class NumberList2 extends Component {
             listItem: [],
             id: props.id,
             className: props.className,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
 
         }
     }
@@ -4666,7 +5325,8 @@ export class NumberList2 extends Component {
             lineHeight: this.state.lineHeight,
             fontWeight: this.state.fontWeight,
             paddingLeft: this.state.paddingLeft,
-            position: 'relative'
+            position: 'relative',
+
 
         }
         const LISTITEMSTYLE = {
@@ -4705,6 +5365,8 @@ export class NumberList3 extends Component {
             listStylePosition: props.listStylePosition || 'inside',
             id: props.id,
             className: props.className,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -4776,6 +5438,8 @@ export class BulletList1 extends Component {
             itemBGSize: props.itemBGSize,
             id: props.id,
             className: props.className,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -4841,6 +5505,8 @@ export class BulletList2 extends Component {
             listStylePosition: props.listStylePosition || 'inside',
             id: props.id,
             className: props.className,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -4911,6 +5577,8 @@ export class Table1 extends Component {
             mainid: props.mainId,
             mainClassName: props.mainClassName,
             tableClassName: props.tableClassName,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -5031,6 +5699,8 @@ export class Table2 extends Component {
             mainId: props.mainId,
             mainClassName: props.mainClassName,
             tableClassName: props.tableClassName,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
@@ -5107,6 +5777,8 @@ export class Table3 extends Component {
         this.state = {
             id: props.id,
             className: props.className,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
 
         }
     }
@@ -5128,6 +5800,8 @@ export class PieChart1 extends Component {
         this.state = {
             id: props.id,
             className: props.className,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
         }
     }
     render() {

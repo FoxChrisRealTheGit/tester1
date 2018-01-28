@@ -40,7 +40,7 @@ export default class HolderViews extends Component {
                     <Link to="/holders">holders</Link>
                     <Link to="/blocks">blocks</Link>
                 </SubNavbar1>
-                
+
                 <HorizontalTestBlock1 />
                 <Container1>
                     <H34>
