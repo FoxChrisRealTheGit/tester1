@@ -74,9 +74,10 @@ export class H11 extends Component {
         super(props);
         this.state = {
             color: props.color,
+            colorRev: props.color,
             textShadow: props.shadow,
             fontFamily: props.font || 'inherit',
-            fontSize: props.size || '8em',
+            fontSize: props.size || '7em',
             fontWeight: props.fontWeight || '900',
             display: props.display || 'flex',
             align: props.align || 'center',
@@ -100,6 +101,7 @@ export class H11 extends Component {
             //theme: props.theme || 'inherit',   
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            hoverColor: props.hovColor,
         }
     }
     componentDidMount(nextProps) {
@@ -142,29 +144,30 @@ export class H11 extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
+
             },
             hoverStyle: {
-                color: 'yellow'
+                color: this.state.hoverColor
             },
             '@media screen and (max-width: 440px)': {
                 heading: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '6em'
+                    fontSize: '3.939em'
                 }
             },
-            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '4em'
+                    fontSize: '5.25em'
                 }
             },
         })
         return (
             <h1 style={HEADING.heading} id={this.state.id} className={this.state.className}
                 onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
-                onMouseLeave={() => this.setState({ color: this.props.color })}>{this.state.childs[0]}</h1>
+                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h1>
         )
     }
 }
@@ -172,7 +175,198 @@ export class H12 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            color: props.color || 'black',
+            color: props.color,
+            colorRev: props.color,
+            textShadow: props.shadow,
+            fontFamily: props.font || 'sans-serif',
+            fontSize: props.size || '6em',
+            fontWeight: props.weight || '900',
+            display: props.display || 'flex',
+            align: props.align || 'center',
+            textAlign: props.textAlign || 'center',
+            padding: props.padding || '0 0 15px 0',
+            margin: props.margin || '0',
+            width: props.width || 'inherit',
+            height: props.height,
+            border: props.border,
+            bLeft: props.bLeft,
+            bRight: props.bRight,
+            bTop: props.bTop,
+            bBottom: props.bBottom,
+            id: props.id,
+            className: props.className,
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
+            hoverColor: props.hovColor,
+        }
+    }
+    componentDidMount() {
+        const CHILDS = React.Children.toArray(this.props.children)
+        this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
+    }
+    render() {
+        const HEADING = StyleSheet.create({
+            heading: {
+                width: this.state.width,
+                height: this.state.height,
+                color: this.state.color,
+                textShadow: this.state.textShadow,
+                borderLeft: this.state.bLeft,
+                borderRight: this.state.bRight,
+                borderTop: this.state.bTop,
+                borderBottom: this.state.bBottom,
+                border: this.state.border,
+                fontFamily: this.state.fontFamily,
+                fontSize: this.state.fontSize,
+                fontWeight: this.state.fontWeight,
+                display: this.state.display,
+                flexDirection: 'column',
+                alignItems: this.state.align,
+                textAlign: this.state.textAlign,
+                padding: this.state.padding,
+                margin: this.state.margin,
+                overflowX: 'hidden',
+                overflowY: 'hidden',
+                animationIterationCount: this.state.animationIterationCount,
+                animationTimingFunction: this.state.animationTimingFunction,
+                animationName: this.state.animationName,
+                animationDuration: this.state.animationDuration,
+            },
+            hoverStyle: {
+                color: this.state.hoverColor,
+            },
+            '@media screen and (max-width: 440px)': {
+                heading: {
+                    display: this.state.smDis,
+                    color: this.state.color,
+                    fontSize: '3.376em'
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
+                heading: {
+                    display: this.state.mdDis,
+                    color: this.state.color,
+                    fontSize: '4.501em'
+                }
+            },
+        })
+        return (
+            <h1 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h1>
+        )
+    }
+}
+export class H13 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            color: props.color,
+            colorRev: props.color,
+            textShadow: props.shadow,
+            fontFamily: props.font || 'sans-serif',
+            fontSize: props.size || '7.5em',
+            fontWeight: props.weight || '900',
+            display: props.display || 'flex',
+            align: props.align || 'center',
+            textAlign: props.textAlign || 'center',
+            padding: props.padding || '0 0 15px 0',
+            margin: props.margin || '0',
+            width: props.width || 'inherit',
+            height: props.height,
+            border: props.border,
+            bLeft: props.bLeft,
+            bRight: props.bRight,
+            bTop: props.bTop,
+            bBottom: props.bBottom,
+            id: props.id,
+            className: props.className,
+            childs: '',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
+            smdis: props.smDis || 'flex',
+            mddis: props.mdDis || 'flex',
+            hoverColor: props.hovColor,
+        }
+    }
+    componentDidMount() {
+        const CHILDS = React.Children.toArray(this.props.children)
+        this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
+    }
+    render() {
+        const HEADING = StyleSheet.create({
+            heading: {
+                width: this.state.width,
+                height: this.state.height,
+                color: this.state.color,
+                textShadow: this.state.textShadow,
+                borderLeft: this.state.bLeft,
+                borderRight: this.state.bRight,
+                borderTop: this.state.bTop,
+                borderBottom: this.state.bBottom,
+                border: this.state.border,
+                fontFamily: this.state.fontFamily,
+                fontSize: this.state.fontSize,
+                fontWeight: this.state.fontWeight,
+                display: this.state.display,
+                flexDirection: 'column',
+                alignItems: this.state.align,
+                textAlign: this.state.textAlign,
+                padding: this.state.padding,
+                margin: this.state.margin,
+                overflowX: 'hidden',
+                overflowY: 'hidden',
+                animationIterationCount: this.state.animationIterationCount,
+                animationTimingFunction: this.state.animationTimingFunction,
+                animationName: this.state.animationName,
+                animationDuration: this.state.animationDuration,
+            },
+            hoverStyle: {
+                color: this.state.hoverColor
+            },
+            '@media screen and (max-width: 440px)': {
+                heading: {
+                    display: this.state.smDis,
+                    color: this.state.color,
+                    fontSize: '4.4em'
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
+                heading: {
+                    display: this.state.mdDis,
+                    color: this.state.color,
+                    fontSize: '5.7em'
+                }
+            },
+        })
+        return (
+            <h1 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h1>
+        )
+    }
+}
+export class H14 extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            color: props.color || 'lightgray',
+            colorRev: props.color || 'lightgray',
             textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '7em',
@@ -198,6 +392,7 @@ export class H12 extends Component {
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            hoverColor: props.hovColor,
         }
     }
     componentDidMount() {
@@ -236,199 +431,28 @@ export class H12 extends Component {
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
             },
-            '@media screen and (max-width: 440px)': {
-                heading: {
-                    display: this.state.smDis,
-                    color: this.state.color,
-                    fontSize: '6em'
-                }
-            },
-            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
-                heading: {
-                    display: this.state.mdDis,
-                    color: this.state.color,
-                    fontSize: '4em'
-                }
-            },
-        })
-        return (
-            <h1 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h1>
-        )
-    }
-}
-export class H13 extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            color: props.color || 'black',
-            textShadow: props.shadow,
-            fontFamily: props.font || 'sans-serif',
-            fontSize: props.size || '9em',
-            fontWeight: props.weight || '900',
-            display: props.display || 'flex',
-            align: props.align || 'center',
-            textAlign: props.textAlign || 'center',
-            padding: props.padding || '0 0 15px 0',
-            margin: props.margin || '0',
-            width: props.width || 'inherit',
-            height: props.height,
-            border: props.border,
-            bLeft: props.bLeft,
-            bRight: props.bRight,
-            bTop: props.bTop,
-            bBottom: props.bBottom,
-            id: props.id,
-            className: props.className,
-            childs: '',
-            animationIterationCount: props.aniCount,
-            animationTimingFunction: props.aniTime,
-            animationName: props.aniName,
-            animationDuration: props.aniDur,
-            smdis: props.smDis || 'flex',
-            mddis: props.mdDis || 'flex',
-        }
-    }
-    componentDidMount() {
-        const CHILDS = React.Children.toArray(this.props.children)
-        this.setState({ childs: CHILDS })
-    }
-    componentWillReceiveProps(newProps) {
-        const CHILDS = React.Children.toArray(newProps.children)
-        return this.setState({ childs: CHILDS })
-    }
-    render() {
-        const HEADING = StyleSheet.create({
-            heading: {
-                width: this.state.width,
-                height: this.state.height,
-                color: this.state.color,
-                textShadow: this.state.textShadow,
-                borderLeft: this.state.bLeft,
-                borderRight: this.state.bRight,
-                borderTop: this.state.bTop,
-                borderBottom: this.state.bBottom,
-                border: this.state.border,
-                fontFamily: this.state.fontFamily,
-                fontSize: this.state.fontSize,
-                fontWeight: this.state.fontWeight,
-                display: this.state.display,
-                flexDirection: 'column',
-                alignItems: this.state.align,
-                textAlign: this.state.textAlign,
-                padding: this.state.padding,
-                margin: this.state.margin,
-                overflowX: 'hidden',
-                overflowY: 'hidden',
-                animationIterationCount: this.state.animationIterationCount,
-                animationTimingFunction: this.state.animationTimingFunction,
-                animationName: this.state.animationName,
-                animationDuration: this.state.animationDuration,
+            hoverStyle: {
+                color: this.state.hoverColor
             },
             '@media screen and (max-width: 440px)': {
                 heading: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '6em'
+                    fontSize: '3.939em'
                 }
             },
-            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '4em'
+                    fontSize: '5.2em'
                 }
             },
         })
         return (
-            <h1 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h1>
-        )
-    }
-}
-export class H14 extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            color: props.color || 'lightgray',
-            textShadow: props.shadow,
-            fontFamily: props.font || 'sans-serif',
-            fontSize: props.size || '8em',
-            fontWeight: props.weight || '900',
-            display: props.display || 'flex',
-            align: props.align || 'center',
-            textAlign: props.textAlign || 'center',
-            padding: props.padding || '0 0 15px 0',
-            margin: props.margin || '0',
-            width: props.width || 'inherit',
-            height: props.height,
-            border: props.border,
-            bLeft: props.bLeft,
-            bRight: props.bRight,
-            bTop: props.bTop,
-            bBottom: props.bBottom,
-            id: props.id,
-            className: props.className,
-            childs: '',
-            animationIterationCount: props.aniCount,
-            animationTimingFunction: props.aniTime,
-            animationName: props.aniName,
-            animationDuration: props.aniDur,
-            smdis: props.smDis || 'flex',
-            mddis: props.mdDis || 'flex',
-        }
-    }
-    componentDidMount() {
-        const CHILDS = React.Children.toArray(this.props.children)
-        this.setState({ childs: CHILDS })
-    }
-    componentWillReceiveProps(newProps) {
-        const CHILDS = React.Children.toArray(newProps.children)
-        return this.setState({ childs: CHILDS })
-    }
-    render() {
-        const HEADING = StyleSheet.create({
-            heading: {
-                width: this.state.width,
-                height: this.state.height,
-                color: this.state.color,
-                textShadow: this.state.textShadow,
-                borderLeft: this.state.bLeft,
-                borderRight: this.state.bRight,
-                borderTop: this.state.bTop,
-                borderBottom: this.state.bBottom,
-                border: this.state.border,
-                fontFamily: this.state.fontFamily,
-                fontSize: this.state.fontSize,
-                fontWeight: this.state.fontWeight,
-                display: this.state.display,
-                flexDirection: 'column',
-                alignItems: this.state.align,
-                textAlign: this.state.textAlign,
-                padding: this.state.padding,
-                margin: this.state.margin,
-                overflowX: 'hidden',
-                overflowY: 'hidden',
-                animationIterationCount: this.state.animationIterationCount,
-                animationTimingFunction: this.state.animationTimingFunction,
-                animationName: this.state.animationName,
-                animationDuration: this.state.animationDuration,
-            },
-            '@media screen and (max-width: 440px)': {
-                heading: {
-                    display: this.state.smDis,
-                    color: this.state.color,
-                    fontSize: '6em'
-                }
-            },
-            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
-                heading: {
-                    display: this.state.mdDis,
-                    color: this.state.color,
-                    fontSize: '6em'
-                }
-            },
-        })
-        return (
-            <h1 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h1>
+            <h1 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h1>
         )
     }
 }
@@ -437,9 +461,10 @@ export class H15 extends Component {
         super(props);
         this.state = {
             color: props.color || 'black',
+            colorRev: props.color,
             textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
-            fontSize: props.size || '8em',
+            fontSize: props.size || '7em',
             fontWeight: props.weight || '900',
             display: props.display || 'flex',
             align: props.align || 'center',
@@ -462,6 +487,7 @@ export class H15 extends Component {
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            hoverColor: props.hovColor,
         }
     }
     componentDidMount() {
@@ -500,23 +526,28 @@ export class H15 extends Component {
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
             },
+            hoverStyle: {
+                color: this.state.hoverColor
+            },
             '@media screen and (max-width: 440px)': {
                 heading: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '6em'
+                    fontSize: '3.939em'
                 }
             },
-            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '4em'
+                    fontSize: '5.2em'
                 }
             },
         })
         return (
-            <h1 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h1>
+            <h1 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h1>
         )
     }
 }
@@ -526,7 +557,8 @@ export class H21 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            color: props.color || 'black',
+            color: props.color,
+            colorRev: props.color,
             textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '5.646em',
@@ -552,6 +584,7 @@ export class H21 extends Component {
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            hoverColor: props.hovColor,
         }
     }
     componentDidMount() {
@@ -590,23 +623,28 @@ export class H21 extends Component {
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
             },
+            hoverStyle: {
+                color: this.state.hoverColor
+            },
             '@media screen and (max-width: 440px)': {
                 heading: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '4em'
+                    fontSize: '3em'
                 }
             },
-            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '2em'
+                    fontSize: '4em'
                 }
             },
         })
         return (
-            <h2 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h2>
+            <h2 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h2>
         )
     }
 }
@@ -614,7 +652,8 @@ export class H22 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            color: props.color || 'black',
+            color: props.color,
+            colorRev: props.color,
             textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '4.705em',
@@ -640,6 +679,7 @@ export class H22 extends Component {
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            hoverColor: props.hovColor,
         }
     }
     componentDidMount() {
@@ -678,23 +718,28 @@ export class H22 extends Component {
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
             },
+            hoverStyle: {
+                color: this.state.hoverColor
+            },
             '@media screen and (max-width: 440px)': {
                 heading: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '4em'
+                    fontSize: '2.7em'
                 }
             },
-            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '2em'
+                    fontSize: '3em'
                 }
             },
         })
         return (
-            <h2 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h2>
+            <h2 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h2>
         )
     }
 }
@@ -702,10 +747,11 @@ export class H23 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            color: props.color || 'black',
+            color: props.color,
+            colorRev: props.color,
             textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
-            fontSize: props.size || '6.775em',
+            fontSize: props.size || '6.1em',
             fontWeight: props.weight || '600',
             display: props.display || 'flex',
             align: props.align || 'center',
@@ -728,6 +774,7 @@ export class H23 extends Component {
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            hoverColor: props.hovColor,
         }
     }
     componentDidMount() {
@@ -766,23 +813,28 @@ export class H23 extends Component {
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
             },
+            hoverStyle: {
+                color: this.state.hoverColor
+            },
             '@media screen and (max-width: 440px)': {
                 heading: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '4em'
+                    fontSize: '3.5em'
                 }
             },
-            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '2em'
+                    fontSize: '4.5em'
                 }
             },
         })
         return (
-            <h2 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h2>
+            <h2 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h2>
         )
     }
 }
@@ -791,6 +843,7 @@ export class H24 extends Component {
         super(props);
         this.state = {
             color: props.color || 'lightgray',
+            colorRev: props.color || 'lightgray',
             textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '5.646em',
@@ -816,6 +869,7 @@ export class H24 extends Component {
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            hoverColor: props.hovColor,
         }
     }
     componentDidMount() {
@@ -854,23 +908,28 @@ export class H24 extends Component {
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
             },
+            hoverStyle: {
+                color: this.state.hoverColor
+            },
             '@media screen and (max-width: 440px)': {
                 heading: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '4em'
+                    fontSize: '3em'
                 }
             },
-            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '2em'
+                    fontSize: '4em'
                 }
             },
         })
         return (
-            <h2 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h2>
+            <h2 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h2>
         )
     }
 }
@@ -879,6 +938,7 @@ export class H25 extends Component {
         super(props);
         this.state = {
             color: props.color || 'black',
+            colorRev: props.color,
             textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '5.646em',
@@ -904,6 +964,7 @@ export class H25 extends Component {
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            hoverColor: props.hovColor,
         }
     }
     componentDidMount() {
@@ -942,23 +1003,28 @@ export class H25 extends Component {
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
             },
+            hoverStyle: {
+                color: this.state.hoverColor
+            },
             '@media screen and (max-width: 440px)': {
                 heading: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '4em'
+                    fontSize: '3em'
                 }
             },
-            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '2em'
+                    fontSize: '4em'
                 }
             },
         })
         return (
-            <h2 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h2>
+            <h2 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h2>
         )
     }
 }
@@ -968,11 +1034,12 @@ export class H31 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            color: props.color || 'black',
+            color: props.color,
+            colorRev: props.color,
             textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '3.489em',
-            fontWeight: props.weight || '400',
+            fontWeight: props.weight || '600',
             display: props.display || 'flex',
             align: props.align || 'center',
             textAlign: props.textAlign || 'center',
@@ -994,6 +1061,7 @@ export class H31 extends Component {
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            hoverColor: props.hovColor,
         }
     }
     componentDidMount() {
@@ -1032,23 +1100,28 @@ export class H31 extends Component {
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
             },
+            hoverStyle: {
+                color: this.state.hoverColor
+            },
             '@media screen and (max-width: 440px)': {
                 heading: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '3em'
+                    fontSize: '2.5em'
                 }
             },
-            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '2em'
+                    fontSize: '3em'
                 }
             },
         })
         return (
-            <h3 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h3>
+            <h3 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h3>
         )
     }
 }
@@ -1056,11 +1129,12 @@ export class H32 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            color: props.color || 'black',
+            color: props.color,
+            colorRev: props.color,
             textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '2.9075em',
-            fontWeight: props.weight || '400',
+            fontWeight: props.weight || '600',
             display: props.display || 'flex',
             align: props.align || 'center',
             textAlign: props.textAlign || 'center',
@@ -1082,6 +1156,7 @@ export class H32 extends Component {
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            hoverColor: props.hovColor,
         }
     }
     componentDidMount() {
@@ -1120,23 +1195,28 @@ export class H32 extends Component {
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
             },
+            hoverStyle: {
+                color: this.state.hoverColor
+            },
             '@media screen and (max-width: 440px)': {
                 heading: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '3em'
+                    fontSize: '2em'
                 }
             },
-            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '2em'
+                    fontSize: '2.5em'
                 }
             },
         })
         return (
-            <h3 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h3>
+            <h3 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h3>
         )
     }
 }
@@ -1144,11 +1224,12 @@ export class H33 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            color: props.color || 'black',
+            color: props.color,
+            colorRev: props.color,
             textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
-            fontSize: props.size || '4.187em',
-            fontWeight: props.weight || '400',
+            fontSize: props.size || '3.9em',
+            fontWeight: props.weight || '600',
             display: props.display || 'flex',
             align: props.align || 'center',
             textAlign: props.textAlign || 'center',
@@ -1170,6 +1251,7 @@ export class H33 extends Component {
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            hoverColor: props.hovColor,
         }
     }
     componentDidMount() {
@@ -1208,6 +1290,9 @@ export class H33 extends Component {
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
             },
+            hoverStyle: {
+                color: this.state.hoverColor
+            },
             '@media screen and (max-width: 440px)': {
                 heading: {
                     display: this.state.smDis,
@@ -1215,16 +1300,18 @@ export class H33 extends Component {
                     fontSize: '3em'
                 }
             },
-            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '2em'
+                    fontSize: '3.5em'
                 }
             },
         })
         return (
-            <h3 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h3>
+            <h3 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h3>
         )
     }
 }
@@ -1233,10 +1320,11 @@ export class H34 extends Component {
         super(props);
         this.state = {
             color: props.color || 'lightgray',
+            colorRev: props.color || 'lightgray',
             textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '3.489em',
-            fontWeight: props.weight || '400',
+            fontWeight: props.weight || '600',
             display: props.display || 'flex',
             align: props.align || 'center',
             textAlign: props.textAlign || 'center',
@@ -1258,6 +1346,7 @@ export class H34 extends Component {
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            hoverColor: props.hovColor || 'lightgray',
         }
     }
     componentDidMount() {
@@ -1296,23 +1385,28 @@ export class H34 extends Component {
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
             },
+            hoverStyle: {
+                color: this.state.hoverColor
+            },
             '@media screen and (max-width: 440px)': {
                 heading: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '3em'
+                    fontSize: '2.5em'
                 }
             },
-            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '2em'
+                    fontSize: '3em'
                 }
             },
         })
         return (
-            <h3 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h3>
+            <h3 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h3>
         )
     }
 }
@@ -1320,11 +1414,12 @@ export class H35 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            color: props.color || 'black',
+            color: props.color,
+            colorRev: props.color,
             textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '3.489em',
-            fontWeight: props.weight || '400',
+            fontWeight: props.weight || '600',
             display: props.display || 'flex',
             align: props.align || 'center',
             textAlign: props.textAlign || 'center',
@@ -1346,6 +1441,7 @@ export class H35 extends Component {
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            hoverColor: props.hovColor,
         }
     }
     componentDidMount() {
@@ -1384,23 +1480,28 @@ export class H35 extends Component {
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
             },
+            hoverStyle: {
+                color: this.state.hoverColor
+            },
             '@media screen and (max-width: 440px)': {
                 heading: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '3em'
+                    fontSize: '2.5em'
                 }
             },
-            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '2em'
+                    fontSize: '3em'
                 }
             },
         })
         return (
-            <h3 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h3>
+            <h3 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h3>
         )
     }
 }
@@ -1410,11 +1511,12 @@ export class H41 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            color: props.color || 'black',
+            color: props.color,
+            colorRev: props.color,
             textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
-            fontSize: props.size || '2.157em',
-            fontWeight: props.weight || '200',
+            fontSize: props.size || '3.489em',
+            fontWeight: props.weight || '100',
             display: props.display || 'flex',
             align: props.align || 'center',
             textAlign: props.textAlign || 'center',
@@ -1436,6 +1538,7 @@ export class H41 extends Component {
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            hoverColor: props.hovColor,
         }
     }
     componentDidMount() {
@@ -1475,23 +1578,28 @@ export class H41 extends Component {
                 animationDuration: this.state.animationDuration,
 
             },
+            hoverStyle: {
+                color: this.state.hoverColor
+            },
             '@media screen and (max-width: 440px)': {
                 heading: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '3em'
+                    fontSize: '2.5em'
                 }
             },
-            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '2em'
+                    fontSize: '3em'
                 }
             },
         })
         return (
-            <h4 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h4>
+            <h4 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h4>
         )
     }
 }
@@ -1499,11 +1607,12 @@ export class H42 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            color: props.color || 'black',
+            color: props.color,
+            colorRev: props.color,
             textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
-            fontSize: props.size || '1.7975em',
-            fontWeight: props.weight || '200',
+            fontSize: props.size || '2.9025em',
+            fontWeight: props.weight || '100',
             display: props.display || 'flex',
             align: props.align || 'center',
             textAlign: props.textAlign || 'center',
@@ -1525,6 +1634,7 @@ export class H42 extends Component {
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            hoverColor: props.hovColor,
         }
     }
     componentDidMount() {
@@ -1563,6 +1673,9 @@ export class H42 extends Component {
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
             },
+            hoverStyle: {
+                color: this.state.hoverColor
+            },
             '@media screen and (max-width: 440px)': {
                 heading: {
                     display: this.state.smDis,
@@ -1570,16 +1683,18 @@ export class H42 extends Component {
                     fontSize: '2em'
                 }
             },
-            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '2em'
+                    fontSize: '2.5em'
                 }
             },
         })
         return (
-            <h4 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h4>
+            <h4 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h4>
         )
     }
 }
@@ -1587,11 +1702,12 @@ export class H43 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            color: props.color || 'black',
+            color: props.color,
+            colorRev: props.color,
             textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
-            fontSize: props.size || '2.588em',
-            fontWeight: props.weight || '200',
+            fontSize: props.size || '3.9em',
+            fontWeight: props.weight || '100',
             display: props.display || 'flex',
             align: props.align || 'center',
             textAlign: props.textAlign || 'center',
@@ -1613,6 +1729,7 @@ export class H43 extends Component {
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            hoverColor: props.hovColor,
         }
     }
     componentDidMount() {
@@ -1651,23 +1768,28 @@ export class H43 extends Component {
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
             },
+            hoverStyle: {
+                color: this.state.hoverColor
+            },
             '@media screen and (max-width: 440px)': {
                 heading: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '2em'
+                    fontSize: '3em'
                 }
             },
-            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '2em'
+                    fontSize: '3.5em'
                 }
             },
         })
         return (
-            <h4 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h4>
+            <h4 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h4>
         )
     }
 }
@@ -1676,10 +1798,11 @@ export class H44 extends Component {
         super(props);
         this.state = {
             color: props.color || 'lightgray',
+            colorRev: props.color || 'lightgray',
             textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
-            fontSize: props.size || '2.157em',
-            fontWeight: props.weight || '200',
+            fontSize: props.size || '3.489em',
+            fontWeight: props.weight || '100',
             display: props.display || 'flex',
             align: props.align || 'center',
             textAlign: props.textAlign || 'center',
@@ -1701,6 +1824,7 @@ export class H44 extends Component {
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            hoverColor: props.hovColor,
         }
     }
     componentDidMount() {
@@ -1739,23 +1863,28 @@ export class H44 extends Component {
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
             },
+            hoverStyle: {
+                color: this.state.hoverColor
+            },
             '@media screen and (max-width: 440px)': {
                 heading: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '2em'
+                    fontSize: '2.5em'
                 }
             },
-            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '2em'
+                    fontSize: '3em'
                 }
             },
         })
         return (
-            <h4 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h4>
+            <h4 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h4>
         )
     }
 }
@@ -1763,11 +1892,12 @@ export class H45 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            color: props.color || 'black',
+            color: props.color,
+            colorRev: props.color,
             textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
-            fontSize: props.size || '2.157em',
-            fontWeight: props.weight || '200',
+            fontSize: props.size || '3.489em',
+            fontWeight: props.weight || '100',
             display: props.display || 'flex',
             align: props.align || 'center',
             textAlign: props.textAlign || 'center',
@@ -1789,6 +1919,7 @@ export class H45 extends Component {
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            hoverColor: props.hovColor,
         }
     }
     componentDidMount() {
@@ -1827,23 +1958,28 @@ export class H45 extends Component {
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
             },
+            hoverStyle: {
+                color: this.state.hoverColor
+            },
             '@media screen and (max-width: 440px)': {
                 heading: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '2em'
+                    fontSize: '2.5em'
                 }
             },
-            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '2em'
+                    fontSize: '3em'
                 }
             },
         })
         return (
-            <h4 style={HEADING.heading} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</h4>
+            <h4 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h4>
         )
     }
 }
@@ -1855,7 +1991,8 @@ export class P1 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            color: props.color || 'black',
+            color: props.color,
+            colorRev: props.color,
             textShadow: props.shadow,
             fontFamily: props.font || 'serif',
             fontSize: props.size || '1.333em',
@@ -1882,6 +2019,7 @@ export class P1 extends Component {
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            hoverColor: props.hovColor,
         }
     }
     componentDidMount() {
@@ -1919,23 +2057,28 @@ export class P1 extends Component {
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
             },
+            hoverStyle: {
+                color: this.state.hoverColor
+            },
             '@media screen and (max-width: 440px)': {
                 paragraph: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '1.1em'
+                    fontSize: '1.3em'
                 }
             },
-            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 paragraph: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '0.9em'
+                    fontSize: '1.3em'
                 }
             },
         })
         return (
-            <p style={PARAGRAPH.paragraph} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</p>
+            <p style={PARAGRAPH.paragraph} id={this.state.id} className={this.state.className}
+                onMouseEnter={() => this.setState({ color: PARAGRAPH.hoverStyle.color })}
+                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</p>
         )
     }
 }
@@ -1943,10 +2086,11 @@ export class P2 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            color: props.color || 'black',
+            color: props.color,
+            colorRev: props.color,
             textShadow: props.shadow,
             fontFamily: props.font || 'serif',
-            fontSize: props.size || '0.9em',
+            fontSize: props.size || '0.95em',
             lineHeight: props.lineHeight || '1.22em',
             fontWeight: props.weight || '400',
             display: props.display || 'flex',
@@ -1970,6 +2114,7 @@ export class P2 extends Component {
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            hoverColor: props.hovColor,
         }
     }
     componentDidMount() {
@@ -2007,23 +2152,28 @@ export class P2 extends Component {
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
             },
+            hoverStyle: {
+                color: this.state.hoverColor
+            },
             '@media screen and (max-width: 440px)': {
                 paragraph: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '0.9em'
+                    fontSize: '0.95em'
                 }
             },
-            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 paragraph: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '1.1em'
+                    fontSize: '0.95em'
                 }
             },
         })
         return (
-            <p style={PARAGRAPH.paragraph} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</p>
+            <p style={PARAGRAPH.paragraph} id={this.state.id} className={this.state.className}
+                onMouseEnter={() => this.setState({ color: PARAGRAPH.hoverStyle.color })}
+                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</p>
         )
     }
 }
@@ -2031,7 +2181,8 @@ export class P3 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            color: props.color || 'black',
+            color: props.color,
+            colorRev: props.color,
             textShadow: props.shadow,
             fontFamily: props.font || 'serif',
             fontSize: props.size || '1.6em',
@@ -2058,6 +2209,7 @@ export class P3 extends Component {
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            hoverColor: props.hovColor,
         }
     }
     componentDidMount() {
@@ -2095,23 +2247,28 @@ export class P3 extends Component {
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
             },
+            hoverStyle: {
+                color: this.state.hoverColor
+            },
             '@media screen and (max-width: 440px)': {
                 paragraph: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '0.9em'
+                    fontSize: '1.5em'
                 }
             },
-            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 paragraph: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '1.1em'
+                    fontSize: '1.6em'
                 }
             },
         })
         return (
-            <p style={PARAGRAPH.paragraph} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</p>
+            <p style={PARAGRAPH.paragraph} id={this.state.id} className={this.state.className}
+                onMouseEnter={() => this.setState({ color: PARAGRAPH.hoverStyle.color })}
+                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</p>
         )
     }
 }
@@ -2120,6 +2277,7 @@ export class P4 extends Component {
         super(props);
         this.state = {
             color: props.color || 'lightgray',
+            colorRev: props.color || 'lightgray',
             textShadow: props.shadow,
             fontFamily: props.font || 'serif',
             fontSize: props.size || '1.6em',
@@ -2146,6 +2304,7 @@ export class P4 extends Component {
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            hoverColor: props.hovColor,
         }
     }
     componentDidMount() {
@@ -2183,23 +2342,28 @@ export class P4 extends Component {
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
             },
+            hoverStyle: {
+                color: this.state.hoverColor
+            },
             '@media screen and (max-width: 440px)': {
                 paragraph: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '1.1em'
+                    fontSize: '1.5em'
                 }
             },
-            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 paragraph: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '0.9em'
+                    fontSize: '1.6em'
                 }
             },
         })
         return (
-            <p style={PARAGRAPH.paragraph} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</p>
+            <p style={PARAGRAPH.paragraph} id={this.state.id} className={this.state.className}
+                onMouseEnter={() => this.setState({ color: PARAGRAPH.hoverStyle.color })}
+                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</p>
         )
     }
 }
@@ -2208,7 +2372,8 @@ export class P5 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            color: props.color || 'black',
+            color: props.color,
+            colorRev: props.color,
             textShadow: props.shadow,
             fontFamily: props.font || 'serif',
             fontSize: props.size || '1.333em',
@@ -2235,6 +2400,7 @@ export class P5 extends Component {
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            hoverColor: props.hovColor,
         }
     }
     componentDidMount() {
@@ -2272,23 +2438,28 @@ export class P5 extends Component {
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
             },
+            hoverStyle: {
+                color: this.state.hoverColor
+            },
             '@media screen and (max-width: 440px)': {
                 paragraph: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '0.9em'
+                    fontSize: '1.3em'
                 }
             },
-            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 paragraph: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '1.1em'
+                    fontSize: '1.3em'
                 }
             },
         })
         return (
-            <p style={PARAGRAPH.paragraph} id={this.state.id} className={this.state.className}>{this.state.childs[0]}</p>
+            <p style={PARAGRAPH.paragraph} id={this.state.id} className={this.state.className}
+                onMouseEnter={() => this.setState({ color: PARAGRAPH.hoverStyle.color })}
+                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</p>
         )
     }
 }
@@ -2386,6 +2557,7 @@ export class CircleImage extends Component {
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            hoverShadow: props.hovShadow,
         }
     }
     componentDidMount() {
@@ -2409,12 +2581,15 @@ export class CircleImage extends Component {
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
             },
+            hoverStyle: {
+                color: this.state.hoverShadow
+            },
             '@media screen and (max-width: 440px)': {
                 circleimg: {
                     display: this.state.smDis,
                 }
             },
-            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 circleimg: {
                     display: this.state.mdDis,
                 }
@@ -2422,7 +2597,9 @@ export class CircleImage extends Component {
         })
 
         return (
-            <img style={CIRCLEIMG.circleimg} id={this.state.id} className={`img-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]} />
+            <img style={CIRCLEIMG.circleimg} id={this.state.id} className={`img-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]}
+                onMouseEnter={() => this.setState({ color: CIRCLEIMG.hoverStyle.color })}
+                onMouseLeave={() => this.setState({ color: this.state.color })} />
         )
     }
 }
@@ -2443,6 +2620,7 @@ export class RoundedImage extends Component {
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            hoverShadow: props.hovShadow,
         }
     }
     componentDidMount() {
@@ -2462,19 +2640,24 @@ export class RoundedImage extends Component {
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
             },
+            hoverStyle: {
+                color: this.state.hoverShadow
+            },
             '@media screen and (max-width: 440px)': {
                 roundedimg: {
                     display: this.state.smDis,
                 }
             },
-            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 roundedimg: {
                     display: this.state.mdDis,
                 }
             },
         })
         return (
-            <img style={ROUNDEDIMG.roundedimg} id={this.state.id} className={`img-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]} />
+            <img style={ROUNDEDIMG.roundedimg} id={this.state.id} className={`img-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]}
+                onMouseEnter={() => this.setState({ color: ROUNDEDIMG.hoverStyle.color })}
+                onMouseLeave={() => this.setState({ color: this.state.color })} />
         )
     }
 }
@@ -2495,6 +2678,7 @@ export class OvalImage extends Component {
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            hoverShadow: props.hovShadow,
         }
     }
     componentDidMount() {
@@ -2514,19 +2698,24 @@ export class OvalImage extends Component {
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
             },
+            hoverStyle: {
+                color: this.state.hoverShadow
+            },
             '@media screen and (max-width: 440px)': {
                 ovalimg: {
                     display: this.state.smDis,
                 }
             },
-            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 ovalimg: {
                     display: this.state.mdDis,
                 }
             },
         })
         return (
-            <img style={OVALIMG.ovalimg} id={this.state.id} className={`img-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]} />
+            <img style={OVALIMG.ovalimg} id={this.state.id} className={`img-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]}
+                onMouseEnter={() => this.setState({ color: OVALIMG.hoverStyle.color })}
+                onMouseLeave={() => this.setState({ color: this.state.color })} />
         )
     }
 }
@@ -2546,6 +2735,7 @@ export class SquareImage extends Component {
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            hoverShadow: props.hovShadow,
         }
     }
     componentDidMount() {
@@ -2564,19 +2754,24 @@ export class SquareImage extends Component {
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
             },
+            hoverStyle: {
+                color: this.state.hoverShadow
+            },
             '@media screen and (max-width: 440px)': {
                 squareimg: {
                     display: this.state.smDis,
                 }
             },
-            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 squareimg: {
                     display: this.state.mdDis,
                 }
             },
         })
         return (
-            <img style={IMAGE.squareimg} id={this.state.id} className={`img-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]} />
+            <img style={IMAGE.squareimg} id={this.state.id} className={`img-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]}
+                onMouseEnter={() => this.setState({ color: IMAGE.hoverStyle.color })}
+                onMouseLeave={() => this.setState({ color: this.state.color })} />
         )
     }
 }
@@ -2597,6 +2792,7 @@ export class RoundedRectangleImage extends Component {
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            hoverShadow: props.hovShadow,
         }
     }
 
@@ -2617,19 +2813,24 @@ export class RoundedRectangleImage extends Component {
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
             },
+            hoverStyle: {
+                color: this.state.hoverShadow
+            },
             '@media screen and (max-width: 440px)': {
                 roundedrectangleimg: {
                     display: this.state.smDis,
                 }
             },
-            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 roundedrectangleimg: {
                     display: this.state.mdDis,
                 }
             },
         })
         return (
-            <img style={ROUNDEDRECTANGLEIMG.roundedrectangleimg} id={this.state.id} className={`recimg-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]} />
+            <img style={ROUNDEDRECTANGLEIMG.roundedrectangleimg} id={this.state.id} className={`recimg-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]}
+                onMouseEnter={() => this.setState({ color: ROUNDEDRECTANGLEIMG.hoverStyle.color })}
+                onMouseLeave={() => this.setState({ color: this.state.color })} />
         )
     }
 }
@@ -2650,6 +2851,7 @@ export class RectangleImage extends Component {
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            hoverShadow: props.hovShadow,
         }
     }
     componentDidMount() {
@@ -2670,19 +2872,24 @@ export class RectangleImage extends Component {
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
             },
+            hoverStyle: {
+                color: this.state.hoverShadow
+            },
             '@media screen and (max-width: 440px)': {
                 rectangleimg: {
                     display: this.state.smDis,
                 }
             },
-            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 rectangleimg: {
                     display: this.state.mdDis,
                 }
             },
         })
         return (
-            <img style={IMAGE.rectangleimg} id={this.state.id} className={`recimg-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]} />
+            <img style={IMAGE.rectangleimg} id={this.state.id} className={`recimg-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]}
+                onMouseEnter={() => this.setState({ color: IMAGE.hoverStyle.color })}
+                onMouseLeave={() => this.setState({ color: this.state.color })} />
         )
     }
 }
@@ -2703,6 +2910,7 @@ export class TallRoundedRectangleImage extends Component {
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            hoverShadow: props.hovShadow,
         }
     }
     componentDidMount() {
@@ -2722,19 +2930,24 @@ export class TallRoundedRectangleImage extends Component {
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
             },
+            hoverStyle: {
+                color: this.state.hoverShadow
+            },
             '@media screen and (max-width: 440px)': {
                 tallroundedrectangleimg: {
                     display: this.state.smDis,
                 }
             },
-            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 tallroundedrectangleimg: {
                     display: this.state.mdDis,
                 }
             },
         })
         return (
-            <img style={TALLROUNDEDRECTANGLEIMG.tallroundedrectangleimg} id={this.state.id} className={`tallrecimg-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]} />
+            <img style={TALLROUNDEDRECTANGLEIMG.tallroundedrectangleimg} id={this.state.id} className={`tallrecimg-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]}
+                onMouseEnter={() => this.setState({ color: TALLROUNDEDRECTANGLEIMG.hoverStyle.color })}
+                onMouseLeave={() => this.setState({ color: this.state.color })} />
         )
     }
 }
@@ -2754,6 +2967,7 @@ export class TallRectangleImage extends Component {
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            hoverShadow: props.hovShadow,
         }
     }
     componentDidMount() {
@@ -2773,19 +2987,24 @@ export class TallRectangleImage extends Component {
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
             },
+            hoverStyle: {
+                color: this.state.hoverShadow
+            },
             '@media screen and (max-width: 440px)': {
                 tallrectangleimg: {
                     display: this.state.smDis,
                 }
             },
-            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 tallrectangleimg: {
                     display: this.state.mdDis,
                 }
             },
         })
         return (
-            <img style={IMAGE.tallrectangleimg} id={this.state.id} className={`tallrecimg-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]} />
+            <img style={IMAGE.tallrectangleimg} id={this.state.id} className={`tallrecimg-${this.state.size} ${this.state.className}`} src={this.state.childs[0]} alt={this.state.childs[1]}
+                onMouseEnter={() => this.setState({ color: IMAGE.hoverStyle.color })}
+                onMouseLeave={() => this.setState({ color: this.state.color })} />
         )
     }
 }
@@ -2826,7 +3045,7 @@ export class Figure extends Component {
                     fontSize: '6em'
                 }
             },
-            '@media screen and (min-width: 441px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 caption: {
                     display: this.state.mdDis,
                     fontSize: '6em'
@@ -3824,6 +4043,7 @@ export class Brand5 extends Component {
         const CHILDS = React.Children.toArray(this.props.children)
         return (
             <section style={BRAND}>
+            {CHILDS}
             </section>
         )
     }
@@ -4747,7 +4967,7 @@ export class Toggler1 extends Component {
             bBorderRight: props.bBorderRight,
             bBorderTop: props.bBorderTop,
             bBorderBottom: props.bBorderBottom,
-            border: props.bBorder,
+            bBorder: props.bBorder,
             border: props.border,
             bLEft: props.bLeft,
             bRight: props.bRight,

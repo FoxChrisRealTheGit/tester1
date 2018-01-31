@@ -17,7 +17,12 @@ export default class Container1 extends Component {
         super(props);
         this.state = {
             display: props.display || 'flex',
-            direction: props.direction || 'row',
+            direction: props.direction || 'column',
+            borderLeft: props.bLeft,
+            borderRight: props.bRight,
+            borderTop: props.bTop,
+            borderBottom: props.bBottom,
+            border: props.border,
             alignBlock1: props.alignBlock1 || 'center',
             block1: props.block1 || '1',
             justifyBlock1: props.justifyBlock1 || 'center',
@@ -28,6 +33,8 @@ export default class Container1 extends Component {
             margin: props.margin || '0',
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            smflexDir: props.smflexDir || 'column',
+            mdflexDir: props.mdflexDir || 'column',
             //theme: props.theme,
         }
     }
@@ -43,17 +50,22 @@ export default class Container1 extends Component {
             containerstyles: {
                 display: this.state.display.display,
                 flexDirection: this.state.direction,
+                borderLeft: this.state.borderLeft,
+                borderRight: this.state.borderRight,
+                borderTop: this.state.borderTop,
+                borderBottom: this.state.borderBottom,
+                border: this.state.border,
             },
             '@media (max-width: 440px)': {
                 containerstyles: {
                     display: this.state.smdis,
-                    flexDirection: 'column'
+                    flexDirection: this.state.smflexDir
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 482px) and (max-width: 760px)': {
                 containerstyles: {
                     display: this.state.mddis,
-                    flexDirection: 'column'
+                    flexDirection: this.state.mdflexDir
                 }
             },
         });
@@ -72,7 +84,7 @@ export default class Container1 extends Component {
                     display: this.state.block1smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 482px) and (max-width: 760px)': {
                 block1styles: {
                     display: this.state.block1mddis,
                 }
@@ -95,6 +107,11 @@ export class Container2 extends Component {
         this.state = {
             display: props.display || 'flex',
             direction: props.direction || 'column',
+            borderLeft: props.bLeft,
+            borderRight: props.bRight,
+            borderTop: props.bTop,
+            borderBottom: props.bBottom,
+            border: props.border,
             block1: props.block1 || '1',
             alignBlock1: props.alignBlock1 || 'center',
             justifyBlock1: props.justifyBlock1 || 'center',
@@ -111,6 +128,8 @@ export class Container2 extends Component {
             margin: props.margin || '10px 0',
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            smflexDir: props.smflexDir || 'column',
+            mdflexDir: props.mdflexDir || 'column',
         }
     }
     render() {
@@ -118,17 +137,22 @@ export class Container2 extends Component {
             containerstyles: {
                 display: this.state.display.display,
                 flexDirection: this.state.direction,
+                borderLeft: this.state.borderLeft,
+                borderRight: this.state.borderRight,
+                borderTop: this.state.borderTop,
+                borderBottom: this.state.borderBottom,
+                border: this.state.border,
             },
             '@media (max-width: 440px)': {
                 containerstyles: {
                     display: this.state.smdis,
-                    flexDirection: 'column'
+                    flexDirection: this.state.smflexDir
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 482px) and (max-width: 760px)': {
                 containerstyles: {
                     display: this.state.mddis,
-                    flexDirection: 'column'
+                    flexDirection: this.state.mdflexDir
                 }
             },
         });
@@ -147,7 +171,7 @@ export class Container2 extends Component {
                     display: this.state.block1smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 482px) and (max-width: 760px)': {
                 block1styles: {
                     display: this.state.block1mddis,
                 }
@@ -169,7 +193,7 @@ export class Container2 extends Component {
                     display: this.state.block2smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 482px) and (max-width: 760px)': {
                 block2styles: {
                     display: this.state.block2mddis,
                 }
@@ -193,6 +217,11 @@ export class Container3 extends Component {
         this.state = {
             display: props.display || 'flex',
             direction: props.direction || 'column',
+            borderLeft: props.bLeft,
+            borderRight: props.bRight,
+            borderTop: props.bTop,
+            borderBottom: props.bBottom,
+            border: props.border,
             block1: props.block1 || '1',
             alignBlock1: props.alignBlock1 || 'center',
             justifyBlock1: props.justifyBlock1 || 'center',
@@ -214,6 +243,8 @@ export class Container3 extends Component {
             margin: props.margin || '10px 0',
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            smflexDir: props.smflexDir || 'column',
+            mdflexDir: props.mdflexDir || 'column',
         }
     }
     render() {
@@ -221,17 +252,22 @@ export class Container3 extends Component {
             containerstyles: {
                 display: this.state.display.display,
                 flexDirection: this.state.direction,
+                borderLeft: this.state.borderLeft,
+                borderRight: this.state.borderRight,
+                borderTop: this.state.borderTop,
+                borderBottom: this.state.borderBottom,
+                border: this.state.border,
             },
             '@media (max-width: 440px)': {
                 containerstyles: {
                     display: this.state.smdis,
-                    flexDirection: 'column'
+                    flexDirection: this.state.smflexDir
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 482px) and (max-width: 760px)': {
                 containerstyles: {
                     display: this.state.mddis,
-                    flexDirection: 'column'
+                    flexDirection: this.state.mdflexDir
                 }
             },
         });
@@ -250,7 +286,7 @@ export class Container3 extends Component {
                     display: this.state.block1smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 482px) and (max-width: 760px)': {
                 block1styles: {
                     display: this.state.block1mddis,
                 }
@@ -272,7 +308,7 @@ export class Container3 extends Component {
                     display: this.state.block2smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 482px) and (max-width: 760px)': {
                 block2styles: {
                     display: this.state.block2mddis,
                 }
@@ -294,7 +330,7 @@ export class Container3 extends Component {
                     display: this.state.block3smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 482px) and (max-width: 760px)': {
                 block3styles: {
                     display: this.state.block3mddis,
                 }
@@ -319,6 +355,11 @@ export class Container4 extends Component {
         this.state = {
             display: props.display || 'flex',
             direction: props.direction || 'column',
+            borderLeft: props.bLeft,
+            borderRight: props.bRight,
+            borderTop: props.bTop,
+            borderBottom: props.bBottom,
+            border: props.border,
             block1: props.block1 || '1',
             alignBlock1: props.alignBlock1 || 'center',
             justifyBlock1: props.justifyBlock1 || 'center',
@@ -345,6 +386,8 @@ export class Container4 extends Component {
             margin: props.margin || '10px 0',
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            smflexDir: props.smflexDir || 'column',
+            mdflexDir: props.mdflexDir || 'column',
         }
     }
     render() {
@@ -352,17 +395,22 @@ export class Container4 extends Component {
             containerstyles: {
                 display: this.state.display.display,
                 flexDirection: this.state.direction,
+                borderLeft: this.state.borderLeft,
+                borderRight: this.state.borderRight,
+                borderTop: this.state.borderTop,
+                borderBottom: this.state.borderBottom,
+                border: this.state.border,
             },
             '@media (max-width: 440px)': {
                 containerstyles: {
                     display: this.state.smdis,
-                    flexDirection: 'column'
+                    flexDirection: this.state.smflexDir
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 482px) and (max-width: 760px)': {
                 containerstyles: {
                     display: this.state.mddis,
-                    flexDirection: 'column'
+                    flexDirection: this.state.mdflexDir
                 }
             },
         });
@@ -381,7 +429,7 @@ export class Container4 extends Component {
                     display: this.state.block1smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 482px) and (max-width: 760px)': {
                 block1styles: {
                     display: this.state.block1mddis,
                 }
@@ -403,7 +451,7 @@ export class Container4 extends Component {
                     display: this.state.block2smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 482px) and (max-width: 760px)': {
                 block2styles: {
                     display: this.state.block2mddis,
                 }
@@ -425,7 +473,7 @@ export class Container4 extends Component {
                     display: this.state.block3smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 482px) and (max-width: 760px)': {
                 block3styles: {
                     display: this.state.block3mddis,
                 }
@@ -447,7 +495,7 @@ export class Container4 extends Component {
                     display: this.state.block4smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 482px) and (max-width: 760px)': {
                 block4styles: {
                     display: this.state.block4mddis,
                 }
@@ -473,6 +521,11 @@ export class Container5 extends Component {
         this.state = {
             display: props.display || 'flex',
             direction: props.direction || 'column',
+            borderLeft: props.bLeft,
+            borderRight: props.bRight,
+            borderTop: props.bTop,
+            borderBottom: props.bBottom,
+            border: props.border,
             block1: props.block1 || '1',
             alignBlock1: props.alignBlock1 || 'center',
             justifyBlock1: props.justifyBlock1 || 'center',
@@ -504,6 +557,8 @@ export class Container5 extends Component {
             margin: props.margin || '10px 0',
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            smflexDir: props.smflexDir || 'column',
+            mdflexDir: props.mdflexDir || 'column',
         }
     }
     render() {
@@ -511,17 +566,22 @@ export class Container5 extends Component {
             containerstyles: {
                 display: this.state.display.display,
                 flexDirection: this.state.direction,
+                borderLeft: this.state.borderLeft,
+                borderRight: this.state.borderRight,
+                borderTop: this.state.borderTop,
+                borderBottom: this.state.borderBottom,
+                border: this.state.border,
             },
             '@media (max-width: 440px)': {
                 containerstyles: {
                     display: this.state.smdis,
-                    flexDirection: 'column'
+                    flexDirection: this.state.smflexDir
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 482px) and (max-width: 760px)': {
                 containerstyles: {
                     display: this.state.mddis,
-                    flexDirection: 'column'
+                    flexDirection: this.state.mdflexDir
                 }
             },
         });
@@ -540,7 +600,7 @@ export class Container5 extends Component {
                     display: this.state.block1smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 482px) and (max-width: 760px)': {
                 block1styles: {
                     display: this.state.block1mddis,
                 }
@@ -562,7 +622,7 @@ export class Container5 extends Component {
                     display: this.state.block2smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 482px) and (max-width: 760px)': {
                 block2styles: {
                     display: this.state.block2mddis,
                 }
@@ -584,7 +644,7 @@ export class Container5 extends Component {
                     display: this.state.block3smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 482px) and (max-width: 760px)': {
                 block3styles: {
                     display: this.state.block3mddis,
                 }
@@ -606,7 +666,7 @@ export class Container5 extends Component {
                     display: this.state.block4smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 482px) and (max-width: 760px)': {
                 block4styles: {
                     display: this.state.block4mddis,
                 }
@@ -628,7 +688,7 @@ export class Container5 extends Component {
                     display: this.state.block5smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 482px) and (max-width: 760px)': {
                 block5styles: {
                     display: this.state.block5mddis,
                 }

@@ -15,6 +15,11 @@ export default class Holder1 extends Component {
         this.state = {
             display: props.display || 'flex',
             direction: props.direction || 'row',
+            borderLeft: props.bLeft,
+            borderRight: props.bRight,
+            borderTop: props.bTop,
+            borderBottom: props.bBottom,
+            border: props.border,
             block1Direction: props.block1direction || 'row',
             block1: props.block1 || '1',
             block1BorderLeft: props.b1BLeft,
@@ -42,6 +47,8 @@ export default class Holder1 extends Component {
             margin: props.margin || '10px 0',
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            smflexDir: props.smflexDir,
+            mdflexDir: props.mdflexDir,
         }
     }
 
@@ -54,17 +61,23 @@ export default class Holder1 extends Component {
                 flexWrap: 'wrap',
                 background: this.state.text,
                 justifyContent: this.state.alignBlocks,
+                overflow: 'hidden',
+                borderLeft: this.state.borderLeft,
+                borderRight: this.state.borderRight,
+                borderTop: this.state.borderTop,
+                borderBottom: this.state.borderBottom,
+                border: this.state.border,
             },
             '@media (max-width: 440px)': {
                 holderstyles: {
                     display: this.state.smdis,
-                    flexDirection: 'column'
+                    flexDirection: this.state.smflexDir
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 holderstyles: {
                     display: this.state.mddis,
-                    flexDirection: this.state.direction
+                    flexDirection: this.state.mdflexDir
                 }
             },
         });
@@ -83,12 +96,12 @@ export default class Holder1 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock1,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block1styles: {
                     display: this.state.block1smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block1styles: {
                     display: this.state.block1mddis,
                 }
@@ -110,12 +123,12 @@ export default class Holder1 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock2,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block2styles: {
                     display: this.state.block2smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block2styles: {
                     display: this.state.block2mddis,
                 }
@@ -139,6 +152,11 @@ export class Holder2 extends Component {
         this.state = {
             display: props.display || 'flex',
             direction: props.direction || 'row',
+            borderLeft: props.bLeft,
+            borderRight: props.bRight,
+            borderTop: props.bTop,
+            borderBottom: props.bBottom,
+            border: props.border,
             block1: props.block1 || '1',
             block1BorderLeft: props.b1BLeft,
             block1BorderRight: props.b1BRight,
@@ -175,6 +193,9 @@ export class Holder2 extends Component {
             margin: props.margin || '10px 0',
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            smflexDir: props.smflexDir,
+            mdflexDir: props.mdflexDir,
+
         }
     }
     render() {
@@ -186,17 +207,23 @@ export class Holder2 extends Component {
                 flexWrap: 'wrap',
                 background: this.state.text,
                 justifyContent: this.state.alignBlocks,
+                overflow: 'hidden',
+                borderLeft: this.state.borderLeft,
+                borderRight: this.state.borderRight,
+                borderTop: this.state.borderTop,
+                borderBottom: this.state.borderBottom,
+                border: this.state.border,
             },
             '@media (max-width: 440px)': {
                 holderstyles: {
                     display: this.state.smdis,
-                    flexDirection: 'column'
+                    flexDirection: this.state.smflexDir
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 holderstyles: {
                     display: this.state.mddis,
-                    flexDirection: this.state.direction
+                    flexDirection: this.state.mdflexDir
                 }
             },
         });
@@ -215,12 +242,12 @@ export class Holder2 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock1,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block1styles: {
                     display: this.state.block1smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block1styles: {
                     display: this.state.block1mddis,
                 }
@@ -242,12 +269,12 @@ export class Holder2 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock2,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block2styles: {
                     display: this.state.block2smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block2styles: {
                     display: this.state.block2mddis,
                 }
@@ -269,12 +296,12 @@ export class Holder2 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock3,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block3styles: {
                     display: this.state.block3smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block3styles: {
                     display: this.state.block3mddis,
                 }
@@ -299,6 +326,11 @@ export class Holder3 extends Component {
         this.state = {
             display: props.display || 'flex',
             direction: props.direction || 'row',
+            borderLeft: props.bLeft,
+            borderRight: props.bRight,
+            borderTop: props.bTop,
+            borderBottom: props.bBottom,
+            border: props.border,
             block1: props.block1 || '1',
             block1BorderLeft: props.b1BLeft,
             block1BorderRight: props.b1BRight,
@@ -345,6 +377,9 @@ export class Holder3 extends Component {
             margin: props.margin || '10px 0',
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            smflexDir: props.smflexDir,
+            mdflexDir: props.mdflexDir
+
         }
     }
     render() {
@@ -356,17 +391,23 @@ export class Holder3 extends Component {
                 flexWrap: 'wrap',
                 background: this.state.text,
                 justifyContent: this.state.alignBlocks,
+                overflow: 'hidden',
+                borderLeft: this.state.borderLeft,
+                borderRight: this.state.borderRight,
+                borderTop: this.state.borderTop,
+                borderBottom: this.state.borderBottom,
+                border: this.state.border,
             },
             '@media (max-width: 440px)': {
                 holderstyles: {
                     display: this.state.smdis,
-                    flexDirection: 'column'
+                    flexDirection: this.state.smflexDir
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 holderstyles: {
                     display: this.state.mddis,
-                    flexDirection: 'column'
+                    flexDirection: this.setState.mdflexDir
                 }
             },
         });
@@ -385,12 +426,12 @@ export class Holder3 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock1,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block1styles: {
                     display: this.state.block1smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block1styles: {
                     display: this.state.block1mddis,
                 }
@@ -412,12 +453,12 @@ export class Holder3 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock2,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block2styles: {
                     display: this.state.block2smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block2styles: {
                     display: this.state.block2mddis,
                 }
@@ -439,12 +480,12 @@ export class Holder3 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock3,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block3styles: {
                     display: this.state.block3smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block3styles: {
                     display: this.state.block3mddis,
                 }
@@ -466,12 +507,12 @@ export class Holder3 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock4,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block4styles: {
                     display: this.state.block4smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block4styles: {
                     display: this.state.block4mddis,
                 }
@@ -497,6 +538,11 @@ export class Holder4 extends Component {
         this.state = {
             display: props.display || 'flex',
             direction: props.direction || 'row',
+            borderLeft: props.bLeft,
+            borderRight: props.bRight,
+            borderTop: props.bTop,
+            borderBottom: props.bBottom,
+            border: props.border,
             block1: props.block1 || '1',
             block1BorderLeft: props.b1BLeft,
             block1BorderRight: props.b1BRight,
@@ -553,6 +599,9 @@ export class Holder4 extends Component {
             margin: props.margin || '10px 0',
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            smflexDir: props.smflexDir,
+            mdflexDir: props.mdflexDir
+
         }
     }
     render() {
@@ -564,17 +613,23 @@ export class Holder4 extends Component {
                 flexWrap: 'wrap',
                 background: this.state.text,
                 justifyContent: this.state.alignBlocks,
+                overflow: 'hidden',
+                borderLeft: this.state.borderLeft,
+                borderRight: this.state.borderRight,
+                borderTop: this.state.borderTop,
+                borderBottom: this.state.borderBottom,
+                border: this.state.border,
             },
             '@media (max-width: 440px)': {
                 holderstyles: {
                     display: this.state.smdis,
-                    flexDirection: 'column'
+                    flexDirection: this.state.smflexDir
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 holderstyles: {
                     display: this.state.mddis,
-                    flexDirection: 'column'
+                    flexDirection: this.state.mdflexDir
                 }
             },
         });
@@ -593,12 +648,12 @@ export class Holder4 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock1,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block1styles: {
                     display: this.state.block1smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block1styles: {
                     display: this.state.block1mddis,
                 }
@@ -620,12 +675,12 @@ export class Holder4 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock2,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block2styles: {
                     display: this.state.block2smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block2styles: {
                     display: this.state.block2mddis,
                 }
@@ -647,12 +702,12 @@ export class Holder4 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock3,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block3styles: {
                     display: this.state.block3smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block3styles: {
                     display: this.state.block3mddis,
                 }
@@ -674,12 +729,12 @@ export class Holder4 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock4,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block4styles: {
                     display: this.state.block4smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block4styles: {
                     display: this.state.block4mddis,
                 }
@@ -701,12 +756,12 @@ export class Holder4 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock5,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block5styles: {
                     display: this.state.block5smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block5styles: {
                     display: this.state.block5mddis,
                 }
@@ -733,6 +788,11 @@ export class Holder5 extends Component {
         this.state = {
             display: props.display || 'flex',
             direction: props.direction || 'column',
+            borderLeft: props.bLeft,
+            borderRight: props.bRight,
+            borderTop: props.bTop,
+            borderBottom: props.bBottom,
+            border: props.border,
             block1: props.block1 || '1',
             block1BorderLeft: props.b1BLeft,
             block1BorderRight: props.b1BRight,
@@ -759,6 +819,9 @@ export class Holder5 extends Component {
             margin: props.margin || '10px 0',
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            smflexDir: props.smflexDir || 'column',
+            mdflexDir: props.mdflexDir || 'column'
+
         }
     }
     render() {
@@ -770,17 +833,23 @@ export class Holder5 extends Component {
                 flexWrap: 'wrap',
                 background: this.state.text,
                 justifyContent: this.state.alignBlocks,
+                overflow: 'hidden',
+                borderLeft: this.state.borderLeft,
+                borderRight: this.state.borderRight,
+                borderTop: this.state.borderTop,
+                borderBottom: this.state.borderBottom,
+                border: this.state.border,
             },
             '@media (max-width: 440px)': {
                 holderstyles: {
                     display: this.state.smdis,
-                    flexDirection: 'column'
+                    flexDirection: this.state.smflexDir
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 holderstyles: {
                     display: this.state.mddis,
-                    flexDirection: 'column'
+                    flexDirection: this.state.mdflexDir
                 }
             },
         });
@@ -799,12 +868,12 @@ export class Holder5 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock1,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block1styles: {
                     display: this.state.block1smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block1styles: {
                     display: this.state.block1mddis,
                 }
@@ -826,12 +895,12 @@ export class Holder5 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock2,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block2styles: {
                     display: this.state.block2smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block2styles: {
                     display: this.state.block2mddis,
                 }
@@ -855,6 +924,11 @@ export class Holder6 extends Component {
         this.state = {
             display: props.display || 'flex',
             direction: props.direction || 'column',
+            borderLeft: props.bLeft,
+            borderRight: props.bRight,
+            borderTop: props.bTop,
+            borderBottom: props.bBottom,
+            border: props.border,
             block1: props.block1 || '1',
             block1BorderLeft: props.b1BLeft,
             block1BorderRight: props.b1BRight,
@@ -891,6 +965,9 @@ export class Holder6 extends Component {
             margin: props.margin || '10px 0',
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            smflexDir: props.smflexDir || 'column',
+            mdflexDir: props.mdflexDir || 'column'
+
         }
     }
     render() {
@@ -902,17 +979,23 @@ export class Holder6 extends Component {
                 flexWrap: 'wrap',
                 background: this.state.text,
                 justifyContent: this.state.alignBlocks,
+                overflow: 'hidden',
+                borderLeft: this.state.borderLeft,
+                borderRight: this.state.borderRight,
+                borderTop: this.state.borderTop,
+                borderBottom: this.state.borderBottom,
+                border: this.state.border,
             },
             '@media (max-width: 440px)': {
                 holderstyles: {
                     display: this.state.smdis,
-                    flexDirection: 'column'
+                    flexDirection: this.state.smflexDir
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 holderstyles: {
                     display: this.state.mddis,
-                    flexDirection: 'column'
+                    flexDirection: this.state.mdflexDir
                 }
             },
         });
@@ -931,12 +1014,12 @@ export class Holder6 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock1,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block1styles: {
                     display: this.state.block1smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block1styles: {
                     display: this.state.block1mddis,
                 }
@@ -958,12 +1041,12 @@ export class Holder6 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock2,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block2styles: {
                     display: this.state.block2smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block2styles: {
                     display: this.state.block2mddis,
                 }
@@ -985,12 +1068,12 @@ export class Holder6 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock3,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block3styles: {
                     display: this.state.block3smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block3styles: {
                     display: this.state.block3mddis,
                 }
@@ -1015,6 +1098,11 @@ export class Holder7 extends Component {
         this.state = {
             display: props.display || 'flex',
             direction: props.direction || 'column',
+            borderLeft: props.bLeft,
+            borderRight: props.bRight,
+            borderTop: props.bTop,
+            borderBottom: props.bBottom,
+            border: props.border,
             block1: props.block1 || '1',
             block1BorderLeft: props.b1BLeft,
             block1BorderRight: props.b1BRight,
@@ -1061,6 +1149,9 @@ export class Holder7 extends Component {
             margin: props.margin || '10px 0',
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            smflexDir: props.smflexDir || 'column',
+            mdflexDir: props.mdflexDir || 'column'
+
         }
     }
     render() {
@@ -1072,17 +1163,23 @@ export class Holder7 extends Component {
                 flexWrap: 'wrap',
                 background: this.state.text,
                 justifyContent: this.state.alignBlocks,
+                overflow: 'hidden',
+                borderLeft: this.state.borderLeft,
+                borderRight: this.state.borderRight,
+                borderTop: this.state.borderTop,
+                borderBottom: this.state.borderBottom,
+                border: this.state.border,
             },
             '@media (max-width: 440px)': {
                 holderstyles: {
                     display: this.state.smdis,
-                    flexDirection: 'column'
+                    flexDirection: this.state.smflexDir
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 holderstyles: {
                     display: this.state.mddis,
-                    flexDirection: 'column'
+                    flexDirection: this.state.mdflexDir
                 }
             },
         });
@@ -1101,12 +1198,12 @@ export class Holder7 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock1,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block1styles: {
                     display: this.state.block1smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block1styles: {
                     display: this.state.block1mddis,
                 }
@@ -1128,12 +1225,12 @@ export class Holder7 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock2,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block2styles: {
                     display: this.state.block2smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block2styles: {
                     display: this.state.block2mddis,
                 }
@@ -1155,12 +1252,12 @@ export class Holder7 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock3,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block3styles: {
                     display: this.state.block3smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block3styles: {
                     display: this.state.block3mddis,
                 }
@@ -1182,12 +1279,12 @@ export class Holder7 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock4,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block4styles: {
                     display: this.state.block4smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block4styles: {
                     display: this.state.block4mddis,
                 }
@@ -1213,6 +1310,11 @@ export class Holder8 extends Component {
         this.state = {
             display: props.display || 'flex',
             direction: props.direction || 'column',
+            borderLeft: props.bLeft,
+            borderRight: props.bRight,
+            borderTop: props.bTop,
+            borderBottom: props.bBottom,
+            border: props.border,
             block1: props.block1 || '1',
             block1BorderLeft: props.b1BLeft,
             block1BorderRight: props.b1BRight,
@@ -1269,6 +1371,9 @@ export class Holder8 extends Component {
             margin: props.margin || '10px 0',
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            smflexDir: props.smflexDir || 'column',
+            mdflexDir: props.mdflexDir || 'column'
+
         }
     }
     render() {
@@ -1280,17 +1385,23 @@ export class Holder8 extends Component {
                 flexWrap: 'wrap',
                 background: this.state.text,
                 justifyContent: this.state.alignBlocks,
+                overflow: 'hidden',
+                borderLeft: this.state.borderLeft,
+                borderRight: this.state.borderRight,
+                borderTop: this.state.borderTop,
+                borderBottom: this.state.borderBottom,
+                border: this.state.border,
             },
             '@media (max-width: 440px)': {
                 holderstyles: {
                     display: this.state.smdis,
-                    flexDirection: 'column'
+                    flexDirection: this.state.smflexDir
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 holderstyles: {
                     display: this.state.mddis,
-                    flexDirection: 'column'
+                    flexDirection: this.state.mdflexDir
                 }
             },
         });
@@ -1309,12 +1420,12 @@ export class Holder8 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock1,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block1styles: {
                     display: this.state.block1smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block1styles: {
                     display: this.state.block1mddis,
                 }
@@ -1336,12 +1447,12 @@ export class Holder8 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock2,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block2styles: {
                     display: this.state.block2smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block2styles: {
                     display: this.state.block2mddis,
                 }
@@ -1363,12 +1474,12 @@ export class Holder8 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock3,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block3styles: {
                     display: this.state.block3smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block3styles: {
                     display: this.state.block3mddis,
                 }
@@ -1390,12 +1501,12 @@ export class Holder8 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock4,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block4styles: {
                     display: this.state.block4smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block4styles: {
                     display: this.state.block4mddis,
                 }
@@ -1417,12 +1528,12 @@ export class Holder8 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock5,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block5styles: {
                     display: this.state.block5smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block5styles: {
                     display: this.state.block5mddis,
                 }
@@ -1449,6 +1560,11 @@ export class Holder9 extends Component {
         this.state = {
             display: props.display || 'flex',
             direction: props.direction || 'column',
+            borderLeft: props.bLeft,
+            borderRight: props.bRight,
+            borderTop: props.bTop,
+            borderBottom: props.bBottom,
+            border: props.border,
             block1: props.block1 || '1',
             block1BorderLeft: props.b1BLeft,
             block1BorderRight: props.b1BRight,
@@ -1515,6 +1631,9 @@ export class Holder9 extends Component {
             margin: props.margin || '10px',
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            smflexDir: props.smflexDir || 'column',
+            mdflexDir: props.mdflexDir || 'column'
+
         }
     }
     render() {
@@ -1526,17 +1645,23 @@ export class Holder9 extends Component {
                 flexWrap: 'wrap',
                 background: this.state.text,
                 justifyContent: this.state.alignBlocks,
+                overflow: 'hidden',
+                borderLeft: this.state.borderLeft,
+                borderRight: this.state.borderRight,
+                borderTop: this.state.borderTop,
+                borderBottom: this.state.borderBottom,
+                border: this.state.border,
             },
             '@media (max-width: 440px)': {
                 holderstyles: {
                     display: this.state.smdis,
-                    flexDirection: 'column'
+                    flexDirection: this.state.smflexDir
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 holderstyles: {
                     display: this.state.mddis,
-                    flexDirection: 'column'
+                    flexDirection: this.state.mdflexDir
                 }
             },
         });
@@ -1555,12 +1680,12 @@ export class Holder9 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock1,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block1styles: {
                     display: this.state.block1smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block1styles: {
                     display: this.state.block1mddis,
                 }
@@ -1582,12 +1707,12 @@ export class Holder9 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock2,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block2styles: {
                     display: this.state.block2smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block2styles: {
                     display: this.state.block2mddis,
                 }
@@ -1609,12 +1734,12 @@ export class Holder9 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock3,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block3styles: {
                     display: this.state.block3smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block3styles: {
                     display: this.state.block3mddis,
                 }
@@ -1636,12 +1761,12 @@ export class Holder9 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock4,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block4styles: {
                     display: this.state.block4smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block4styles: {
                     display: this.state.block4mddis,
                 }
@@ -1663,12 +1788,12 @@ export class Holder9 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock5,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block5styles: {
                     display: this.state.block5smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block5styles: {
                     display: this.state.block5mddis,
                 }
@@ -1690,12 +1815,12 @@ export class Holder9 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock6,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block6styles: {
                     display: this.state.block6smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block6styles: {
                     display: this.state.block6mddis,
                 }
@@ -1723,6 +1848,11 @@ export class Holder10 extends Component {
         this.state = {
             display: props.display || 'flex',
             direction: props.direction || 'column',
+            borderLeft: props.bLeft,
+            borderRight: props.bRight,
+            borderTop: props.bTop,
+            borderBottom: props.bBottom,
+            border: props.border,
             block1: props.block1 || '1',
             block1BorderLeft: props.b1BLeft,
             block1BorderRight: props.b1BRight,
@@ -1799,6 +1929,9 @@ export class Holder10 extends Component {
             margin: props.margin || '10px',
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            smflexDir: props.smflexDir || 'column',
+            mdflexDir: props.mdflexDir || 'column'
+
         }
     }
     render() {
@@ -1810,17 +1943,23 @@ export class Holder10 extends Component {
                 flexWrap: 'wrap',
                 background: this.state.text,
                 justifyContent: this.state.alignBlocks,
+                overflow: 'hidden',
+                borderLeft: this.state.borderLeft,
+                borderRight: this.state.borderRight,
+                borderTop: this.state.borderTop,
+                borderBottom: this.state.borderBottom,
+                border: this.state.border,
             },
             '@media (max-width: 440px)': {
                 holderstyles: {
                     display: this.state.smdis,
-                    flexDirection: 'column'
+                    flexDirection: this.state.smflexDir
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 holderstyles: {
                     display: this.state.mddis,
-                    flexDirection: 'column'
+                    flexDirection: this.state.mdflexDir
                 }
             },
         });
@@ -1839,12 +1978,12 @@ export class Holder10 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock1,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block1styles: {
                     display: this.state.block1smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block1styles: {
                     display: this.state.block1mddis,
                 }
@@ -1866,12 +2005,12 @@ export class Holder10 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock2,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block2styles: {
                     display: this.state.block2smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block2styles: {
                     display: this.state.block2mddis,
                 }
@@ -1893,12 +2032,12 @@ export class Holder10 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock3,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block3styles: {
                     display: this.state.block3smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block3styles: {
                     display: this.state.block3mddis,
                 }
@@ -1920,12 +2059,12 @@ export class Holder10 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock4,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block4styles: {
                     display: this.state.block4smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block4styles: {
                     display: this.state.block4mddis,
                 }
@@ -1947,12 +2086,12 @@ export class Holder10 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock5,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block5styles: {
                     display: this.state.block5smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block5styles: {
                     display: this.state.block5mddis,
                 }
@@ -1974,12 +2113,12 @@ export class Holder10 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock6,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block6styles: {
                     display: this.state.block6smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block6styles: {
                     display: this.state.block6mddis,
                 }
@@ -2001,12 +2140,12 @@ export class Holder10 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock7,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block7styles: {
                     display: this.state.block7smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block7styles: {
                     display: this.state.block7mddis,
                 }
@@ -2035,6 +2174,11 @@ export class Holder11 extends Component {
         this.state = {
             display: props.display || 'flex',
             direction: props.direction || 'column',
+            borderLeft: props.bLeft,
+            borderRight: props.bRight,
+            borderTop: props.bTop,
+            borderBottom: props.bBottom,
+            border: props.border,
             block1: props.block1 || '1',
             block1BorderLeft: props.b1BLeft,
             block1BorderRight: props.b1BRight,
@@ -2121,6 +2265,9 @@ export class Holder11 extends Component {
             margin: props.margin || '10px',
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            smflexDir: props.smflexDir || 'column',
+            mdflexDir: props.mdflexDir || 'column'
+
         }
     }
     render() {
@@ -2132,17 +2279,23 @@ export class Holder11 extends Component {
                 flexWrap: 'wrap',
                 background: this.state.text,
                 justifyContent: this.state.alignBlocks,
+                overflow: 'hidden',
+                borderLeft: this.state.borderLeft,
+                borderRight: this.state.borderRight,
+                borderTop: this.state.borderTop,
+                borderBottom: this.state.borderBottom,
+                border: this.state.border,
             },
             '@media (max-width: 440px)': {
                 holderstyles: {
                     display: this.state.smdis,
-                    flexDirection: 'column'
+                    flexDirection: this.state.smflexDir
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 holderstyles: {
                     display: this.state.mddis,
-                    flexDirection: 'column'
+                    flexDirection: this.state.mdflexDir
                 }
             },
         });
@@ -2161,12 +2314,12 @@ export class Holder11 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock1,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block1styles: {
                     display: this.state.block1smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block1styles: {
                     display: this.state.block1mddis,
                 }
@@ -2188,12 +2341,12 @@ export class Holder11 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock2,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block2styles: {
                     display: this.state.block2smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block2styles: {
                     display: this.state.block2mddis,
                 }
@@ -2215,12 +2368,12 @@ export class Holder11 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock3,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block3styles: {
                     display: this.state.block3smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block3styles: {
                     display: this.state.block3mddis,
                 }
@@ -2242,12 +2395,12 @@ export class Holder11 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock4,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block4styles: {
                     display: this.state.block4smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block4styles: {
                     display: this.state.block4mddis,
                 }
@@ -2269,12 +2422,12 @@ export class Holder11 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock5,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block5styles: {
                     display: this.state.block5smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block5styles: {
                     display: this.state.block5mddis,
                 }
@@ -2296,12 +2449,12 @@ export class Holder11 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock6,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block6styles: {
                     display: this.state.block6smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block6styles: {
                     display: this.state.block6mddis,
                 }
@@ -2323,12 +2476,12 @@ export class Holder11 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock7,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block7styles: {
                     display: this.state.block7smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block7styles: {
                     display: this.state.block7mddis,
                 }
@@ -2350,12 +2503,12 @@ export class Holder11 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock8,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block8styles: {
                     display: this.state.block8smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block8styles: {
                     display: this.state.block8mddis,
                 }
@@ -2385,6 +2538,11 @@ export class Holder12 extends Component {
         this.state = {
             display: props.display || 'flex',
             direction: props.direction || 'column',
+            borderLeft: props.bLeft,
+            borderRight: props.bRight,
+            borderTop: props.bTop,
+            borderBottom: props.bBottom,
+            border: props.border,
             block1: props.block1 || '1',
             block1BorderLeft: props.b1BLeft,
             block1BorderRight: props.b1BRight,
@@ -2481,6 +2639,9 @@ export class Holder12 extends Component {
             margin: props.margin || '10px',
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            smflexDir: props.smflexDir || 'column',
+            mdflexDir: props.mdflexDir || 'column'
+
         }
     }
     render() {
@@ -2492,17 +2653,23 @@ export class Holder12 extends Component {
                 flexWrap: 'wrap',
                 background: this.state.text,
                 justifyContent: this.state.alignBlocks,
+                overflow: 'hidden',
+                borderLeft: this.state.borderLeft,
+                borderRight: this.state.borderRight,
+                borderTop: this.state.borderTop,
+                borderBottom: this.state.borderBottom,
+                border: this.state.border,
             },
             '@media (max-width: 440px)': {
                 holderstyles: {
                     display: this.state.smdis,
-                    flexDirection: 'column'
+                    flexDirection: this.state.smflexDir
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 holderstyles: {
                     display: this.state.mddis,
-                    flexDirection: 'column'
+                    flexDirection: this.state.mdflexDir
                 }
             },
         });
@@ -2521,12 +2688,12 @@ export class Holder12 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock1,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block1styles: {
                     display: this.state.block1smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block1styles: {
                     display: this.state.block1mddis,
                 }
@@ -2548,12 +2715,12 @@ export class Holder12 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock2,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block2styles: {
                     display: this.state.block2smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block2styles: {
                     display: this.state.block2mddis,
                 }
@@ -2575,12 +2742,12 @@ export class Holder12 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock3,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block3styles: {
                     display: this.state.block3smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block3styles: {
                     display: this.state.block3mddis,
                 }
@@ -2602,12 +2769,12 @@ export class Holder12 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock4,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block4styles: {
                     display: this.state.block4smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block4styles: {
                     display: this.state.block4mddis,
                 }
@@ -2629,12 +2796,12 @@ export class Holder12 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock5,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block5styles: {
                     display: this.state.block5smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block5styles: {
                     display: this.state.block5mddis,
                 }
@@ -2656,12 +2823,12 @@ export class Holder12 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock6,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block6styles: {
                     display: this.state.block6smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block6styles: {
                     display: this.state.block6mddis,
                 }
@@ -2683,12 +2850,12 @@ export class Holder12 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock7,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block7styles: {
                     display: this.state.block7smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block7styles: {
                     display: this.state.block7mddis,
                 }
@@ -2710,12 +2877,12 @@ export class Holder12 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock8,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block8styles: {
                     display: this.state.block8smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block8styles: {
                     display: this.state.block8mddis,
                 }
@@ -2737,12 +2904,12 @@ export class Holder12 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock9,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block9styles: {
                     display: this.state.block9smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block9styles: {
                     display: this.state.block9mddis,
                 }
@@ -2773,6 +2940,11 @@ export class Holder13 extends Component {
         this.state = {
             display: props.display || 'flex',
             direction: props.direction || 'column',
+            borderLeft: props.bLeft,
+            borderRight: props.bRight,
+            borderTop: props.bTop,
+            borderBottom: props.bBottom,
+            border: props.border,
             block1: props.block1 || '1',
             block1BorderLeft: props.b1BLeft,
             block1BorderRight: props.b1BRight,
@@ -2879,6 +3051,9 @@ export class Holder13 extends Component {
             margin: props.margin || '10px',
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            smflexDir: props.smflexDir || 'column',
+            mdflexDir: props.mdflexDir || 'column'
+
         }
     }
     render() {
@@ -2890,17 +3065,23 @@ export class Holder13 extends Component {
                 flexWrap: 'wrap',
                 background: this.state.text,
                 justifyContent: this.state.alignBlocks,
+                overflow: 'hidden',
+                borderLeft: this.state.borderLeft,
+                borderRight: this.state.borderRight,
+                borderTop: this.state.borderTop,
+                borderBottom: this.state.borderBottom,
+                border: this.state.border,
             },
             '@media (max-width: 440px)': {
                 holderstyles: {
                     display: this.state.smdis,
-                    flexDirection: 'column'
+                    flexDirection: this.state.smflexDir
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 holderstyles: {
                     display: this.state.mddis,
-                    flexDirection: 'column'
+                    flexDirection: this.state.mdflexDir
                 }
             },
         });
@@ -2919,12 +3100,12 @@ export class Holder13 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock1,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block1styles: {
                     display: this.state.block1smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block1styles: {
                     display: this.state.block1mddis,
                 }
@@ -2946,12 +3127,12 @@ export class Holder13 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock2,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block2styles: {
                     display: this.state.block2smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block2styles: {
                     display: this.state.block2mddis,
                 }
@@ -2973,12 +3154,12 @@ export class Holder13 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock3,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block3styles: {
                     display: this.state.block3smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block3styles: {
                     display: this.state.block3mddis,
                 }
@@ -3000,12 +3181,12 @@ export class Holder13 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock4,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block4styles: {
                     display: this.state.block4smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block4styles: {
                     display: this.state.block4mddis,
                 }
@@ -3027,12 +3208,12 @@ export class Holder13 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock5,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block5styles: {
                     display: this.state.block5smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block5styles: {
                     display: this.state.block5mddis,
                 }
@@ -3054,12 +3235,12 @@ export class Holder13 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock6,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block6styles: {
                     display: this.state.block6smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block6styles: {
                     display: this.state.block6mddis,
                 }
@@ -3081,12 +3262,12 @@ export class Holder13 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock7,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block7styles: {
                     display: this.state.block7smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block7styles: {
                     display: this.state.block7mddis,
                 }
@@ -3108,12 +3289,12 @@ export class Holder13 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock8,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block8styles: {
                     display: this.state.block8smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block8styles: {
                     display: this.state.block8mddis,
                 }
@@ -3135,12 +3316,12 @@ export class Holder13 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock9,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block9styles: {
                     display: this.state.block9smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block9styles: {
                     display: this.state.block9mddis,
                 }
@@ -3162,12 +3343,12 @@ export class Holder13 extends Component {
                 margin: this.state.margin,
                 justifyContent: this.state.justifyBlock10,
             },
-            '@media screen and (max-width: 481px)': {
+            '@media screen and (max-width: 440px)': {
                 block10styles: {
                     display: this.state.block10smdis,
                 }
             },
-            '@media screen and (min-width: 482px) and (max-width: 1200px)': {
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 block10styles: {
                     display: this.state.block10mddis,
                 }
