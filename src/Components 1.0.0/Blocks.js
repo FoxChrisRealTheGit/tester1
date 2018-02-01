@@ -78,6 +78,8 @@ export class H11 extends Component {
             textShadow: props.shadow,
             fontFamily: props.font || 'inherit',
             fontSize: props.size || '7em',
+            smFontSize: props.smSize || '3.939em',
+            mdFontSize: props.mdSize || '5.25em',
             fontWeight: props.fontWeight || '900',
             display: props.display || 'flex',
             align: props.align || 'center',
@@ -86,11 +88,11 @@ export class H11 extends Component {
             margin: props.margin || '0',
             width: props.width || 'inherit',
             height: props.height,
-            border: props.border,
             bLeft: props.bLeft,
             bRight: props.bRight,
             bTop: props.bTop,
             bBottom: props.bBottom,
+            border: props.border,
             id: props.id,
             className: props.className,
             childs: '',
@@ -153,14 +155,14 @@ export class H11 extends Component {
                 heading: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '3.939em'
+                    fontSize: this.state.smFontSize
                 }
             },
             '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '5.25em'
+                    fontSize: this.state.mdFontSize
                 }
             },
         })
@@ -180,6 +182,8 @@ export class H12 extends Component {
             textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '6em',
+            smFontSize: props.smSize || '3.376em',
+            mdFontSize: props.mdSize || '4.501em',
             fontWeight: props.weight || '900',
             display: props.display || 'flex',
             align: props.align || 'center',
@@ -248,14 +252,14 @@ export class H12 extends Component {
                 heading: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '3.376em'
+                    fontSize: this.state.smFontSize
                 }
             },
             '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '4.501em'
+                    fontSize: this.state.mdFontSize
                 }
             },
         })
@@ -275,6 +279,8 @@ export class H13 extends Component {
             textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '7.5em',
+            smFontSize: props.smSize || '4.4em',
+            mdFontSize: props.mdSize || '5.7em',
             fontWeight: props.weight || '900',
             display: props.display || 'flex',
             align: props.align || 'center',
@@ -343,14 +349,14 @@ export class H13 extends Component {
                 heading: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '4.4em'
+                    fontSize: this.state.smFontSize
                 }
             },
             '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '5.7em'
+                    fontSize: this.state.mdFontSize
                 }
             },
         })
@@ -370,6 +376,8 @@ export class H14 extends Component {
             textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '7em',
+            smFontSize: props.smSize || '3.939em',
+            mdFontSize: props.mdSize || '5.25em',
             fontWeight: props.weight || '900',
             display: props.display || 'flex',
             align: props.align || 'center',
@@ -392,7 +400,7 @@ export class H14 extends Component {
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
-            hoverColor: props.hovColor,
+            hoverColor: props.hovColor || 'lightgray',
         }
     }
     componentDidMount() {
@@ -438,14 +446,14 @@ export class H14 extends Component {
                 heading: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '3.939em'
+                    fontSize: this.state.smFontSize
                 }
             },
             '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '5.2em'
+                    fontSize: this.state.mdFontSize
                 }
             },
         })
@@ -465,6 +473,8 @@ export class H15 extends Component {
             textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '7em',
+            smFontSize: props.smSize || '3.939em',
+            mdFontSize: props.mdSize || '5.25em',
             fontWeight: props.weight || '900',
             display: props.display || 'flex',
             align: props.align || 'center',
@@ -533,14 +543,14 @@ export class H15 extends Component {
                 heading: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '3.939em'
+                    fontSize: this.state.smFontSize
                 }
             },
             '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '5.2em'
+                    fontSize: this.state.mdFontSize
                 }
             },
         })
@@ -562,6 +572,8 @@ export class H21 extends Component {
             textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '5.646em',
+            smFontSize: props.smSize || '3em',
+            mdFontSize: props.mdSize || '4em',
             fontWeight: props.weight || '600',
             display: props.display || 'flex',
             align: props.align || 'center',
@@ -630,14 +642,14 @@ export class H21 extends Component {
                 heading: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '3em'
+                    fontSize: this.state.smFontSize
                 }
             },
             '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '4em'
+                    fontSize: this.state.mdFontSize
                 }
             },
         })
@@ -657,6 +669,8 @@ export class H22 extends Component {
             textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '4.705em',
+            smFontSize: props.smSize || '2.7em',
+            mdFontSize: props.mdSize || '3em',
             fontWeight: props.weight || '600',
             display: props.display || 'flex',
             align: props.align || 'center',
@@ -725,14 +739,14 @@ export class H22 extends Component {
                 heading: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '2.7em'
+                    fontSize: this.state.smFontSize
                 }
             },
             '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '3em'
+                    fontSize: this.state.mdFontSize
                 }
             },
         })
@@ -752,6 +766,8 @@ export class H23 extends Component {
             textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '6.1em',
+            smFontSize: props.smSize || '3.5em',
+            mdFontSize: props.mdSize || '4.5em',
             fontWeight: props.weight || '600',
             display: props.display || 'flex',
             align: props.align || 'center',
@@ -820,14 +836,14 @@ export class H23 extends Component {
                 heading: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '3.5em'
+                    fontSize: this.state.smFontSize
                 }
             },
             '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '4.5em'
+                    fontSize: this.state.mdFontSize
                 }
             },
         })
@@ -847,6 +863,8 @@ export class H24 extends Component {
             textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '5.646em',
+            smFontSize: props.smSize || '3em',
+            mdFontSize: props.mdSize || '4em',
             fontWeight: props.weight || '600',
             display: props.display || 'flex',
             align: props.align || 'center',
@@ -869,7 +887,7 @@ export class H24 extends Component {
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
-            hoverColor: props.hovColor,
+            hoverColor: props.hovColor || 'lightgray',
         }
     }
     componentDidMount() {
@@ -915,14 +933,14 @@ export class H24 extends Component {
                 heading: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '3em'
+                    fontSize: this.state.smFontSize
                 }
             },
             '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '4em'
+                    fontSize: this.state.mdFontSize
                 }
             },
         })
@@ -942,6 +960,8 @@ export class H25 extends Component {
             textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '5.646em',
+            smFontSize: props.smSize || '3em',
+            mdFontSize: props.mdSize || '4em',
             fontWeight: props.weight || '600',
             display: props.display || 'flex',
             align: props.align || 'center',
@@ -1010,14 +1030,14 @@ export class H25 extends Component {
                 heading: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '3em'
+                    fontSize: this.state.smFontSize
                 }
             },
             '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '4em'
+                    fontSize: this.state.mdFontSize
                 }
             },
         })
@@ -1039,6 +1059,8 @@ export class H31 extends Component {
             textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '3.489em',
+            smFontSize: props.smSize || '2.5em',
+            mdFontSize: props.mdSize || '3em',
             fontWeight: props.weight || '600',
             display: props.display || 'flex',
             align: props.align || 'center',
@@ -1107,14 +1129,14 @@ export class H31 extends Component {
                 heading: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '2.5em'
+                    fontSize: this.state.smFontSize
                 }
             },
             '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '3em'
+                    fontSize: this.state.mdFontSize
                 }
             },
         })
@@ -1134,6 +1156,8 @@ export class H32 extends Component {
             textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '2.9075em',
+            smFontSize: props.smSize || '2em',
+            mdFontSize: props.mdSize || '2.5em',
             fontWeight: props.weight || '600',
             display: props.display || 'flex',
             align: props.align || 'center',
@@ -1202,14 +1226,14 @@ export class H32 extends Component {
                 heading: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '2em'
+                    fontSize: this.state.smFontSize
                 }
             },
             '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '2.5em'
+                    fontSize: this.state.mdFontSize
                 }
             },
         })
@@ -1229,6 +1253,8 @@ export class H33 extends Component {
             textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '3.9em',
+            smFontSize: props.smSize || '3em',
+            mdFontSize: props.mdSize || '3.5em',
             fontWeight: props.weight || '600',
             display: props.display || 'flex',
             align: props.align || 'center',
@@ -1297,14 +1323,14 @@ export class H33 extends Component {
                 heading: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '3em'
+                    fontSize: this.state.smFontSize
                 }
             },
             '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '3.5em'
+                    fontSize: this.state.mdFontSize
                 }
             },
         })
@@ -1324,6 +1350,8 @@ export class H34 extends Component {
             textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '3.489em',
+            smFontSize: props.smSize || '2.5em',
+            mdFontSize: props.mdSize || '3em',
             fontWeight: props.weight || '600',
             display: props.display || 'flex',
             align: props.align || 'center',
@@ -1392,14 +1420,14 @@ export class H34 extends Component {
                 heading: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '2.5em'
+                    fontSize: this.state.smFontSize
                 }
             },
             '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '3em'
+                    fontSize: this.state.mdFontSize
                 }
             },
         })
@@ -1419,6 +1447,8 @@ export class H35 extends Component {
             textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '3.489em',
+            smFontSize: props.smSize || '2.5em',
+            mdFontSize: props.mdSize || '3em',
             fontWeight: props.weight || '600',
             display: props.display || 'flex',
             align: props.align || 'center',
@@ -1487,14 +1517,14 @@ export class H35 extends Component {
                 heading: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '2.5em'
+                    fontSize: this.state.smFontSize
                 }
             },
             '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '3em'
+                    fontSize: this.state.mdFontSize
                 }
             },
         })
@@ -1516,6 +1546,8 @@ export class H41 extends Component {
             textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '3.489em',
+            smFontSize: props.smSize || '2.5em',
+            mdFontSize: props.mdSize || '3em',
             fontWeight: props.weight || '100',
             display: props.display || 'flex',
             align: props.align || 'center',
@@ -1585,14 +1617,14 @@ export class H41 extends Component {
                 heading: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '2.5em'
+                    fontSize: this.state.smFontSize
                 }
             },
             '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '3em'
+                    fontSize: this.state.mdFontSize
                 }
             },
         })
@@ -1612,6 +1644,8 @@ export class H42 extends Component {
             textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '2.9025em',
+            smFontSize: props.smSize || '2em',
+            mdFontSize: props.mdSize || '2.5em',
             fontWeight: props.weight || '100',
             display: props.display || 'flex',
             align: props.align || 'center',
@@ -1680,14 +1714,14 @@ export class H42 extends Component {
                 heading: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '2em'
+                    fontSize:this.state.smFontSize
                 }
             },
             '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '2.5em'
+                    fontSize: this.state.mdFontSize
                 }
             },
         })
@@ -1707,6 +1741,8 @@ export class H43 extends Component {
             textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '3.9em',
+            smFontSize: props.smSize || '3em',
+            mdFontSize: props.mdSize || '3.5em',
             fontWeight: props.weight || '100',
             display: props.display || 'flex',
             align: props.align || 'center',
@@ -1775,14 +1811,14 @@ export class H43 extends Component {
                 heading: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '3em'
+                    fontSize: this.state.smFontSize
                 }
             },
             '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '3.5em'
+                    fontSize: this.state.mdFontSize
                 }
             },
         })
@@ -1802,6 +1838,8 @@ export class H44 extends Component {
             textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '3.489em',
+            smFontSize: props.smSize || '2.5em',
+            mdFontSize: props.mdSize || '3em',
             fontWeight: props.weight || '100',
             display: props.display || 'flex',
             align: props.align || 'center',
@@ -1870,14 +1908,14 @@ export class H44 extends Component {
                 heading: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '2.5em'
+                    fontSize: this.state.smFontSize
                 }
             },
             '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '3em'
+                    fontSize: this.state.mdFontSize
                 }
             },
         })
@@ -1897,6 +1935,8 @@ export class H45 extends Component {
             textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '3.489em',
+            smFontSize: props.smSize || '2.5em',
+            mdFontSize: props.mdSize || '3em',
             fontWeight: props.weight || '100',
             display: props.display || 'flex',
             align: props.align || 'center',
@@ -1965,14 +2005,14 @@ export class H45 extends Component {
                 heading: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '2.5em'
+                    fontSize: this.state.smFontSize
                 }
             },
             '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 heading: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '3em'
+                    fontSize: this.state.mdFontSize
                 }
             },
         })
@@ -1996,6 +2036,8 @@ export class P1 extends Component {
             textShadow: props.shadow,
             fontFamily: props.font || 'serif',
             fontSize: props.size || '1.333em',
+            smFontSize: props.smSize || '1.3em',
+            mdFontSize: props.mdSize || '1.3em',
             lineHeight: props.lineHeight || '1.5em',
             fontWeight: props.weight || '400',
             display: props.display || 'flex',
@@ -2064,14 +2106,14 @@ export class P1 extends Component {
                 paragraph: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '1.3em'
+                    fontSize: this.state.smFontSize
                 }
             },
             '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 paragraph: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '1.3em'
+                    fontSize: this.state.mdFontSize
                 }
             },
         })
@@ -2091,6 +2133,8 @@ export class P2 extends Component {
             textShadow: props.shadow,
             fontFamily: props.font || 'serif',
             fontSize: props.size || '0.95em',
+            smFontSize: props.smSize || '0.95em',
+            mdFontSize: props.mdSize || '0.95em',
             lineHeight: props.lineHeight || '1.22em',
             fontWeight: props.weight || '400',
             display: props.display || 'flex',
@@ -2159,14 +2203,14 @@ export class P2 extends Component {
                 paragraph: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '0.95em'
+                    fontSize: this.state.smFontSize
                 }
             },
             '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 paragraph: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '0.95em'
+                    fontSize: this.state.mdFontSize
                 }
             },
         })
@@ -2186,6 +2230,8 @@ export class P3 extends Component {
             textShadow: props.shadow,
             fontFamily: props.font || 'serif',
             fontSize: props.size || '1.6em',
+            smFontSize: props.smSize || '1.5em',
+            mdFontSize: props.mdSize || '1.6em',
             lineHeight: props.lineHeight || '1.8em',
             fontWeight: props.weight || '400',
             display: props.display || 'flex',
@@ -2254,14 +2300,14 @@ export class P3 extends Component {
                 paragraph: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '1.5em'
+                    fontSize: this.state.smFontSize
                 }
             },
             '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 paragraph: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '1.6em'
+                    fontSize: this.state.mdFontSize
                 }
             },
         })
@@ -2281,6 +2327,8 @@ export class P4 extends Component {
             textShadow: props.shadow,
             fontFamily: props.font || 'serif',
             fontSize: props.size || '1.6em',
+            smFontSize: props.smSize || '1.5em',
+            mdFontSize: props.mdSize || '1.6em',
             lineHeight: props.lineHeight || '1.8em',
             fontWeight: props.weight || '400',
             display: props.display || 'flex',
@@ -2304,7 +2352,7 @@ export class P4 extends Component {
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
-            hoverColor: props.hovColor,
+            hoverColor: props.hovColor || 'lightgray',
         }
     }
     componentDidMount() {
@@ -2349,14 +2397,14 @@ export class P4 extends Component {
                 paragraph: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '1.5em'
+                    fontSize: this.state.smFontSize
                 }
             },
             '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 paragraph: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '1.6em'
+                    fontSize: this.state.mdFontSize
                 }
             },
         })
@@ -2377,6 +2425,8 @@ export class P5 extends Component {
             textShadow: props.shadow,
             fontFamily: props.font || 'serif',
             fontSize: props.size || '1.333em',
+            smFontSize: props.smSize || '1.3em',
+            mdFontSize: props.mdSize || '1.3em',
             lineHeight: props.lineHeight || '1.5em',
             fontWeight: props.weight || '400',
             display: props.display || 'flex',
@@ -2445,14 +2495,14 @@ export class P5 extends Component {
                 paragraph: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize: '1.3em'
+                    fontSize: this.state.smFontSize
                 }
             },
             '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 paragraph: {
                     display: this.state.mdDis,
                     color: this.state.color,
-                    fontSize: '1.3em'
+                    fontSize: this.state.mdFontSize
                 }
             },
         })
