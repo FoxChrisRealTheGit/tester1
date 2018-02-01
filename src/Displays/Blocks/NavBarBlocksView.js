@@ -80,7 +80,8 @@ export default class NavBarBlocksView extends Component {
                             height='100px'
                             padding='0 7%'
                             navbarWidth='20%'
-                            align="flex-end">
+                            align="flex-end"
+                            >
                             <Link to="twitter.com"></Link>
                             <Link to="facebook.com"></Link>
                             <Link to="linkedin.com"></Link>
@@ -98,7 +99,8 @@ export default class NavBarBlocksView extends Component {
                         <Navbar1
                             direction="column"
                             columnAlign='flex-start'
-                            padding="0 0 0 7%">
+                            padding="0 0 0 7%"
+                            >
                             <Link to="/blocks/navbarviews">item1</Link>
                             <Link to="/blocks/navbarviews">item2</Link>
                             <Link to="/blocks/navbarviews">item3</Link>

@@ -24,7 +24,8 @@ export default function Navigation() {
                     <Navbar1
                         fontVariant="small-caps"
                         navbarWidth='80%'
-                        align="flex-start">
+                        align="flex-start"
+                        smDis='none'>
                         <DropDownNav1
                             background='white'>
                             components
@@ -43,7 +44,17 @@ export default function Navigation() {
                     </Navbar1>
                     <Navbar1
                         navbarWidth="50%"
-                        align="flex-end">
+                        align="flex-end"
+                        count='3'>
+                        <Link to="facebook.com"></Link>
+                        <Link to="twitter.com"></Link>
+                        <Link to="github.com"></Link>
+                        <Link to="/containers">containers</Link>
+                        <Link to="/holders">holders</Link>
+                        <Link to="/blocks">blocks</Link>
+                        <Link to="/samplepages">sample pages</Link>
+                        <Link to="/templatesamples">template samples</Link>
+                        <Link to="/documentation">documentation</Link>
                         <Link to="facebook.com"></Link>
                         <Link to="twitter.com"></Link>
                         <Link to="github.com"></Link>

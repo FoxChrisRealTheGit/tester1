@@ -49,10 +49,10 @@ export default class ListBlocksView extends Component {
                             Number List 1
                         </H34>
                         <NumberList1>
-                            listItem1\
-                            listItem2\
-                            listItem3\
-                            listItem4
+                            {'listItem1'}
+                            {'listItem2'}
+                            {'listItem3'}
+                            {'listItem4'}
                         </NumberList1>
                     </Holder5>
                 </Container1>
@@ -88,10 +88,10 @@ export default class ListBlocksView extends Component {
                             Number List 3
                         </H34>
                         <NumberList3>
-                            listItem1\
-                            listItem2\
-                            listItem3\
-                            listItem4
+                            {'listItem1'}
+                            {'listItem2'}
+                            {'listItem3'}
+                            {'listItem4'}
                         </NumberList3>
                     </Holder5>
                 </Container1>
@@ -102,10 +102,10 @@ export default class ListBlocksView extends Component {
                             Bullet List 1
                         </H34>
                         <BulletList1>
-                            listItem1\
-                            listItem2\
-                            listItem3\
-                            listItem4
+                            {'listItem1'}
+                            {'listItem2'}
+                            {'listItem3'}
+                            {'listItem4'}
                         </BulletList1>
                     </Holder5>
                 </Container1>
@@ -116,10 +116,10 @@ export default class ListBlocksView extends Component {
                             Bullet List 2
                         </H34>
                         <BulletList2>
-                            listItem1\
-                            listItem2\
-                            listItem3\
-                            listItem4
+                            {'listItem1'}
+                            {'listItem2'}
+                            {'listItem3'}
+                            {'listItem4'}
                         </BulletList2>
                     </Holder5>
                 </Container1>

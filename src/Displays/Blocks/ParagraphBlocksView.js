@@ -121,8 +121,8 @@ export default class ParagraphBlocksView extends Component {
                 </Container1>
                 <Container1>
                     <PLQ1>
-                        Banjo photo booth deep v bespoke typewriter twee iPhone lyft vegan meditation mumblecore copper mug blog whatever.\
-                        Neat Name
+                        {'Banjo photo booth deep v bespoke typewriter twee iPhone lyft vegan meditation mumblecore copper mug blog whatever.'}
+                        {'Neat Name'}
                     </PLQ1>
                 </Container1>
                 <HorizontalTestBlock1 />
@@ -133,8 +133,8 @@ export default class ParagraphBlocksView extends Component {
                 </Container1>
                 <Container1>
                     <PLQ2>
-                        Echo park XOXO seitan, fixie before they sold out bushwick edison bulb listicle 3 wolf moon irony hot chicken typewriter dreamcatcher.\
-                        Neat Name
+                        {'Echo park XOXO seitan, fixie before they sold out bushwick edison bulb listicle 3 wolf moon irony hot chicken typewriter dreamcatcher.'}
+                        {'Neat Name'}
                     </PLQ2>
                 </Container1>
                 <HorizontalTestBlock1 />

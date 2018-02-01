@@ -50,16 +50,16 @@ export default class TableBlocksView extends Component {
                         <Table1
                             rows="4"
                             tableClassName="oddRowHighlights">
-                            Head1\
-                            Head2\
-                            Head3\
-                            body1\
-                            body2\
-                            body3\
-                            body4\
-                            body5\
-                            body6\
-                            body7
+                            {'Head1'}
+                            {'Head2'}
+                            {'Head3'}
+                            {'body1'}
+                            {'body2'}
+                            {'body3'}
+                            {'body4'}
+                            {'body5'}
+                            {'body6'}
+                            {'body7'}
                         </Table1>
                     </Holder5>
                 </Container1>
@@ -71,10 +71,10 @@ export default class TableBlocksView extends Component {
                         </H34>
                         <Table2
                             tableClassName="oddRowHighlights">
-                            Head\
-                            Body1\
-                            Body2\
-                            Head2\
+                            {'Head'}
+                            {'Body1'}
+                            {'Body2'}
+                            {'Head2'}
                         </Table2>
                     </Holder5>
                 </Container1>

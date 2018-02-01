@@ -470,6 +470,7 @@ export class H15 extends Component {
         this.state = {
             color: props.color || 'black',
             colorRev: props.color,
+            stroke: props.stroke || '3px',
             textShadow: props.shadow,
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '7em',
@@ -513,7 +514,6 @@ export class H15 extends Component {
             heading: {
                 width: this.state.width,
                 height: this.state.height,
-                color: this.state.color,
                 textShadow: this.state.textShadow,
                 borderLeft: this.state.bLeft,
                 borderRight: this.state.bRight,
@@ -535,6 +535,9 @@ export class H15 extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
+                WebkitTextFillColor: 'transparent',
+                WebkitTextStrokeColor: this.state.color,
+                WebkitTextStrokeWidth: this.state.stroke,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -958,6 +961,7 @@ export class H25 extends Component {
             color: props.color || 'black',
             colorRev: props.color,
             textShadow: props.shadow,
+            stroke: props.stroke || '3px',
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '5.646em',
             smFontSize: props.smSize || '3em',
@@ -1000,7 +1004,6 @@ export class H25 extends Component {
             heading: {
                 width: this.state.width,
                 height: this.state.height,
-                color: this.state.color,
                 textShadow: this.state.textShadow,
                 borderLeft: this.state.bLeft,
                 borderRight: this.state.bRight,
@@ -1022,6 +1025,9 @@ export class H25 extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
+                WebkitTextFillColor: 'transparent',
+                WebkitTextStrokeColor: this.state.color,
+                WebkitTextStrokeWidth: this.state.stroke,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -1445,6 +1451,7 @@ export class H35 extends Component {
             color: props.color,
             colorRev: props.color,
             textShadow: props.shadow,
+            stroke: props.stroke || '3px',
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '3.489em',
             smFontSize: props.smSize || '2.5em',
@@ -1487,7 +1494,6 @@ export class H35 extends Component {
             heading: {
                 width: this.state.width,
                 height: this.state.height,
-                color: this.state.color,
                 textShadow: this.state.textShadow,
                 borderLeft: this.state.bLeft,
                 borderRight: this.state.bRight,
@@ -1509,6 +1515,9 @@ export class H35 extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
+                WebkitTextFillColor: 'transparent',
+                WebkitTextStrokeColor: this.state.color,
+                WebkitTextStrokeWidth: this.state.stroke,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -1714,7 +1723,7 @@ export class H42 extends Component {
                 heading: {
                     display: this.state.smDis,
                     color: this.state.color,
-                    fontSize:this.state.smFontSize
+                    fontSize: this.state.smFontSize
                 }
             },
             '@media screen and (min-width: 441px) and (max-width: 760px)': {
@@ -1933,6 +1942,7 @@ export class H45 extends Component {
             color: props.color,
             colorRev: props.color,
             textShadow: props.shadow,
+            stroke: props.stroke || '3px',
             fontFamily: props.font || 'sans-serif',
             fontSize: props.size || '3.489em',
             smFontSize: props.smSize || '2.5em',
@@ -1975,7 +1985,6 @@ export class H45 extends Component {
             heading: {
                 width: this.state.width,
                 height: this.state.height,
-                color: this.state.color,
                 textShadow: this.state.textShadow,
                 borderLeft: this.state.bLeft,
                 borderRight: this.state.bRight,
@@ -1997,6 +2006,9 @@ export class H45 extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
+                WebkitTextFillColor: 'transparent',
+                WebkitTextStrokeColor: this.state.color,
+                WebkitTextStrokeWidth: this.state.stroke,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -2536,11 +2548,11 @@ export class PLQ1 extends Component {
         }
     }
     componentDidMount() {
-        const CHILDS = React.Children.toArray(this.props.children.split('\\'))
+        const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
     }
     componentWillReceiveProps(newProps) {
-        const CHILDS = React.Children.toArray(newProps.children.split('\\'))
+        const CHILDS = React.Children.toArray(newProps.children)
         this.setState({ childs: CHILDS })
     }
     render() {
@@ -2573,11 +2585,11 @@ export class PLQ2 extends Component {
         }
     }
     componentDidMount() {
-        const CHILDS = React.Children.toArray(this.props.children.split('\\'))
+        const CHILDS = React.Children.toArray(this.props.children)
         this.setState({ childs: CHILDS })
     }
     componentWillReceiveProps(newProps) {
-        const CHILDS = React.Children.toArray(newProps.children.split('\\'))
+        const CHILDS = React.Children.toArray(newProps.children)
         this.setState({ childs: CHILDS })
     }
     render() {
@@ -3556,69 +3568,286 @@ export class Navbar1 extends Component {
             navClassName: props.navClassName,
             itemsClassName: props.itemsClassName,
             childs: '',
+            hams: '',
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            initialCount: props.count || '0',
+            hoverColor: props.hoverColor,
+            hamMenuDis: 'none',
+            hamShow: false,
+            hamSmDis: props.hamSmDis || 'flex',
+            hamMdDis: props.hamMdDis || 'none',
         }
+        this.toggle = this.toggle.bind(this)
+    }
+    toggle() {
+        console.log(this.state.hamShow)
+        return this.setState({ hamShow: !this.state.hamShow })
     }
     componentDidMount() {
-        const NAVBAR_NAVBAR_LI = {
-            display: 'flex',
-            flex: 1,
-            fontSize: this.state.fontSize,
-            fontWeight: this.state.fontWeight,
-            justifyContent: 'center',
-            margin: this.state.itemSpaceing,
-            background: this.state.itemBackground,
-            fontVariant: this.state.fontVariant,
-        };
-        const CHILDS = React.Children.toArray(this.props.children)
-        const NAVBARACTUAL = CHILDS.map((x, i) => {
-            return <li key={i} style={NAVBAR_NAVBAR_LI}>{x}</li>
+        const NAVBAR_NAVBAR_LI = StyleSheet.create({
+            navbar_navbar_li: {
+                display: this.state.display,
+                flex: 1,
+                fontSize: this.state.fontSize,
+                fontWeight: this.state.fontWeight,
+                justifyContent: 'center',
+                margin: this.state.itemSpaceing,
+                background: this.state.itemBackground,
+                fontVariant: this.state.fontVariant,
+            },
+            hoverStyle: {
+                color: this.state.hoverColor
+            },
+            '@media screen and (max-width: 440px)': {
+                navbar_navbar_li: {
+                    display: this.state.smdis,
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
+                navbar_navbar_li: {
+                    display: this.state.mddis,
+                }
+            },
         })
-        this.setState({ childs: NAVBARACTUAL })
+        const HAM_NAVBAR_LI = StyleSheet.create({
+            ham_navbar_li: {
+                display: this.state.hamShow === true ? 'none' : 'flex',
+                flex: 1,
+                fontSize: this.state.fontSize,
+                fontWeight: this.state.fontWeight,
+                justifyContent: 'center',
+                margin: this.state.itemSpaceing,
+                background: this.state.itemBackground,
+                fontVariant: this.state.fontVariant,
+            },
+            hoverStyle: {
+                color: this.state.hoverColor
+            },
+            '@media screen and (max-width: 440px)': {
+                ham_navbar_li: {
+                    display: this.state.hamShow === true ? 'none' : 'flex',
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
+                ham_navbar_li: {
+                    display: this.state.hamShow === true ? 'none' : 'flex',
+                }
+            },
+        })
+        const CHILDS = React.Children.toArray(this.props.children)
+        if (+this.state.initialCount !== 0) {
+            const LGDIS = []
+            const SMDIS = []
+            for (var x = 0; x < +this.state.initialCount; x += 1) {
+                LGDIS.push(CHILDS[x])
+            }
+            for (var i = +this.state.initialCount; i < CHILDS.length; i += 1) {
+                SMDIS.push(CHILDS[i])
+            }
+            const NAVBARLG = LGDIS.map((x, i) => {
+                return <li key={i} style={NAVBAR_NAVBAR_LI.navbar_navbar_li}>{x}</li>
+            })
+            const NAVBARSM = SMDIS.map((x, i) => {
+                return <li key={i} style={HAM_NAVBAR_LI.ham_navbar_li}>{x}</li>
+            })
+
+            this.setState({ childs: NAVBARLG, hams: NAVBARSM, smdis: 'none' })
+        } else {
+            const NAVBARACTUAL = CHILDS.map((x, i) => {
+                return <li key={i} style={NAVBAR_NAVBAR_LI.navbar_navbar_li}>{x}</li>
+            })
+            this.setState({
+                childs: NAVBARACTUAL,
+                hamMenuDis: 'none',
+                hamShow: false,
+                hamSmDis: 'none',
+                hamMdDis: 'none'
+            })
+        }
     }
     componentWillReceiveProps(newProps) {
-        const NAVBAR_NAVBAR_LI = {
-            display: 'flex',
-            flex: 1,
-            fontSize: this.state.fontSize,
-            fontWeight: this.state.fontWeight,
-            justifyContent: 'center',
-            margin: this.state.itemSpaceing,
-            background: this.state.itemBackground,
-            fontVariant: this.state.fontVariant,
-        };
-        const CHILDS = React.Children.toArray(newProps.children)
-        const NAVBARACTUAL = CHILDS.map((x, i) => {
-            return <li key={i} style={NAVBAR_NAVBAR_LI}>{x}</li>
+        const NAVBAR_NAVBAR_LI = StyleSheet.create({
+            navbar_navbar_li: {
+                display: this.state.display,
+                flex: 1,
+                fontSize: this.state.fontSize,
+                fontWeight: this.state.fontWeight,
+                justifyContent: 'center',
+                margin: this.state.itemSpaceing,
+                background: this.state.itemBackground,
+                fontVariant: this.state.fontVariant,
+            },
+            hoverStyle: {
+                color: this.state.hoverColor
+            },
+            '@media screen and (max-width: 440px)': {
+                navbar_navbar_li: {
+                    display: this.state.smdis,
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
+                navbar_navbar_li: {
+                    display: this.state.mddis,
+                }
+            },
         })
-        this.setState({ childs: NAVBARACTUAL })
+        const HAM_NAVBAR_LI = StyleSheet.create({
+            ham_navbar_li: {
+                display: this.state.hamShow === true ? 'none' : 'flex',
+                flex: 1,
+                fontSize: this.state.fontSize,
+                fontWeight: this.state.fontWeight,
+                justifyContent: 'center',
+                margin: this.state.itemSpaceing,
+                background: this.state.itemBackground,
+                fontVariant: this.state.fontVariant,
+            },
+            hoverStyle: {
+                color: this.state.hoverColor
+            },
+            '@media screen and (max-width: 440px)': {
+                ham_navbar_li: {
+                    display: this.state.hamShow === true ? 'none' : 'flex',
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
+                ham_navbar_li: {
+                    display: this.state.hamShow === true ? 'none' : 'flex',
+                }
+            },
+        })
+        const CHILDS = React.Children.toArray(this.props.children)
+        if (+this.state.initialCount !== 0) {
+            const LGDIS = []
+            const SMDIS = []
+            for (var x = 0; x < +this.state.initialCount; x += 1) {
+                LGDIS.push(CHILDS[x])
+            }
+            for (var i = +this.state.initialCount; i < CHILDS.length; i += 1) {
+                SMDIS.push(CHILDS[i])
+            }
+            const NAVBARLG = LGDIS.map((x, i) => {
+                return <li key={i} style={NAVBAR_NAVBAR_LI.navbar_navbar_li}>{x}</li>
+            })
+            const NAVBARSM = SMDIS.map((x, i) => {
+                return <li key={i} style={HAM_NAVBAR_LI.ham_navbar_li}>{x}</li>
+            })
+
+            this.setState({ childs: NAVBARLG, hams: NAVBARSM })
+        } else {
+            const NAVBARACTUAL = CHILDS.map((x, i) => {
+                return <li key={i} style={NAVBAR_NAVBAR_LI.navbar_navbar_li}>{x}</li>
+            })
+            this.setState({ childs: NAVBARACTUAL })
+        }
     }
+
     render() {
-        const NAVBAR = {
-            width: this.state.totalWidth,
-            height: this.state.totalHeight,
-            display: this.state.display,
-            flexDirection: 'column',
-            alignItems: this.state.alignItems,
-            margin: '0',
-            padding: this.state.padding,
-            background: this.state.mainBackground,
-            color: this.state.color,
-        };
-        const NAVBAR_NAVBAR = {
-            width: this.state.navBarWidth,
-            height: 'inherit',
+        const NAVBAR = StyleSheet.create({
+            navbar: {
+                width: this.state.totalWidth,
+                height: this.state.totalHeight,
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: this.state.alignItems,
+                margin: '0',
+                padding: this.state.padding,
+                background: this.state.mainBackground,
+                color: this.state.color,
+            },
+            '@media screen and (max-width: 440px)': {
+                navbar: {
+                    display: 'flex',
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
+                navbar: {
+                    display: 'flex',
+                }
+            },
+        })
+        const NAVBAR_NAVBAR = StyleSheet.create({
+            navbar_navbar: {
+                width: this.state.navBarWidth,
+                height: 'inherit',
+                display: this.state.display,
+                flexWrap: 'wrap',
+                alignItems: this.state.columnAlign,
+                fontFamily: this.state.fontFamily,
+                flexDirection: this.state.direction,
+            },
+            '@media screen and (max-width: 440px)': {
+                navbar_navbar: {
+                    display: this.state.smdis,
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
+                navbar_navbar: {
+                    display: this.state.mddis,
+                }
+            },
+        })
+        const HAMNAV = StyleSheet.create({
+            HAMNAV: {
+                width: '50px',
+                height: '50px',
+                display: this.state.hamMenuDis,
+                cursor: 'pointer',
+                flexDirection: 'column'
+
+            },
+            '@media screen and (max-width: 440px)': {
+                HAMNAV: {
+                    width: '50px',
+                    height: '50px',
+                    display: this.state.hamSmDis
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
+                HAMNAV: {
+                    width: '50px',
+                    height: '50px',
+                    display: this.state.hamMdDis
+                }
+            },
+        })
+        const HAMLINES = {
             display: 'flex',
-            flexWrap: 'wrap',
-            alignItems: this.state.columnAlign,
-            fontFamily: this.state.fontFamily,
-            flexDirection: this.state.direction,
-        };
+            width: '25px',
+            height: '5px',
+            backgroundColor: 'black',
+            margin: '3px 0',
+        }
+        const HAMESTNAV = StyleSheet.create({
+            hamestnav: {
+                display: 'none',
+                width: '100%',
+                flexDirection: 'column',
+            },
+            '@media screen and (max-width: 440px)': {
+                hamestnav: {
+                    display: this.state.hamShow === true ? 'none' : 'flex',
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
+                hamestnav: {
+                    display: this.state.hamShow === true ? 'none' : 'flex',
+                }
+            },
+        })
         return (
-            <nav style={NAVBAR} id={this.state.navid} className={this.state.navClassName}>
-                <ul style={NAVBAR_NAVBAR} id={this.state.navid} className={`${this.state.navClassName} navbar1-navbar socialness`}>
+            <nav style={NAVBAR.navbar} id={this.state.navid} className={this.state.navClassName}>
+                <ul style={NAVBAR_NAVBAR.navbar_navbar} id={this.state.navid} className={`${this.state.navClassName} navbar1-navbar socialness`}>
                     {this.state.childs}
+                </ul>
+                <div style={HAMNAV.HAMNAV} onClick={this.toggle}>
+                    <div style={HAMLINES} />
+                    <div style={HAMLINES} />
+                    <div style={HAMLINES} />
+                </div>
+                <ul style={HAMESTNAV.hamestnav}>
+                    {this.state.hams}
                 </ul>
             </nav>
         )
@@ -4093,7 +4322,7 @@ export class Brand5 extends Component {
         const CHILDS = React.Children.toArray(this.props.children)
         return (
             <section style={BRAND}>
-            {CHILDS}
+                {CHILDS}
             </section>
         )
     }
@@ -4110,7 +4339,7 @@ export class DropDownNav1 extends Component {
             borderRadius: props.borderRadius || '0 0 5px 5px',
             offset: props.offset,
             color: props.color || 'black',
-            textAlign: props.textAlign || 'center',
+            textAlign: props.textAlign || 'left',
             margin: props.margin,
             padding: props.padding,
             width: props.width,
@@ -4287,6 +4516,8 @@ export class DropDownNav5 extends Component {
         this.state = {
             display: 'none',
             background: props.background,
+            boxShadow: props.boxShadow || '1px 2px 2px black',
+            borderRadius: props.borderRadius || '0 5px 5px 0',
             offset: props.offset,
             margin: '',
             padding: props.padding,
@@ -4305,6 +4536,8 @@ export class DropDownNav5 extends Component {
     render() {
         const DROPDOWN = {
             position: 'absolute',
+            borderRadius: this.state.borderRadius,
+            boxShadow: this.state.boxShadow,
             display: this.state.display,
             margin: `0 0 0 ${this.state.offset}`,
             width: this.state.width,
@@ -5239,7 +5472,7 @@ export class Toggler3 extends Component {
         }
     }
     componentDidMount() {
-        const CHILDS = React.Children.toArray(this.props.children.split('\\'))
+        const CHILDS = React.Children.toArray(this.props.children)
         let labels = [];
         let text = [];
         for (var i = 0; i < CHILDS.length; i += 1) {
@@ -5255,7 +5488,7 @@ export class Toggler3 extends Component {
         })
     }
     componentWillReceiveProps(newProps) {
-        const CHILDS = React.Children.toArray(newProps.children.split('\\'))
+        const CHILDS = React.Children.toArray(newProps.children)
         let labels = [];
         let text = [];
         for (var i = 0; i < CHILDS.length; i += 1) {
@@ -5499,13 +5732,13 @@ export class NumberList1 extends Component {
     }
     componentDidMount() {
         let listItems = []
-        const CHILDS = React.Children.toArray(this.props.children.split('\\'))
+        const CHILDS = React.Children.toArray(this.props.children)
         listItems = CHILDS.map((x) => x)
         this.setState({ listItem: listItems })
     }
     componentWillReceiveProps(newProps) {
         let listItems = []
-        const CHILDS = React.Children.toArray(newProps.children.split('\\'))
+        const CHILDS = React.Children.toArray(newProps.children)
         listItems = CHILDS.map((x) => x)
         this.setState({ listItem: listItems })
     }
@@ -5641,13 +5874,13 @@ export class NumberList3 extends Component {
     }
     componentDidMount() {
         let listItems = []
-        const CHILDS = React.Children.toArray(this.props.children.split('\\'))
+        const CHILDS = React.Children.toArray(this.props.children)
         listItems = CHILDS.map((x) => x)
         this.setState({ listItem: listItems })
     }
     componentWillReceiveProps(newProps) {
         let listItems = []
-        const CHILDS = React.Children.toArray(newProps.children.split('\\'))
+        const CHILDS = React.Children.toArray(newProps.children)
         listItems = CHILDS.map((x) => x)
         this.setState({ listItem: listItems })
     }
@@ -5714,14 +5947,14 @@ export class BulletList1 extends Component {
     }
     componentDidMount() {
         let listItems = []
-        const CHILDS = React.Children.toArray(this.props.children.split('\\'))
+        const CHILDS = React.Children.toArray(this.props.children)
         listItems = CHILDS.map((x) => x)
         this.setState({ listItem: listItems })
     }
 
     componentWillReceiveProps(newProps) {
         let listItems = []
-        const CHILDS = React.Children.toArray(newProps.children.split('\\'))
+        const CHILDS = React.Children.toArray(newProps.children)
         listItems = CHILDS.map((x) => x)
         this.setState({ listItem: listItems })
     }
@@ -5781,13 +6014,13 @@ export class BulletList2 extends Component {
     }
     componentDidMount() {
         let listItems = []
-        const CHILDS = React.Children.toArray(this.props.children.split('\\'))
+        const CHILDS = React.Children.toArray(this.props.children)
         listItems = CHILDS.map((x) => x)
         this.setState({ listItem: listItems })
     }
     componentWillReceiveProps(newProps) {
         let listItems = []
-        const CHILDS = React.Children.toArray(newProps.children.split('\\'))
+        const CHILDS = React.Children.toArray(newProps.children)
         listItems = CHILDS.map((x) => x)
         this.setState({ listItem: listItems })
     }
@@ -5858,7 +6091,7 @@ export class Table1 extends Component {
         let rows = this.state.rows
         let HEADROW, HEAD, BODY
         let BODYROW = []
-        const CHILDS = React.Children.count(this.props.children) === 0 ? '' : React.Children.toArray(this.props.children.split('\\'))
+        const CHILDS = React.Children.count(this.props.children) === 0 ? '' : React.Children.toArray(this.props.children)
         if (CHILDS !== '') {
             childs = CHILDS.map((x, i, arr) => x);
             for (var b = 1; b <= this.state.columns; b += 1) {
@@ -5900,7 +6133,7 @@ export class Table1 extends Component {
         let rows = this.state.rows
         let HEADROW, HEAD, BODY
         let BODYROW = []
-        const CHILDS = React.Children.count(newProps.children) === 0 ? '' : React.Children.toArray(newProps.children.split('\\'))
+        const CHILDS = React.Children.count(newProps.children) === 0 ? '' : React.Children.toArray(newProps.children)
         if (CHILDS !== '') {
             childs = CHILDS.map((x, i, arr) => x);
             for (var b = 1; b <= this.state.columns; b += 1) {
@@ -5978,7 +6211,7 @@ export class Table2 extends Component {
         let rows = this.state.rows
         let HEAD, BODY
         let BODYROW = []
-        const CHILDS = React.Children.count(this.props.children) === 0 ? '' : React.Children.toArray(this.props.children.split('\\'));
+        const CHILDS = React.Children.count(this.props.children) === 0 ? '' : React.Children.toArray(this.props.children);
         if (CHILDS !== '') {
             tempBody = CHILDS.map((x, i, arr) => x);
 
@@ -6003,7 +6236,7 @@ export class Table2 extends Component {
         let rows = this.state.rows
         let HEAD, BODY
         let BODYROW = []
-        const CHILDS = React.Children.count(newProps.children) === 0 ? '' : React.Children.toArray(newProps.children.split('\\'));
+        const CHILDS = React.Children.count(newProps.children) === 0 ? '' : React.Children.toArray(newProps.children);
         if (CHILDS !== '') {
             tempBody = CHILDS.map((x, i, arr) => x);
 

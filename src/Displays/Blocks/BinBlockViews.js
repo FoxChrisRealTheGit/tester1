@@ -79,14 +79,14 @@ export default class BinBlocksView extends Component {
                         Toggler 3
                     </H34>
                     <Toggler3>
-                        title\
-                        some text\
-                        another title\
-                        moar text\
-                        last title\
-                        last text\
-                        not last\
-                        most last text
+                        {'title'}
+                        {'some text'}
+                        {'another title'}
+                        {'moar text'}
+                        {'last title'}
+                        {'last text'}
+                        {'not last'}
+                        {'most last text'}
                     </Toggler3>
                 </Holder5>
                 <HorizontalTestBlock1 />
