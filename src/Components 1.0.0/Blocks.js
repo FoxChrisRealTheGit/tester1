@@ -3407,13 +3407,26 @@ export class FlatButton1 extends Component {
             id: props.id,
             className: props.className,
             childs: '',
+            fontSize: props.fontSize || '20px',
+            color: props.color || '#000000',
+            hoverColor: props.hover || 'white',
+            hoverBackground: props.hoverBackground || '#000000',
+            revColor: props.color || '#000000',
+            background: props.background || '#ffffff',
+            revBackground: props.background || '#ffffff',
+            borderRadius: props.borderRadius || '28px',
+            border: props.border || 'solid #000000 2px',
+            padding: props.padding || '10px 20px 10px 20px',
+            margin: props.margin,
             animationIterationCount: props.aniCount,
-            animationTimingFunction: props.aniTime || 'linear',
+            animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
         }
+        this.changeHover = this.changeHover.bind(this);
+        this.changeHoverBack = this.changeHoverBack.bind(this);
     }
     componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
@@ -3423,11 +3436,33 @@ export class FlatButton1 extends Component {
         const CHILDS = React.Children.toArray(newProps.children)
         return this.setState({ childs: CHILDS })
     }
+    changeHover() {
+        let background = this.state.hoverBackground;
+        let color = this.state.hoverColor;
+        this.setState({ color: color, background: background })
+    }
+    changeHoverBack() {
+        let revbackground = this.state.revBackground;
+        let revcolor = this.state.revColor;
+        this.setState({ color: revcolor, background: revbackground })
+    }
 
     render() {
+        const BUTTONSTYLE = {
+            borderRadius: this.state.borderRadius,
+            color: this.state.color,
+            fontSize: this.state.fontSize,
+            background: this.state.background,
+            padding: this.state.padding,
+            border: this.state.border,
+        }
+
         return (
-            <button id={this.state.id} className={`flatButton1 ${this.state.className}`}
-                onClick={this.state.onClick}>{this.state[0]}</button>
+            <button style={BUTTONSTYLE} id={this.state.id} className={this.state.className}
+                onClick={this.state.onClick}
+                onMouseEnter={this.changeHover}
+                onMouseLeave={this.changeHoverBack}
+            >{this.state.childs[0]}</button>
         )
     }
 }
@@ -3581,8 +3616,7 @@ export class Navbar1 extends Component {
         this.toggle = this.toggle.bind(this)
     }
     toggle() {
-        console.log(this.state.hamShow)
-        return this.setState({ hamShow: !this.state.hamShow })
+        this.setState({ hamShow: !this.state.hamShow })
     }
     componentDidMount() {
         const NAVBAR_NAVBAR_LI = StyleSheet.create({
@@ -3832,7 +3866,7 @@ export class Navbar1 extends Component {
             },
             '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 hamestnav: {
-                    display: this.state.hamShow === true ? 'none' : 'flex',
+                    display: this.state.hamMdDis,
                 }
             },
         })
@@ -3884,74 +3918,124 @@ export class SubNavbar1 extends Component {
             listClassName: props.listClassName,
             itemsClassName: props.itemsClassName,
             childs: '',
-            smdis: props.smDis || 'flex',
+            smdis: props.smDis || 'none',
             mddis: props.mdDis || 'flex',
         }
     }
     componentDidMount() {
-        const SUBNAVBAR_NAVBAR_LI = {
-            display: 'flex',
-            flex: 1,
-            fontSize: this.state.fontSize,
-            fontWeight: this.state.fontWeight,
-            justifyContent: 'center',
-            margin: this.state.itemSpaceing,
-            background: this.state.itemBackground,
-            fontVariant: this.state.fontVariant,
-        };
+        const SUBNAVBAR_NAVBAR_LI = StyleSheet.create({
+            subnavbar_navbar_li: {
+                display: 'flex',
+                flex: 1,
+                fontSize: this.state.fontSize,
+                fontWeight: this.state.fontWeight,
+                justifyContent: 'center',
+                margin: this.state.itemSpaceing,
+                background: this.state.itemBackground,
+                fontVariant: this.state.fontVariant,
+            },
+            '@media screen and (max-width: 440px)': {
+                subnavbar_navbar_li: {
+                    display: this.state.smdis,
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
+                subnavbar_navbar_li: {
+                    display: this.state.mddis,
+                }
+            },
+        })
         const CHILDS = React.Children.toArray(this.props.children)
         const NAVBAR = CHILDS.map((x, i) => {
-            return <li key={i} style={SUBNAVBAR_NAVBAR_LI} id={this.state.itemsid} className={this.state.itemsClassName}>{x}</li>
+            return <li key={i} style={SUBNAVBAR_NAVBAR_LI.subnavbar_navbar_li} id={this.state.itemsid} className={this.state.itemsClassName}>{x}</li>
         })
         this.setState({ childs: NAVBAR })
     }
     componentWillReceiveProps(newProps) {
-        const SUBNAVBAR_NAVBAR_LI = {
-            display: 'flex',
-            flex: 1,
-            fontSize: this.state.fontSize,
-            fontWeight: this.state.fontWeight,
-            justifyContent: 'center',
-            margin: this.state.itemSpaceing,
-            background: this.state.itemBackground,
-            fontVariant: this.state.fontVariant,
-        };
+        const SUBNAVBAR_NAVBAR_LI = StyleSheet.create({
+            subnavbar_navbar_li: {
+                display: 'flex',
+                flex: 1,
+                fontSize: this.state.fontSize,
+                fontWeight: this.state.fontWeight,
+                justifyContent: 'center',
+                margin: this.state.itemSpaceing,
+                background: this.state.itemBackground,
+                fontVariant: this.state.fontVariant,
+            },
+            '@media screen and (max-width: 440px)': {
+                subnavbar_navbar_li: {
+                    display: this.state.smdis,
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
+                subnavbar_navbar_li: {
+                    display: this.state.mddis,
+                }
+            },
+        })
         const CHILDS = React.Children.toArray(newProps.children)
         const NAVBAR = CHILDS.map((x, i) => {
-            return <li key={i} style={SUBNAVBAR_NAVBAR_LI} id={this.state.itemsid} className={this.state.itemsClassName}>{x}</li>
+            return <li key={i} style={SUBNAVBAR_NAVBAR_LI.subnavbar_navbar_li} id={this.state.itemsid} className={this.state.itemsClassName}>{x}</li>
         })
         this.setState({ childs: NAVBAR })
     }
 
     render() {
-        const SUBNAVBAR = {
-            width: this.state.totalWidth,
-            height: this.state.totalHeight,
-            display: this.state.display,
-            flexDirection: 'column',
-            alignItems: this.state.alignItems,
-            margin: '0',
-            padding: this.state.padding,
-            background: this.state.mainBackground,
-            color: this.state.color,
-            top: '-1px',
-            position: "sticky",
-            zIndex: "200",
-        };
-        const SUBNAVBAR_NAVBAR = {
-            width: this.state.navBarWidth,
-            height: 'inherit',
-            display: 'flex',
-            flexWrap: 'wrap',
-            flex: 1,
-            alignItems: this.state.columnAlign,
-            fontFamily: this.state.fontFamily,
-            flexDirection: this.state.direction,
-        };
+        const SUBNAVBAR = StyleSheet.create({
+            subnavbar: {
+                width: this.state.totalWidth,
+                height: this.state.totalHeight,
+                display: this.state.display,
+                flexDirection: 'column',
+                alignItems: this.state.alignItems,
+                margin: '0',
+                padding: this.state.padding,
+                background: this.state.mainBackground,
+                color: this.state.color,
+                top: '-1px',
+                position: "sticky",
+                zIndex: "200",
+            },
+            '@media screen and (max-width: 440px)': {
+                subnavbar: {
+                    display: this.state.smdis,
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
+                subnavbar: {
+                    display: this.state.mddis,
+                    alignItems: 'center',
+                }
+            },
+        })
+        const SUBNAVBAR_NAVBAR = StyleSheet.create({
+            subnavbar_navbar: {
+                width: this.state.navBarWidth,
+                height: 'inherit',
+                display: 'flex',
+                flexWrap: 'wrap',
+                flex: 1,
+                alignItems: this.state.columnAlign,
+                fontFamily: this.state.fontFamily,
+                flexDirection: this.state.direction,
+            },
+            '@media screen and (max-width: 440px)': {
+                subnavbar_navbar: {
+                    display: this.state.smdis,
+                }
+            },
+            '@media screen and (min-width: 441px) and (max-width: 760px)': {
+                subnavbar_navbar: {
+                    display: this.state.mddis,
+                    width: '90%'
+                }
+            },
+        })
 
         return (
-            <nav style={SUBNAVBAR} id={this.state.navid} className={`subnavbar1 socialness ${this.state.navClassName}`}>
-                <ul style={SUBNAVBAR_NAVBAR} id={this.state.listid} className={`subnavbar1-navbar ${this.state.listClassName}`}>
+            <nav style={SUBNAVBAR.subnavbar} id={this.state.navid} className={`subnavbar1 socialness ${this.state.navClassName}`}>
+                <ul style={SUBNAVBAR_NAVBAR.subnavbar_navbar} id={this.state.listid} className={`subnavbar1-navbar ${this.state.listClassName}`}>
                     {this.state.childs}
                 </ul>
             </nav>
@@ -4136,13 +4220,19 @@ export class Brand1 extends Component {
         this.state = {
             display: props.display || 'flex',
             direction: props.direction || 'row',
+            size: props.size || 'tn',
             animationIterationCount: props.aniCount,
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            childs: [],
         }
+    }
+    componentDidMount(){
+        const CHILDS = React.Children.toArray(this.props.children)
+        return this.setState({ childs: CHILDS })
     }
     componentWillReceiveProps(newProps) {
         const CHILDS = React.Children.toArray(newProps.children)
@@ -4168,15 +4258,14 @@ export class Brand1 extends Component {
             animationDuration: this.state.animationDuration,
 
         }
-        const CHILDS = React.Children.toArray(this.props.children)
         return (
             <div style={BRAND}>
                 <SquareImage
-                    size='tn'>
-                    {CHILDS[0]}
+                    size={this.state.size}>
+                    {this.state.childs[0]}
                     logo
                     </SquareImage>
-                <p style={BRAND_NAME}>{CHILDS[1]}</p>
+                <p style={BRAND_NAME}>{this.state.childs[1]}</p>
             </div>
         )
     }
@@ -4186,13 +4275,19 @@ export class Brand2 extends Component {
         super(props);
         this.state = {
             display: props.display || 'flex',
+            size: props.size || 'exsm',
             animationIterationCount: props.aniCount,
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            childs: [],
         }
+    }
+    componentDidMount(){
+        const CHILDS = React.Children.toArray(this.props.children)
+        return this.setState({ childs: CHILDS })
     }
     componentWillReceiveProps(newProps) {
         const CHILDS = React.Children.toArray(newProps.children)
@@ -4207,12 +4302,11 @@ export class Brand2 extends Component {
             animationName: this.state.animationName,
             animationDuration: this.state.animationDuration,
         }
-        const CHILDS = React.Children.toArray(this.props.children)
         return (
             <section style={BRAND}>
                 <RectangleImage
-                    size='exsm'>
-                    {CHILDS[0]}
+                    size={this.state.size}>
+                    {this.state.childs[0]}
                     logo
                     </RectangleImage>
             </section>
@@ -4224,13 +4318,19 @@ export class Brand3 extends Component {
         super(props);
         this.state = {
             display: props.display || 'flex',
+            size: props.size || 'sm',
             animationIterationCount: props.aniCount,
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            childs: [],
         }
+    }
+    componentDidMount(){
+        const CHILDS = React.Children.toArray(this.props.children)
+        return this.setState({ childs: CHILDS })
     }
     componentWillReceiveProps(newProps) {
         const CHILDS = React.Children.toArray(newProps.children)
@@ -4245,11 +4345,11 @@ export class Brand3 extends Component {
             animationName: this.state.animationName,
             animationDuration: this.state.animationDuration,
         }
-        const CHILDS = React.Children.toArray(this.props.children)
         return (
             <section style={BRAND}>
-                <SquareImage>
-                    {CHILDS[0]}
+                <SquareImage
+                    size={this.state.size}>
+                    {this.state.childs[0]}
                     logo
                     </SquareImage>
             </section>
@@ -4261,13 +4361,19 @@ export class Brand4 extends Component {
         super(props);
         this.state = {
             display: props.display || 'flex',
+            size: props.size || 'lg',
             animationIterationCount: props.aniCount,
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            childs: [],
         }
+    }
+    componentDidMount(){
+        const CHILDS = React.Children.toArray(this.props.children)
+        return this.setState({ childs: CHILDS })
     }
     componentWillReceiveProps(newProps) {
         const CHILDS = React.Children.toArray(newProps.children)
@@ -4282,11 +4388,11 @@ export class Brand4 extends Component {
             animationName: this.state.animationName,
             animationDuration: this.state.animationDuration,
         }
-        const CHILDS = React.Children.toArray(this.props.children)
         return (
             <section style={BRAND}>
-                <RectangleImage>
-                    {CHILDS[0]}
+                <RectangleImage
+                    size={this.state.size}>
+                    {this.state.childs[0]}
                     logo
                     </RectangleImage>
             </section>
@@ -4304,7 +4410,12 @@ export class Brand5 extends Component {
             animationDuration: props.aniDur,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            childs: [],
         }
+    }
+    componentDidMount(){
+        const CHILDS = React.Children.toArray(this.props.children)
+        return this.setState({ childs: CHILDS })
     }
     componentWillReceiveProps(newProps) {
         const CHILDS = React.Children.toArray(newProps.children)
@@ -4319,10 +4430,9 @@ export class Brand5 extends Component {
             animationName: this.state.animationName,
             animationDuration: this.state.animationDuration,
         }
-        const CHILDS = React.Children.toArray(this.props.children)
         return (
             <section style={BRAND}>
-                {CHILDS}
+                {this.state.childs}
             </section>
         )
     }
@@ -4595,6 +4705,7 @@ export class ImageSlider1 extends Component {
             sliderClassName: props.sliderClassName,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            intervalTime: '',
         }
         this.slideLeft = this.slideLeft.bind(this);
         this.slideRight = this.slideRight.bind(this);
@@ -4607,7 +4718,7 @@ export class ImageSlider1 extends Component {
             slides.push(CHILDS[g])
         }
         const intervalTime = setInterval(this.slideRight, this.state.slideTimer)
-        this.setState({ sliderImages: slides, intervalTime })
+        this.setState({ sliderImages: slides, intervalTime: intervalTime })
     }
     componentWillReceiveProps(newProps) {
         let slides = [];
@@ -4620,7 +4731,7 @@ export class ImageSlider1 extends Component {
     }
 
     componentWillUnmount() {
-        clearInterval(this.state.intervalTime);
+        return clearInterval(this.state.intervalTime);
     }
     slideLeft() {
         if (this.state.cur === 0) {
@@ -4752,7 +4863,7 @@ export class ImageSlider2 extends Component {
     }
 
     componentWillUnmount() {
-        clearInterval(this.state.intervalTime);
+        return clearInterval(this.state.intervalTime);
     }
     slideLeft() {
         if (this.state.cur === 0) {
@@ -4867,7 +4978,7 @@ export class ImageSlider3 extends Component {
     }
 
     componentWillUnmount() {
-        clearInterval(this.state.intervalTime);
+        return clearInterval(this.state.intervalTime);
     }
     slideLeft() {
         if (this.state.cur === 0) {
@@ -4978,7 +5089,7 @@ export class ImageSlider4 extends Component {
     }
 
     componentWillUnmount() {
-        clearInterval(this.state.intervalTime);
+        return clearInterval(this.state.intervalTime);
     }
     slideLeft() {
         if (this.state.cur === 0) {
@@ -5089,7 +5200,7 @@ export class ImageSlider5 extends Component {
     }
 
     componentWillUnmount() {
-        clearInterval(this.state.intervalTime);
+        return clearInterval(this.state.intervalTime);
     }
     slideLeft() {
         if (this.state.cur === 0) {
@@ -5342,7 +5453,7 @@ export class Toggler2 extends Component {
             height: props.height,
             background: props.background || 'white',
             border: props.border,
-            bLEft: props.bLeft,
+            bLeft: props.bLeft,
             bRight: props.bRight,
             bTop: props.bTop,
             bBottom: props.bBottom,
@@ -5393,6 +5504,7 @@ export class Toggler2 extends Component {
         const FULLELEMENT = {
             display: 'flex',
             flexDirection: this.state.togglePlace,
+            margin: '20px 0 10px 0',
         }
         const TOGGLERBOX = {
             display: this.state.show ? 'flex' : 'none',
@@ -5430,6 +5542,7 @@ export class Toggler2 extends Component {
             borderTop: this.state.bBorderTop,
             borderBottom: this.state.bBorderBottom,
             border: this.state.bBorder,
+            margin: '-30px 0 0 0',
         }
         return (
             <div id={this.state.mainid} style={FULLELEMENT} className={this.state.mainClassName}>
@@ -5694,13 +5807,31 @@ export class Modul2 extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            childs: [],
+            show: false,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
         }
     }
+    componentDidMount() {
+        const CHILDS = React.Children.toArray(this.props.children)
+        this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
+    }
+    toggle() {
+        this.setState({
+            show: !this.state.show
+        })
+    }
     render() {
         return (
             <div>
+                <div>
+
+                </div>
             </div>
         )
     }

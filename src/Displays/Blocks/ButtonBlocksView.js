@@ -15,8 +15,15 @@ import {
     FloatingButton1,
     FloatingButton2
 } from '../../Components 1.0.0/Blocks';
+import {
+    Holder5
+} from '../../Components 1.0.0/Holders';
 
 export default class ButtonBlocksView extends Component {
+
+    consoleLog(){
+        return console.log('hello')
+    }
     render() {
         return (
             <section>
@@ -44,9 +51,11 @@ export default class ButtonBlocksView extends Component {
                 <HorizontalTestBlock1 />
                 <HorizontalTestBlock1 />
                 <Container1>
-                    <FlatButton1>
-                        Flat Button 1
+                    <Holder5>
+                        <FlatButton1>
+                            Flat Button 1
                     </FlatButton1>
+                    </Holder5>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>

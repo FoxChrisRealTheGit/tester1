@@ -35,16 +35,18 @@ export default class Container1 extends Component {
             mddis: props.mdDis || 'flex',
             smflexDir: props.smflexDir || 'column',
             mdflexDir: props.mdflexDir || 'column',
+            childs:[],
             //theme: props.theme,
         }
     }
-    // componentDidMount(){
-    //     //const theme = Themes(this.state.theme)
-    //     //console.log(theme)
-    //     this.setState({
-    //         background: theme.background
-    //     })
-    // }
+    componentDidMount() {
+        const CHILDS = React.Children.toArray(this.props.children)
+        return this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
+    }
     render() {
         const containerStyle = StyleSheet.create({
             containerstyles: {
@@ -91,10 +93,9 @@ export default class Container1 extends Component {
             },
 
         });
-        const childs = React.Children.toArray(this.props.children);
         return (
             <section style={containerStyle.containerstyles}>
-                <div style={block1style.block1styles}>{childs[0] || <div />}</div>
+                <div style={block1style.block1styles}>{this.state.childs[0] || <div />}</div>
             </section>
         )
     }
@@ -129,7 +130,16 @@ export class Container2 extends Component {
             mddis: props.mdDis || 'flex',
             smflexDir: props.smflexDir || 'column',
             mdflexDir: props.mdflexDir || 'column',
+            childs:[],
         }
+    }
+    componentDidMount() {
+        const CHILDS = React.Children.toArray(this.props.children)
+        return this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const containerStyle = StyleSheet.create({
@@ -199,11 +209,10 @@ export class Container2 extends Component {
             },
 
         });
-        const childs = React.Children.toArray(this.props.children);
         return (
             <section style={containerStyle.containerstyles}>
-                <div style={block1style.block1styles}>{childs[0] || <div />}</div>
-                <div style={block2style.block2styles}>{childs[1] || <div />}</div>
+                <div style={block1style.block1styles}>{this.state.childs[0] || <div />}</div>
+                <div style={block2style.block2styles}>{this.state.childs[1] || <div />}</div>
             </section>
         )
     }
@@ -243,7 +252,16 @@ export class Container3 extends Component {
             mddis: props.mdDis || 'flex',
             smflexDir: props.smflexDir || 'column',
             mdflexDir: props.mdflexDir || 'column',
+            childs:[],
         }
+    }
+    componentDidMount() {
+        const CHILDS = React.Children.toArray(this.props.children)
+        return this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const containerStyle = StyleSheet.create({
@@ -335,12 +353,11 @@ export class Container3 extends Component {
             },
 
         });
-        const childs = React.Children.toArray(this.props.children);
         return (
             <section style={containerStyle.containerstyles}>
-                <div style={block1style.block1styles}>{childs[0] || <div />}</div>
-                <div style={block2style.block2styles}>{childs[1] || <div />}</div>
-                <div style={block3style.block3styles}>{childs[2] || <div />}</div>
+                <div style={block1style.block1styles}>{this.state.childs[0] || <div />}</div>
+                <div style={block2style.block2styles}>{this.state.childs[1] || <div />}</div>
+                <div style={block3style.block3styles}>{this.state.childs[2] || <div />}</div>
             </section>
         )
     }
@@ -385,7 +402,16 @@ export class Container4 extends Component {
             mddis: props.mdDis || 'flex',
             smflexDir: props.smflexDir || 'column',
             mdflexDir: props.mdflexDir || 'column',
+            childs:[],
         }
+    }
+    componentDidMount() {
+        const CHILDS = React.Children.toArray(this.props.children)
+        return this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const containerStyle = StyleSheet.create({
@@ -499,13 +525,12 @@ export class Container4 extends Component {
             },
 
         });
-        const childs = React.Children.toArray(this.props.children);
         return (
             <section style={containerStyle.containerstyles}>
-                <div style={block1style.block1styles}>{childs[0] || <div />}</div>
-                <div style={block2style.block2styles}>{childs[1] || <div />}</div>
-                <div style={block3style.block3styles}>{childs[2] || <div />}</div>
-                <div style={block4style.block4styles}>{childs[3] || <div />}</div>
+                <div style={block1style.block1styles}>{this.state.childs[0] || <div />}</div>
+                <div style={block2style.block2styles}>{this.state.childs[1] || <div />}</div>
+                <div style={block3style.block3styles}>{this.state.childs[2] || <div />}</div>
+                <div style={block4style.block4styles}>{this.state.childs[3] || <div />}</div>
             </section>
         )
     }
@@ -555,7 +580,16 @@ export class Container5 extends Component {
             mddis: props.mdDis || 'flex',
             smflexDir: props.smflexDir || 'column',
             mdflexDir: props.mdflexDir || 'column',
+            childs: [],
         }
+    }
+    componentDidMount() {
+        const CHILDS = React.Children.toArray(this.props.children)
+        return this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(newProps) {
+        const CHILDS = React.Children.toArray(newProps.children)
+        return this.setState({ childs: CHILDS })
     }
     render() {
         const containerStyle = StyleSheet.create({
@@ -691,14 +725,13 @@ export class Container5 extends Component {
             },
 
         });
-        const childs = React.Children.toArray(this.props.children);
         return (
             <section style={containerStyle.containerstyles}>
-                <div style={block1style.block1styles}>{childs[0] || <div />}</div>
-                <div style={block2style.block2styles}>{childs[1] || <div />}</div>
-                <div style={block3style.block3styles}>{childs[2] || <div />}</div>
-                <div style={block4style.block4styles}>{childs[3] || <div />}</div>
-                <div style={block5style.block5styles}>{childs[4] || <div />}</div>
+                <div style={block1style.block1styles}>{this.state.childs[0] || <div />}</div>
+                <div style={block2style.block2styles}>{this.state.childs[1] || <div />}</div>
+                <div style={block3style.block3styles}>{this.state.childs[2] || <div />}</div>
+                <div style={block4style.block4styles}>{this.state.childs[3] || <div />}</div>
+                <div style={block5style.block5styles}>{this.state.childs[4] || <div />}</div>
             </section>
         )
     }
