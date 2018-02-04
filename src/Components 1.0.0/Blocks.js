@@ -7,6 +7,7 @@ import StyleSheet from 'nestingstyles';
 
 //non temporary css sheet
 import '../Components 1.0.0/SuperStyleSheet.css';
+import '../Components 1.0.0/animations.css';
 //import Themes from './Themes';
 /* Blocks */
 /*
@@ -100,6 +101,8 @@ export class H11 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             //theme: props.theme || 'inherit',   
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
@@ -146,7 +149,8 @@ export class H11 extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
-
+                transformOrigin: this.state.transformOrigin,
+                animationFillMode: this.state.animationFillMode,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -204,6 +208,8 @@ export class H12 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             hoverColor: props.hovColor,
@@ -244,6 +250,8 @@ export class H12 extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
+                transformOrigin: this.state.transformOrigin,
+                animationFillMode: this.state.animationFillMode,
             },
             hoverStyle: {
                 color: this.state.hoverColor,
@@ -301,6 +309,8 @@ export class H13 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             hoverColor: props.hovColor,
@@ -341,6 +351,8 @@ export class H13 extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
+                transformOrigin: this.state.transformOrigin,
+                animationFillMode: this.state.animationFillMode,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -398,6 +410,8 @@ export class H14 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             hoverColor: props.hovColor || 'lightgray',
@@ -438,6 +452,8 @@ export class H14 extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
+                transformOrigin: this.state.transformOrigin,
+                animationFillMode: this.state.animationFillMode,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -496,6 +512,8 @@ export class H15 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             hoverColor: props.hovColor,
@@ -535,6 +553,8 @@ export class H15 extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
+                transformOrigin: this.state.transformOrigin,
+                animationFillMode: this.state.animationFillMode,
                 WebkitTextFillColor: 'transparent',
                 WebkitTextStrokeColor: this.state.color,
                 WebkitTextStrokeWidth: this.state.stroke,
@@ -597,6 +617,8 @@ export class H21 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             hoverColor: props.hovColor,
@@ -637,6 +659,8 @@ export class H21 extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
+                transformOrigin: this.state.transformOrigin,
+                animationFillMode: this.state.animationFillMode,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -694,6 +718,8 @@ export class H22 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             hoverColor: props.hovColor,
@@ -734,6 +760,8 @@ export class H22 extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
+                transformOrigin: this.state.transformOrigin,
+                animationFillMode: this.state.animationFillMode,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -791,6 +819,8 @@ export class H23 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             hoverColor: props.hovColor,
@@ -831,6 +861,8 @@ export class H23 extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
+                transformOrigin: this.state.transformOrigin,
+                animationFillMode: this.state.animationFillMode,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -885,9 +917,11 @@ export class H24 extends Component {
             className: props.className,
             childs: '',
             animationIterationCount: props.aniCount,
-            animationTimingFunction: props.aniTime || 'linear',
+            animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             hoverColor: props.hovColor || 'lightgray',
@@ -928,6 +962,8 @@ export class H24 extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
+                transformOrigin: this.state.transformOrigin,
+                animationFillMode: this.state.animationFillMode,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -986,6 +1022,8 @@ export class H25 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             hoverColor: props.hovColor,
@@ -1025,6 +1063,8 @@ export class H25 extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
+                transformOrigin: this.state.transformOrigin,
+                animationFillMode: this.state.animationFillMode,
                 WebkitTextFillColor: 'transparent',
                 WebkitTextStrokeColor: this.state.color,
                 WebkitTextStrokeWidth: this.state.stroke,
@@ -1087,6 +1127,8 @@ export class H31 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             hoverColor: props.hovColor,
@@ -1127,6 +1169,8 @@ export class H31 extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
+                transformOrigin: this.state.transformOrigin,
+                animationFillMode: this.state.animationFillMode,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -1184,6 +1228,8 @@ export class H32 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             hoverColor: props.hovColor,
@@ -1224,6 +1270,8 @@ export class H32 extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
+                transformOrigin: this.state.transformOrigin,
+                animationFillMode: this.state.animationFillMode,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -1281,6 +1329,8 @@ export class H33 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             hoverColor: props.hovColor,
@@ -1321,6 +1371,8 @@ export class H33 extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
+                transformOrigin: this.state.transformOrigin,
+                animationFillMode: this.state.animationFillMode,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -1378,6 +1430,8 @@ export class H34 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             hoverColor: props.hovColor || 'lightgray',
@@ -1418,6 +1472,8 @@ export class H34 extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
+                transformOrigin: this.state.transformOrigin,
+                animationFillMode: this.state.animationFillMode,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -1476,6 +1532,8 @@ export class H35 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             hoverColor: props.hovColor,
@@ -1515,6 +1573,8 @@ export class H35 extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
+                transformOrigin: this.state.transformOrigin,
+                animationFillMode: this.state.animationFillMode,
                 WebkitTextFillColor: 'transparent',
                 WebkitTextStrokeColor: this.state.color,
                 WebkitTextStrokeWidth: this.state.stroke,
@@ -1577,6 +1637,8 @@ export class H41 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             hoverColor: props.hovColor,
@@ -1617,7 +1679,8 @@ export class H41 extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
-
+                transformOrigin: this.state.transformOrigin,
+                animationFillMode: this.state.animationFillMode,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -1675,6 +1738,8 @@ export class H42 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             hoverColor: props.hovColor,
@@ -1715,6 +1780,8 @@ export class H42 extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
+                transformOrigin: this.state.transformOrigin,
+                animationFillMode: this.state.animationFillMode,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -1772,6 +1839,8 @@ export class H43 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             hoverColor: props.hovColor,
@@ -1812,6 +1881,8 @@ export class H43 extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
+                transformOrigin: this.state.transformOrigin,
+                animationFillMode: this.state.animationFillMode,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -1869,6 +1940,8 @@ export class H44 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             hoverColor: props.hovColor,
@@ -1909,6 +1982,8 @@ export class H44 extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
+                transformOrigin: this.state.transformOrigin,
+                animationFillMode: this.state.animationFillMode,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -1967,6 +2042,8 @@ export class H45 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             hoverColor: props.hovColor,
@@ -2006,6 +2083,8 @@ export class H45 extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
+                transformOrigin: this.state.transformOrigin,
+                animationFillMode: this.state.animationFillMode,
                 WebkitTextFillColor: 'transparent',
                 WebkitTextStrokeColor: this.state.color,
                 WebkitTextStrokeWidth: this.state.stroke,
@@ -2071,6 +2150,8 @@ export class P1 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             hoverColor: props.hovColor,
@@ -2110,6 +2191,8 @@ export class P1 extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
+                transformOrigin: this.state.transformOrigin,
+                animationFillMode: this.state.animationFillMode,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -2168,6 +2251,8 @@ export class P2 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             hoverColor: props.hovColor,
@@ -2207,6 +2292,8 @@ export class P2 extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
+                transformOrigin: this.state.transformOrigin,
+                animationFillMode: this.state.animationFillMode,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -2265,6 +2352,8 @@ export class P3 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             hoverColor: props.hovColor,
@@ -2304,6 +2393,8 @@ export class P3 extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
+                transformOrigin: this.state.transformOrigin,
+                animationFillMode: this.state.animationFillMode,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -2362,6 +2453,8 @@ export class P4 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             hoverColor: props.hovColor || 'lightgray',
@@ -2401,6 +2494,8 @@ export class P4 extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
+                transformOrigin: this.state.transformOrigin,
+                animationFillMode: this.state.animationFillMode,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -2460,6 +2555,8 @@ export class P5 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             hoverColor: props.hovColor,
@@ -2499,6 +2596,8 @@ export class P5 extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
+                transformOrigin: this.state.transformOrigin,
+                animationFillMode: this.state.animationFillMode,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -2543,6 +2642,8 @@ export class PLQ1 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
         }
@@ -2580,6 +2681,8 @@ export class PLQ2 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
         }
@@ -2617,6 +2720,8 @@ export class CircleImage extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             hoverShadow: props.hovShadow,
@@ -2642,6 +2747,8 @@ export class CircleImage extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
+                transformOrigin: this.state.transformOrigin,
+                animationFillMode: this.state.animationFillMode,
             },
             hoverStyle: {
                 color: this.state.hoverShadow
@@ -2680,6 +2787,8 @@ export class RoundedImage extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             hoverShadow: props.hovShadow,
@@ -2701,6 +2810,8 @@ export class RoundedImage extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
+                transformOrigin: this.state.transformOrigin,
+                animationFillMode: this.state.animationFillMode,
             },
             hoverStyle: {
                 color: this.state.hoverShadow
@@ -2738,6 +2849,8 @@ export class OvalImage extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             hoverShadow: props.hovShadow,
@@ -2759,6 +2872,8 @@ export class OvalImage extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
+                transformOrigin: this.state.transformOrigin,
+                animationFillMode: this.state.animationFillMode,
             },
             hoverStyle: {
                 color: this.state.hoverShadow
@@ -2795,6 +2910,8 @@ export class SquareImage extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             hoverShadow: props.hovShadow,
@@ -2815,6 +2932,8 @@ export class SquareImage extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
+                transformOrigin: this.state.transformOrigin,
+                animationFillMode: this.state.animationFillMode,
             },
             hoverStyle: {
                 color: this.state.hoverShadow
@@ -2852,6 +2971,8 @@ export class RoundedRectangleImage extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             hoverShadow: props.hovShadow,
@@ -2874,6 +2995,8 @@ export class RoundedRectangleImage extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
+                transformOrigin: this.state.transformOrigin,
+                animationFillMode: this.state.animationFillMode,
             },
             hoverStyle: {
                 color: this.state.hoverShadow
@@ -2911,6 +3034,8 @@ export class RectangleImage extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             hoverShadow: props.hovShadow,
@@ -2933,6 +3058,8 @@ export class RectangleImage extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
+                transformOrigin: this.state.transformOrigin,
+                animationFillMode: this.state.animationFillMode,
             },
             hoverStyle: {
                 color: this.state.hoverShadow
@@ -2970,6 +3097,8 @@ export class TallRoundedRectangleImage extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             hoverShadow: props.hovShadow,
@@ -2991,6 +3120,8 @@ export class TallRoundedRectangleImage extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
+                transformOrigin: this.state.transformOrigin,
+                animationFillMode: this.state.animationFillMode,
             },
             hoverStyle: {
                 color: this.state.hoverShadow
@@ -3027,6 +3158,8 @@ export class TallRectangleImage extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             hoverShadow: props.hovShadow,
@@ -3048,6 +3181,8 @@ export class TallRectangleImage extends Component {
                 animationTimingFunction: this.state.animationTimingFunction,
                 animationName: this.state.animationName,
                 animationDuration: this.state.animationDuration,
+                transformOrigin: this.state.transformOrigin,
+                animationFillMode: this.state.animationFillMode,
             },
             hoverStyle: {
                 color: this.state.hoverShadow
@@ -3422,6 +3557,8 @@ export class FlatButton1 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
         }
@@ -3455,6 +3592,13 @@ export class FlatButton1 extends Component {
             background: this.state.background,
             padding: this.state.padding,
             border: this.state.border,
+            cursor: 'pointer',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
+            transformOrigin: this.state.transformOrigin,
+            animationFillMode: this.state.animationFillMode,
         }
 
         return (
@@ -3475,9 +3619,11 @@ export class FlatButton2 extends Component {
             className: props.className,
             childs: '',
             animationIterationCount: props.aniCount,
-            animationTimingFunction: props.aniTime || 'linear',
+            animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
         }
@@ -3491,6 +3637,21 @@ export class FlatButton2 extends Component {
         return this.setState({ childs: CHILDS })
     }
     render() {
+        const BUTTONSTYLE = {
+            borderRadius: this.state.borderRadius,
+            color: this.state.color,
+            fontSize: this.state.fontSize,
+            background: this.state.background,
+            padding: this.state.padding,
+            border: this.state.border,
+            cursor: 'pointer',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
+            transformOrigin: this.state.transformOrigin,
+            animationFillMode: this.state.animationFillMode,
+        }
         return (
             <button id={this.state.id} className={`flatButton2 ${this.state.className}`}>{this.state.childs[0]}</button>
         )
@@ -3510,9 +3671,11 @@ export class RaisedButton1 extends Component {
             className: props.className,
             childs: '',
             animationIterationCount: props.aniCount,
-            animationTimingFunction: props.aniTime || 'linear',
+            animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
         }
@@ -3527,6 +3690,12 @@ export class RaisedButton1 extends Component {
     }
     render() {
         const BUTTONSTYLE = {
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
+            transformOrigin: this.state.transformOrigin,
+            animationFillMode: this.state.animationFillMode,
             height: this.state.height,
             width: this.state.width,
             fontFamily: this.state.fontFamily,
@@ -4225,12 +4394,14 @@ export class Brand1 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             childs: [],
         }
     }
-    componentDidMount(){
+    componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         return this.setState({ childs: CHILDS })
     }
@@ -4248,6 +4419,8 @@ export class Brand1 extends Component {
             animationTimingFunction: this.state.animationTimingFunction,
             animationName: this.state.animationName,
             animationDuration: this.state.animationDuration,
+            transformOrigin: this.state.transformOrigin,
+            animationFillMode: this.state.animationFillMode,
         }
         const BRAND_NAME = {
             display: 'flex',
@@ -4256,6 +4429,8 @@ export class Brand1 extends Component {
             animationTimingFunction: this.state.animationTimingFunction,
             animationName: this.state.animationName,
             animationDuration: this.state.animationDuration,
+            transformOrigin: this.state.transformOrigin,
+            animationFillMode: this.state.animationFillMode,
 
         }
         return (
@@ -4280,12 +4455,14 @@ export class Brand2 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             childs: [],
         }
     }
-    componentDidMount(){
+    componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         return this.setState({ childs: CHILDS })
     }
@@ -4301,6 +4478,8 @@ export class Brand2 extends Component {
             animationTimingFunction: this.state.animationTimingFunction,
             animationName: this.state.animationName,
             animationDuration: this.state.animationDuration,
+            transformOrigin: this.state.transformOrigin,
+            animationFillMode: this.state.animationFillMode,
         }
         return (
             <section style={BRAND}>
@@ -4323,12 +4502,14 @@ export class Brand3 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             childs: [],
         }
     }
-    componentDidMount(){
+    componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         return this.setState({ childs: CHILDS })
     }
@@ -4344,6 +4525,8 @@ export class Brand3 extends Component {
             animationTimingFunction: this.state.animationTimingFunction,
             animationName: this.state.animationName,
             animationDuration: this.state.animationDuration,
+            transformOrigin: this.state.transformOrigin,
+            animationFillMode: this.state.animationFillMode,
         }
         return (
             <section style={BRAND}>
@@ -4366,12 +4549,14 @@ export class Brand4 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             childs: [],
         }
     }
-    componentDidMount(){
+    componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         return this.setState({ childs: CHILDS })
     }
@@ -4387,6 +4572,8 @@ export class Brand4 extends Component {
             animationTimingFunction: this.state.animationTimingFunction,
             animationName: this.state.animationName,
             animationDuration: this.state.animationDuration,
+            transformOrigin: this.state.transformOrigin,
+            animationFillMode: this.state.animationFillMode,
         }
         return (
             <section style={BRAND}>
@@ -4408,12 +4595,14 @@ export class Brand5 extends Component {
             animationTimingFunction: props.aniTime,
             animationName: props.aniName,
             animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             childs: [],
         }
     }
-    componentDidMount(){
+    componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         return this.setState({ childs: CHILDS })
     }
@@ -4429,6 +4618,8 @@ export class Brand5 extends Component {
             animationTimingFunction: this.state.animationTimingFunction,
             animationName: this.state.animationName,
             animationDuration: this.state.animationDuration,
+            transformOrigin: this.state.transformOrigin,
+            animationFillMode: this.state.animationFillMode,
         }
         return (
             <section style={BRAND}>
@@ -4459,6 +4650,12 @@ export class DropDownNav1 extends Component {
             mainClassName: props.mainClassName,
             titleClassName: props.titleClassName,
             itemsClassName: props.itemsClassName,
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             childs: [],
             first: [],
             smdis: props.smDis || 'flex',
@@ -4515,6 +4712,12 @@ export class DropDownNav1 extends Component {
             background: this.state.background,
             zIndex: "1000",
             color: this.state.color,
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
+            transformOrigin: this.state.transformOrigin,
+            animationFillMode: this.state.animationFillMode,
         }
 
         const HASCHILDS = {
@@ -4562,6 +4765,12 @@ export class DropDownNav3 extends Component {
             mainClassName: props.mainClassName,
             titleClassName: props.titleClassName,
             itemsClassName: props.itemsClassName,
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
         }
@@ -4576,6 +4785,12 @@ export class DropDownNav3 extends Component {
             textAlign: 'center',
             flex: 1,
             background: this.state.background,
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
+            transformOrigin: this.state.transformOrigin,
+            animationFillMode: this.state.animationFillMode,
         }
         // const DropDown_NavBar_Li = {
 
@@ -4638,6 +4853,12 @@ export class DropDownNav5 extends Component {
             mainClassName: props.mainClassName,
             titleClassName: props.titleClassName,
             itemsClassName: props.itemsClassName,
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
         }
@@ -4655,6 +4876,12 @@ export class DropDownNav5 extends Component {
             textAlign: 'center',
             flex: 1,
             background: this.state.background,
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
+            transformOrigin: this.state.transformOrigin,
+            animationFillMode: this.state.animationFillMode,
         }
         const DropDown_NavBar_Li = {
 
@@ -4703,6 +4930,12 @@ export class ImageSlider1 extends Component {
             leftArrowClassName: props.leftArrowClassName,
             rightArrowClassName: props.rightArrowClassName,
             sliderClassName: props.sliderClassName,
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
             intervalTime: '',
@@ -4836,6 +5069,12 @@ export class ImageSlider2 extends Component {
             sliderid: props.sliderid,
             mainClassName: props.mainClassName,
             sliderClassName: props.sliderClassName,
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
         }
@@ -4951,6 +5190,12 @@ export class ImageSlider3 extends Component {
             leftArrowClassName: props.leftArrowClassName,
             rightArrowClassName: props.rightArrowClassName,
             sliderClassName: props.sliderClassName,
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
         }
@@ -5062,6 +5307,12 @@ export class ImageSlider4 extends Component {
             sliderid: props.sliderid,
             mainClassName: props.mainClassName,
             sliderClassName: props.sliderClassName,
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
         }
@@ -5173,6 +5424,12 @@ export class ImageSlider5 extends Component {
             sliderid: props.sliderid,
             mainClassName: props.mainClassName,
             sliderClassName: props.sliderClassName,
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
         }
@@ -5275,18 +5532,33 @@ export class HorizontalTicker extends Component {
         super(props);
         this.state = {
             slide1: [],
+            animationIterationCount: props.aniCount || 'infinite',
+            animationTimingFunction: props.aniTime || 'linear',
+            animationName: props.aniName || 'horizontal-ticker',
+            animationDuration: props.aniDur || '25s',
+            transformOrigin: props.transformOrigin,
             smdis: props.smDis,
             mddis: props.mdDis,
         }
     }
     componentDidMount() {
         let t_item = [];
+        const TICKER_ITEM = {
+            display: 'inline',
+            padding: '0 2em',
+
+        }
         const CHILDS = React.Children.toArray(this.props.children)
         for (var g = 0; g < CHILDS.length; g += 1) {
             t_item.push(CHILDS[g])
         }
+        const TICKERITEM = t_item.map((x, i) => {
+            return (
+                <div key={i} style={TICKER_ITEM} >{x}</div>
+            )
+        })
         this.setState({
-            slide1: t_item
+            slide1: TICKERITEM
         })
     }
     render() {
@@ -5296,24 +5568,27 @@ export class HorizontalTicker extends Component {
             paddingLeft: '100%',
             display: 'flex',
         }
-        const TICKER_ITEM = {
-            display: 'flex',
-            padding: '0 2em',
 
+        const horizontal_ticker = {
+            Display: 'relative',
+            lineHeight: '4rem',
+            whiteSpace: 'nowrap',
+            paddingRight: '100%',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
+            transformOrigin: this.state.transformOrigin,
         }
         // const HORIZONTALTICKER2 = {
         //     paddingLeft: '50%',
         // }
         // const CHILDS = React.Children.toArray(this.props.children)
-        const TICKERITEM = this.state.slide1.map((x, i) => {
-            return (
-                <div key={i} style={TICKER_ITEM} >{x}</div>
-            )
-        })
+
         return (
             <div style={TICKERWRAPPER}>
-                <div className="horizontal-ticker">
-                    {TICKERITEM}
+                <div style={horizontal_ticker}>
+                    {this.state.slide1}
                 </div>
             </div>
         )
@@ -5324,8 +5599,15 @@ export class SeeSawTicker extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            slide1: [],
             smdis: props.smDis,
             mddis: props.mdDis,
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
         }
     }
     render() {
@@ -5376,6 +5658,12 @@ export class Toggler1 extends Component {
             mainClassName: props.mainClassName,
             toggleClassName: props.toggleClassName,
             boxShadow: props.shadow || '1px 2px 2px black',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             childs: [],
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
@@ -5413,6 +5701,12 @@ export class Toggler1 extends Component {
             left: this.state.left,
             top: this.state.top,
             zIndex: 2000,
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
+            transformOrigin: this.state.transformOrigin,
+            animationFillMode: this.state.animationFillMode,
         }
         const CLICKBOX = {
             cursor: 'pointer',
@@ -5464,7 +5758,7 @@ export class Toggler2 extends Component {
             bFontVariant: props.bFontVariant,
             bFontWeight: props.bFontWeight,
             bTextShadow: props.bTextShadow,
-            bMargin: props.bMargin,
+            bMargin: props.bMargin || '-30px 0 0 0',
             bPadding: props.bPadding,
             bBorderLeft: props.bBorderLeft,
             bBorderRight: props.bBorderRight,
@@ -5481,6 +5775,12 @@ export class Toggler2 extends Component {
             titleClassName: props.titleClassName,
             mainClassName: props.mainClassName,
             toggleClassName: props.toggleClassName,
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             childs: [],
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
@@ -5523,6 +5823,12 @@ export class Toggler2 extends Component {
             boxShadow: this.state.boxShadow,
             overflow: 'hidden',
             zIndex: 2000,
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
+            transformOrigin: this.state.transformOrigin,
+            animationFillMode: this.state.animationFillMode,
         }
         const CLICKBOX = {
             display: 'flex',
@@ -5542,7 +5848,6 @@ export class Toggler2 extends Component {
             borderTop: this.state.bBorderTop,
             borderBottom: this.state.bBorderBottom,
             border: this.state.bBorder,
-            margin: '-30px 0 0 0',
         }
         return (
             <div id={this.state.mainid} style={FULLELEMENT} className={this.state.mainClassName}>
@@ -5568,7 +5873,6 @@ export class Toggler3 extends Component {
             background: props.background || 'white',
             buttonText: props.buttonText || 'toggler2',
             position: props.position,
-
             textvertical: props.textVertical || 'center',
             texthorizontal: props.textHorizontal || 'center',
             textheight: props.textHeight || '200px',
@@ -5580,6 +5884,12 @@ export class Toggler3 extends Component {
             panelClassName: props.panelClassName,
             mainClassName: props.mainClassName,
             toggleClassName: props.toggleClassName,
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
         }
@@ -5679,6 +5989,12 @@ export class Toggler4 extends Component {
         this.state = {
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
         }
     }
     render() {
@@ -5726,6 +6042,12 @@ export class Modul1 extends Component {
             titleClassName: props.titleClassName,
             boxClassName: props.boxClassName,
             backClassName: props.backClassName,
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
             childs: [],
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
@@ -5761,6 +6083,12 @@ export class Modul1 extends Component {
             justifyContent: this.state.boxJustify,
             boxShadow: this.state.boxShadow,
             zIndex: '2000',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
+            transformOrigin: this.state.transformOrigin,
+            animationFillMode: this.state.animationFillMode,
         }
         const CLICKBOX = {
             display: 'flex',
@@ -5811,6 +6139,12 @@ export class Modul2 extends Component {
             show: false,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
         }
     }
     componentDidMount() {
@@ -5859,6 +6193,12 @@ export class NumberList1 extends Component {
             className: props.className,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
         }
     }
     componentDidMount() {
@@ -5917,6 +6257,12 @@ export class NumberList2 extends Component {
             className: props.className,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
 
         }
     }
@@ -6001,6 +6347,12 @@ export class NumberList3 extends Component {
             className: props.className,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
         }
     }
     componentDidMount() {
@@ -6074,6 +6426,12 @@ export class BulletList1 extends Component {
             className: props.className,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
         }
     }
     componentDidMount() {
@@ -6141,6 +6499,12 @@ export class BulletList2 extends Component {
             className: props.className,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
         }
     }
     componentDidMount() {
@@ -6213,6 +6577,12 @@ export class Table1 extends Component {
             tableClassName: props.tableClassName,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
         }
     }
     componentDidMount() {
@@ -6335,6 +6705,12 @@ export class Table2 extends Component {
             tableClassName: props.tableClassName,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
         }
     }
     componentDidMount() {
@@ -6413,6 +6789,12 @@ export class Table3 extends Component {
             className: props.className,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
 
         }
     }
@@ -6436,6 +6818,12 @@ export class PieChart1 extends Component {
             className: props.className,
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            animationIterationCount: props.aniCount,
+            animationTimingFunction: props.aniTime,
+            animationName: props.aniName,
+            animationDuration: props.aniDur,
+            transformOrigin: props.transformOrigin,
+            animationFillMode: props.aniFillMode,
         }
     }
     render() {
