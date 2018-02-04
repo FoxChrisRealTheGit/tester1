@@ -36,7 +36,7 @@ export default class CaroselsTickersView extends Component {
                 <HorizontalTestBlock1 />
                 <Container1>
                     <H11>
-                        Carosels & Tickers
+                        carousels & Tickers
                     </H11>
                 </Container1>
                 <SubNavbar1
@@ -46,7 +46,7 @@ export default class CaroselsTickersView extends Component {
                     <Link to="/blocks/imageviews">images</Link>
                     <Link to="/blocks/navbarviews">navbars</Link>
                     <Link to="/blocks/paragraphviews">paragraphs</Link>
-                    <Link to="/blocks/carouseltickerviews">carsousels</Link>
+                    <Link to="/blocks/carouseltickerviews">carousels</Link>
                     <Link to="/blocks/listviews">Lists</Link>
                     <Link to="/blocks/formviews">Forms</Link>
                     <Link to="/blocks/tableviews">Tables</Link>
@@ -57,13 +57,13 @@ export default class CaroselsTickersView extends Component {
                 <HorizontalTestBlock1 />
                 <Container1>
                     <H21>
-                        Carosels
+                        carousels
                     </H21>
                 </Container1>
                 <HorizontalTestBlock1 />
                 <Container1>
                     <H34>
-                        Carosel 1
+                        carousel 1
                     </H34>
                 </Container1>
                 <Container1>
@@ -86,7 +86,7 @@ export default class CaroselsTickersView extends Component {
                 <HorizontalTestBlock1 />
                 <Container1>
                     <H34>
-                        Carosel 2
+                        carousel 2
                     </H34>
                 </Container1>
                 <Container1>
@@ -109,7 +109,7 @@ export default class CaroselsTickersView extends Component {
                 <HorizontalTestBlock1 />
                 <Container1>
                     <H34>
-                        Carosel 3
+                        carousel 3
                     </H34>
                 </Container1>
                 <Container1>
@@ -132,7 +132,7 @@ export default class CaroselsTickersView extends Component {
                 <HorizontalTestBlock1 />
                 <Container1>
                     <H34>
-                        Carosel 4
+                        carousel 4
                     </H34>
                 </Container1>
                 <Container1>
@@ -155,7 +155,7 @@ export default class CaroselsTickersView extends Component {
                 <HorizontalTestBlock1 />
                 <Container1>
                     <H34>
-                        Carosel 5
+                        carousel 5
                     </H34>
                 </Container1>
                 <Container1>

@@ -4871,7 +4871,7 @@ export class DropDownNav4 extends Component {
     render() {
 
         return (
-            <nav className="dropdownnav3">
+            <nav className="dropdownnav4">
             </nav>
         )
     }
@@ -4903,25 +4903,25 @@ export class DropDownNav5 extends Component {
             animationFillMode: props.aniFillMode || 'both',
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
-            first:[],
-            childs:[],
+            first: [],
+            childs: [],
         }
         this.enter = this.enter.bind(this);
         this.left = this.left.bind(this);
     }
-    componentDidMount(){
+    componentDidMount() {
         const CHILDS = React.Children.toArray(this.props.children)
         const NAVBAR = CHILDS.map((x, i, arr) => {
             return <li key={i} >{arr[i + 1]}</li>
         })
-        this.setState({first: CHILDS[0], childs: NAVBAR})
+        this.setState({ first: CHILDS[0], childs: NAVBAR })
     }
-    componentWillReceiveProps(nextProps){
+    componentWillReceiveProps(nextProps) {
         const CHILDS = React.Children.toArray(nextProps.children)
         const NAVBAR = CHILDS.map((x, i, arr) => {
             return <li key={i} >{arr[i + 1]}</li>
         })
-        this.setState({first: CHILDS[0], childs: NAVBAR})
+        this.setState({ first: CHILDS[0], childs: NAVBAR })
     }
     enter() {
         this.setState({
@@ -5012,6 +5012,8 @@ export class ImageSlider1 extends Component {
         }
         this.slideLeft = this.slideLeft.bind(this);
         this.slideRight = this.slideRight.bind(this);
+        this.ishovering = this.ishovering.bind(this);
+        this.isnolongerhovering = this.isnolongerhovering.bind(this);
     }
 
     componentDidMount() {
@@ -5021,7 +5023,10 @@ export class ImageSlider1 extends Component {
             slides.push(CHILDS[g])
         }
         const intervalTime = setInterval(this.slideRight, this.state.slideTimer)
-        this.setState({ sliderImages: slides, intervalTime: intervalTime })
+        this.setState({
+            sliderImages: slides,
+            intervalTime: intervalTime,
+        })
     }
     componentWillReceiveProps(newProps) {
         let slides = [];
@@ -5030,7 +5035,7 @@ export class ImageSlider1 extends Component {
             slides.push(CHILDS[g])
         }
         const intervalTime = setInterval(this.slideRight, this.state.slideTimer)
-        this.setState({ sliderImages: slides, intervalTime })
+        this.setState({ sliderImages: slides, intervalTime: intervalTime })
     }
 
     componentWillUnmount() {
@@ -5038,18 +5043,48 @@ export class ImageSlider1 extends Component {
     }
     slideLeft() {
         if (this.state.cur === 0) {
-            return this.setState({ cur: this.state.sliderImages.length - 1 })
+            return this.setState({
+                cur: this.state.sliderImages.length - 1,
+                animationIterationCount: '1',
+                animationTimingFunction: 'ease-in',
+                animationName: 'slideInRight',
+                animationDuration: '0.75s'
+            })
         } else {
-            return this.setState({ cur: this.state.cur - 1 })
+            return this.setState({
+                cur: this.state.cur - 1,
+                animationIterationCount: '1',
+                animationTimingFunction: 'ease-in',
+                animationName: 'slideInRight',
+                animationDuration: '0.75s'
+            })
         }
     }
     slideRight() {
         if (this.state.cur >= this.state.sliderImages.length - 1) {
-            return this.setState({ cur: 0 })
+            return this.setState({
+                cur: 0,
+                animationIterationCount: '1',
+                animationTimingFunction: 'ease',
+                animationName: 'slideInLeft',
+                animationDuration: '0.75s'
+            })
 
         } else {
-            return this.setState({ cur: this.state.cur + 1 })
+            return this.setState({
+                cur: this.state.cur + 1,
+                animationIterationCount: '1',
+                animationTimingFunction: 'ease',
+                animationName: 'slideInLeft',
+                animationDuration: '0.75s'
+            })
         }
+    }
+    ishovering() {
+        return clearInterval(this.state.intervalTime);
+    }
+    isnolongerhovering() {
+
     }
     render() {
         const WRAP = {
@@ -5095,6 +5130,12 @@ export class ImageSlider1 extends Component {
             justifyContent: 'center',
             alignItems: 'center',
             textAlign: 'center',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
+            transformOrigin: this.state.transformOrigin,
+            animationFillMode: this.state.animationFillMode,
         };
         // const SLIDE_TEXT = {
         //     fontSize: '5em',
@@ -5112,7 +5153,9 @@ export class ImageSlider1 extends Component {
             )
         })
         return (
-            <div style={WRAP} id={this.state.mainid} className={this.state.mainClassName}>
+            <div style={WRAP} id={this.state.mainid} className={this.state.mainClassName}
+                onMouseEnter={() => this.ishovering()}
+                onMouseOut={() => this.isnolongerhovering()}>
                 <div style={LEFT_ARROW} id={this.state.leftArrowid} className={`arrow ${this.state.leftArrowClassName}`} onClick={() => this.slideLeft()}></div>
                 <div style={SLIDER}>
                     {RENDERSLIDES[this.state.cur]}
@@ -5220,6 +5263,12 @@ export class ImageSlider2 extends Component {
             justifyContent: 'center',
             alignItems: 'center',
             textAlign: 'center',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
+            transformOrigin: this.state.transformOrigin,
+            animationFillMode: this.state.animationFillMode,
         };
         const RENDERSLIDES = this.state.sliderImages.map((x, i) => {
             return (
@@ -5341,6 +5390,12 @@ export class ImageSlider3 extends Component {
             justifyContent: 'center',
             alignItems: 'center',
             textAlign: 'center',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
+            transformOrigin: this.state.transformOrigin,
+            animationFillMode: this.state.animationFillMode,
         };
         const RENDERSLIDES = this.state.sliderImages.map((x, i) => {
             return (
@@ -5414,17 +5469,41 @@ export class ImageSlider4 extends Component {
     }
     slideLeft() {
         if (this.state.cur === 0) {
-            return this.setState({ cur: this.state.sliderImages.length - 1 })
+            return this.setState({
+                cur: this.state.sliderImages.length - 1,
+                animationIterationCount: '1',
+                animationTimingFunction: 'ease-in',
+                animationName: 'slideInRight',
+                animationDuration: '0.75s'
+            })
         } else {
-            return this.setState({ cur: this.state.cur - 1 })
+            return this.setState({
+                cur: this.state.cur - 1,
+                animationIterationCount: '1',
+                animationTimingFunction: 'ease-in',
+                animationName: 'slideInRight',
+                animationDuration: '0.75s'
+            })
         }
     }
     slideRight() {
         if (this.state.cur >= this.state.sliderImages.length - 1) {
-            return this.setState({ cur: 0 })
+            return this.setState({
+                cur: 0,
+                animationIterationCount: '1',
+                animationTimingFunction: 'ease',
+                animationName: 'slideInLeft',
+                animationDuration: '0.75s'
+            })
 
         } else {
-            return this.setState({ cur: this.state.cur + 1 })
+            return this.setState({
+                cur: this.state.cur + 1,
+                animationIterationCount: '1',
+                animationTimingFunction: 'ease',
+                animationName: 'slideInLeft',
+                animationDuration: '0.75s'
+            })
         }
     }
 
@@ -5458,6 +5537,12 @@ export class ImageSlider4 extends Component {
             justifyContent: 'center',
             alignItems: 'center',
             textAlign: 'center',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
+            transformOrigin: this.state.transformOrigin,
+            animationFillMode: this.state.animationFillMode,
         };
         const RENDERSLIDES = this.state.sliderImages.map((x, i) => {
             return (
@@ -5531,17 +5616,41 @@ export class ImageSlider5 extends Component {
     }
     slideLeft() {
         if (this.state.cur === 0) {
-            return this.setState({ cur: this.state.sliderImages.length - 1 })
+            return this.setState({
+                cur: this.state.sliderImages.length - 1,
+                animationIterationCount: '1',
+                animationTimingFunction: 'ease-in',
+                animationName: 'slideInRight',
+                animationDuration: '0.75s'
+            })
         } else {
-            return this.setState({ cur: this.state.cur - 1 })
+            return this.setState({
+                cur: this.state.cur - 1,
+                animationIterationCount: '1',
+                animationTimingFunction: 'ease-in',
+                animationName: 'slideInRight',
+                animationDuration: '0.75s'
+            })
         }
     }
     slideRight() {
         if (this.state.cur >= this.state.sliderImages.length - 1) {
-            return this.setState({ cur: 0 })
+            return this.setState({
+                cur: 0,
+                animationIterationCount: '1',
+                animationTimingFunction: 'ease',
+                animationName: 'slideInLeft',
+                animationDuration: '0.75s'
+            })
 
         } else {
-            return this.setState({ cur: this.state.cur + 1 })
+            return this.setState({
+                cur: this.state.cur + 1,
+                animationIterationCount: '1',
+                animationTimingFunction: 'ease',
+                animationName: 'slideInLeft',
+                animationDuration: '0.75s'
+            })
         }
     }
 
@@ -5575,6 +5684,12 @@ export class ImageSlider5 extends Component {
             justifyContent: 'center',
             alignItems: 'center',
             textAlign: 'center',
+            animationIterationCount: this.state.animationIterationCount,
+            animationTimingFunction: this.state.animationTimingFunction,
+            animationName: this.state.animationName,
+            animationDuration: this.state.animationDuration,
+            transformOrigin: this.state.transformOrigin,
+            animationFillMode: this.state.animationFillMode,
         };
         const RENDERSLIDES = this.state.sliderImages.map((x, i) => {
             return (
