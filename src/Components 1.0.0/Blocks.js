@@ -4634,7 +4634,7 @@ export class DropDownNav1 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            display: 'none',
+            visibility: 'hidden',
             background: props.background,
             boxShadow: props.boxShadow || '1px 2px 2px black',
             borderRadius: props.borderRadius || '0 0 5px 5px',
@@ -4650,19 +4650,19 @@ export class DropDownNav1 extends Component {
             mainClassName: props.mainClassName,
             titleClassName: props.titleClassName,
             itemsClassName: props.itemsClassName,
-            animationIterationCount: props.aniCount,
-            animationTimingFunction: props.aniTime,
-            animationName: props.aniName,
-            animationDuration: props.aniDur,
+            animationIterationCount: props.aniCount || '1',
+            animationTimingFunction: props.aniTime || 'ease-in',
+            animationName: props.aniName || 'bounceInDown',
+            animationDuration: props.aniDur || '1s',
             transformOrigin: props.transformOrigin,
-            animationFillMode: props.aniFillMode,
+            animationFillMode: props.aniFillMode || 'both',
             childs: [],
             first: [],
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
         }
-        // this.enter = this.enter.bind(this);
-        // this.left = this.left.bind(this);
+        this.enter = this.enter.bind(this);
+        this.left = this.left.bind(this);
     }
     componentDidMount() {
         const DropDown_NavBar_Li = {
@@ -4691,17 +4691,30 @@ export class DropDownNav1 extends Component {
         this.setState({ childs: NAVBAR, first: FIRST })
     }
 
-    // enter(){
-    //     this.setState =({display: 'block'});
-    // }
-    // left(){
-    //     this.setState =({display: 'none'});
-    // }
+    enter() {
+        this.setState({
+            visibility: 'visible',
+            animationIterationCount: '1',
+            animationTimingFunction: 'ease-in',
+            animationName: 'fadeIn',
+            animationDuration: '0.55s',
+            transformOrigin: 'top',
+        });
+    }
+    left() {
+        this.setState({
+            animationIterationCount: '1',
+            animationTimingFunction: 'ease-out',
+            animationName: 'fadeOut',
+            animationDuration: '0.55s',
+            transformOrigin: 'inherit'
+        });
+    }
 
     render() {
         const DROPDOWN = {
             position: 'absolute',
-            display: this.state.display,
+            visibility: this.state.visibility,
             borderRadius: this.state.borderRadius,
             boxShadow: this.state.boxShadow,
             margin: `0 0 0 ${this.state.offset}`,
@@ -4729,8 +4742,8 @@ export class DropDownNav1 extends Component {
         return (
             <nav id={this.state.mainid} className={`dropdownnav1 ${this.state.mainClassName}`}>
                 <li id={this.state.titleid} className={`DropDown ${this.state.titleClassName}`} style={HASCHILDS}
-                    onMouseOver={() => this.setState({ display: 'block' })}
-                    onMouseOut={() => this.setState({ display: 'none' })}>
+                    onMouseOver={() => this.enter()}
+                    onMouseOut={() => this.left()}>
                     {this.state.first}
                     <ul style={DROPDOWN} id={this.state.itemsid} className={this.state.itemsClassName}>
                         {this.state.childs}
@@ -4753,7 +4766,7 @@ export class DropDownNav3 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            display: 'none',
+            visibility: 'hidden',
             background: props.background,
             offset: props.offset,
             margin: '',
@@ -4770,15 +4783,45 @@ export class DropDownNav3 extends Component {
             animationName: props.aniName,
             animationDuration: props.aniDur,
             transformOrigin: props.transformOrigin,
-            animationFillMode: props.aniFillMode,
+            animationFillMode: props.aniFillMode || 'both',
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            childs: [],
         }
+        this.enter = this.enter.bind(this);
+        this.left = this.left.bind(this);
+    }
+    enter() {
+        this.setState({
+            visibility: 'visible',
+            animationIterationCount: '1',
+            animationTimingFunction: 'ease-in',
+            animationName: 'fadeIn',
+            animationDuration: '0.55s',
+            transformOrigin: 'top',
+        });
+    }
+    componentDidMount() {
+        const CHILDS = React.Children.toArray(this.props.children)
+        this.setState({ childs: CHILDS })
+    }
+    componentWillReceiveProps(nextProps) {
+        const CHILDS = React.Children.toArray(nextProps.children)
+        this.setState({ childs: CHILDS })
+    }
+    left() {
+        this.setState({
+            animationIterationCount: '1',
+            animationTimingFunction: 'ease-out',
+            animationName: 'fadeOut',
+            animationDuration: '0.55s',
+            transformOrigin: 'inherit'
+        });
     }
     render() {
         const DROPDOWN = {
             position: 'absolute',
-            display: this.state.display,
+            visibility: this.state.visibility,
             margin: `0 0 0 ${this.state.offset}`,
             width: this.state.width,
             padding: '5px',
@@ -4798,26 +4841,25 @@ export class DropDownNav3 extends Component {
         const HASCHILDS = {
             fontSize: '1.333em',
         }
-        const CHILDS = React.Children.toArray(this.props.children)
         return (
             <nav id={this.state.mainid} className={`dropdownnav3 ${this.state.mainClassName}`}>
                 <li style={HASCHILDS}
-                    onMouseOver={() => this.setState({ display: 'block' })}
-                    onMouseOut={() => this.setState({ display: 'none' })}
+                    onMouseOver={() => this.enter()}
+                    onMouseOut={() => this.left()}
                     id={this.state.titleid} className={this.state.titleClassName}>
-                    {CHILDS[0]}
+                    {this.state.childs[0]}
                     <ul style={DROPDOWN} id={this.state.itemsid} className={this.state.itemsClassName}>
                         <Holder2>
-                            {CHILDS[1]}
-                            {CHILDS[2]}
-                            {CHILDS[3]}
-                            {CHILDS[4]}
-                            {CHILDS[5]}
-                            {CHILDS[6]}
-                            {CHILDS[7]}
-                            {CHILDS[8]}
-                            {CHILDS[9]}
-                            {CHILDS[10]}
+                            {this.state.childs[1]}
+                            {this.state.childs[2]}
+                            {this.state.childs[3]}
+                            {this.state.childs[4]}
+                            {this.state.childs[5]}
+                            {this.state.childs[6]}
+                            {this.state.childs[7]}
+                            {this.state.childs[8]}
+                            {this.state.childs[9]}
+                            {this.state.childs[10]}
                         </Holder2>
                     </ul>
                 </li>
@@ -4839,11 +4881,11 @@ export class DropDownNav5 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            display: 'none',
+            visibility: 'hidden',
             background: props.background,
             boxShadow: props.boxShadow || '1px 2px 2px black',
             borderRadius: props.borderRadius || '0 5px 5px 0',
-            offset: props.offset,
+            offset: props.offset || '-10',
             margin: '',
             padding: props.padding,
             width: props.width,
@@ -4858,18 +4900,53 @@ export class DropDownNav5 extends Component {
             animationName: props.aniName,
             animationDuration: props.aniDur,
             transformOrigin: props.transformOrigin,
-            animationFillMode: props.aniFillMode,
+            animationFillMode: props.aniFillMode || 'both',
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
+            first:[],
+            childs:[],
         }
+        this.enter = this.enter.bind(this);
+        this.left = this.left.bind(this);
     }
-
+    componentDidMount(){
+        const CHILDS = React.Children.toArray(this.props.children)
+        const NAVBAR = CHILDS.map((x, i, arr) => {
+            return <li key={i} >{arr[i + 1]}</li>
+        })
+        this.setState({first: CHILDS[0], childs: NAVBAR})
+    }
+    componentWillReceiveProps(nextProps){
+        const CHILDS = React.Children.toArray(nextProps.children)
+        const NAVBAR = CHILDS.map((x, i, arr) => {
+            return <li key={i} >{arr[i + 1]}</li>
+        })
+        this.setState({first: CHILDS[0], childs: NAVBAR})
+    }
+    enter() {
+        this.setState({
+            visibility: 'visible',
+            animationIterationCount: '1',
+            animationTimingFunction: 'ease-in',
+            animationName: 'fadeIn',
+            animationDuration: '0.55s',
+        });
+    }
+    left() {
+        this.setState({
+            animationIterationCount: '1',
+            animationTimingFunction: 'ease-out',
+            animationName: 'fadeOut',
+            animationDuration: '0.55s',
+        });
+    }
     render() {
         const DROPDOWN = {
             position: 'absolute',
+            zIndex: '1000',
             borderRadius: this.state.borderRadius,
             boxShadow: this.state.boxShadow,
-            display: this.state.display,
+            visibility: this.state.visibility,
             margin: `0 0 0 ${this.state.offset}`,
             width: this.state.width,
             padding: '5px',
@@ -4883,24 +4960,17 @@ export class DropDownNav5 extends Component {
             transformOrigin: this.state.transformOrigin,
             animationFillMode: this.state.animationFillMode,
         }
-        const DropDown_NavBar_Li = {
-
-        }
         const HASCHILDS = {
             fontSize: '1em',
         }
-        const CHILDS = React.Children.toArray(this.props.children)
-        const NAVBAR = CHILDS.map((x, i, arr) => {
-            return <li key={i} style={DropDown_NavBar_Li}>{arr[i + 1]}</li>
-        })
         return (
             <nav id={this.state.mainid} className={`dropdownnav5 ${this.state.mainClassName}`}>
                 <li style={HASCHILDS} id={this.state.titleid} className={`DropDown_Side ${this.state.titleClassName}`}
-                    onMouseOver={() => this.setState({ display: 'inline' })}
-                    onMouseOut={() => this.setState({ display: 'none' })}>
-                    {CHILDS[0]}
+                    onMouseOver={() => this.enter()}
+                    onMouseOut={() => this.left()}>
+                    {this.state.first}
                     <ul style={DROPDOWN} id={this.state.itemsid} className={this.state.itemsClassName}>
-                        {NAVBAR}
+                        {this.state.childs}
                     </ul>
                 </li>
             </nav>
