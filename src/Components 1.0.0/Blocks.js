@@ -3779,8 +3779,11 @@ export class Navbar1 extends Component {
             hoverColor: props.hoverColor,
             hamMenuDis: 'none',
             hamShow: false,
+            hamTop: this.props.hamTop || '7%',
             hamSmDis: props.hamSmDis || 'flex',
             hamMdDis: props.hamMdDis || 'none',
+            hamShadow: props.hamShadow || '1px 2px 2px black',
+            hamBackground: props.hamBackground || 'white',
         }
         this.toggle = this.toggle.bind(this)
     }
@@ -3815,7 +3818,7 @@ export class Navbar1 extends Component {
         })
         const HAM_NAVBAR_LI = StyleSheet.create({
             ham_navbar_li: {
-                display: this.state.hamShow === true ? 'none' : 'flex',
+                visibility: this.state.hamShow ? 'visible' : 'collaspe',
                 flex: 1,
                 fontSize: this.state.fontSize,
                 fontWeight: this.state.fontWeight,
@@ -3829,12 +3832,12 @@ export class Navbar1 extends Component {
             },
             '@media screen and (max-width: 440px)': {
                 ham_navbar_li: {
-                    display: this.state.hamShow === true ? 'none' : 'flex',
+                    visibility: this.state.hamShow ? 'visible' : 'collaspe',
                 }
             },
             '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 ham_navbar_li: {
-                    display: this.state.hamShow === true ? 'none' : 'flex',
+                    visibility: this.state.hamShow ? 'visible' : 'collaspe',
                 }
             },
         })
@@ -3897,7 +3900,7 @@ export class Navbar1 extends Component {
         })
         const HAM_NAVBAR_LI = StyleSheet.create({
             ham_navbar_li: {
-                display: this.state.hamShow === true ? 'none' : 'flex',
+                visibility: this.state.hamShow ? 'visible' : 'collaspe',
                 flex: 1,
                 fontSize: this.state.fontSize,
                 fontWeight: this.state.fontWeight,
@@ -3911,12 +3914,12 @@ export class Navbar1 extends Component {
             },
             '@media screen and (max-width: 440px)': {
                 ham_navbar_li: {
-                    display: this.state.hamShow === true ? 'none' : 'flex',
+                    visibility: this.state.hamShow ? 'visible' : 'collaspe',
                 }
             },
             '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 ham_navbar_li: {
-                    display: this.state.hamShow === true ? 'none' : 'flex',
+                    visibility: this.state.hamShow ? 'visible' : 'collaspe',
                 }
             },
         })
@@ -4024,18 +4027,25 @@ export class Navbar1 extends Component {
         }
         const HAMESTNAV = StyleSheet.create({
             hamestnav: {
-                display: 'none',
+                visibility: 'hidden',
                 width: '100%',
                 flexDirection: 'column',
+                position: 'absolute',
+                top: this.state.hamTop,
+                background: this.state.hamBackground,
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                boxShadow: this.state.hamShadow,
             },
             '@media screen and (max-width: 440px)': {
                 hamestnav: {
-                    display: this.state.hamShow === true ? 'none' : 'flex',
+                    visibility: this.state.hamShow ? 'visible' : 'hidden',
                 }
             },
             '@media screen and (min-width: 441px) and (max-width: 760px)': {
                 hamestnav: {
-                    display: this.state.hamMdDis,
+                    visibility: this.state.hamShow ? 'visible' : 'hidden',
                 }
             },
         })
