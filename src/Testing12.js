@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 
 import Header from './Displays/Navigation';
 
+import Container1 from './Components 1.0.0/Containers';
+
 import { SubNavbar1, SquareImage, H31 } from './Components 1.0.0/Blocks';
 
 import Holder from './Component 1.5.0/Holders1.5.0';
@@ -26,20 +28,40 @@ export default class Testing12 extends Component {
                     <Link to="/blocks/tableviews">Tables</Link>
                     <Link to="/blocks/togglersviews">Togglers</Link>
                 </SubNavbar1>
-                <Holder
-                    block2='3'>
-                    <SquareImage />
+                <Container1>
                     <Holder
-                        direction="column">
-                        <H31>Hello</H31>
+                        block2='3'>
                         <SquareImage />
+                        <Holder
+                            direction="column">
+                            <H31>Hello</H31>
+                            <H31>Hello</H31>
+                            <SquareImage />
+                            <H31>Hello</H31>
+                            <H31>Hello</H31>
+                            <Holder>
+                                <H31>Hello</H31>
+                                <H31>Hello</H31>
+                                <H31>Hello</H31>
+                                <H31>Hello</H31>
+                            </Holder>
+                            <H31>Hello</H31>
+                            <H31>Hello</H31>
+                            <H31>Hello</H31>
+                            <H31>Hello</H31>
+                            <H31>Hello</H31>
+                            <H31>Hello</H31>
+                            <H31>Hello</H31>
+                            <H31>Hello</H31>
+                            <H31>15</H31>
+                            <H31>Hello</H31>
+                            <H31>Hello</H31>
+                            <H31>Hello</H31>
+                            <H31>Hello</H31>
+                            <H31>20</H31>
+                        </Holder>
                     </Holder>
-                </Holder>
-                <Holder
-                    block1="3">
-                    <H31>Hello</H31>
-                    <SquareImage />
-                </Holder>
+                </Container1>
             </section>
         )
     }
