@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import Header from './Displays/Navigation';
 
-import Container1 from './Components 1.0.0/Containers';
+import Container from './Component 1.5.0/Containers1.5.0';
 
 import { SubNavbar1, SquareImage, H31 } from './Components 1.0.0/Blocks';
 
@@ -28,7 +28,7 @@ export default class Testing12 extends Component {
                     <Link to="/blocks/tableviews">Tables</Link>
                     <Link to="/blocks/togglersviews">Togglers</Link>
                 </SubNavbar1>
-                <Container1>
+                <Container>
                     <Holder
                         block2='3'>
                         <SquareImage />
@@ -61,7 +61,10 @@ export default class Testing12 extends Component {
                             <H31>20</H31>
                         </Holder>
                     </Holder>
-                </Container1>
+                    <Holder>
+                        <SquareImage />
+                    </Holder>
+                </Container>
             </section>
         )
     }
