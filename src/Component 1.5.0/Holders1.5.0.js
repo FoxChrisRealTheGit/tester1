@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import '../Components 1.0.0/reset.css';
-
 import StyleSheet from 'nestingstyles';
-import StyleSwi from './styleSwitcher';
+
 /* Start of Holder 1 Component */
 export default class Holder extends Component {
     constructor(props) {
@@ -26,7 +25,7 @@ export default class Holder extends Component {
     }
     componentDidMount() {
         const props = this.props;
-        let blocks, styles, holderstyles, block1styles, block2styles, block3styles, block4styles, block5styles, block6styles, block7styles, block8styles, block9styles, block10styles, block11styles, block12styles, block13styles, block14styles, block15styles, block16styles, block17styles, block18styles, block19styles, block20styles = '';
+        let blocks, holderstyles, block1styles, block2styles, block3styles, block4styles, block5styles, block6styles, block7styles, block8styles, block9styles, block10styles, block11styles, block12styles, block13styles, block14styles, block15styles, block16styles, block17styles, block18styles, block19styles, block20styles = '';
         let styledHolder, styledChilds1, styledChilds2, styledChilds3, styledChilds4, styledChilds5, styledChilds6, styledChilds7, styledChilds8, styledChilds9, styledChilds10, styledChilds11, styledChilds12, styledChilds13, styledChilds14, styledChilds15, styledChilds16, styledChilds17, styledChilds18, styledChilds19, styledChilds20 = '';
         const CHILDS = React.Children.toArray(this.props.children)
         const num = CHILDS.length;
@@ -43,8 +42,8 @@ export default class Holder extends Component {
                 justifyBlock1: props.justifyBlock1 || 'center',
                 block1smdis: props.block1smdis || 'flex',
                 block1mddis: props.block1mddis || 'flex',
-            }
-            holderstyles = StyleSheet.create({
+            };
+            holderstyles= StyleSheet.create({
                 holderstyles: {
                     width: '100%',
                     display: this.state.display,
@@ -71,12 +70,12 @@ export default class Holder extends Component {
                         flexDirection: this.state.mdflexDir
                     }
                 }
-            }),
-                block1styles = StyleSheet.create({
+            });
+                block1styles= StyleSheet.create({
                     block1styles: {
                         display: 'flex',
                         flex: blocks.block1 || this.state.block1,
-                        flexDirection: 'column',
+                        flexDirection: blocks.block1Direction,
                         flexWrap: 'wrap',
                         alignItems: blocks.alignBlock1,
                         borderLeft: blocks.block1BorderLeft,
@@ -96,7 +95,7 @@ export default class Holder extends Component {
                         block1styles: {
                             display: blocks.block1mddis,
                         }
-                    },
+                    }
                 });
             styledChilds1 = <div key={Math.random()} style={block1styles.block1styles}>{CHILDS[0]}</div>
             styledHolder = [
@@ -115,6 +114,7 @@ export default class Holder extends Component {
                 justifyBlock1: props.justifyBlock1 || 'center',
                 block1smdis: props.block1smdis || 'flex',
                 block1mddis: props.block1mddis || 'flex',
+                block2Direction: props.block2direction || 'row',
                 block2: props.block2 || '1',
                 block2BorderLeft: props.b2BLeft,
                 block2BorderRight: props.b2BRight,
@@ -125,8 +125,8 @@ export default class Holder extends Component {
                 justifyBlock2: props.justifyBlock2 || 'center',
                 block2smdis: props.block2smdis || 'flex',
                 block2mddis: props.block2mddis || 'flex',
-            }
-            holderstyles = StyleSheet.create({
+            };
+            holderstyles= StyleSheet.create({
                 holderstyles: {
                     width: '100%',
                     display: this.state.display,
@@ -153,12 +153,12 @@ export default class Holder extends Component {
                         flexDirection: this.state.mdflexDir
                     }
                 }
-            }),
+            });
                 block1styles = StyleSheet.create({
                     block1styles: {
                         display: 'flex',
                         flex: blocks.block1 || this.state.block1,
-                        flexDirection: 'column',
+                        flexDirection: blocks.block1Direction,
                         flexWrap: 'wrap',
                         alignItems: blocks.alignBlock1,
                         borderLeft: blocks.block1BorderLeft,
@@ -178,13 +178,13 @@ export default class Holder extends Component {
                         block1styles: {
                             display: blocks.block1mddis,
                         }
-                    },
+                    }
                 });
             block2styles = StyleSheet.create({
                 block2styles: {
                     display: 'flex',
                     flex: blocks.block2,
-                    flexDirection: 'column',
+                    flexDirection: blocks.block2Direction,
                     flexWrap: 'wrap',
                     alignItems: blocks.alignBlock2,
                     borderLeft: blocks.block2BorderLeft,
@@ -204,8 +204,7 @@ export default class Holder extends Component {
                     block2styles: {
                         display: blocks.block2mddis,
                     }
-                },
-
+                }
             });
 
             styledChilds1 = <div key={Math.random()} style={block1styles.block1styles}>{CHILDS[0]}</div>
@@ -226,6 +225,7 @@ export default class Holder extends Component {
                 justifyBlock1: props.justifyBlock1 || 'center',
                 block1smdis: props.block1smdis || 'flex',
                 block1mddis: props.block1mddis || 'flex',
+                block2Direction: props.block2direction || 'row',
                 block2: props.block2 || '1',
                 block2BorderLeft: props.b2BLeft,
                 block2BorderRight: props.b2BRight,
@@ -236,6 +236,7 @@ export default class Holder extends Component {
                 justifyBlock2: props.justifyBlock2 || 'center',
                 block2smdis: props.block2smdis || 'flex',
                 block2mddis: props.block2mddis || 'flex',
+                block3Direction: props.block3direction || 'row',
                 block3: props.block3 || '1',
                 block3BorderLeft: props.b3BLeft,
                 block3BorderRight: props.b3BRight,
@@ -246,7 +247,7 @@ export default class Holder extends Component {
                 justifyBlock3: props.justifyBlock3 || 'center',
                 block3smdis: props.block3smdis || 'flex',
                 block3mddis: props.block3mddis || 'flex',
-            }
+            };
             holderstyles = StyleSheet.create({
                 holderstyles: {
                     width: '100%',
@@ -274,7 +275,7 @@ export default class Holder extends Component {
                         flexDirection: this.state.mdflexDir
                     }
                 }
-            }),
+            });
                 block1styles = StyleSheet.create({
                     block1styles: {
                         display: 'flex',
@@ -299,7 +300,7 @@ export default class Holder extends Component {
                         block1styles: {
                             display: blocks.block1mddis,
                         }
-                    },
+                    }
                 });
             block2styles = StyleSheet.create({
                 block2styles: {
@@ -325,8 +326,7 @@ export default class Holder extends Component {
                     block2styles: {
                         display: blocks.block2mddis,
                     }
-                },
-
+                }
             });
             block3styles = StyleSheet.create({
                 block3styles: {
@@ -352,10 +352,8 @@ export default class Holder extends Component {
                     block3styles: {
                         display: blocks.block3mddis,
                     }
-                },
-
+                }
             });
-
             styledChilds1 = <div key={Math.random()} style={block1styles.block1styles}>{CHILDS[0]}</div>
             styledChilds2 = <div key={Math.random()} style={block2styles.block2styles}>{CHILDS[1]}</div>
             styledChilds3 = <div key={Math.random()} style={block3styles.block3styles}>{CHILDS[2]}</div>
@@ -375,6 +373,7 @@ export default class Holder extends Component {
                 justifyBlock1: props.justifyBlock1 || 'center',
                 block1smdis: props.block1smdis || 'flex',
                 block1mddis: props.block1mddis || 'flex',
+                block2Direction: props.block2direction || 'row',
                 block2: props.block2 || '1',
                 block2BorderLeft: props.b2BLeft,
                 block2BorderRight: props.b2BRight,
@@ -385,6 +384,7 @@ export default class Holder extends Component {
                 justifyBlock2: props.justifyBlock2 || 'center',
                 block2smdis: props.block2smdis || 'flex',
                 block2mddis: props.block2mddis || 'flex',
+                block3Direction: props.block3direction || 'row',
                 block3: props.block3 || '1',
                 block3BorderLeft: props.b3BLeft,
                 block3BorderRight: props.b3BRight,
@@ -395,6 +395,7 @@ export default class Holder extends Component {
                 justifyBlock3: props.justifyBlock3 || 'center',
                 block3smdis: props.block3smdis || 'flex',
                 block3mddis: props.block3mddis || 'flex',
+                block4Direction: props.block4direction || 'row',
                 block4: props.block4 || '1',
                 block4BorderLeft: props.b4BLeft,
                 block4BorderRight: props.b4BRight,
@@ -405,7 +406,7 @@ export default class Holder extends Component {
                 justifyBlock4: props.justifyBlock4 || 'center',
                 block4smdis: props.block4smdis || 'flex',
                 block4mddis: props.block4mddis || 'flex',
-            }
+            };
             holderstyles = StyleSheet.create({
                 holderstyles: {
                     width: '100%',
@@ -433,7 +434,7 @@ export default class Holder extends Component {
                         flexDirection: this.state.mdflexDir
                     }
                 }
-            }),
+            });
                 block1styles = StyleSheet.create({
                     block1styles: {
                         display: 'flex',
@@ -458,7 +459,7 @@ export default class Holder extends Component {
                         block1styles: {
                             display: blocks.block1mddis,
                         }
-                    },
+                    }
                 });
             block2styles = StyleSheet.create({
                 block2styles: {
@@ -484,8 +485,7 @@ export default class Holder extends Component {
                     block2styles: {
                         display: blocks.block2mddis,
                     }
-                },
-
+                }
             });
             block3styles = StyleSheet.create({
                 block3styles: {
@@ -511,8 +511,7 @@ export default class Holder extends Component {
                     block3styles: {
                         display: blocks.block3mddis,
                     }
-                },
-
+                }
             });
             block4styles = StyleSheet.create({
                 block4styles: {
@@ -538,8 +537,7 @@ export default class Holder extends Component {
                     block4styles: {
                         display: blocks.block4mddis,
                     }
-                },
-
+                }
             });
 
             styledChilds1 = <div key={Math.random()} style={block1styles.block1styles}>{CHILDS[0]}</div>
@@ -562,6 +560,7 @@ export default class Holder extends Component {
                 justifyBlock1: props.justifyBlock1 || 'center',
                 block1smdis: props.block1smdis || 'flex',
                 block1mddis: props.block1mddis || 'flex',
+                block2Direction: props.block2direction || 'row',
                 block2: props.block2 || '1',
                 block2BorderLeft: props.b2BLeft,
                 block2BorderRight: props.b2BRight,
@@ -572,6 +571,7 @@ export default class Holder extends Component {
                 justifyBlock2: props.justifyBlock2 || 'center',
                 block2smdis: props.block2smdis || 'flex',
                 block2mddis: props.block2mddis || 'flex',
+                block3Direction: props.block3direction || 'row',
                 block3: props.block3 || '1',
                 block3BorderLeft: props.b3BLeft,
                 block3BorderRight: props.b3BRight,
@@ -582,6 +582,7 @@ export default class Holder extends Component {
                 justifyBlock3: props.justifyBlock3 || 'center',
                 block3smdis: props.block3smdis || 'flex',
                 block3mddis: props.block3mddis || 'flex',
+                block4Direction: props.block4direction || 'row',
                 block4: props.block4 || '1',
                 block4BorderLeft: props.b4BLeft,
                 block4BorderRight: props.b4BRight,
@@ -592,6 +593,7 @@ export default class Holder extends Component {
                 justifyBlock4: props.justifyBlock4 || 'center',
                 block4smdis: props.block4smdis || 'flex',
                 block4mddis: props.block4mddis || 'flex',
+                block5Direction: props.block5direction || 'row',
                 block5: props.block5 || '1',
                 block5BorderLeft: props.b5BLeft,
                 block5BorderRight: props.b5BRight,
@@ -602,7 +604,7 @@ export default class Holder extends Component {
                 justifyBlock5: props.justifyBlock5 || 'center',
                 block5smdis: props.block5smdis || 'flex',
                 block5mddis: props.block5mddis || 'flex',
-            }
+            };
             holderstyles = StyleSheet.create({
                 holderstyles: {
                     width: '100%',
@@ -630,7 +632,7 @@ export default class Holder extends Component {
                         flexDirection: this.state.mdflexDir
                     }
                 }
-            }),
+            });
                 block1styles = StyleSheet.create({
                     block1styles: {
                         display: 'flex',
@@ -655,7 +657,7 @@ export default class Holder extends Component {
                         block1styles: {
                             display: blocks.block1mddis,
                         }
-                    },
+                    }
                 });
             block2styles = StyleSheet.create({
                 block2styles: {
@@ -681,8 +683,7 @@ export default class Holder extends Component {
                     block2styles: {
                         display: blocks.block2mddis,
                     }
-                },
-
+                }
             });
             block3styles = StyleSheet.create({
                 block3styles: {
@@ -708,8 +709,7 @@ export default class Holder extends Component {
                     block3styles: {
                         display: blocks.block3mddis,
                     }
-                },
-
+                }
             });
             block4styles = StyleSheet.create({
                 block4styles: {
@@ -735,8 +735,7 @@ export default class Holder extends Component {
                     block4styles: {
                         display: blocks.block4mddis,
                     }
-                },
-
+                }
             });
             block5styles = StyleSheet.create({
                 block5styles: {
@@ -762,8 +761,7 @@ export default class Holder extends Component {
                     block5styles: {
                         display: blocks.block4mddis,
                     }
-                },
-
+                }
             });
             styledChilds1 = <div key={Math.random()} style={block1styles.block1styles}>{CHILDS[0]}</div>
             styledChilds2 = <div key={Math.random()} style={block2styles.block2styles}>{CHILDS[1]}</div>
@@ -786,6 +784,7 @@ export default class Holder extends Component {
                 justifyBlock1: props.justifyBlock1 || 'center',
                 block1smdis: props.block1smdis || 'flex',
                 block1mddis: props.block1mddis || 'flex',
+                block2Direction: props.block2direction || 'row',
                 block2: props.block2 || '1',
                 block2BorderLeft: props.b2BLeft,
                 block2BorderRight: props.b2BRight,
@@ -796,6 +795,7 @@ export default class Holder extends Component {
                 justifyBlock2: props.justifyBlock2 || 'center',
                 block2smdis: props.block2smdis || 'flex',
                 block2mddis: props.block2mddis || 'flex',
+                block3Direction: props.block3direction || 'row',
                 block3: props.block3 || '1',
                 block3BorderLeft: props.b3BLeft,
                 block3BorderRight: props.b3BRight,
@@ -806,6 +806,7 @@ export default class Holder extends Component {
                 justifyBlock3: props.justifyBlock3 || 'center',
                 block3smdis: props.block3smdis || 'flex',
                 block3mddis: props.block3mddis || 'flex',
+                block4Direction: props.block4direction || 'row',
                 block4: props.block4 || '1',
                 block4BorderLeft: props.b4BLeft,
                 block4BorderRight: props.b4BRight,
@@ -816,6 +817,7 @@ export default class Holder extends Component {
                 justifyBlock4: props.justifyBlock4 || 'center',
                 block4smdis: props.block4smdis || 'flex',
                 block4mddis: props.block4mddis || 'flex',
+                block5Direction: props.block5direction || 'row',
                 block5: props.block5 || '1',
                 block5BorderLeft: props.b5BLeft,
                 block5BorderRight: props.b5BRight,
@@ -826,6 +828,7 @@ export default class Holder extends Component {
                 justifyBlock5: props.justifyBlock5 || 'center',
                 block5smdis: props.block5smdis || 'flex',
                 block5mddis: props.block5mddis || 'flex',
+                block6Direction: props.block6direction || 'row',
                 block6: props.block6 || '1',
                 block6BorderLeft: props.b6BLeft,
                 block6BorderRight: props.b6BRight,
@@ -836,7 +839,7 @@ export default class Holder extends Component {
                 justifyBlock6: props.justifyBlock6 || 'center',
                 block6smdis: props.block6smdis || 'flex',
                 block6mddis: props.block6mddis || 'flex',
-            }
+            };
             holderstyles = StyleSheet.create({
                 holderstyles: {
                     width: '100%',
@@ -864,7 +867,7 @@ export default class Holder extends Component {
                         flexDirection: this.state.mdflexDir
                     }
                 }
-            }),
+            });
                 block1styles = StyleSheet.create({
                     block1styles: {
                         display: 'flex',
@@ -889,7 +892,7 @@ export default class Holder extends Component {
                         block1styles: {
                             display: blocks.block1mddis,
                         }
-                    },
+                    }
                 });
             block2styles = StyleSheet.create({
                 block2styles: {
@@ -915,8 +918,7 @@ export default class Holder extends Component {
                     block2styles: {
                         display: blocks.block2mddis,
                     }
-                },
-
+                }
             });
             block3styles = StyleSheet.create({
                 block3styles: {
@@ -942,8 +944,7 @@ export default class Holder extends Component {
                     block3styles: {
                         display: blocks.block3mddis,
                     }
-                },
-
+                }
             });
             block4styles = StyleSheet.create({
                 block4styles: {
@@ -969,8 +970,7 @@ export default class Holder extends Component {
                     block4styles: {
                         display: blocks.block4mddis,
                     }
-                },
-
+                }
             });
             block5styles = StyleSheet.create({
                 block5styles: {
@@ -996,8 +996,7 @@ export default class Holder extends Component {
                     block5styles: {
                         display: blocks.block4mddis,
                     }
-                },
-
+                }
             });
             block6styles = StyleSheet.create({
                 block6styles: {
@@ -1023,8 +1022,7 @@ export default class Holder extends Component {
                     block5styles: {
                         display: blocks.block4mddis,
                     }
-                },
-
+                }
             });
             styledChilds1 = <div key={Math.random()} style={block1styles.block1styles}>{CHILDS[0]}</div>
             styledChilds2 = <div key={Math.random()} style={block2styles.block2styles}>{CHILDS[1]}</div>
@@ -1048,6 +1046,7 @@ export default class Holder extends Component {
                 justifyBlock1: props.justifyBlock1 || 'center',
                 block1smdis: props.block1smdis || 'flex',
                 block1mddis: props.block1mddis || 'flex',
+                block2Direction: props.block2direction || 'row',
                 block2: props.block2 || '1',
                 block2BorderLeft: props.b2BLeft,
                 block2BorderRight: props.b2BRight,
@@ -1058,6 +1057,7 @@ export default class Holder extends Component {
                 justifyBlock2: props.justifyBlock2 || 'center',
                 block2smdis: props.block2smdis || 'flex',
                 block2mddis: props.block2mddis || 'flex',
+                block3Direction: props.block3direction || 'row',
                 block3: props.block3 || '1',
                 block3BorderLeft: props.b3BLeft,
                 block3BorderRight: props.b3BRight,
@@ -1068,6 +1068,7 @@ export default class Holder extends Component {
                 justifyBlock3: props.justifyBlock3 || 'center',
                 block3smdis: props.block3smdis || 'flex',
                 block3mddis: props.block3mddis || 'flex',
+                block4Direction: props.block4direction || 'row',
                 block4: props.block4 || '1',
                 block4BorderLeft: props.b4BLeft,
                 block4BorderRight: props.b4BRight,
@@ -1078,6 +1079,7 @@ export default class Holder extends Component {
                 justifyBlock4: props.justifyBlock4 || 'center',
                 block4smdis: props.block4smdis || 'flex',
                 block4mddis: props.block4mddis || 'flex',
+                block5Direction: props.block5direction || 'row',
                 block5: props.block5 || '1',
                 block5BorderLeft: props.b5BLeft,
                 block5BorderRight: props.b5BRight,
@@ -1088,6 +1090,7 @@ export default class Holder extends Component {
                 justifyBlock5: props.justifyBlock5 || 'center',
                 block5smdis: props.block5smdis || 'flex',
                 block5mddis: props.block5mddis || 'flex',
+                block6Direction: props.block6direction || 'row',
                 block6: props.block6 || '1',
                 block6BorderLeft: props.b6BLeft,
                 block6BorderRight: props.b6BRight,
@@ -1098,6 +1101,7 @@ export default class Holder extends Component {
                 justifyBlock6: props.justifyBlock6 || 'center',
                 block6smdis: props.block6smdis || 'flex',
                 block6mddis: props.block6mddis || 'flex',
+                block7Direction: props.block7direction || 'row',
                 block7: props.block7 || '1',
                 block7BorderLeft: props.b7BLeft,
                 block7BorderRight: props.b7BRight,
@@ -1108,7 +1112,7 @@ export default class Holder extends Component {
                 justifyBlock7: props.justifyBlock7 || 'center',
                 block7smdis: props.block7smdis || 'flex',
                 block7mddis: props.block7mddis || 'flex',
-            }
+            };
             holderstyles = StyleSheet.create({
                 holderstyles: {
                     width: '100%',
@@ -1136,7 +1140,7 @@ export default class Holder extends Component {
                         flexDirection: this.state.mdflexDir
                     }
                 }
-            }),
+            });
                 block1styles = StyleSheet.create({
                     block1styles: {
                         display: 'flex',
@@ -1161,7 +1165,7 @@ export default class Holder extends Component {
                         block1styles: {
                             display: blocks.block1mddis,
                         }
-                    },
+                    }
                 });
             block2styles = StyleSheet.create({
                 block2styles: {
@@ -1187,8 +1191,7 @@ export default class Holder extends Component {
                     block2styles: {
                         display: blocks.block2mddis,
                     }
-                },
-
+                }
             });
             block3styles = StyleSheet.create({
                 block3styles: {
@@ -1214,8 +1217,7 @@ export default class Holder extends Component {
                     block3styles: {
                         display: blocks.block3mddis,
                     }
-                },
-
+                }
             });
             block4styles = StyleSheet.create({
                 block4styles: {
@@ -1241,8 +1243,7 @@ export default class Holder extends Component {
                     block4styles: {
                         display: blocks.block4mddis,
                     }
-                },
-
+                }
             });
             block5styles = StyleSheet.create({
                 block5styles: {
@@ -1268,8 +1269,7 @@ export default class Holder extends Component {
                     block5styles: {
                         display: blocks.block5mddis,
                     }
-                },
-
+                }
             });
             block6styles = StyleSheet.create({
                 block6styles: {
@@ -1295,8 +1295,7 @@ export default class Holder extends Component {
                     block6styles: {
                         display: blocks.block6mddis,
                     }
-                },
-
+                }
             });
             block7styles = StyleSheet.create({
                 block7styles: {
@@ -1322,8 +1321,7 @@ export default class Holder extends Component {
                     block7styles: {
                         display: blocks.block7mddis,
                     }
-                },
-
+                }
             });
             styledChilds1 = <div key={Math.random()} style={block1styles.block1styles}>{CHILDS[0]}</div>
             styledChilds2 = <div key={Math.random()} style={block2styles.block2styles}>{CHILDS[1]}</div>
@@ -1348,6 +1346,7 @@ export default class Holder extends Component {
                 justifyBlock1: props.justifyBlock1 || 'center',
                 block1smdis: props.block1smdis || 'flex',
                 block1mddis: props.block1mddis || 'flex',
+                block2Direction: props.block2direction || 'row',
                 block2: props.block2 || '1',
                 block2BorderLeft: props.b2BLeft,
                 block2BorderRight: props.b2BRight,
@@ -1358,6 +1357,7 @@ export default class Holder extends Component {
                 justifyBlock2: props.justifyBlock2 || 'center',
                 block2smdis: props.block2smdis || 'flex',
                 block2mddis: props.block2mddis || 'flex',
+                block3Direction: props.block3direction || 'row',
                 block3: props.block3 || '1',
                 block3BorderLeft: props.b3BLeft,
                 block3BorderRight: props.b3BRight,
@@ -1368,6 +1368,7 @@ export default class Holder extends Component {
                 justifyBlock3: props.justifyBlock3 || 'center',
                 block3smdis: props.block3smdis || 'flex',
                 block3mddis: props.block3mddis || 'flex',
+                block4Direction: props.block4direction || 'row',
                 block4: props.block4 || '1',
                 block4BorderLeft: props.b4BLeft,
                 block4BorderRight: props.b4BRight,
@@ -1378,6 +1379,7 @@ export default class Holder extends Component {
                 justifyBlock4: props.justifyBlock4 || 'center',
                 block4smdis: props.block4smdis || 'flex',
                 block4mddis: props.block4mddis || 'flex',
+                block5Direction: props.block5direction || 'row',
                 block5: props.block5 || '1',
                 block5BorderLeft: props.b5BLeft,
                 block5BorderRight: props.b5BRight,
@@ -1388,6 +1390,7 @@ export default class Holder extends Component {
                 justifyBlock5: props.justifyBlock5 || 'center',
                 block5smdis: props.block5smdis || 'flex',
                 block5mddis: props.block5mddis || 'flex',
+                block6Direction: props.block6direction || 'row',
                 block6: props.block6 || '1',
                 block6BorderLeft: props.b6BLeft,
                 block6BorderRight: props.b6BRight,
@@ -1398,6 +1401,7 @@ export default class Holder extends Component {
                 justifyBlock6: props.justifyBlock6 || 'center',
                 block6smdis: props.block6smdis || 'flex',
                 block6mddis: props.block6mddis || 'flex',
+                block7Direction: props.block7direction || 'row',
                 block7: props.block7 || '1',
                 block7BorderLeft: props.b7BLeft,
                 block7BorderRight: props.b7BRight,
@@ -1408,6 +1412,7 @@ export default class Holder extends Component {
                 justifyBlock7: props.justifyBlock7 || 'center',
                 block7smdis: props.block7smdis || 'flex',
                 block7mddis: props.block7mddis || 'flex',
+                block8Direction: props.block8direction || 'row',
                 block8: props.block8 || '1',
                 block8BorderLeft: props.b8BLeft,
                 block8BorderRight: props.b8BRight,
@@ -1446,7 +1451,7 @@ export default class Holder extends Component {
                         flexDirection: this.state.mdflexDir
                     }
                 }
-            }),
+            });
                 block1styles = StyleSheet.create({
                     block1styles: {
                         display: 'flex',
@@ -1471,7 +1476,7 @@ export default class Holder extends Component {
                         block1styles: {
                             display: blocks.block1mddis,
                         }
-                    },
+                    }
                 });
             block2styles = StyleSheet.create({
                 block2styles: {
@@ -1497,8 +1502,7 @@ export default class Holder extends Component {
                     block2styles: {
                         display: blocks.block2mddis,
                     }
-                },
-
+                }
             });
             block3styles = StyleSheet.create({
                 block3styles: {
@@ -1524,8 +1528,7 @@ export default class Holder extends Component {
                     block3styles: {
                         display: blocks.block3mddis,
                     }
-                },
-
+                }
             });
             block4styles = StyleSheet.create({
                 block4styles: {
@@ -1551,8 +1554,7 @@ export default class Holder extends Component {
                     block4styles: {
                         display: blocks.block4mddis,
                     }
-                },
-
+                }
             });
             block5styles = StyleSheet.create({
                 block5styles: {
@@ -1578,8 +1580,7 @@ export default class Holder extends Component {
                     block5styles: {
                         display: blocks.block5mddis,
                     }
-                },
-
+                }
             });
             block6styles = StyleSheet.create({
                 block6styles: {
@@ -1605,8 +1606,7 @@ export default class Holder extends Component {
                     block6styles: {
                         display: blocks.block6mddis,
                     }
-                },
-
+                }
             });
             block7styles = StyleSheet.create({
                 block7styles: {
@@ -1632,8 +1632,7 @@ export default class Holder extends Component {
                     block7styles: {
                         display: blocks.block7mddis,
                     }
-                },
-
+                }
             });
             block8styles = StyleSheet.create({
                 block8styles: {
@@ -1659,8 +1658,7 @@ export default class Holder extends Component {
                     block8styles: {
                         display: blocks.block8mddis,
                     }
-                },
-
+                }
             });
             styledChilds1 = <div key={Math.random()} style={block1styles.block1styles}>{CHILDS[0]}</div>
             styledChilds2 = <div key={Math.random()} style={block2styles.block2styles}>{CHILDS[1]}</div>
@@ -1686,6 +1684,7 @@ export default class Holder extends Component {
                 justifyBlock1: props.justifyBlock1 || 'center',
                 block1smdis: props.block1smdis || 'flex',
                 block1mddis: props.block1mddis || 'flex',
+                block2Direction: props.block2direction || 'row',
                 block2: props.block2 || '1',
                 block2BorderLeft: props.b2BLeft,
                 block2BorderRight: props.b2BRight,
@@ -1696,6 +1695,7 @@ export default class Holder extends Component {
                 justifyBlock2: props.justifyBlock2 || 'center',
                 block2smdis: props.block2smdis || 'flex',
                 block2mddis: props.block2mddis || 'flex',
+                block3Direction: props.block3direction || 'row',
                 block3: props.block3 || '1',
                 block3BorderLeft: props.b3BLeft,
                 block3BorderRight: props.b3BRight,
@@ -1706,6 +1706,7 @@ export default class Holder extends Component {
                 justifyBlock3: props.justifyBlock3 || 'center',
                 block3smdis: props.block3smdis || 'flex',
                 block3mddis: props.block3mddis || 'flex',
+                block4Direction: props.block4direction || 'row',
                 block4: props.block4 || '1',
                 block4BorderLeft: props.b4BLeft,
                 block4BorderRight: props.b4BRight,
@@ -1716,6 +1717,7 @@ export default class Holder extends Component {
                 justifyBlock4: props.justifyBlock4 || 'center',
                 block4smdis: props.block4smdis || 'flex',
                 block4mddis: props.block4mddis || 'flex',
+                block5Direction: props.block5direction || 'row',
                 block5: props.block5 || '1',
                 block5BorderLeft: props.b5BLeft,
                 block5BorderRight: props.b5BRight,
@@ -1726,6 +1728,7 @@ export default class Holder extends Component {
                 justifyBlock5: props.justifyBlock5 || 'center',
                 block5smdis: props.block5smdis || 'flex',
                 block5mddis: props.block5mddis || 'flex',
+                block6Direction: props.block6direction || 'row',
                 block6: props.block6 || '1',
                 block6BorderLeft: props.b6BLeft,
                 block6BorderRight: props.b6BRight,
@@ -1736,6 +1739,7 @@ export default class Holder extends Component {
                 justifyBlock6: props.justifyBlock6 || 'center',
                 block6smdis: props.block6smdis || 'flex',
                 block6mddis: props.block6mddis || 'flex',
+                block7Direction: props.block7direction || 'row',
                 block7: props.block7 || '1',
                 block7BorderLeft: props.b7BLeft,
                 block7BorderRight: props.b7BRight,
@@ -1746,6 +1750,7 @@ export default class Holder extends Component {
                 justifyBlock7: props.justifyBlock7 || 'center',
                 block7smdis: props.block7smdis || 'flex',
                 block7mddis: props.block7mddis || 'flex',
+                block8Direction: props.block8direction || 'row',
                 block8: props.block8 || '1',
                 block8BorderLeft: props.b8BLeft,
                 block8BorderRight: props.b8BRight,
@@ -1756,6 +1761,7 @@ export default class Holder extends Component {
                 justifyBlock8: props.justifyBlock8 || 'center',
                 block8smdis: props.block8smdis || 'flex',
                 block8mddis: props.block8mddis || 'flex',
+                block9Direction: props.block9direction || 'row',
                 block9: props.block9 || '1',
                 block9BorderLeft: props.b9BLeft,
                 block9BorderRight: props.b9BRight,
@@ -1766,7 +1772,7 @@ export default class Holder extends Component {
                 justifyBlock9: props.justifyBlock9 || 'center',
                 block9smdis: props.block9smdis || 'flex',
                 block9mddis: props.block9mddis || 'flex',
-            }
+            };
             holderstyles = StyleSheet.create({
                 holderstyles: {
                     width: '100%',
@@ -1794,7 +1800,7 @@ export default class Holder extends Component {
                         flexDirection: this.state.mdflexDir
                     }
                 }
-            }),
+            });
                 block1styles = StyleSheet.create({
                     block1styles: {
                         display: 'flex',
@@ -1819,7 +1825,7 @@ export default class Holder extends Component {
                         block1styles: {
                             display: blocks.block1mddis,
                         }
-                    },
+                    }
                 });
             block2styles = StyleSheet.create({
                 block2styles: {
@@ -1845,8 +1851,7 @@ export default class Holder extends Component {
                     block2styles: {
                         display: blocks.block2mddis,
                     }
-                },
-
+                }
             });
             block3styles = StyleSheet.create({
                 block3styles: {
@@ -1872,8 +1877,7 @@ export default class Holder extends Component {
                     block3styles: {
                         display: blocks.block3mddis,
                     }
-                },
-
+                }
             });
             block4styles = StyleSheet.create({
                 block4styles: {
@@ -1899,8 +1903,7 @@ export default class Holder extends Component {
                     block4styles: {
                         display: blocks.block4mddis,
                     }
-                },
-
+                }
             });
             block5styles = StyleSheet.create({
                 block5styles: {
@@ -1926,8 +1929,7 @@ export default class Holder extends Component {
                     block5styles: {
                         display: blocks.block5mddis,
                     }
-                },
-
+                }
             });
             block6styles = StyleSheet.create({
                 block6styles: {
@@ -1953,8 +1955,7 @@ export default class Holder extends Component {
                     block6styles: {
                         display: blocks.block6mddis,
                     }
-                },
-
+                }
             });
             block7styles = StyleSheet.create({
                 block7styles: {
@@ -1980,8 +1981,7 @@ export default class Holder extends Component {
                     block7styles: {
                         display: blocks.block7mddis,
                     }
-                },
-
+                }
             });
             block8styles = StyleSheet.create({
                 block8styles: {
@@ -2007,8 +2007,7 @@ export default class Holder extends Component {
                     block8styles: {
                         display: blocks.block8mddis,
                     }
-                },
-
+                }
             });
             block9styles = StyleSheet.create({
                 block9styles: {
@@ -2034,8 +2033,7 @@ export default class Holder extends Component {
                     block9styles: {
                         display: blocks.block9mddis,
                     }
-                },
-
+                }
             });
             styledChilds1 = <div key={Math.random()} style={block1styles.block1styles}>{CHILDS[0]}</div>
             styledChilds2 = <div key={Math.random()} style={block2styles.block2styles}>{CHILDS[1]}</div>
@@ -2062,6 +2060,7 @@ export default class Holder extends Component {
                 justifyBlock1: props.justifyBlock1 || 'center',
                 block1smdis: props.block1smdis || 'flex',
                 block1mddis: props.block1mddis || 'flex',
+                block2Direction: props.block2direction || 'row',
                 block2: props.block2 || '1',
                 block2BorderLeft: props.b2BLeft,
                 block2BorderRight: props.b2BRight,
@@ -2072,6 +2071,7 @@ export default class Holder extends Component {
                 justifyBlock2: props.justifyBlock2 || 'center',
                 block2smdis: props.block2smdis || 'flex',
                 block2mddis: props.block2mddis || 'flex',
+                block3Direction: props.block2direction || 'row',
                 block3: props.block3 || '1',
                 block3BorderLeft: props.b3BLeft,
                 block3BorderRight: props.b3BRight,
@@ -2082,6 +2082,7 @@ export default class Holder extends Component {
                 justifyBlock3: props.justifyBlock3 || 'center',
                 block3smdis: props.block3smdis || 'flex',
                 block3mddis: props.block3mddis || 'flex',
+                block4Direction: props.block4direction || 'row',
                 block4: props.block4 || '1',
                 block4BorderLeft: props.b4BLeft,
                 block4BorderRight: props.b4BRight,
@@ -2092,6 +2093,7 @@ export default class Holder extends Component {
                 justifyBlock4: props.justifyBlock4 || 'center',
                 block4smdis: props.block4smdis || 'flex',
                 block4mddis: props.block4mddis || 'flex',
+                block5Direction: props.block5direction || 'row',
                 block5: props.block5 || '1',
                 block5BorderLeft: props.b5BLeft,
                 block5BorderRight: props.b5BRight,
@@ -2102,6 +2104,7 @@ export default class Holder extends Component {
                 justifyBlock5: props.justifyBlock5 || 'center',
                 block5smdis: props.block5smdis || 'flex',
                 block5mddis: props.block5mddis || 'flex',
+                block6Direction: props.block6direction || 'row',
                 block6: props.block6 || '1',
                 block6BorderLeft: props.b6BLeft,
                 block6BorderRight: props.b6BRight,
@@ -2112,6 +2115,7 @@ export default class Holder extends Component {
                 justifyBlock6: props.justifyBlock6 || 'center',
                 block6smdis: props.block6smdis || 'flex',
                 block6mddis: props.block6mddis || 'flex',
+                block7Direction: props.block7direction || 'row',
                 block7: props.block7 || '1',
                 block7BorderLeft: props.b7BLeft,
                 block7BorderRight: props.b7BRight,
@@ -2122,6 +2126,7 @@ export default class Holder extends Component {
                 justifyBlock7: props.justifyBlock7 || 'center',
                 block7smdis: props.block7smdis || 'flex',
                 block7mddis: props.block7mddis || 'flex',
+                block8Direction: props.block8direction || 'row',
                 block8: props.block8 || '1',
                 block8BorderLeft: props.b8BLeft,
                 block8BorderRight: props.b8BRight,
@@ -2132,6 +2137,7 @@ export default class Holder extends Component {
                 justifyBlock8: props.justifyBlock8 || 'center',
                 block8smdis: props.block8smdis || 'flex',
                 block8mddis: props.block8mddis || 'flex',
+                block9Direction: props.block9direction || 'row',
                 block9: props.block9 || '1',
                 block9BorderLeft: props.b9BLeft,
                 block9BorderRight: props.b9BRight,
@@ -2142,6 +2148,7 @@ export default class Holder extends Component {
                 justifyBlock9: props.justifyBlock9 || 'center',
                 block9smdis: props.block9smdis || 'flex',
                 block9mddis: props.block9mddis || 'flex',
+                block10Direction: props.block10direction || 'row',
                 block10: props.block10 || '1',
                 block10BorderLeft: props.b10BLeft,
                 block10BorderRight: props.b10BRight,
@@ -2152,7 +2159,7 @@ export default class Holder extends Component {
                 justifyBlock10: props.justifyBlock10 || 'center',
                 block10smdis: props.block10smdis || 'flex',
                 block10mddis: props.block10mddis || 'flex',
-            }
+            };
             holderstyles = StyleSheet.create({
                 holderstyles: {
                     width: '100%',
@@ -2180,7 +2187,7 @@ export default class Holder extends Component {
                         flexDirection: this.state.mdflexDir
                     }
                 }
-            }),
+            });
                 block1styles = StyleSheet.create({
                     block1styles: {
                         display: 'flex',
@@ -2205,7 +2212,7 @@ export default class Holder extends Component {
                         block1styles: {
                             display: blocks.block1mddis,
                         }
-                    },
+                    }
                 });
             block2styles = StyleSheet.create({
                 block2styles: {
@@ -2231,8 +2238,7 @@ export default class Holder extends Component {
                     block2styles: {
                         display: blocks.block2mddis,
                     }
-                },
-
+                }
             });
             block3styles = StyleSheet.create({
                 block3styles: {
@@ -2258,8 +2264,7 @@ export default class Holder extends Component {
                     block3styles: {
                         display: blocks.block3mddis,
                     }
-                },
-
+                }
             });
             block4styles = StyleSheet.create({
                 block4styles: {
@@ -2285,8 +2290,7 @@ export default class Holder extends Component {
                     block4styles: {
                         display: blocks.block4mddis,
                     }
-                },
-
+                }
             });
             block5styles = StyleSheet.create({
                 block5styles: {
@@ -2312,8 +2316,7 @@ export default class Holder extends Component {
                     block5styles: {
                         display: blocks.block5mddis,
                     }
-                },
-
+                }
             });
             block6styles = StyleSheet.create({
                 block6styles: {
@@ -2339,8 +2342,7 @@ export default class Holder extends Component {
                     block6styles: {
                         display: blocks.block6mddis,
                     }
-                },
-
+                }
             });
             block7styles = StyleSheet.create({
                 block7styles: {
@@ -2366,8 +2368,7 @@ export default class Holder extends Component {
                     block7styles: {
                         display: blocks.block7mddis,
                     }
-                },
-
+                }
             });
             block8styles = StyleSheet.create({
                 block8styles: {
@@ -2393,8 +2394,7 @@ export default class Holder extends Component {
                     block8styles: {
                         display: blocks.block8mddis,
                     }
-                },
-
+                }
             });
             block9styles = StyleSheet.create({
                 block9styles: {
@@ -2420,8 +2420,7 @@ export default class Holder extends Component {
                     block9styles: {
                         display: blocks.block9mddis,
                     }
-                },
-
+                }
             });
             block10styles = StyleSheet.create({
                 block10styles: {
@@ -2447,8 +2446,7 @@ export default class Holder extends Component {
                     block10styles: {
                         display: blocks.block10mddis,
                     }
-                },
-
+                }
             });
             styledChilds1 = <div key={Math.random()} style={block1styles.block1styles}>{CHILDS[0]}</div>
             styledChilds2 = <div key={Math.random()} style={block2styles.block2styles}>{CHILDS[1]}</div>
@@ -2476,6 +2474,7 @@ export default class Holder extends Component {
                 justifyBlock1: props.justifyBlock1 || 'center',
                 block1smdis: props.block1smdis || 'flex',
                 block1mddis: props.block1mddis || 'flex',
+                block2Direction: props.block2direction || 'row',
                 block2: props.block2 || '1',
                 block2BorderLeft: props.b2BLeft,
                 block2BorderRight: props.b2BRight,
@@ -2486,6 +2485,7 @@ export default class Holder extends Component {
                 justifyBlock2: props.justifyBlock2 || 'center',
                 block2smdis: props.block2smdis || 'flex',
                 block2mddis: props.block2mddis || 'flex',
+                block3Direction: props.block3direction || 'row',
                 block3: props.block3 || '1',
                 block3BorderLeft: props.b3BLeft,
                 block3BorderRight: props.b3BRight,
@@ -2496,6 +2496,7 @@ export default class Holder extends Component {
                 justifyBlock3: props.justifyBlock3 || 'center',
                 block3smdis: props.block3smdis || 'flex',
                 block3mddis: props.block3mddis || 'flex',
+                block4Direction: props.block4direction || 'row',
                 block4: props.block4 || '1',
                 block4BorderLeft: props.b4BLeft,
                 block4BorderRight: props.b4BRight,
@@ -2506,6 +2507,7 @@ export default class Holder extends Component {
                 justifyBlock4: props.justifyBlock4 || 'center',
                 block4smdis: props.block4smdis || 'flex',
                 block4mddis: props.block4mddis || 'flex',
+                block5Direction: props.block5direction || 'row',
                 block5: props.block5 || '1',
                 block5BorderLeft: props.b5BLeft,
                 block5BorderRight: props.b5BRight,
@@ -2516,6 +2518,7 @@ export default class Holder extends Component {
                 justifyBlock5: props.justifyBlock5 || 'center',
                 block5smdis: props.block5smdis || 'flex',
                 block5mddis: props.block5mddis || 'flex',
+                block6Direction: props.block6direction || 'row',
                 block6: props.block6 || '1',
                 block6BorderLeft: props.b6BLeft,
                 block6BorderRight: props.b6BRight,
@@ -2526,6 +2529,7 @@ export default class Holder extends Component {
                 justifyBlock6: props.justifyBlock6 || 'center',
                 block6smdis: props.block6smdis || 'flex',
                 block6mddis: props.block6mddis || 'flex',
+                block7Direction: props.block7direction || 'row',
                 block7: props.block7 || '1',
                 block7BorderLeft: props.b7BLeft,
                 block7BorderRight: props.b7BRight,
@@ -2536,6 +2540,7 @@ export default class Holder extends Component {
                 justifyBlock7: props.justifyBlock7 || 'center',
                 block7smdis: props.block7smdis || 'flex',
                 block7mddis: props.block7mddis || 'flex',
+                block8Direction: props.block8direction || 'row',
                 block8: props.block8 || '1',
                 block8BorderLeft: props.b8BLeft,
                 block8BorderRight: props.b8BRight,
@@ -2546,6 +2551,7 @@ export default class Holder extends Component {
                 justifyBlock8: props.justifyBlock8 || 'center',
                 block8smdis: props.block8smdis || 'flex',
                 block8mddis: props.block8mddis || 'flex',
+                block9Direction: props.block9direction || 'row',
                 block9: props.block9 || '1',
                 block9BorderLeft: props.b9BLeft,
                 block9BorderRight: props.b9BRight,
@@ -2556,6 +2562,7 @@ export default class Holder extends Component {
                 justifyBlock9: props.justifyBlock9 || 'center',
                 block9smdis: props.block9smdis || 'flex',
                 block9mddis: props.block9mddis || 'flex',
+                block10Direction: props.block10direction || 'row',
                 block10: props.block10 || '1',
                 block10BorderLeft: props.b10BLeft,
                 block10BorderRight: props.b10BRight,
@@ -2566,6 +2573,7 @@ export default class Holder extends Component {
                 justifyBlock10: props.justifyBlock10 || 'center',
                 block10smdis: props.block10smdis || 'flex',
                 block10mddis: props.block10mddis || 'flex',
+                block11Direction: props.block11direction || 'row',
                 block11: props.block11 || '1',
                 block11BorderLeft: props.b11BLeft,
                 block11BorderRight: props.b11BRight,
@@ -2576,7 +2584,7 @@ export default class Holder extends Component {
                 justifyBlock11: props.justifyBlock11 || 'center',
                 block11smdis: props.block11smdis || 'flex',
                 block11mddis: props.block11mddis || 'flex',
-            }
+            };
             holderstyles = StyleSheet.create({
                 holderstyles: {
                     width: '100%',
@@ -2604,7 +2612,7 @@ export default class Holder extends Component {
                         flexDirection: this.state.mdflexDir
                     }
                 }
-            }),
+            });
                 block1styles = StyleSheet.create({
                     block1styles: {
                         display: 'flex',
@@ -2629,7 +2637,7 @@ export default class Holder extends Component {
                         block1styles: {
                             display: blocks.block1mddis,
                         }
-                    },
+                    }
                 });
             block2styles = StyleSheet.create({
                 block2styles: {
@@ -2655,8 +2663,7 @@ export default class Holder extends Component {
                     block2styles: {
                         display: blocks.block2mddis,
                     }
-                },
-
+                }
             });
             block3styles = StyleSheet.create({
                 block3styles: {
@@ -2682,8 +2689,7 @@ export default class Holder extends Component {
                     block3styles: {
                         display: blocks.block3mddis,
                     }
-                },
-
+                }
             });
             block4styles = StyleSheet.create({
                 block4styles: {
@@ -2709,8 +2715,7 @@ export default class Holder extends Component {
                     block4styles: {
                         display: blocks.block4mddis,
                     }
-                },
-
+                }
             });
             block5styles = StyleSheet.create({
                 block5styles: {
@@ -2736,8 +2741,7 @@ export default class Holder extends Component {
                     block5styles: {
                         display: blocks.block5mddis,
                     }
-                },
-
+                }
             });
             block6styles = StyleSheet.create({
                 block6styles: {
@@ -2763,8 +2767,7 @@ export default class Holder extends Component {
                     block6styles: {
                         display: blocks.block6mddis,
                     }
-                },
-
+                }
             });
             block7styles = StyleSheet.create({
                 block7styles: {
@@ -2790,8 +2793,7 @@ export default class Holder extends Component {
                     block7styles: {
                         display: blocks.block7mddis,
                     }
-                },
-
+                }
             });
             block8styles = StyleSheet.create({
                 block8styles: {
@@ -2817,8 +2819,7 @@ export default class Holder extends Component {
                     block8styles: {
                         display: blocks.block8mddis,
                     }
-                },
-
+                }
             });
             block9styles = StyleSheet.create({
                 block9styles: {
@@ -2844,8 +2845,7 @@ export default class Holder extends Component {
                     block9styles: {
                         display: blocks.block9mddis,
                     }
-                },
-
+                }
             });
             block10styles = StyleSheet.create({
                 block10styles: {
@@ -2871,8 +2871,7 @@ export default class Holder extends Component {
                     block10styles: {
                         display: blocks.block10mddis,
                     }
-                },
-
+                }
             });
             block11styles = StyleSheet.create({
                 block11styles: {
@@ -2898,8 +2897,7 @@ export default class Holder extends Component {
                     block11styles: {
                         display: blocks.block11mddis,
                     }
-                },
-
+                }
             });
             styledChilds1 = <div key={Math.random()} style={block1styles.block1styles}>{CHILDS[0]}</div>
             styledChilds2 = <div key={Math.random()} style={block2styles.block2styles}>{CHILDS[1]}</div>
@@ -2928,6 +2926,7 @@ export default class Holder extends Component {
                 justifyBlock1: props.justifyBlock1 || 'center',
                 block1smdis: props.block1smdis || 'flex',
                 block1mddis: props.block1mddis || 'flex',
+                block2Direction: props.block2direction || 'row',
                 block2: props.block2 || '1',
                 block2BorderLeft: props.b2BLeft,
                 block2BorderRight: props.b2BRight,
@@ -2938,6 +2937,7 @@ export default class Holder extends Component {
                 justifyBlock2: props.justifyBlock2 || 'center',
                 block2smdis: props.block2smdis || 'flex',
                 block2mddis: props.block2mddis || 'flex',
+                block3Direction: props.block3direction || 'row',
                 block3: props.block3 || '1',
                 block3BorderLeft: props.b3BLeft,
                 block3BorderRight: props.b3BRight,
@@ -2948,6 +2948,7 @@ export default class Holder extends Component {
                 justifyBlock3: props.justifyBlock3 || 'center',
                 block3smdis: props.block3smdis || 'flex',
                 block3mddis: props.block3mddis || 'flex',
+                block4Direction: props.block4direction || 'row',
                 block4: props.block4 || '1',
                 block4BorderLeft: props.b4BLeft,
                 block4BorderRight: props.b4BRight,
@@ -2958,6 +2959,7 @@ export default class Holder extends Component {
                 justifyBlock4: props.justifyBlock4 || 'center',
                 block4smdis: props.block4smdis || 'flex',
                 block4mddis: props.block4mddis || 'flex',
+                block5Direction: props.block5direction || 'row',
                 block5: props.block5 || '1',
                 block5BorderLeft: props.b5BLeft,
                 block5BorderRight: props.b5BRight,
@@ -2968,6 +2970,7 @@ export default class Holder extends Component {
                 justifyBlock5: props.justifyBlock5 || 'center',
                 block5smdis: props.block5smdis || 'flex',
                 block5mddis: props.block5mddis || 'flex',
+                block6Direction: props.block6direction || 'row',
                 block6: props.block6 || '1',
                 block6BorderLeft: props.b6BLeft,
                 block6BorderRight: props.b6BRight,
@@ -2978,6 +2981,7 @@ export default class Holder extends Component {
                 justifyBlock6: props.justifyBlock6 || 'center',
                 block6smdis: props.block6smdis || 'flex',
                 block6mddis: props.block6mddis || 'flex',
+                block7Direction: props.block7direction || 'row',
                 block7: props.block7 || '1',
                 block7BorderLeft: props.b7BLeft,
                 block7BorderRight: props.b7BRight,
@@ -2988,6 +2992,7 @@ export default class Holder extends Component {
                 justifyBlock7: props.justifyBlock7 || 'center',
                 block7smdis: props.block7smdis || 'flex',
                 block7mddis: props.block7mddis || 'flex',
+                block8Direction: props.block8direction || 'row',
                 block8: props.block8 || '1',
                 block8BorderLeft: props.b8BLeft,
                 block8BorderRight: props.b8BRight,
@@ -2998,6 +3003,7 @@ export default class Holder extends Component {
                 justifyBlock8: props.justifyBlock8 || 'center',
                 block8smdis: props.block8smdis || 'flex',
                 block8mddis: props.block8mddis || 'flex',
+                block9Direction: props.block9direction || 'row',
                 block9: props.block9 || '1',
                 block9BorderLeft: props.b9BLeft,
                 block9BorderRight: props.b9BRight,
@@ -3008,6 +3014,7 @@ export default class Holder extends Component {
                 justifyBlock9: props.justifyBlock9 || 'center',
                 block9smdis: props.block9smdis || 'flex',
                 block9mddis: props.block9mddis || 'flex',
+                block10Direction: props.block10direction || 'row',
                 block10: props.block10 || '1',
                 block10BorderLeft: props.b10BLeft,
                 block10BorderRight: props.b10BRight,
@@ -3018,6 +3025,7 @@ export default class Holder extends Component {
                 justifyBlock10: props.justifyBlock10 || 'center',
                 block10smdis: props.block10smdis || 'flex',
                 block10mddis: props.block10mddis || 'flex',
+                block11Direction: props.block11direction || 'row',
                 block11: props.block11 || '1',
                 block11BorderLeft: props.b11BLeft,
                 block11BorderRight: props.b11BRight,
@@ -3028,6 +3036,7 @@ export default class Holder extends Component {
                 justifyBlock11: props.justifyBlock11 || 'center',
                 block11smdis: props.block11smdis || 'flex',
                 block11mddis: props.block11mddis || 'flex',
+                block12Direction: props.block12direction || 'row',
                 block12: props.block12 || '1',
                 block12BorderLeft: props.b12BLeft,
                 block12BorderRight: props.b12BRight,
@@ -3038,7 +3047,7 @@ export default class Holder extends Component {
                 justifyBlock12: props.justifyBlock12 || 'center',
                 block12smdis: props.block12smdis || 'flex',
                 block12mddis: props.block12mddis || 'flex',
-            }
+            };
             holderstyles = StyleSheet.create({
                 holderstyles: {
                     width: '100%',
@@ -3066,7 +3075,7 @@ export default class Holder extends Component {
                         flexDirection: this.state.mdflexDir
                     }
                 }
-            }),
+            });
                 block1styles = StyleSheet.create({
                     block1styles: {
                         display: 'flex',
@@ -3091,7 +3100,7 @@ export default class Holder extends Component {
                         block1styles: {
                             display: blocks.block1mddis,
                         }
-                    },
+                    }
                 });
             block2styles = StyleSheet.create({
                 block2styles: {
@@ -3117,8 +3126,7 @@ export default class Holder extends Component {
                     block2styles: {
                         display: blocks.block2mddis,
                     }
-                },
-
+                }
             });
             block3styles = StyleSheet.create({
                 block3styles: {
@@ -3144,8 +3152,7 @@ export default class Holder extends Component {
                     block3styles: {
                         display: blocks.block3mddis,
                     }
-                },
-
+                }
             });
             block4styles = StyleSheet.create({
                 block4styles: {
@@ -3171,8 +3178,7 @@ export default class Holder extends Component {
                     block4styles: {
                         display: blocks.block4mddis,
                     }
-                },
-
+                }
             });
             block5styles = StyleSheet.create({
                 block5styles: {
@@ -3198,8 +3204,7 @@ export default class Holder extends Component {
                     block5styles: {
                         display: blocks.block5mddis,
                     }
-                },
-
+                }
             });
             block6styles = StyleSheet.create({
                 block6styles: {
@@ -3225,8 +3230,7 @@ export default class Holder extends Component {
                     block6styles: {
                         display: blocks.block6mddis,
                     }
-                },
-
+                }
             });
             block7styles = StyleSheet.create({
                 block7styles: {
@@ -3252,7 +3256,7 @@ export default class Holder extends Component {
                     block7styles: {
                         display: blocks.block7mddis,
                     }
-                },
+                }
             });
             block8styles = StyleSheet.create({
                 block8styles: {
@@ -3278,7 +3282,7 @@ export default class Holder extends Component {
                     block8styles: {
                         display: blocks.block8mddis,
                     }
-                },
+                }
             });
             block9styles = StyleSheet.create({
                 block9styles: {
@@ -3304,7 +3308,7 @@ export default class Holder extends Component {
                     block9styles: {
                         display: blocks.block9mddis,
                     }
-                },
+                }
             });
             block10styles = StyleSheet.create({
                 block10styles: {
@@ -3330,7 +3334,7 @@ export default class Holder extends Component {
                     block10styles: {
                         display: blocks.block10mddis,
                     }
-                },
+                }
             });
             block11styles = StyleSheet.create({
                 block11styles: {
@@ -3356,7 +3360,7 @@ export default class Holder extends Component {
                     block11styles: {
                         display: blocks.block11mddis,
                     }
-                },
+                }
             });
             block12styles = StyleSheet.create({
                 block11styles: {
@@ -3382,7 +3386,7 @@ export default class Holder extends Component {
                     block12styles: {
                         display: blocks.block12mddis,
                     }
-                },
+                }
             });
             styledChilds1 = <div key={Math.random()} style={block1styles.block1styles}>{CHILDS[0]}</div>
             styledChilds2 = <div key={Math.random()} style={block2styles.block2styles}>{CHILDS[1]}</div>
@@ -3412,6 +3416,7 @@ export default class Holder extends Component {
                 justifyBlock1: props.justifyBlock1 || 'center',
                 block1smdis: props.block1smdis || 'flex',
                 block1mddis: props.block1mddis || 'flex',
+                block2Direction: props.block2direction || 'row',
                 block2: props.block2 || '1',
                 block2BorderLeft: props.b2BLeft,
                 block2BorderRight: props.b2BRight,
@@ -3422,6 +3427,7 @@ export default class Holder extends Component {
                 justifyBlock2: props.justifyBlock2 || 'center',
                 block2smdis: props.block2smdis || 'flex',
                 block2mddis: props.block2mddis || 'flex',
+                block3Direction: props.block3direction || 'row',
                 block3: props.block3 || '1',
                 block3BorderLeft: props.b3BLeft,
                 block3BorderRight: props.b3BRight,
@@ -3432,6 +3438,7 @@ export default class Holder extends Component {
                 justifyBlock3: props.justifyBlock3 || 'center',
                 block3smdis: props.block3smdis || 'flex',
                 block3mddis: props.block3mddis || 'flex',
+                block4Direction: props.block4direction || 'row',
                 block4: props.block4 || '1',
                 block4BorderLeft: props.b4BLeft,
                 block4BorderRight: props.b4BRight,
@@ -3442,6 +3449,7 @@ export default class Holder extends Component {
                 justifyBlock4: props.justifyBlock4 || 'center',
                 block4smdis: props.block4smdis || 'flex',
                 block4mddis: props.block4mddis || 'flex',
+                block5Direction: props.block5direction || 'row',
                 block5: props.block5 || '1',
                 block5BorderLeft: props.b5BLeft,
                 block5BorderRight: props.b5BRight,
@@ -3452,6 +3460,7 @@ export default class Holder extends Component {
                 justifyBlock5: props.justifyBlock5 || 'center',
                 block5smdis: props.block5smdis || 'flex',
                 block5mddis: props.block5mddis || 'flex',
+                block6Direction: props.block6direction || 'row',
                 block6: props.block6 || '1',
                 block6BorderLeft: props.b6BLeft,
                 block6BorderRight: props.b6BRight,
@@ -3462,6 +3471,7 @@ export default class Holder extends Component {
                 justifyBlock6: props.justifyBlock6 || 'center',
                 block6smdis: props.block6smdis || 'flex',
                 block6mddis: props.block6mddis || 'flex',
+                block7Direction: props.block7direction || 'row',
                 block7: props.block7 || '1',
                 block7BorderLeft: props.b7BLeft,
                 block7BorderRight: props.b7BRight,
@@ -3472,6 +3482,7 @@ export default class Holder extends Component {
                 justifyBlock7: props.justifyBlock7 || 'center',
                 block7smdis: props.block7smdis || 'flex',
                 block7mddis: props.block7mddis || 'flex',
+                block8Direction: props.block8direction || 'row',
                 block8: props.block8 || '1',
                 block8BorderLeft: props.b8BLeft,
                 block8BorderRight: props.b8BRight,
@@ -3482,6 +3493,7 @@ export default class Holder extends Component {
                 justifyBlock8: props.justifyBlock8 || 'center',
                 block8smdis: props.block8smdis || 'flex',
                 block8mddis: props.block8mddis || 'flex',
+                block9Direction: props.block9direction || 'row',
                 block9: props.block9 || '1',
                 block9BorderLeft: props.b9BLeft,
                 block9BorderRight: props.b9BRight,
@@ -3492,6 +3504,7 @@ export default class Holder extends Component {
                 justifyBlock9: props.justifyBlock9 || 'center',
                 block9smdis: props.block9smdis || 'flex',
                 block9mddis: props.block9mddis || 'flex',
+                block10Direction: props.block10direction || 'row',
                 block10: props.block10 || '1',
                 block10BorderLeft: props.b10BLeft,
                 block10BorderRight: props.b10BRight,
@@ -3502,6 +3515,7 @@ export default class Holder extends Component {
                 justifyBlock10: props.justifyBlock10 || 'center',
                 block10smdis: props.block10smdis || 'flex',
                 block10mddis: props.block10mddis || 'flex',
+                block11Direction: props.block11direction || 'row',
                 block11: props.block11 || '1',
                 block11BorderLeft: props.b11BLeft,
                 block11BorderRight: props.b11BRight,
@@ -3512,6 +3526,7 @@ export default class Holder extends Component {
                 justifyBlock11: props.justifyBlock11 || 'center',
                 block11smdis: props.block11smdis || 'flex',
                 block11mddis: props.block11mddis || 'flex',
+                block12Direction: props.block12direction || 'row',
                 block12: props.block12 || '1',
                 block12BorderLeft: props.b12BLeft,
                 block12BorderRight: props.b12BRight,
@@ -3522,6 +3537,7 @@ export default class Holder extends Component {
                 justifyBlock12: props.justifyBlock12 || 'center',
                 block12smdis: props.block12smdis || 'flex',
                 block12mddis: props.block12mddis || 'flex',
+                block13Direction: props.block13direction || 'row',
                 block13: props.block13 || '1',
                 block13BorderLeft: props.b13BLeft,
                 block13BorderRight: props.b13BRight,
@@ -3532,7 +3548,7 @@ export default class Holder extends Component {
                 justifyBlock13: props.justifyBlock13 || 'center',
                 block13smdis: props.block13smdis || 'flex',
                 block13mddis: props.block13mddis || 'flex',
-            }
+            };
             holderstyles = StyleSheet.create({
                 holderstyles: {
                     width: '100%',
@@ -3560,7 +3576,7 @@ export default class Holder extends Component {
                         flexDirection: this.state.mdflexDir
                     }
                 }
-            }),
+            });
                 block1styles = StyleSheet.create({
                     block1styles: {
                         display: 'flex',
@@ -3585,7 +3601,7 @@ export default class Holder extends Component {
                         block1styles: {
                             display: blocks.block1mddis,
                         }
-                    },
+                    }
                 });
             block2styles = StyleSheet.create({
                 block2styles: {
@@ -3611,8 +3627,7 @@ export default class Holder extends Component {
                     block2styles: {
                         display: blocks.block2mddis,
                     }
-                },
-
+                }
             });
             block3styles = StyleSheet.create({
                 block3styles: {
@@ -3638,8 +3653,7 @@ export default class Holder extends Component {
                     block3styles: {
                         display: blocks.block3mddis,
                     }
-                },
-
+                }
             });
             block4styles = StyleSheet.create({
                 block4styles: {
@@ -3665,8 +3679,7 @@ export default class Holder extends Component {
                     block4styles: {
                         display: blocks.block4mddis,
                     }
-                },
-
+                }
             });
             block5styles = StyleSheet.create({
                 block5styles: {
@@ -3692,8 +3705,7 @@ export default class Holder extends Component {
                     block5styles: {
                         display: blocks.block5mddis,
                     }
-                },
-
+                }
             });
             block6styles = StyleSheet.create({
                 block6styles: {
@@ -3719,8 +3731,7 @@ export default class Holder extends Component {
                     block6styles: {
                         display: blocks.block6mddis,
                     }
-                },
-
+                }
             });
             block7styles = StyleSheet.create({
                 block7styles: {
@@ -3746,7 +3757,7 @@ export default class Holder extends Component {
                     block7styles: {
                         display: blocks.block7mddis,
                     }
-                },
+                }
             });
             block8styles = StyleSheet.create({
                 block8styles: {
@@ -3772,7 +3783,7 @@ export default class Holder extends Component {
                     block8styles: {
                         display: blocks.block8mddis,
                     }
-                },
+                }
             });
             block9styles = StyleSheet.create({
                 block9styles: {
@@ -3798,7 +3809,7 @@ export default class Holder extends Component {
                     block9styles: {
                         display: blocks.block9mddis,
                     }
-                },
+                }
             });
             block10styles = StyleSheet.create({
                 block10styles: {
@@ -3824,7 +3835,7 @@ export default class Holder extends Component {
                     block10styles: {
                         display: blocks.block10mddis,
                     }
-                },
+                }
             });
             block11styles = StyleSheet.create({
                 block11styles: {
@@ -3850,7 +3861,7 @@ export default class Holder extends Component {
                     block11styles: {
                         display: blocks.block11mddis,
                     }
-                },
+                }
             });
             block12styles = StyleSheet.create({
                 block12styles: {
@@ -3876,7 +3887,7 @@ export default class Holder extends Component {
                     block12styles: {
                         display: blocks.block12mddis,
                     }
-                },
+                }
             });
             block13styles = StyleSheet.create({
                 block13styles: {
@@ -3902,7 +3913,7 @@ export default class Holder extends Component {
                     block13styles: {
                         display: blocks.block13mddis,
                     }
-                },
+                }
             });
             styledChilds1 = <div key={Math.random()} style={block1styles.block1styles}>{CHILDS[0]}</div>
             styledChilds2 = <div key={Math.random()} style={block2styles.block2styles}>{CHILDS[1]}</div>
@@ -3933,6 +3944,7 @@ export default class Holder extends Component {
                 justifyBlock1: props.justifyBlock1 || 'center',
                 block1smdis: props.block1smdis || 'flex',
                 block1mddis: props.block1mddis || 'flex',
+                block2Direction: props.block2direction || 'row',
                 block2: props.block2 || '1',
                 block2BorderLeft: props.b2BLeft,
                 block2BorderRight: props.b2BRight,
@@ -3943,6 +3955,7 @@ export default class Holder extends Component {
                 justifyBlock2: props.justifyBlock2 || 'center',
                 block2smdis: props.block2smdis || 'flex',
                 block2mddis: props.block2mddis || 'flex',
+                block3Direction: props.block3direction || 'row',
                 block3: props.block3 || '1',
                 block3BorderLeft: props.b3BLeft,
                 block3BorderRight: props.b3BRight,
@@ -3953,6 +3966,7 @@ export default class Holder extends Component {
                 justifyBlock3: props.justifyBlock3 || 'center',
                 block3smdis: props.block3smdis || 'flex',
                 block3mddis: props.block3mddis || 'flex',
+                block4Direction: props.block4direction || 'row',
                 block4: props.block4 || '1',
                 block4BorderLeft: props.b4BLeft,
                 block4BorderRight: props.b4BRight,
@@ -3963,6 +3977,7 @@ export default class Holder extends Component {
                 justifyBlock4: props.justifyBlock4 || 'center',
                 block4smdis: props.block4smdis || 'flex',
                 block4mddis: props.block4mddis || 'flex',
+                block5Direction: props.block5direction || 'row',
                 block5: props.block5 || '1',
                 block5BorderLeft: props.b5BLeft,
                 block5BorderRight: props.b5BRight,
@@ -3973,6 +3988,7 @@ export default class Holder extends Component {
                 justifyBlock5: props.justifyBlock5 || 'center',
                 block5smdis: props.block5smdis || 'flex',
                 block5mddis: props.block5mddis || 'flex',
+                block6Direction: props.block6direction || 'row',
                 block6: props.block6 || '1',
                 block6BorderLeft: props.b6BLeft,
                 block6BorderRight: props.b6BRight,
@@ -3983,6 +3999,7 @@ export default class Holder extends Component {
                 justifyBlock6: props.justifyBlock6 || 'center',
                 block6smdis: props.block6smdis || 'flex',
                 block6mddis: props.block6mddis || 'flex',
+                block7Direction: props.block7direction || 'row',
                 block7: props.block7 || '1',
                 block7BorderLeft: props.b7BLeft,
                 block7BorderRight: props.b7BRight,
@@ -3993,6 +4010,7 @@ export default class Holder extends Component {
                 justifyBlock7: props.justifyBlock7 || 'center',
                 block7smdis: props.block7smdis || 'flex',
                 block7mddis: props.block7mddis || 'flex',
+                block8Direction: props.block8direction || 'row',
                 block8: props.block8 || '1',
                 block8BorderLeft: props.b8BLeft,
                 block8BorderRight: props.b8BRight,
@@ -4003,6 +4021,7 @@ export default class Holder extends Component {
                 justifyBlock8: props.justifyBlock8 || 'center',
                 block8smdis: props.block8smdis || 'flex',
                 block8mddis: props.block8mddis || 'flex',
+                block9Direction: props.block9direction || 'row',
                 block9: props.block9 || '1',
                 block9BorderLeft: props.b9BLeft,
                 block9BorderRight: props.b9BRight,
@@ -4013,6 +4032,7 @@ export default class Holder extends Component {
                 justifyBlock9: props.justifyBlock9 || 'center',
                 block9smdis: props.block9smdis || 'flex',
                 block9mddis: props.block9mddis || 'flex',
+                block10Direction: props.block10direction || 'row',
                 block10: props.block10 || '1',
                 block10BorderLeft: props.b10BLeft,
                 block10BorderRight: props.b10BRight,
@@ -4023,6 +4043,7 @@ export default class Holder extends Component {
                 justifyBlock10: props.justifyBlock10 || 'center',
                 block10smdis: props.block10smdis || 'flex',
                 block10mddis: props.block10mddis || 'flex',
+                block11Direction: props.block11direction || 'row',
                 block11: props.block11 || '1',
                 block11BorderLeft: props.b11BLeft,
                 block11BorderRight: props.b11BRight,
@@ -4033,6 +4054,7 @@ export default class Holder extends Component {
                 justifyBlock11: props.justifyBlock11 || 'center',
                 block11smdis: props.block11smdis || 'flex',
                 block11mddis: props.block11mddis || 'flex',
+                block12Direction: props.block12direction || 'row',
                 block12: props.block12 || '1',
                 block12BorderLeft: props.b12BLeft,
                 block12BorderRight: props.b12BRight,
@@ -4043,6 +4065,7 @@ export default class Holder extends Component {
                 justifyBlock12: props.justifyBlock12 || 'center',
                 block12smdis: props.block12smdis || 'flex',
                 block12mddis: props.block12mddis || 'flex',
+                block13Direction: props.block13direction || 'row',
                 block13: props.block13 || '1',
                 block13BorderLeft: props.b13BLeft,
                 block13BorderRight: props.b13BRight,
@@ -4053,6 +4076,7 @@ export default class Holder extends Component {
                 justifyBlock13: props.justifyBlock13 || 'center',
                 block13smdis: props.block13smdis || 'flex',
                 block13mddis: props.block13mddis || 'flex',
+                block14Direction: props.block14direction || 'row',
                 block14: props.block14 || '1',
                 block14BorderLeft: props.b14BLeft,
                 block14BorderRight: props.b14BRight,
@@ -4063,7 +4087,7 @@ export default class Holder extends Component {
                 justifyBlock14: props.justifyBlock14 || 'center',
                 block14smdis: props.block14smdis || 'flex',
                 block14mddis: props.block14mddis || 'flex',
-            }
+            };
             holderstyles = StyleSheet.create({
                 holderstyles: {
                     width: '100%',
@@ -4091,7 +4115,7 @@ export default class Holder extends Component {
                         flexDirection: this.state.mdflexDir
                     }
                 }
-            }),
+            });
                 block1styles = StyleSheet.create({
                     block1styles: {
                         display: 'flex',
@@ -4116,7 +4140,7 @@ export default class Holder extends Component {
                         block1styles: {
                             display: blocks.block1mddis,
                         }
-                    },
+                    }
                 });
             block2styles = StyleSheet.create({
                 block2styles: {
@@ -4142,8 +4166,7 @@ export default class Holder extends Component {
                     block2styles: {
                         display: blocks.block2mddis,
                     }
-                },
-
+                }
             });
             block3styles = StyleSheet.create({
                 block3styles: {
@@ -4169,8 +4192,7 @@ export default class Holder extends Component {
                     block3styles: {
                         display: blocks.block3mddis,
                     }
-                },
-
+                }
             });
             block4styles = StyleSheet.create({
                 block4styles: {
@@ -4196,8 +4218,7 @@ export default class Holder extends Component {
                     block4styles: {
                         display: blocks.block4mddis,
                     }
-                },
-
+                }
             });
             block5styles = StyleSheet.create({
                 block5styles: {
@@ -4223,8 +4244,7 @@ export default class Holder extends Component {
                     block5styles: {
                         display: blocks.block5mddis,
                     }
-                },
-
+                }
             });
             block6styles = StyleSheet.create({
                 block6styles: {
@@ -4250,8 +4270,7 @@ export default class Holder extends Component {
                     block6styles: {
                         display: blocks.block6mddis,
                     }
-                },
-
+                }
             });
             block7styles = StyleSheet.create({
                 block7styles: {
@@ -4277,7 +4296,7 @@ export default class Holder extends Component {
                     block7styles: {
                         display: blocks.block7mddis,
                     }
-                },
+                }
             });
             block8styles = StyleSheet.create({
                 block8styles: {
@@ -4303,7 +4322,7 @@ export default class Holder extends Component {
                     block8styles: {
                         display: blocks.block8mddis,
                     }
-                },
+                }
             });
             block9styles = StyleSheet.create({
                 block9styles: {
@@ -4329,7 +4348,7 @@ export default class Holder extends Component {
                     block9styles: {
                         display: blocks.block9mddis,
                     }
-                },
+                }
             });
             block10styles = StyleSheet.create({
                 block10styles: {
@@ -4355,7 +4374,7 @@ export default class Holder extends Component {
                     block10styles: {
                         display: blocks.block10mddis,
                     }
-                },
+                }
             });
             block11styles = StyleSheet.create({
                 block11styles: {
@@ -4381,7 +4400,7 @@ export default class Holder extends Component {
                     block11styles: {
                         display: blocks.block11mddis,
                     }
-                },
+                }
             });
             block12styles = StyleSheet.create({
                 block12styles: {
@@ -4407,7 +4426,7 @@ export default class Holder extends Component {
                     block12styles: {
                         display: blocks.block12mddis,
                     }
-                },
+                }
             });
             block13styles = StyleSheet.create({
                 block13styles: {
@@ -4433,7 +4452,7 @@ export default class Holder extends Component {
                     block13styles: {
                         display: blocks.block13mddis,
                     }
-                },
+                }
             });
             block14styles = StyleSheet.create({
                 block14styles: {
@@ -4459,7 +4478,7 @@ export default class Holder extends Component {
                     block14styles: {
                         display: blocks.block14mddis,
                     }
-                },
+                }
             });
             styledChilds1 = <div key={Math.random()} style={block1styles.block1styles}>{CHILDS[0]}</div>
             styledChilds2 = <div key={Math.random()} style={block2styles.block2styles}>{CHILDS[1]}</div>
@@ -4491,6 +4510,7 @@ export default class Holder extends Component {
                 justifyBlock1: props.justifyBlock1 || 'center',
                 block1smdis: props.block1smdis || 'flex',
                 block1mddis: props.block1mddis || 'flex',
+                block2Direction: props.block2direction || 'row',
                 block2: props.block2 || '1',
                 block2BorderLeft: props.b2BLeft,
                 block2BorderRight: props.b2BRight,
@@ -4501,6 +4521,7 @@ export default class Holder extends Component {
                 justifyBlock2: props.justifyBlock2 || 'center',
                 block2smdis: props.block2smdis || 'flex',
                 block2mddis: props.block2mddis || 'flex',
+                block3Direction: props.block3direction || 'row',
                 block3: props.block3 || '1',
                 block3BorderLeft: props.b3BLeft,
                 block3BorderRight: props.b3BRight,
@@ -4511,6 +4532,7 @@ export default class Holder extends Component {
                 justifyBlock3: props.justifyBlock3 || 'center',
                 block3smdis: props.block3smdis || 'flex',
                 block3mddis: props.block3mddis || 'flex',
+                block4Direction: props.block4direction || 'row',
                 block4: props.block4 || '1',
                 block4BorderLeft: props.b4BLeft,
                 block4BorderRight: props.b4BRight,
@@ -4521,6 +4543,7 @@ export default class Holder extends Component {
                 justifyBlock4: props.justifyBlock4 || 'center',
                 block4smdis: props.block4smdis || 'flex',
                 block4mddis: props.block4mddis || 'flex',
+                block5Direction: props.block5direction || 'row',
                 block5: props.block5 || '1',
                 block5BorderLeft: props.b5BLeft,
                 block5BorderRight: props.b5BRight,
@@ -4531,6 +4554,7 @@ export default class Holder extends Component {
                 justifyBlock5: props.justifyBlock5 || 'center',
                 block5smdis: props.block5smdis || 'flex',
                 block5mddis: props.block5mddis || 'flex',
+                block6Direction: props.block6direction || 'row',
                 block6: props.block6 || '1',
                 block6BorderLeft: props.b6BLeft,
                 block6BorderRight: props.b6BRight,
@@ -4541,6 +4565,7 @@ export default class Holder extends Component {
                 justifyBlock6: props.justifyBlock6 || 'center',
                 block6smdis: props.block6smdis || 'flex',
                 block6mddis: props.block6mddis || 'flex',
+                block7Direction: props.block7direction || 'row',
                 block7: props.block7 || '1',
                 block7BorderLeft: props.b7BLeft,
                 block7BorderRight: props.b7BRight,
@@ -4551,6 +4576,7 @@ export default class Holder extends Component {
                 justifyBlock7: props.justifyBlock7 || 'center',
                 block7smdis: props.block7smdis || 'flex',
                 block7mddis: props.block7mddis || 'flex',
+                block8Direction: props.block8direction || 'row',
                 block8: props.block8 || '1',
                 block8BorderLeft: props.b8BLeft,
                 block8BorderRight: props.b8BRight,
@@ -4561,6 +4587,7 @@ export default class Holder extends Component {
                 justifyBlock8: props.justifyBlock8 || 'center',
                 block8smdis: props.block8smdis || 'flex',
                 block8mddis: props.block8mddis || 'flex',
+                block9Direction: props.block9direction || 'row',
                 block9: props.block9 || '1',
                 block9BorderLeft: props.b9BLeft,
                 block9BorderRight: props.b9BRight,
@@ -4571,6 +4598,7 @@ export default class Holder extends Component {
                 justifyBlock9: props.justifyBlock9 || 'center',
                 block9smdis: props.block9smdis || 'flex',
                 block9mddis: props.block9mddis || 'flex',
+                block10Direction: props.block10direction || 'row',
                 block10: props.block10 || '1',
                 block10BorderLeft: props.b10BLeft,
                 block10BorderRight: props.b10BRight,
@@ -4581,6 +4609,7 @@ export default class Holder extends Component {
                 justifyBlock10: props.justifyBlock10 || 'center',
                 block10smdis: props.block10smdis || 'flex',
                 block10mddis: props.block10mddis || 'flex',
+                block11Direction: props.block11direction || 'row',
                 block11: props.block11 || '1',
                 block11BorderLeft: props.b11BLeft,
                 block11BorderRight: props.b11BRight,
@@ -4591,6 +4620,7 @@ export default class Holder extends Component {
                 justifyBlock11: props.justifyBlock11 || 'center',
                 block11smdis: props.block11smdis || 'flex',
                 block11mddis: props.block11mddis || 'flex',
+                block12Direction: props.block12direction || 'row',
                 block12: props.block12 || '1',
                 block12BorderLeft: props.b12BLeft,
                 block12BorderRight: props.b12BRight,
@@ -4601,6 +4631,7 @@ export default class Holder extends Component {
                 justifyBlock12: props.justifyBlock12 || 'center',
                 block12smdis: props.block12smdis || 'flex',
                 block12mddis: props.block12mddis || 'flex',
+                block13Direction: props.block13direction || 'row',
                 block13: props.block13 || '1',
                 block13BorderLeft: props.b13BLeft,
                 block13BorderRight: props.b13BRight,
@@ -4611,6 +4642,7 @@ export default class Holder extends Component {
                 justifyBlock13: props.justifyBlock13 || 'center',
                 block13smdis: props.block13smdis || 'flex',
                 block13mddis: props.block13mddis || 'flex',
+                block14Direction: props.block14direction || 'row',
                 block14: props.block14 || '1',
                 block14BorderLeft: props.b14BLeft,
                 block14BorderRight: props.b14BRight,
@@ -4621,6 +4653,7 @@ export default class Holder extends Component {
                 justifyBlock14: props.justifyBlock14 || 'center',
                 block14smdis: props.block14smdis || 'flex',
                 block14mddis: props.block14mddis || 'flex',
+                block15Direction: props.block15direction || 'row',
                 block15: props.block15 || '1',
                 block15BorderLeft: props.b15BLeft,
                 block15BorderRight: props.b15BRight,
@@ -4631,7 +4664,7 @@ export default class Holder extends Component {
                 justifyBlock15: props.justifyBlock15 || 'center',
                 block15smdis: props.block15smdis || 'flex',
                 block15mddis: props.block15mddis || 'flex',
-            }
+            };
             holderstyles = StyleSheet.create({
                 holderstyles: {
                     width: '100%',
@@ -4659,7 +4692,7 @@ export default class Holder extends Component {
                         flexDirection: this.state.mdflexDir
                     }
                 }
-            }),
+            });
                 block1styles = StyleSheet.create({
                     block1styles: {
                         display: 'flex',
@@ -4684,7 +4717,7 @@ export default class Holder extends Component {
                         block1styles: {
                             display: blocks.block1mddis,
                         }
-                    },
+                    }
                 });
             block2styles = StyleSheet.create({
                 block2styles: {
@@ -4710,8 +4743,7 @@ export default class Holder extends Component {
                     block2styles: {
                         display: blocks.block2mddis,
                     }
-                },
-
+                }
             });
             block3styles = StyleSheet.create({
                 block3styles: {
@@ -4737,8 +4769,7 @@ export default class Holder extends Component {
                     block3styles: {
                         display: blocks.block3mddis,
                     }
-                },
-
+                }
             });
             block4styles = StyleSheet.create({
                 block4styles: {
@@ -4764,8 +4795,7 @@ export default class Holder extends Component {
                     block4styles: {
                         display: blocks.block4mddis,
                     }
-                },
-
+                }
             });
             block5styles = StyleSheet.create({
                 block5styles: {
@@ -4791,8 +4821,7 @@ export default class Holder extends Component {
                     block5styles: {
                         display: blocks.block5mddis,
                     }
-                },
-
+                }
             });
             block6styles = StyleSheet.create({
                 block6styles: {
@@ -4818,8 +4847,7 @@ export default class Holder extends Component {
                     block6styles: {
                         display: blocks.block6mddis,
                     }
-                },
-
+                }
             });
             block7styles = StyleSheet.create({
                 block7styles: {
@@ -4845,7 +4873,7 @@ export default class Holder extends Component {
                     block7styles: {
                         display: blocks.block7mddis,
                     }
-                },
+                }
             });
             block8styles = StyleSheet.create({
                 block8styles: {
@@ -4871,7 +4899,7 @@ export default class Holder extends Component {
                     block8styles: {
                         display: blocks.block8mddis,
                     }
-                },
+                }
             });
             block9styles = StyleSheet.create({
                 block9styles: {
@@ -4897,7 +4925,7 @@ export default class Holder extends Component {
                     block9styles: {
                         display: blocks.block9mddis,
                     }
-                },
+                }
             });
             block10styles = StyleSheet.create({
                 block10styles: {
@@ -4923,7 +4951,7 @@ export default class Holder extends Component {
                     block10styles: {
                         display: blocks.block10mddis,
                     }
-                },
+                }
             });
             block11styles = StyleSheet.create({
                 block11styles: {
@@ -4949,7 +4977,7 @@ export default class Holder extends Component {
                     block11styles: {
                         display: blocks.block11mddis,
                     }
-                },
+                }
             });
             block12styles = StyleSheet.create({
                 block12styles: {
@@ -4975,7 +5003,7 @@ export default class Holder extends Component {
                     block12styles: {
                         display: blocks.block12mddis,
                     }
-                },
+                }
             });
             block13styles = StyleSheet.create({
                 block13styles: {
@@ -5001,7 +5029,7 @@ export default class Holder extends Component {
                     block13styles: {
                         display: blocks.block13mddis,
                     }
-                },
+                }
             });
             block14styles = StyleSheet.create({
                 block14styles: {
@@ -5027,7 +5055,7 @@ export default class Holder extends Component {
                     block14styles: {
                         display: blocks.block14mddis,
                     }
-                },
+                }
             });
             block15styles = StyleSheet.create({
                 block15styles: {
@@ -5053,7 +5081,7 @@ export default class Holder extends Component {
                     block15styles: {
                         display: blocks.block15mddis,
                     }
-                },
+                }
             });
             styledChilds1 = <div key={Math.random()} style={block1styles.block1styles}>{CHILDS[0]}</div>
             styledChilds2 = <div key={Math.random()} style={block2styles.block2styles}>{CHILDS[1]}</div>
@@ -5086,6 +5114,7 @@ export default class Holder extends Component {
                 justifyBlock1: props.justifyBlock1 || 'center',
                 block1smdis: props.block1smdis || 'flex',
                 block1mddis: props.block1mddis || 'flex',
+                block2Direction: props.block2direction || 'row',
                 block2: props.block2 || '1',
                 block2BorderLeft: props.b2BLeft,
                 block2BorderRight: props.b2BRight,
@@ -5096,6 +5125,7 @@ export default class Holder extends Component {
                 justifyBlock2: props.justifyBlock2 || 'center',
                 block2smdis: props.block2smdis || 'flex',
                 block2mddis: props.block2mddis || 'flex',
+                block3Direction: props.block3direction || 'row',
                 block3: props.block3 || '1',
                 block3BorderLeft: props.b3BLeft,
                 block3BorderRight: props.b3BRight,
@@ -5106,6 +5136,7 @@ export default class Holder extends Component {
                 justifyBlock3: props.justifyBlock3 || 'center',
                 block3smdis: props.block3smdis || 'flex',
                 block3mddis: props.block3mddis || 'flex',
+                block4Direction: props.block4direction || 'row',
                 block4: props.block4 || '1',
                 block4BorderLeft: props.b4BLeft,
                 block4BorderRight: props.b4BRight,
@@ -5116,6 +5147,7 @@ export default class Holder extends Component {
                 justifyBlock4: props.justifyBlock4 || 'center',
                 block4smdis: props.block4smdis || 'flex',
                 block4mddis: props.block4mddis || 'flex',
+                block5Direction: props.block5direction || 'row',
                 block5: props.block5 || '1',
                 block5BorderLeft: props.b5BLeft,
                 block5BorderRight: props.b5BRight,
@@ -5126,6 +5158,7 @@ export default class Holder extends Component {
                 justifyBlock5: props.justifyBlock5 || 'center',
                 block5smdis: props.block5smdis || 'flex',
                 block5mddis: props.block5mddis || 'flex',
+                block6Direction: props.block6direction || 'row',
                 block6: props.block6 || '1',
                 block6BorderLeft: props.b6BLeft,
                 block6BorderRight: props.b6BRight,
@@ -5136,6 +5169,7 @@ export default class Holder extends Component {
                 justifyBlock6: props.justifyBlock6 || 'center',
                 block6smdis: props.block6smdis || 'flex',
                 block6mddis: props.block6mddis || 'flex',
+                block7Direction: props.block7direction || 'row',
                 block7: props.block7 || '1',
                 block7BorderLeft: props.b7BLeft,
                 block7BorderRight: props.b7BRight,
@@ -5146,6 +5180,7 @@ export default class Holder extends Component {
                 justifyBlock7: props.justifyBlock7 || 'center',
                 block7smdis: props.block7smdis || 'flex',
                 block7mddis: props.block7mddis || 'flex',
+                block8Direction: props.block8direction || 'row',
                 block8: props.block8 || '1',
                 block8BorderLeft: props.b8BLeft,
                 block8BorderRight: props.b8BRight,
@@ -5156,6 +5191,7 @@ export default class Holder extends Component {
                 justifyBlock8: props.justifyBlock8 || 'center',
                 block8smdis: props.block8smdis || 'flex',
                 block8mddis: props.block8mddis || 'flex',
+                block9Direction: props.block9direction || 'row',
                 block9: props.block9 || '1',
                 block9BorderLeft: props.b9BLeft,
                 block9BorderRight: props.b9BRight,
@@ -5166,6 +5202,7 @@ export default class Holder extends Component {
                 justifyBlock9: props.justifyBlock9 || 'center',
                 block9smdis: props.block9smdis || 'flex',
                 block9mddis: props.block9mddis || 'flex',
+                block10Direction: props.block10direction || 'row',
                 block10: props.block10 || '1',
                 block10BorderLeft: props.b10BLeft,
                 block10BorderRight: props.b10BRight,
@@ -5176,6 +5213,7 @@ export default class Holder extends Component {
                 justifyBlock10: props.justifyBlock10 || 'center',
                 block10smdis: props.block10smdis || 'flex',
                 block10mddis: props.block10mddis || 'flex',
+                block11Direction: props.block11direction || 'row',
                 block11: props.block11 || '1',
                 block11BorderLeft: props.b11BLeft,
                 block11BorderRight: props.b11BRight,
@@ -5186,6 +5224,7 @@ export default class Holder extends Component {
                 justifyBlock11: props.justifyBlock11 || 'center',
                 block11smdis: props.block11smdis || 'flex',
                 block11mddis: props.block11mddis || 'flex',
+                block12Direction: props.block12direction || 'row',
                 block12: props.block12 || '1',
                 block12BorderLeft: props.b12BLeft,
                 block12BorderRight: props.b12BRight,
@@ -5196,6 +5235,7 @@ export default class Holder extends Component {
                 justifyBlock12: props.justifyBlock12 || 'center',
                 block12smdis: props.block12smdis || 'flex',
                 block12mddis: props.block12mddis || 'flex',
+                block13Direction: props.block13direction || 'row',
                 block13: props.block13 || '1',
                 block13BorderLeft: props.b13BLeft,
                 block13BorderRight: props.b13BRight,
@@ -5206,6 +5246,7 @@ export default class Holder extends Component {
                 justifyBlock13: props.justifyBlock13 || 'center',
                 block13smdis: props.block13smdis || 'flex',
                 block13mddis: props.block13mddis || 'flex',
+                block14Direction: props.block14direction || 'row',
                 block14: props.block14 || '1',
                 block14BorderLeft: props.b14BLeft,
                 block14BorderRight: props.b14BRight,
@@ -5216,6 +5257,7 @@ export default class Holder extends Component {
                 justifyBlock14: props.justifyBlock14 || 'center',
                 block14smdis: props.block14smdis || 'flex',
                 block14mddis: props.block14mddis || 'flex',
+                block15Direction: props.block15direction || 'row',
                 block15: props.block15 || '1',
                 block15BorderLeft: props.b15BLeft,
                 block15BorderRight: props.b15BRight,
@@ -5226,6 +5268,7 @@ export default class Holder extends Component {
                 justifyBlock15: props.justifyBlock15 || 'center',
                 block15smdis: props.block15smdis || 'flex',
                 block15mddis: props.block15mddis || 'flex',
+                block16Direction: props.block16direction || 'row',
                 block16: props.block16 || '1',
                 block16BorderLeft: props.b16BLeft,
                 block16BorderRight: props.b16BRight,
@@ -5236,7 +5279,7 @@ export default class Holder extends Component {
                 justifyBlock16: props.justifyBlock16 || 'center',
                 block16smdis: props.block16smdis || 'flex',
                 block16mddis: props.block16mddis || 'flex',
-            }
+            };
             holderstyles = StyleSheet.create({
                 holderstyles: {
                     width: '100%',
@@ -5264,7 +5307,7 @@ export default class Holder extends Component {
                         flexDirection: this.state.mdflexDir
                     }
                 }
-            }),
+            });
                 block1styles = StyleSheet.create({
                     block1styles: {
                         display: 'flex',
@@ -5289,7 +5332,7 @@ export default class Holder extends Component {
                         block1styles: {
                             display: blocks.block1mddis,
                         }
-                    },
+                    }
                 });
             block2styles = StyleSheet.create({
                 block2styles: {
@@ -5315,8 +5358,7 @@ export default class Holder extends Component {
                     block2styles: {
                         display: blocks.block2mddis,
                     }
-                },
-
+                }
             });
             block3styles = StyleSheet.create({
                 block3styles: {
@@ -5342,8 +5384,7 @@ export default class Holder extends Component {
                     block3styles: {
                         display: blocks.block3mddis,
                     }
-                },
-
+                }
             });
             block4styles = StyleSheet.create({
                 block4styles: {
@@ -5369,8 +5410,7 @@ export default class Holder extends Component {
                     block4styles: {
                         display: blocks.block4mddis,
                     }
-                },
-
+                }
             });
             block5styles = StyleSheet.create({
                 block5styles: {
@@ -5396,8 +5436,7 @@ export default class Holder extends Component {
                     block5styles: {
                         display: blocks.block5mddis,
                     }
-                },
-
+                }
             });
             block6styles = StyleSheet.create({
                 block6styles: {
@@ -5423,8 +5462,7 @@ export default class Holder extends Component {
                     block6styles: {
                         display: blocks.block6mddis,
                     }
-                },
-
+                }
             });
             block7styles = StyleSheet.create({
                 block7styles: {
@@ -5450,7 +5488,7 @@ export default class Holder extends Component {
                     block7styles: {
                         display: blocks.block7mddis,
                     }
-                },
+                }
             });
             block8styles = StyleSheet.create({
                 block8styles: {
@@ -5476,7 +5514,7 @@ export default class Holder extends Component {
                     block8styles: {
                         display: blocks.block8mddis,
                     }
-                },
+                }
             });
             block9styles = StyleSheet.create({
                 block9styles: {
@@ -5502,7 +5540,7 @@ export default class Holder extends Component {
                     block9styles: {
                         display: blocks.block9mddis,
                     }
-                },
+                }
             });
             block10styles = StyleSheet.create({
                 block10styles: {
@@ -5528,7 +5566,7 @@ export default class Holder extends Component {
                     block10styles: {
                         display: blocks.block10mddis,
                     }
-                },
+                }
             });
             block11styles = StyleSheet.create({
                 block11styles: {
@@ -5554,7 +5592,7 @@ export default class Holder extends Component {
                     block11styles: {
                         display: blocks.block11mddis,
                     }
-                },
+                }
             });
             block12styles = StyleSheet.create({
                 block12styles: {
@@ -5580,7 +5618,7 @@ export default class Holder extends Component {
                     block12styles: {
                         display: blocks.block12mddis,
                     }
-                },
+                }
             });
             block13styles = StyleSheet.create({
                 block13styles: {
@@ -5606,7 +5644,7 @@ export default class Holder extends Component {
                     block13styles: {
                         display: blocks.block13mddis,
                     }
-                },
+                }
             });
             block14styles = StyleSheet.create({
                 block14styles: {
@@ -5632,7 +5670,7 @@ export default class Holder extends Component {
                     block14styles: {
                         display: blocks.block14mddis,
                     }
-                },
+                }
             });
             block15styles = StyleSheet.create({
                 block15styles: {
@@ -5658,7 +5696,7 @@ export default class Holder extends Component {
                     block15styles: {
                         display: blocks.block15mddis,
                     }
-                },
+                }
             });
             block16styles = StyleSheet.create({
                 block16styles: {
@@ -5684,7 +5722,7 @@ export default class Holder extends Component {
                     block16styles: {
                         display: blocks.block16mddis,
                     }
-                },
+                }
             });
             styledChilds1 = <div key={Math.random()} style={block1styles.block1styles}>{CHILDS[0]}</div>
             styledChilds2 = <div key={Math.random()} style={block2styles.block2styles}>{CHILDS[1]}</div>
@@ -5718,6 +5756,7 @@ export default class Holder extends Component {
                 justifyBlock1: props.justifyBlock1 || 'center',
                 block1smdis: props.block1smdis || 'flex',
                 block1mddis: props.block1mddis || 'flex',
+                block2Direction: props.block2direction || 'row',
                 block2: props.block2 || '1',
                 block2BorderLeft: props.b2BLeft,
                 block2BorderRight: props.b2BRight,
@@ -5728,6 +5767,7 @@ export default class Holder extends Component {
                 justifyBlock2: props.justifyBlock2 || 'center',
                 block2smdis: props.block2smdis || 'flex',
                 block2mddis: props.block2mddis || 'flex',
+                block3Direction: props.block3direction || 'row',
                 block3: props.block3 || '1',
                 block3BorderLeft: props.b3BLeft,
                 block3BorderRight: props.b3BRight,
@@ -5738,6 +5778,7 @@ export default class Holder extends Component {
                 justifyBlock3: props.justifyBlock3 || 'center',
                 block3smdis: props.block3smdis || 'flex',
                 block3mddis: props.block3mddis || 'flex',
+                block4Direction: props.block4direction || 'row',
                 block4: props.block4 || '1',
                 block4BorderLeft: props.b4BLeft,
                 block4BorderRight: props.b4BRight,
@@ -5748,6 +5789,7 @@ export default class Holder extends Component {
                 justifyBlock4: props.justifyBlock4 || 'center',
                 block4smdis: props.block4smdis || 'flex',
                 block4mddis: props.block4mddis || 'flex',
+                block5Direction: props.block5direction || 'row',
                 block5: props.block5 || '1',
                 block5BorderLeft: props.b5BLeft,
                 block5BorderRight: props.b5BRight,
@@ -5758,6 +5800,7 @@ export default class Holder extends Component {
                 justifyBlock5: props.justifyBlock5 || 'center',
                 block5smdis: props.block5smdis || 'flex',
                 block5mddis: props.block5mddis || 'flex',
+                block6Direction: props.block6direction || 'row',
                 block6: props.block6 || '1',
                 block6BorderLeft: props.b6BLeft,
                 block6BorderRight: props.b6BRight,
@@ -5768,6 +5811,7 @@ export default class Holder extends Component {
                 justifyBlock6: props.justifyBlock6 || 'center',
                 block6smdis: props.block6smdis || 'flex',
                 block6mddis: props.block6mddis || 'flex',
+                block7Direction: props.block7direction || 'row',
                 block7: props.block7 || '1',
                 block7BorderLeft: props.b7BLeft,
                 block7BorderRight: props.b7BRight,
@@ -5778,6 +5822,7 @@ export default class Holder extends Component {
                 justifyBlock7: props.justifyBlock7 || 'center',
                 block7smdis: props.block7smdis || 'flex',
                 block7mddis: props.block7mddis || 'flex',
+                block8Direction: props.block8direction || 'row',
                 block8: props.block8 || '1',
                 block8BorderLeft: props.b8BLeft,
                 block8BorderRight: props.b8BRight,
@@ -5788,6 +5833,7 @@ export default class Holder extends Component {
                 justifyBlock8: props.justifyBlock8 || 'center',
                 block8smdis: props.block8smdis || 'flex',
                 block8mddis: props.block8mddis || 'flex',
+                block9Direction: props.block9direction || 'row',
                 block9: props.block9 || '1',
                 block9BorderLeft: props.b9BLeft,
                 block9BorderRight: props.b9BRight,
@@ -5798,6 +5844,7 @@ export default class Holder extends Component {
                 justifyBlock9: props.justifyBlock9 || 'center',
                 block9smdis: props.block9smdis || 'flex',
                 block9mddis: props.block9mddis || 'flex',
+                block10Direction: props.block10direction || 'row',
                 block10: props.block10 || '1',
                 block10BorderLeft: props.b10BLeft,
                 block10BorderRight: props.b10BRight,
@@ -5808,6 +5855,7 @@ export default class Holder extends Component {
                 justifyBlock10: props.justifyBlock10 || 'center',
                 block10smdis: props.block10smdis || 'flex',
                 block10mddis: props.block10mddis || 'flex',
+                block11Direction: props.block11direction || 'row',
                 block11: props.block11 || '1',
                 block11BorderLeft: props.b11BLeft,
                 block11BorderRight: props.b11BRight,
@@ -5818,6 +5866,7 @@ export default class Holder extends Component {
                 justifyBlock11: props.justifyBlock11 || 'center',
                 block11smdis: props.block11smdis || 'flex',
                 block11mddis: props.block11mddis || 'flex',
+                block12Direction: props.block12direction || 'row',
                 block12: props.block12 || '1',
                 block12BorderLeft: props.b12BLeft,
                 block12BorderRight: props.b12BRight,
@@ -5828,6 +5877,7 @@ export default class Holder extends Component {
                 justifyBlock12: props.justifyBlock12 || 'center',
                 block12smdis: props.block12smdis || 'flex',
                 block12mddis: props.block12mddis || 'flex',
+                block13Direction: props.block13direction || 'row',
                 block13: props.block13 || '1',
                 block13BorderLeft: props.b13BLeft,
                 block13BorderRight: props.b13BRight,
@@ -5838,6 +5888,7 @@ export default class Holder extends Component {
                 justifyBlock13: props.justifyBlock13 || 'center',
                 block13smdis: props.block13smdis || 'flex',
                 block13mddis: props.block13mddis || 'flex',
+                block14Direction: props.block14direction || 'row',
                 block14: props.block14 || '1',
                 block14BorderLeft: props.b14BLeft,
                 block14BorderRight: props.b14BRight,
@@ -5848,6 +5899,7 @@ export default class Holder extends Component {
                 justifyBlock14: props.justifyBlock14 || 'center',
                 block14smdis: props.block14smdis || 'flex',
                 block14mddis: props.block14mddis || 'flex',
+                block15Direction: props.block15direction || 'row',
                 block15: props.block15 || '1',
                 block15BorderLeft: props.b15BLeft,
                 block15BorderRight: props.b15BRight,
@@ -5858,6 +5910,7 @@ export default class Holder extends Component {
                 justifyBlock15: props.justifyBlock15 || 'center',
                 block15smdis: props.block15smdis || 'flex',
                 block15mddis: props.block15mddis || 'flex',
+                block16Direction: props.block16direction || 'row',
                 block16: props.block16 || '1',
                 block16BorderLeft: props.b16BLeft,
                 block16BorderRight: props.b16BRight,
@@ -5868,6 +5921,7 @@ export default class Holder extends Component {
                 justifyBlock16: props.justifyBlock16 || 'center',
                 block16smdis: props.block16smdis || 'flex',
                 block16mddis: props.block16mddis || 'flex',
+                block17Direction: props.block17direction || 'row',
                 block17: props.block17 || '1',
                 block17BorderLeft: props.b17BLeft,
                 block17BorderRight: props.b17BRight,
@@ -5878,7 +5932,7 @@ export default class Holder extends Component {
                 justifyBlock17: props.justifyBlock17 || 'center',
                 block17smdis: props.block17smdis || 'flex',
                 block17mddis: props.block17mddis || 'flex',
-            }
+            };
             holderstyles = StyleSheet.create({
                 holderstyles: {
                     width: '100%',
@@ -5906,7 +5960,7 @@ export default class Holder extends Component {
                         flexDirection: this.state.mdflexDir
                     }
                 }
-            }),
+            });
                 block1styles = StyleSheet.create({
                     block1styles: {
                         display: 'flex',
@@ -5931,7 +5985,7 @@ export default class Holder extends Component {
                         block1styles: {
                             display: blocks.block1mddis,
                         }
-                    },
+                    }
                 });
             block2styles = StyleSheet.create({
                 block2styles: {
@@ -5957,8 +6011,7 @@ export default class Holder extends Component {
                     block2styles: {
                         display: blocks.block2mddis,
                     }
-                },
-
+                }
             });
             block3styles = StyleSheet.create({
                 block3styles: {
@@ -5984,8 +6037,7 @@ export default class Holder extends Component {
                     block3styles: {
                         display: blocks.block3mddis,
                     }
-                },
-
+                }
             });
             block4styles = StyleSheet.create({
                 block4styles: {
@@ -6011,8 +6063,7 @@ export default class Holder extends Component {
                     block4styles: {
                         display: blocks.block4mddis,
                     }
-                },
-
+                }
             });
             block5styles = StyleSheet.create({
                 block5styles: {
@@ -6038,8 +6089,7 @@ export default class Holder extends Component {
                     block5styles: {
                         display: blocks.block5mddis,
                     }
-                },
-
+                }
             });
             block6styles = StyleSheet.create({
                 block6styles: {
@@ -6065,8 +6115,7 @@ export default class Holder extends Component {
                     block6styles: {
                         display: blocks.block6mddis,
                     }
-                },
-
+                }
             });
             block7styles = StyleSheet.create({
                 block7styles: {
@@ -6092,7 +6141,7 @@ export default class Holder extends Component {
                     block7styles: {
                         display: blocks.block7mddis,
                     }
-                },
+                }
             });
             block8styles = StyleSheet.create({
                 block8styles: {
@@ -6118,7 +6167,7 @@ export default class Holder extends Component {
                     block8styles: {
                         display: blocks.block8mddis,
                     }
-                },
+                }
             });
             block9styles = StyleSheet.create({
                 block9styles: {
@@ -6144,7 +6193,7 @@ export default class Holder extends Component {
                     block9styles: {
                         display: blocks.block9mddis,
                     }
-                },
+                }
             });
             block10styles = StyleSheet.create({
                 block10styles: {
@@ -6170,7 +6219,7 @@ export default class Holder extends Component {
                     block10styles: {
                         display: blocks.block10mddis,
                     }
-                },
+                }
             });
             block11styles = StyleSheet.create({
                 block11styles: {
@@ -6196,7 +6245,7 @@ export default class Holder extends Component {
                     block11styles: {
                         display: blocks.block11mddis,
                     }
-                },
+                }
             });
             block12styles = StyleSheet.create({
                 block12styles: {
@@ -6222,7 +6271,7 @@ export default class Holder extends Component {
                     block12styles: {
                         display: blocks.block12mddis,
                     }
-                },
+                }
             });
             block13styles = StyleSheet.create({
                 block13styles: {
@@ -6248,7 +6297,7 @@ export default class Holder extends Component {
                     block13styles: {
                         display: blocks.block13mddis,
                     }
-                },
+                }
             });
             block14styles = StyleSheet.create({
                 block14styles: {
@@ -6274,7 +6323,7 @@ export default class Holder extends Component {
                     block14styles: {
                         display: blocks.block14mddis,
                     }
-                },
+                }
             });
             block15styles = StyleSheet.create({
                 block15styles: {
@@ -6300,7 +6349,7 @@ export default class Holder extends Component {
                     block15styles: {
                         display: blocks.block15mddis,
                     }
-                },
+                }
             });
             block16styles = StyleSheet.create({
                 block16styles: {
@@ -6326,7 +6375,7 @@ export default class Holder extends Component {
                     block16styles: {
                         display: blocks.block16mddis,
                     }
-                },
+                }
             });
             block17styles = StyleSheet.create({
                 block17styles: {
@@ -6352,7 +6401,7 @@ export default class Holder extends Component {
                     block17styles: {
                         display: blocks.block17mddis,
                     }
-                },
+                }
             });
             styledChilds1 = <div key={Math.random()} style={block1styles.block1styles}>{CHILDS[0]}</div>
             styledChilds2 = <div key={Math.random()} style={block2styles.block2styles}>{CHILDS[1]}</div>
@@ -6387,6 +6436,7 @@ export default class Holder extends Component {
                 justifyBlock1: props.justifyBlock1 || 'center',
                 block1smdis: props.block1smdis || 'flex',
                 block1mddis: props.block1mddis || 'flex',
+                block2Direction: props.block2direction || 'row',
                 block2: props.block2 || '1',
                 block2BorderLeft: props.b2BLeft,
                 block2BorderRight: props.b2BRight,
@@ -6397,6 +6447,7 @@ export default class Holder extends Component {
                 justifyBlock2: props.justifyBlock2 || 'center',
                 block2smdis: props.block2smdis || 'flex',
                 block2mddis: props.block2mddis || 'flex',
+                block3Direction: props.block3direction || 'row',
                 block3: props.block3 || '1',
                 block3BorderLeft: props.b3BLeft,
                 block3BorderRight: props.b3BRight,
@@ -6407,6 +6458,7 @@ export default class Holder extends Component {
                 justifyBlock3: props.justifyBlock3 || 'center',
                 block3smdis: props.block3smdis || 'flex',
                 block3mddis: props.block3mddis || 'flex',
+                block4Direction: props.block4direction || 'row',
                 block4: props.block4 || '1',
                 block4BorderLeft: props.b4BLeft,
                 block4BorderRight: props.b4BRight,
@@ -6417,6 +6469,7 @@ export default class Holder extends Component {
                 justifyBlock4: props.justifyBlock4 || 'center',
                 block4smdis: props.block4smdis || 'flex',
                 block4mddis: props.block4mddis || 'flex',
+                block5Direction: props.block5direction || 'row',
                 block5: props.block5 || '1',
                 block5BorderLeft: props.b5BLeft,
                 block5BorderRight: props.b5BRight,
@@ -6427,6 +6480,7 @@ export default class Holder extends Component {
                 justifyBlock5: props.justifyBlock5 || 'center',
                 block5smdis: props.block5smdis || 'flex',
                 block5mddis: props.block5mddis || 'flex',
+                block6Direction: props.block6direction || 'row',
                 block6: props.block6 || '1',
                 block6BorderLeft: props.b6BLeft,
                 block6BorderRight: props.b6BRight,
@@ -6437,6 +6491,7 @@ export default class Holder extends Component {
                 justifyBlock6: props.justifyBlock6 || 'center',
                 block6smdis: props.block6smdis || 'flex',
                 block6mddis: props.block6mddis || 'flex',
+                block7Direction: props.block7direction || 'row',
                 block7: props.block7 || '1',
                 block7BorderLeft: props.b7BLeft,
                 block7BorderRight: props.b7BRight,
@@ -6447,6 +6502,7 @@ export default class Holder extends Component {
                 justifyBlock7: props.justifyBlock7 || 'center',
                 block7smdis: props.block7smdis || 'flex',
                 block7mddis: props.block7mddis || 'flex',
+                block8Direction: props.block8direction || 'row',
                 block8: props.block8 || '1',
                 block8BorderLeft: props.b8BLeft,
                 block8BorderRight: props.b8BRight,
@@ -6457,6 +6513,7 @@ export default class Holder extends Component {
                 justifyBlock8: props.justifyBlock8 || 'center',
                 block8smdis: props.block8smdis || 'flex',
                 block8mddis: props.block8mddis || 'flex',
+                block9Direction: props.block9direction || 'row',
                 block9: props.block9 || '1',
                 block9BorderLeft: props.b9BLeft,
                 block9BorderRight: props.b9BRight,
@@ -6467,6 +6524,7 @@ export default class Holder extends Component {
                 justifyBlock9: props.justifyBlock9 || 'center',
                 block9smdis: props.block9smdis || 'flex',
                 block9mddis: props.block9mddis || 'flex',
+                block10Direction: props.block10direction || 'row',
                 block10: props.block10 || '1',
                 block10BorderLeft: props.b10BLeft,
                 block10BorderRight: props.b10BRight,
@@ -6477,6 +6535,7 @@ export default class Holder extends Component {
                 justifyBlock10: props.justifyBlock10 || 'center',
                 block10smdis: props.block10smdis || 'flex',
                 block10mddis: props.block10mddis || 'flex',
+                block11Direction: props.block11direction || 'row',
                 block11: props.block11 || '1',
                 block11BorderLeft: props.b11BLeft,
                 block11BorderRight: props.b11BRight,
@@ -6487,6 +6546,7 @@ export default class Holder extends Component {
                 justifyBlock11: props.justifyBlock11 || 'center',
                 block11smdis: props.block11smdis || 'flex',
                 block11mddis: props.block11mddis || 'flex',
+                block12Direction: props.block12direction || 'row',
                 block12: props.block12 || '1',
                 block12BorderLeft: props.b12BLeft,
                 block12BorderRight: props.b12BRight,
@@ -6497,6 +6557,7 @@ export default class Holder extends Component {
                 justifyBlock12: props.justifyBlock12 || 'center',
                 block12smdis: props.block12smdis || 'flex',
                 block12mddis: props.block12mddis || 'flex',
+                block13Direction: props.block13direction || 'row',
                 block13: props.block13 || '1',
                 block13BorderLeft: props.b13BLeft,
                 block13BorderRight: props.b13BRight,
@@ -6507,6 +6568,7 @@ export default class Holder extends Component {
                 justifyBlock13: props.justifyBlock13 || 'center',
                 block13smdis: props.block13smdis || 'flex',
                 block13mddis: props.block13mddis || 'flex',
+                block14Direction: props.block14direction || 'row',
                 block14: props.block14 || '1',
                 block14BorderLeft: props.b14BLeft,
                 block14BorderRight: props.b14BRight,
@@ -6517,6 +6579,7 @@ export default class Holder extends Component {
                 justifyBlock14: props.justifyBlock14 || 'center',
                 block14smdis: props.block14smdis || 'flex',
                 block14mddis: props.block14mddis || 'flex',
+                block15Direction: props.block15direction || 'row',
                 block15: props.block15 || '1',
                 block15BorderLeft: props.b15BLeft,
                 block15BorderRight: props.b15BRight,
@@ -6527,6 +6590,7 @@ export default class Holder extends Component {
                 justifyBlock15: props.justifyBlock15 || 'center',
                 block15smdis: props.block15smdis || 'flex',
                 block15mddis: props.block15mddis || 'flex',
+                block16Direction: props.block16direction || 'row',
                 block16: props.block16 || '1',
                 block16BorderLeft: props.b16BLeft,
                 block16BorderRight: props.b16BRight,
@@ -6537,6 +6601,7 @@ export default class Holder extends Component {
                 justifyBlock16: props.justifyBlock16 || 'center',
                 block16smdis: props.block16smdis || 'flex',
                 block16mddis: props.block16mddis || 'flex',
+                block17Direction: props.block17direction || 'row',
                 block17: props.block17 || '1',
                 block17BorderLeft: props.b17BLeft,
                 block17BorderRight: props.b17BRight,
@@ -6547,6 +6612,7 @@ export default class Holder extends Component {
                 justifyBlock17: props.justifyBlock17 || 'center',
                 block17smdis: props.block17smdis || 'flex',
                 block17mddis: props.block17mddis || 'flex',
+                block18Direction: props.block18direction || 'row',
                 block18: props.block18 || '1',
                 block18BorderLeft: props.b18BLeft,
                 block18BorderRight: props.b18BRight,
@@ -6557,7 +6623,7 @@ export default class Holder extends Component {
                 justifyBlock18: props.justifyBlock18 || 'center',
                 block18smdis: props.block18smdis || 'flex',
                 block18mddis: props.block18mddis || 'flex',
-            }
+            };
             holderstyles = StyleSheet.create({
                 holderstyles: {
                     width: '100%',
@@ -6585,7 +6651,7 @@ export default class Holder extends Component {
                         flexDirection: this.state.mdflexDir
                     }
                 }
-            }),
+            });
                 block1styles = StyleSheet.create({
                     block1styles: {
                         display: 'flex',
@@ -6610,7 +6676,7 @@ export default class Holder extends Component {
                         block1styles: {
                             display: blocks.block1mddis,
                         }
-                    },
+                    }
                 });
             block2styles = StyleSheet.create({
                 block2styles: {
@@ -6636,8 +6702,7 @@ export default class Holder extends Component {
                     block2styles: {
                         display: blocks.block2mddis,
                     }
-                },
-
+                }
             });
             block3styles = StyleSheet.create({
                 block3styles: {
@@ -6663,8 +6728,7 @@ export default class Holder extends Component {
                     block3styles: {
                         display: blocks.block3mddis,
                     }
-                },
-
+                }
             });
             block4styles = StyleSheet.create({
                 block4styles: {
@@ -6690,8 +6754,7 @@ export default class Holder extends Component {
                     block4styles: {
                         display: blocks.block4mddis,
                     }
-                },
-
+                }
             });
             block5styles = StyleSheet.create({
                 block5styles: {
@@ -6717,8 +6780,7 @@ export default class Holder extends Component {
                     block5styles: {
                         display: blocks.block5mddis,
                     }
-                },
-
+                }
             });
             block6styles = StyleSheet.create({
                 block6styles: {
@@ -6744,8 +6806,7 @@ export default class Holder extends Component {
                     block6styles: {
                         display: blocks.block6mddis,
                     }
-                },
-
+                }
             });
             block7styles = StyleSheet.create({
                 block7styles: {
@@ -6771,7 +6832,7 @@ export default class Holder extends Component {
                     block7styles: {
                         display: blocks.block7mddis,
                     }
-                },
+                }
             });
             block8styles = StyleSheet.create({
                 block8styles: {
@@ -6797,7 +6858,7 @@ export default class Holder extends Component {
                     block8styles: {
                         display: blocks.block8mddis,
                     }
-                },
+                }
             });
             block9styles = StyleSheet.create({
                 block9styles: {
@@ -6823,7 +6884,7 @@ export default class Holder extends Component {
                     block9styles: {
                         display: blocks.block9mddis,
                     }
-                },
+                }
             });
             block10styles = StyleSheet.create({
                 block10styles: {
@@ -6849,7 +6910,7 @@ export default class Holder extends Component {
                     block10styles: {
                         display: blocks.block10mddis,
                     }
-                },
+                }
             });
             block11styles = StyleSheet.create({
                 block11styles: {
@@ -6875,7 +6936,7 @@ export default class Holder extends Component {
                     block11styles: {
                         display: blocks.block11mddis,
                     }
-                },
+                }
             });
             block12styles = StyleSheet.create({
                 block12styles: {
@@ -6901,7 +6962,7 @@ export default class Holder extends Component {
                     block12styles: {
                         display: blocks.block12mddis,
                     }
-                },
+                }
             });
             block13styles = StyleSheet.create({
                 block13styles: {
@@ -6927,7 +6988,7 @@ export default class Holder extends Component {
                     block13styles: {
                         display: blocks.block13mddis,
                     }
-                },
+                }
             });
             block14styles = StyleSheet.create({
                 block14styles: {
@@ -6953,7 +7014,7 @@ export default class Holder extends Component {
                     block14styles: {
                         display: blocks.block14mddis,
                     }
-                },
+                }
             });
             block15styles = StyleSheet.create({
                 block15styles: {
@@ -6979,7 +7040,7 @@ export default class Holder extends Component {
                     block15styles: {
                         display: blocks.block15mddis,
                     }
-                },
+                }
             });
             block16styles = StyleSheet.create({
                 block16styles: {
@@ -7005,7 +7066,7 @@ export default class Holder extends Component {
                     block16styles: {
                         display: blocks.block16mddis,
                     }
-                },
+                }
             });
             block17styles = StyleSheet.create({
                 block17styles: {
@@ -7031,7 +7092,7 @@ export default class Holder extends Component {
                     block17styles: {
                         display: blocks.block17mddis,
                     }
-                },
+                }
             });
             block18styles = StyleSheet.create({
                 block18styles: {
@@ -7057,7 +7118,7 @@ export default class Holder extends Component {
                     block18styles: {
                         display: blocks.block18mddis,
                     }
-                },
+                }
             });
             styledChilds1 = <div key={Math.random()} style={block1styles.block1styles}>{CHILDS[0]}</div>
             styledChilds2 = <div key={Math.random()} style={block2styles.block2styles}>{CHILDS[1]}</div>
@@ -7093,6 +7154,7 @@ export default class Holder extends Component {
                 justifyBlock1: props.justifyBlock1 || 'center',
                 block1smdis: props.block1smdis || 'flex',
                 block1mddis: props.block1mddis || 'flex',
+                block2Direction: props.block2direction || 'row',
                 block2: props.block2 || '1',
                 block2BorderLeft: props.b2BLeft,
                 block2BorderRight: props.b2BRight,
@@ -7103,6 +7165,7 @@ export default class Holder extends Component {
                 justifyBlock2: props.justifyBlock2 || 'center',
                 block2smdis: props.block2smdis || 'flex',
                 block2mddis: props.block2mddis || 'flex',
+                block3Direction: props.block3direction || 'row',
                 block3: props.block3 || '1',
                 block3BorderLeft: props.b3BLeft,
                 block3BorderRight: props.b3BRight,
@@ -7113,6 +7176,7 @@ export default class Holder extends Component {
                 justifyBlock3: props.justifyBlock3 || 'center',
                 block3smdis: props.block3smdis || 'flex',
                 block3mddis: props.block3mddis || 'flex',
+                block4Direction: props.block4direction || 'row',
                 block4: props.block4 || '1',
                 block4BorderLeft: props.b4BLeft,
                 block4BorderRight: props.b4BRight,
@@ -7123,6 +7187,7 @@ export default class Holder extends Component {
                 justifyBlock4: props.justifyBlock4 || 'center',
                 block4smdis: props.block4smdis || 'flex',
                 block4mddis: props.block4mddis || 'flex',
+                block5Direction: props.block5direction || 'row',
                 block5: props.block5 || '1',
                 block5BorderLeft: props.b5BLeft,
                 block5BorderRight: props.b5BRight,
@@ -7133,6 +7198,7 @@ export default class Holder extends Component {
                 justifyBlock5: props.justifyBlock5 || 'center',
                 block5smdis: props.block5smdis || 'flex',
                 block5mddis: props.block5mddis || 'flex',
+                block6Direction: props.block6direction || 'row',
                 block6: props.block6 || '1',
                 block6BorderLeft: props.b6BLeft,
                 block6BorderRight: props.b6BRight,
@@ -7143,6 +7209,7 @@ export default class Holder extends Component {
                 justifyBlock6: props.justifyBlock6 || 'center',
                 block6smdis: props.block6smdis || 'flex',
                 block6mddis: props.block6mddis || 'flex',
+                block7Direction: props.block7direction || 'row',
                 block7: props.block7 || '1',
                 block7BorderLeft: props.b7BLeft,
                 block7BorderRight: props.b7BRight,
@@ -7153,6 +7220,7 @@ export default class Holder extends Component {
                 justifyBlock7: props.justifyBlock7 || 'center',
                 block7smdis: props.block7smdis || 'flex',
                 block7mddis: props.block7mddis || 'flex',
+                block8Direction: props.block8direction || 'row',
                 block8: props.block8 || '1',
                 block8BorderLeft: props.b8BLeft,
                 block8BorderRight: props.b8BRight,
@@ -7163,6 +7231,7 @@ export default class Holder extends Component {
                 justifyBlock8: props.justifyBlock8 || 'center',
                 block8smdis: props.block8smdis || 'flex',
                 block8mddis: props.block8mddis || 'flex',
+                block9Direction: props.block9direction || 'row',
                 block9: props.block9 || '1',
                 block9BorderLeft: props.b9BLeft,
                 block9BorderRight: props.b9BRight,
@@ -7173,6 +7242,7 @@ export default class Holder extends Component {
                 justifyBlock9: props.justifyBlock9 || 'center',
                 block9smdis: props.block9smdis || 'flex',
                 block9mddis: props.block9mddis || 'flex',
+                block10Direction: props.block10direction || 'row',
                 block10: props.block10 || '1',
                 block10BorderLeft: props.b10BLeft,
                 block10BorderRight: props.b10BRight,
@@ -7183,6 +7253,7 @@ export default class Holder extends Component {
                 justifyBlock10: props.justifyBlock10 || 'center',
                 block10smdis: props.block10smdis || 'flex',
                 block10mddis: props.block10mddis || 'flex',
+                block11Direction: props.block11direction || 'row',
                 block11: props.block11 || '1',
                 block11BorderLeft: props.b11BLeft,
                 block11BorderRight: props.b11BRight,
@@ -7193,6 +7264,7 @@ export default class Holder extends Component {
                 justifyBlock11: props.justifyBlock11 || 'center',
                 block11smdis: props.block11smdis || 'flex',
                 block11mddis: props.block11mddis || 'flex',
+                block12Direction: props.block12direction || 'row',
                 block12: props.block12 || '1',
                 block12BorderLeft: props.b12BLeft,
                 block12BorderRight: props.b12BRight,
@@ -7203,6 +7275,7 @@ export default class Holder extends Component {
                 justifyBlock12: props.justifyBlock12 || 'center',
                 block12smdis: props.block12smdis || 'flex',
                 block12mddis: props.block12mddis || 'flex',
+                block13Direction: props.block13direction || 'row',
                 block13: props.block13 || '1',
                 block13BorderLeft: props.b13BLeft,
                 block13BorderRight: props.b13BRight,
@@ -7213,6 +7286,7 @@ export default class Holder extends Component {
                 justifyBlock13: props.justifyBlock13 || 'center',
                 block13smdis: props.block13smdis || 'flex',
                 block13mddis: props.block13mddis || 'flex',
+                block14Direction: props.block14direction || 'row',
                 block14: props.block14 || '1',
                 block14BorderLeft: props.b14BLeft,
                 block14BorderRight: props.b14BRight,
@@ -7223,6 +7297,7 @@ export default class Holder extends Component {
                 justifyBlock14: props.justifyBlock14 || 'center',
                 block14smdis: props.block14smdis || 'flex',
                 block14mddis: props.block14mddis || 'flex',
+                block15Direction: props.block15direction || 'row',
                 block15: props.block15 || '1',
                 block15BorderLeft: props.b15BLeft,
                 block15BorderRight: props.b15BRight,
@@ -7233,6 +7308,7 @@ export default class Holder extends Component {
                 justifyBlock15: props.justifyBlock15 || 'center',
                 block15smdis: props.block15smdis || 'flex',
                 block15mddis: props.block15mddis || 'flex',
+                block16Direction: props.block16direction || 'row',
                 block16: props.block16 || '1',
                 block16BorderLeft: props.b16BLeft,
                 block16BorderRight: props.b16BRight,
@@ -7243,6 +7319,7 @@ export default class Holder extends Component {
                 justifyBlock16: props.justifyBlock16 || 'center',
                 block16smdis: props.block16smdis || 'flex',
                 block16mddis: props.block16mddis || 'flex',
+                block17Direction: props.block17direction || 'row',
                 block17: props.block17 || '1',
                 block17BorderLeft: props.b17BLeft,
                 block17BorderRight: props.b17BRight,
@@ -7253,6 +7330,7 @@ export default class Holder extends Component {
                 justifyBlock17: props.justifyBlock17 || 'center',
                 block17smdis: props.block17smdis || 'flex',
                 block17mddis: props.block17mddis || 'flex',
+                block18Direction: props.block18direction || 'row',
                 block18: props.block18 || '1',
                 block18BorderLeft: props.b18BLeft,
                 block18BorderRight: props.b18BRight,
@@ -7263,6 +7341,7 @@ export default class Holder extends Component {
                 justifyBlock18: props.justifyBlock18 || 'center',
                 block18smdis: props.block18smdis || 'flex',
                 block18mddis: props.block18mddis || 'flex',
+                block19Direction: props.block19direction || 'row',
                 block19: props.block19 || '1',
                 block19BorderLeft: props.b19BLeft,
                 block19BorderRight: props.b19BRight,
@@ -7273,7 +7352,7 @@ export default class Holder extends Component {
                 justifyBlock19: props.justifyBlock19 || 'center',
                 block19smdis: props.block19smdis || 'flex',
                 block19mddis: props.block19mddis || 'flex',
-            }
+            };
             holderstyles = StyleSheet.create({
                 holderstyles: {
                     width: '100%',
@@ -7301,7 +7380,7 @@ export default class Holder extends Component {
                         flexDirection: this.state.mdflexDir
                     }
                 }
-            }),
+            });
                 block1styles = StyleSheet.create({
                     block1styles: {
                         display: 'flex',
@@ -7326,7 +7405,7 @@ export default class Holder extends Component {
                         block1styles: {
                             display: blocks.block1mddis,
                         }
-                    },
+                    }
                 });
             block2styles = StyleSheet.create({
                 block2styles: {
@@ -7352,8 +7431,7 @@ export default class Holder extends Component {
                     block2styles: {
                         display: blocks.block2mddis,
                     }
-                },
-
+                }
             });
             block3styles = StyleSheet.create({
                 block3styles: {
@@ -7379,8 +7457,7 @@ export default class Holder extends Component {
                     block3styles: {
                         display: blocks.block3mddis,
                     }
-                },
-
+                }
             });
             block4styles = StyleSheet.create({
                 block4styles: {
@@ -7406,8 +7483,7 @@ export default class Holder extends Component {
                     block4styles: {
                         display: blocks.block4mddis,
                     }
-                },
-
+                }
             });
             block5styles = StyleSheet.create({
                 block5styles: {
@@ -7433,8 +7509,7 @@ export default class Holder extends Component {
                     block5styles: {
                         display: blocks.block5mddis,
                     }
-                },
-
+                }
             });
             block6styles = StyleSheet.create({
                 block6styles: {
@@ -7460,8 +7535,7 @@ export default class Holder extends Component {
                     block6styles: {
                         display: blocks.block6mddis,
                     }
-                },
-
+                }
             });
             block7styles = StyleSheet.create({
                 block7styles: {
@@ -7487,7 +7561,7 @@ export default class Holder extends Component {
                     block7styles: {
                         display: blocks.block7mddis,
                     }
-                },
+                }
             });
             block8styles = StyleSheet.create({
                 block8styles: {
@@ -7513,7 +7587,7 @@ export default class Holder extends Component {
                     block8styles: {
                         display: blocks.block8mddis,
                     }
-                },
+                }
             });
             block9styles = StyleSheet.create({
                 block9styles: {
@@ -7539,7 +7613,7 @@ export default class Holder extends Component {
                     block9styles: {
                         display: blocks.block9mddis,
                     }
-                },
+                }
             });
             block10styles = StyleSheet.create({
                 block10styles: {
@@ -7565,7 +7639,7 @@ export default class Holder extends Component {
                     block10styles: {
                         display: blocks.block10mddis,
                     }
-                },
+                }
             });
             block11styles = StyleSheet.create({
                 block11styles: {
@@ -7591,7 +7665,7 @@ export default class Holder extends Component {
                     block11styles: {
                         display: blocks.block11mddis,
                     }
-                },
+                }
             });
             block12styles = StyleSheet.create({
                 block12styles: {
@@ -7617,7 +7691,7 @@ export default class Holder extends Component {
                     block12styles: {
                         display: blocks.block12mddis,
                     }
-                },
+                }
             });
             block13styles = StyleSheet.create({
                 block13styles: {
@@ -7643,7 +7717,7 @@ export default class Holder extends Component {
                     block13styles: {
                         display: blocks.block13mddis,
                     }
-                },
+                }
             });
             block14styles = StyleSheet.create({
                 block14styles: {
@@ -7669,7 +7743,7 @@ export default class Holder extends Component {
                     block14styles: {
                         display: blocks.block14mddis,
                     }
-                },
+                }
             });
             block15styles = StyleSheet.create({
                 block15styles: {
@@ -7695,7 +7769,7 @@ export default class Holder extends Component {
                     block15styles: {
                         display: blocks.block15mddis,
                     }
-                },
+                }
             });
             block16styles = StyleSheet.create({
                 block16styles: {
@@ -7721,7 +7795,7 @@ export default class Holder extends Component {
                     block16styles: {
                         display: blocks.block16mddis,
                     }
-                },
+                }
             });
             block17styles = StyleSheet.create({
                 block17styles: {
@@ -7747,7 +7821,7 @@ export default class Holder extends Component {
                     block17styles: {
                         display: blocks.block17mddis,
                     }
-                },
+                }
             });
             block18styles = StyleSheet.create({
                 block18styles: {
@@ -7773,7 +7847,7 @@ export default class Holder extends Component {
                     block18styles: {
                         display: blocks.block18mddis,
                     }
-                },
+                }
             });
             block19styles = StyleSheet.create({
                 block19styles: {
@@ -7799,7 +7873,7 @@ export default class Holder extends Component {
                     block19styles: {
                         display: blocks.block19mddis,
                     }
-                },
+                }
             });
             styledChilds1 = <div key={Math.random()} style={block1styles.block1styles}>{CHILDS[0]}</div>
             styledChilds2 = <div key={Math.random()} style={block2styles.block2styles}>{CHILDS[1]}</div>
@@ -7836,6 +7910,7 @@ export default class Holder extends Component {
                 justifyBlock1: props.justifyBlock1 || 'center',
                 block1smdis: props.block1smdis || 'flex',
                 block1mddis: props.block1mddis || 'flex',
+                block2Direction: props.block2direction || 'row',
                 block2: props.block2 || '1',
                 block2BorderLeft: props.b2BLeft,
                 block2BorderRight: props.b2BRight,
@@ -7846,6 +7921,7 @@ export default class Holder extends Component {
                 justifyBlock2: props.justifyBlock2 || 'center',
                 block2smdis: props.block2smdis || 'flex',
                 block2mddis: props.block2mddis || 'flex',
+                block3Direction: props.block3direction || 'row',
                 block3: props.block3 || '1',
                 block3BorderLeft: props.b3BLeft,
                 block3BorderRight: props.b3BRight,
@@ -7856,6 +7932,7 @@ export default class Holder extends Component {
                 justifyBlock3: props.justifyBlock3 || 'center',
                 block3smdis: props.block3smdis || 'flex',
                 block3mddis: props.block3mddis || 'flex',
+                block4Direction: props.block4direction || 'row',
                 block4: props.block4 || '1',
                 block4BorderLeft: props.b4BLeft,
                 block4BorderRight: props.b4BRight,
@@ -7866,6 +7943,7 @@ export default class Holder extends Component {
                 justifyBlock4: props.justifyBlock4 || 'center',
                 block4smdis: props.block4smdis || 'flex',
                 block4mddis: props.block4mddis || 'flex',
+                block5Direction: props.block5direction || 'row',
                 block5: props.block5 || '1',
                 block5BorderLeft: props.b5BLeft,
                 block5BorderRight: props.b5BRight,
@@ -7876,6 +7954,7 @@ export default class Holder extends Component {
                 justifyBlock5: props.justifyBlock5 || 'center',
                 block5smdis: props.block5smdis || 'flex',
                 block5mddis: props.block5mddis || 'flex',
+                block6Direction: props.block6direction || 'row',
                 block6: props.block6 || '1',
                 block6BorderLeft: props.b6BLeft,
                 block6BorderRight: props.b6BRight,
@@ -7886,6 +7965,7 @@ export default class Holder extends Component {
                 justifyBlock6: props.justifyBlock6 || 'center',
                 block6smdis: props.block6smdis || 'flex',
                 block6mddis: props.block6mddis || 'flex',
+                block7Direction: props.block7direction || 'row',
                 block7: props.block7 || '1',
                 block7BorderLeft: props.b7BLeft,
                 block7BorderRight: props.b7BRight,
@@ -7896,6 +7976,7 @@ export default class Holder extends Component {
                 justifyBlock7: props.justifyBlock7 || 'center',
                 block7smdis: props.block7smdis || 'flex',
                 block7mddis: props.block7mddis || 'flex',
+                block8Direction: props.block8direction || 'row',
                 block8: props.block8 || '1',
                 block8BorderLeft: props.b8BLeft,
                 block8BorderRight: props.b8BRight,
@@ -7906,6 +7987,7 @@ export default class Holder extends Component {
                 justifyBlock8: props.justifyBlock8 || 'center',
                 block8smdis: props.block8smdis || 'flex',
                 block8mddis: props.block8mddis || 'flex',
+                block9Direction: props.block9direction || 'row',
                 block9: props.block9 || '1',
                 block9BorderLeft: props.b9BLeft,
                 block9BorderRight: props.b9BRight,
@@ -7916,6 +7998,7 @@ export default class Holder extends Component {
                 justifyBlock9: props.justifyBlock9 || 'center',
                 block9smdis: props.block9smdis || 'flex',
                 block9mddis: props.block9mddis || 'flex',
+                block10Direction: props.block10direction || 'row',
                 block10: props.block10 || '1',
                 block10BorderLeft: props.b10BLeft,
                 block10BorderRight: props.b10BRight,
@@ -7926,6 +8009,7 @@ export default class Holder extends Component {
                 justifyBlock10: props.justifyBlock10 || 'center',
                 block10smdis: props.block10smdis || 'flex',
                 block10mddis: props.block10mddis || 'flex',
+                block11Direction: props.block11direction || 'row',
                 block11: props.block11 || '1',
                 block11BorderLeft: props.b11BLeft,
                 block11BorderRight: props.b11BRight,
@@ -7936,6 +8020,7 @@ export default class Holder extends Component {
                 justifyBlock11: props.justifyBlock11 || 'center',
                 block11smdis: props.block11smdis || 'flex',
                 block11mddis: props.block11mddis || 'flex',
+                block12Direction: props.block12direction || 'row',
                 block12: props.block12 || '1',
                 block12BorderLeft: props.b12BLeft,
                 block12BorderRight: props.b12BRight,
@@ -7946,6 +8031,7 @@ export default class Holder extends Component {
                 justifyBlock12: props.justifyBlock12 || 'center',
                 block12smdis: props.block12smdis || 'flex',
                 block12mddis: props.block12mddis || 'flex',
+                block13Direction: props.block13direction || 'row',
                 block13: props.block13 || '1',
                 block13BorderLeft: props.b13BLeft,
                 block13BorderRight: props.b13BRight,
@@ -7956,6 +8042,7 @@ export default class Holder extends Component {
                 justifyBlock13: props.justifyBlock13 || 'center',
                 block13smdis: props.block13smdis || 'flex',
                 block13mddis: props.block13mddis || 'flex',
+                block14Direction: props.block14direction || 'row',
                 block14: props.block14 || '1',
                 block14BorderLeft: props.b14BLeft,
                 block14BorderRight: props.b14BRight,
@@ -7966,6 +8053,7 @@ export default class Holder extends Component {
                 justifyBlock14: props.justifyBlock14 || 'center',
                 block14smdis: props.block14smdis || 'flex',
                 block14mddis: props.block14mddis || 'flex',
+                block15Direction: props.block15direction || 'row',
                 block15: props.block15 || '1',
                 block15BorderLeft: props.b15BLeft,
                 block15BorderRight: props.b15BRight,
@@ -7976,6 +8064,7 @@ export default class Holder extends Component {
                 justifyBlock15: props.justifyBlock15 || 'center',
                 block15smdis: props.block15smdis || 'flex',
                 block15mddis: props.block15mddis || 'flex',
+                block16Direction: props.block16direction || 'row',
                 block16: props.block16 || '1',
                 block16BorderLeft: props.b16BLeft,
                 block16BorderRight: props.b16BRight,
@@ -7986,6 +8075,7 @@ export default class Holder extends Component {
                 justifyBlock16: props.justifyBlock16 || 'center',
                 block16smdis: props.block16smdis || 'flex',
                 block16mddis: props.block16mddis || 'flex',
+                block17Direction: props.block17direction || 'row',
                 block17: props.block17 || '1',
                 block17BorderLeft: props.b17BLeft,
                 block17BorderRight: props.b17BRight,
@@ -7996,6 +8086,7 @@ export default class Holder extends Component {
                 justifyBlock17: props.justifyBlock17 || 'center',
                 block17smdis: props.block17smdis || 'flex',
                 block17mddis: props.block17mddis || 'flex',
+                block18Direction: props.block18direction || 'row',
                 block18: props.block18 || '1',
                 block18BorderLeft: props.b18BLeft,
                 block18BorderRight: props.b18BRight,
@@ -8006,6 +8097,7 @@ export default class Holder extends Component {
                 justifyBlock18: props.justifyBlock18 || 'center',
                 block18smdis: props.block18smdis || 'flex',
                 block18mddis: props.block18mddis || 'flex',
+                block19Direction: props.block19direction || 'row',
                 block19: props.block19 || '1',
                 block19BorderLeft: props.b19BLeft,
                 block19BorderRight: props.b19BRight,
@@ -8016,6 +8108,7 @@ export default class Holder extends Component {
                 justifyBlock19: props.justifyBlock19 || 'center',
                 block19smdis: props.block19smdis || 'flex',
                 block19mddis: props.block19mddis || 'flex',
+                block20Direction: props.block20direction || 'row',
                 block20: props.block20 || '1',
                 block20BorderLeft: props.b20BLeft,
                 block20BorderRight: props.b20BRight,
@@ -8026,7 +8119,7 @@ export default class Holder extends Component {
                 justifyBlock20: props.justifyBlock20 || 'center',
                 block20smdis: props.block20smdis || 'flex',
                 block20mddis: props.block20mddis || 'flex',
-            }
+            };
             holderstyles = StyleSheet.create({
                 holderstyles: {
                     width: '100%',
@@ -8054,12 +8147,12 @@ export default class Holder extends Component {
                         flexDirection: this.state.mdflexDir
                     }
                 }
-            }),
+            });
                 block1styles = StyleSheet.create({
                     block1styles: {
                         display: 'flex',
                         flex: blocks.block1 || this.state.block1,
-                        flexDirection: 'column',
+                        flexDirection: blocks.block1Direction,
                         flexWrap: 'wrap',
                         alignItems: blocks.alignBlock1,
                         borderLeft: blocks.block1BorderLeft,
@@ -8079,13 +8172,13 @@ export default class Holder extends Component {
                         block1styles: {
                             display: blocks.block1mddis,
                         }
-                    },
+                    }
                 });
             block2styles = StyleSheet.create({
                 block2styles: {
                     display: 'flex',
                     flex: blocks.block2,
-                    flexDirection: 'column',
+                    flexDirection: blocks.block2Direction,
                     flexWrap: 'wrap',
                     alignItems: blocks.alignBlock2,
                     borderLeft: blocks.block2BorderLeft,
@@ -8105,14 +8198,13 @@ export default class Holder extends Component {
                     block2styles: {
                         display: blocks.block2mddis,
                     }
-                },
-
+                }
             });
             block3styles = StyleSheet.create({
                 block3styles: {
                     display: 'flex',
                     flex: blocks.block3,
-                    flexDirection: 'column',
+                    flexDirection: blocks.block3Direction,
                     flexWrap: 'wrap',
                     alignItems: blocks.alignBlock3,
                     borderLeft: blocks.block3BorderLeft,
@@ -8132,14 +8224,13 @@ export default class Holder extends Component {
                     block3styles: {
                         display: blocks.block3mddis,
                     }
-                },
-
+                }
             });
             block4styles = StyleSheet.create({
                 block4styles: {
                     display: 'flex',
                     flex: blocks.block4,
-                    flexDirection: 'column',
+                    flexDirection: blocks.block4Direction,
                     flexWrap: 'wrap',
                     alignItems: blocks.alignBlock4,
                     borderLeft: blocks.block4BorderLeft,
@@ -8159,14 +8250,13 @@ export default class Holder extends Component {
                     block4styles: {
                         display: blocks.block4mddis,
                     }
-                },
-
+                }
             });
             block5styles = StyleSheet.create({
                 block5styles: {
                     display: 'flex',
                     flex: blocks.block5,
-                    flexDirection: 'column',
+                    flexDirection: blocks.block5Direction,
                     flexWrap: 'wrap',
                     alignItems: blocks.alignBlock5,
                     borderLeft: blocks.block5BorderLeft,
@@ -8186,14 +8276,14 @@ export default class Holder extends Component {
                     block5styles: {
                         display: blocks.block5mddis,
                     }
-                },
+                }
 
             });
             block6styles = StyleSheet.create({
                 block6styles: {
                     display: 'flex',
                     flex: blocks.block6,
-                    flexDirection: 'column',
+                    flexDirection: blocks.block6Direction,
                     flexWrap: 'wrap',
                     alignItems: blocks.alignBlock6,
                     borderLeft: blocks.block6BorderLeft,
@@ -8213,14 +8303,14 @@ export default class Holder extends Component {
                     block6styles: {
                         display: blocks.block6mddis,
                     }
-                },
+                }
 
             });
             block7styles = StyleSheet.create({
                 block7styles: {
                     display: 'flex',
                     flex: blocks.block7,
-                    flexDirection: 'column',
+                    flexDirection: blocks.block7Direction,
                     flexWrap: 'wrap',
                     alignItems: blocks.alignBlock7,
                     borderLeft: blocks.block7BorderLeft,
@@ -8240,13 +8330,13 @@ export default class Holder extends Component {
                     block7styles: {
                         display: blocks.block7mddis,
                     }
-                },
+                }
             });
             block8styles = StyleSheet.create({
                 block8styles: {
                     display: 'flex',
                     flex: blocks.block8,
-                    flexDirection: 'column',
+                    flexDirection: blocks.block8Direction,
                     flexWrap: 'wrap',
                     alignItems: blocks.alignBlock8,
                     borderLeft: blocks.block8BorderLeft,
@@ -8266,13 +8356,13 @@ export default class Holder extends Component {
                     block8styles: {
                         display: blocks.block8mddis,
                     }
-                },
+                }
             });
             block9styles = StyleSheet.create({
                 block9styles: {
                     display: 'flex',
                     flex: blocks.block9,
-                    flexDirection: 'column',
+                    flexDirection: blocks.block9Direction,
                     flexWrap: 'wrap',
                     alignItems: blocks.alignBlock9,
                     borderLeft: blocks.block9BorderLeft,
@@ -8292,13 +8382,13 @@ export default class Holder extends Component {
                     block9styles: {
                         display: blocks.block9mddis,
                     }
-                },
+                }
             });
             block10styles = StyleSheet.create({
                 block10styles: {
                     display: 'flex',
                     flex: blocks.block10,
-                    flexDirection: 'column',
+                    flexDirection: blocks.block10Direction,
                     flexWrap: 'wrap',
                     alignItems: blocks.alignBlock10,
                     borderLeft: blocks.block10BorderLeft,
@@ -8318,13 +8408,13 @@ export default class Holder extends Component {
                     block10styles: {
                         display: blocks.block10mddis,
                     }
-                },
+                }
             });
             block11styles = StyleSheet.create({
                 block11styles: {
                     display: 'flex',
                     flex: blocks.block11,
-                    flexDirection: 'column',
+                    flexDirection: blocks.block11Direction,
                     flexWrap: 'wrap',
                     alignItems: blocks.alignBlock11,
                     borderLeft: blocks.block11BorderLeft,
@@ -8344,13 +8434,13 @@ export default class Holder extends Component {
                     block11styles: {
                         display: blocks.block11mddis,
                     }
-                },
+                }
             });
             block12styles = StyleSheet.create({
                 block12styles: {
                     display: 'flex',
                     flex: blocks.block12,
-                    flexDirection: 'column',
+                    flexDirection: blocks.block12Direction,
                     flexWrap: 'wrap',
                     alignItems: blocks.alignBlock12,
                     borderLeft: blocks.block12BorderLeft,
@@ -8370,13 +8460,13 @@ export default class Holder extends Component {
                     block12styles: {
                         display: blocks.block12mddis,
                     }
-                },
+                }
             });
             block13styles = StyleSheet.create({
                 block13styles: {
                     display: 'flex',
                     flex: blocks.block13,
-                    flexDirection: 'column',
+                    flexDirection: blocks.block13Direction,
                     flexWrap: 'wrap',
                     alignItems: blocks.alignBlock13,
                     borderLeft: blocks.block13BorderLeft,
@@ -8396,13 +8486,13 @@ export default class Holder extends Component {
                     block13styles: {
                         display: blocks.block13mddis,
                     }
-                },
+                }
             });
             block14styles = StyleSheet.create({
                 block14styles: {
                     display: 'flex',
                     flex: blocks.block14,
-                    flexDirection: 'column',
+                    flexDirection: blocks.block14Direction,
                     flexWrap: 'wrap',
                     alignItems: blocks.alignBlock14,
                     borderLeft: blocks.block14BorderLeft,
@@ -8422,13 +8512,13 @@ export default class Holder extends Component {
                     block14styles: {
                         display: blocks.block14mddis,
                     }
-                },
+                }
             });
             block15styles = StyleSheet.create({
                 block15styles: {
                     display: 'flex',
                     flex: blocks.block15,
-                    flexDirection: 'column',
+                    flexDirection: blocks.block15Direction,
                     flexWrap: 'wrap',
                     alignItems: blocks.alignBlock15,
                     borderLeft: blocks.block15BorderLeft,
@@ -8448,13 +8538,13 @@ export default class Holder extends Component {
                     block15styles: {
                         display: blocks.block15mddis,
                     }
-                },
+                }
             });
             block16styles = StyleSheet.create({
                 block16styles: {
                     display: 'flex',
                     flex: blocks.block16,
-                    flexDirection: 'column',
+                    flexDirection: blocks.block16Direction,
                     flexWrap: 'wrap',
                     alignItems: blocks.alignBlock16,
                     borderLeft: blocks.block16BorderLeft,
@@ -8474,13 +8564,13 @@ export default class Holder extends Component {
                     block16styles: {
                         display: blocks.block16mddis,
                     }
-                },
+                }
             });
             block17styles = StyleSheet.create({
                 block17styles: {
                     display: 'flex',
                     flex: blocks.block17,
-                    flexDirection: 'column',
+                    flexDirection: blocks.block17Direction,
                     flexWrap: 'wrap',
                     alignItems: blocks.alignBlock17,
                     borderLeft: blocks.block17BorderLeft,
@@ -8500,13 +8590,13 @@ export default class Holder extends Component {
                     block17styles: {
                         display: blocks.block17mddis,
                     }
-                },
+                }
             });
             block18styles = StyleSheet.create({
                 block18styles: {
                     display: 'flex',
                     flex: blocks.block18,
-                    flexDirection: 'column',
+                    flexDirection: blocks.block18Direction,
                     flexWrap: 'wrap',
                     alignItems: blocks.alignBlock18,
                     borderLeft: blocks.block18BorderLeft,
@@ -8526,13 +8616,13 @@ export default class Holder extends Component {
                     block18styles: {
                         display: blocks.block18mddis,
                     }
-                },
+                }
             });
             block19styles = StyleSheet.create({
                 block19styles: {
                     display: 'flex',
                     flex: blocks.block19,
-                    flexDirection: 'column',
+                    flexDirection: blocks.block19Direction,
                     flexWrap: 'wrap',
                     alignItems: blocks.alignBlock19,
                     borderLeft: blocks.block19BorderLeft,
@@ -8552,13 +8642,13 @@ export default class Holder extends Component {
                     block19styles: {
                         display: blocks.block19mddis,
                     }
-                },
+                }
             });
             block20styles = StyleSheet.create({
                 block20styles: {
                     display: 'flex',
                     flex: blocks.block20,
-                    flexDirection: 'column',
+                    flexDirection: blocks.block20Direction,
                     flexWrap: 'wrap',
                     alignItems: blocks.alignBlock20,
                     borderLeft: blocks.block20BorderLeft,
@@ -8578,7 +8668,7 @@ export default class Holder extends Component {
                     block20styles: {
                         display: blocks.block20mddis,
                     }
-                },
+                }
             });
             styledChilds1 = <div key={Math.random()} style={block1styles.block1styles}>{CHILDS[0]}</div>
             styledChilds2 = <div key={Math.random()} style={block2styles.block2styles}>{CHILDS[1]}</div>
@@ -8607,9 +8697,10 @@ export default class Holder extends Component {
         return this.setState({ childs: styledHolder, blocks })
 
     }
+    //below is not done and will most likely not render correctly
     componentWillReceiveProps(newProps) {
         const props = this.props;
-        let blocks, styles, holderstyles, block1styles, block2styles = '';
+        let blocks, holderstyles, block1styles, block2styles = '';
         let styledHolder, styledChilds1, styledChilds2 = ''
         const CHILDS = React.Children.toArray(this.props.children)
         const num = CHILDS.length;
@@ -8654,7 +8745,7 @@ export default class Holder extends Component {
                         flexDirection: this.state.mdflexDir
                     }
                 }
-            }),
+            });
                 block1styles = StyleSheet.create({
                     block1styles: {
                         display: 'flex',
@@ -8679,7 +8770,7 @@ export default class Holder extends Component {
                         block1styles: {
                             display: blocks.block1mddis,
                         }
-                    },
+                    }
                 });
             styledChilds1 = <div key={Math.random()} style={block1styles.block1styles}>{CHILDS[0]}</div>
             styledHolder = [
@@ -8708,8 +8799,7 @@ export default class Holder extends Component {
                 justifyBlock2: props.justifyBlock2 || 'center',
                 block2smdis: props.block2smdis || 'flex',
                 block2mddis: props.block2mddis || 'flex',
-            }
-            // this.setState({ blocks })
+            };
             holderstyles = StyleSheet.create({
                 holderstyles: {
                     width: '100%',
@@ -8737,7 +8827,7 @@ export default class Holder extends Component {
                         flexDirection: this.state.mdflexDir
                     }
                 }
-            }),
+            });
                 block1styles = StyleSheet.create({
                     block1styles: {
                         display: 'flex',
@@ -8762,7 +8852,7 @@ export default class Holder extends Component {
                         block1styles: {
                             display: blocks.block1mddis,
                         }
-                    },
+                    }
                 });
             block2styles = StyleSheet.create({
                 block2styles: {
@@ -8788,7 +8878,7 @@ export default class Holder extends Component {
                     block2styles: {
                         display: blocks.block2mddis,
                     }
-                },
+                }
 
             });
 
@@ -8809,4 +8899,4 @@ export default class Holder extends Component {
         )
     }
 }
-/* End of Holder 1 Component */
+/* End of Holder Component */
