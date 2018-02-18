@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './reset.css';
 
-import Holder1, { Holder2, Holder5, Holder7 } from './Holders';
+import Holder from '../Component 1.5.0/Holders1.5.0';
 
 import StyleSheet from 'nestingstyles';
 
@@ -82,11 +82,12 @@ export class H11 extends Component {
             smFontSize: props.smSize || '3.939em',
             mdFontSize: props.mdSize || '5.25em',
             fontWeight: props.fontWeight || '900',
+            fontVariant: props.variant,
             display: props.display || 'flex',
             align: props.align || 'center',
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 15px 0',
-            margin: props.margin || '0',
+            margin: props.margin || '1px',
             width: props.width || 'inherit',
             height: props.height,
             bLeft: props.bLeft,
@@ -137,6 +138,7 @@ export class H11 extends Component {
                 fontFamily: this.state.fontFamily,
                 fontSize: this.state.fontSize,
                 fontWeight: this.state.fontWeight,
+                fontVariant: this.state.fontVariant,
                 display: this.state.display,
                 flexDirection: 'column',
                 alignItems: this.state.align,
@@ -151,6 +153,7 @@ export class H11 extends Component {
                 animationDuration: this.state.animationDuration,
                 transformOrigin: this.state.transformOrigin,
                 animationFillMode: this.state.animationFillMode,
+                flex: 1,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -171,9 +174,11 @@ export class H11 extends Component {
             },
         })
         return (
-            <h1 style={HEADING.heading} id={this.state.id} className={this.state.className}
-                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
-                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h1>
+            <React.Fragment>
+                <h1 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                    onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                    onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h1>
+            </React.Fragment>
         )
     }
 }
@@ -189,11 +194,12 @@ export class H12 extends Component {
             smFontSize: props.smSize || '3.376em',
             mdFontSize: props.mdSize || '4.501em',
             fontWeight: props.weight || '900',
+            fontVariant: props.variant,
             display: props.display || 'flex',
             align: props.align || 'center',
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 15px 0',
-            margin: props.margin || '0',
+            margin: props.margin || '1px',
             width: props.width || 'inherit',
             height: props.height,
             border: props.border,
@@ -238,6 +244,7 @@ export class H12 extends Component {
                 fontFamily: this.state.fontFamily,
                 fontSize: this.state.fontSize,
                 fontWeight: this.state.fontWeight,
+                fontVariant: this.state.fontVariant,
                 display: this.state.display,
                 flexDirection: 'column',
                 alignItems: this.state.align,
@@ -252,6 +259,7 @@ export class H12 extends Component {
                 animationDuration: this.state.animationDuration,
                 transformOrigin: this.state.transformOrigin,
                 animationFillMode: this.state.animationFillMode,
+                flex: 1,
             },
             hoverStyle: {
                 color: this.state.hoverColor,
@@ -272,9 +280,11 @@ export class H12 extends Component {
             },
         })
         return (
-            <h1 style={HEADING.heading} id={this.state.id} className={this.state.className}
-                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
-                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h1>
+            <React.Fragment>
+                <h1 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                    onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                    onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h1>
+            </React.Fragment>
         )
     }
 }
@@ -290,11 +300,12 @@ export class H13 extends Component {
             smFontSize: props.smSize || '4.4em',
             mdFontSize: props.mdSize || '5.7em',
             fontWeight: props.weight || '900',
+            fontVariant: props.variant,
             display: props.display || 'flex',
             align: props.align || 'center',
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 15px 0',
-            margin: props.margin || '0',
+            margin: props.margin || '1px',
             width: props.width || 'inherit',
             height: props.height,
             border: props.border,
@@ -339,6 +350,7 @@ export class H13 extends Component {
                 fontFamily: this.state.fontFamily,
                 fontSize: this.state.fontSize,
                 fontWeight: this.state.fontWeight,
+                fontVariant: this.state.fontVariant,
                 display: this.state.display,
                 flexDirection: 'column',
                 alignItems: this.state.align,
@@ -353,6 +365,7 @@ export class H13 extends Component {
                 animationDuration: this.state.animationDuration,
                 transformOrigin: this.state.transformOrigin,
                 animationFillMode: this.state.animationFillMode,
+                flex: 1,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -373,9 +386,11 @@ export class H13 extends Component {
             },
         })
         return (
-            <h1 style={HEADING.heading} id={this.state.id} className={this.state.className}
-                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
-                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h1>
+            <React.Fragment>
+                <h1 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                    onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                    onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h1>
+            </React.Fragment>
         )
     }
 }
@@ -391,11 +406,12 @@ export class H14 extends Component {
             smFontSize: props.smSize || '3.939em',
             mdFontSize: props.mdSize || '5.25em',
             fontWeight: props.weight || '900',
+            fontVariant: props.variant,
             display: props.display || 'flex',
             align: props.align || 'center',
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 15px 0',
-            margin: props.margin || '0',
+            margin: props.margin || '1px',
             width: props.width || 'inherit',
             height: props.height,
             border: props.border,
@@ -440,6 +456,7 @@ export class H14 extends Component {
                 fontFamily: this.state.fontFamily,
                 fontSize: this.state.fontSize,
                 fontWeight: this.state.fontWeight,
+                fontVariant: this.state.fontVariant,
                 display: this.state.display,
                 flexDirection: 'column',
                 alignItems: this.state.align,
@@ -454,6 +471,7 @@ export class H14 extends Component {
                 animationDuration: this.state.animationDuration,
                 transformOrigin: this.state.transformOrigin,
                 animationFillMode: this.state.animationFillMode,
+                flex: 1,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -474,9 +492,11 @@ export class H14 extends Component {
             },
         })
         return (
-            <h1 style={HEADING.heading} id={this.state.id} className={this.state.className}
-                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
-                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h1>
+            <React.Fragment>
+                <h1 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                    onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                    onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h1>
+            </React.Fragment>
         )
     }
 }
@@ -493,11 +513,12 @@ export class H15 extends Component {
             smFontSize: props.smSize || '3.939em',
             mdFontSize: props.mdSize || '5.25em',
             fontWeight: props.weight || '900',
+            fontVariant: props.variant,
             display: props.display || 'flex',
             align: props.align || 'center',
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 15px 0',
-            margin: props.margin || '0',
+            margin: props.margin || '1px',
             width: props.width || 'inherit',
             height: props.height,
             border: props.border,
@@ -541,6 +562,7 @@ export class H15 extends Component {
                 fontFamily: this.state.fontFamily,
                 fontSize: this.state.fontSize,
                 fontWeight: this.state.fontWeight,
+                fontVariant: this.state.fontVariant,
                 display: this.state.display,
                 flexDirection: 'column',
                 alignItems: this.state.align,
@@ -558,6 +580,7 @@ export class H15 extends Component {
                 WebkitTextFillColor: 'transparent',
                 WebkitTextStrokeColor: this.state.color,
                 WebkitTextStrokeWidth: this.state.stroke,
+                flex: 1,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -578,9 +601,11 @@ export class H15 extends Component {
             },
         })
         return (
-            <h1 style={HEADING.heading} id={this.state.id} className={this.state.className}
-                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
-                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h1>
+            <React.Fragment>
+                <h1 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                    onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                    onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h1>
+            </React.Fragment>
         )
     }
 }
@@ -598,11 +623,12 @@ export class H21 extends Component {
             smFontSize: props.smSize || '3em',
             mdFontSize: props.mdSize || '4em',
             fontWeight: props.weight || '600',
+            fontVariant: props.variant,
             display: props.display || 'flex',
             align: props.align || 'center',
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 5px 0',
-            margin: props.margin || '0',
+            margin: props.margin || '1px',
             width: props.width || 'inherit',
             height: props.height,
             border: props.border,
@@ -647,6 +673,7 @@ export class H21 extends Component {
                 fontFamily: this.state.fontFamily,
                 fontSize: this.state.fontSize,
                 fontWeight: this.state.fontWeight,
+                fontVariant: this.state.fontVariant,
                 display: this.state.display,
                 flexDirection: 'column',
                 alignItems: this.state.align,
@@ -661,6 +688,7 @@ export class H21 extends Component {
                 animationDuration: this.state.animationDuration,
                 transformOrigin: this.state.transformOrigin,
                 animationFillMode: this.state.animationFillMode,
+                flex: 1,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -681,9 +709,11 @@ export class H21 extends Component {
             },
         })
         return (
-            <h2 style={HEADING.heading} id={this.state.id} className={this.state.className}
-                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
-                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h2>
+            <React.Fragment>
+                <h2 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                    onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                    onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h2>
+            </React.Fragment>
         )
     }
 }
@@ -699,11 +729,12 @@ export class H22 extends Component {
             smFontSize: props.smSize || '2.7em',
             mdFontSize: props.mdSize || '3em',
             fontWeight: props.weight || '600',
+            fontVariant: props.variant,
             display: props.display || 'flex',
             align: props.align || 'center',
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 5px 0',
-            margin: props.margin || '0',
+            margin: props.margin || '1px',
             width: props.width || 'inherit',
             height: props.height,
             border: props.border,
@@ -748,6 +779,7 @@ export class H22 extends Component {
                 fontFamily: this.state.fontFamily,
                 fontSize: this.state.fontSize,
                 fontWeight: this.state.fontWeight,
+                fontVariant: this.state.fontVariant,
                 display: this.state.display,
                 flexDirection: 'column',
                 alignItems: this.state.align,
@@ -762,6 +794,7 @@ export class H22 extends Component {
                 animationDuration: this.state.animationDuration,
                 transformOrigin: this.state.transformOrigin,
                 animationFillMode: this.state.animationFillMode,
+                flex: 1,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -782,9 +815,11 @@ export class H22 extends Component {
             },
         })
         return (
-            <h2 style={HEADING.heading} id={this.state.id} className={this.state.className}
-                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
-                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h2>
+            <React.Fragment>
+                <h2 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                    onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                    onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h2>
+            </React.Fragment>
         )
     }
 }
@@ -800,11 +835,12 @@ export class H23 extends Component {
             smFontSize: props.smSize || '3.5em',
             mdFontSize: props.mdSize || '4.5em',
             fontWeight: props.weight || '600',
+            fontVariant: props.variant,
             display: props.display || 'flex',
             align: props.align || 'center',
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 5px 0',
-            margin: props.margin || '0',
+            margin: props.margin || '1px',
             width: props.width || 'inherit',
             height: props.height,
             border: props.border,
@@ -849,6 +885,7 @@ export class H23 extends Component {
                 fontFamily: this.state.fontFamily,
                 fontSize: this.state.fontSize,
                 fontWeight: this.state.fontWeight,
+                fontVariant: this.state.fontVariant,
                 display: this.state.display,
                 flexDirection: 'column',
                 alignItems: this.state.align,
@@ -863,6 +900,7 @@ export class H23 extends Component {
                 animationDuration: this.state.animationDuration,
                 transformOrigin: this.state.transformOrigin,
                 animationFillMode: this.state.animationFillMode,
+                flex: 1,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -883,9 +921,11 @@ export class H23 extends Component {
             },
         })
         return (
-            <h2 style={HEADING.heading} id={this.state.id} className={this.state.className}
-                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
-                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h2>
+            <React.Fragment>
+                <h2 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                    onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                    onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h2>
+            </React.Fragment>
         )
     }
 }
@@ -901,11 +941,12 @@ export class H24 extends Component {
             smFontSize: props.smSize || '3em',
             mdFontSize: props.mdSize || '4em',
             fontWeight: props.weight || '600',
+            fontVariant: props.variant,
             display: props.display || 'flex',
             align: props.align || 'center',
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 5px 0',
-            margin: props.margin || '0',
+            margin: props.margin || '1px',
             width: props.width || 'inherit',
             height: props.height,
             border: props.border,
@@ -950,6 +991,7 @@ export class H24 extends Component {
                 fontFamily: this.state.fontFamily,
                 fontSize: this.state.fontSize,
                 fontWeight: this.state.fontWeight,
+                fontVariant: this.state.fontVariant,
                 display: this.state.display,
                 flexDirection: 'column',
                 alignItems: this.state.align,
@@ -964,6 +1006,7 @@ export class H24 extends Component {
                 animationDuration: this.state.animationDuration,
                 transformOrigin: this.state.transformOrigin,
                 animationFillMode: this.state.animationFillMode,
+                flex: 1,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -984,9 +1027,11 @@ export class H24 extends Component {
             },
         })
         return (
-            <h2 style={HEADING.heading} id={this.state.id} className={this.state.className}
-                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
-                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h2>
+            <React.Fragment>
+                <h2 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                    onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                    onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h2>
+            </React.Fragment>
         )
     }
 }
@@ -1003,11 +1048,12 @@ export class H25 extends Component {
             smFontSize: props.smSize || '3em',
             mdFontSize: props.mdSize || '4em',
             fontWeight: props.weight || '600',
+            fontVariant: props.variant,
             display: props.display || 'flex',
             align: props.align || 'center',
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 5px 0',
-            margin: props.margin || '0',
+            margin: props.margin || '1px',
             width: props.width || 'width',
             height: props.height,
             border: props.border,
@@ -1051,6 +1097,7 @@ export class H25 extends Component {
                 fontFamily: this.state.fontFamily,
                 fontSize: this.state.fontSize,
                 fontWeight: this.state.fontWeight,
+                fontVariant: this.state.fontVariant,
                 display: this.state.display,
                 flexDirection: 'column',
                 alignItems: this.state.align,
@@ -1068,6 +1115,7 @@ export class H25 extends Component {
                 WebkitTextFillColor: 'transparent',
                 WebkitTextStrokeColor: this.state.color,
                 WebkitTextStrokeWidth: this.state.stroke,
+                flex: 1,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -1088,9 +1136,11 @@ export class H25 extends Component {
             },
         })
         return (
-            <h2 style={HEADING.heading} id={this.state.id} className={this.state.className}
-                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
-                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h2>
+            <React.Fragment>
+                <h2 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                    onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                    onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h2>
+            </React.Fragment>
         )
     }
 }
@@ -1108,11 +1158,12 @@ export class H31 extends Component {
             smFontSize: props.smSize || '2.5em',
             mdFontSize: props.mdSize || '3em',
             fontWeight: props.weight || '600',
+            fontVariant: props.variant,
             display: props.display || 'flex',
             align: props.align || 'center',
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 5px 0',
-            margin: props.margin || '0',
+            margin: props.margin || '1px',
             width: props.width || 'inherit',
             height: props.height,
             border: props.border,
@@ -1157,6 +1208,7 @@ export class H31 extends Component {
                 fontFamily: this.state.fontFamily,
                 fontSize: this.state.fontSize,
                 fontWeight: this.state.fontWeight,
+                fontVariant: this.state.fontVariant,
                 display: this.state.display,
                 flexDirection: 'column',
                 alignItems: this.state.align,
@@ -1171,6 +1223,7 @@ export class H31 extends Component {
                 animationDuration: this.state.animationDuration,
                 transformOrigin: this.state.transformOrigin,
                 animationFillMode: this.state.animationFillMode,
+                flex: 1,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -1191,9 +1244,11 @@ export class H31 extends Component {
             },
         })
         return (
-            <h3 style={HEADING.heading} id={this.state.id} className={this.state.className}
-                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
-                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h3>
+            <React.Fragment>
+                <h3 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                    onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                    onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h3>
+            </React.Fragment>
         )
     }
 }
@@ -1209,6 +1264,7 @@ export class H32 extends Component {
             smFontSize: props.smSize || '2em',
             mdFontSize: props.mdSize || '2.5em',
             fontWeight: props.weight || '600',
+            fontVariant: props.variant,
             display: props.display || 'flex',
             align: props.align || 'center',
             textAlign: props.textAlign || 'center',
@@ -1258,6 +1314,7 @@ export class H32 extends Component {
                 fontFamily: this.state.fontFamily,
                 fontSize: this.state.fontSize,
                 fontWeight: this.state.fontWeight,
+                fontVariant: this.state.fontVariant,
                 display: this.state.display,
                 flexDirection: 'column',
                 alignItems: this.state.align,
@@ -1272,6 +1329,7 @@ export class H32 extends Component {
                 animationDuration: this.state.animationDuration,
                 transformOrigin: this.state.transformOrigin,
                 animationFillMode: this.state.animationFillMode,
+                flex: 1,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -1292,9 +1350,11 @@ export class H32 extends Component {
             },
         })
         return (
-            <h3 style={HEADING.heading} id={this.state.id} className={this.state.className}
-                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
-                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h3>
+            <React.Fragment>
+                <h3 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                    onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                    onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h3>
+            </React.Fragment>
         )
     }
 }
@@ -1310,11 +1370,12 @@ export class H33 extends Component {
             smFontSize: props.smSize || '3em',
             mdFontSize: props.mdSize || '3.5em',
             fontWeight: props.weight || '600',
+            fontVariant: props.variant,
             display: props.display || 'flex',
             align: props.align || 'center',
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 5px 0',
-            margin: props.margin || '0',
+            margin: props.margin || '1px',
             width: props.width || 'inherit',
             height: props.height,
             border: props.border,
@@ -1359,6 +1420,7 @@ export class H33 extends Component {
                 fontFamily: this.state.fontFamily,
                 fontSize: this.state.fontSize,
                 fontWeight: this.state.fontWeight,
+                fontVariant: this.state.fontVariant,
                 display: this.state.display,
                 flexDirection: 'column',
                 alignItems: this.state.align,
@@ -1373,6 +1435,7 @@ export class H33 extends Component {
                 animationDuration: this.state.animationDuration,
                 transformOrigin: this.state.transformOrigin,
                 animationFillMode: this.state.animationFillMode,
+                flex: 1,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -1393,9 +1456,11 @@ export class H33 extends Component {
             },
         })
         return (
-            <h3 style={HEADING.heading} id={this.state.id} className={this.state.className}
-                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
-                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h3>
+            <React.Fragment>
+                <h3 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                    onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                    onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h3>
+            </React.Fragment>
         )
     }
 }
@@ -1411,11 +1476,12 @@ export class H34 extends Component {
             smFontSize: props.smSize || '2.5em',
             mdFontSize: props.mdSize || '3em',
             fontWeight: props.weight || '600',
+            fontVariant: props.variant,
             display: props.display || 'flex',
             align: props.align || 'center',
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 5px 0',
-            margin: props.margin || '0',
+            margin: props.margin || '1px',
             width: props.width || 'inherit',
             height: props.height,
             border: props.border,
@@ -1460,6 +1526,7 @@ export class H34 extends Component {
                 fontFamily: this.state.fontFamily,
                 fontSize: this.state.fontSize,
                 fontWeight: this.state.fontWeight,
+                fontVariant: this.state.fontVariant,
                 display: this.state.display,
                 flexDirection: 'column',
                 alignItems: this.state.align,
@@ -1474,6 +1541,7 @@ export class H34 extends Component {
                 animationDuration: this.state.animationDuration,
                 transformOrigin: this.state.transformOrigin,
                 animationFillMode: this.state.animationFillMode,
+                flex: 1,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -1494,9 +1562,11 @@ export class H34 extends Component {
             },
         })
         return (
-            <h3 style={HEADING.heading} id={this.state.id} className={this.state.className}
-                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
-                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h3>
+            <React.Fragment>
+                <h3 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                    onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                    onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h3>
+            </React.Fragment>
         )
     }
 }
@@ -1513,11 +1583,12 @@ export class H35 extends Component {
             smFontSize: props.smSize || '2.5em',
             mdFontSize: props.mdSize || '3em',
             fontWeight: props.weight || '600',
+            fontVariant: props.variant,
             display: props.display || 'flex',
             align: props.align || 'center',
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 5px 0',
-            margin: props.margin || '0',
+            margin: props.margin || '1px',
             width: props.width || 'inherit',
             height: props.height,
             border: props.border,
@@ -1561,6 +1632,7 @@ export class H35 extends Component {
                 fontFamily: this.state.fontFamily,
                 fontSize: this.state.fontSize,
                 fontWeight: this.state.fontWeight,
+                fontVariant: this.state.fontVariant,
                 display: this.state.display,
                 flexDirection: 'column',
                 alignItems: this.state.align,
@@ -1578,6 +1650,7 @@ export class H35 extends Component {
                 WebkitTextFillColor: 'transparent',
                 WebkitTextStrokeColor: this.state.color,
                 WebkitTextStrokeWidth: this.state.stroke,
+                flex: 1,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -1598,9 +1671,11 @@ export class H35 extends Component {
             },
         })
         return (
-            <h3 style={HEADING.heading} id={this.state.id} className={this.state.className}
-                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
-                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h3>
+            <React.Fragment>
+                <h3 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                    onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                    onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h3>
+            </React.Fragment>
         )
     }
 }
@@ -1618,11 +1693,12 @@ export class H41 extends Component {
             smFontSize: props.smSize || '2.5em',
             mdFontSize: props.mdSize || '3em',
             fontWeight: props.weight || '100',
+            fontVariant: props.variant,
             display: props.display || 'flex',
             align: props.align || 'center',
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 3px 0',
-            margin: props.margin || '0',
+            margin: props.margin || '1px',
             width: props.width || 'inherit',
             height: props.height,
             border: props.border,
@@ -1667,6 +1743,7 @@ export class H41 extends Component {
                 fontFamily: this.state.fontFamily,
                 fontSize: this.state.fontSize,
                 fontWeight: this.state.fontWeight,
+                fontVariant: this.state.fontVariant,
                 display: this.state.display,
                 flexDirection: 'column',
                 alignItems: this.state.align,
@@ -1681,6 +1758,7 @@ export class H41 extends Component {
                 animationDuration: this.state.animationDuration,
                 transformOrigin: this.state.transformOrigin,
                 animationFillMode: this.state.animationFillMode,
+                flex: 1,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -1701,9 +1779,11 @@ export class H41 extends Component {
             },
         })
         return (
-            <h4 style={HEADING.heading} id={this.state.id} className={this.state.className}
-                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
-                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h4>
+            <React.Fragment>
+                <h4 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                    onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                    onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h4>
+            </React.Fragment>
         )
     }
 }
@@ -1719,11 +1799,12 @@ export class H42 extends Component {
             smFontSize: props.smSize || '2em',
             mdFontSize: props.mdSize || '2.5em',
             fontWeight: props.weight || '100',
+            fontVariant: props.variant,
             display: props.display || 'flex',
             align: props.align || 'center',
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 3px 0',
-            margin: props.margin || '0',
+            margin: props.margin || '1px',
             width: props.width || 'inherit',
             height: props.height,
             border: props.border,
@@ -1768,6 +1849,7 @@ export class H42 extends Component {
                 fontFamily: this.state.fontFamily,
                 fontSize: this.state.fontSize,
                 fontWeight: this.state.fontWeight,
+                fontVariant: this.state.fontVariant,
                 display: this.state.display,
                 flexDirection: 'column',
                 alignItems: this.state.align,
@@ -1782,6 +1864,7 @@ export class H42 extends Component {
                 animationDuration: this.state.animationDuration,
                 transformOrigin: this.state.transformOrigin,
                 animationFillMode: this.state.animationFillMode,
+                flex: 1,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -1802,9 +1885,11 @@ export class H42 extends Component {
             },
         })
         return (
-            <h4 style={HEADING.heading} id={this.state.id} className={this.state.className}
-                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
-                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h4>
+            <React.Fragment>
+                <h4 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                    onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                    onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h4>
+            </React.Fragment>
         )
     }
 }
@@ -1820,11 +1905,12 @@ export class H43 extends Component {
             smFontSize: props.smSize || '3em',
             mdFontSize: props.mdSize || '3.5em',
             fontWeight: props.weight || '100',
+            fontVariant: props.variant,
             display: props.display || 'flex',
             align: props.align || 'center',
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 3px 0',
-            margin: props.margin || '0',
+            margin: props.margin || '1px',
             width: props.width || 'inherit',
             height: props.height,
             border: props.border,
@@ -1869,6 +1955,7 @@ export class H43 extends Component {
                 fontFamily: this.state.fontFamily,
                 fontSize: this.state.fontSize,
                 fontWeight: this.state.fontWeight,
+                fontVariant: this.state.fontVariant,
                 display: this.state.display,
                 flexDirection: 'column',
                 alignItems: this.state.align,
@@ -1883,6 +1970,7 @@ export class H43 extends Component {
                 animationDuration: this.state.animationDuration,
                 transformOrigin: this.state.transformOrigin,
                 animationFillMode: this.state.animationFillMode,
+                flex: 1,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -1903,9 +1991,11 @@ export class H43 extends Component {
             },
         })
         return (
-            <h4 style={HEADING.heading} id={this.state.id} className={this.state.className}
-                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
-                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h4>
+            <React.Fragment>
+                <h4 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                    onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                    onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h4>
+            </React.Fragment>
         )
     }
 }
@@ -1921,11 +2011,12 @@ export class H44 extends Component {
             smFontSize: props.smSize || '2.5em',
             mdFontSize: props.mdSize || '3em',
             fontWeight: props.weight || '100',
+            fontVariant: props.variant,
             display: props.display || 'flex',
             align: props.align || 'center',
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 3px 0',
-            margin: props.margin || '0',
+            margin: props.margin || '1px',
             width: props.width || 'inherit',
             height: props.height,
             border: props.border,
@@ -1970,6 +2061,7 @@ export class H44 extends Component {
                 fontFamily: this.state.fontFamily,
                 fontSize: this.state.fontSize,
                 fontWeight: this.state.fontWeight,
+                fontVariant: this.state.fontVariant,
                 display: this.state.display,
                 flexDirection: 'column',
                 alignItems: this.state.align,
@@ -1984,6 +2076,7 @@ export class H44 extends Component {
                 animationDuration: this.state.animationDuration,
                 transformOrigin: this.state.transformOrigin,
                 animationFillMode: this.state.animationFillMode,
+                flex: 1,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -2004,9 +2097,11 @@ export class H44 extends Component {
             },
         })
         return (
-            <h4 style={HEADING.heading} id={this.state.id} className={this.state.className}
-                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
-                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h4>
+            <React.Fragment>
+                <h4 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                    onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                    onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h4>
+            </React.Fragment>
         )
     }
 }
@@ -2023,11 +2118,12 @@ export class H45 extends Component {
             smFontSize: props.smSize || '2.5em',
             mdFontSize: props.mdSize || '3em',
             fontWeight: props.weight || '100',
+            fontVariant: props.variant,
             display: props.display || 'flex',
             align: props.align || 'center',
             textAlign: props.textAlign || 'center',
             padding: props.padding || '0 0 3px 0',
-            margin: props.margin || '0',
+            margin: props.margin || '1px',
             width: props.width || 'inherit',
             height: props.height,
             border: props.border,
@@ -2071,6 +2167,7 @@ export class H45 extends Component {
                 fontFamily: this.state.fontFamily,
                 fontSize: this.state.fontSize,
                 fontWeight: this.state.fontWeight,
+                fontVariant: this.state.fontVariant,
                 display: this.state.display,
                 flexDirection: 'column',
                 alignItems: this.state.align,
@@ -2088,6 +2185,7 @@ export class H45 extends Component {
                 WebkitTextFillColor: 'transparent',
                 WebkitTextStrokeColor: this.state.color,
                 WebkitTextStrokeWidth: this.state.stroke,
+                flex: 1,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -2108,9 +2206,11 @@ export class H45 extends Component {
             },
         })
         return (
-            <h4 style={HEADING.heading} id={this.state.id} className={this.state.className}
-                onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
-                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h4>
+            <React.Fragment>
+                <h4 style={HEADING.heading} id={this.state.id} className={this.state.className}
+                    onMouseEnter={() => this.setState({ color: HEADING.hoverStyle.color })}
+                    onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</h4>
+            </React.Fragment>
         )
     }
 }
@@ -2131,11 +2231,12 @@ export class P1 extends Component {
             mdFontSize: props.mdSize || '1.3em',
             lineHeight: props.lineHeight || '1.5em',
             fontWeight: props.weight || '400',
+            fontVariant: props.variant,
             display: props.display || 'flex',
             align: props.align || 'center',
             textAlign: props.textAlign || 'center',
-            padding: props.padding || '10px 10%',
-            margin: props.margin || '0',
+            padding: props.padding || '5px',
+            margin: props.margin || '1px',
             width: props.width || 'inherit',
             height: props.height,
             border: props.border,
@@ -2168,6 +2269,7 @@ export class P1 extends Component {
     render() {
         const PARAGRAPH = StyleSheet.create({
             paragraph: {
+                flex: 1,
                 width: this.state.width,
                 height: this.state.height,
                 color: this.state.color,
@@ -2181,6 +2283,7 @@ export class P1 extends Component {
                 fontSize: this.state.fontSize,
                 lineHeight: this.state.lineHeight,
                 fontWeight: this.state.fontWeight,
+                fontVariant: this.state.fontVariant,
                 display: this.state.display,
                 flexDirection: 'column',
                 alignItems: this.state.align,
@@ -2213,9 +2316,11 @@ export class P1 extends Component {
             },
         })
         return (
-            <p style={PARAGRAPH.paragraph} id={this.state.id} className={this.state.className}
-                onMouseEnter={() => this.setState({ color: PARAGRAPH.hoverStyle.color })}
-                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</p>
+            <React.Fragment>
+                <p style={PARAGRAPH.paragraph} id={this.state.id} className={this.state.className}
+                    onMouseEnter={() => this.setState({ color: PARAGRAPH.hoverStyle.color })}
+                    onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</p>
+            </React.Fragment>
         )
     }
 }
@@ -2232,11 +2337,12 @@ export class P2 extends Component {
             mdFontSize: props.mdSize || '0.95em',
             lineHeight: props.lineHeight || '1.22em',
             fontWeight: props.weight || '400',
+            fontVariant: props.variant,
             display: props.display || 'flex',
             align: props.align || 'center',
             textAlign: props.textAlign || 'center',
-            padding: props.padding || '10px 10%',
-            margin: props.margin || '0',
+            padding: props.padding || '5px',
+            margin: props.margin || '1px',
             width: props.width || 'inherit',
             height: props.height,
             border: props.border,
@@ -2282,6 +2388,7 @@ export class P2 extends Component {
                 fontSize: this.state.fontSize,
                 lineHeight: this.state.lineHeight,
                 fontWeight: this.state.fontWeight,
+                fontVariant: this.state.fontVariant,
                 display: this.state.display,
                 flexDirection: 'column',
                 alignItems: this.state.align,
@@ -2294,6 +2401,7 @@ export class P2 extends Component {
                 animationDuration: this.state.animationDuration,
                 transformOrigin: this.state.transformOrigin,
                 animationFillMode: this.state.animationFillMode,
+                flex: 1,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -2314,9 +2422,11 @@ export class P2 extends Component {
             },
         })
         return (
-            <p style={PARAGRAPH.paragraph} id={this.state.id} className={this.state.className}
-                onMouseEnter={() => this.setState({ color: PARAGRAPH.hoverStyle.color })}
-                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</p>
+            <React.Fragment>
+                <p style={PARAGRAPH.paragraph} id={this.state.id} className={this.state.className}
+                    onMouseEnter={() => this.setState({ color: PARAGRAPH.hoverStyle.color })}
+                    onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</p>
+            </React.Fragment>
         )
     }
 }
@@ -2333,11 +2443,12 @@ export class P3 extends Component {
             mdFontSize: props.mdSize || '1.6em',
             lineHeight: props.lineHeight || '1.8em',
             fontWeight: props.weight || '400',
+            fontVariant: props.variant,
             display: props.display || 'flex',
             align: props.align || 'center',
             textAlign: props.textAlign || 'center',
-            padding: props.padding || '10px 10%',
-            margin: props.margin || '0',
+            padding: props.padding || '5px',
+            margin: props.margin || '1px',
             width: props.width || 'inherit',
             height: props.height,
             border: props.border,
@@ -2383,6 +2494,7 @@ export class P3 extends Component {
                 fontSize: this.state.fontSize,
                 lineHeight: this.state.lineHeight,
                 fontWeight: this.state.fontWeight,
+                fontVariant: this.state.fontVariant,
                 display: this.state.display,
                 flexDirection: 'column',
                 alignItems: this.state.align,
@@ -2395,6 +2507,7 @@ export class P3 extends Component {
                 animationDuration: this.state.animationDuration,
                 transformOrigin: this.state.transformOrigin,
                 animationFillMode: this.state.animationFillMode,
+                flex: 1,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -2415,9 +2528,11 @@ export class P3 extends Component {
             },
         })
         return (
-            <p style={PARAGRAPH.paragraph} id={this.state.id} className={this.state.className}
-                onMouseEnter={() => this.setState({ color: PARAGRAPH.hoverStyle.color })}
-                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</p>
+            <React.Fragment>
+                <p style={PARAGRAPH.paragraph} id={this.state.id} className={this.state.className}
+                    onMouseEnter={() => this.setState({ color: PARAGRAPH.hoverStyle.color })}
+                    onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</p>
+            </React.Fragment>
         )
     }
 }
@@ -2434,11 +2549,12 @@ export class P4 extends Component {
             mdFontSize: props.mdSize || '1.6em',
             lineHeight: props.lineHeight || '1.8em',
             fontWeight: props.weight || '400',
+            fontVariant: props.variant,
             display: props.display || 'flex',
             align: props.align || 'center',
             textAlign: props.textAlign || 'center',
-            padding: props.padding || '10px 10%',
-            margin: props.margin || '0',
+            padding: props.padding || '5px',
+            margin: props.margin || '1px',
             width: props.width || 'inherit',
             height: props.height,
             border: props.border,
@@ -2484,6 +2600,7 @@ export class P4 extends Component {
                 fontSize: this.state.fontSize,
                 lineHeight: this.state.lineHeight,
                 fontWeight: this.state.fontWeight,
+                fontVariant: this.state.fontVariant,
                 display: this.state.display,
                 flexDirection: 'column',
                 alignItems: this.state.align,
@@ -2496,6 +2613,7 @@ export class P4 extends Component {
                 animationDuration: this.state.animationDuration,
                 transformOrigin: this.state.transformOrigin,
                 animationFillMode: this.state.animationFillMode,
+                flex: 1,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -2516,9 +2634,11 @@ export class P4 extends Component {
             },
         })
         return (
-            <p style={PARAGRAPH.paragraph} id={this.state.id} className={this.state.className}
-                onMouseEnter={() => this.setState({ color: PARAGRAPH.hoverStyle.color })}
-                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</p>
+            <React.Fragment>
+                <p style={PARAGRAPH.paragraph} id={this.state.id} className={this.state.className}
+                    onMouseEnter={() => this.setState({ color: PARAGRAPH.hoverStyle.color })}
+                    onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</p>
+            </React.Fragment>
         )
     }
 }
@@ -2536,11 +2656,12 @@ export class P5 extends Component {
             mdFontSize: props.mdSize || '1.3em',
             lineHeight: props.lineHeight || '1.5em',
             fontWeight: props.weight || '400',
+            fontVariant: props.variant,
             display: props.display || 'flex',
             align: props.align || 'center',
             textAlign: props.textAlign || 'center',
-            padding: props.padding || '10px 10%',
-            margin: props.margin || '0',
+            padding: props.padding || '5px',
+            margin: props.margin || '1px',
             width: props.width || 'inherit',
             height: props.height,
             border: props.border,
@@ -2586,6 +2707,7 @@ export class P5 extends Component {
                 fontSize: this.state.fontSize,
                 lineHeight: this.state.lineHeight,
                 fontWeight: this.state.fontWeight,
+                fontVariant: this.state.fontVariant,
                 display: this.state.display,
                 flexDirection: 'column',
                 alignItems: this.state.align,
@@ -2598,6 +2720,7 @@ export class P5 extends Component {
                 animationDuration: this.state.animationDuration,
                 transformOrigin: this.state.transformOrigin,
                 animationFillMode: this.state.animationFillMode,
+                flex: 1,
             },
             hoverStyle: {
                 color: this.state.hoverColor
@@ -2618,9 +2741,11 @@ export class P5 extends Component {
             },
         })
         return (
-            <p style={PARAGRAPH.paragraph} id={this.state.id} className={this.state.className}
-                onMouseEnter={() => this.setState({ color: PARAGRAPH.hoverStyle.color })}
-                onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</p>
+            <React.Fragment>
+                <p style={PARAGRAPH.paragraph} id={this.state.id} className={this.state.className}
+                    onMouseEnter={() => this.setState({ color: PARAGRAPH.hoverStyle.color })}
+                    onMouseLeave={() => this.setState({ color: this.state.colorRev })}>{this.state.childs[0]}</p>
+            </React.Fragment>
         )
     }
 }
@@ -3303,11 +3428,12 @@ export class Hero1 extends Component {
         }
         return (
             <div style={HEROSTYLE} id={this.state.id} className={this.state.className}>
-                <Holder7>
+                <Holder
+                    direction='column'>
                     {this.state.childs[0]}
                     {this.state.childs[2]}
                     {this.state.childs[1]}
-                </Holder7>
+                </Holder>
             </div>
         )
     }
@@ -3367,9 +3493,10 @@ export class Hero2 extends Component {
         return (
             <div style={HEROSTYLE} id={this.state.heroid} className={this.state.heroClassName}>
                 <div style={BOTTOMBACKGROUND} id={this.state.bottomid} className={this.state.bottomClassName}>
-                    <Holder5>
+                    <Holder
+                        direction='column'>
                         {this.state.childs[0]}
-                    </Holder5>
+                    </Holder>
                 </div>
             </div>
         )
@@ -3416,9 +3543,9 @@ export class Hero3 extends Component {
         }
         return (
             <div style={HEROSTYLE} id={this.state.id} className={this.state.className}>
-                <Holder1>
+                <Holder>
                     {this.state.childs[0]}
-                </Holder1>
+                </Holder>
             </div>
         )
     }
@@ -3464,10 +3591,10 @@ export class Hero4 extends Component {
         }
         return (
             <div style={HEROSTYLE} id={this.state.id} className={this.state.className}>
-                <Holder1>
+                <Holder>
                     {this.state.childs[2]}
                     {this.state.childs[0]}
-                </Holder1>
+                </Holder>
             </div>
         )
     }
@@ -3513,19 +3640,20 @@ export class Hero5 extends Component {
         }
         return (
             <div style={HEROSTYLE} id={this.state.id} className={this.state.className}>
-                <Holder7>
+                <Holder
+                    direction='column'>
                     {this.state.childs[0]}
-                    <Holder2>
+                    <Holder>
                         {this.state.childs[1]}
                         {this.state.childs[2]}
                         {this.state.childs[3]}
-                    </Holder2>
-                    <Holder2>
+                    </Holder>
+                    <Holder>
                         {this.state.childs[4]}
                         {this.state.childs[5]}
                         {this.state.childs[6]}
-                    </Holder2>
-                </Holder7>
+                    </Holder>
+                </Holder>
             </div>
         )
     }
@@ -3754,6 +3882,11 @@ export class Navbar1 extends Component {
     constructor(props) {
         super(props);
         this.state = {
+             top: props.top,
+            left: props.left,
+            right: props.right,
+            bottom: props.bottom,
+            position: props.position,
             fontFamily: props.font || 'serif',
             totalWidth: props.totalWidth || '100%',
             navBarWidth: props.navbarWidth || '100%',
@@ -3985,6 +4118,7 @@ export class Navbar1 extends Component {
                 padding: this.state.padding,
                 background: this.state.mainBackground,
                 color: this.state.color,
+
             },
             '@media screen and (max-width: 440px)': {
                 navbar: {
@@ -4006,6 +4140,12 @@ export class Navbar1 extends Component {
                 alignItems: this.state.columnAlign,
                 fontFamily: this.state.fontFamily,
                 flexDirection: this.state.direction,
+                top: this.state.top,
+                right: this.state.right,
+                left: this.state.left,
+                bottom: this.state.bottom,
+                position: this.state.position,
+                zIndex: 200,
             },
             '@media screen and (max-width: 440px)': {
                 navbar_navbar: {
@@ -4130,6 +4270,12 @@ export class SubNavbar1 extends Component {
             childs: '',
             smdis: props.smDis || 'none',
             mddis: props.mdDis || 'flex',
+            top: props.top || '-1px',
+            bottom: props.bottom,
+            left: props.left,
+            right: props.right,
+            position: props.position || "sticky",
+            zIndex: props.zIndex || '200'
         }
     }
     componentDidMount() {
@@ -4203,9 +4349,12 @@ export class SubNavbar1 extends Component {
                 padding: this.state.padding,
                 background: this.state.mainBackground,
                 color: this.state.color,
-                top: '-1px',
-                position: "sticky",
-                zIndex: "200",
+                top: this.state.top,
+                bottom: this.state.bottom,
+                left: this.state.left,
+                right: this.state.right,
+                position: this.state.position,
+                zIndex: this.state.zIndex,
             },
             '@media screen and (max-width: 440px)': {
                 subnavbar: {
@@ -4356,12 +4505,12 @@ export class SubNavbar2 extends Component {
         };
         return (
             <nav style={SUBNAVBAR} className="subnavbar2 socialness">
-                <Holder1>
+                <Holder>
                     <ul style={SUBNAVBAR_NAVBAR1} id={this.state.navid} className={`subnavbar2-navbar1 ${this.state.navClassName}`}>
                         {this.state.childs[0]}
                         {this.state.childs[1]}
                     </ul>
-                    <Holder1
+                    <Holder
                         alignBlock1="flex-end"
                         alignBlock2="flex-start">
                         <div id={this.state.leftItemsid} className={`subnavbar2-globalSearch ${this.state.leftItemsClassName}`}>
@@ -4370,8 +4519,8 @@ export class SubNavbar2 extends Component {
                         <ul style={SUBNAVBAR_NAVBAR2} id={this.state.rightItemsid} className={`subnavbar2-navbar2 ${this.state.rightItemsClassName}`}>
                             {this.state.childs}
                         </ul>
-                    </Holder1>
-                </Holder1>
+                    </Holder>
+                </Holder>
             </nav>
         )
     }
@@ -4804,6 +4953,7 @@ export class DropDownNav2 extends Component {
     }
 }
 export class DropDownNav3 extends Component {
+    //broken, needs work
     constructor(props) {
         super(props);
         this.state = {
@@ -4890,7 +5040,7 @@ export class DropDownNav3 extends Component {
                     id={this.state.titleid} className={this.state.titleClassName}>
                     {this.state.childs[0]}
                     <ul style={DROPDOWN} id={this.state.itemsid} className={this.state.itemsClassName}>
-                        <Holder2>
+                        <Holder>
                             {this.state.childs[1]}
                             {this.state.childs[2]}
                             {this.state.childs[3]}
@@ -4901,7 +5051,7 @@ export class DropDownNav3 extends Component {
                             {this.state.childs[8]}
                             {this.state.childs[9]}
                             {this.state.childs[10]}
-                        </Holder2>
+                        </Holder>
                     </ul>
                 </li>
             </nav>

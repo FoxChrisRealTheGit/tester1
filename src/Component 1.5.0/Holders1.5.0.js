@@ -18,8 +18,8 @@ export default class Holder extends Component {
             margin: props.margin || '10px 0',
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
-            smflexDir: props.smflexDir,
-            mdflexDir: props.mdflexDir,
+            smflexDir: props.smflexDir || props.direction,
+            mdflexDir: props.mdflexDir || props.direction,
             childs: []
         }
     }
@@ -43,7 +43,7 @@ export default class Holder extends Component {
                 block1smdis: props.block1smdis || 'flex',
                 block1mddis: props.block1mddis || 'flex',
             };
-            holderstyles= StyleSheet.create({
+            holderstyles = StyleSheet.create({
                 holderstyles: {
                     width: '100%',
                     display: this.state.display,
@@ -57,6 +57,7 @@ export default class Holder extends Component {
                     borderTop: this.state.borderTop,
                     borderBottom: this.state.borderBottom,
                     border: this.state.border,
+                    flex: 1,
                 },
                 '@media (max-width: 440px)': {
                     holderstyles: {
@@ -71,32 +72,32 @@ export default class Holder extends Component {
                     }
                 }
             });
-                block1styles= StyleSheet.create({
+            block1styles = StyleSheet.create({
+                block1styles: {
+                    display: 'flex',
+                    flex: blocks.block1 || this.state.block1,
+                    flexDirection: blocks.block1Direction,
+                    flexWrap: 'wrap',
+                    alignItems: blocks.alignBlock1,
+                    borderLeft: blocks.block1BorderLeft,
+                    borderRight: blocks.block1BorderRight,
+                    borderTop: blocks.block1BorderTop,
+                    borderBottom: blocks.block1BorderBottom,
+                    border: blocks.b1Border,
+                    margin: blocks.margin,
+                    justifyContent: blocks.justifyBlock1,
+                },
+                '@media screen and (max-width: 440px)': {
                     block1styles: {
-                        display: 'flex',
-                        flex: blocks.block1 || this.state.block1,
-                        flexDirection: blocks.block1Direction,
-                        flexWrap: 'wrap',
-                        alignItems: blocks.alignBlock1,
-                        borderLeft: blocks.block1BorderLeft,
-                        borderRight: blocks.block1BorderRight,
-                        borderTop: blocks.block1BorderTop,
-                        borderBottom: blocks.block1BorderBottom,
-                        border: blocks.b1Border,
-                        margin: blocks.margin,
-                        justifyContent: blocks.justifyBlock1,
-                    },
-                    '@media screen and (max-width: 440px)': {
-                        block1styles: {
-                            display: blocks.block1smdis,
-                        }
-                    },
-                    '@media screen and (min-width: 441px) and (max-width: 760px)': {
-                        block1styles: {
-                            display: blocks.block1mddis,
-                        }
+                        display: blocks.block1smdis,
                     }
-                });
+                },
+                '@media screen and (min-width: 441px) and (max-width: 760px)': {
+                    block1styles: {
+                        display: blocks.block1mddis,
+                    }
+                }
+            });
             styledChilds1 = <div key={Math.random()} style={block1styles.block1styles}>{CHILDS[0]}</div>
             styledHolder = [
                 <section key={Math.random()} style={holderstyles.holderstyles}>{styledChilds1}{styledChilds2}</section>
@@ -126,7 +127,7 @@ export default class Holder extends Component {
                 block2smdis: props.block2smdis || 'flex',
                 block2mddis: props.block2mddis || 'flex',
             };
-            holderstyles= StyleSheet.create({
+            holderstyles = StyleSheet.create({
                 holderstyles: {
                     width: '100%',
                     display: this.state.display,
@@ -140,6 +141,7 @@ export default class Holder extends Component {
                     borderTop: this.state.borderTop,
                     borderBottom: this.state.borderBottom,
                     border: this.state.border,
+                    flex: 1,
                 },
                 '@media (max-width: 440px)': {
                     holderstyles: {
@@ -154,32 +156,32 @@ export default class Holder extends Component {
                     }
                 }
             });
-                block1styles = StyleSheet.create({
+            block1styles = StyleSheet.create({
+                block1styles: {
+                    display: 'flex',
+                    flex: blocks.block1 || this.state.block1,
+                    flexDirection: blocks.block1Direction,
+                    flexWrap: 'wrap',
+                    alignItems: blocks.alignBlock1,
+                    borderLeft: blocks.block1BorderLeft,
+                    borderRight: blocks.block1BorderRight,
+                    borderTop: blocks.block1BorderTop,
+                    borderBottom: blocks.block1BorderBottom,
+                    border: blocks.b1Border,
+                    margin: blocks.margin,
+                    justifyContent: blocks.justifyBlock1,
+                },
+                '@media screen and (max-width: 440px)': {
                     block1styles: {
-                        display: 'flex',
-                        flex: blocks.block1 || this.state.block1,
-                        flexDirection: blocks.block1Direction,
-                        flexWrap: 'wrap',
-                        alignItems: blocks.alignBlock1,
-                        borderLeft: blocks.block1BorderLeft,
-                        borderRight: blocks.block1BorderRight,
-                        borderTop: blocks.block1BorderTop,
-                        borderBottom: blocks.block1BorderBottom,
-                        border: blocks.b1Border,
-                        margin: blocks.margin,
-                        justifyContent: blocks.justifyBlock1,
-                    },
-                    '@media screen and (max-width: 440px)': {
-                        block1styles: {
-                            display: blocks.block1smdis,
-                        }
-                    },
-                    '@media screen and (min-width: 441px) and (max-width: 760px)': {
-                        block1styles: {
-                            display: blocks.block1mddis,
-                        }
+                        display: blocks.block1smdis,
                     }
-                });
+                },
+                '@media screen and (min-width: 441px) and (max-width: 760px)': {
+                    block1styles: {
+                        display: blocks.block1mddis,
+                    }
+                }
+            });
             block2styles = StyleSheet.create({
                 block2styles: {
                     display: 'flex',
@@ -262,6 +264,7 @@ export default class Holder extends Component {
                     borderTop: this.state.borderTop,
                     borderBottom: this.state.borderBottom,
                     border: this.state.border,
+                    flex: 1,
                 },
                 '@media (max-width: 440px)': {
                     holderstyles: {
@@ -276,32 +279,32 @@ export default class Holder extends Component {
                     }
                 }
             });
-                block1styles = StyleSheet.create({
+            block1styles = StyleSheet.create({
+                block1styles: {
+                    display: 'flex',
+                    flex: blocks.block1 || this.state.block1,
+                    flexDirection: 'column',
+                    flexWrap: 'wrap',
+                    alignItems: blocks.alignBlock1,
+                    borderLeft: blocks.block1BorderLeft,
+                    borderRight: blocks.block1BorderRight,
+                    borderTop: blocks.block1BorderTop,
+                    borderBottom: blocks.block1BorderBottom,
+                    border: blocks.b1Border,
+                    margin: blocks.margin,
+                    justifyContent: blocks.justifyBlock1,
+                },
+                '@media screen and (max-width: 440px)': {
                     block1styles: {
-                        display: 'flex',
-                        flex: blocks.block1 || this.state.block1,
-                        flexDirection: 'column',
-                        flexWrap: 'wrap',
-                        alignItems: blocks.alignBlock1,
-                        borderLeft: blocks.block1BorderLeft,
-                        borderRight: blocks.block1BorderRight,
-                        borderTop: blocks.block1BorderTop,
-                        borderBottom: blocks.block1BorderBottom,
-                        border: blocks.b1Border,
-                        margin: blocks.margin,
-                        justifyContent: blocks.justifyBlock1,
-                    },
-                    '@media screen and (max-width: 440px)': {
-                        block1styles: {
-                            display: blocks.block1smdis,
-                        }
-                    },
-                    '@media screen and (min-width: 441px) and (max-width: 760px)': {
-                        block1styles: {
-                            display: blocks.block1mddis,
-                        }
+                        display: blocks.block1smdis,
                     }
-                });
+                },
+                '@media screen and (min-width: 441px) and (max-width: 760px)': {
+                    block1styles: {
+                        display: blocks.block1mddis,
+                    }
+                }
+            });
             block2styles = StyleSheet.create({
                 block2styles: {
                     display: 'flex',
@@ -435,32 +438,32 @@ export default class Holder extends Component {
                     }
                 }
             });
-                block1styles = StyleSheet.create({
+            block1styles = StyleSheet.create({
+                block1styles: {
+                    display: 'flex',
+                    flex: blocks.block1 || this.state.block1,
+                    flexDirection: 'column',
+                    flexWrap: 'wrap',
+                    alignItems: blocks.alignBlock1,
+                    borderLeft: blocks.block1BorderLeft,
+                    borderRight: blocks.block1BorderRight,
+                    borderTop: blocks.block1BorderTop,
+                    borderBottom: blocks.block1BorderBottom,
+                    border: blocks.b1Border,
+                    margin: blocks.margin,
+                    justifyContent: blocks.justifyBlock1,
+                },
+                '@media screen and (max-width: 440px)': {
                     block1styles: {
-                        display: 'flex',
-                        flex: blocks.block1 || this.state.block1,
-                        flexDirection: 'column',
-                        flexWrap: 'wrap',
-                        alignItems: blocks.alignBlock1,
-                        borderLeft: blocks.block1BorderLeft,
-                        borderRight: blocks.block1BorderRight,
-                        borderTop: blocks.block1BorderTop,
-                        borderBottom: blocks.block1BorderBottom,
-                        border: blocks.b1Border,
-                        margin: blocks.margin,
-                        justifyContent: blocks.justifyBlock1,
-                    },
-                    '@media screen and (max-width: 440px)': {
-                        block1styles: {
-                            display: blocks.block1smdis,
-                        }
-                    },
-                    '@media screen and (min-width: 441px) and (max-width: 760px)': {
-                        block1styles: {
-                            display: blocks.block1mddis,
-                        }
+                        display: blocks.block1smdis,
                     }
-                });
+                },
+                '@media screen and (min-width: 441px) and (max-width: 760px)': {
+                    block1styles: {
+                        display: blocks.block1mddis,
+                    }
+                }
+            });
             block2styles = StyleSheet.create({
                 block2styles: {
                     display: 'flex',
@@ -633,32 +636,32 @@ export default class Holder extends Component {
                     }
                 }
             });
-                block1styles = StyleSheet.create({
+            block1styles = StyleSheet.create({
+                block1styles: {
+                    display: 'flex',
+                    flex: blocks.block1 || this.state.block1,
+                    flexDirection: 'column',
+                    flexWrap: 'wrap',
+                    alignItems: blocks.alignBlock1,
+                    borderLeft: blocks.block1BorderLeft,
+                    borderRight: blocks.block1BorderRight,
+                    borderTop: blocks.block1BorderTop,
+                    borderBottom: blocks.block1BorderBottom,
+                    border: blocks.b1Border,
+                    margin: blocks.margin,
+                    justifyContent: blocks.justifyBlock1,
+                },
+                '@media screen and (max-width: 440px)': {
                     block1styles: {
-                        display: 'flex',
-                        flex: blocks.block1 || this.state.block1,
-                        flexDirection: 'column',
-                        flexWrap: 'wrap',
-                        alignItems: blocks.alignBlock1,
-                        borderLeft: blocks.block1BorderLeft,
-                        borderRight: blocks.block1BorderRight,
-                        borderTop: blocks.block1BorderTop,
-                        borderBottom: blocks.block1BorderBottom,
-                        border: blocks.b1Border,
-                        margin: blocks.margin,
-                        justifyContent: blocks.justifyBlock1,
-                    },
-                    '@media screen and (max-width: 440px)': {
-                        block1styles: {
-                            display: blocks.block1smdis,
-                        }
-                    },
-                    '@media screen and (min-width: 441px) and (max-width: 760px)': {
-                        block1styles: {
-                            display: blocks.block1mddis,
-                        }
+                        display: blocks.block1smdis,
                     }
-                });
+                },
+                '@media screen and (min-width: 441px) and (max-width: 760px)': {
+                    block1styles: {
+                        display: blocks.block1mddis,
+                    }
+                }
+            });
             block2styles = StyleSheet.create({
                 block2styles: {
                     display: 'flex',
@@ -868,32 +871,32 @@ export default class Holder extends Component {
                     }
                 }
             });
-                block1styles = StyleSheet.create({
+            block1styles = StyleSheet.create({
+                block1styles: {
+                    display: 'flex',
+                    flex: blocks.block1 || this.state.block1,
+                    flexDirection: 'column',
+                    flexWrap: 'wrap',
+                    alignItems: blocks.alignBlock1,
+                    borderLeft: blocks.block1BorderLeft,
+                    borderRight: blocks.block1BorderRight,
+                    borderTop: blocks.block1BorderTop,
+                    borderBottom: blocks.block1BorderBottom,
+                    border: blocks.b1Border,
+                    margin: blocks.margin,
+                    justifyContent: blocks.justifyBlock1,
+                },
+                '@media screen and (max-width: 440px)': {
                     block1styles: {
-                        display: 'flex',
-                        flex: blocks.block1 || this.state.block1,
-                        flexDirection: 'column',
-                        flexWrap: 'wrap',
-                        alignItems: blocks.alignBlock1,
-                        borderLeft: blocks.block1BorderLeft,
-                        borderRight: blocks.block1BorderRight,
-                        borderTop: blocks.block1BorderTop,
-                        borderBottom: blocks.block1BorderBottom,
-                        border: blocks.b1Border,
-                        margin: blocks.margin,
-                        justifyContent: blocks.justifyBlock1,
-                    },
-                    '@media screen and (max-width: 440px)': {
-                        block1styles: {
-                            display: blocks.block1smdis,
-                        }
-                    },
-                    '@media screen and (min-width: 441px) and (max-width: 760px)': {
-                        block1styles: {
-                            display: blocks.block1mddis,
-                        }
+                        display: blocks.block1smdis,
                     }
-                });
+                },
+                '@media screen and (min-width: 441px) and (max-width: 760px)': {
+                    block1styles: {
+                        display: blocks.block1mddis,
+                    }
+                }
+            });
             block2styles = StyleSheet.create({
                 block2styles: {
                     display: 'flex',
@@ -1141,32 +1144,32 @@ export default class Holder extends Component {
                     }
                 }
             });
-                block1styles = StyleSheet.create({
+            block1styles = StyleSheet.create({
+                block1styles: {
+                    display: 'flex',
+                    flex: blocks.block1 || this.state.block1,
+                    flexDirection: 'column',
+                    flexWrap: 'wrap',
+                    alignItems: blocks.alignBlock1,
+                    borderLeft: blocks.block1BorderLeft,
+                    borderRight: blocks.block1BorderRight,
+                    borderTop: blocks.block1BorderTop,
+                    borderBottom: blocks.block1BorderBottom,
+                    border: blocks.b1Border,
+                    margin: blocks.margin,
+                    justifyContent: blocks.justifyBlock1,
+                },
+                '@media screen and (max-width: 440px)': {
                     block1styles: {
-                        display: 'flex',
-                        flex: blocks.block1 || this.state.block1,
-                        flexDirection: 'column',
-                        flexWrap: 'wrap',
-                        alignItems: blocks.alignBlock1,
-                        borderLeft: blocks.block1BorderLeft,
-                        borderRight: blocks.block1BorderRight,
-                        borderTop: blocks.block1BorderTop,
-                        borderBottom: blocks.block1BorderBottom,
-                        border: blocks.b1Border,
-                        margin: blocks.margin,
-                        justifyContent: blocks.justifyBlock1,
-                    },
-                    '@media screen and (max-width: 440px)': {
-                        block1styles: {
-                            display: blocks.block1smdis,
-                        }
-                    },
-                    '@media screen and (min-width: 441px) and (max-width: 760px)': {
-                        block1styles: {
-                            display: blocks.block1mddis,
-                        }
+                        display: blocks.block1smdis,
                     }
-                });
+                },
+                '@media screen and (min-width: 441px) and (max-width: 760px)': {
+                    block1styles: {
+                        display: blocks.block1mddis,
+                    }
+                }
+            });
             block2styles = StyleSheet.create({
                 block2styles: {
                     display: 'flex',
@@ -1452,32 +1455,32 @@ export default class Holder extends Component {
                     }
                 }
             });
-                block1styles = StyleSheet.create({
+            block1styles = StyleSheet.create({
+                block1styles: {
+                    display: 'flex',
+                    flex: blocks.block1 || this.state.block1,
+                    flexDirection: 'column',
+                    flexWrap: 'wrap',
+                    alignItems: blocks.alignBlock1,
+                    borderLeft: blocks.block1BorderLeft,
+                    borderRight: blocks.block1BorderRight,
+                    borderTop: blocks.block1BorderTop,
+                    borderBottom: blocks.block1BorderBottom,
+                    border: blocks.b1Border,
+                    margin: blocks.margin,
+                    justifyContent: blocks.justifyBlock1,
+                },
+                '@media screen and (max-width: 440px)': {
                     block1styles: {
-                        display: 'flex',
-                        flex: blocks.block1 || this.state.block1,
-                        flexDirection: 'column',
-                        flexWrap: 'wrap',
-                        alignItems: blocks.alignBlock1,
-                        borderLeft: blocks.block1BorderLeft,
-                        borderRight: blocks.block1BorderRight,
-                        borderTop: blocks.block1BorderTop,
-                        borderBottom: blocks.block1BorderBottom,
-                        border: blocks.b1Border,
-                        margin: blocks.margin,
-                        justifyContent: blocks.justifyBlock1,
-                    },
-                    '@media screen and (max-width: 440px)': {
-                        block1styles: {
-                            display: blocks.block1smdis,
-                        }
-                    },
-                    '@media screen and (min-width: 441px) and (max-width: 760px)': {
-                        block1styles: {
-                            display: blocks.block1mddis,
-                        }
+                        display: blocks.block1smdis,
                     }
-                });
+                },
+                '@media screen and (min-width: 441px) and (max-width: 760px)': {
+                    block1styles: {
+                        display: blocks.block1mddis,
+                    }
+                }
+            });
             block2styles = StyleSheet.create({
                 block2styles: {
                     display: 'flex',
@@ -1801,32 +1804,32 @@ export default class Holder extends Component {
                     }
                 }
             });
-                block1styles = StyleSheet.create({
+            block1styles = StyleSheet.create({
+                block1styles: {
+                    display: 'flex',
+                    flex: blocks.block1 || this.state.block1,
+                    flexDirection: 'column',
+                    flexWrap: 'wrap',
+                    alignItems: blocks.alignBlock1,
+                    borderLeft: blocks.block1BorderLeft,
+                    borderRight: blocks.block1BorderRight,
+                    borderTop: blocks.block1BorderTop,
+                    borderBottom: blocks.block1BorderBottom,
+                    border: blocks.b1Border,
+                    margin: blocks.margin,
+                    justifyContent: blocks.justifyBlock1,
+                },
+                '@media screen and (max-width: 440px)': {
                     block1styles: {
-                        display: 'flex',
-                        flex: blocks.block1 || this.state.block1,
-                        flexDirection: 'column',
-                        flexWrap: 'wrap',
-                        alignItems: blocks.alignBlock1,
-                        borderLeft: blocks.block1BorderLeft,
-                        borderRight: blocks.block1BorderRight,
-                        borderTop: blocks.block1BorderTop,
-                        borderBottom: blocks.block1BorderBottom,
-                        border: blocks.b1Border,
-                        margin: blocks.margin,
-                        justifyContent: blocks.justifyBlock1,
-                    },
-                    '@media screen and (max-width: 440px)': {
-                        block1styles: {
-                            display: blocks.block1smdis,
-                        }
-                    },
-                    '@media screen and (min-width: 441px) and (max-width: 760px)': {
-                        block1styles: {
-                            display: blocks.block1mddis,
-                        }
+                        display: blocks.block1smdis,
                     }
-                });
+                },
+                '@media screen and (min-width: 441px) and (max-width: 760px)': {
+                    block1styles: {
+                        display: blocks.block1mddis,
+                    }
+                }
+            });
             block2styles = StyleSheet.create({
                 block2styles: {
                     display: 'flex',
@@ -2188,32 +2191,32 @@ export default class Holder extends Component {
                     }
                 }
             });
-                block1styles = StyleSheet.create({
+            block1styles = StyleSheet.create({
+                block1styles: {
+                    display: 'flex',
+                    flex: blocks.block1 || this.state.block1,
+                    flexDirection: 'column',
+                    flexWrap: 'wrap',
+                    alignItems: blocks.alignBlock1,
+                    borderLeft: blocks.block1BorderLeft,
+                    borderRight: blocks.block1BorderRight,
+                    borderTop: blocks.block1BorderTop,
+                    borderBottom: blocks.block1BorderBottom,
+                    border: blocks.b1Border,
+                    margin: blocks.margin,
+                    justifyContent: blocks.justifyBlock1,
+                },
+                '@media screen and (max-width: 440px)': {
                     block1styles: {
-                        display: 'flex',
-                        flex: blocks.block1 || this.state.block1,
-                        flexDirection: 'column',
-                        flexWrap: 'wrap',
-                        alignItems: blocks.alignBlock1,
-                        borderLeft: blocks.block1BorderLeft,
-                        borderRight: blocks.block1BorderRight,
-                        borderTop: blocks.block1BorderTop,
-                        borderBottom: blocks.block1BorderBottom,
-                        border: blocks.b1Border,
-                        margin: blocks.margin,
-                        justifyContent: blocks.justifyBlock1,
-                    },
-                    '@media screen and (max-width: 440px)': {
-                        block1styles: {
-                            display: blocks.block1smdis,
-                        }
-                    },
-                    '@media screen and (min-width: 441px) and (max-width: 760px)': {
-                        block1styles: {
-                            display: blocks.block1mddis,
-                        }
+                        display: blocks.block1smdis,
                     }
-                });
+                },
+                '@media screen and (min-width: 441px) and (max-width: 760px)': {
+                    block1styles: {
+                        display: blocks.block1mddis,
+                    }
+                }
+            });
             block2styles = StyleSheet.create({
                 block2styles: {
                     display: 'flex',
@@ -2613,32 +2616,32 @@ export default class Holder extends Component {
                     }
                 }
             });
-                block1styles = StyleSheet.create({
+            block1styles = StyleSheet.create({
+                block1styles: {
+                    display: 'flex',
+                    flex: blocks.block1 || this.state.block1,
+                    flexDirection: 'column',
+                    flexWrap: 'wrap',
+                    alignItems: blocks.alignBlock1,
+                    borderLeft: blocks.block1BorderLeft,
+                    borderRight: blocks.block1BorderRight,
+                    borderTop: blocks.block1BorderTop,
+                    borderBottom: blocks.block1BorderBottom,
+                    border: blocks.b1Border,
+                    margin: blocks.margin,
+                    justifyContent: blocks.justifyBlock1,
+                },
+                '@media screen and (max-width: 440px)': {
                     block1styles: {
-                        display: 'flex',
-                        flex: blocks.block1 || this.state.block1,
-                        flexDirection: 'column',
-                        flexWrap: 'wrap',
-                        alignItems: blocks.alignBlock1,
-                        borderLeft: blocks.block1BorderLeft,
-                        borderRight: blocks.block1BorderRight,
-                        borderTop: blocks.block1BorderTop,
-                        borderBottom: blocks.block1BorderBottom,
-                        border: blocks.b1Border,
-                        margin: blocks.margin,
-                        justifyContent: blocks.justifyBlock1,
-                    },
-                    '@media screen and (max-width: 440px)': {
-                        block1styles: {
-                            display: blocks.block1smdis,
-                        }
-                    },
-                    '@media screen and (min-width: 441px) and (max-width: 760px)': {
-                        block1styles: {
-                            display: blocks.block1mddis,
-                        }
+                        display: blocks.block1smdis,
                     }
-                });
+                },
+                '@media screen and (min-width: 441px) and (max-width: 760px)': {
+                    block1styles: {
+                        display: blocks.block1mddis,
+                    }
+                }
+            });
             block2styles = StyleSheet.create({
                 block2styles: {
                     display: 'flex',
@@ -3076,32 +3079,32 @@ export default class Holder extends Component {
                     }
                 }
             });
-                block1styles = StyleSheet.create({
+            block1styles = StyleSheet.create({
+                block1styles: {
+                    display: 'flex',
+                    flex: blocks.block1 || this.state.block1,
+                    flexDirection: 'column',
+                    flexWrap: 'wrap',
+                    alignItems: blocks.alignBlock1,
+                    borderLeft: blocks.block1BorderLeft,
+                    borderRight: blocks.block1BorderRight,
+                    borderTop: blocks.block1BorderTop,
+                    borderBottom: blocks.block1BorderBottom,
+                    border: blocks.b1Border,
+                    margin: blocks.margin,
+                    justifyContent: blocks.justifyBlock1,
+                },
+                '@media screen and (max-width: 440px)': {
                     block1styles: {
-                        display: 'flex',
-                        flex: blocks.block1 || this.state.block1,
-                        flexDirection: 'column',
-                        flexWrap: 'wrap',
-                        alignItems: blocks.alignBlock1,
-                        borderLeft: blocks.block1BorderLeft,
-                        borderRight: blocks.block1BorderRight,
-                        borderTop: blocks.block1BorderTop,
-                        borderBottom: blocks.block1BorderBottom,
-                        border: blocks.b1Border,
-                        margin: blocks.margin,
-                        justifyContent: blocks.justifyBlock1,
-                    },
-                    '@media screen and (max-width: 440px)': {
-                        block1styles: {
-                            display: blocks.block1smdis,
-                        }
-                    },
-                    '@media screen and (min-width: 441px) and (max-width: 760px)': {
-                        block1styles: {
-                            display: blocks.block1mddis,
-                        }
+                        display: blocks.block1smdis,
                     }
-                });
+                },
+                '@media screen and (min-width: 441px) and (max-width: 760px)': {
+                    block1styles: {
+                        display: blocks.block1mddis,
+                    }
+                }
+            });
             block2styles = StyleSheet.create({
                 block2styles: {
                     display: 'flex',
@@ -3577,32 +3580,32 @@ export default class Holder extends Component {
                     }
                 }
             });
-                block1styles = StyleSheet.create({
+            block1styles = StyleSheet.create({
+                block1styles: {
+                    display: 'flex',
+                    flex: blocks.block1 || this.state.block1,
+                    flexDirection: 'column',
+                    flexWrap: 'wrap',
+                    alignItems: blocks.alignBlock1,
+                    borderLeft: blocks.block1BorderLeft,
+                    borderRight: blocks.block1BorderRight,
+                    borderTop: blocks.block1BorderTop,
+                    borderBottom: blocks.block1BorderBottom,
+                    border: blocks.b1Border,
+                    margin: blocks.margin,
+                    justifyContent: blocks.justifyBlock1,
+                },
+                '@media screen and (max-width: 440px)': {
                     block1styles: {
-                        display: 'flex',
-                        flex: blocks.block1 || this.state.block1,
-                        flexDirection: 'column',
-                        flexWrap: 'wrap',
-                        alignItems: blocks.alignBlock1,
-                        borderLeft: blocks.block1BorderLeft,
-                        borderRight: blocks.block1BorderRight,
-                        borderTop: blocks.block1BorderTop,
-                        borderBottom: blocks.block1BorderBottom,
-                        border: blocks.b1Border,
-                        margin: blocks.margin,
-                        justifyContent: blocks.justifyBlock1,
-                    },
-                    '@media screen and (max-width: 440px)': {
-                        block1styles: {
-                            display: blocks.block1smdis,
-                        }
-                    },
-                    '@media screen and (min-width: 441px) and (max-width: 760px)': {
-                        block1styles: {
-                            display: blocks.block1mddis,
-                        }
+                        display: blocks.block1smdis,
                     }
-                });
+                },
+                '@media screen and (min-width: 441px) and (max-width: 760px)': {
+                    block1styles: {
+                        display: blocks.block1mddis,
+                    }
+                }
+            });
             block2styles = StyleSheet.create({
                 block2styles: {
                     display: 'flex',
@@ -4116,32 +4119,32 @@ export default class Holder extends Component {
                     }
                 }
             });
-                block1styles = StyleSheet.create({
+            block1styles = StyleSheet.create({
+                block1styles: {
+                    display: 'flex',
+                    flex: blocks.block1 || this.state.block1,
+                    flexDirection: 'column',
+                    flexWrap: 'wrap',
+                    alignItems: blocks.alignBlock1,
+                    borderLeft: blocks.block1BorderLeft,
+                    borderRight: blocks.block1BorderRight,
+                    borderTop: blocks.block1BorderTop,
+                    borderBottom: blocks.block1BorderBottom,
+                    border: blocks.b1Border,
+                    margin: blocks.margin,
+                    justifyContent: blocks.justifyBlock1,
+                },
+                '@media screen and (max-width: 440px)': {
                     block1styles: {
-                        display: 'flex',
-                        flex: blocks.block1 || this.state.block1,
-                        flexDirection: 'column',
-                        flexWrap: 'wrap',
-                        alignItems: blocks.alignBlock1,
-                        borderLeft: blocks.block1BorderLeft,
-                        borderRight: blocks.block1BorderRight,
-                        borderTop: blocks.block1BorderTop,
-                        borderBottom: blocks.block1BorderBottom,
-                        border: blocks.b1Border,
-                        margin: blocks.margin,
-                        justifyContent: blocks.justifyBlock1,
-                    },
-                    '@media screen and (max-width: 440px)': {
-                        block1styles: {
-                            display: blocks.block1smdis,
-                        }
-                    },
-                    '@media screen and (min-width: 441px) and (max-width: 760px)': {
-                        block1styles: {
-                            display: blocks.block1mddis,
-                        }
+                        display: blocks.block1smdis,
                     }
-                });
+                },
+                '@media screen and (min-width: 441px) and (max-width: 760px)': {
+                    block1styles: {
+                        display: blocks.block1mddis,
+                    }
+                }
+            });
             block2styles = StyleSheet.create({
                 block2styles: {
                     display: 'flex',
@@ -4693,32 +4696,32 @@ export default class Holder extends Component {
                     }
                 }
             });
-                block1styles = StyleSheet.create({
+            block1styles = StyleSheet.create({
+                block1styles: {
+                    display: 'flex',
+                    flex: blocks.block1 || this.state.block1,
+                    flexDirection: 'column',
+                    flexWrap: 'wrap',
+                    alignItems: blocks.alignBlock1,
+                    borderLeft: blocks.block1BorderLeft,
+                    borderRight: blocks.block1BorderRight,
+                    borderTop: blocks.block1BorderTop,
+                    borderBottom: blocks.block1BorderBottom,
+                    border: blocks.b1Border,
+                    margin: blocks.margin,
+                    justifyContent: blocks.justifyBlock1,
+                },
+                '@media screen and (max-width: 440px)': {
                     block1styles: {
-                        display: 'flex',
-                        flex: blocks.block1 || this.state.block1,
-                        flexDirection: 'column',
-                        flexWrap: 'wrap',
-                        alignItems: blocks.alignBlock1,
-                        borderLeft: blocks.block1BorderLeft,
-                        borderRight: blocks.block1BorderRight,
-                        borderTop: blocks.block1BorderTop,
-                        borderBottom: blocks.block1BorderBottom,
-                        border: blocks.b1Border,
-                        margin: blocks.margin,
-                        justifyContent: blocks.justifyBlock1,
-                    },
-                    '@media screen and (max-width: 440px)': {
-                        block1styles: {
-                            display: blocks.block1smdis,
-                        }
-                    },
-                    '@media screen and (min-width: 441px) and (max-width: 760px)': {
-                        block1styles: {
-                            display: blocks.block1mddis,
-                        }
+                        display: blocks.block1smdis,
                     }
-                });
+                },
+                '@media screen and (min-width: 441px) and (max-width: 760px)': {
+                    block1styles: {
+                        display: blocks.block1mddis,
+                    }
+                }
+            });
             block2styles = StyleSheet.create({
                 block2styles: {
                     display: 'flex',
@@ -5308,32 +5311,32 @@ export default class Holder extends Component {
                     }
                 }
             });
-                block1styles = StyleSheet.create({
+            block1styles = StyleSheet.create({
+                block1styles: {
+                    display: 'flex',
+                    flex: blocks.block1 || this.state.block1,
+                    flexDirection: 'column',
+                    flexWrap: 'wrap',
+                    alignItems: blocks.alignBlock1,
+                    borderLeft: blocks.block1BorderLeft,
+                    borderRight: blocks.block1BorderRight,
+                    borderTop: blocks.block1BorderTop,
+                    borderBottom: blocks.block1BorderBottom,
+                    border: blocks.b1Border,
+                    margin: blocks.margin,
+                    justifyContent: blocks.justifyBlock1,
+                },
+                '@media screen and (max-width: 440px)': {
                     block1styles: {
-                        display: 'flex',
-                        flex: blocks.block1 || this.state.block1,
-                        flexDirection: 'column',
-                        flexWrap: 'wrap',
-                        alignItems: blocks.alignBlock1,
-                        borderLeft: blocks.block1BorderLeft,
-                        borderRight: blocks.block1BorderRight,
-                        borderTop: blocks.block1BorderTop,
-                        borderBottom: blocks.block1BorderBottom,
-                        border: blocks.b1Border,
-                        margin: blocks.margin,
-                        justifyContent: blocks.justifyBlock1,
-                    },
-                    '@media screen and (max-width: 440px)': {
-                        block1styles: {
-                            display: blocks.block1smdis,
-                        }
-                    },
-                    '@media screen and (min-width: 441px) and (max-width: 760px)': {
-                        block1styles: {
-                            display: blocks.block1mddis,
-                        }
+                        display: blocks.block1smdis,
                     }
-                });
+                },
+                '@media screen and (min-width: 441px) and (max-width: 760px)': {
+                    block1styles: {
+                        display: blocks.block1mddis,
+                    }
+                }
+            });
             block2styles = StyleSheet.create({
                 block2styles: {
                     display: 'flex',
@@ -5961,32 +5964,32 @@ export default class Holder extends Component {
                     }
                 }
             });
-                block1styles = StyleSheet.create({
+            block1styles = StyleSheet.create({
+                block1styles: {
+                    display: 'flex',
+                    flex: blocks.block1 || this.state.block1,
+                    flexDirection: 'column',
+                    flexWrap: 'wrap',
+                    alignItems: blocks.alignBlock1,
+                    borderLeft: blocks.block1BorderLeft,
+                    borderRight: blocks.block1BorderRight,
+                    borderTop: blocks.block1BorderTop,
+                    borderBottom: blocks.block1BorderBottom,
+                    border: blocks.b1Border,
+                    margin: blocks.margin,
+                    justifyContent: blocks.justifyBlock1,
+                },
+                '@media screen and (max-width: 440px)': {
                     block1styles: {
-                        display: 'flex',
-                        flex: blocks.block1 || this.state.block1,
-                        flexDirection: 'column',
-                        flexWrap: 'wrap',
-                        alignItems: blocks.alignBlock1,
-                        borderLeft: blocks.block1BorderLeft,
-                        borderRight: blocks.block1BorderRight,
-                        borderTop: blocks.block1BorderTop,
-                        borderBottom: blocks.block1BorderBottom,
-                        border: blocks.b1Border,
-                        margin: blocks.margin,
-                        justifyContent: blocks.justifyBlock1,
-                    },
-                    '@media screen and (max-width: 440px)': {
-                        block1styles: {
-                            display: blocks.block1smdis,
-                        }
-                    },
-                    '@media screen and (min-width: 441px) and (max-width: 760px)': {
-                        block1styles: {
-                            display: blocks.block1mddis,
-                        }
+                        display: blocks.block1smdis,
                     }
-                });
+                },
+                '@media screen and (min-width: 441px) and (max-width: 760px)': {
+                    block1styles: {
+                        display: blocks.block1mddis,
+                    }
+                }
+            });
             block2styles = StyleSheet.create({
                 block2styles: {
                     display: 'flex',
@@ -6652,32 +6655,32 @@ export default class Holder extends Component {
                     }
                 }
             });
-                block1styles = StyleSheet.create({
+            block1styles = StyleSheet.create({
+                block1styles: {
+                    display: 'flex',
+                    flex: blocks.block1 || this.state.block1,
+                    flexDirection: 'column',
+                    flexWrap: 'wrap',
+                    alignItems: blocks.alignBlock1,
+                    borderLeft: blocks.block1BorderLeft,
+                    borderRight: blocks.block1BorderRight,
+                    borderTop: blocks.block1BorderTop,
+                    borderBottom: blocks.block1BorderBottom,
+                    border: blocks.b1Border,
+                    margin: blocks.margin,
+                    justifyContent: blocks.justifyBlock1,
+                },
+                '@media screen and (max-width: 440px)': {
                     block1styles: {
-                        display: 'flex',
-                        flex: blocks.block1 || this.state.block1,
-                        flexDirection: 'column',
-                        flexWrap: 'wrap',
-                        alignItems: blocks.alignBlock1,
-                        borderLeft: blocks.block1BorderLeft,
-                        borderRight: blocks.block1BorderRight,
-                        borderTop: blocks.block1BorderTop,
-                        borderBottom: blocks.block1BorderBottom,
-                        border: blocks.b1Border,
-                        margin: blocks.margin,
-                        justifyContent: blocks.justifyBlock1,
-                    },
-                    '@media screen and (max-width: 440px)': {
-                        block1styles: {
-                            display: blocks.block1smdis,
-                        }
-                    },
-                    '@media screen and (min-width: 441px) and (max-width: 760px)': {
-                        block1styles: {
-                            display: blocks.block1mddis,
-                        }
+                        display: blocks.block1smdis,
                     }
-                });
+                },
+                '@media screen and (min-width: 441px) and (max-width: 760px)': {
+                    block1styles: {
+                        display: blocks.block1mddis,
+                    }
+                }
+            });
             block2styles = StyleSheet.create({
                 block2styles: {
                     display: 'flex',
@@ -7381,32 +7384,32 @@ export default class Holder extends Component {
                     }
                 }
             });
-                block1styles = StyleSheet.create({
+            block1styles = StyleSheet.create({
+                block1styles: {
+                    display: 'flex',
+                    flex: blocks.block1 || this.state.block1,
+                    flexDirection: 'column',
+                    flexWrap: 'wrap',
+                    alignItems: blocks.alignBlock1,
+                    borderLeft: blocks.block1BorderLeft,
+                    borderRight: blocks.block1BorderRight,
+                    borderTop: blocks.block1BorderTop,
+                    borderBottom: blocks.block1BorderBottom,
+                    border: blocks.b1Border,
+                    margin: blocks.margin,
+                    justifyContent: blocks.justifyBlock1,
+                },
+                '@media screen and (max-width: 440px)': {
                     block1styles: {
-                        display: 'flex',
-                        flex: blocks.block1 || this.state.block1,
-                        flexDirection: 'column',
-                        flexWrap: 'wrap',
-                        alignItems: blocks.alignBlock1,
-                        borderLeft: blocks.block1BorderLeft,
-                        borderRight: blocks.block1BorderRight,
-                        borderTop: blocks.block1BorderTop,
-                        borderBottom: blocks.block1BorderBottom,
-                        border: blocks.b1Border,
-                        margin: blocks.margin,
-                        justifyContent: blocks.justifyBlock1,
-                    },
-                    '@media screen and (max-width: 440px)': {
-                        block1styles: {
-                            display: blocks.block1smdis,
-                        }
-                    },
-                    '@media screen and (min-width: 441px) and (max-width: 760px)': {
-                        block1styles: {
-                            display: blocks.block1mddis,
-                        }
+                        display: blocks.block1smdis,
                     }
-                });
+                },
+                '@media screen and (min-width: 441px) and (max-width: 760px)': {
+                    block1styles: {
+                        display: blocks.block1mddis,
+                    }
+                }
+            });
             block2styles = StyleSheet.create({
                 block2styles: {
                     display: 'flex',
@@ -8148,32 +8151,32 @@ export default class Holder extends Component {
                     }
                 }
             });
-                block1styles = StyleSheet.create({
+            block1styles = StyleSheet.create({
+                block1styles: {
+                    display: 'flex',
+                    flex: blocks.block1 || this.state.block1,
+                    flexDirection: blocks.block1Direction,
+                    flexWrap: 'wrap',
+                    alignItems: blocks.alignBlock1,
+                    borderLeft: blocks.block1BorderLeft,
+                    borderRight: blocks.block1BorderRight,
+                    borderTop: blocks.block1BorderTop,
+                    borderBottom: blocks.block1BorderBottom,
+                    border: blocks.b1Border,
+                    margin: blocks.margin,
+                    justifyContent: blocks.justifyBlock1,
+                },
+                '@media screen and (max-width: 440px)': {
                     block1styles: {
-                        display: 'flex',
-                        flex: blocks.block1 || this.state.block1,
-                        flexDirection: blocks.block1Direction,
-                        flexWrap: 'wrap',
-                        alignItems: blocks.alignBlock1,
-                        borderLeft: blocks.block1BorderLeft,
-                        borderRight: blocks.block1BorderRight,
-                        borderTop: blocks.block1BorderTop,
-                        borderBottom: blocks.block1BorderBottom,
-                        border: blocks.b1Border,
-                        margin: blocks.margin,
-                        justifyContent: blocks.justifyBlock1,
-                    },
-                    '@media screen and (max-width: 440px)': {
-                        block1styles: {
-                            display: blocks.block1smdis,
-                        }
-                    },
-                    '@media screen and (min-width: 441px) and (max-width: 760px)': {
-                        block1styles: {
-                            display: blocks.block1mddis,
-                        }
+                        display: blocks.block1smdis,
                     }
-                });
+                },
+                '@media screen and (min-width: 441px) and (max-width: 760px)': {
+                    block1styles: {
+                        display: blocks.block1mddis,
+                    }
+                }
+            });
             block2styles = StyleSheet.create({
                 block2styles: {
                     display: 'flex',
@@ -8693,6 +8696,8 @@ export default class Holder extends Component {
             styledHolder = [
                 <section key={Math.random()} style={holderstyles.holderstyles}>{styledChilds1}{styledChilds2}{styledChilds3}{styledChilds4}{styledChilds5}{styledChilds6}{styledChilds7}{styledChilds8}{styledChilds9}{styledChilds10}{styledChilds11}{styledChilds12}{styledChilds13}{styledChilds14}{styledChilds15}{styledChilds16}{styledChilds17}{styledChilds18}{styledChilds19}{styledChilds20}</section>
             ]
+        } else {
+            styledHolder = '';
         }
         return this.setState({ childs: styledHolder, blocks })
 
@@ -8746,32 +8751,32 @@ export default class Holder extends Component {
                     }
                 }
             });
-                block1styles = StyleSheet.create({
+            block1styles = StyleSheet.create({
+                block1styles: {
+                    display: 'flex',
+                    flex: blocks.block1 || this.state.block1,
+                    flexDirection: 'column',
+                    flexWrap: 'wrap',
+                    alignItems: blocks.alignBlock1,
+                    borderLeft: blocks.block1BorderLeft,
+                    borderRight: blocks.block1BorderRight,
+                    borderTop: blocks.block1BorderTop,
+                    borderBottom: blocks.block1BorderBottom,
+                    border: blocks.b1Border,
+                    margin: blocks.margin,
+                    justifyContent: blocks.justifyBlock1,
+                },
+                '@media screen and (max-width: 440px)': {
                     block1styles: {
-                        display: 'flex',
-                        flex: blocks.block1 || this.state.block1,
-                        flexDirection: 'column',
-                        flexWrap: 'wrap',
-                        alignItems: blocks.alignBlock1,
-                        borderLeft: blocks.block1BorderLeft,
-                        borderRight: blocks.block1BorderRight,
-                        borderTop: blocks.block1BorderTop,
-                        borderBottom: blocks.block1BorderBottom,
-                        border: blocks.b1Border,
-                        margin: blocks.margin,
-                        justifyContent: blocks.justifyBlock1,
-                    },
-                    '@media screen and (max-width: 440px)': {
-                        block1styles: {
-                            display: blocks.block1smdis,
-                        }
-                    },
-                    '@media screen and (min-width: 441px) and (max-width: 760px)': {
-                        block1styles: {
-                            display: blocks.block1mddis,
-                        }
+                        display: blocks.block1smdis,
                     }
-                });
+                },
+                '@media screen and (min-width: 441px) and (max-width: 760px)': {
+                    block1styles: {
+                        display: blocks.block1mddis,
+                    }
+                }
+            });
             styledChilds1 = <div key={Math.random()} style={block1styles.block1styles}>{CHILDS[0]}</div>
             styledHolder = [
                 <section key={Math.random()} style={holderstyles.holderstyles}>{styledChilds1}{styledChilds2}</section>
@@ -8828,32 +8833,32 @@ export default class Holder extends Component {
                     }
                 }
             });
-                block1styles = StyleSheet.create({
+            block1styles = StyleSheet.create({
+                block1styles: {
+                    display: 'flex',
+                    flex: blocks.block1 || this.state.block1,
+                    flexDirection: 'column',
+                    flexWrap: 'wrap',
+                    alignItems: blocks.alignBlock1,
+                    borderLeft: blocks.block1BorderLeft,
+                    borderRight: blocks.block1BorderRight,
+                    borderTop: blocks.block1BorderTop,
+                    borderBottom: blocks.block1BorderBottom,
+                    border: blocks.b1Border,
+                    margin: blocks.margin,
+                    justifyContent: blocks.justifyBlock1,
+                },
+                '@media screen and (max-width: 440px)': {
                     block1styles: {
-                        display: 'flex',
-                        flex: blocks.block1 || this.state.block1,
-                        flexDirection: 'column',
-                        flexWrap: 'wrap',
-                        alignItems: blocks.alignBlock1,
-                        borderLeft: blocks.block1BorderLeft,
-                        borderRight: blocks.block1BorderRight,
-                        borderTop: blocks.block1BorderTop,
-                        borderBottom: blocks.block1BorderBottom,
-                        border: blocks.b1Border,
-                        margin: blocks.margin,
-                        justifyContent: blocks.justifyBlock1,
-                    },
-                    '@media screen and (max-width: 440px)': {
-                        block1styles: {
-                            display: blocks.block1smdis,
-                        }
-                    },
-                    '@media screen and (min-width: 441px) and (max-width: 760px)': {
-                        block1styles: {
-                            display: blocks.block1mddis,
-                        }
+                        display: blocks.block1smdis,
                     }
-                });
+                },
+                '@media screen and (min-width: 441px) and (max-width: 760px)': {
+                    block1styles: {
+                        display: blocks.block1mddis,
+                    }
+                }
+            });
             block2styles = StyleSheet.create({
                 block2styles: {
                     display: 'flex',
@@ -8887,11 +8892,16 @@ export default class Holder extends Component {
             styledHolder = [
                 <section key={Math.random()} style={holderstyles.holderstyles}>{styledChilds1}{styledChilds2}</section>
             ]
+        } else {
+            styledHolder = '';
         }
 
         return this.setState({ childs: styledHolder, blocks })
     }
     render() {
+        const HOLDING = {
+            width: '100%',
+        }
         return (
             <React.Fragment>
                 {this.state.childs}

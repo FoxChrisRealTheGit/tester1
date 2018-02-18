@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Container1 from '../Components 1.0.0/Containers';
-import { Holder2 } from '../Components 1.0.0/Holders';
+import Holder from '../Component 1.5.0/Holders1.5.0';
+import Container from '../Component 1.5.0/Containers1.5.0';
+
 import { Navbar1, DropDownNav1, Brand1 } from '../Components 1.0.0/Blocks';
 
 import Logo from '../images/Logo/QuickFirstDraft.svg';
@@ -10,8 +11,8 @@ import Logo from '../images/Logo/QuickFirstDraft.svg';
 export default function Navigation() {
     return (
         <header>
-            <Container1>
-                <Holder2
+            <Container>
+                <Holder
                     alignBlock1="flex-end"
                     block1="0.5"
                     block2="3">
@@ -59,8 +60,8 @@ export default function Navigation() {
                         <Link to="twitter.com"></Link>
                         <Link to="github.com"></Link>
                     </Navbar1>
-                </Holder2>
-            </Container1>
+                </Holder>
+            </Container>
         </header>
     )
 }

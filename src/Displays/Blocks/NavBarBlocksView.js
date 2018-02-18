@@ -123,7 +123,8 @@ export default class NavBarBlocksView extends Component {
                         Sub Navbar1
                     </H34>
                     <SubNavbar1
-                        padding="0 0 0 5%">
+                        padding="0 0 0 5%"
+                        zIndex='250'>
                         <Link to="/blocks/navbarviews">item1</Link>
                         <Link to="/blocks/navbarviews">item2</Link>
                         <Link to="/blocks/navbarviews">item3</Link>

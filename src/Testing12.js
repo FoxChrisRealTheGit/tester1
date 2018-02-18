@@ -30,11 +30,14 @@ export default class Testing12 extends Component {
                 </SubNavbar1>
                 <Container>
                     <Holder
+                        alignBlock1='flex-start'
+
                         block2='3'>
                         <SquareImage />
                         <Holder
                             direction="column">
-                            <H31>Hello</H31>
+                            <H31
+                                variant='small-caps'>hello</H31>
                             <H31>Hello</H31>
                             <SquareImage />
                             <H31>Hello</H31>
@@ -62,7 +65,11 @@ export default class Testing12 extends Component {
                         </Holder>
                     </Holder>
                     <Holder>
+                        <Holder>
+                        </Holder>
                         <SquareImage />
+                        <Holder>
+                        </Holder>
                     </Holder>
                 </Container>
             </section>

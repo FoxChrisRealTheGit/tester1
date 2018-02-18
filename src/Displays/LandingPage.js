@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 import Navigation from './Navigation';
 import FooterNavigation from './FooterNavigation';
 
-import Container1 from '../Components 1.0.0/Containers';
-import Holder1, { Holder5 } from '../Components 1.0.0/Holders';
+import Holder from '../Component 1.5.0/Holders1.5.0';
+import Container from '../Component 1.5.0/Containers1.5.0';
+
 import {
     HorizontalTestBlock1,
     Navbar1,
@@ -32,28 +33,30 @@ export default class LandingPage extends Component {
             <section>
                 <Navigation />
                 <HorizontalTestBlock1 />
-                <Container1>
-                    <Holder5>
+                <Container>
+                    <Holder
+                        direction='column'>
                         <RectangleImage
                             size="exlg">
                             {heroGreeting1}
                         </RectangleImage>
-                    </Holder5>
-                </Container1>
+                    </Holder>
+                </Container>
                 <HorizontalTestBlock1 />
-                <Container1>
-                    <Holder5>
+                <Container>
+                    <Holder
+                        direction='column'>
                         <H42>Who uses Stylux?</H42>
                         <HorizontalTicker>
                             <RectangleImage size='tn'>{lies2logo}</RectangleImage>
                             <RectangleImage size='exsm'>{ataraxylogo}</RectangleImage>
                             <RectangleImage size='exsm'>{foxTail}</RectangleImage>
                         </HorizontalTicker>
-                    </Holder5>
-                </Container1>
+                    </Holder>
+                </Container>
                 <HorizontalTestBlock1 />
-                <Container1>
-                    <Holder1
+                <Container>
+                    <Holder
                         block2="3">
                         <Navbar1
                             direction="column"
@@ -74,7 +77,8 @@ export default class LandingPage extends Component {
                             <Link to="/donate">Donate</Link>
 
                         </Navbar1>
-                        <Holder5>
+                        <Holder
+                            direction='column'>
                             <H32>
                                 Get stuff done fast
                             </H32>
@@ -88,31 +92,33 @@ export default class LandingPage extends Component {
                                     image={`url(${chrischillin}`}>
                                 </Hero2>
                             </ImageSlider1>
-                        </Holder5>
-                    </Holder1>
-                </Container1>
+                        </Holder>
+                    </Holder>
+                </Container>
                 <HorizontalTestBlock1 />
-                <Container1>
-                    <Holder5>
+                <Container>
+                    <Holder
+                        direction='column'>
                         <H32>
                             How does it work?
                         </H32>
                         <P1>
                             insert steps on how stylux works
                         </P1>
-                    </Holder5>
-                </Container1>
+                    </Holder>
+                </Container>
                 <HorizontalTestBlock1 />
-                <Container1>
-                    <Holder5>
+                <Container>
+                    <Holder
+                        direction='column'>
                         <H32>
                             Want to help out?
                         </H32>
                         <P1>
                             insert steps on how to help out, probable a mini clone of contact
                         </P1>
-                    </Holder5>
-                </Container1>
+                    </Holder>
+                </Container>
                 <HorizontalTestBlock1 />
                 <FooterNavigation />
             </section>

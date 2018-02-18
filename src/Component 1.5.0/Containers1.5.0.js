@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../Components 1.0.0/reset.css';
 import StyleSheet from 'nestingstyles';
 
-/* Start of Holder 1 Component */
+/* Start of Container Component */
 export default class Container extends Component {
     constructor(props) {
         super(props);
@@ -18,8 +18,8 @@ export default class Container extends Component {
             margin: props.margin || '10px 0',
             smdis: props.smDis || 'flex',
             mddis: props.mdDis || 'flex',
-            smflexDir: props.smflexDir,
-            mdflexDir: props.mdflexDir,
+            smflexDir: props.smflexDir || 'column',
+            mdflexDir: props.mdflexDir || 'column',
             childs: []
         }
     }
@@ -8693,6 +8693,8 @@ export default class Container extends Component {
             styledHolder = [
                 <section key={Math.random()} style={holderstyles.holderstyles}>{styledChilds1}{styledChilds2}{styledChilds3}{styledChilds4}{styledChilds5}{styledChilds6}{styledChilds7}{styledChilds8}{styledChilds9}{styledChilds10}{styledChilds11}{styledChilds12}{styledChilds13}{styledChilds14}{styledChilds15}{styledChilds16}{styledChilds17}{styledChilds18}{styledChilds19}{styledChilds20}</section>
             ]
+        } else{
+            styledHolder ='';
         }
         return this.setState({ childs: styledHolder, blocks })
 
@@ -8887,16 +8889,18 @@ export default class Container extends Component {
             styledHolder = [
                 <section key={Math.random()} style={holderstyles.holderstyles}>{styledChilds1}{styledChilds2}</section>
             ]
+        }else{
+            styledHolder='';
         }
 
         return this.setState({ childs: styledHolder, blocks })
     }
     render() {
         return (
-            <React.Fragment>
+            <section>
                 {this.state.childs}
-            </React.Fragment>
+            </section>
         )
     }
 }
-/* End of Holder Component */
+/* End of Container Component */
